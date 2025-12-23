@@ -1,0 +1,40 @@
+{
+  "name": "anewbride",
+  "version": "1.0.0",
+  "description": "Playwright test suite for ANewBride website with SEO, broken links, and accessibility testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "node run-tests.js",
+    "test:n8n": "node run-tests.js && node scripts/send-to-n8n.js",
+    "test:url": "node test-url.js",
+    "test:url:n8n": "node test-url-n8n.js",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:all-specs": "playwright test tests/*.spec.ts",
+    "test:audits": "playwright test tests/broken-links.spec.ts tests/seo-checks.spec.ts tests/accessibility.spec.ts tests/comprehensive-audit.spec.ts",
+    "send:n8n": "node scripts/send-to-n8n.js",
+    "test:n8n-connection": "node scripts/test-n8n-connection.js",
+    "serve:reports": "node scripts/serve-reports.js",
+    "prepare:github": "node scripts/prepare-github-reports.js",
+    "verify:structure": "node scripts/verify-structure.js",
+    "codegen": "playwright codegen",
+    "codegen:url": "node codegen.js"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "e2e",
+    "accessibility",
+    "seo",
+    "broken-links"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@axe-core/playwright": "^4.10.0",
+    "@types/node": "^25.0.3"
+  }
+}
+

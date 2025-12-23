@@ -1,0 +1,12 @@
+
+# Playwright
+/node_modules/
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
+/playwright/.auth/
+.env
+
+# GitHub Pages reports (optional - comment out if you want to commit these)
+# /gh-pages-reports/
