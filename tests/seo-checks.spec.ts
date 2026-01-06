@@ -10,11 +10,13 @@ import {
   checkHeadingStructure,
   checkOpenGraphTags,
 } from '../utils/seo-checks';
-import { gotoAndWait } from '../utils/page-load';
+import { gotoAndWaitForDOMContentLoaded } from '../utils/page-load';
+
+const DEFAULT_TEST_URL = process.env.TEST_URL || process.env.URL_AUDIT_URL || 'https://anewbride.com/';
 
 test.describe('SEO Checks', () => {
   test('run comprehensive SEO checks on homepage', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWaitForDOMContentLoaded(page, DEFAULT_TEST_URL);
 
     const results = await runSEOChecks(page, {
       checkTitle: true,
@@ -24,10 +26,28 @@ test.describe('SEO Checks', () => {
       checkImageAlt: true,
       checkHeadings: true,
       checkOpenGraph: false, // Set to true if you want to check Open Graph tags
+      skipPageLoad: true, // Page already loaded
     });
 
     // Log the report
     console.log(await formatSEOCheckReport(results, page));
+
+    // Attach SEO screenshots if available
+    const resultsWithScreenshots = results as any;
+    if (resultsWithScreenshots.screenshotPaths) {
+      if (resultsWithScreenshots.screenshotPaths.fullPage) {
+        await test.info().attach('SEO Errors - Overview', {
+          path: resultsWithScreenshots.screenshotPaths.fullPage,
+          contentType: 'image/png',
+        });
+      }
+      resultsWithScreenshots.screenshotPaths.closeUps.forEach((path: string, index: number) => {
+        test.info().attach(`SEO Error #${index + 1}`, {
+          path,
+          contentType: 'image/png',
+        });
+      });
+    }
 
     // Assert all checks passed
     const failedChecks = results.filter(r => !r.passed);
@@ -35,7 +55,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check page title specifically', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWaitForDOMContentLoaded(page, DEFAULT_TEST_URL);
 
     const result = await checkPageTitle(page, /ANewBride/i);
     
@@ -44,7 +64,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check meta description length', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWaitForDOMContentLoaded(page, DEFAULT_TEST_URL);
 
     const result = await checkMetaDescription(page, 50, 160);
     
@@ -53,7 +73,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check canonical URL', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWaitForDOMContentLoaded(page, DEFAULT_TEST_URL);
 
     const result = await checkCanonicalURL(page);
     
@@ -62,7 +82,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check robots meta tag for index,follow', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWaitForDOMContentLoaded(page, DEFAULT_TEST_URL);
 
     const result = await checkRobotsMetaTag(page, true, true); // require index and follow
     
@@ -73,17 +93,18 @@ test.describe('SEO Checks', () => {
     expect(result.passed).toBe(true);
   });
 
-  test('check all images have alt attributes', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+  test('check all visible images have alt attributes', async ({ page }) => {
+    await gotoAndWaitForDOMContentLoaded(page, DEFAULT_TEST_URL);
 
-    const result = await checkImageAltAttributes(page);
+    // checkImageAltAttributes now waits for DOM, scrolls, and checks only visible images by default
+    const result = await checkImageAltAttributes(page, false); // Skip DOM wait, page already loaded
     
     console.log(`Image alt check: ${result.message}`);
     expect(result.passed).toBe(true);
   });
 
   test('check heading structure', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWaitForDOMContentLoaded(page, DEFAULT_TEST_URL);
 
     const result = await checkHeadingStructure(page);
     
@@ -92,9 +113,11 @@ test.describe('SEO Checks', () => {
   });
 
   test('run SEO checks on tour page', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/tour/things-to-consider-on-singles-tours.html');
+    const baseUrl = DEFAULT_TEST_URL.replace(/\/$/, '');
+    const tourUrl = `${baseUrl}/tour/things-to-consider-on-singles-tours.html`;
+    await gotoAndWaitForDOMContentLoaded(page, tourUrl);
 
-    const results = await runSEOChecks(page);
+    const results = await runSEOChecks(page, { skipPageLoad: true });
 
     console.log(await formatSEOCheckReport(results, page));
 

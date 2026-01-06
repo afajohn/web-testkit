@@ -8,11 +8,12 @@ import {
   formatBrokenLinksReport,
 } from '../utils/broken-links';
 import {
-  runAccessibilityCheck,
+  runAccessibilityCheckOnVisibleContent,
   formatAccessibilityReport,
 } from '../utils/accessibility';
-import { gotoAndWait } from '../utils/page-load';
+import { gotoAndWaitForDOMContentLoaded } from '../utils/page-load';
 import { formatErrorWithContext, getCurrentUrl } from '../utils/error-handling';
+import { formatTestHeader, formatSubsectionHeader } from '../utils/formatting';
 
 /**
  * Dynamic URL audit test
@@ -21,7 +22,7 @@ import { formatErrorWithContext, getCurrentUrl } from '../utils/error-handling';
  * 2. Playwright project use.baseURL
  * 3. Default fallback URL
  */
-const TEST_URL = process.env.URL_AUDIT_URL || process.env.BASE_URL || 'https://anewbride.com/';
+const TEST_URL = process.env.URL_AUDIT_URL || process.env.TEST_URL || process.env.BASE_URL || 'https://anewbride.com/';
 
 test.describe(`Audit Test for: ${TEST_URL}`, () => {
   test('comprehensive audit - SEO, broken links, and accessibility', async ({ page }) => {
@@ -29,36 +30,133 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
     
     try {
       console.log(`\nNavigating to: ${TEST_URL}`);
-      await gotoAndWait(page, TEST_URL);
+      await gotoAndWaitForDOMContentLoaded(page, TEST_URL);
       currentUrl = await getCurrentUrl(page);
       console.log(`Successfully loaded: ${currentUrl}`);
 
       // Run all checks in parallel for faster execution
+      console.log('\nStarting parallel checks...');
+      const testStartTime = Date.now();
       const apiRequest = await request.newContext();
 
-      const [seoResults, brokenLinks, accessibilityResults] = await Promise.all([
-        runSEOChecks(page, {
-          checkRobots: true, // Include robots meta tag check
-        }),
-        checkBrokenLinks(page, apiRequest),
-        runAccessibilityCheck(page),
+      // Wrap each operation with logging
+      const seoCheckPromise = (async () => {
+        const startTime = Date.now();
+        console.log('  [1/3] Starting SEO checks...');
+        try {
+          const results = await runSEOChecks(page, {
+            checkRobots: true, // Include robots meta tag check
+            skipPageLoad: true, // Page already loaded
+          });
+          const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          console.log(`  [1/3] ✓ SEO checks completed (${elapsed}s)`);
+          return results;
+        } catch (error) {
+          const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          console.error(`  [1/3] ✗ SEO checks failed (${elapsed}s): ${error}`);
+          throw error;
+        }
+      })();
+
+      const brokenLinksPromise = (async () => {
+        const startTime = Date.now();
+        console.log('  [2/3] Starting broken links check...');
+        try {
+          const results = await checkBrokenLinks(page, apiRequest, undefined, 10, true); // Use visible links (default)
+          const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          console.log(`  [2/3] ✓ Broken links check completed (${elapsed}s)`);
+          return results;
+        } catch (error) {
+          const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          console.error(`  [2/3] ✗ Broken links check failed (${elapsed}s): ${error}`);
+          throw error;
+        }
+      })();
+
+      const accessibilityPromise = (async () => {
+        const startTime = Date.now();
+        console.log('  [3/3] Starting accessibility check...');
+        try {
+          const results = await runAccessibilityCheckOnVisibleContent(page, { skipPageLoad: true });
+          const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          console.log(`  [3/3] ✓ Accessibility check completed (${elapsed}s)`);
+          return results;
+        } catch (error) {
+          const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          console.error(`  [3/3] ✗ Accessibility check failed (${elapsed}s): ${error}`);
+          throw error;
+        }
+      })();
+
+      const [seoResults, brokenLinksResult, accessibilityResults] = await Promise.all([
+        seoCheckPromise,
+        brokenLinksPromise,
+        accessibilityPromise,
       ]);
 
-    // Log all reports
-    console.log(`\n${'='.repeat(80)}`);
-    console.log(`AUDIT REPORT FOR: ${TEST_URL}`);
-    console.log(`${'='.repeat(80)}\n`);
+      const totalElapsed = ((Date.now() - testStartTime) / 1000).toFixed(1);
+      console.log(`\n✓ All checks completed (${totalElapsed}s total)\n`);
 
-    console.log('=== SEO CHECK RESULTS ===');
+    // Log all reports
+    console.log(formatTestHeader('Comprehensive Audit', TEST_URL));
+
+    console.log(formatSubsectionHeader('SEO CHECK RESULTS'));
     console.log(await formatSEOCheckReport(seoResults, page));
 
-    console.log('\n=== BROKEN LINKS CHECK ===');
-    console.log(formatBrokenLinksReport(brokenLinks));
+    // Attach SEO screenshots if available
+    const seoResultsWithScreenshots = seoResults as any;
+    if (seoResultsWithScreenshots.screenshotPaths) {
+      if (seoResultsWithScreenshots.screenshotPaths.fullPage) {
+        await test.info().attach('SEO Errors - Overview', {
+          path: seoResultsWithScreenshots.screenshotPaths.fullPage,
+          contentType: 'image/png',
+        });
+      }
+      seoResultsWithScreenshots.screenshotPaths.closeUps.forEach((path: string, index: number) => {
+        test.info().attach(`SEO Error #${index + 1}`, {
+          path,
+          contentType: 'image/png',
+        });
+      });
+    }
 
-    console.log('\n=== ACCESSIBILITY CHECK ===');
-    console.log(formatAccessibilityReport(accessibilityResults));
+    console.log(formatSubsectionHeader('BROKEN LINKS CHECK'));
+    console.log(formatBrokenLinksReport(brokenLinksResult.brokenLinks, brokenLinksResult.totalLinks, TEST_URL));
 
-    console.log(`\n${'='.repeat(80)}\n`);
+    // Attach broken links screenshots if available
+    if (brokenLinksResult.screenshotPaths) {
+      if (brokenLinksResult.screenshotPaths.fullPage) {
+        await test.info().attach('Broken Links - Overview', {
+          path: brokenLinksResult.screenshotPaths.fullPage,
+          contentType: 'image/png',
+        });
+      }
+      brokenLinksResult.screenshotPaths.closeUps.forEach((path: string, index: number) => {
+        test.info().attach(`Broken Link #${index + 1}`, {
+          path,
+          contentType: 'image/png',
+        });
+      });
+    }
+
+    console.log(formatSubsectionHeader('ACCESSIBILITY CHECK'));
+    console.log(await formatAccessibilityReport(accessibilityResults, TEST_URL));
+
+    // Attach accessibility screenshots if available
+    if (accessibilityResults.screenshotPaths) {
+      if (accessibilityResults.screenshotPaths.fullPage) {
+        await test.info().attach('Accessibility Errors - Overview', {
+          path: accessibilityResults.screenshotPaths.fullPage,
+          contentType: 'image/png',
+        });
+      }
+      accessibilityResults.screenshotPaths.closeUps.forEach((path: string, index: number) => {
+        test.info().attach(`Accessibility Error #${index + 1}`, {
+          path,
+          contentType: 'image/png',
+        });
+      });
+    }
 
     // Assertions
     const failedSEOChecks = seoResults.filter(r => !r.passed);
@@ -66,11 +164,11 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
     // You can adjust these assertions based on your requirements
     // Option 1: Fail if any check fails
     expect(failedSEOChecks.length).toBe(0);
-    expect(brokenLinks.length).toBe(0);
+    expect(brokenLinksResult.brokenLinks.length).toBe(0);
     expect(accessibilityResults.passed).toBe(true);
     
     // Option 2: Log failures but don't fail (comment out assertions above and use this):
-    // if (failedSEOChecks.length > 0 || brokenLinks.length > 0 || !accessibilityResults.passed) {
+    // if (failedSEOChecks.length > 0 || brokenLinksResult.brokenLinks.length > 0 || !accessibilityResults.passed) {
     //   console.warn('⚠️  Some checks failed. Review the report above.');
     // }
     } catch (error: any) {
@@ -92,15 +190,20 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
     
     try {
       console.log(`\nNavigating to: ${TEST_URL}`);
-      await gotoAndWait(page, TEST_URL);
+      await gotoAndWaitForDOMContentLoaded(page, TEST_URL);
       currentUrl = await getCurrentUrl(page);
       console.log(`Successfully loaded: ${currentUrl}`);
 
+      console.log('\nStarting SEO checks...');
+      const startTime = Date.now();
       const results = await runSEOChecks(page, {
+        skipPageLoad: true, // Page already loaded
         checkRobots: true,
       });
+      const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+      console.log(`\n✓ SEO checks completed (${elapsed}s total)\n`);
 
-    console.log(`\nSEO Check for: ${TEST_URL}`);
+    console.log(formatTestHeader('SEO Check', TEST_URL));
     console.log(await formatSEOCheckReport(results, page));
 
     const failedChecks = results.filter(r => !r.passed);
@@ -124,15 +227,35 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
     
     try {
       console.log(`\nNavigating to: ${TEST_URL}`);
-      await gotoAndWait(page, TEST_URL);
+      await gotoAndWaitForDOMContentLoaded(page, TEST_URL);
       currentUrl = await getCurrentUrl(page);
       console.log(`Successfully loaded: ${currentUrl}`);
       
+      console.log('\nStarting broken links check...');
+      const startTime = Date.now();
       const apiRequest = await request.newContext();
-      const brokenLinks = await checkBrokenLinks(page, apiRequest);
+      const { brokenLinks, totalLinks, screenshotPaths } = await checkBrokenLinks(page, apiRequest, undefined, 10, true); // Use visible links (default)
+      const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+      console.log(`\n✓ Broken links check completed (${elapsed}s total)\n`);
 
-    console.log(`\nBroken Links Check for: ${TEST_URL}`);
-    console.log(formatBrokenLinksReport(brokenLinks));
+    console.log(formatTestHeader('Broken Links Check', TEST_URL));
+    console.log(formatBrokenLinksReport(brokenLinks, totalLinks, TEST_URL));
+
+    // Attach broken links screenshots if available
+    if (screenshotPaths) {
+      if (screenshotPaths.fullPage) {
+        await test.info().attach('Broken Links - Overview', {
+          path: screenshotPaths.fullPage,
+          contentType: 'image/png',
+        });
+      }
+      screenshotPaths.closeUps.forEach((path: string, index: number) => {
+        test.info().attach(`Broken Link #${index + 1}`, {
+          path,
+          contentType: 'image/png',
+        });
+      });
+    }
 
     expect(brokenLinks.length).toBe(0);
     } catch (error: any) {
@@ -154,14 +277,19 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
     
     try {
       console.log(`\nNavigating to: ${TEST_URL}`);
-      await gotoAndWait(page, TEST_URL);
+      await gotoAndWaitForDOMContentLoaded(page, TEST_URL);
       currentUrl = await getCurrentUrl(page);
       console.log(`Successfully loaded: ${currentUrl}`);
 
-      const scanResults = await runAccessibilityCheck(page);
+      // Skip page load steps since we already loaded the page
+      console.log('\nStarting accessibility check...');
+      const startTime = Date.now();
+      const scanResults = await runAccessibilityCheckOnVisibleContent(page, { skipPageLoad: true });
+      const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+      console.log(`\n✓ Accessibility check completed (${elapsed}s total)\n`);
 
-    console.log(`\nAccessibility Check for: ${TEST_URL}`);
-    console.log(formatAccessibilityReport(scanResults));
+    console.log(formatTestHeader('Accessibility Check', TEST_URL));
+    console.log(await formatAccessibilityReport(scanResults, TEST_URL));
 
     expect(scanResults.passed).toBe(true);
     } catch (error: any) {
@@ -177,5 +305,6 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
       throw error;
     }
   });
+
 });
 

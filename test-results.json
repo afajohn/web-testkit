@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\playwright.config.ts",
-    "rootDir": "C:/Users/John Ranel/Documents/Cenix Files/Unit testings/ANewBride/tests",
+    "configFile": "C:\\Users\\AM - Shift\\Documents\\Scripts For Modifying\\Projects\\FromRepoGitHub\\Playwright-QAAutomation\\playwright.config.ts",
+    "rootDir": "C:/Users/AM - Shift/Documents/Scripts For Modifying/Projects/FromRepoGitHub/Playwright-QAAutomation/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -15,9 +15,7 @@
     "reporter": [
       [
         "html",
-        {
-          "outputFolder": "playwright-report"
-        }
+        null
       ],
       [
         "json",
@@ -33,18 +31,18 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/John Ranel/Documents/Cenix Files/Unit testings/ANewBride/test-results",
+        "outputDir": "C:/Users/AM - Shift/Documents/Scripts For Modifying/Projects/FromRepoGitHub/Playwright-QAAutomation/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {},
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/John Ranel/Documents/Cenix Files/Unit testings/ANewBride/tests",
+        "testDir": "C:/Users/AM - Shift/Documents/Scripts For Modifying/Projects/FromRepoGitHub/Playwright-QAAutomation/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 60000
       }
     ],
     "shard": null,
@@ -52,27 +50,676 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 10,
+    "workers": 2,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "SyntaxError: C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\tests\\interactive-accessibility.spec.ts: Unexpected reserved word 'await'. (73:8)\n\n  71 |       const element = elementsToTest[i];\n  72 |       const elementText = await element.textContent().catch(() => \n> 73 |         await element.getAttribute('aria-label').catch(() => 'unknown')\n     |         ^\n  74 |       );\n  75 |       \n  76 |       console.log(`Testing focused element ${i + 1}: \"${elementText?.trim()}\"`);",
-      "stack": "SyntaxError: C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\tests\\interactive-accessibility.spec.ts: Unexpected reserved word 'await'. (73:8)\n\n  71 |       const element = elementsToTest[i];\n  72 |       const elementText = await element.textContent().catch(() => \n> 73 |         await element.getAttribute('aria-label').catch(() => 'unknown')\n     |         ^\n  74 |       );\n  75 |       \n  76 |       console.log(`Testing focused element ${i + 1}: \"${elementText?.trim()}\"`);",
-      "location": {
-        "file": "C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\tests\\interactive-accessibility.spec.ts",
-        "line": 73,
-        "column": 8
-      },
-      "snippet": "   at interactive-accessibility.spec.ts:73\n\n  71 |       const element = elementsToTest[i];\n  72 |       const elementText = await element.textContent().catch(() => \n> 73 |         await element.getAttribute('aria-label').catch(() => 'unknown')\n     |        ^\n  74 |       );\n  75 |       \n  76 |       console.log(`Testing focused element ${i + 1}: \"${elementText?.trim()}\"`);"
+      "title": "accessibility.spec.ts",
+      "file": "accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Accessibility Testing",
+          "file": "accessibility.spec.ts",
+          "line": 11,
+          "column": 6,
+          "specs": [
+            {
+              "title": "check homepage accessibility (visible content only)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ddd864604af8a6a0198f-2cca78d319a3d71a4248",
+              "file": "accessibility.spec.ts",
+              "line": 12,
+              "column": 7
+            },
+            {
+              "title": "check tour page accessibility (visible content only)",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ddd864604af8a6a0198f-553ff46ccf04addc8253",
+              "file": "accessibility.spec.ts",
+              "line": 42,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "broken-links.spec.ts",
+      "file": "broken-links.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Broken Link Checking",
+          "file": "broken-links.spec.ts",
+          "line": 14,
+          "column": 6,
+          "specs": [
+            {
+              "title": "check all visible links on homepage",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "cdfe9f41deac1d8ba9c0-c2683b79c4aecfea270e",
+              "file": "broken-links.spec.ts",
+              "line": 15,
+              "column": 7
+            },
+            {
+              "title": "check visible links on tour page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "cdfe9f41deac1d8ba9c0-6cf225b09f36f58575a1",
+              "file": "broken-links.spec.ts",
+              "line": 46,
+              "column": 7
+            },
+            {
+              "title": "check visible links with custom concurrency",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "cdfe9f41deac1d8ba9c0-0b5c4edcb657de37cd04",
+              "file": "broken-links.spec.ts",
+              "line": 76,
+              "column": 7
+            },
+            {
+              "title": "extract and validate specific visible links",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "cdfe9f41deac1d8ba9c0-6c26a5d4d501c9a193cf",
+              "file": "broken-links.spec.ts",
+              "line": 105,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "comprehensive-audit.spec.ts",
+      "file": "comprehensive-audit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Comprehensive Site Audit",
+          "file": "comprehensive-audit.spec.ts",
+          "line": 24,
+          "column": 6,
+          "specs": [
+            {
+              "title": "full audit of homepage",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ac9d4d6bf271ce1160e6-21f8dba88eacd7cc13b8",
+              "file": "comprehensive-audit.spec.ts",
+              "line": 25,
+              "column": 7
+            },
+            {
+              "title": "full audit of tour page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "ac9d4d6bf271ce1160e6-ba0fb331e947f9b2f67d",
+              "file": "comprehensive-audit.spec.ts",
+              "line": 125,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "interactive-accessibility.spec.ts",
+      "file": "interactive-accessibility.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Interactive Accessibility Testing",
+          "file": "interactive-accessibility.spec.ts",
+          "line": 19,
+          "column": 6,
+          "specs": [
+            {
+              "title": "check accessibility on hovered buttons",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "865cde93f6b8f2477ed2-eff7486b71b167b30241",
+              "file": "interactive-accessibility.spec.ts",
+              "line": 20,
+              "column": 7
+            },
+            {
+              "title": "check accessibility on focused buttons",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "865cde93f6b8f2477ed2-cae0b3490558c6f3b3f5",
+              "file": "interactive-accessibility.spec.ts",
+              "line": 56,
+              "column": 7
+            },
+            {
+              "title": "check accessibility on modals/popups",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "865cde93f6b8f2477ed2-3ea4e38e65e347e8b5d8",
+              "file": "interactive-accessibility.spec.ts",
+              "line": 95,
+              "column": 7
+            },
+            {
+              "title": "custom: test specific button on hover",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "865cde93f6b8f2477ed2-ca0d393c0d6413a29a15",
+              "file": "interactive-accessibility.spec.ts",
+              "line": 136,
+              "column": 7
+            },
+            {
+              "title": "custom: test specific modal accessibility",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "865cde93f6b8f2477ed2-f35ee7374927d405f8ba",
+              "file": "interactive-accessibility.spec.ts",
+              "line": 157,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "seo-auto-test.spec.ts",
+      "file": "seo-auto-test.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Automatic SEO Audits",
+          "file": "seo-auto-test.spec.ts",
+          "line": 10,
+          "column": 6,
+          "specs": [
+            {
+              "title": "homepage with automatic SEO audit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7d31437c00ad2c4d6003-6450e71cc9e1b185f71a",
+              "file": "seo-auto-test.spec.ts",
+              "line": 11,
+              "column": 7
+            },
+            {
+              "title": "tour page with automatic SEO audit",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "7d31437c00ad2c4d6003-5aa41a754ba2801514fa",
+              "file": "seo-auto-test.spec.ts",
+              "line": 19,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "seo-checks.spec.ts",
+      "file": "seo-checks.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "SEO Checks",
+          "file": "seo-checks.spec.ts",
+          "line": 17,
+          "column": 6,
+          "specs": [
+            {
+              "title": "run comprehensive SEO checks on homepage",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8e6ba4cbdc670d1c0bd3-cd2cb7c06bf3ae4aec9e",
+              "file": "seo-checks.spec.ts",
+              "line": 18,
+              "column": 7
+            },
+            {
+              "title": "check page title specifically",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8e6ba4cbdc670d1c0bd3-8d75e30aceb78fab0a74",
+              "file": "seo-checks.spec.ts",
+              "line": 57,
+              "column": 7
+            },
+            {
+              "title": "check meta description length",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8e6ba4cbdc670d1c0bd3-9e23802475129c9bcd20",
+              "file": "seo-checks.spec.ts",
+              "line": 66,
+              "column": 7
+            },
+            {
+              "title": "check canonical URL",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8e6ba4cbdc670d1c0bd3-b8a7c21ca80b4687bd77",
+              "file": "seo-checks.spec.ts",
+              "line": 75,
+              "column": 7
+            },
+            {
+              "title": "check robots meta tag for index,follow",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8e6ba4cbdc670d1c0bd3-89d346eaec7f7e7f48d7",
+              "file": "seo-checks.spec.ts",
+              "line": 84,
+              "column": 7
+            },
+            {
+              "title": "check all visible images have alt attributes",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8e6ba4cbdc670d1c0bd3-c8e5ce9a4e8fbab9a371",
+              "file": "seo-checks.spec.ts",
+              "line": 96,
+              "column": 7
+            },
+            {
+              "title": "check heading structure",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8e6ba4cbdc670d1c0bd3-de000e558dafd77add77",
+              "file": "seo-checks.spec.ts",
+              "line": 106,
+              "column": 7
+            },
+            {
+              "title": "run SEO checks on tour page",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "8e6ba4cbdc670d1c0bd3-b3e653294f3042dba66c",
+              "file": "seo-checks.spec.ts",
+              "line": 115,
+              "column": 7
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "url-audit.spec.ts",
+      "file": "url-audit.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Audit Test for: https://anewbride.com/",
+          "file": "url-audit.spec.ts",
+          "line": 27,
+          "column": 6,
+          "specs": [
+            {
+              "title": "comprehensive audit - SEO, broken links, and accessibility",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1dfaec8f1a7c1d32c104-86ab46b371750eee89ba",
+              "file": "url-audit.spec.ts",
+              "line": 28,
+              "column": 7
+            },
+            {
+              "title": "SEO checks only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1dfaec8f1a7c1d32c104-6fd66777d11b393265f2",
+              "file": "url-audit.spec.ts",
+              "line": 137,
+              "column": 7
+            },
+            {
+              "title": "broken links check only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1dfaec8f1a7c1d32c104-ce1bc4fbf5e3884a9cb9",
+              "file": "url-audit.spec.ts",
+              "line": 170,
+              "column": 7
+            },
+            {
+              "title": "accessibility check only",
+              "ok": true,
+              "tags": [],
+              "tests": [
+                {
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [],
+                  "status": "skipped"
+                }
+              ],
+              "id": "1dfaec8f1a7c1d32c104-70c9e89926ad692f170c",
+              "file": "url-audit.spec.ts",
+              "line": 216,
+              "column": 7
+            }
+          ]
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2025-12-23T04:32:58.203Z",
-    "duration": 113.41699999999992,
+    "startTime": "2026-01-04T22:32:54.056Z",
+    "duration": 608.0040000000001,
     "expected": 0,
-    "skipped": 0,
+    "skipped": 27,
     "unexpected": 0,
     "flaky": 0
   }
