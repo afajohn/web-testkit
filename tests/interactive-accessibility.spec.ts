@@ -14,9 +14,11 @@ import { gotoAndWait } from '../utils/page-load';
  * - Focused/active buttons
  * - Open modals/popups
  */
+const BASE_URL = process.env.URL_AUDIT_URL || process.env.BASE_URL || 'https://anewbride.com/';
+
 test.describe('Interactive Accessibility Testing', () => {
   test('check accessibility on hovered buttons', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
     
     // Find all buttons on the page
     const buttons = await page.locator('button').all();
@@ -52,7 +54,7 @@ test.describe('Interactive Accessibility Testing', () => {
   });
 
   test('check accessibility on focused buttons', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
     
     // Find all interactive elements (buttons, links, inputs)
     const buttons = await page.locator('button, a[href], input, select, textarea').all();
@@ -69,7 +71,7 @@ test.describe('Interactive Accessibility Testing', () => {
     
     for (let i = 0; i < elementsToTest.length; i++) {
       const element = elementsToTest[i];
-      const elementText = await element.textContent().catch(() => 
+      const elementText = await element.textContent().catch(async () => 
         await element.getAttribute('aria-label').catch(() => 'unknown')
       );
       
@@ -90,7 +92,7 @@ test.describe('Interactive Accessibility Testing', () => {
   });
 
   test('check accessibility on modals/popups', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
     
     // Example: Find buttons that might open modals
     // You'll need to adjust selectors based on your site's structure
@@ -131,7 +133,7 @@ test.describe('Interactive Accessibility Testing', () => {
   });
 
   test('custom: test specific button on hover', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
     
     // Example: Test a specific button by selector
     // Adjust the selector to match your button
@@ -152,7 +154,7 @@ test.describe('Interactive Accessibility Testing', () => {
   });
 
   test('custom: test specific modal accessibility', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
     
     // Example: Test a specific modal
     // Adjust these selectors to match your modal structure

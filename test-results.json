@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\playwright.config.ts",
-    "rootDir": "C:/Users/John Ranel/Documents/Cenix Files/Unit testings/ANewBride/tests",
+    "configFile": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\playwright.config.ts",
+    "rootDir": "C:/Users/AM - Shift/Documents/web-testkit/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -10,14 +10,14 @@
     "grep": {},
     "grepInvert": null,
     "maxFailures": 0,
-    "metadata": {},
+    "metadata": {
+      "actualWorkers": 1
+    },
     "preserveOutput": "always",
     "reporter": [
       [
         "html",
-        {
-          "outputFolder": "playwright-report"
-        }
+        null
       ],
       [
         "json",
@@ -33,18 +33,20 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/John Ranel/Documents/Cenix Files/Unit testings/ANewBride/test-results",
+        "outputDir": "C:/Users/AM - Shift/Documents/web-testkit/test-results",
         "repeatEach": 1,
         "retries": 0,
-        "metadata": {},
+        "metadata": {
+          "actualWorkers": 1
+        },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/John Ranel/Documents/Cenix Files/Unit testings/ANewBride/tests",
+        "testDir": "C:/Users/AM - Shift/Documents/web-testkit/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
         ],
-        "timeout": 30000
+        "timeout": 60000
       }
     ],
     "shard": null,
@@ -52,28 +54,84 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 10,
+    "workers": 2,
     "webServer": null
   },
-  "suites": [],
-  "errors": [
+  "suites": [
     {
-      "message": "SyntaxError: C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\tests\\interactive-accessibility.spec.ts: Unexpected reserved word 'await'. (73:8)\n\n  71 |       const element = elementsToTest[i];\n  72 |       const elementText = await element.textContent().catch(() => \n> 73 |         await element.getAttribute('aria-label').catch(() => 'unknown')\n     |         ^\n  74 |       );\n  75 |       \n  76 |       console.log(`Testing focused element ${i + 1}: \"${elementText?.trim()}\"`);",
-      "stack": "SyntaxError: C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\tests\\interactive-accessibility.spec.ts: Unexpected reserved word 'await'. (73:8)\n\n  71 |       const element = elementsToTest[i];\n  72 |       const elementText = await element.textContent().catch(() => \n> 73 |         await element.getAttribute('aria-label').catch(() => 'unknown')\n     |         ^\n  74 |       );\n  75 |       \n  76 |       console.log(`Testing focused element ${i + 1}: \"${elementText?.trim()}\"`);",
-      "location": {
-        "file": "C:\\Users\\John Ranel\\Documents\\Cenix Files\\Unit testings\\ANewBride\\tests\\interactive-accessibility.spec.ts",
-        "line": 73,
-        "column": 8
-      },
-      "snippet": "   at interactive-accessibility.spec.ts:73\n\n  71 |       const element = elementsToTest[i];\n  72 |       const elementText = await element.textContent().catch(() => \n> 73 |         await element.getAttribute('aria-label').catch(() => 'unknown')\n     |        ^\n  74 |       );\n  75 |       \n  76 |       console.log(`Testing focused element ${i + 1}: \"${elementText?.trim()}\"`);"
+      "title": "broken-links.spec.ts",
+      "file": "broken-links.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [
+        {
+          "title": "URL is not broken",
+          "ok": false,
+          "tags": [],
+          "tests": [
+            {
+              "timeout": 60000,
+              "annotations": [],
+              "expectedStatus": "passed",
+              "projectId": "chromium",
+              "projectName": "chromium",
+              "results": [
+                {
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 472,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m400\u001b[39m\nReceived:   \u001b[31m400\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m400\u001b[39m\nReceived:   \u001b[31m400\u001b[39m\n    at C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts:77:29",
+                    "location": {
+                      "file": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts",
+                      "column": 29,
+                      "line": 77
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(url)\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
+                    {
+                      "location": {
+                        "file": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts",
+                        "column": 29,
+                        "line": 77
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m400\u001b[39m\nReceived:   \u001b[31m400\u001b[39m\n\n\u001b[0m \u001b[90m 75 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(url)\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts:77:29\u001b[22m"
+                    }
+                  ],
+                  "stdout": [],
+                  "stderr": [],
+                  "retry": 0,
+                  "startTime": "2026-01-07T04:36:39.772Z",
+                  "annotations": [],
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts",
+                    "column": 29,
+                    "line": 77
+                  }
+                }
+              ],
+              "status": "unexpected"
+            }
+          ],
+          "id": "cdfe9f41deac1d8ba9c0-5b078d415ede736fcc1d",
+          "file": "broken-links.spec.ts",
+          "line": 72,
+          "column": 5
+        }
+      ]
     }
   ],
+  "errors": [],
   "stats": {
-    "startTime": "2025-12-23T04:32:58.203Z",
-    "duration": 113.41699999999992,
+    "startTime": "2026-01-07T04:36:38.745Z",
+    "duration": 1563.4619999999998,
     "expected": 0,
     "skipped": 0,
-    "unexpected": 0,
+    "unexpected": 1,
     "flaky": 0
   }
 }

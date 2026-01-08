@@ -8,9 +8,11 @@ import {
 } from '../utils/broken-links';
 import { gotoAndWait } from '../utils/page-load';
 
+const BASE_URL = process.env.URL_AUDIT_URL || process.env.BASE_URL || 'https://anewbride.com/';
+
 test.describe('Broken Link Checking', () => {
   test('check all links on homepage', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
     
     const apiRequest = await request.newContext();
     const brokenLinks = await checkBrokenLinks(page, apiRequest);
@@ -23,7 +25,8 @@ test.describe('Broken Link Checking', () => {
   });
 
   test('check links on tour page', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/tour/things-to-consider-on-singles-tours.html');
+    const tourPageUrl = process.env.TOUR_PAGE_URL || `${BASE_URL}tour/things-to-consider-on-singles-tours.html`;
+    await gotoAndWait(page, tourPageUrl);
     
     const apiRequest = await request.newContext();
     const brokenLinks = await checkBrokenLinks(page, apiRequest);
@@ -33,7 +36,7 @@ test.describe('Broken Link Checking', () => {
   });
 
   test('check links with custom concurrency', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
     
     const apiRequest = await request.newContext();
     // Check links with higher concurrency for faster execution
@@ -44,7 +47,7 @@ test.describe('Broken Link Checking', () => {
   });
 
   test('extract and validate specific links', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
     
     const links = await extractLinks(page);
     console.log(`Found ${links.length} links on the page`);

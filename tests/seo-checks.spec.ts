@@ -12,9 +12,11 @@ import {
 } from '../utils/seo-checks';
 import { gotoAndWait } from '../utils/page-load';
 
+const BASE_URL = process.env.URL_AUDIT_URL || process.env.BASE_URL || 'https://anewbride.com/';
+
 test.describe('SEO Checks', () => {
   test('run comprehensive SEO checks on homepage', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
 
     const results = await runSEOChecks(page, {
       checkTitle: true,
@@ -35,16 +37,16 @@ test.describe('SEO Checks', () => {
   });
 
   test('check page title specifically', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
 
-    const result = await checkPageTitle(page, /ANewBride/i);
+    const result = await checkPageTitle(page);
     
     console.log(`Title check: ${result.message}`);
     expect(result.passed).toBe(true);
   });
 
   test('check meta description length', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
 
     const result = await checkMetaDescription(page, 50, 160);
     
@@ -53,7 +55,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check canonical URL', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
 
     const result = await checkCanonicalURL(page);
     
@@ -62,7 +64,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check robots meta tag for index,follow', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
 
     const result = await checkRobotsMetaTag(page, true, true); // require index and follow
     
@@ -74,7 +76,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check all images have alt attributes', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
 
     const result = await checkImageAltAttributes(page);
     
@@ -83,7 +85,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check heading structure', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/');
+    await gotoAndWait(page, BASE_URL);
 
     const result = await checkHeadingStructure(page);
     
@@ -92,7 +94,8 @@ test.describe('SEO Checks', () => {
   });
 
   test('run SEO checks on tour page', async ({ page }) => {
-    await gotoAndWait(page, 'https://anewbride.com/tour/things-to-consider-on-singles-tours.html');
+    const tourPageUrl = process.env.TOUR_PAGE_URL || `${BASE_URL}tour/things-to-consider-on-singles-tours.html`;
+    await gotoAndWait(page, tourPageUrl);
 
     const results = await runSEOChecks(page);
 
