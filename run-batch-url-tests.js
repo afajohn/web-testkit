@@ -52,7 +52,7 @@ const URLS = [
   // 'https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/hundreds-of-hot-mexican-women-line-up-to-date-foreigners.html',
   // 'https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/index.html',
   // 'https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/is-cdmx-safe-for-expats-and-foreigners-dating-mexican-girls.html',
-  // 'https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/latina-dating-bootcamp-foreign-guys-in-mexico-city.html',
+  'https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/latina-dating-bootcamp-foreign-guys-in-mexico-city.html',
   // 'https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/mexican-career-women-cant-find-love.html',
   // 'https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/mexican-matchmakers-expose-why-latinas-date-foreigners.html',
   // 'https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/mexican-matchmakers-go-all-out-to-help-foreign-daters.html',
