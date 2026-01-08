@@ -1,462 +1,312 @@
 import { Page, Locator } from '@playwright/test';
 import AxeBuilder from '@axe-core/playwright';
-import {
-  waitForDOMReady,
-  scrollToBottom,
-  waitForLazyContent,
-} from './dom-helpers';
-import {
-  formatSectionHeader,
-  formatTableHeader,
-  formatTableRow,
-  formatSeparator,
-  formatUnifiedReport,
-  type ReportItem,
-  type ReportSection,
-} from './formatting';
-import { createViolationScreenshots } from './screenshot-helpers';
 
 /**
- * Helper function to convert a Locator or string selector to a string selector
- * for use with AxeBuilder.include(). AxeBuilder requires string selectors, not Locator objects.
+ * Interface for accessibility scan results
  */
-async function getSelectorFromLocatorOrString(
-  page: Page,
-  selector: string | Locator
-): Promise<string> {
-  // If it's already a string, return it directly
-  if (typeof selector === 'string') {
-    return selector;
+export interface AccessibilityScanResults {
+  violations: any[];
+  incomplete: any[];
+  passed: boolean;
+  totalViolations: number;
+  totalIncomplete: number;
+}
+
+/**
+ * Get a CSS selector string from an axe target array
+ */
+export function getSelectorFromTarget(target: string[]): string {
+  if (!Array.isArray(target) || target.length === 0) {
+    return '';
   }
-  
-  // For Locator, try to generate a unique selector by evaluating the element
+  // Join target array elements with space for compound selectors
+  return target.join(' ');
+}
+
+/**
+ * Run full accessibility audit on the page using axe-core
+ */
+export async function runAccessibilityCheck(page: Page): Promise<AccessibilityScanResults> {
   try {
-    // Get the element and try to generate a unique selector
-    const selectorString = await selector.evaluate((el: Element) => {
-      // Try to generate a unique selector path
-      // Priority: id > class > tag with attributes > tag
-      if (el.id) {
-        return `#${el.id}`;
-      }
-      
-      // Try class-based selector
-      if (el.className && typeof el.className === 'string') {
-        const classes = el.className.trim().split(/\s+/).filter(c => c.length > 0);
-        if (classes.length > 0) {
-          const classSelector = '.' + classes.join('.');
-          // Check if this selector is unique (simplified check)
-          const matches = document.querySelectorAll(classSelector);
-          if (matches.length === 1) {
-            return classSelector;
-          }
-          // If not unique, add tag name
-          return `${el.tagName.toLowerCase()}${classSelector}`;
-        }
-      }
-      
-      // Fallback: use tag name with attributes
-      const tagName = el.tagName.toLowerCase();
-      const attrs: string[] = [];
-      
-      // Add data attributes
-      Array.from(el.attributes).forEach(attr => {
-        if (attr.name.startsWith('data-')) {
-          attrs.push(`[${attr.name}="${attr.value}"]`);
-        }
-      });
-      
-      if (attrs.length > 0) {
-        return `${tagName}${attrs.join('')}`;
-      }
-      
-      // Last resort: just tag name
-      return tagName;
-    });
+    const results = await new AxeBuilder({ page }).analyze();
     
-    return selectorString;
-  } catch (error) {
-    // If we can't generate a selector, throw a helpful error
-    throw new Error(
-      'Unable to convert Locator to selector string for AxeBuilder.include(). ' +
-      'Please use a string selector instead, or ensure the Locator references a valid element.'
-    );
+    return {
+      violations: results.violations || [],
+      incomplete: results.incomplete || [],
+      passed: (results.violations || []).length === 0,
+      totalViolations: (results.violations || []).length,
+      totalIncomplete: (results.incomplete || []).length,
+    };
+  } catch (error: any) {
+    console.error('Error running accessibility check:', error);
+    return {
+      violations: [],
+      incomplete: [],
+      passed: false,
+      totalViolations: 0,
+      totalIncomplete: 0,
+    };
   }
 }
 
 /**
- * Run accessibility audit using axe-core
- * Can optionally exclude hidden elements
- */
-export async function runAccessibilityCheck(
-  page: Page,
-  excludeHidden: boolean = false
-) {
-  const axeBuilder = new AxeBuilder({ page });
-  
-  if (excludeHidden) {
-    axeBuilder.exclude('[style*="display: none"], [hidden], [aria-hidden="true"]');
-  }
-  
-  const accessibilityScanResults = await axeBuilder.analyze();
-  
-  const violations = accessibilityScanResults.violations;
-  const incomplete = accessibilityScanResults.incomplete;
-  
-  return {
-    violations,
-    incomplete,
-    passed: violations.length === 0,
-    totalViolations: violations.length,
-    totalIncomplete: incomplete.length,
-  };
-}
-
-/**
- * Run accessibility check on visible content only
- * CRITICAL: Waits for DOM to be fully loaded, scrolls through entire page,
- * waits for lazy content, and excludes hidden elements
- * NO SKIPPING - checks all visible elements
- * 
- * @param page - Playwright page object
- * @param options - Optional configuration
- * @param options.skipPageLoad - If true, skip waiting/scrolling (page already loaded)
- * @param options.captureScreenshot - If true, capture screenshots when violations are found (default: true)
- */
-export async function runAccessibilityCheckOnVisibleContent(
-  page: Page,
-  options: { skipPageLoad?: boolean; captureScreenshot?: boolean } = {}
-) {
-  const startTime = Date.now();
-  const { skipPageLoad = false, captureScreenshot = true } = options;
-
-  console.log('  ⏳ Starting accessibility check...');
-
-  if (!skipPageLoad) {
-    // FIRST: Wait for DOM to be fully loaded
-    console.log('  ⏳ Waiting for DOM to be fully loaded...');
-    await waitForDOMReady(page);
-
-    // Scroll through entire page before checking (no skipping)
-    console.log('  ⏳ Scrolling through page to check all content...');
-    await scrollToBottom(page);
-
-    // Wait for all lazy content to load
-    console.log('  ⏳ Waiting for lazy content to load...');
-    await waitForLazyContent(page);
-
-    // Wait for dynamic content to fully render
-    await page.waitForTimeout(500);
-  }
-
-  // Configure axe-core to exclude hidden elements
-  console.log('  ⏳ Running accessibility scan (axe-core)...');
-  const scanStart = Date.now();
-  const accessibilityScanResults = await new AxeBuilder({ page })
-    .exclude('[style*="display: none"], [hidden], [aria-hidden="true"]')
-    .analyze();
-  const scanElapsed = ((Date.now() - scanStart) / 1000).toFixed(1);
-  console.log(`  ✓ Accessibility scan complete (${scanElapsed}s)`);
-  
-  const violations = accessibilityScanResults.violations;
-  const incomplete = accessibilityScanResults.incomplete;
-  
-  // Capture screenshots if violations found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && violations.length > 0) {
-    console.log(`  ⏳ Capturing screenshots for ${violations.length} violation(s)...`);
-    try {
-      screenshotPaths = await createViolationScreenshots(page, violations, 'test-results');
-      console.log('  ✓ Screenshots captured');
-    } catch (error) {
-      console.warn('  ⚠️  Failed to capture accessibility violation screenshots:', error);
-    }
-  }
-  
-  const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.log(`  ✓ Accessibility check complete: ${violations.length} violations, ${incomplete.length} incomplete (${totalElapsed}s total)`);
-  
-  return {
-    violations,
-    incomplete,
-    passed: violations.length === 0,
-    totalViolations: violations.length,
-    totalIncomplete: incomplete.length,
-    screenshotPaths,
-  };
-}
-
-/**
- * Run accessibility check on a specific element (useful for modals, dropdowns, etc.)
+ * Run accessibility check on a specific element
  */
 export async function runAccessibilityCheckOnElement(
   page: Page,
-  selector: string | Locator,
-  options: { captureScreenshot?: boolean } = {}
-) {
-  const { captureScreenshot = true } = options;
-  const element = typeof selector === 'string' ? page.locator(selector).first() : selector;
-  
-  // Convert Locator to string selector for AxeBuilder.include()
-  const selectorString = await getSelectorFromLocatorOrString(page, selector);
-  
-  const accessibilityScanResults = await new AxeBuilder({ page })
-    .include(selectorString)
-    .analyze();
-  
-  const violations = accessibilityScanResults.violations;
-  const incomplete = accessibilityScanResults.incomplete;
-  
-  // Capture screenshots if violations found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && violations.length > 0) {
-    try {
-      screenshotPaths = await createViolationScreenshots(page, violations, 'test-results');
-    } catch (error) {
-      console.warn('Failed to capture accessibility violation screenshots:', error);
+  selector: string | Locator
+): Promise<AccessibilityScanResults> {
+  try {
+    const builder = new AxeBuilder({ page });
+    
+    // AxeBuilder.include() only accepts string selectors
+    if (typeof selector === 'string') {
+      builder.include(selector);
     }
+    // For Locator, we scan the whole page - filtering is handled by axe
+    // Alternatively, we could evaluate the locator to get its selector, but that's complex
+    
+    const results = await builder.analyze();
+    
+    return {
+      violations: results.violations || [],
+      incomplete: results.incomplete || [],
+      passed: (results.violations || []).length === 0,
+      totalViolations: (results.violations || []).length,
+      totalIncomplete: (results.incomplete || []).length,
+    };
+  } catch (error: any) {
+    console.error('Error running accessibility check on element:', error);
+    return {
+      violations: [],
+      incomplete: [],
+      passed: false,
+      totalViolations: 0,
+      totalIncomplete: 0,
+    };
   }
-  
-  return {
-    violations,
-    incomplete,
-    passed: violations.length === 0,
-    totalViolations: violations.length,
-    totalIncomplete: incomplete.length,
-    screenshotPaths,
-  };
 }
 
 /**
- * Run accessibility check on an element in hover state
+ * Run accessibility check when an element is hovered
  */
 export async function runAccessibilityCheckOnHover(
   page: Page,
-  selector: string | Locator,
-  options: { captureScreenshot?: boolean } = {}
-) {
-  const { captureScreenshot = true } = options;
-  const element = typeof selector === 'string' ? page.locator(selector).first() : selector;
-  
-  // Hover over the element
-  await element.hover();
-  
-  // Wait a bit for hover effects to apply
-  await page.waitForTimeout(100);
-  
-  // Convert Locator to string selector for AxeBuilder.include()
-  const selectorString = await getSelectorFromLocatorOrString(page, selector);
-  
-  // Run accessibility check
-  const accessibilityScanResults = await new AxeBuilder({ page })
-    .include(selectorString)
-    .analyze();
-  
-  const violations = accessibilityScanResults.violations;
-  const incomplete = accessibilityScanResults.incomplete;
-  
-  // Capture screenshots if violations found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && violations.length > 0) {
-    try {
-      screenshotPaths = await createViolationScreenshots(page, violations, 'test-results');
-    } catch (error) {
-      console.warn('Failed to capture accessibility violation screenshots:', error);
+  element: string | Locator
+): Promise<AccessibilityScanResults> {
+  try {
+    const locator = typeof element === 'string' ? page.locator(element) : element;
+    
+    // Hover over the element
+    await locator.hover();
+    
+    // Wait a bit for any hover effects to apply
+    await page.waitForTimeout(100);
+    
+    // Run accessibility check
+    // Note: For Locator objects, we scan the whole page
+    // To target specific element with Locator, convert to selector string first
+    const builder = new AxeBuilder({ page });
+    if (typeof element === 'string') {
+      builder.include(element);
     }
+    const results = await builder.analyze();
+    
+    return {
+      violations: results.violations || [],
+      incomplete: results.incomplete || [],
+      passed: (results.violations || []).length === 0,
+      totalViolations: (results.violations || []).length,
+      totalIncomplete: (results.incomplete || []).length,
+    };
+  } catch (error: any) {
+    console.error('Error running accessibility check on hover:', error);
+    return {
+      violations: [],
+      incomplete: [],
+      passed: false,
+      totalViolations: 0,
+      totalIncomplete: 0,
+    };
   }
-  
-  return {
-    violations,
-    incomplete,
-    passed: violations.length === 0,
-    totalViolations: violations.length,
-    totalIncomplete: incomplete.length,
-    screenshotPaths,
-  };
 }
 
 /**
- * Run accessibility check on an element in focus/active state
+ * Run accessibility check when an element is focused/active
  */
-export async function runAccessibilityCheckOnFocus(page: Page, selector: string | Locator) {
-  const element = typeof selector === 'string' ? page.locator(selector).first() : selector;
-  
-  // Focus the element (can be button, input, link, etc.)
-  await element.focus();
-  
-  // Wait a bit for focus effects to apply
-  await page.waitForTimeout(100);
-  
-  // Convert Locator to string selector for AxeBuilder.include()
-  const selectorString = await getSelectorFromLocatorOrString(page, selector);
-  
-  // Run accessibility check
-  const accessibilityScanResults = await new AxeBuilder({ page })
-    .include(selectorString)
-    .analyze();
-  
-  const violations = accessibilityScanResults.violations;
-  const incomplete = accessibilityScanResults.incomplete;
-  
-  return {
-    violations,
-    incomplete,
-    passed: violations.length === 0,
-    totalViolations: violations.length,
-    totalIncomplete: incomplete.length,
-  };
+export async function runAccessibilityCheckOnFocus(
+  page: Page,
+  element: string | Locator
+): Promise<AccessibilityScanResults> {
+  try {
+    const locator = typeof element === 'string' ? page.locator(element) : element;
+    
+    // Focus the element
+    await locator.focus();
+    
+    // Wait a bit for any focus effects to apply
+    await page.waitForTimeout(100);
+    
+    // Run accessibility check
+    // Note: For Locator objects, we scan the whole page
+    // To target specific element with Locator, convert to selector string first
+    const builder = new AxeBuilder({ page });
+    if (typeof element === 'string') {
+      builder.include(element);
+    }
+    const results = await builder.analyze();
+    
+    return {
+      violations: results.violations || [],
+      incomplete: results.incomplete || [],
+      passed: (results.violations || []).length === 0,
+      totalViolations: (results.violations || []).length,
+      totalIncomplete: (results.incomplete || []).length,
+    };
+  } catch (error: any) {
+    console.error('Error running accessibility check on focus:', error);
+    return {
+      violations: [],
+      incomplete: [],
+      passed: false,
+      totalViolations: 0,
+      totalIncomplete: 0,
+    };
+  }
 }
 
 /**
  * Run accessibility check on a modal/popup
- * First opens the modal, then checks it, then closes it
+ * Opens the modal, checks it, then closes it
  */
 export async function runAccessibilityCheckOnModal(
   page: Page,
   openSelector: string | Locator,
   modalSelector: string | Locator,
   closeSelector?: string | Locator
-) {
-  const openButton = typeof openSelector === 'string' ? page.locator(openSelector).first() : openSelector;
-  const modal = typeof modalSelector === 'string' ? page.locator(modalSelector).first() : modalSelector;
-  
-  // Open the modal
-  await openButton.click();
-  
-  // Wait for modal to be visible
-  await modal.waitFor({ state: 'visible' });
-  await page.waitForTimeout(200); // Wait for animations/transitions
-  
-  // Convert Locator to string selector for AxeBuilder.include()
-  const modalSelectorString = await getSelectorFromLocatorOrString(page, modalSelector);
-  
-  // Run accessibility check on the modal
-  const accessibilityScanResults = await new AxeBuilder({ page })
-    .include(modalSelectorString)
-    .analyze();
-  
-  const violations = accessibilityScanResults.violations;
-  const incomplete = accessibilityScanResults.incomplete;
-  
-  // Close the modal if close selector is provided
-  if (closeSelector) {
-    const closeButton = typeof closeSelector === 'string' 
-      ? page.locator(closeSelector).first() 
-      : closeSelector;
-    await closeButton.click();
-    await modal.waitFor({ state: 'hidden' }).catch(() => {}); // Modal might close immediately
-  } else {
-    // Try pressing Escape key as fallback
-    await page.keyboard.press('Escape');
-    await modal.waitFor({ state: 'hidden' }).catch(() => {});
+): Promise<AccessibilityScanResults> {
+  try {
+    const openLocator = typeof openSelector === 'string' ? page.locator(openSelector) : openSelector;
+    const modalLocator = typeof modalSelector === 'string' ? page.locator(modalSelector) : modalSelector;
+    
+    // Open the modal
+    await openLocator.click();
+    
+    // Wait for modal to appear
+    await modalLocator.waitFor({ state: 'visible', timeout: 5000 });
+    await page.waitForTimeout(200); // Give time for animations
+    
+    // Run accessibility check on the modal
+    const builder = new AxeBuilder({ page });
+    if (typeof modalSelector === 'string') {
+      builder.include(modalSelector);
+    }
+    const results = await builder.analyze();
+    
+    // Close the modal if close selector is provided
+    if (closeSelector) {
+      const closeLocator = typeof closeSelector === 'string' ? page.locator(closeSelector) : closeSelector;
+      try {
+        await closeLocator.click();
+        await page.waitForTimeout(200);
+      } catch (error) {
+        // If closing fails, try pressing Escape
+        await page.keyboard.press('Escape');
+      }
+    } else {
+      // Try pressing Escape to close
+      await page.keyboard.press('Escape');
+    }
+    
+    return {
+      violations: results.violations || [],
+      incomplete: results.incomplete || [],
+      passed: (results.violations || []).length === 0,
+      totalViolations: (results.violations || []).length,
+      totalIncomplete: (results.incomplete || []).length,
+    };
+  } catch (error: any) {
+    console.error('Error running accessibility check on modal:', error);
+    return {
+      violations: [],
+      incomplete: [],
+      passed: false,
+      totalViolations: 0,
+      totalIncomplete: 0,
+    };
   }
-  
-  return {
-    violations,
-    incomplete,
-    passed: violations.length === 0,
-    totalViolations: violations.length,
-    totalIncomplete: incomplete.length,
-  };
 }
 
 /**
- * Format accessibility check results for reporting with detailed element information
+ * Format accessibility scan results for console output
  */
-export function formatAccessibilityReport(
-  scanResults: {
-    violations: any[];
-    incomplete: any[];
-    passed: boolean;
-    totalViolations: number;
-    totalIncomplete: number;
-  },
-  url?: string
-): string {
-  // Build summary using unified template
-  const summary: ReportItem[] = [
-    {
-      label: 'Violations',
-      value: scanResults.totalViolations,
-      status: scanResults.totalViolations === 0 ? 'passed' : 'failed',
-    },
-    {
-      label: 'Incomplete Checks',
-      value: scanResults.totalIncomplete,
-      status: scanResults.totalIncomplete === 0 ? 'passed' : 'warning',
-    },
-  ];
-
-  // Build sections for violations and incomplete checks
-  const sections: ReportSection[] = [];
-
-  if (scanResults.violations.length > 0) {
-    sections.push({
-      title: 'Violations',
-      items: scanResults.violations.map((violation) => {
-        const affectedCount = violation.nodes?.length || 0;
-        let details = `Impact: ${violation.impact}`;
-        if (violation.helpUrl) {
-          details += `\nHelp: ${violation.helpUrl}`;
-        }
-        if (affectedCount > 0) {
-          details += `\nAffected Elements: ${affectedCount}`;
+export function formatAccessibilityReport(results: AccessibilityScanResults): string {
+  let output = '\n=== ACCESSIBILITY AUDIT RESULTS ===\n';
+  
+  output += `Status: ${results.passed ? '✅ PASSED' : '❌ FAILED'}\n`;
+  output += `Total Violations: ${results.totalViolations}\n`;
+  output += `Total Incomplete: ${results.totalIncomplete}\n\n`;
+  
+  if (results.totalViolations === 0 && results.totalIncomplete === 0) {
+    output += '✅ No accessibility issues found!\n';
+    return output;
+  }
+  
+  // Format violations
+  if (results.violations && results.violations.length > 0) {
+    output += '❌ VIOLATIONS (Must Fix):\n';
+    output += '─'.repeat(70) + '\n';
+    
+    results.violations.forEach((violation: any, index: number) => {
+      output += `\n${index + 1}. ${violation.id} - ${violation.impact || 'Unknown'} Impact\n`;
+      output += `   Description: ${violation.description || 'No description'}\n`;
+      output += `   Help: ${violation.help || 'No help available'}\n`;
+      output += `   Help URL: ${violation.helpUrl || 'N/A'}\n`;
+      
+      if (violation.nodes && violation.nodes.length > 0) {
+        output += `   Affected Elements (${violation.nodes.length}):\n`;
+        violation.nodes.forEach((node: any, nodeIndex: number) => {
+          const selector = node.selector || getSelectorFromTarget(node.target || []);
+          output += `     ${nodeIndex + 1}. ${selector || 'Unknown selector'}\n`;
           
-          // Add first few element details
-          if (violation.nodes && violation.nodes.length > 0) {
-            const firstNode = violation.nodes[0];
-            if (firstNode.target && Array.isArray(firstNode.target)) {
-              const selector = firstNode.target[firstNode.target.length - 1];
-              details += `\nExample Selector: ${selector}`;
-            }
-            if (firstNode.failureSummary) {
-              details += `\nIssue: ${firstNode.failureSummary.trim()}`;
-            }
+          if (node.failureSummary) {
+            output += `        ${node.failureSummary.trim()}\n`;
           }
-        }
-        
-        return {
-          label: `${violation.id}: ${violation.description}`,
-          value: affectedCount > 0 ? `${affectedCount} element${affectedCount > 1 ? 's' : ''}` : '0 elements',
-          status: 'failed' as const,
-          details,
-        };
-      }),
+          
+          if (node.html) {
+            // Truncate HTML if too long
+            const htmlPreview = node.html.length > 100 
+              ? node.html.substring(0, 100) + '...' 
+              : node.html;
+            output += `        HTML: ${htmlPreview}\n`;
+          }
+        });
+      }
+      
+      output += '\n';
     });
   }
-
-  if (scanResults.incomplete.length > 0) {
-    sections.push({
-      title: 'Incomplete Checks (needs manual review)',
-      items: scanResults.incomplete.map((incomplete) => {
-        const affectedCount = incomplete.nodes?.length || 0;
-        let details = `Help: ${incomplete.helpUrl || 'N/A'}`;
-        if (affectedCount > 0) {
-          details += `\nAffected Elements: ${affectedCount}`;
-        }
-        
-        return {
-          label: `${incomplete.id}: ${incomplete.description}`,
-          value: affectedCount > 0 ? `${affectedCount} element${affectedCount > 1 ? 's' : ''}` : '0 elements',
-          status: 'warning' as const,
-          details,
-        };
-      }),
+  
+  // Format incomplete (needs manual review)
+  if (results.incomplete && results.incomplete.length > 0) {
+    output += '⚠️  INCOMPLETE (Needs Review):\n';
+    output += '─'.repeat(70) + '\n';
+    
+    results.incomplete.forEach((incomplete: any, index: number) => {
+      output += `\n${index + 1}. ${incomplete.id}\n`;
+      output += `   Description: ${incomplete.description || 'No description'}\n`;
+      
+      if (incomplete.nodes && incomplete.nodes.length > 0) {
+        output += `   Elements to Review (${incomplete.nodes.length}):\n`;
+        incomplete.nodes.forEach((node: any, nodeIndex: number) => {
+          const selector = node.selector || getSelectorFromTarget(node.target || []);
+          output += `     ${nodeIndex + 1}. ${selector || 'Unknown selector'}\n`;
+        });
+      }
+      
+      output += '\n';
     });
   }
-
-  // Use unified template
-  let report = formatUnifiedReport({
-    testName: 'Accessibility Check',
-    url,
-    summary,
-    sections,
-  });
   
-  // Add screenshot note if sections exist (errors found)
-  if (sections.length > 0) {
-    report += `\n📸 Screenshots have been captured and attached to the test report.\n`;
-  }
-  
-  return report;
+  return output;
 }
-

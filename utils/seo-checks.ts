@@ -1,16 +1,4 @@
 import { Page, expect } from '@playwright/test';
-import {
-  waitForDOMReady,
-  scrollToBottom,
-  waitForLazyContent,
-  isElementVisible,
-} from './dom-helpers';
-import {
-  formatUnifiedReport,
-  type ReportItem,
-  type ReportSection,
-} from './formatting';
-import { createSEOErrorScreenshots } from './screenshot-helpers';
 
 /**
  * Interface for SEO check results
@@ -153,27 +141,12 @@ export interface ImageInfo {
 
 /**
  * Get detailed information about all images on the page
- * Now filters for visible images only and waits for lazy loading
  */
-export async function getAllImageInfo(page: Page, waitForDOM: boolean = true): Promise<ImageInfo[]> {
-  // FIRST: Wait for DOM to be fully loaded if requested
-  if (waitForDOM) {
-    await waitForDOMReady(page);
-    await scrollToBottom(page);
-    await waitForLazyContent(page);
-  }
-
-  const allImages = await page.locator('img').all();
+export async function getAllImageInfo(page: Page): Promise<ImageInfo[]> {
+  const images = await page.locator('img').all();
   const imageInfo: ImageInfo[] = [];
 
-  // Filter for visible images only - NO SKIPPING: Check ALL images
-  for (const img of allImages) {
-    // Check if image is visible
-    const visible = await isElementVisible(img);
-    if (!visible) {
-      continue; // Skip hidden images
-    }
-
+  for (const img of images) {
     const src = (await img.getAttribute('src')) || 'unknown';
     const alt = await img.getAttribute('alt');
     const title = await img.getAttribute('title');
@@ -194,29 +167,12 @@ export async function getAllImageInfo(page: Page, waitForDOM: boolean = true): P
 
 /**
  * Check if all images have alt attributes (accessibility + SEO)
- * Now checks only visible images and waits for DOM/lazy loading
  */
-export async function checkImageAltAttributes(page: Page, waitForDOM: boolean = true): Promise<SEOCheckResult> {
-  // Wait for DOM ready first if requested
-  if (waitForDOM) {
-    await waitForDOMReady(page);
-    await scrollToBottom(page);
-    await waitForLazyContent(page);
-  }
-
-  const allImages = await page.locator('img').all();
+export async function checkImageAltAttributes(page: Page): Promise<SEOCheckResult> {
+  const images = await page.locator('img').all();
   const imagesWithoutAlt: string[] = [];
-  let visibleCount = 0;
 
-  // Check ALL visible images - NO SKIPPING
-  for (const img of allImages) {
-    // Check if image is visible
-    const visible = await isElementVisible(img);
-    if (!visible) {
-      continue; // Skip hidden images
-    }
-
-    visibleCount++;
+  for (const img of images) {
     const alt = await img.getAttribute('alt');
     if (alt === null) {
       const src = (await img.getAttribute('src')) || 'unknown';
@@ -228,7 +184,7 @@ export async function checkImageAltAttributes(page: Page, waitForDOM: boolean = 
     return {
       check: 'Image Alt Attributes',
       passed: false,
-      message: `${imagesWithoutAlt.length} visible image(s) missing alt attribute`,
+      message: `${imagesWithoutAlt.length} image(s) missing alt attribute`,
       value: imagesWithoutAlt.join(', '),
     };
   }
@@ -236,7 +192,7 @@ export async function checkImageAltAttributes(page: Page, waitForDOM: boolean = 
   return {
     check: 'Image Alt Attributes',
     passed: true,
-    message: `All ${visibleCount} visible images have alt attributes`,
+    message: `All ${images.length} images have alt attributes`,
   };
 }
 
@@ -388,10 +344,8 @@ export async function runSEOChecks(
     expectedCanonical?: string;
     requireIndex?: boolean;
     requireFollow?: boolean;
-    skipPageLoad?: boolean; // Skip DOM waiting if page is already loaded
-    captureScreenshot?: boolean; // Capture screenshots for visual errors (default: true)
   } = {}
-): Promise<SEOCheckResult[] & { screenshotPaths?: { fullPage: string | null; closeUps: string[] } }> {
+): Promise<SEOCheckResult[]> {
   const {
     checkTitle = true,
     checkMetaDescription: shouldCheckMetaDescription = true,
@@ -404,95 +358,39 @@ export async function runSEOChecks(
     expectedCanonical,
     requireIndex = true,
     requireFollow = true,
-    skipPageLoad = false,
-    captureScreenshot = true,
   } = options;
 
-  const startTime = Date.now();
-  const checksToRun: string[] = [];
-  if (checkTitle) checksToRun.push('Title');
-  if (shouldCheckMetaDescription) checksToRun.push('Meta Description');
-  if (checkCanonical) checksToRun.push('Canonical URL');
-  if (checkRobots) checksToRun.push('Robots Meta Tag');
-  if (checkImageAlt) checksToRun.push('Image Alt Attributes');
-  if (checkHeadings) checksToRun.push('Heading Structure');
-  if (checkOpenGraph) checksToRun.push('Open Graph Tags');
-  
-  console.log(`  ⏳ Starting SEO checks (${checksToRun.length} check(s): ${checksToRun.join(', ')})...`);
   const results: SEOCheckResult[] = [];
 
   if (checkTitle) {
-    console.log('  ⏳ Checking page title...');
     results.push(await checkPageTitle(page, expectedTitle));
-    console.log('  ✓ Page title check complete');
   }
 
   if (shouldCheckMetaDescription) {
-    console.log('  ⏳ Checking meta description...');
     results.push(await checkMetaDescription(page));
-    console.log('  ✓ Meta description check complete');
   }
 
   if (checkCanonical) {
-    console.log('  ⏳ Checking canonical URL...');
     results.push(await checkCanonicalURL(page, expectedCanonical));
-    console.log('  ✓ Canonical URL check complete');
   }
 
   if (checkRobots) {
-    console.log('  ⏳ Checking robots meta tag...');
     results.push(await checkRobotsMetaTag(page, requireIndex, requireFollow));
-    console.log('  ✓ Robots meta tag check complete');
   }
 
   if (checkImageAlt) {
-    console.log('  ⏳ Checking image alt attributes...');
-    results.push(await checkImageAltAttributes(page, !skipPageLoad));
-    console.log('  ✓ Image alt attributes check complete');
+    results.push(await checkImageAltAttributes(page));
   }
 
   if (checkHeadings) {
-    console.log('  ⏳ Checking heading structure...');
     results.push(await checkHeadingStructure(page));
-    console.log('  ✓ Heading structure check complete');
   }
 
   if (checkOpenGraph) {
-    console.log('  ⏳ Checking Open Graph tags...');
     results.push(await checkOpenGraphTags(page));
-    console.log('  ✓ Open Graph tags check complete');
   }
 
-  // Capture screenshots for visual errors (images, headings)
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot) {
-    const failedVisualChecks = results.filter(r => 
-      !r.passed && (r.check === 'Image Alt Attributes' || r.check === 'Heading Structure')
-    );
-    
-    if (failedVisualChecks.length > 0) {
-      console.log(`  ⏳ Capturing screenshots for ${failedVisualChecks.length} visual error(s)...`);
-      try {
-        screenshotPaths = await createSEOErrorScreenshots(page, failedVisualChecks, 'test-results');
-        console.log('  ✓ Screenshots captured');
-      } catch (error) {
-        console.warn('  ⚠️  Failed to capture SEO error screenshots:', error);
-      }
-    }
-  }
-
-  // Add screenshotPaths to results array (TypeScript workaround)
-  const resultsWithScreenshots = results as SEOCheckResult[] & { screenshotPaths?: { fullPage: string | null; closeUps: string[] } };
-  if (screenshotPaths) {
-    resultsWithScreenshots.screenshotPaths = screenshotPaths;
-  }
-
-  const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  const passedCount = results.filter(r => r.passed).length;
-  const failedCount = results.filter(r => !r.passed).length;
-  console.log(`  ✓ SEO checks complete: ${passedCount} passed, ${failedCount} failed (${totalElapsed}s total)`);
-
-  return resultsWithScreenshots;
+  return results;
 }
 
 /**
@@ -521,7 +419,7 @@ export async function getSEOMetadata(page: Page): Promise<{
   const ogImage = await page.locator('meta[property="og:image"]').getAttribute('content');
   const ogUrl = await page.locator('meta[property="og:url"]').getAttribute('content');
   
-  const images = await getAllImageInfo(page, false); // Skip DOM waiting in getSEOMetadata
+  const images = await getAllImageInfo(page);
 
   return {
     title,
@@ -643,7 +541,7 @@ export function formatSEOMetadataTable(metadata: {
   table += `${'─'.repeat(100)}\n\n`;
 
   // Full URLs Section (for truncated URLs)
-  const fullUrls: Array<{ label: string; url: string }> = [];
+  const fullUrls = [];
   if (metadata.canonicalUrl && metadata.canonicalUrl.length > 50) {
     fullUrls.push({ label: 'Canonical URL', url: metadata.canonicalUrl });
   }
@@ -732,57 +630,23 @@ export function formatSEOMetadataTable(metadata: {
  * @param page - Optional page object to generate detailed metadata table
  * @returns Formatted report string
  */
-/**
- * Format SEO check report using unified template
- */
 export async function formatSEOCheckReport(
   results: SEOCheckResult[],
   page?: Page
 ): Promise<string> {
   const passed = results.filter(r => r.passed).length;
   const total = results.length;
-  const failed = total - passed;
 
-  // Get URL from page if available
-  let url: string | undefined;
-  if (page) {
-    try {
-      url = page.url();
-    } catch {
-      // Ignore if URL can't be retrieved
+  let report = `SEO Check Results: ${passed}/${total} passed\n\n`;
+
+  for (const result of results) {
+    const icon = result.passed ? '✅' : '❌';
+    report += `${icon} ${result.check}: ${result.message}\n`;
+    if (result.value) {
+      report += `   Value: ${result.value}\n`;
     }
+    report += '\n';
   }
-
-  // Build summary
-  const summary: ReportItem[] = [
-    { label: 'Total Checks', value: total, status: 'info' },
-    { label: 'Passed', value: passed, status: 'passed' },
-    { label: 'Failed', value: failed, status: failed > 0 ? 'failed' : 'passed' },
-  ];
-
-  // Build sections for failed checks
-  const sections: ReportSection[] = [];
-  
-  const failedChecks = results.filter(r => !r.passed);
-  if (failedChecks.length > 0) {
-    sections.push({
-      title: 'Failed Checks',
-      items: failedChecks.map(result => ({
-        label: result.check,
-        value: result.message,
-        status: 'failed' as const,
-        details: result.value ? `Value: ${result.value}` : undefined,
-      })),
-    });
-  }
-
-  // Use unified template
-  let report = formatUnifiedReport({
-    testName: 'SEO Check',
-    url,
-    summary,
-    sections,
-  });
 
   // Add detailed tabular metadata if page is provided
   if (page) {
@@ -792,12 +656,6 @@ export async function formatSEOCheckReport(
     } catch (error) {
       report += `\n⚠️  Could not generate detailed metadata table: ${error}\n`;
     }
-  }
-
-  // Add screenshot note if errors found
-  const resultsWithScreenshots = results as any;
-  if (resultsWithScreenshots.screenshotPaths && (resultsWithScreenshots.screenshotPaths.fullPage || resultsWithScreenshots.screenshotPaths.closeUps.length > 0)) {
-    report += `\n📸 Screenshots have been captured and attached to the test report.\n`;
   }
 
   return report;

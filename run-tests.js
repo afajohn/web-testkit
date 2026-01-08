@@ -6,7 +6,6 @@
  *    or: npm test (runs all tests)
  */
 
-require('dotenv').config();
 const { spawn } = require('child_process');
 
 // Get arguments after '--' (npm passes them as additional process.argv entries)
@@ -21,18 +20,6 @@ if (urlArg) {
     env: {
       ...process.env,
       URL_AUDIT_URL: urlArg,
-    },
-    stdio: 'inherit',
-    shell: true,
-  });
-} else if (process.env.TEST_URL) {
-  // If no URL provided but TEST_URL is in .env, use it
-  console.log(`Running audit tests for: ${process.env.TEST_URL} (from .env)\n`);
-  
-  const testProcess = spawn('npx', ['playwright', 'test', 'tests/url-audit.spec.ts'], {
-    env: {
-      ...process.env,
-      URL_AUDIT_URL: process.env.TEST_URL,
     },
     stdio: 'inherit',
     shell: true,

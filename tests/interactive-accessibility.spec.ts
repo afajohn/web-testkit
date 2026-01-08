@@ -7,8 +7,6 @@ import {
 } from '../utils/accessibility';
 import { gotoAndWait } from '../utils/page-load';
 
-const DEFAULT_TEST_URL = process.env.TEST_URL || process.env.URL_AUDIT_URL || 'https://anewbride.com/';
-
 /**
  * Interactive accessibility tests
  * These tests check accessibility in different interaction states:
@@ -16,9 +14,11 @@ const DEFAULT_TEST_URL = process.env.TEST_URL || process.env.URL_AUDIT_URL || 'h
  * - Focused/active buttons
  * - Open modals/popups
  */
+const BASE_URL = process.env.URL_AUDIT_URL || process.env.BASE_URL || 'https://anewbride.com/';
+
 test.describe('Interactive Accessibility Testing', () => {
   test('check accessibility on hovered buttons', async ({ page }) => {
-    await gotoAndWait(page, DEFAULT_TEST_URL);
+    await gotoAndWait(page, BASE_URL);
     
     // Find all buttons on the page
     const buttons = await page.locator('button').all();
@@ -41,7 +41,7 @@ test.describe('Interactive Accessibility Testing', () => {
       
       try {
         const scanResults = await runAccessibilityCheckOnHover(page, button);
-        console.log(await formatAccessibilityReport(scanResults));
+        console.log(formatAccessibilityReport(scanResults));
         
         // Optionally fail test if violations found
         // expect(scanResults.passed).toBe(true);
@@ -54,7 +54,7 @@ test.describe('Interactive Accessibility Testing', () => {
   });
 
   test('check accessibility on focused buttons', async ({ page }) => {
-    await gotoAndWait(page, DEFAULT_TEST_URL);
+    await gotoAndWait(page, BASE_URL);
     
     // Find all interactive elements (buttons, links, inputs)
     const buttons = await page.locator('button, a[href], input, select, textarea').all();
@@ -71,16 +71,15 @@ test.describe('Interactive Accessibility Testing', () => {
     
     for (let i = 0; i < elementsToTest.length; i++) {
       const element = elementsToTest[i];
-      let elementText = await element.textContent().catch(() => null);
-      if (!elementText) {
-        elementText = await element.getAttribute('aria-label').catch(() => 'unknown');
-      }
+      const elementText = await element.textContent().catch(async () => 
+        await element.getAttribute('aria-label').catch(() => 'unknown')
+      );
       
       console.log(`Testing focused element ${i + 1}: "${elementText?.trim()}"`);
       
       try {
         const scanResults = await runAccessibilityCheckOnFocus(page, element);
-        console.log(await formatAccessibilityReport(scanResults));
+        console.log(formatAccessibilityReport(scanResults));
         
         // Optionally fail test if violations found
         // expect(scanResults.passed).toBe(true);
@@ -93,7 +92,7 @@ test.describe('Interactive Accessibility Testing', () => {
   });
 
   test('check accessibility on modals/popups', async ({ page }) => {
-    await gotoAndWait(page, DEFAULT_TEST_URL);
+    await gotoAndWait(page, BASE_URL);
     
     // Example: Find buttons that might open modals
     // You'll need to adjust selectors based on your site's structure
@@ -134,7 +133,7 @@ test.describe('Interactive Accessibility Testing', () => {
   });
 
   test('custom: test specific button on hover', async ({ page }) => {
-    await gotoAndWait(page, DEFAULT_TEST_URL);
+    await gotoAndWait(page, BASE_URL);
     
     // Example: Test a specific button by selector
     // Adjust the selector to match your button
@@ -155,7 +154,7 @@ test.describe('Interactive Accessibility Testing', () => {
   });
 
   test('custom: test specific modal accessibility', async ({ page }) => {
-    await gotoAndWait(page, DEFAULT_TEST_URL);
+    await gotoAndWait(page, BASE_URL);
     
     // Example: Test a specific modal
     // Adjust these selectors to match your modal structure

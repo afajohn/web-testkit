@@ -6,31 +6,22 @@
  *    or: npm run test:url:n8n -- <URL>
  */
 
-require('dotenv').config();
 const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const { getUrlBasedPath } = require('./utils/url-path');
 
 const args = process.argv.slice(2);
-let url = args[0];
+const url = args[0];
 
-// If no URL provided, try to use from .env file
 if (!url) {
-  url = process.env.TEST_URL || process.env.URL_AUDIT_URL;
-  if (url) {
-    console.log(`Using URL from .env: ${url}\n`);
-  } else {
-    console.error('Usage: node test-url-n8n.js <URL>');
-    console.error('   or: npm run test:url:n8n -- <URL>');
-    console.error('   or: Set TEST_URL in .env file');
-    console.error('');
-    console.error('Example:');
-    console.error('  node test-url-n8n.js https://anewbride.com/tour/things-to-consider-on-singles-tours.html');
-    console.error('  npm run test:url:n8n -- https://anewbride.com');
-    console.error('  Or set TEST_URL=https://example.com in .env file');
-    process.exit(1);
-  }
+  console.error('Usage: node test-url-n8n.js <URL>');
+  console.error('   or: npm run test:url:n8n -- <URL>');
+  console.error('');
+  console.error('Example:');
+  console.error('  node test-url-n8n.js https://anewbride.com/tour/things-to-consider-on-singles-tours.html');
+  console.error('  npm run test:url:n8n -- https://anewbride.com');
+  process.exit(1);
 }
 
 // Validate URL format

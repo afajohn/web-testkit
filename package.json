@@ -7,8 +7,9 @@
     "test": "node run-tests.js",
     "test:n8n": "node run-tests.js && node scripts/send-to-n8n.js",
     "test:url": "node test-url.js",
+    "test:url:batch": "node run-batch-url-tests.js",
     "test:url:n8n": "node test-url-n8n.js",
-    "test:multiple-urls": "node test-multiple-urls.js",
+    "test:gtm": "node test-gtm.js",
     "test:ui": "playwright test --ui",
     "test:headed": "playwright test --headed",
     "test:debug": "playwright test --debug",
@@ -33,14 +34,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@axe-core/playwright": "^4.10.0",
     "@playwright/test": "^1.57.0",
-    "@types/node": "^25.0.3",
-    "lighthouse": "^13.0.1",
-    "playwright-lighthouse": "^4.0.0",
-    "playwright-seo": "^0.1.8"
-  },
-  "dependencies": {
-    "dotenv": "^17.2.3"
+    "@axe-core/playwright": "^4.10.0",
+    "@types/node": "^25.0.3"
   }
 }
+

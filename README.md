@@ -1,83 +1,92 @@
-# Playwright Test Setup
+# Playwright Web TestKit
 
-A comprehensive testing suite for web applications using Playwright, featuring SEO checks, broken link detection, accessibility audits, and **multiple URL batch testing with automatic report organization**.
+A comprehensive Playwright-based testing toolkit for automated website quality audits. This project provides utilities for SEO validation, broken link detection, accessibility testing, GTM verification, and more.
 
-## Setup
+## Features
 
-Follow these steps to set up the project on your local machine.
+### 🧪 Testing Capabilities
 
-### Prerequisites
+- **SEO Testing** - Validates page titles, meta descriptions, canonical URLs, heading structure, robots meta tags, image alt attributes, and Open Graph tags
+- **Broken Link Detection** - Automatically checks all links on pages with parallel processing for fast execution
+- **Accessibility Auditing** - WCAG compliance testing using axe-core, including interactive state testing (hover, focus, modals)
+- **GTM Verification** - Checks Google Tag Manager implementation and validates container ID, gtm.js loading, and dataLayer
+- **Performance Testing** - Page load metrics and performance analysis
+- **Comprehensive Reporting** - Generates detailed JSON and HTML reports organized by URL structure
 
-- **Node.js** (version 16 or higher)
-- **npm** (comes with Node.js)
-- **Git** (for cloning the repository)
+### 📊 Report Organization
 
-### Installation Steps
+Reports are automatically organized into URL-based nested folders:
+- `reports/<domain>/<path>/filename.json` - JSON reports with merged test results
+- `test-results/<domain>/<path>/` - Playwright test artifacts (videos, screenshots)
+- `playwright-report/<domain>/<path>/` - HTML reports for easy viewing
 
-#### Option 1: Automated Setup (Windows - Recommended)
+### 🔄 Workflow Integration
 
-For Windows users, use the automated setup script:
+- **n8n Integration** - Automatically sends test results to n8n workflows for further processing
+- **Batch URL Testing** - Test multiple URLs sequentially with progress tracking
+- **GitHub Pages Ready** - Prepare reports for GitHub Pages deployment
+
+## Quick Start
+
+### Installation
 
 ```bash
-setup.bat
+npm install
+npx playwright install
 ```
 
-This script will:
-- Check if Node.js and npm are installed
-- Install all npm dependencies automatically
-- Install Playwright browsers with system dependencies
-- Verify the setup and check for required files
-- Provide clear feedback on any issues
+### Basic Usage
 
-#### Option 2: Manual Setup
-
-1. **Install project dependencies:**
-   ```bash
-   npm install
-   ```
-   This will install all required packages including Playwright, Lighthouse, and testing utilities.
-
-2. **Install Playwright browsers:**
-   ```bash
-   npx playwright install chromium --with-deps
-   ```
-   This installs the Chromium browser and required system dependencies for running tests.
-
-3. **Verify the setup:**
-   ```bash
-   npx playwright test --list
-   ```
-   This command lists all available tests to verify everything is set up correctly.
-
-### Optional: Environment Variables
-
-You can create a `.env` file in the project root to set default test URLs:
-
-```env
-TEST_URL=https://anewbride.com/
-URL_AUDIT_URL=https://anewbride.com/
-```
-
-### Quick Start
-
-Once setup is complete, you can immediately run tests:
-
-**Windows users:**
+**Test a single URL:**
 ```bash
-# Use the interactive menu (recommended)
-run-tests-menu.bat
+npm run test:url https://example.com
 ```
 
-**All platforms:**
+**Test multiple URLs (batch):**
 ```bash
-# Run all tests
+npm run test:url:batch
+```
+
+**Run all tests:**
+```bash
 npm test
+```
 
-# Run tests with UI mode (recommended for first-time users)
+**Run with UI mode:**
+```bash
 npm run test:ui
 ```
 
----
+## Test Scripts
+
+### Core Test Commands
+
+- `npm test` - Run all tests in `tests/` folder
+- `npm run test:url <URL>` - Test a specific URL with all audit checks
+- `npm run test:url:batch` - Test multiple URLs from `run-batch-url-tests.js`
+- `npm run test:audits` - Run only audit tests (SEO, broken links, accessibility)
+- `npm run test:gtm` - Test Google Tag Manager specifically
+- `npm run test:ui` - Run tests with Playwright UI mode
+- `npm run test:headed` - Run tests with visible browser
+- `npm run test:debug` - Run tests in debug mode
+
+### n8n Integration
+
+- `npm run test:n8n` - Run all tests and send results to n8n
+- `npm run test:url:n8n <URL>` - Test URL and send results to n8n
+- `npm run send:n8n` - Send existing test results to n8n
+- `npm run test:n8n-connection` - Test n8n webhook connection
+
+### Report Management
+
+- `npm run serve:reports` - Serve HTML reports via HTTP server
+- `npm run prepare:github` - Prepare reports for GitHub Pages
+- `npm run verify:structure` - Verify report directory structure
+
+### Code Generation
+
+- `npm run codegen` - Start Playwright codegen
+- `npm run codegen:url <URL>` - Start codegen with URL helper
 
 ## n8n Integration
 
@@ -112,12 +121,7 @@ npm run test:n8n
 
 **Test specific URL and send to n8n:**
 ```bash
-npm run test:url:n8n -- https://anewbride.com/
-```
-
-Or use the script directly:
-```bash
-node test-url-n8n.js https://anewbride.com/
+npm run test:url:n8n https://example.com
 ```
 
 **Send existing test results to n8n:**
@@ -125,16 +129,16 @@ node test-url-n8n.js https://anewbride.com/
 npm run send:n8n
 ```
 
+**Test n8n connection:**
+```bash
+npm run test:n8n-connection
+```
+
 **Custom webhook URL and method:**
 ```bash
-# Windows PowerShell (POST is recommended for large test results)
+# Windows PowerShell
 $env:N8N_WEBHOOK_URL="http://localhost:5678/webhook/playwright-results"
 $env:N8N_WEBHOOK_METHOD="POST"  # or "GET" (POST recommended)
-npm run send:n8n
-
-# Or use test mode (works once per execution)
-$env:N8N_WEBHOOK_URL="http://localhost:5678/webhook-test/playwright-results"
-$env:N8N_WEBHOOK_METHOD="GET"
 npm run send:n8n
 ```
 
@@ -158,68 +162,22 @@ See `scripts/README.md` for detailed documentation.
 - Save videos to `test-results/` folder
 - Generate test reports
 
-## Usage
+## Test Files
 
-### Generate Test Code (Codegen)
+### Audit Tests
 
-Use codegen to record interactions and generate test code:
+- `tests/url-audit.spec.ts` - Dynamic URL audit test (comprehensive: SEO, broken links, accessibility, GTM)
+- `tests/comprehensive-audit.spec.ts` - Full site audit combining all checks
+- `tests/seo-checks.spec.ts` - SEO validation examples
+- `tests/broken-links.spec.ts` - Broken link checking examples
+- `tests/accessibility.spec.ts` - Basic accessibility testing
+- `tests/interactive-accessibility.spec.ts` - Accessibility testing on hover, focus, and modals
+- `tests/gtm-check.spec.ts` - Google Tag Manager verification
 
-```bash
-# Using the helper script
-node codegen.js https://anewbride.com 1920 1080
+### Utility Tests
 
-# Or with viewport-size flag
-node codegen.js https://anewbride.com --viewport-size="1920,1080"
-
-# Or directly with Playwright
-npx playwright codegen --viewport-size="1920,1080" https://anewbride.com
-```
-
-**Note:** No videos are saved during codegen - it only generates test code!
-
-### Run Tests (Get Videos)
-
-Run your tests to get videos saved:
-
-```bash
-# Run all tests
-npm test
-
-# Or directly
-npx playwright test
-
-# Run with UI mode
-npm run test:ui
-
-# Run in headed mode (see browser)
-npm run test:headed
-
-# Run specific test file
-npx playwright test tests/example.spec.ts
-```
-
-Videos will be saved in `test-results/` folder after running tests.
-
-## Video Configuration
-
-Videos are configured in `playwright.config.ts`:
-- `video: 'on'` - Records video for every test
-- Videos are automatically saved to `test-results/<test-name>/video.webm`
-
-## Test Scripts
-
-- `npm test` - Run all tests
-- `npm run test:n8n` - Run all tests and send results to n8n
-- `npm run test:url` - Test a specific URL
-- `npm run test:url:n8n` - Test a specific URL and send results to n8n
-- `npm run test:ui` - Run tests with UI mode
-- `npm run test:headed` - Run tests with visible browser
-- `npm run test:debug` - Run tests in debug mode
-- `npm run send:n8n` - Send existing test results to n8n
-- `npm run codegen` - Start codegen (basic)
-- `npm run codegen:url` - Start codegen with URL helper
-- `node test-multiple-urls.js <file>` - Test multiple URLs from a file
-- `node test-multiple-urls.js <file> --n8n` - Test multiple URLs and send to n8n
+- `tests/multi-url-audit.spec.ts` - Multiple URL audit testing
+- `tests/seo-auto-test.spec.ts` - Automated SEO testing
 
 ## Features
 
@@ -227,143 +185,51 @@ Videos are configured in `playwright.config.ts`:
 
 The project includes utilities for automated broken link detection:
 
-- **Extracts all links** from a page automatically
+- **Extracts all links** from a page automatically with element information (selector, text, HTML)
 - **Normalizes URLs** (converts relative to absolute)
-- **Parallel link checking** for fast execution
-- **Comprehensive reporting** of broken links
+- **Parallel link checking** for fast execution (configurable concurrency)
+- **Comprehensive reporting** of broken links with element details
+- **Identifies links** that work but need trailing slash
+- **Groups multiple elements** linking to the same URL
 
 **Example usage:**
 ```typescript
 import { checkBrokenLinks, formatBrokenLinksReport } from '../utils/broken-links';
 
 test('check broken links', async ({ page, request }) => {
-  await page.goto('https://anewbride.com/');
+  await page.goto('https://example.com/');
   const brokenLinks = await checkBrokenLinks(page, request);
   console.log(formatBrokenLinksReport(brokenLinks));
   expect(brokenLinks.length).toBe(0);
 });
 ```
 
-**Test files:**
-- `tests/broken-links.spec.ts` - Examples of broken link checking
-
 ### SEO Testing
 
-Basic SEO validation utilities are included:
+Comprehensive SEO validation utilities:
 
-- **Page title** validation
+- **Page title** validation (with optional pattern matching)
 - **Meta description** length checking (recommended 50-160 characters)
 - **Canonical URL** verification
 - **Robots meta tag** validation (index, follow directives)
-- **Image alt attributes** checking
+- **Image alt attributes** checking with detailed image information
 - **Heading structure** validation (H1 presence and hierarchy)
 - **Open Graph tags** validation (optional)
+- **Detailed metadata tables** for comprehensive reporting
 
 **Example usage:**
 ```typescript
 import { runSEOChecks, formatSEOCheckReport } from '../utils/seo-checks';
 
 test('check SEO', async ({ page }) => {
-  await page.goto('https://anewbride.com/');
-  const results = await runSEOChecks(page);
-  console.log(formatSEOCheckReport(results));
+  await page.goto('https://example.com/');
+  const results = await runSEOChecks(page, {
+    checkRobots: true, // Include robots meta tag check
+  });
+  console.log(await formatSEOCheckReport(results, page)); // Pass page for detailed table
   
   const failedChecks = results.filter(r => !r.passed);
   expect(failedChecks.length).toBe(0);
-});
-```
-
-**Test files:**
-- `tests/seo-checks.spec.ts` - Examples of SEO testing
-
-### Automatic SEO Audits with playwright-seo
-
-This project integrates the `playwright-seo` library for comprehensive, automatic SEO validation. The library provides additional checks and automatic audit capabilities.
-
-**Features:**
-- **Automatic SEO audits** - Runs after each test automatically (via Playwright fixtures)
-- **Comprehensive checks** - HTML lang, viewport meta, title length, canonical validation, noindex detection, and more
-- **Configurable rules** - Centralized configuration in `playwright-seo.config.ts`
-- **Flexible severity** - Choose between `error` (fail tests) or `warning` (log only)
-- **URL exclusion** - Skip SEO audit for specific URL patterns
-- **Noindex skip** - Automatically skip audit on pages with noindex
-
-**Configuration:**
-
-The SEO rules are configured in `playwright-seo.config.ts`. You can customize:
-- Which rules to enforce (on/off)
-- Thresholds (title length, meta description length)
-- Runner behavior (severity, deduplication)
-- URL exclusions
-
-**Using Automatic SEO Audits:**
-
-Import the extended test from the fixture file:
-
-```typescript
-// Use automatic SEO audits
-import { test, expect } from './support/seo.auto';
-
-test('my test', async ({ page }) => {
-  await page.goto('https://example.com');
-  // SEO audit runs automatically after this test
-});
-```
-
-**Using Manual SEO Checks:**
-
-You can still use the manual approach with existing utilities:
-
-```typescript
-// Use manual SEO checks
-import { test, expect } from '@playwright/test';
-import { runSEOChecks } from '../utils/seo-checks';
-
-test('my test', async ({ page }) => {
-  await page.goto('https://example.com');
-  const results = await runSEOChecks(page);
-  // Handle results manually
-});
-```
-
-**Disabling SEO Audit for Specific Tests:**
-
-```typescript
-import { test } from './support/seo.auto';
-
-// Disable for this entire file
-test.use({ seoAudit: false });
-
-// Or disable for a specific test
-test('test without SEO', async ({ page }) => {
-  // ...
-});
-test.use({ seoAudit: false });
-```
-
-**Configuration File:**
-
-Edit `playwright-seo.config.ts` to customize SEO rules:
-
-```typescript
-export default defineSeoConfig({
-  enforceHtmlLang: true,
-  enforceViewport: true,
-  enforceSingleH1: true,
-  enforceTitle: true,
-  title: { min: 10, max: 70 },
-  enforceMetaDescription: true,
-  metaDescription: { min: 50, max: 160 },
-  enforceCanonical: true,
-  enforceImgAlt: true,
-  forbidNoindexOnProd: true,
-  checkMainResponseStatus: true,
-  skipIfNoindex: true,
-  excludeUrls: [], // e.g. ['/admin/*', /\/api\//]
-  runner: {
-    dedupePerWorker: true,
-    severity: 'error' // or 'warning'
-  }
 });
 ```
 
@@ -372,7 +238,9 @@ export default defineSeoConfig({
 Accessibility audits using axe-core:
 
 - **Automated accessibility scanning** with axe-core
-- **Violation detection** and reporting
+- **Violation detection** and reporting with impact levels
+- **Interactive state testing**: Hover, focus, and modal states
+- **Element-specific testing**: Test individual components
 - **Integration** with Playwright test suite
 
 **Example usage:**
@@ -380,56 +248,128 @@ Accessibility audits using axe-core:
 import { runAccessibilityCheck, formatAccessibilityReport } from '../utils/accessibility';
 
 test('check accessibility', async ({ page }) => {
-  await page.goto('https://anewbride.com/');
+  await page.goto('https://example.com/');
   const scanResults = await runAccessibilityCheck(page);
   console.log(formatAccessibilityReport(scanResults));
   expect(scanResults.passed).toBe(true);
 });
 ```
 
-**Test files:**
-- `tests/accessibility.spec.ts` - Basic accessibility testing
-- `tests/interactive-accessibility.spec.ts` - Accessibility testing on hover, focus, and modals
-- `tests/comprehensive-audit.spec.ts` - Combines SEO, broken links, and accessibility checks
+**Interactive accessibility testing:**
+```typescript
+import { runAccessibilityCheckOnHover } from '../utils/accessibility';
+
+const button = page.locator('button.submit');
+const scanResults = await runAccessibilityCheckOnHover(page, button);
+expect(scanResults.passed).toBe(true);
+```
+
+### GTM Verification
+
+Google Tag Manager implementation checking:
+
+- **Multiple detection methods** (script tags, noscript iframe, HTML pattern matching)
+- **Container ID validation** (GTM-XXXXX format)
+- **gtm.js loading verification** (script tag, google_tag_manager object, performance API, dataLayer)
+- **dataLayer verification** with push event detection
+- **Detailed verification status** reporting
+
+**Example usage:**
+```typescript
+import { checkGTMImplementation, formatGTMReport } from '../utils/gtm-check';
+
+test('check GTM', async ({ page }) => {
+  await page.goto('https://example.com/');
+  const gtmResult = await checkGTMImplementation(page);
+  console.log(formatGTMReport(gtmResult));
+  expect(gtmResult.hasGTM).toBe(true);
+});
+```
+
+## Report Organization
+
+Reports are automatically organized by URL structure:
+
+### JSON Reports
+
+- Location: `reports/<domain>/<path>/filename.json`
+- Contains: Merged test results (SEO, broken links, accessibility, GTM)
+- Structure: Organized by domain and URL path hierarchy
+- Error reports: Saved with `error-` prefix in same nested structure
+
+### Test Results
+
+- Location: `test-results/<domain>/<path>/`
+- Contains: Test artifacts (videos, screenshots, traces), `test-results.json`
+- Organized by: URL structure matching tested URLs
+
+### HTML Reports
+
+- Location: `playwright-report/<domain>/<path>/`
+- Contains: Interactive HTML reports with videos and detailed test information
+- Organized by: URL structure (automatically moved after tests)
+
+### Example Structure
+
+```
+reports/
+├── mexicocitydating.com/
+│   ├── root/
+│   │   ├── about-page.json
+│   │   └── error-404.json
+│   └── mexico-city-dating-tour-vacations/
+│       └── tour-schedule.json
+```
+
+See `REPORT_STRUCTURE.md` and `DIRECTORY_STRUCTURE.md` for detailed documentation.
 
 ## Utility Functions
 
 All utility functions are located in the `utils/` folder:
 
-- `utils/broken-links.ts` - Broken link checking utilities (with progress logging)
+- `utils/broken-links.ts` - Broken link checking utilities
 - `utils/seo-checks.ts` - SEO validation utilities
 - `utils/accessibility.ts` - Accessibility testing utilities
-- `utils/url-path.js` - URL to file path conversion utilities (for report organization)
-- `utils/dom-helpers.ts` - DOM interaction helpers (with progress logging)
+- `utils/gtm-check.ts` - Google Tag Manager verification utilities
+- `utils/page-load.ts` - Page loading utilities
+- `utils/file-utils.ts` - File path and writing utilities
+- `utils/report-merger.ts` - Report merging utilities
+- `utils/error-handling.ts` - Error formatting utilities
 
-**Progress Logging:**
+See `utils/README.md` for detailed API documentation.
 
-The broken link and DOM helper utilities include comprehensive progress logging:
-- Real-time status updates during link extraction
-- Scroll progress indicators
-- Lazy content loading detection
-- Modal interaction tracking
-- Link count summaries
+## Scripts
+
+Utility scripts are located in the `scripts/` folder:
+
+- `scripts/send-to-n8n.js` - Send test results to n8n webhook
+- `scripts/test-n8n-connection.js` - Test n8n webhook connection
+- `scripts/organize-html-report.js` - Organize HTML reports by URL (auto-runs)
+- `scripts/generate-domain-summary.js` - Generate domain-wide summary reports
+- `scripts/prepare-github-reports.js` - Prepare reports for GitHub Pages
+- `scripts/serve-reports.js` - Serve HTML reports via HTTP server
+- `scripts/verify-structure.js` - Verify report directory structure
+
+See `scripts/README.md` for detailed script documentation.
 
 ## Running Tests
 
 ### Quick Test: Run All Audits on a URL
 
-Test any URL with all audit checks (SEO, broken links, accessibility) in one command:
+Test any URL with all audit checks (SEO, broken links, accessibility, GTM) in one command:
 
 ```bash
-npm test -- https://anewbride.com/tour/things-to-consider-on-singles-tours.html
+npm run test:url https://example.com/page.html
 ```
 
-Or use the dedicated script:
-
+Or directly:
 ```bash
-npm run test:url https://anewbride.com/tour/things-to-consider-on-singles-tours.html
+node test-url.js https://example.com/page.html
 ```
 
-This runs all audit tests against the provided URL without creating a test file.
+This runs all audit tests against the provided URL and saves results to `reports/` with nested folder structure.
 
-**Note:** If you run `npm test` without a URL, it runs all test files.
+**Note:** If you run `npm test` without a URL, it runs all test files in the `tests/` folder.
 
 ### Run All Tests (Recommended)
 
@@ -441,15 +381,21 @@ npm test
 
 This includes:
 - All codegen-generated tests
-- All utility/audit tests (broken links, SEO, accessibility)
+- All utility/audit tests (broken links, SEO, accessibility, GTM)
 
 ### Run Only Audit/Utility Tests
 
-Run only the SEO, broken links, and accessibility tests:
+If you want to run only the SEO, broken links, and accessibility tests:
 
 ```bash
 npm run test:audits
 ```
+
+This runs:
+- `tests/broken-links.spec.ts`
+- `tests/seo-checks.spec.ts`
+- `tests/accessibility.spec.ts`
+- `tests/comprehensive-audit.spec.ts`
 
 ### Run Specific Test Files
 
@@ -466,122 +412,135 @@ npx playwright test tests/accessibility.spec.ts
 # Run comprehensive audit
 npx playwright test tests/comprehensive-audit.spec.ts
 
+# Run URL audit (dynamic URL)
+npx playwright test tests/url-audit.spec.ts
+
 # Run multiple specific files
 npx playwright test tests/broken-links.spec.ts tests/seo-checks.spec.ts
 ```
 
-### Multiple URL Testing
+### Batch URL Testing
 
-Test multiple URLs sequentially with automatic report organization:
+Test multiple URLs sequentially:
 
-**Create a URL list file:**
+1. Edit `run-batch-url-tests.js` and add your URLs to the `URLS` array
+2. Run batch tests:
+   ```bash
+   npm run test:url:batch
+   ```
+
+The script:
+- Runs tests for each URL sequentially
+- Tracks progress and statistics
+- Organizes reports by URL structure
+- Provides summary of passed/failed tests
+
+## Workflow: Codegen → Testing
+
+### Step 1: Generate Test Code with Codegen
+
+Use codegen to generate test code for a URL:
+
 ```bash
-# Create urls.txt with one URL per line
-echo "https://example.com/page1" > urls.txt
-echo "https://example.com/page2" >> urls.txt
-echo "https://example.com/page3" >> urls.txt
+# Using the helper script with custom viewport
+node codegen.js https://example.com 1920 1080
+
+# Or with viewport-size flag
+node codegen.js https://example.com --viewport-size="1920,1080"
+
+# Or directly with Playwright
+npx playwright codegen --viewport-size="1920,1080" https://example.com
 ```
 
-**Run tests for multiple URLs:**
+**Note:** No videos are saved during codegen - it only generates test code!
+
+### Step 2: Save Generated Code to a Test File
+
+Copy the generated code from the codegen window and save it to a new file in the `tests/` folder, for example:
+- `tests/my-page-test.spec.ts`
+
+### Step 3: Run All Tests
+
+After creating your test file, run all tests:
+
 ```bash
-node test-multiple-urls.js urls.txt
+npm test
 ```
 
-**With n8n integration:**
+This will run:
+- Your newly created test file
+- All existing test files
+- All audit/utility tests (broken links, SEO, accessibility, GTM)
+
+## Video Configuration
+
+Videos are configured in `playwright.config.ts`:
+- `video: 'on'` - Records video for every test
+- Videos are automatically saved to `test-results/<test-name>/video.webm`
+- Organized by URL structure when using URL-based testing
+
+## Report Generation
+
+### Domain Summary Reports
+
+Generate domain-wide summary reports:
+
 ```bash
-node test-multiple-urls.js urls.txt --n8n
+node scripts/generate-domain-summary.js example.com
 ```
 
-**Features:**
-- **Sequential execution** - Tests run one at a time to prevent conflicts
-- **Automatic report organization** - Each URL gets its own report directory
-- **No overwriting** - Reports are preserved using a temp directory system
-- **Consolidated index** - View all reports from a single index page
-- **Progress logging** - Real-time progress updates during test execution
-- **Unique directories** - Automatic hash suffixes prevent path collisions
+Creates a markdown report summarizing:
+- Total pages tested
+- Pages with issues vs pages passed
+- Aggregated SEO failures
+- Unique broken links (deduplicated)
+- Accessibility violations grouped by rule
+- Pages without GTM
 
-**Report Organization:**
+### Serving Reports Locally
 
-Reports are automatically organized by URL structure:
-```
-playwright-report/
-├── index.html (Consolidated index page)
-├── example.com/
-│   ├── page1/
-│   │   ├── index.html
-│   │   └── data/
-│   └── page2/
-│       ├── index.html
-│       └── data/
-└── anotherdomain.com/
-    └── path/
-        ├── index.html
-        └── data/
+Serve HTML reports via HTTP server:
+
+```bash
+npm run serve:reports
 ```
 
-**How It Works:**
+Access reports at:
+- Local: `http://localhost:9323`
+- Network: `http://<your-ip>:9323` (shown in console)
 
-1. **During Test Execution:**
-   - Each test runs sequentially (prevents DOM conflicts)
-   - After each test completes, the entire `playwright-report/` directory is moved to a temp location (`playwright-report-temp-{index}/`)
-   - A fresh empty `playwright-report/` directory is created for the next test
-   - This prevents any report overwriting
+### GitHub Pages Deployment
 
-2. **After All Tests Complete:**
-   - All temp directories are organized to final URL-based locations
-   - Each report is moved to: `playwright-report/{domain}/{path}/`
-   - A consolidated index page is generated at `playwright-report/index.html`
-   - All individual reports are linked from the consolidated index
+Prepare reports for GitHub Pages:
 
-3. **Viewing Reports:**
-   - Open `playwright-report/index.html` in your browser
-   - Click "View Report →" links to access individual URL reports
-   - Each report is fully functional with all data, videos, and artifacts preserved
-
-**Progress Logging:**
-
-The system includes comprehensive progress logging:
-- DOM readiness status
-- Scroll progress and height detection
-- Lazy content loading status
-- Modal interaction progress
-- Link extraction counts
-- Report generation status
-
-**Example Output:**
-```
-======================================================================
-Testing URL 1/3: https://example.com/page1
-======================================================================
-   ⏳ Waiting for HTML report to be generated...
-   ✅ Report is ready (45.2 KB, 12 data files)
-   📦 Moving HTML report to temp directory...
-   ✅ Moved report to temp directory: playwright-report-temp-0
-   ✅ Preserved index.html (45.2 KB)
-   ✅ Preserved data directory (12 file(s))
-   ✅ Recreated empty playwright-report directory for next test
-
-======================================================================
-Organizing Temp Reports to Final Locations
-======================================================================
-   📦 Organizing report 1/3: https://example.com/page1
-      From: playwright-report-temp-0
-      To:   playwright-report/example.com/page1
-      ✅ Organized successfully (45.2 KB)
-
-✅ Consolidated index page generated: playwright-report/index.html
-   📊 Reports accessible: 3/3
+```bash
+npm run prepare:github
 ```
 
-**Troubleshooting:**
+See `scripts/GITHUB_REPORTS.md` for detailed deployment instructions.
 
-- **Reports not found:** Ensure the test completed successfully. Failed tests may not generate reports.
-- **Path collisions:** The system automatically adds hash suffixes to prevent collisions.
-- **Missing reports:** Check the console output for any errors during report organization.
+## Documentation
 
-### Workflow: Codegen → Run All Tests
+- `README.md` - This file - Main project documentation
+- `utils/README.md` - Utility functions API documentation
+- `scripts/README.md` - Scripts usage documentation
+- `REPORT_STRUCTURE.md` - Report organization structure
+- `DIRECTORY_STRUCTURE.md` - Directory structure guide
+- `TESTING_GUIDE.md` - Testing guide and examples
+- `QUICK_START.md` - Quick start examples
+- `N8N_SETUP.md` - n8n integration setup
+- `N8N_DATA_STRUCTURE.md` - n8n data structure documentation
+- `N8N_TROUBLESHOOTING.md` - n8n troubleshooting guide
+- `scripts/GITHUB_REPORTS.md` - GitHub Pages deployment guide
+- `scripts/SHARE_REPORTS.md` - Sharing reports guide
 
-1. Generate test code: `node codegen.js <URL>`
-2. Save generated code to a new `.spec.ts` file in `tests/`
-3. Run all tests: `npm test` (runs everything including your new test)
+## Requirements
 
+- Node.js 16+ 
+- Playwright (installed via `npx playwright install`)
+- n8n (optional, for workflow integration)
+
+## Dependencies
+
+- `@playwright/test` - Playwright testing framework
+- `@axe-core/playwright` - Accessibility testing with axe-core
