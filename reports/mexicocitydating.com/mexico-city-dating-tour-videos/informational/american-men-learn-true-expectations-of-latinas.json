@@ -1,6 +1,6 @@
 {
   "url": "https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/american-men-learn-true-expectations-of-latinas.html",
-  "timestamp": "2026-01-08T04:07:12.373Z",
+  "timestamp": "2026-01-08T07:28:47.306Z",
   "summary": {
     "overallStatus": "failed",
     "seoPassed": true,
@@ -465,9 +465,5 @@
     "metaDescription": "Dating in Mexico blends unique cultural nuances with Mexican women having specific expectations shaped by traditional values and modern influences.",
     "canonicalUrl": "https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/american-men-learn-true-expectations-of-latinas.html",
     "robotsMetaTag": "index, follow"
-  },
-  "error": true,
-  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\tests\\url-audit.spec.ts:112:41",
-  "testFailed": true
+  }
 }

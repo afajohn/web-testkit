@@ -1,6 +1,6 @@
 {
   "url": "https://mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/youll-never-meet-mexican-women-faster-cdmx-speed-dating.html",
-  "timestamp": "2026-01-08T04:09:00.610Z",
+  "timestamp": "2026-01-08T07:30:34.628Z",
   "summary": {
     "overallStatus": "failed",
     "seoPassed": false,
@@ -431,7 +431,7 @@
               }
             ],
             "impact": "serious",
-            "html": "<div class=\"html5-video-player y...\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/721caf0b/p...\" aria-label=\"YouTube Video Player\">",
+            "html": "<div class=\"html5-video-player y...\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/b75a8e80/p...\" aria-label=\"YouTube Video Player\">",
             "target": [
               "iframe[width=\"640\"]",
               "#movie_player"
@@ -472,9 +472,5 @@
     "metaDescription": "Many enlist the assistance of a Latin cupid in the form of a local matchmaker who specializes in connecting Mexican girls with visiting foreign guys seeking traditional, long-term relationships often leading to marriage.",
     "canonicalUrl": "https://mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/youll-never-meet-mexican-women-faster-cdmx-speed-dating.html",
     "robotsMetaTag": "index, follow"
-  },
-  "error": true,
-  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\tests\\url-audit.spec.ts:110:36",
-  "testFailed": true
+  }
 }

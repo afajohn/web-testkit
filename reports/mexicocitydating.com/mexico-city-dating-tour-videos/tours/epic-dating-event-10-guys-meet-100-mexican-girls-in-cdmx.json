@@ -1,6 +1,6 @@
 {
   "url": "https://mexicocitydating.com/mexico-city-dating-tour-videos/tours/epic-dating-event-10-guys-meet-100-mexican-girls-in-cdmx.html",
-  "timestamp": "2026-01-08T04:11:18.696Z",
+  "timestamp": "2026-01-08T07:30:38.181Z",
   "summary": {
     "overallStatus": "failed",
     "seoPassed": false,
@@ -472,9 +472,5 @@
     "metaDescription": "The allure of Mexican women captivates a legion of men seeking genuine connections and lasting relationships. Many men delve into the realm of Mexican dating through matchmakers.",
     "canonicalUrl": "https://mexicocitydating.com/mexico-city-dating-tour-videos/tours/epic-dating-event-10-guys-meet-100-mexican-girls-in-cdmx.html",
     "robotsMetaTag": "index, follow"
-  },
-  "error": true,
-  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\tests\\url-audit.spec.ts:110:36",
-  "testFailed": true
+  }
 }

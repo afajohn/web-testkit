@@ -1,6 +1,6 @@
 {
   "url": "https://mexicocitydating.com/about-mexico-city-dating.html",
-  "timestamp": "2026-01-08T04:05:08.354Z",
+  "timestamp": "2026-01-08T07:27:55.430Z",
   "summary": {
     "overallStatus": "failed",
     "seoPassed": true,
@@ -349,9 +349,5 @@
     "metaDescription": "Find out how Mexico City Dating remains at the forefront of the matchmaking industry. See how we can help you find genuine and lasting love in Mexico City.",
     "canonicalUrl": "https://mexicocitydating.com/about-mexico-city-dating.html",
     "robotsMetaTag": "index, follow"
-  },
-  "error": true,
-  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\tests\\url-audit.spec.ts:112:41",
-  "testFailed": true
+  }
 }
