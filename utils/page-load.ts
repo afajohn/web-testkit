@@ -13,7 +13,7 @@ export async function waitForPageLoad(
   } = {}
 ): Promise<void> {
   const {
-    waitUntil = 'networkidle',
+    waitUntil = 'load', // Changed from 'networkidle' to 'load' for faster execution
     timeout = 60000, // STRICTLY ENFORCED: 60 seconds default timeout
     waitForSelector,
   } = options;
@@ -33,7 +33,8 @@ export async function waitForPageLoad(
   }
 
   // Additional wait for any pending JavaScript/animations
-  await page.waitForTimeout(500);
+  // Reduced from 500ms to 200ms - sufficient for most dynamic content
+  await page.waitForTimeout(200);
 }
 
 /**
@@ -54,9 +55,11 @@ export async function gotoAndWait(
   let urlAfterNavigation = urlBeforeNavigation;
 
   try {
-    // Navigate to the URL with networkidle as default
+    // Navigate to the URL with 'load' as default (faster than 'networkidle')
+    // 'load' waits for load event, 'networkidle' waits for network to be idle for 500ms
+    // Using 'load' is faster and still ensures page is fully loaded
     const gotoOptions: { waitUntil?: 'load' | 'domcontentloaded' | 'networkidle'; timeout?: number } = {
-      waitUntil: options.waitUntil || 'networkidle',
+      waitUntil: options.waitUntil || 'load', // Changed from 'networkidle' to 'load' for faster execution
       timeout: options.timeout || 60000, // STRICTLY ENFORCED: 60 seconds default timeout
     };
 
@@ -83,7 +86,8 @@ export async function gotoAndWait(
     }
 
     // Small delay to ensure all dynamic content is loaded
-    await page.waitForTimeout(500);
+    // Reduced from 500ms to 200ms - sufficient for most dynamic content
+    await page.waitForTimeout(200);
   } catch (error: any) {
     // Enhanced error with URL context
     try {

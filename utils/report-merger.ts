@@ -69,12 +69,12 @@ export async function mergeTestResults(
   
   const brokenLinksCount = brokenLinks.filter(link => link.isBroken).length;
   
-  // Include links with warnings (e.g., social media links) for user review
-  // These are links that are not broken but have warnings/errors that need review
+  // Include links with errors or non-200 status codes (but not 404) for QA review
+  // These are links that are not broken (404) but have issues that need manual review
+  // Examples: 400, 403, 500, network errors, etc.
   const linksForReview = brokenLinks.filter(link => 
     !link.isBroken && 
-    link.error && 
-    (link.error.includes('Social media') || link.error.includes('⚠️'))
+    (link.status >= 400 || link.error || link.status === 0)
   );
   
   // Default GTM result if not provided

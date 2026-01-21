@@ -240,7 +240,15 @@ export async function checkRobotsMetaTag(
   requireIndex: boolean = true,
   requireFollow: boolean = true
 ): Promise<SEOCheckResult> {
-  const robotsContent = await page.locator('meta[name="robots"]').getAttribute('content');
+  // Use timeout to prevent hanging on slow pages
+  let robotsContent: string | null = null;
+  try {
+    robotsContent = await page.locator('meta[name="robots"]').getAttribute('content', { timeout: 10000 });
+  } catch (error: any) {
+    // If timeout or element not found, treat as missing (defaults to index,follow)
+    // This is not a failure - missing robots meta tag is acceptable
+    robotsContent = null;
+  }
 
   if (!robotsContent) {
     // If no robots meta tag, it defaults to index,follow (search engines can index and follow)

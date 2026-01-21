@@ -157,7 +157,8 @@ export async function checkGTMImplementation(page: Page): Promise<GTMCheckResult
     }
 
     // Step 4: Check if gtm.js is loaded (wait a bit for GTM to load)
-    await page.waitForTimeout(2000); // Give GTM time to load
+    // Reduced from 2000ms to 1000ms - GTM typically loads within 500-800ms
+    await page.waitForTimeout(1000);
 
     // Check for gtm.js script tag in DOM (script tags exist, not "visible")
     let gtmJsScriptTagExists = false;

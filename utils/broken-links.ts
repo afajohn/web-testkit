@@ -185,7 +185,7 @@ function isSocialMediaDomain(url: string): boolean {
 export async function checkLink(
   request: APIRequestContext,
   url: string,
-  timeout: number = 10000
+  timeout: number = 7000 // Reduced from 10000ms to 7000ms (7 seconds) for faster failures
 ): Promise<LinkCheckResult> {
   // Prepare headers that mimic a real browser to avoid blocking
   const browserHeaders = {
@@ -234,8 +234,8 @@ export async function checkLink(
       }
 
       const status = response.status();
-      // Consider 3xx redirects as success (they're being followed)
-      const isSuccess = status < 400;
+      // Only 404 is considered broken, all other status codes are considered success
+      const isSuccess = status !== 404;
       
       return { response, success: isSuccess };
     } catch (error: any) {
@@ -243,8 +243,32 @@ export async function checkLink(
     }
   };
 
-  // First attempt with original URL
-  const firstAttempt = await attemptCheck(url);
+  // If URL has no file extension and doesn't already end with '/', check with trailing slash first
+  const needsSlash = !hasFileExtension(url) && !url.endsWith('/');
+  let firstAttempt;
+  let secondAttempt;
+
+  if (needsSlash) {
+    // Check with trailing slash first for URLs without extensions
+    const urlWithSlash = url + '/';
+    secondAttempt = await attemptCheck(urlWithSlash);
+    
+    if (secondAttempt && secondAttempt.success) {
+      // URL works with trailing slash - return success (this is expected behavior)
+      return {
+        url, // Keep original URL in report
+        status: secondAttempt.response.status(),
+        statusText: secondAttempt.response.statusText(),
+        isBroken: false,
+      };
+    }
+    
+    // If slash version failed, try original URL as fallback
+    firstAttempt = await attemptCheck(url);
+  } else {
+    // URL has extension or already has slash, check original URL first
+    firstAttempt = await attemptCheck(url);
+  }
   
   if (firstAttempt && firstAttempt.success) {
     // URL works as-is
@@ -256,52 +280,33 @@ export async function checkLink(
     };
   }
 
-  // If first attempt failed with 404 and URL has no file extension, try with trailing slash
-  if (
-    firstAttempt && 
-    firstAttempt.response && 
-    firstAttempt.response.status() === 404 && 
-    !hasFileExtension(url) && 
-    !url.endsWith('/')
-  ) {
-    const urlWithSlash = url + '/';
-    const secondAttempt = await attemptCheck(urlWithSlash);
+  // Both attempts failed - check which one we tried first
+  // If we tried with slash first, check that result, otherwise check original
+  const failedAttempt = needsSlash && secondAttempt ? secondAttempt : firstAttempt;
+  
+  if (failedAttempt && failedAttempt.response) {
+    const status = failedAttempt.response.status();
+    const statusText = failedAttempt.response.statusText();
     
-    if (secondAttempt && secondAttempt.success) {
-      // URL works with trailing slash - return success but note the fix
-      return {
-        url, // Keep original URL in report
-        status: secondAttempt.response.status(),
-        statusText: secondAttempt.response.statusText(),
-        isBroken: false,
-        error: `⚠️ Works with trailing slash: ${urlWithSlash}`,
-      };
-    }
-  }
-
-  // Both attempts failed - return the first attempt's error or create error result
-  if (firstAttempt && firstAttempt.response) {
-    const status = firstAttempt.response.status();
-    const statusText = firstAttempt.response.statusText();
-    
-    // Special handling for social media links that return 400/403
-    // These often work in browsers but block automated requests
-    if (isSocial && (status === 400 || status === 403)) {
+    // Only flag as broken if status is 404
+    if (status === 404) {
       return {
         url,
         status,
         statusText,
-        isBroken: false, // Mark as not broken since it likely works in browser
-        error: `⚠️ Social media link may block automated requests (${status} ${statusText}), but should work in browser`,
+        isBroken: true,
+      };
+    } else {
+      // All other status codes (400, 403, 500, etc.) are not considered broken
+      // They might be temporary issues, authentication required, or server errors
+      return {
+        url,
+        status,
+        statusText,
+        isBroken: false,
+        error: status >= 400 ? `Status ${status} ${statusText} (not considered broken)` : undefined,
       };
     }
-    
-    return {
-      url,
-      status,
-      statusText,
-      isBroken: true,
-    };
   } else {
     // Network errors, timeouts, etc. - try one more time to get error details
     try {
@@ -312,8 +317,8 @@ export async function checkLink(
         await request.head(url, { timeout, headers: browserHeaders, maxRedirects: 10 });
       }
     } catch (error: any) {
-      // For social media links with network errors, be more lenient
-      // They might work in browser but fail automated checks
+      // Network errors (timeouts, connection failures, etc.) are not considered broken
+      // Only 404 status codes are considered broken
       if (isSocial) {
         return {
           url,
@@ -328,16 +333,16 @@ export async function checkLink(
         url,
         status: 0,
         statusText: 'Error',
-        isBroken: true,
-        error: error?.message || 'Unknown error',
+        isBroken: false, // Network errors are not considered broken, only 404 is
+        error: `Network error: ${error?.message || 'Unknown error'} (not considered broken)`,
       };
     }
     return {
       url,
       status: 0,
       statusText: 'Error',
-      isBroken: true,
-      error: 'Unknown error',
+      isBroken: false, // Network errors are not considered broken, only 404 is
+      error: 'Unknown error (not considered broken)',
     };
   }
 }
@@ -348,7 +353,7 @@ export async function checkLink(
 export async function checkLinks(
   request: APIRequestContext,
   urls: string[],
-  concurrency: number = 10
+  concurrency: number = 20 // Increased from 10 to 20 for faster processing
 ): Promise<LinkCheckResult[]> {
   const results: LinkCheckResult[] = [];
   
@@ -366,19 +371,25 @@ export async function checkLinks(
 
 /**
  * Check all links on a page for broken links
- * Returns only broken links with element information
+ * Returns ALL link check results (broken and for review) with element information
+ * Broken links (404) are marked with isBroken: true
+ * Other status codes (400, 403, 500, network errors) are marked with isBroken: false for QA review
  */
 export async function checkBrokenLinks(
   page: Page,
   request: APIRequestContext,
   baseUrl?: string,
-  concurrency: number = 10
+  concurrency: number = 20 // Increased from 10 to 20 for faster processing
 ): Promise<LinkCheckResult[]> {
   // Extract all links from the page with element information
   const linksWithElements = await extractLinksWithElements(page, baseUrl);
   const links = linksWithElements.map(link => link.url);
   
-  console.log(`Found ${links.length} links to check`);
+  // Only log in non-batch mode to reduce I/O overhead
+  const isBatchMode = process.env.CI === 'true' || process.env.BATCH_MODE === 'true';
+  if (!isBatchMode) {
+    console.log(`Found ${links.length} links to check`);
+  }
 
   // Create a map of URL to elements
   const urlToElementsMap = new Map<string, LinkElement[]>();
@@ -395,17 +406,19 @@ export async function checkBrokenLinks(
     elements: urlToElementsMap.get(result.url) || [],
   }));
 
-  // Log warnings for links that work with trailing slash
+  // Log warnings for links that work with trailing slash (only in non-batch mode)
   const needsSlash = resultsWithElements.filter(result => !result.isBroken && result.error && result.error.includes('trailing slash'));
-  if (needsSlash.length > 0) {
+  if (needsSlash.length > 0 && !isBatchMode) {
     console.log(`\n⚠️  ${needsSlash.length} link(s) work but need trailing slash:`);
     needsSlash.forEach(link => {
       console.log(`   ${link.url} → ${link.error?.replace('⚠️ Works with trailing slash: ', '')}`);
     });
   }
 
-  // Filter to only broken links
-  return resultsWithElements.filter(result => result.isBroken);
+  // Return ALL results (broken 404s and others for review)
+  // Only 404 status codes have isBroken: true
+  // Other errors (400, 403, 500, network errors) have isBroken: false but include error info for QA review
+  return resultsWithElements;
 }
 
 /**

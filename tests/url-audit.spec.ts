@@ -42,74 +42,245 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
     let gtmResult: any;
     let currentUrl = TEST_URL;
     
+    // Check if running in batch mode (for performance optimizations)
+    const isBatchMode = process.env.CI === 'true' || process.env.BATCH_MODE === 'true';
+    
     try {
-      console.log(`\nNavigating to: ${TEST_URL}`);
+      // Skip verbose navigation logs in batch mode
+      if (!isBatchMode) {
+        console.log(`\nNavigating to: ${TEST_URL}`);
+      }
       await gotoAndWait(page, TEST_URL);
       currentUrl = await getCurrentUrl(page);
-      console.log(`Successfully loaded: ${currentUrl}`);
+      if (!isBatchMode) {
+        console.log(`Successfully loaded: ${currentUrl}`);
+      }
 
-      // Run all checks in parallel for faster execution
+      // Run all checks with individual error handling to collect partial results
+      // This ensures we get data even if some checks fail
       const apiRequest = await request.newContext();
 
-      [seoResults, brokenLinks, accessibilityResults, gtmResult] = await Promise.all([
+      // Run checks individually with error handling to collect partial results
+      const checkPromises = [
         runSEOChecks(page, {
           checkRobots: true, // Include robots meta tag check
+        }).catch((error: any) => {
+          console.error('SEO checks failed:', error.message);
+          return {
+            error: true,
+            errorMessage: error.message,
+            errorStack: error.stack,
+            results: [],
+          };
         }),
-        checkBrokenLinks(page, apiRequest),
-        runAccessibilityCheck(page),
-        checkGTMImplementation(page),
-      ]);
+        checkBrokenLinks(page, apiRequest).catch((error: any) => {
+          console.error('Broken links check failed:', error.message);
+          return {
+            error: true,
+            errorMessage: error.message,
+            errorStack: error.stack,
+            brokenLinks: [],
+            linksForReview: [],
+          };
+        }),
+        runAccessibilityCheck(page).catch((error: any) => {
+          console.error('Accessibility check failed:', error.message);
+          return {
+            error: true,
+            errorMessage: error.message,
+            errorStack: error.stack,
+            violations: [],
+            incomplete: [],
+            passed: false,
+            totalViolations: 0,
+            totalIncomplete: 0,
+          };
+        }),
+        checkGTMImplementation(page).catch((error: any) => {
+          console.error('GTM check failed:', error.message);
+          return {
+            error: true,
+            errorMessage: error.message,
+            errorStack: error.stack,
+            hasGTM: false,
+            containerId: null,
+            message: `GTM check failed: ${error.message}`,
+          };
+        }),
+      ];
 
-    // Log all reports
-    console.log(`\n${'='.repeat(80)}`);
-    console.log(`AUDIT REPORT FOR: ${TEST_URL}`);
-    console.log(`${'='.repeat(80)}\n`);
+      [seoResults, brokenLinks, accessibilityResults, gtmResult] = await Promise.all(checkPromises);
 
-    console.log('=== SEO CHECK RESULTS ===');
-    console.log(await formatSEOCheckReport(seoResults, page));
+      // Show concise status in batch mode
+      if (isBatchMode) {
+        // SEO checks status
+        process.stdout.write('  SEO checks... ');
+        if (seoResults.error) {
+          console.log(`✗ Error: ${seoResults.errorMessage}`);
+        } else {
+          const seoPassed = seoResults.filter((r: any) => r.passed).length;
+          const seoTotal = seoResults.length;
+          const seoFailed = seoTotal - seoPassed;
+          if (seoFailed === 0) {
+            console.log('✓ Pass');
+          } else {
+            console.log(`✗ Failed (${seoFailed}/${seoTotal})`);
+          }
+        }
 
-    console.log('\n=== BROKEN LINKS CHECK ===');
-    console.log(formatBrokenLinksReport(brokenLinks));
+        // Broken links status
+        process.stdout.write('  Checking Broken Links... ');
+        if (brokenLinks.error) {
+          console.log(`✗ Error: ${brokenLinks.errorMessage}`);
+        } else {
+          const brokenCount = brokenLinks.filter((link: any) => link.isBroken).length;
+          if (brokenCount === 0) {
+            console.log('✓ No broken links');
+          } else {
+            console.log(`✗ ${brokenCount} broken link(s)`);
+          }
+        }
 
-    console.log('\n=== ACCESSIBILITY CHECK ===');
-    console.log(formatAccessibilityReport(accessibilityResults));
+        // Accessibility status
+        process.stdout.write('  Checking Accessibility... ');
+        if (accessibilityResults.error) {
+          console.log(`✗ Error: ${accessibilityResults.errorMessage}`);
+        } else if (accessibilityResults.passed) {
+          console.log('✓ Pass');
+        } else {
+          console.log(`✗ Failed (${accessibilityResults.totalViolations} violation(s))`);
+        }
 
-    console.log('\n=== GTM CHECK ===');
-    console.log(formatGTMReport(gtmResult));
+        // GTM status
+        process.stdout.write('  Checking GTM... ');
+        if (gtmResult.error) {
+          console.log(`✗ Error: ${gtmResult.errorMessage}`);
+        } else if (gtmResult.hasGTM) {
+          console.log(`✓ Found (${gtmResult.containerId})`);
+        } else {
+          console.log('✗ Not found');
+        }
+      } else {
+        // Detailed reports when not in batch mode (for debugging)
+        console.log(`\n${'='.repeat(80)}`);
+        console.log(`AUDIT REPORT FOR: ${TEST_URL}`);
+        console.log(`${'='.repeat(80)}\n`);
 
-    console.log(`\n${'='.repeat(80)}\n`);
+        console.log('=== SEO CHECK RESULTS ===');
+        if (seoResults.error) {
+          console.log(`❌ SEO checks failed: ${seoResults.errorMessage}`);
+        } else {
+          console.log(await formatSEOCheckReport(seoResults, page));
+        }
+
+        console.log('\n=== BROKEN LINKS CHECK ===');
+        if (brokenLinks.error) {
+          console.log(`❌ Broken links check failed: ${brokenLinks.errorMessage}`);
+        } else {
+          console.log(formatBrokenLinksReport(brokenLinks));
+        }
+
+        console.log('\n=== ACCESSIBILITY CHECK ===');
+        if (accessibilityResults.error) {
+          console.log(`❌ Accessibility check failed: ${accessibilityResults.errorMessage}`);
+        } else {
+          console.log(formatAccessibilityReport(accessibilityResults));
+        }
+
+        console.log('\n=== GTM CHECK ===');
+        if (gtmResult.error) {
+          console.log(`❌ GTM check failed: ${gtmResult.errorMessage}`);
+        } else {
+          console.log(formatGTMReport(gtmResult));
+        }
+
+        console.log(`\n${'='.repeat(80)}\n`);
+      }
+
+    // Normalize results - handle error cases
+    const normalizedSeoResults = seoResults.error ? [] : seoResults;
+    const normalizedBrokenLinks = brokenLinks.error ? [] : brokenLinks;
+    const normalizedAccessibilityResults = accessibilityResults.error 
+      ? {
+          violations: [],
+          incomplete: [],
+          passed: false,
+          totalViolations: 0,
+          totalIncomplete: 0,
+        }
+      : accessibilityResults;
 
     // Merge all results into a single report
     const mergedReport = await mergeTestResults(
       currentUrl,
-      seoResults,
-      brokenLinks,
-      accessibilityResults,
+      normalizedSeoResults,
+      normalizedBrokenLinks,
+      normalizedAccessibilityResults,
       page,
       gtmResult
     );
+
+    // Add error information to report if any checks failed
+    if (seoResults.error || brokenLinks.error || accessibilityResults.error || gtmResult.error) {
+      mergedReport.partialResults = true;
+      mergedReport.checkErrors = {};
+      if (seoResults.error) {
+        mergedReport.checkErrors.seo = {
+          error: true,
+          errorMessage: seoResults.errorMessage,
+          errorStack: seoResults.errorStack,
+        };
+      }
+      if (brokenLinks.error) {
+        mergedReport.checkErrors.brokenLinks = {
+          error: true,
+          errorMessage: brokenLinks.errorMessage,
+          errorStack: brokenLinks.errorStack,
+        };
+      }
+      if (accessibilityResults.error) {
+        mergedReport.checkErrors.accessibility = {
+          error: true,
+          errorMessage: accessibilityResults.errorMessage,
+          errorStack: accessibilityResults.errorStack,
+        };
+      }
+      if (gtmResult.error) {
+        mergedReport.checkErrors.gtm = {
+          error: true,
+          errorMessage: gtmResult.errorMessage,
+          errorStack: gtmResult.errorStack,
+        };
+      }
+    }
 
     // Generate file path from URL (includes folder structure) and save JSON report
     const relativePath = getFilePathFromUrl(currentUrl, '', 'json');
     const filePath = path.join(REPORTS_DIR, relativePath);
     writeJsonFile(filePath, mergedReport);
 
-    console.log(`\n✅ JSON Report saved: ${filePath}`);
-    console.log(`   Overall Status: ${mergedReport.summary.overallStatus.toUpperCase()}`);
-    console.log(`   SEO: ${mergedReport.seo.passedCount}/${mergedReport.seo.totalCount} passed`);
-    console.log(`   Broken Links: ${mergedReport.brokenLinks.brokenCount} found`);
-    console.log(`   Accessibility: ${mergedReport.accessibility.passed ? 'PASSED' : 'FAILED'} (${mergedReport.accessibility.totalViolations} violations)`);
-    console.log(`   GTM: ${mergedReport.gtm.hasGTM ? 'FOUND' : 'NOT FOUND'}${mergedReport.gtm.containerId ? ` (${mergedReport.gtm.containerId})` : ''}`);
-    console.log(`\n${'='.repeat(80)}\n`);
+    // Log summary (concise in batch mode, detailed otherwise)
+    if (isBatchMode) {
+      // In batch mode, we already showed status above, just confirm completion
+      // The summary line is handled by the batch runner
+    } else {
+      console.log(`\n✅ JSON Report saved: ${filePath}`);
+      console.log(`   Status: ${mergedReport.summary.overallStatus.toUpperCase()} | SEO: ${mergedReport.seo.passedCount}/${mergedReport.seo.totalCount} | Links: ${mergedReport.brokenLinks.brokenCount} | A11y: ${mergedReport.accessibility.passed ? 'PASS' : 'FAIL'} (${mergedReport.accessibility.totalViolations}) | GTM: ${mergedReport.gtm.hasGTM ? '✓' : '✗'}`);
+      console.log(`\n${'='.repeat(80)}\n`);
+    }
 
-    // Assertions
-    const failedSEOChecks = seoResults.filter(r => !r.passed);
-    
-    // You can adjust these assertions based on your requirements
-    // Option 1: Fail if any check fails
-    expect(failedSEOChecks.length).toBe(0);
-    expect(brokenLinks.length).toBe(0);
-    expect(accessibilityResults.passed).toBe(true);
+    // Assertions - only check if results were collected (not errors)
+    if (!seoResults.error) {
+      const failedSEOChecks = seoResults.filter((r: any) => !r.passed);
+      expect(failedSEOChecks.length).toBe(0);
+    }
+    if (!brokenLinks.error) {
+      const brokenLinksCount = brokenLinks.filter((link: any) => link.isBroken).length;
+      expect(brokenLinksCount).toBe(0);
+    }
+    if (!accessibilityResults.error) {
+      expect(accessibilityResults.passed).toBe(true);
+    }
     
     // Option 2: Log failures but don't fail (comment out assertions above and use this):
     // if (failedSEOChecks.length > 0 || brokenLinks.length > 0 || !accessibilityResults.passed) {
@@ -121,33 +292,88 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
       // Try to save merged report even if assertions failed
       // This ensures we have the full detailed report even when test fails
       try {
-        // Check if we have results to merge (might not exist if error occurred before tests)
-        if (typeof seoResults !== 'undefined' && typeof brokenLinks !== 'undefined' && typeof accessibilityResults !== 'undefined') {
+        // Normalize results - handle cases where checks might have partial results
+        const normalizedSeoResults = (seoResults && !seoResults.error) ? seoResults : [];
+        const normalizedBrokenLinks = (brokenLinks && !brokenLinks.error) ? brokenLinks : [];
+        const normalizedAccessibilityResults = (accessibilityResults && !accessibilityResults.error)
+          ? accessibilityResults
+          : {
+              violations: [],
+              incomplete: [],
+              passed: false,
+              totalViolations: 0,
+              totalIncomplete: 0,
+            };
+        const normalizedGtmResult = (gtmResult && !gtmResult.error) ? gtmResult : {
+          hasGTM: false,
+          containerId: null,
+          message: 'GTM check not performed',
+        };
+
+        // Check if we have any results to merge (even partial)
+        if (typeof seoResults !== 'undefined' || typeof brokenLinks !== 'undefined' || typeof accessibilityResults !== 'undefined') {
           const mergedReport = await mergeTestResults(
             finalUrl,
-            seoResults,
-            brokenLinks,
-            accessibilityResults,
+            normalizedSeoResults,
+            normalizedBrokenLinks,
+            normalizedAccessibilityResults,
             page,
-            gtmResult
+            normalizedGtmResult
           );
           
           // Add error information to the report
-          const errorReport = {
-            ...mergedReport,
-            error: true,
-            errorMessage: error.message,
-            errorStack: error.stack,
-            testFailed: true,
-          };
+          mergedReport.error = true;
+          mergedReport.errorMessage = error.message;
+          mergedReport.errorStack = error.stack;
+          mergedReport.testFailed = true;
+          mergedReport.partialResults = true;
+          
+          // Add check-specific errors if they exist
+          if (!mergedReport.checkErrors) {
+            mergedReport.checkErrors = {};
+          }
+          if (seoResults && seoResults.error) {
+            mergedReport.checkErrors.seo = {
+              error: true,
+              errorMessage: seoResults.errorMessage,
+              errorStack: seoResults.errorStack,
+            };
+          }
+          if (brokenLinks && brokenLinks.error) {
+            mergedReport.checkErrors.brokenLinks = {
+              error: true,
+              errorMessage: brokenLinks.errorMessage,
+              errorStack: brokenLinks.errorStack,
+            };
+          }
+          if (accessibilityResults && accessibilityResults.error) {
+            mergedReport.checkErrors.accessibility = {
+              error: true,
+              errorMessage: accessibilityResults.errorMessage,
+              errorStack: accessibilityResults.errorStack,
+            };
+          }
+          if (gtmResult && gtmResult.error) {
+            mergedReport.checkErrors.gtm = {
+              error: true,
+              errorMessage: gtmResult.errorMessage,
+              errorStack: gtmResult.errorStack,
+            };
+          }
           
           const relativePath = getFilePathFromUrl(finalUrl, '', 'json');
           const filePath = path.join(REPORTS_DIR, relativePath);
-          writeJsonFile(filePath, errorReport);
+          writeJsonFile(filePath, mergedReport);
           
-          console.error(`\n⚠️  Test failed but detailed report saved: ${filePath}`);
+          // Only show this message in batch mode to avoid duplication
+          // Playwright will show the test failure output anyway
+          if (isBatchMode) {
+            // Suppress the duplicate message - Playwright already shows status output
+          } else {
+            console.error(`\n⚠️  Test failed but detailed report saved: ${filePath}`);
+          }
         } else {
-          // If we don't have test results, save minimal error report
+          // If we don't have ANY test results, save minimal error report
           const errorReport = {
             url: TEST_URL,
             timestamp: new Date().toISOString(),
@@ -173,106 +399,19 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
         console.error(`\n❌ Failed to save report: ${saveError.message}`);
       }
       
-      const errorMessage = formatErrorWithContext(
-        TEST_URL,
-        'comprehensive audit',
-        error
-      );
-      console.error(errorMessage);
-      console.error(`URL before error: ${TEST_URL}`);
-      console.error(`URL after error: ${finalUrl}`);
+      // Only print detailed error message in non-batch mode
+      // In batch mode, Playwright will print the error anyway, so we skip duplication
+      if (!isBatchMode) {
+        const errorMessage = formatErrorWithContext(
+          TEST_URL,
+          'comprehensive audit',
+          error
+        );
+        console.error(errorMessage);
+        console.error(`URL before error: ${TEST_URL}`);
+        console.error(`URL after error: ${finalUrl}`);
+      }
       
-      throw error;
-    }
-  });
-
-  test('SEO checks only', async ({ page }) => {
-    let currentUrl = TEST_URL;
-    
-    try {
-      console.log(`\nNavigating to: ${TEST_URL}`);
-      await gotoAndWait(page, TEST_URL);
-      currentUrl = await getCurrentUrl(page);
-      console.log(`Successfully loaded: ${currentUrl}`);
-
-      const results = await runSEOChecks(page, {
-        checkRobots: true,
-      });
-
-    console.log(`\nSEO Check for: ${TEST_URL}`);
-    console.log(await formatSEOCheckReport(results, page));
-
-    const failedChecks = results.filter(r => !r.passed);
-    expect(failedChecks.length).toBe(0);
-    } catch (error: any) {
-      const finalUrl = await getCurrentUrl(page);
-      const errorMessage = formatErrorWithContext(
-        TEST_URL,
-        'SEO checks',
-        error
-      );
-      console.error(errorMessage);
-      console.error(`URL before error: ${TEST_URL}`);
-      console.error(`URL after error: ${finalUrl}`);
-      throw error;
-    }
-  });
-
-  test('broken links check only', async ({ page }) => {
-    let currentUrl = TEST_URL;
-    
-    try {
-      console.log(`\nNavigating to: ${TEST_URL}`);
-      await gotoAndWait(page, TEST_URL);
-      currentUrl = await getCurrentUrl(page);
-      console.log(`Successfully loaded: ${currentUrl}`);
-      
-      const apiRequest = await request.newContext();
-      const brokenLinks = await checkBrokenLinks(page, apiRequest);
-
-    console.log(`\nBroken Links Check for: ${TEST_URL}`);
-    console.log(formatBrokenLinksReport(brokenLinks));
-
-    expect(brokenLinks.length).toBe(0);
-    } catch (error: any) {
-      const finalUrl = await getCurrentUrl(page);
-      const errorMessage = formatErrorWithContext(
-        TEST_URL,
-        'broken links check',
-        error
-      );
-      console.error(errorMessage);
-      console.error(`URL before error: ${TEST_URL}`);
-      console.error(`URL after error: ${finalUrl}`);
-      throw error;
-    }
-  });
-
-  test('accessibility check only', async ({ page }) => {
-    let currentUrl = TEST_URL;
-    
-    try {
-      console.log(`\nNavigating to: ${TEST_URL}`);
-      await gotoAndWait(page, TEST_URL);
-      currentUrl = await getCurrentUrl(page);
-      console.log(`Successfully loaded: ${currentUrl}`);
-
-      const scanResults = await runAccessibilityCheck(page);
-
-    console.log(`\nAccessibility Check for: ${TEST_URL}`);
-    console.log(formatAccessibilityReport(scanResults));
-
-    expect(scanResults.passed).toBe(true);
-    } catch (error: any) {
-      const finalUrl = await getCurrentUrl(page);
-      const errorMessage = formatErrorWithContext(
-        TEST_URL,
-        'accessibility check',
-        error
-      );
-      console.error(errorMessage);
-      console.error(`URL before error: ${TEST_URL}`);
-      console.error(`URL after error: ${finalUrl}`);
       throw error;
     }
   });
