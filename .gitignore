@@ -10,4 +10,9 @@
 
 # GitHub Pages reports (optional - comment out if you want to commit these)
 # /gh-pages-reports/
-/reports/bangkok-women.com
+
+# Playwright
+node_modules/
+reports
+test-results
+all_json_reports

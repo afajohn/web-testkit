@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD:reports/mexicocitydating.com/mexico-city-dating-tour-videos/informational/how-anyone-can-date-dozens-of-latinas-in-mexico-city.json
   "url": "https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/how-anyone-can-date-dozens-of-latinas-in-mexico-city.html",
   "timestamp": "2026-01-08T07:29:13.158Z",
+=======
+  "url": "https://mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/youll-never-meet-mexican-women-faster-cdmx-speed-dating.html",
+  "timestamp": "2026-01-08T07:30:34.628Z",
+>>>>>>> c1:reports/mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/youll-never-meet-mexican-women-faster-cdmx-speed-dating.json
   "summary": {
     "overallStatus": "failed",
     "seoPassed": false,
@@ -431,7 +436,7 @@
               }
             ],
             "impact": "serious",
-            "html": "<div class=\"html5-video-player y...\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/721caf0b/p...\" aria-label=\"YouTube Video Player\">",
+            "html": "<div class=\"html5-video-player y...\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/b75a8e80/p...\" aria-label=\"YouTube Video Player\">",
             "target": [
               "iframe[width=\"640\"]",
               "#movie_player"
