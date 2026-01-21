@@ -1,0 +1,8 @@
+{
+  "url": "https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/what-do-filipinas-expect-from-foreigners-wmaf-couples-pov.html",
+  "timestamp": "2026-01-08T08:07:13.956Z",
+  "error": true,
+  "errorMessage": "Failed to navigate to https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/what-do-filipinas-expect-from-foreigners-wmaf-couples-pov.html\nURL before navigation: https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/what-do-filipinas-expect-from-foreigners-wmaf-couples-pov.html\nURL after navigation: about:blank\nOriginal error: page.goto: net::ERR_ABORTED at https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/what-do-filipinas-expect-from-foreigners-wmaf-couples-pov.html\nCall log:\n\u001b[2m  - navigating to \"https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/what-do-filipinas-expect-from-foreigners-wmaf-couples-pov.html\", waiting until \"networkidle\"\u001b[22m\n",
+  "errorStack": "page.goto: net::ERR_ABORTED at https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/what-do-filipinas-expect-from-foreigners-wmaf-couples-pov.html\nCall log:\n\u001b[2m  - navigating to \"https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/what-do-filipinas-expect-from-foreigners-wmaf-couples-pov.html\", waiting until \"networkidle\"\u001b[22m\n\n    at gotoAndWait (C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\utils\\page-load.ts:63:16)\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\multi-url-audit.spec.ts:257:26",
+  "finalUrl": "about:blank"
+}

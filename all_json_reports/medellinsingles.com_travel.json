@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/travel",
+    "timestamp": "2026-01-16 18:44:23",
+    "summary": {
+        "mobile_score": 37,
+        "desktop_score": 59
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 37,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "4.0\u00a0s",
+        "lcp_lab": "8.3\u00a0s",
+        "tbt_lab": "190\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 59,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "1.2\u00a0s",
+        "lcp_lab": "2.2\u00a0s",
+        "tbt_lab": "190\u00a0ms"
+    }
+}

@@ -1,0 +1,239 @@
+{
+  "url": "https://russia-ladies.com/dating/dating-a-single-mom-pros-and-cons.html",
+  "timestamp": "2026-01-12T08:24:36.041Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": false,
+    "brokenLinksCount": 0,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"When Dating Russian Women | Reasons to Love Yourself First\"",
+        "value": "When Dating Russian Women | Reasons to Love Yourself First"
+      },
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (185 chars, recommended: 50-160)",
+        "value": "Dating a single mom has its pros and cons that you may want to consider before trying to woo one. Here are things to ponder on if you want a long-term relationship with a single mother."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://russia-ladies.com/dating/dating-a-single-mom-pros-and-cons.html\"",
+        "value": "https://russia-ladies.com/dating/dating-a-single-mom-pros-and-cons.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 10 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Dating a Single Mom: Pros and Cons"
+      }
+    ],
+    "passedCount": 5,
+    "totalCount": 6,
+    "failedChecks": [
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (185 chars, recommended: 50-160)",
+        "value": "Dating a single mom has its pros and cons that you may want to consider before trying to woo one. Here are things to ponder on if you want a long-term relationship with a single mother."
+      }
+    ]
+  },
+  "brokenLinks": {
+    "totalChecked": 0,
+    "brokenCount": 0,
+    "brokenLinks": []
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 2,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p><strong>This story was originally published on Medium: </strong><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://medium.com/@rroksanavvasilieva/pros-and-cons-of-dating-a-single-mom-4b76f90bf541\">Pros and Cons of\n      Dating a Single Mom</a></p>",
+                    "target": [
+                      "p:nth-child(34)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "a[rel=\"noopener noreferrer nofollow\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://medium.com/@rroksanavvasilieva/pros-and-cons-of-dating-a-single-mom-4b76f90bf541\">Pros and Cons of\n      Dating a Single Mom</a>",
+            "target": [
+              "a[rel=\"noopener noreferrer nofollow\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "a[rel=\"noopener noreferrer nofollow\"]"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. link-in-text-block\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Elements to Review (1):\n     1. a[rel=\"noopener noreferrer nofollow\"]\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-M2FP9JRT",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-M2FP9JRT). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-M2FP9JRT",
+          "GTM-M2FP9JRT",
+          "GTM-M2FP9JRT"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "When Dating Russian Women | Reasons to Love Yourself First",
+    "metaDescription": "Dating a single mom has its pros and cons that you may want to consider before trying to woo one. Here are things to ponder on if you want a long-term relationship with a single mother.",
+    "canonicalUrl": "https://russia-ladies.com/dating/dating-a-single-mom-pros-and-cons.html",
+    "robotsMetaTag": "index, follow"
+  }
+}

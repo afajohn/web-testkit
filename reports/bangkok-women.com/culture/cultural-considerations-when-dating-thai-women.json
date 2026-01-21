@@ -1,0 +1,283 @@
+{
+  "url": "https://bangkok-women.com/culture/cultural-considerations-when-dating-thai-women.html",
+  "timestamp": "2026-01-20T09:29:15.662Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 0,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Cultural Considerations When Dating Thai Women\"",
+        "value": "Cultural Considerations When Dating Thai Women"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (120 chars)",
+        "value": "Culture is generally important to Thai women. Foreign men who want to date them should keep these basic factors in mind."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://bangkok-women.com/culture/cultural-considerations-when-dating-thai-women.html\"",
+        "value": "https://bangkok-women.com/culture/cultural-considerations-when-dating-thai-women.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 11 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Cultural Considerations When Dating Thai Women"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 0,
+    "brokenCount": 0,
+    "brokenLinks": []
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 2,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "list",
+        "impact": "serious",
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "description": "Ensure that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": {
+                  "values": "p"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(2)"
+                    ]
+                  },
+                  {
+                    "html": "<p> Now, there are a lot of restaurants in Thailand for foreign men to eat in. After all, tourism is a pretty big industry in Thailand, and not everyone is going to have a palate that is appreciative of the local cuisine.  </p>",
+                    "target": [
+                      "ol > p:nth-child(3)"
+                    ]
+                  },
+                  {
+                    "html": "<p> While a man who is visiting the country can probably find dishes that he’s more accustomed to, a Thai woman is more likely to have a preference towards Thai cuisine because that’s what she is used to. </p>",
+                    "target": [
+                      "ol > p:nth-child(4)"
+                    ]
+                  },
+                  {
+                    "html": "<p> In the West, it’s not unusual for couples to be public about their affection for one another. Kissing, necking, and cuddling are things that are not always kept private by Western couples.  </p>",
+                    "target": [
+                      "ol > p:nth-child(6)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(7)"
+                    ]
+                  },
+                  {
+                    "html": "<p> While holding hands may be okay, anything more than that may not be welcomed, so anyone who visits the country should exercise caution. </p>",
+                    "target": [
+                      "p:nth-child(8)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(10)"
+                    ]
+                  },
+                  {
+                    "html": "<p> Now, a man who comes to Thailand and wants to talk sports may not be met with blank stares when it comes to talking about basketball, but gridiron football is not all that popular outside of North America.  </p>",
+                    "target": [
+                      "p:nth-child(11)"
+                    ]
+                  },
+                  {
+                    "html": "<p> The SuperBowl may be a big event, but it’s not really a thing in the wider world outside of the commercials that go viral on the internet. So if a man goes to Thailand and wants to talk sports with a woman there, he may have to do some research on sports that he isn’t used to. </p>",
+                    "target": [
+                      "p:nth-child(12)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(14)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(15)"
+                    ]
+                  },
+                  {
+                    "html": "<p> That rather large thing is an elephant, and you may want to exercise patience with it. Many Thai people are Buddhist, and the elephant is sacred in their country, which means that the animal is treated with some degree of reverence.  </p>",
+                    "target": [
+                      "p:nth-child(16)"
+                    ]
+                  },
+                  {
+                    "html": "<p> Public transportation has its place in society. It provides people with the infrastructure that they need in order to commute. In a lot of places, public transportation is made up of taxis, buses, and trains. </p>",
+                    "target": [
+                      "p:nth-child(18)"
+                    ]
+                  },
+                  {
+                    "html": "<p> Thailand has those things as well, but they also have a little something that never really caught on in the West. It is known as the rickshaw, which has become mechanized and automated as technology has advanced. </p>",
+                    "target": [
+                      "p:nth-child(19)"
+                    ]
+                  },
+                  {
+                    "html": "<p> The rickshaws in Thailand, called tuk-tuks, are a common sight on the streets, and many tourists have found themselves hailing one down in order to get around the city. So if the opportunity does come up to ride one, go ahead and take it for the novelty of the experience, if nothing else.  </p>",
+                    "target": [
+                      "p:nth-child(20)"
+                    ]
+                  },
+                  {
+                    "html": "<p> There are a lot of countries in the world that have their own cultures, and sometimes there will be different cultures within those countries that will vary by region. Now, these cultures will be important to the people who grew up with them, not just the women that you want to date.  </p>",
+                    "target": [
+                      "p:nth-child(21)"
+                    ]
+                  },
+                  {
+                    "html": "<p> If you want to date Thai women, then you’re going to have to make some small considerations for their cultural background. </p>",
+                    "target": [
+                      "p:nth-child(22)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "List element has direct children that are not allowed: p"
+              }
+            ],
+            "impact": "serious",
+            "html": "<ol>",
+            "target": [
+              "ol"
+            ],
+            "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: p",
+            "selector": "ol"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. list - serious Impact\n   Description: Ensure that lists are structured correctly\n   Help: <ul> and <ol> must only directly contain <li>, <script> or <template> elements\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/list?application=playwright\n   Affected Elements (1):\n     1. ol\n        Fix all of the following:\n  List element has direct children that are not allowed: p\n        HTML: <ol>\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Cultural Considerations When Dating Thai Women",
+    "metaDescription": "Culture is generally important to Thai women. Foreign men who want to date them should keep these basic factors in mind.",
+    "canonicalUrl": "https://bangkok-women.com/culture/cultural-considerations-when-dating-thai-women.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:112:41",
+  "testFailed": true
+}

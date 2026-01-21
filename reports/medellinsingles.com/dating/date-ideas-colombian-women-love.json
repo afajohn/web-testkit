@@ -1,0 +1,638 @@
+{
+  "url": "https://medellinsingles.com/dating/date-ideas-colombian-women-love.html",
+  "timestamp": "2026-01-16T09:18:22.207Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 3,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Medellin Date Ideas Colombian Women LOVE\"",
+        "value": "Medellin Date Ideas Colombian Women LOVE"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (121 chars)",
+        "value": "Discover the perfect, impressive, and fun date ideas you can have in Medellin that Colombian women would absolutely love."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/dating/date-ideas-colombian-women-love.html\"",
+        "value": "https://medellinsingles.com/dating/date-ideas-colombian-women-love.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 13 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Medellin Date Ideas Colombian Women LOVE"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 3,
+    "brokenCount": 3,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/@jeison",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Jeison Higuita",
+            "html": "<a href=\"https://unsplash.com/@jeison\" target=\"_blank\">Jeison Higuita</a>",
+            "href": "https://unsplash.com/@jeison"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/photos/oJx8MOeht1Y",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Unsplash",
+            "html": "<a href=\"https://unsplash.com/photos/oJx8MOeht1Y/\" target=\"_blank\">Unsplash</a>",
+            "href": "https://unsplash.com/photos/oJx8MOeht1Y/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "description": "Ensure that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": {
+                  "values": "p, figure"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>When we talk about Latina women in general, the first thing that usually comes to mind is adventure. Truth be told, one of the characteristics of a Colombian woman is being adventurous.</p>",
+                    "target": [
+                      "ol > p:nth-child(2)"
+                    ]
+                  },
+                  {
+                    "html": "<p>One of the best date ideas Colombian women love is paragliding in San Felix, one of the most famous places in Medellin for such an activity. If you want to sweep your Colombian date off her feet, you should at least give this place a visit.</p>",
+                    "target": [
+                      "ol > p:nth-child(3)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Once you are high up in the sky, you can see the overlooking beauty and wonder of Medellin. This is also the perfect chance for you to show your date that you can be as adventurous as she is.</p>",
+                    "target": [
+                      "ol > p:nth-child(4)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Although you have to take separate rides, this is still a one of a kind date that you and your Colombian lady will forever remember. This will also satisfy her hunger for thrill and adventure.</p>",
+                    "target": [
+                      "ol > p:nth-child(5)"
+                    ]
+                  },
+                  {
+                    "html": "<p>As you know, Colombian women are classy and intelligent, and they like men with sense. So to impress your lady, particularly on your date, try visiting museums with her.</p>",
+                    "target": [
+                      "p:nth-child(7)"
+                    ]
+                  },
+                  {
+                    "html": "<figure class=\"d-flex flex-column align-items-center col-12\">",
+                    "target": [
+                      "figure:nth-child(8)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Medellin has several museums that tourists love to visit -- one of the most famous ones being the Museo de Antioquia.</p>",
+                    "target": [
+                      "ol > p:nth-child(9)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(10)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Going on a picnic is a common date idea. However, <a href=\"/blog/types-of-men-latin-women-want-to-date.html\"><strong>Latina women</strong></a> are very appreciative, thus, regardless of how simple your date is, they will still appreciate it. Besides, who doesn’t love a good picnic date?</p>",
+                    "target": [
+                      "p:nth-child(12)"
+                    ]
+                  },
+                  {
+                    "html": "<p>One of the best places to have a picnic is in Jardin Botanico de Medellín. This place is beautiful and refreshing, especially with its pleasant atmosphere.</p>",
+                    "target": [
+                      "p:nth-child(13)"
+                    ]
+                  },
+                  {
+                    "html": "<p>You can cook her favorite food and pair it with some wine and fruits. With your efforts on this, your Colombian woman will surely appreciate you even more.</p>",
+                    "target": [
+                      "p:nth-child(14)"
+                    ]
+                  },
+                  {
+                    "html": "<p>One of the things Colombia has to offer to its tourists is its coffee. It is considered one of the countries with the best coffee.</p>",
+                    "target": [
+                      "p:nth-child(16)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Colombians love to visit coffee shops to enjoy some good coffee. So if you are planning a date with <a href=\"/blog/things-to-avoid-when-dating-colombian-women.html\"><strong>Colombian women</strong></a>, you should consider getting some coffee.</p>",
+                    "target": [
+                      "p:nth-child(17)"
+                    ]
+                  },
+                  {
+                    "html": "<p>There are many different cafes in Medellin, but one of the most famous ones in the area is the La Taza Tienda de Cafe. It is a small and quiet place, which is perfect if you don’t want to be disturbed while on a date with a beautiful Colombian girl.</p>",
+                    "target": [
+                      "p:nth-child(18)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Colombians love to dance, it’s just what they do. Dancing is a massive part of their culture. Basically, it’s in their blood.</p>",
+                    "target": [
+                      "p:nth-child(20)"
+                    ]
+                  },
+                  {
+                    "html": "<figure class=\"d-flex flex-column align-items-center col-12\">",
+                    "target": [
+                      "figure:nth-child(21)"
+                    ]
+                  },
+                  {
+                    "html": "<p>When dating a Colombian woman, it doesn’t matter if you are good at dancing or not, you will experience it anyway. Thus, it is best to learn the different dances in the country, such as Cumbia, Salsa, Bambuco, Champeta, Porro, etc., unless you want your date to dance with someone else.</p>",
+                    "target": [
+                      "p:nth-child(22)"
+                    ]
+                  },
+                  {
+                    "html": "<p>You can take dance lessons with her and learn the other dances she loves or is into. This will show your sincerity towards wanting to know her and learning about the things she loves.</p>",
+                    "target": [
+                      "p:nth-child(23)"
+                    ]
+                  },
+                  {
+                    "html": "<p>As mentioned, Colombian ladies are classy and they love to dress up, especially if they are going out on a date. What a perfect way to show your beautiful date how much you appreciate her looks as you take her to a fancy restaurant!</p>",
+                    "target": [
+                      "p:nth-child(25)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Medellin has many restaurants to offer, but the one that stands out the most is Carmen. This is considered the top restaurant in the city.</p>",
+                    "target": [
+                      "p:nth-child(26)"
+                    ]
+                  },
+                  {
+                    "html": "<p>With its mouth-watering set of food and great dining experience, your Colombian date will surely feel special.</p>",
+                    "target": [
+                      "p:nth-child(27)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Colombia is one of the countries around the world that has stunning beaches. Colombians love to visit beaches in their free time, especially Colombian women.</p>",
+                    "target": [
+                      "p:nth-child(29)"
+                    ]
+                  },
+                  {
+                    "html": "<p>They love to enjoy the smell of the ocean and feel the sea breeze, as well as flaunt their hour-glass like bodies. As such, you can never go wrong with a fun and simple beach date.</p>",
+                    "target": [
+                      "p:nth-child(30)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Medellin alone has many famous beaches, such as Capurganá, Playa Blanca in Isla Baru, Las Islas del Rosario, and many more. You can visit any of these beaches with your Colombian date anytime.</p>",
+                    "target": [
+                      "p:nth-child(31)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Colombians, in general, love football. Their relationship to this sport is incomparable. That’s why it’s a perfect idea for a date.</p>",
+                    "target": [
+                      "p:nth-child(33)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Regardless if you are into football or not, you will have to learn something about it eventually, especially if you plan on marrying a Colombian woman someday.</p>",
+                    "target": [
+                      "p:nth-child(34)"
+                    ]
+                  },
+                  {
+                    "html": "<figure class=\"d-flex flex-column align-items-center col-12\">",
+                    "target": [
+                      "figure:nth-child(35)"
+                    ]
+                  },
+                  {
+                    "html": "<p>This only means that you are willing to experience and learn about the things that she’s into so you can enjoy doing them together.</p>",
+                    "target": [
+                      "p:nth-child(36)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "List element has direct children that are not allowed: p, figure"
+              }
+            ],
+            "impact": "serious",
+            "html": "<ol>",
+            "target": [
+              "ol"
+            ],
+            "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: p, figure",
+            "selector": "ol"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "main > figure > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "a[href$=\"@jeison\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/@jeison\" target=\"_blank\">Jeison Higuita</a>",
+            "target": [
+              "a[href$=\"@jeison\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "a[href$=\"@jeison\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "main > figure > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/photos/oJx8MOeht1Y/\" target=\"_blank\">Unsplash</a>",
+            "target": [
+              "span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "span > a[target=\"_blank\"]:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>Going on a picnic is a common date idea. However, <a href=\"/blog/types-of-men-latin-women-want-to-date.html\"><strong>Latina women</strong></a> are very appreciative, thus, regardless of how simple your date is, they will still appreciate it. Besides, who doesn’t love a good picnic date?</p>",
+                    "target": [
+                      "p:nth-child(12)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(12) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/types-of-men-latin-women-want-to-date.html\"><strong>Latina women</strong></a>",
+            "target": [
+              "p:nth-child(12) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(12) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>Colombians love to visit coffee shops to enjoy some good coffee. So if you are planning a date with <a href=\"/blog/things-to-avoid-when-dating-colombian-women.html\"><strong>Colombian women</strong></a>, you should consider getting some coffee.</p>",
+                    "target": [
+                      "p:nth-child(17)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(17) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/things-to-avoid-when-dating-colombian-women.html\"><strong>Colombian women</strong></a>",
+            "target": [
+              "p:nth-child(17) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(17) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(8)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(8) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/extreme-dates-with-colombian-women.html\"><strong>date ideas</strong></a>",
+            "target": [
+              "p:nth-child(8) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(8) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "main > p:nth-child(9)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "a[data-toggle=\"modal\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"#\" data-toggle=\"modal\" data-target=\".medellin-singles-modal\"><strong>Subscribe now</strong></a>",
+            "target": [
+              "a[data-toggle=\"modal\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "a[data-toggle=\"modal\"]"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. list - serious Impact\n   Description: Ensure that lists are structured correctly\n   Help: <ul> and <ol> must only directly contain <li>, <script> or <template> elements\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/list?application=playwright\n   Affected Elements (1):\n     1. ol\n        Fix all of the following:\n  List element has direct children that are not allowed: p, figure\n        HTML: <ol>\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. link-in-text-block\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Elements to Review (6):\n     1. a[href$=\"@jeison\"]\n     2. span > a[target=\"_blank\"]:nth-child(2)\n     3. p:nth-child(12) > a\n     4. p:nth-child(17) > a\n     5. p:nth-child(8) > a\n     6. a[data-toggle=\"modal\"]\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Medellin Date Ideas Colombian Women LOVE",
+    "metaDescription": "Discover the perfect, impressive, and fun date ideas you can have in Medellin that Colombian women would absolutely love.",
+    "canonicalUrl": "https://medellinsingles.com/dating/date-ideas-colombian-women-love.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m3\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m3\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

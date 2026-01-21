@@ -1,0 +1,214 @@
+{
+  "url": "https://medellinsingles.com/psychology/role-humor-relationships.html",
+  "timestamp": "2026-01-16T15:51:45.107Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 2,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"The Role of Humor in Relationships\"",
+        "value": "The Role of Humor in Relationships"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (160 chars)",
+        "value": "Did you know about the benefits of humor in relationships? Humor can keep your bond strong. Read on to find out why the couple who laughs together loves better."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/psychology/role-humor-relationships.html\"",
+        "value": "https://medellinsingles.com/psychology/role-humor-relationships.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 10 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: The Role of Humor in Relationships"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 2,
+    "brokenCount": 2,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://x.com/MedellinsS76845",
+        "status": 503,
+        "statusText": "Backend unavailable, connection timeout",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.d-flex.text-decoration-none.align-items-center.shadow.p-1",
+            "linkText": "",
+            "html": "<a class=\"d-flex text-decoration-none align-items-center shadow p-1\" href=\"https://x.com/MedellinsS76845\" target=\"_blank\" aria-label=\"X (Twitter)\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 50 50\" width=\"25px\" height=\"25px\">\n                <path d=\"M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z\">\n                </path>\n              </svg></a>",
+            "href": "https://x.com/MedellinsS76845"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 2,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "The Role of Humor in Relationships",
+    "metaDescription": "Did you know about the benefits of humor in relationships? Humor can keep your bond strong. Read on to find out why the couple who laughs together loves better.",
+    "canonicalUrl": "https://medellinsingles.com/psychology/role-humor-relationships.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

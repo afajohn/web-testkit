@@ -1,0 +1,267 @@
+{
+  "url": "https://bangkok-women.com/travel/bangkok-thailand-dating-locations.html",
+  "timestamp": "2026-01-20T15:42:59.466Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 9,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Best Dating Locations in Bangkok Thailand\"",
+        "value": "Best Dating Locations in Bangkok Thailand"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (155 chars)",
+        "value": "You’ll never run out of exciting, romantic places to visit in Bangkok Thailand. Fall in love as you learn more about the best dating locations in the city!"
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://bangkok-women.com/travel/bangkok-thailand-dating-locations.html\"",
+        "value": "https://bangkok-women.com/travel/bangkok-thailand-dating-locations.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 11 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Best Dating Locations in Bangkok Thailand"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 9,
+    "brokenCount": 9,
+    "brokenLinks": [
+      {
+        "url": "https://bangkok-women.com/women-tour",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Women Singles Tour",
+            "html": "<a href=\"/women-tour/\">Women Singles Tour</a>",
+            "href": "https://bangkok-women.com/women-tour/"
+          }
+        ]
+      },
+      {
+        "url": "https://bangkok-women.com/single-bangkok-girls.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Single Bangkok Girls",
+            "html": "<a href=\"/single-bangkok-girls.html\">Single Bangkok Girls</a>",
+            "href": "https://bangkok-women.com/single-bangkok-girls.html"
+          }
+        ]
+      },
+      {
+        "url": "https://bangkok-women.com/bangkok-singles.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Bangkok Singles",
+            "html": "<a href=\"/bangkok-singles.html\">Bangkok Singles</a>",
+            "href": "https://bangkok-women.com/bangkok-singles.html"
+          }
+        ]
+      },
+      {
+        "url": "https://bangkok-women.com/craiglist-women-seeking-men-vs-bangkok-women.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Craiglist vs. Bangkok Women",
+            "html": "<a href=\"/craiglist-women-seeking-men-vs-bangkok-women.html\">Craiglist vs. Bangkok Women</a>",
+            "href": "https://bangkok-women.com/craiglist-women-seeking-men-vs-bangkok-women.html"
+          }
+        ]
+      },
+      {
+        "url": "https://bangkok-women.com/date-bangkok-women.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Dating Bangkok Women",
+            "html": "<a href=\"/date-bangkok-women.html\">Dating Bangkok Women</a>",
+            "href": "https://bangkok-women.com/date-bangkok-women.html"
+          }
+        ]
+      },
+      {
+        "url": "https://bangkok-women.com/women-in-thailand.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Women in Thailand",
+            "html": "<a href=\"/women-in-thailand.html\">Women in Thailand</a>",
+            "href": "https://bangkok-women.com/women-in-thailand.html"
+          }
+        ]
+      },
+      {
+        "url": "https://bangkok-women.com/bangkok-women-in-love.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Bangkok Women in Love",
+            "html": "<a href=\"/bangkok-women-in-love.html\">Bangkok Women in Love</a>",
+            "href": "https://bangkok-women.com/bangkok-women-in-love.html"
+          }
+        ]
+      },
+      {
+        "url": "https://bangkok-women.com/history-of-bangkok.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "History of Bangkok",
+            "html": "<a href=\"/history-of-bangkok.html\">History of Bangkok</a>",
+            "href": "https://bangkok-women.com/history-of-bangkok.html"
+          }
+        ]
+      },
+      {
+        "url": "https://bangkok-women.com/culture-in-bangkok.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Culture in Bangkok",
+            "html": "<a href=\"/culture-in-bangkok.html\">Culture in Bangkok</a>",
+            "href": "https://bangkok-women.com/culture-in-bangkok.html"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 1,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 1\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Best Dating Locations in Bangkok Thailand",
+    "metaDescription": "You’ll never run out of exciting, romantic places to visit in Bangkok Thailand. Fall in love as you learn more about the best dating locations in the city!",
+    "canonicalUrl": "https://bangkok-women.com/travel/bangkok-thailand-dating-locations.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m9\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m9\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

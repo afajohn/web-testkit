@@ -1,0 +1,540 @@
+{
+  "url": "https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/just-do-it-how-foreign-men-met-his-future-asian-wife.html",
+  "timestamp": "2026-01-08T08:19:06.419Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": false,
+    "brokenLinksCount": 1,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"“JUST DO IT”- How Foreign Men Met His Future Asian Wife?\"",
+        "value": "“JUST DO IT”- How Foreign Men Met His Future Asian Wife?"
+      },
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (164 chars, recommended: 50-160)",
+        "value": "Foreigners who are looking for an Asian wife for marriage have long been drawn to the charming beauty of Philippine women in the beautiful islands of Cebu or Davao."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/just-do-it-how-foreign-men-met-his-future-asian-wife.html\"",
+        "value": "https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/just-do-it-how-foreign-men-met-his-future-asian-wife.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 9 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: “JUST DO IT”- How Foreign Men Met His Future Asian Wife?"
+      }
+    ],
+    "passedCount": 5,
+    "totalCount": 6,
+    "failedChecks": [
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (164 chars, recommended: 50-160)",
+        "value": "Foreigners who are looking for an Asian wife for marriage have long been drawn to the charming beauty of Philippine women in the beautiful islands of Cebu or Davao."
+      }
+    ]
+  },
+  "brokenLinks": {
+    "totalChecked": 1,
+    "brokenCount": 1,
+    "brokenLinks": [
+      {
+        "url": "https://mydreamasian.com/search-nikolaev-women-seeking-men",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.link-dark.m-0",
+            "linkText": "Go to Advanced Search > >",
+            "html": "<a href=\"/search-nikolaev-women-seeking-men/\" class=\"link-dark m-0\">Go to Advanced Search &gt; &gt; </a>",
+            "href": "https://mydreamasian.com/search-nikolaev-women-seeking-men/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 4,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "description": "Ensure buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "button-has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have inner text that is visible to screen readers",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has no title attribute",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "implicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an implicit (wrapped) <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an explicit <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "selector": ".fc-megamenu"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">",
+            "target": [
+              ".fc-megamenu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "selector": ".fc-megamenu"
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-contact > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Contact</h2>",
+            "target": [
+              ".footer-contact > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-contact > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>General Information</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(2) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Women, Culture &amp; History</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(3) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-policy > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Policies</h2>",
+            "target": [
+              ".footer-policy > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-policy > h2"
+          }
+        ]
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.i",
+          "TTv5",
+          "TT12.d",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-2.1.1"
+        ],
+        "description": "Ensure <iframe> and <frame> elements have an accessible name",
+        "help": "Frames must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute",
+                "selector": "iframe[width=\"640\"]"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": "iframe[width=\"640\"]"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": "iframe[width=\"640\"]"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "selector": "iframe[width=\"640\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<iframe width=\"640\" height=\"480\" allowfullscreen=\"true\" autoplay=\"false\" disablekbcontrols=\"false\" enableiframeapi=\"false\" endtime=\"0\" ivloadpolicy=\"0\" loop=\"false\" modestbranding=\"false\" src=\"https://www.youtube-nocookie.com/embed/464KGbWudSM?controls=0\" start=\"0\"></iframe>",
+            "target": [
+              "iframe[width=\"640\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "selector": "iframe[width=\"640\"]"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "description": "Ensure ARIA attributes are not prohibited for an element's role",
+        "help": "Elements must only use permitted ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": {
+                  "role": null,
+                  "nodeName": "div",
+                  "messageKey": "noRoleSingular",
+                  "prohibited": [
+                    "aria-label"
+                  ]
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
+              }
+            ],
+            "impact": "serious",
+            "html": "<div class=\"html5-video-player y...\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/721caf0b/p...\" aria-label=\"YouTube Video Player\">",
+            "target": [
+              "iframe[width=\"640\"]",
+              "#movie_player"
+            ],
+            "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute.",
+            "selector": "iframe[width=\"640\"] #movie_player"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 4\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. button-name - critical Impact\n   Description: Ensure buttons have discernible text\n   Help: Buttons must have discernible text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright\n   Affected Elements (1):\n     1. .fc-megamenu\n        Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">\n\n\n2. color-contrast - serious Impact\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Help: Elements must meet minimum color contrast ratio thresholds\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright\n   Affected Elements (4):\n     1. .footer-contact > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Contact</h2>\n     2. .footer-nav-box.px-0:nth-child(2) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>General Information</h2>\n     3. .footer-nav-box.px-0:nth-child(3) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Women, Culture &amp; History</h2>\n     4. .footer-policy > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Policies</h2>\n\n\n3. frame-title - serious Impact\n   Description: Ensure <iframe> and <frame> elements have an accessible name\n   Help: Frames must have an accessible name\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright\n   Affected Elements (1):\n     1. iframe[width=\"640\"]\n        Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <iframe width=\"640\" height=\"480\" allowfullscreen=\"true\" autoplay=\"false\" disablekbcontrols=\"false\" e...\n\n\n4. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. aria-prohibited-attr\n   Description: Ensure ARIA attributes are not prohibited for an element's role\n   Elements to Review (1):\n     1. iframe[width=\"640\"] #movie_player\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "“JUST DO IT”- How Foreign Men Met His Future Asian Wife?",
+    "metaDescription": "Foreigners who are looking for an Asian wife for marriage have long been drawn to the charming beauty of Philippine women in the beautiful islands of Cebu or Davao.",
+    "canonicalUrl": "https://mydreamasian.com/my-dream-asian-tour-videos/testimonial/just-do-it-how-foreign-men-met-his-future-asian-wife.html",
+    "robotsMetaTag": "index, follow"
+  }
+}

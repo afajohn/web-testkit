@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/informational/colombian-girls-flee-dating-apps-meet-guys-face-face.html",
+    "timestamp": "2026-01-16 15:51:29",
+    "summary": {
+        "mobile_score": 49,
+        "desktop_score": 75
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 49,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-girls-flee-dating-apps-meet-guys-face-face.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "6.6\u00a0s",
+        "tbt_lab": "860\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 75,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-girls-flee-dating-apps-meet-guys-face-face.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.5\u00a0s",
+        "tbt_lab": "340\u00a0ms"
+    }
+}

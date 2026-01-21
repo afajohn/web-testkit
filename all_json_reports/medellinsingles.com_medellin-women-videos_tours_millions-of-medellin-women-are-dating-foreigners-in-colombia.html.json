@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/tours/millions-of-medellin-women-are-dating-foreigners-in-colombia.html",
+    "timestamp": "2026-01-16 15:22:21",
+    "summary": {
+        "mobile_score": 66,
+        "desktop_score": 71
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 66,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmillions-of-medellin-women-are-dating-foreigners-in-colombia.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "4.2\u00a0s",
+        "tbt_lab": "490\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 71,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmillions-of-medellin-women-are-dating-foreigners-in-colombia.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.8\u00a0s",
+        "lcp_lab": "1.3\u00a0s",
+        "tbt_lab": "460\u00a0ms"
+    }
+}

@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/dating/muscular-men-attractive-women-want.html",
+    "timestamp": "2026-01-16 17:53:58",
+    "summary": {
+        "mobile_score": 65,
+        "desktop_score": 86
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 65,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmuscular-men-attractive-women-want.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "6.7\u00a0s",
+        "tbt_lab": "160\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 86,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmuscular-men-attractive-women-want.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.6\u00a0s",
+        "tbt_lab": "160\u00a0ms"
+    }
+}

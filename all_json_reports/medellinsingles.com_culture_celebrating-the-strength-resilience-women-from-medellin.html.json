@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/culture/celebrating-the-strength-resilience-women-from-medellin.html",
+    "timestamp": "2026-01-15 23:40:51",
+    "summary": {
+        "mobile_score": 64,
+        "desktop_score": 85
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 64,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fculture%2Fcelebrating-the-strength-resilience-women-from-medellin.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "5.5\u00a0s",
+        "tbt_lab": "270\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 85,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fculture%2Fcelebrating-the-strength-resilience-women-from-medellin.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.6\u00a0s",
+        "tbt_lab": "160\u00a0ms"
+    }
+}

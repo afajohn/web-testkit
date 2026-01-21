@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/informational/should-you-believe-it-latinas-on-barranquilla-dating-hype.html",
+    "timestamp": "2026-01-16 16:42:32",
+    "summary": {
+        "mobile_score": 67,
+        "desktop_score": 60
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 67,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fshould-you-believe-it-latinas-on-barranquilla-dating-hype.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "4.1\u00a0s",
+        "tbt_lab": "480\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 60,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fshould-you-believe-it-latinas-on-barranquilla-dating-hype.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.8\u00a0s",
+        "lcp_lab": "1.4\u00a0s",
+        "tbt_lab": "1,040\u00a0ms"
+    }
+}

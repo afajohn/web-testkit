@@ -1,0 +1,569 @@
+{
+  "url": "https://mydreamasian.com/dating/tips-on-dating-a-single-asian-mom.html",
+  "timestamp": "2026-01-08T08:12:26.907Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": false,
+    "brokenLinksCount": 2,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Tips on Dating a Single Asian Mom\"",
+        "value": "Tips on Dating a Single Asian Mom"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (133 chars)",
+        "value": "Dating single moms in Asia can be challenging but you don’t have to worry. We have a few tips on dating single Asian mothers for you."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://mydreamasian.com/dating/tips-on-dating-a-single-asian-mom.html\"",
+        "value": "https://mydreamasian.com/dating/tips-on-dating-a-single-asian-mom.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": false,
+        "message": "1 image(s) missing alt attribute",
+        "value": "unknown"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Tips on Dating a Single Asian Mom"
+      }
+    ],
+    "passedCount": 5,
+    "totalCount": 6,
+    "failedChecks": [
+      {
+        "check": "Image Alt Attributes",
+        "passed": false,
+        "message": "1 image(s) missing alt attribute",
+        "value": "unknown"
+      }
+    ]
+  },
+  "brokenLinks": {
+    "totalChecked": 2,
+    "brokenCount": 2,
+    "brokenLinks": [
+      {
+        "url": "https://mydreamasian.com/search-nikolaev-women-seeking-men",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.link-dark.m-0",
+            "linkText": "Go to Advanced Search > >",
+            "html": "<a href=\"/search-nikolaev-women-seeking-men/\" class=\"link-dark m-0\">Go to Advanced Search &gt; &gt; </a>",
+            "href": "https://mydreamasian.com/search-nikolaev-women-seeking-men/"
+          }
+        ]
+      },
+      {
+        "url": "https://medium.com/@MyDreamAsian/tips-on-dating-a-single-asian-mom-ffe56da2bc47",
+        "status": 410,
+        "statusText": "Gone",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Tips on Dating a Single Asian Mom",
+            "html": "<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://medium.com/@MyDreamAsian/tips-on-dating-a-single-asian-mom-ffe56da2bc47\"><strong>Tips on Dating a Single Asian Mom</strong></a>",
+            "href": "https://medium.com/@MyDreamAsian/tips-on-dating-a-single-asian-mom-ffe56da2bc47"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 4,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "description": "Ensure buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "button-has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have inner text that is visible to screen readers",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has no title attribute",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "implicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an implicit (wrapped) <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an explicit <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "selector": ".fc-megamenu"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">",
+            "target": [
+              ".fc-megamenu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "selector": ".fc-megamenu"
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-contact > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Contact</h2>",
+            "target": [
+              ".footer-contact > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-contact > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>General Information</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(2) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Women, Culture &amp; History</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(3) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-policy > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Policies</h2>",
+            "target": [
+              ".footer-policy > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-policy > h2"
+          }
+        ]
+      },
+      {
+        "id": "image-alt",
+        "impact": "critical",
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag111",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT7.a",
+          "TT7.b",
+          "EN-301-549",
+          "EN-9.1.1.1",
+          "ACT",
+          "RGAAv4",
+          "RGAA-1.1.1"
+        ],
+        "description": "Ensure <img> elements have alternative text or a role of none or presentation",
+        "help": "Images must have alternative text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-alt",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an alt attribute",
+                "selector": "figure:nth-child(2) > img"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": "figure:nth-child(2) > img"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": "figure:nth-child(2) > img"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has no title attribute",
+                "selector": "figure:nth-child(2) > img"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "selector": "figure:nth-child(2) > img"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<img>",
+            "target": [
+              "figure:nth-child(2) > img"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "selector": "figure:nth-child(2) > img"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"text-center\"><strong>This story was originally published on Medium: </strong><a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://medium.com/@MyDreamAsian/tips-on-dating-a-single-asian-mom-ffe56da2bc47\"><strong>Tips on Dating a Single Asian Mom</strong></a></p>",
+                    "target": [
+                      "main > .text-center"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "a[rel=\"noopener noreferrer nofollow\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://medium.com/@MyDreamAsian/tips-on-dating-a-single-asian-mom-ffe56da2bc47\"><strong>Tips on Dating a Single Asian Mom</strong></a>",
+            "target": [
+              "a[rel=\"noopener noreferrer nofollow\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "a[rel=\"noopener noreferrer nofollow\"]"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 4\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. button-name - critical Impact\n   Description: Ensure buttons have discernible text\n   Help: Buttons must have discernible text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright\n   Affected Elements (1):\n     1. .fc-megamenu\n        Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">\n\n\n2. color-contrast - serious Impact\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Help: Elements must meet minimum color contrast ratio thresholds\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright\n   Affected Elements (4):\n     1. .footer-contact > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Contact</h2>\n     2. .footer-nav-box.px-0:nth-child(2) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>General Information</h2>\n     3. .footer-nav-box.px-0:nth-child(3) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Women, Culture &amp; History</h2>\n     4. .footer-policy > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Policies</h2>\n\n\n3. image-alt - critical Impact\n   Description: Ensure <img> elements have alternative text or a role of none or presentation\n   Help: Images must have alternative text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/image-alt?application=playwright\n   Affected Elements (1):\n     1. figure:nth-child(2) > img\n        Fix any of the following:\n  Element does not have an alt attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <img>\n\n\n4. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. link-in-text-block\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Elements to Review (1):\n     1. a[rel=\"noopener noreferrer nofollow\"]\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Tips on Dating a Single Asian Mom",
+    "metaDescription": "Dating single moms in Asia can be challenging but you don’t have to worry. We have a few tips on dating single Asian mothers for you.",
+    "canonicalUrl": "https://mydreamasian.com/dating/tips-on-dating-a-single-asian-mom.html",
+    "robotsMetaTag": "index, follow"
+  }
+}

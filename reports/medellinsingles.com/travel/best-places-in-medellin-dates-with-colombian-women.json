@@ -1,0 +1,485 @@
+{
+  "url": "https://medellinsingles.com/travel/best-places-in-medellin-dates-with-colombian-women.html",
+  "timestamp": "2026-01-19T09:11:48.535Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 7,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Best Places in Medellin for Dates with Colombian Women\"",
+        "value": "Best Places in Medellin for Dates with Colombian Women"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (147 chars)",
+        "value": "Planning dates with Colombian women doesn’t have to be difficult. With that said, here are the most romantic dating spots in Medellin to take them."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/travel/best-places-in-medellin-dates-with-colombian-women.html\"",
+        "value": "https://medellinsingles.com/travel/best-places-in-medellin-dates-with-colombian-women.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 12 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Best Places in Medellin for Dates with Colombian Women"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 7,
+    "brokenCount": 7,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://www.pexels.com/@samson-katt",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Samson Katt",
+            "html": "<a href=\"https://www.pexels.com/@samson-katt\" target=\"_blank\">Samson Katt</a>",
+            "href": "https://www.pexels.com/@samson-katt"
+          }
+        ]
+      },
+      {
+        "url": "https://www.pexels.com/photo/crop-couple-walking-on-road-5226516",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Pexels",
+            "html": "<a href=\"https://www.pexels.com/photo/crop-couple-walking-on-road-5226516/\" target=\"_blank\">Pexels</a>",
+            "href": "https://www.pexels.com/photo/crop-couple-walking-on-road-5226516/"
+          }
+        ]
+      },
+      {
+        "url": "https://www.pexels.com/@katerina-holmes",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Katerina Holmes",
+            "html": "<a href=\"https://www.pexels.com/@katerina-holmes\" target=\"_blank\">Katerina Holmes</a>",
+            "href": "https://www.pexels.com/@katerina-holmes"
+          }
+        ]
+      },
+      {
+        "url": "https://www.pexels.com/photo/happy-couple-with-flowers-walking-together-5910959",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Pexels",
+            "html": "<a href=\"https://www.pexels.com/photo/happy-couple-with-flowers-walking-together-5910959/\" target=\"_blank\">Pexels</a>",
+            "href": "https://www.pexels.com/photo/happy-couple-with-flowers-walking-together-5910959/"
+          }
+        ]
+      },
+      {
+        "url": "https://www.pexels.com/@cottonbro",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "cottonbro",
+            "html": "<a href=\"https://www.pexels.com/@cottonbro\" target=\"_blank\">cottonbro</a>",
+            "href": "https://www.pexels.com/@cottonbro"
+          }
+        ]
+      },
+      {
+        "url": "https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-sitting-on-chair-4255484",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Pexels",
+            "html": "<a href=\"https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-sitting-on-chair-4255484/\" target=\"_blank\">Pexels</a>",
+            "href": "https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-sitting-on-chair-4255484/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 2,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption center-img-caption\">",
+                    "target": [
+                      "figure:nth-child(7) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(7) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://www.pexels.com/@samson-katt\" target=\"_blank\">Samson Katt</a>",
+            "target": [
+              "figure:nth-child(7) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(7) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption center-img-caption\">",
+                    "target": [
+                      "figure:nth-child(7) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(7) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://www.pexels.com/photo/crop-couple-walking-on-road-5226516/\" target=\"_blank\">Pexels</a>",
+            "target": [
+              "figure:nth-child(7) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(7) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption center-img-caption\">",
+                    "target": [
+                      "figure:nth-child(24) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(24) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://www.pexels.com/@katerina-holmes\" target=\"_blank\">Katerina Holmes</a>",
+            "target": [
+              "figure:nth-child(24) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(24) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption center-img-caption\">",
+                    "target": [
+                      "figure:nth-child(24) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(24) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://www.pexels.com/photo/happy-couple-with-flowers-walking-together-5910959/\" target=\"_blank\">Pexels</a>",
+            "target": [
+              "figure:nth-child(24) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(24) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption center-img-caption\">",
+                    "target": [
+                      "figure:nth-child(46) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(46) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://www.pexels.com/@cottonbro\" target=\"_blank\">cottonbro</a>",
+            "target": [
+              "figure:nth-child(46) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(46) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption center-img-caption\">",
+                    "target": [
+                      "figure:nth-child(46) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(46) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://www.pexels.com/photo/man-in-black-long-sleeve-shirt-sitting-on-chair-4255484/\" target=\"_blank\">Pexels</a>",
+            "target": [
+              "figure:nth-child(46) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(46) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. link-in-text-block\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Elements to Review (6):\n     1. figure:nth-child(7) > figcaption > span > a[target=\"_blank\"]:nth-child(1)\n     2. figure:nth-child(7) > figcaption > span > a[target=\"_blank\"]:nth-child(2)\n     3. figure:nth-child(24) > figcaption > span > a[target=\"_blank\"]:nth-child(1)\n     4. figure:nth-child(24) > figcaption > span > a[target=\"_blank\"]:nth-child(2)\n     5. figure:nth-child(46) > figcaption > span > a[target=\"_blank\"]:nth-child(1)\n     6. figure:nth-child(46) > figcaption > span > a[target=\"_blank\"]:nth-child(2)\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Best Places in Medellin for Dates with Colombian Women",
+    "metaDescription": "Planning dates with Colombian women doesn’t have to be difficult. With that said, here are the most romantic dating spots in Medellin to take them.",
+    "canonicalUrl": "https://medellinsingles.com/travel/best-places-in-medellin-dates-with-colombian-women.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

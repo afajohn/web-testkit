@@ -1,0 +1,512 @@
+{
+  "url": "https://medellinsingles.com/dating/attract-the-interest-of-colombian-women.html",
+  "timestamp": "2026-01-16T09:07:33.237Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 3,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"How to Attract the Interest of Colombian Women\"",
+        "value": "How to Attract the Interest of Colombian Women"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (119 chars)",
+        "value": "Romantic interest is important when dating Colombian women. There are a few ways to convey and encourage such interest."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/dating/attract-the-interest-of-colombian-women.html\"",
+        "value": "https://medellinsingles.com/dating/attract-the-interest-of-colombian-women.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 10 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: How to Attract the Interest of Colombian Women"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 3,
+    "brokenCount": 3,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://pixabay.com/users/stocksnap-894430",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "StockSnap",
+            "html": "<a href=\"https://pixabay.com/users/stocksnap-894430/\" target=\"_blank\">StockSnap</a>",
+            "href": "https://pixabay.com/users/stocksnap-894430/"
+          }
+        ]
+      },
+      {
+        "url": "https://pixabay.com/photos/people-man-woman-couple-dating-2561578",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Pixabay",
+            "html": "<a href=\"https://pixabay.com/photos/people-man-woman-couple-dating-2561578/\" target=\"_blank\">Pixabay</a>",
+            "href": "https://pixabay.com/photos/people-man-woman-couple-dating-2561578/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "description": "Ensure that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": {
+                  "values": "p"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(2)"
+                    ]
+                  },
+                  {
+                    "html": "<p>But there are few methods that can match the efficacy of simply saying something outright. If she hears what you say and understands the language in which you are speaking, then the deal is done. She knows your feelings and hopefully reciprocates them to some extent.</p>",
+                    "target": [
+                      "ol > p:nth-child(3)"
+                    ]
+                  },
+                  {
+                    "html": "<p>It’s often said that actions speak louder than words, and when it comes to actions, few speak as softly as body language. The way a person angles and positions themselves is generally something that a partner can pick up on.</p>",
+                    "target": [
+                      "ol > p:nth-child(5)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Your stance will be pretty important. If you’re open and at ease, that’s going to encourage the person that you are with to be open and at ease as well. If you’re defensive, that’s going to make them defensive as well, which is going to make them less receptive to romantic overtures.</p>",
+                    "target": [
+                      "ol > p:nth-child(6)"
+                    ]
+                  },
+                  {
+                    "html": "<p>So it’s good to be relaxed when on a date with Colombian women.</p>",
+                    "target": [
+                      "ol > p:nth-child(7)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(9)"
+                    ]
+                  },
+                  {
+                    "html": "<p>But building a good profile is not just about having a profile with a few pictures. It’s about having a profile with the most flattering pictures because humans tend to be visual creatures, so being physically attractive, or at least appearing that way, can be great for finding a mate. </p>",
+                    "target": [
+                      "ol > p:nth-child(10)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(12)"
+                    ]
+                  },
+                  {
+                    "html": "<p>There are also some benefits to working out. If the woman that you are dating is younger, then it can be a bit hard to keep up with her energy. Exercise can help to increase a person’s energy, which can make it a lot more feasible to keep up with younger people.</p>",
+                    "target": [
+                      "p:nth-child(13)"
+                    ]
+                  },
+                  {
+                    "html": "<p>People also want to be with people who are well-rounded, so it is important to have more than just work. A person should also have hobbies and a social life. Having hobbies shows that a person has things that they enjoy, and it also presents someone with several gift and date ideas.</p>",
+                    "target": [
+                      "p:nth-child(15)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Hobbies can be indicative of someone having a rich inner life, a rich inner life that the right person may want to be part of.</p>",
+                    "target": [
+                      "p:nth-child(16)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(18)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "List element has direct children that are not allowed: p"
+              }
+            ],
+            "impact": "serious",
+            "html": "<ol>",
+            "target": [
+              "ol"
+            ],
+            "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: p",
+            "selector": "ol"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "span > a[target=\"_blank\"]:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://pixabay.com/users/stocksnap-894430/\" target=\"_blank\">StockSnap</a>",
+            "target": [
+              "span > a[target=\"_blank\"]:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "span > a[target=\"_blank\"]:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://pixabay.com/photos/people-man-woman-couple-dating-2561578/\" target=\"_blank\">Pixabay</a>",
+            "target": [
+              "span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "span > a[target=\"_blank\"]:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(4)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(4) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/date-ideas-colombian-women-love.html\"><strong>Colombian women</strong></a>",
+            "target": [
+              "p:nth-child(4) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(4) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(2)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "ol > p:nth-child(2) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/realistic-expectations-dating-colombian-women.html\"><strong>Colombian woman</strong></a>",
+            "target": [
+              "ol > p:nth-child(2) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "ol > p:nth-child(2) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(9)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(9) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/best-time-to-meet-women-in-medellin.html\"><strong>women in Colombia</strong></a>",
+            "target": [
+              "p:nth-child(9) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(9) > a"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. list - serious Impact\n   Description: Ensure that lists are structured correctly\n   Help: <ul> and <ol> must only directly contain <li>, <script> or <template> elements\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/list?application=playwright\n   Affected Elements (1):\n     1. ol\n        Fix all of the following:\n  List element has direct children that are not allowed: p\n        HTML: <ol>\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. link-in-text-block\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Elements to Review (5):\n     1. span > a[target=\"_blank\"]:nth-child(1)\n     2. span > a[target=\"_blank\"]:nth-child(2)\n     3. p:nth-child(4) > a\n     4. ol > p:nth-child(2) > a\n     5. p:nth-child(9) > a\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "How to Attract the Interest of Colombian Women",
+    "metaDescription": "Romantic interest is important when dating Colombian women. There are a few ways to convey and encourage such interest.",
+    "canonicalUrl": "https://medellinsingles.com/dating/attract-the-interest-of-colombian-women.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m3\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m3\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

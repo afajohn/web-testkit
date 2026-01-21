@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/more-single-medellin-girls.htm",
+    "timestamp": "2026-01-15 23:32:13",
+    "summary": {
+        "mobile_score": 66,
+        "desktop_score": 71
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 66,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmore-single-medellin-girls.htm&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.9\u00a0s",
+        "lcp_lab": "8.7\u00a0s",
+        "tbt_lab": "180\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 71,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmore-single-medellin-girls.htm&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.8\u00a0s",
+        "lcp_lab": "2.0\u00a0s",
+        "tbt_lab": "190\u00a0ms"
+    }
+}

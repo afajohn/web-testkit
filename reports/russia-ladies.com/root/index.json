@@ -1,0 +1,521 @@
+{
+  "url": "https://russia-ladies.com/",
+  "timestamp": "2026-01-12T08:32:08.025Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 0,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Russia Ladies | Russian Women Seeking Marriage\"",
+        "value": "Russia Ladies | Russian Women Seeking Marriage"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (160 chars)",
+        "value": "Russian Ladies features stunning single ladies in Russia and offers the best services in matchmaking and international dating. Find your future wife through us!"
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://russia-ladies.com\"",
+        "value": "https://russia-ladies.com"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 26 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Russia Ladies | Meet Your Russian Bride Today!"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 0,
+    "brokenCount": 0,
+    "brokenLinks": []
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 2,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "24.0pt (32px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"container-fluid banner-bg\">",
+                    "target": [
+                      ".banner-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient",
+                "selector": "h1"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h1 class=\"text-white pt-3 text-lg-start text-center\">Russia Ladies | Meet Your Russian Bride Today!</h1>",
+            "target": [
+              "h1"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+            "selector": "h1"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"container-fluid banner-bg\">",
+                    "target": [
+                      ".banner-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient",
+                "selector": ".d-none.d-lg-block.pt-3"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-white pt-3 d-none d-lg-block\">There are many reasons why Russian Ladies continues to receive thousands of registration every year. Get the chance to experience the Services and meet beautiful Russian women that are seriously seeking for marriage.</p>",
+            "target": [
+              ".d-none.d-lg-block.pt-3"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+            "selector": ".d-none.d-lg-block.pt-3"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgGradient",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<section class=\"container-fluid banner-bg\">",
+                    "target": [
+                      ".banner-bg"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a background gradient",
+                "selector": ".mt-4.col-12.text-center > .pt-3.text-white"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"text-white pt-3\"> Get Started Today. No credit card required. </p>",
+            "target": [
+              ".mt-4.col-12.text-center > .pt-3.text-white"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background gradient",
+            "selector": ".mt-4.col-12.text-center > .pt-3.text-white"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "21.1pt (28.16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": "div[aria-label=\"5 / 6\"] > .card-body.px-2.text-center > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Liam</h2>",
+            "target": [
+              "div[aria-label=\"5 / 6\"] > .card-body.px-2.text-center > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": "div[aria-label=\"5 / 6\"] > .card-body.px-2.text-center > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": "div[aria-label=\"5 / 6\"] > .card-body.px-2.text-center > .card-text"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"card-text\">",
+            "target": [
+              "div[aria-label=\"5 / 6\"] > .card-body.px-2.text-center > .card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": "div[aria-label=\"5 / 6\"] > .card-body.px-2.text-center > .card-text"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "21.1pt (28.16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-prev > .card-body.px-2.text-center > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Adam C.</h2>",
+            "target": [
+              ".swiper-slide-prev > .card-body.px-2.text-center > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-prev > .card-body.px-2.text-center > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-prev > .card-body.px-2.text-center > .card-text"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"card-text\">",
+            "target": [
+              ".swiper-slide-prev > .card-body.px-2.text-center > .card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-prev > .card-body.px-2.text-center > .card-text"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "21.1pt (28.16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-next > .card-body.px-2.text-center > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>John F.</h2>",
+            "target": [
+              ".swiper-slide-next > .card-body.px-2.text-center > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-next > .card-body.px-2.text-center > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-next > .card-body.px-2.text-center > .card-text"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"card-text\">",
+            "target": [
+              ".swiper-slide-next > .card-body.px-2.text-center > .card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-next > .card-body.px-2.text-center > .card-text"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "21.1pt (28.16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": "div[aria-label=\"3 / 6\"] > .card-body.px-2.text-center > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Peter</h2>",
+            "target": [
+              "div[aria-label=\"3 / 6\"] > .card-body.px-2.text-center > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": "div[aria-label=\"3 / 6\"] > .card-body.px-2.text-center > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": "div[aria-label=\"3 / 6\"] > .card-body.px-2.text-center > .card-text"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"card-text\">",
+            "target": [
+              "div[aria-label=\"3 / 6\"] > .card-body.px-2.text-center > .card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": "div[aria-label=\"3 / 6\"] > .card-body.px-2.text-center > .card-text"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. color-contrast\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Elements to Review (11):\n     1. h1\n     2. .d-none.d-lg-block.pt-3\n     3. .mt-4.col-12.text-center > .pt-3.text-white\n     4. div[aria-label=\"5 / 6\"] > .card-body.px-2.text-center > h2\n     5. div[aria-label=\"5 / 6\"] > .card-body.px-2.text-center > .card-text\n     6. .swiper-slide-prev > .card-body.px-2.text-center > h2\n     7. .swiper-slide-prev > .card-body.px-2.text-center > .card-text\n     8. .swiper-slide-next > .card-body.px-2.text-center > h2\n     9. .swiper-slide-next > .card-body.px-2.text-center > .card-text\n     10. div[aria-label=\"3 / 6\"] > .card-body.px-2.text-center > h2\n     11. div[aria-label=\"3 / 6\"] > .card-body.px-2.text-center > .card-text\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-M2FP9JRT",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-M2FP9JRT). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-M2FP9JRT",
+          "GTM-M2FP9JRT",
+          "GTM-M2FP9JRT"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Russia Ladies | Russian Women Seeking Marriage",
+    "metaDescription": "Russian Ladies features stunning single ladies in Russia and offers the best services in matchmaking and international dating. Find your future wife through us!",
+    "canonicalUrl": "https://russia-ladies.com",
+    "robotsMetaTag": "index, follow"
+  }
+}

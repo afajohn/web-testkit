@@ -1,0 +1,550 @@
+{
+  "url": "https://medellinsingles.com/realities/things-men-should-know-before-marrying-colombian-women.html",
+  "timestamp": "2026-01-16T15:55:20.957Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 4,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Things Men Should Know BEFORE Marrying Colombian Women\"",
+        "value": "Things Men Should Know BEFORE Marrying Colombian Women"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (157 chars)",
+        "value": "Many men seek Colombian women for marriage. If you're one of those men, here are some important facts you need to know before marrying a woman from Colombia."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/realities/things-men-should-know-before-marrying-colombian-women.html\"",
+        "value": "https://medellinsingles.com/realities/things-men-should-know-before-marrying-colombian-women.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 10 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Things Men Should Know BEFORE Marrying Colombian Women"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 4,
+    "brokenCount": 4,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/@juanparodriguez",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "juan pablo rodriguez",
+            "html": "<a href=\"https://unsplash.com/@juanparodriguez\" target=\"_blank\">juan pablo rodriguez</a>",
+            "href": "https://unsplash.com/@juanparodriguez"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/photos/U0pX0aR_5S8",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Unsplash",
+            "html": "<a href=\"https://unsplash.com/photos/U0pX0aR_5S8\" target=\"_blank\">Unsplash</a>",
+            "href": "https://unsplash.com/photos/U0pX0aR_5S8"
+          }
+        ]
+      },
+      {
+        "url": "https://x.com/MedellinsS76845",
+        "status": 503,
+        "statusText": "Backend unavailable, connection timeout",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.d-flex.text-decoration-none.align-items-center.shadow.p-1",
+            "linkText": "",
+            "html": "<a class=\"d-flex text-decoration-none align-items-center shadow p-1\" href=\"https://x.com/MedellinsS76845\" target=\"_blank\" aria-label=\"X (Twitter)\"><svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 50 50\" width=\"25px\" height=\"25px\">\n                <path d=\"M 11 4 C 7.134 4 4 7.134 4 11 L 4 39 C 4 42.866 7.134 46 11 46 L 39 46 C 42.866 46 46 42.866 46 39 L 46 11 C 46 7.134 42.866 4 39 4 L 11 4 z M 13.085938 13 L 21.023438 13 L 26.660156 21.009766 L 33.5 13 L 36 13 L 27.789062 22.613281 L 37.914062 37 L 29.978516 37 L 23.4375 27.707031 L 15.5 37 L 13 37 L 22.308594 26.103516 L 13.085938 13 z M 16.914062 15 L 31.021484 35 L 34.085938 35 L 19.978516 15 L 16.914062 15 z\">\n                </path>\n              </svg></a>",
+            "href": "https://x.com/MedellinsS76845"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "description": "Ensure that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": {
+                  "values": "p"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>Your gut reaction to this may be somewhere along the lines of, <em>“She’s amazing of course, I wouldn’t be marrying her if she wasn't!”</em></p>",
+                    "target": [
+                      "ul > p:nth-child(2)"
+                    ]
+                  },
+                  {
+                    "html": "<p>It’s one thing to feel excited about marrying your future wife, it’s another thing to know what she is all about. Compatibility, not attraction, is one of the main things that makes a marriage work.</p>",
+                    "target": [
+                      "ul > p:nth-child(3)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Vibrant, fun, and energetic are a few of the definitive characteristics of a Colombian woman. These ladies love to sing and dance, and they are passionate lovers. They also value stability in a marriage, particularly in the financial aspect.</p>",
+                    "target": [
+                      "ul > p:nth-child(4)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ul > p:nth-child(5)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ul > p:nth-child(6)"
+                    ]
+                  },
+                  {
+                    "html": "<p>By many accounts, Colombian women are fantastic wives. They aren’t shy, either. They will give you a piece of their mind whenever they see fit. They are devoted, loving, and loyal as long as you show them the love, respect, and loyalty they deserve.</p>",
+                    "target": [
+                      "ul > p:nth-child(7)"
+                    ]
+                  },
+                  {
+                    "html": "<p>They are strong-willed and know how to use their charm to get what they want out of their man. Of course, any man planning to marry one has taken this as part of the package and is all too enthusiastic about it.</p>",
+                    "target": [
+                      "ul > p:nth-child(8)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ul > p:nth-child(10)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Most Colombians, with the majority being Catholics, expect a proper wedding ceremony. This means that preparations have to be done around a year in advance to book not only the church for the marriage ceremony, but also the venue for the reception.</p>",
+                    "target": [
+                      "p:nth-child(11)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(12)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(14)"
+                    ]
+                  },
+                  {
+                    "html": "<p>If you choose to reside permanently in Colombia, you can apply for a migrant visa (M-1) and be eligible for residency after two years. You can’t go wrong with choosing to live in Colombia as the country has so much to offer.</p>",
+                    "target": [
+                      "p:nth-child(15)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(16)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Conversely, if you choose to live in the US, for example, your wife can apply for a CR-1 visa.</p>",
+                    "target": [
+                      "p:nth-child(17)"
+                    ]
+                  },
+                  {
+                    "html": "<p>At the end of the day, there should be few problems marrying a Colombian woman. The real question doesn’t just boil down to where you were born or to what culture she grew up in. The question becomes more about how you plan to handle married life together.</p>",
+                    "target": [
+                      "p:nth-child(19)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Many couples barely even touch on planning a day beyond the wedding itself, much less a life together. The best gift you and your future wife can give each other is a serious conversation about who you are now and what you want to do and be in the next ten, twenty, fifty years down the line.</p>",
+                    "target": [
+                      "p:nth-child(20)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "List element has direct children that are not allowed: p"
+              }
+            ],
+            "impact": "serious",
+            "html": "<ul>",
+            "target": [
+              "main > ul"
+            ],
+            "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: p",
+            "selector": "main > ul"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "span > a[target=\"_blank\"]:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/@juanparodriguez\" target=\"_blank\">juan pablo rodriguez</a>",
+            "target": [
+              "span > a[target=\"_blank\"]:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "span > a[target=\"_blank\"]:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/photos/U0pX0aR_5S8\" target=\"_blank\">Unsplash</a>",
+            "target": [
+              "span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "span > a[target=\"_blank\"]:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "main > p:nth-child(7)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(7) > a:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/medellin-marriage-culture.html\"><strong>Marriage</strong></a>",
+            "target": [
+              "p:nth-child(7) > a:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(7) > a:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "main > p:nth-child(7)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(7) > a:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/married-life-with-colombian-women.html\"><strong>husband and wife</strong></a>",
+            "target": [
+              "p:nth-child(7) > a:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(7) > a:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ul > p:nth-child(5)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(5) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/gringo-edge-dating-colombian-women.html\"><strong>Colombian women</strong></a>",
+            "target": [
+              "p:nth-child(5) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(5) > a"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. list - serious Impact\n   Description: Ensure that lists are structured correctly\n   Help: <ul> and <ol> must only directly contain <li>, <script> or <template> elements\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/list?application=playwright\n   Affected Elements (1):\n     1. main > ul\n        Fix all of the following:\n  List element has direct children that are not allowed: p\n        HTML: <ul>\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. link-in-text-block\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Elements to Review (5):\n     1. span > a[target=\"_blank\"]:nth-child(1)\n     2. span > a[target=\"_blank\"]:nth-child(2)\n     3. p:nth-child(7) > a:nth-child(1)\n     4. p:nth-child(7) > a:nth-child(2)\n     5. p:nth-child(5) > a\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Things Men Should Know BEFORE Marrying Colombian Women",
+    "metaDescription": "Many men seek Colombian women for marriage. If you're one of those men, here are some important facts you need to know before marrying a woman from Colombia.",
+    "canonicalUrl": "https://medellinsingles.com/realities/things-men-should-know-before-marrying-colombian-women.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m4\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m4\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/tours/magical-night-latinas-magic-city-medellin.html",
+    "timestamp": "2026-01-16 15:18:58",
+    "summary": {
+        "mobile_score": 63,
+        "desktop_score": 72
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 63,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmagical-night-latinas-magic-city-medellin.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "4.1\u00a0s",
+        "tbt_lab": "610\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 72,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmagical-night-latinas-magic-city-medellin.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.8\u00a0s",
+        "lcp_lab": "0.9\u00a0s",
+        "tbt_lab": "470\u00a0ms"
+    }
+}

@@ -1,0 +1,732 @@
+{
+  "url": "https://russia-ladies.com/blog/",
+  "timestamp": "2026-01-12T08:24:09.487Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": false,
+    "brokenLinksCount": 0,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Russia Ladies | Blogs\"",
+        "value": "Russia Ladies | Blogs"
+      },
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too short (11 chars, recommended: 50-160)",
+        "value": "description"
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://russia-ladies.com/blog/\"",
+        "value": "https://russia-ladies.com/blog/"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 35 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Russia Ladies Blogs"
+      }
+    ],
+    "passedCount": 5,
+    "totalCount": 6,
+    "failedChecks": [
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too short (11 chars, recommended: 50-160)",
+        "value": "description"
+      }
+    ]
+  },
+  "brokenLinks": {
+    "totalChecked": 0,
+    "brokenCount": 0,
+    "brokenLinks": []
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ],
+        "description": "Ensure image alternative is not repeated as text",
+        "help": "Alternative text of images should not be repeated as text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/travel/moscow-bridge-320w.webp\" class=\"w-100\" alt=\"Travel Hacks for Exploring Russia\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(1) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(1) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/realities/potentialrussianwomanwithaman-320w.webp\" class=\"w-100\" alt=\"Dating Russian Women: Agencies Vs Cold Approach\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(2) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(2) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/shemightbearussianwoman-320w.webp\" class=\"w-100\" alt=\"What Do Russian Women Find Most Attractive?\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(3) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(3) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/womeninrussia-320w.webp\" class=\"w-100\" alt=\"Women in Russia | Some Facts About Their Dating Culture\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(4) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(4) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-blog-img7-320w.webp\" class=\"mb-2\" alt=\"Valentine’s Day Dating Culture Among Russian Women\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-blog-img11-320w.webp\" class=\"mb-2\" alt=\"9 Traditional Dishes to Try While Dating in Russia\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-blog-img22-320w.webp\" class=\"mb-2\" alt=\"Pre and Post-Soviet Dating Habits in Russia\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-blog-img13-320w.webp\" class=\"mb-2\" alt=\"The Roles of Russian Women Throughout History\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-blog-img28-320w.webp\" class=\"mb-2\" alt=\"Get Your Festive Mood On and Celebrate Christmas in Russia\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-blog-img30-320w.webp\" class=\"mb-2\" alt=\"Celebrating New Year’s the Russian Way\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/womeninrussia-320w.webp\" class=\"mb-2\" alt=\"Women in Russia | Some Facts About Their Dating Culture\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/russia-ladies-blog-img33-320w.webp\" class=\"mb-2\" alt=\"What Russian Women Want You to Do during the Day of Love\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/russian-ladies-dating-320w.webp\" class=\"mb-2\" alt=\"Valentine's Day Activities Russian Ladies Like\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/dating-russian-320w.webp\" class=\"mb-2\" alt=\"Understanding Russian Dating Etiquettes BEFORE Traveling\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/russianwomen003-320w.webp\" class=\"mb-2\" alt=\"Dating Russian Women | How to Know If She's Interested in You\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/datingrussianwomen-320w.webp\" class=\"mb-2\" alt=\"Russian Women | How to Take Them Out on a Romantic Date\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/shemightbearussianwoman-320w.webp\" class=\"mb-2\" alt=\"What Do Russian Women Find Most Attractive?\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russia-ladies-blog-img3-320w.webp\" class=\"mb-2\" alt=\"Ways To Keep Your Russian Wife Happy\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russia-ladies-blog-img19-320w.webp\" class=\"mb-2\" alt=\"Understanding Love Languages with Russian Women\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russialadies-bg-mountain-320w.webp\" class=\"mb-2\" alt=\"Simple Traits That Attract Russian Women\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russianwomen-psychology-320w.webp\" class=\"mb-2\" alt=\"Dating Russian Women | Signs She's Okay Breaking up with You\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russianbeauty-320w.webp\" class=\"mb-2\" alt=\"Red Flags Men Encounter Dating Russian Women\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/realities/potentialrussianwomanwithaman-320w.webp\" class=\"mb-2\" alt=\"Dating Russian Women: Agencies Vs Cold Approach\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6 > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6 > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/travel/travelingtorussia-320w.webp\" class=\"mb-2\" alt=\"6 Things You Should Avoid Doing When Traveling to Russia\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/travel/moscow-bridge-320w.webp\" class=\"mb-2\" alt=\"Travel Hacks for Exploring Russia\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "navigation",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<nav class=\"d-none d-xl-block\">",
+                    "target": [
+                      ".d-xl-block"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": ".header-right-nav"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<nav class=\"header-right-nav pt-3\">",
+            "target": [
+              ".header-right-nav"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": ".header-right-nav"
+          },
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. image-redundant-alt - minor Impact\n   Description: Ensure image alternative is not repeated as text\n   Help: Alternative text of images should not be repeated as text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright\n   Affected Elements (25):\n     1. .border-bottom.pb-2.mb-4:nth-child(1) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/travel/moscow-bridge-32...\n     2. .border-bottom.pb-2.mb-4:nth-child(2) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/realities/potentialruss...\n     3. .border-bottom.pb-2.mb-4:nth-child(3) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/shemightbe...\n     4. .border-bottom.pb-2.mb-4:nth-child(4) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/womeninrussia-32...\n     5. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-b...\n     6. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-b...\n     7. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-b...\n     8. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-b...\n     9. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-b...\n     10. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/culture/russia-ladies-b...\n     11. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/womeninrussia-32...\n     12. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/russia-ladies-bl...\n     13. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/russian-ladies-d...\n     14. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/dating-russian-3...\n     15. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/russianwomen003-...\n     16. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/dating/datingrussianwom...\n     17. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/shemightbe...\n     18. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russia-lad...\n     19. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russia-lad...\n     20. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russialadi...\n     21. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russianwom...\n     22. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/psychologies/russianbea...\n     23. #realities > .mobile-limit-3.row > .col-12.col-lg-6 > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/realities/potentialruss...\n     24. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/travel/travelingtorussi...\n     25. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/russia-ladies/travel/moscow-bridge-32...\n\n\n2. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (2):\n     1. .header-right-nav\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <nav class=\"header-right-nav pt-3\">\n     2. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-M2FP9JRT",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-M2FP9JRT). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-M2FP9JRT",
+          "GTM-M2FP9JRT",
+          "GTM-M2FP9JRT"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Russia Ladies | Blogs",
+    "metaDescription": "description",
+    "canonicalUrl": "https://russia-ladies.com/blog/",
+    "robotsMetaTag": "index, follow"
+  }
+}

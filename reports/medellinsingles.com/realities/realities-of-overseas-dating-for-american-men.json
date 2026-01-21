@@ -1,0 +1,243 @@
+{
+  "url": "https://medellinsingles.com/realities/realities-of-overseas-dating-for-american-men.html",
+  "timestamp": "2026-01-19T07:31:34.465Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 4,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"The Realities of Overseas Dating for American Men\"",
+        "value": "The Realities of Overseas Dating for American Men"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (151 chars)",
+        "value": "More American men want to date foreigners. But overseas dating is riddled with risks, hurdles, and uncertainties. Can online matchmaking be the answer?"
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/realities/realities-of-overseas-dating-for-american-men.html\"",
+        "value": "https://medellinsingles.com/realities/realities-of-overseas-dating-for-american-men.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 15 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: The Realities of Overseas Dating for American Men"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 4,
+    "brokenCount": 4,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://news.stanford.edu/2019/08/21/online-dating-popular-way-u-s-couples-meet",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "most popular way for (heterosexual) couples to meet",
+            "html": "<a href=\"https://news.stanford.edu/2019/08/21/online-dating-popular-way-u-s-couples-meet/\">most popular way for (heterosexual) couples to meet</a>",
+            "href": "https://news.stanford.edu/2019/08/21/online-dating-popular-way-u-s-couples-meet/"
+          }
+        ]
+      },
+      {
+        "url": "https://journals.sagepub.com/doi/full/10.1177/0192513X13519256",
+        "status": 403,
+        "statusText": "Forbidden",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "preference for tall men",
+            "html": "<a href=\"https://journals.sagepub.com/doi/full/10.1177/0192513X13519256\">preference for tall men</a>",
+            "href": "https://journals.sagepub.com/doi/full/10.1177/0192513X13519256"
+          }
+        ]
+      },
+      {
+        "url": "https://www.washingtonpost.com/news/soloish/wp/2018/02/12/its-tough-for-me-to-know-where-the-line-is-the-metoo-era-is-making-dating-more-confusing",
+        "status": 0,
+        "statusText": "Error",
+        "isBroken": true,
+        "error": "apiRequestContext.head: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - → HEAD https://www.washingtonpost.com/news/soloish/wp/2018/02/12/its-tough-for-me-to-know-where-the-line-is-the-metoo-era-is-making-dating-more-confusing\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8\u001b[22m\n\u001b[2m    - accept-encoding: gzip, deflate, br\u001b[22m\n\u001b[2m    - Accept-Language: en-US,en;q=0.9\u001b[22m\n\u001b[2m    - DNT: 1\u001b[22m\n\u001b[2m    - Connection: keep-alive\u001b[22m\n\u001b[2m    - Upgrade-Insecure-Requests: 1\u001b[22m\n",
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "more\n          careful in their interactions with women",
+            "html": "<a href=\"https://www.washingtonpost.com/news/soloish/wp/2018/02/12/its-tough-for-me-to-know-where-the-line-is-the-metoo-era-is-making-dating-more-confusing/\">more\n          careful in their interactions with women</a>",
+            "href": "https://www.washingtonpost.com/news/soloish/wp/2018/02/12/its-tough-for-me-to-know-where-the-line-is-the-metoo-era-is-making-dating-more-confusing/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 2,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "The Realities of Overseas Dating for American Men",
+    "metaDescription": "More American men want to date foreigners. But overseas dating is riddled with risks, hurdles, and uncertainties. Can online matchmaking be the answer?",
+    "canonicalUrl": "https://medellinsingles.com/realities/realities-of-overseas-dating-for-american-men.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m4\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m4\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

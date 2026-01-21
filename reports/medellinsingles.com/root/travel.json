@@ -1,0 +1,458 @@
+{
+  "url": "https://medellinsingles.com/travel/",
+  "timestamp": "2026-01-19T09:41:13.441Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 6,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Colombia Unveiled: The Ultimate Travel Guide for Exploring the Country\"",
+        "value": "Colombia Unveiled: The Ultimate Travel Guide for Exploring the Country"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (151 chars)",
+        "value": "Explore the best of Colombia with our comprehensive travel guide. Find practical advice, budget tips, and local insights to make the most of your trip."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/travel/\"",
+        "value": "https://medellinsingles.com/travel/"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 15 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: All about Travel"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 6,
+    "brokenCount": 6,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/medellin-women-videos",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Tour Videos",
+            "html": "<a href=\"/medellin-women-videos/\"><svg width=\"30\" height=\"30\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><path d=\"M4 12 L17 12 L14 9 M17 12 L14 15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg> &nbsp;&nbsp;Tour Videos</a>",
+            "href": "https://medellinsingles.com/medellin-women-videos/"
+          },
+          {
+            "selector": "a",
+            "linkText": "Tour Videos",
+            "html": "<a href=\"/medellin-women-videos/\">Tour Videos</a>",
+            "href": "https://medellinsingles.com/medellin-women-videos/"
+          },
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Tour Videos",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/medellin-women-videos/\"> Tour Videos </a>",
+            "href": "https://medellinsingles.com/medellin-women-videos/"
+          }
+        ]
+      },
+      {
+        "url": "https://medellinsingles.com/new-medellin-singles.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Newest Profiles",
+            "html": "<a href=\"/new-medellin-singles.html\">Newest Profiles &nbsp;&nbsp;<svg class=\"arrow-circle\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><!-- Circle --><circle cx=\"12\" cy=\"12\" r=\"11\" fill=\"var(--primary-color)\"></circle><!-- Arrow --><path d=\"M8 12 L16 12 L13 9 M16 12 L13 15\" fill=\"none\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a>",
+            "href": "https://medellinsingles.com/new-medellin-singles.html"
+          }
+        ]
+      },
+      {
+        "url": "https://medellinsingles.com/invar/contact/match_request.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Weekly Auto Match Wizard",
+            "html": "<a href=\"/invar/contact/match_request.html\">Weekly Auto Match Wizard &nbsp;&nbsp;<svg class=\"arrow-circle\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><!-- Circle --><circle cx=\"12\" cy=\"12\" r=\"11\" fill=\"var(--primary-color)\"></circle><!-- Arrow --><path d=\"M8 12 L16 12 L13 9 M16 12 L13 15\" fill=\"none\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a>",
+            "href": "https://medellinsingles.com/invar/contact/match_request.html"
+          },
+          {
+            "selector": "a",
+            "linkText": "Weekly Auto Match Wizard",
+            "html": "<a href=\"/invar/contact/match_request.html\">Weekly Auto Match Wizard</a>",
+            "href": "https://medellinsingles.com/invar/contact/match_request.html"
+          },
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Weekly Automatch Wizard",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/invar/contact/match_request.html\">Weekly Automatch Wizard</a>",
+            "href": "https://medellinsingles.com/invar/contact/match_request.html"
+          }
+        ]
+      },
+      {
+        "url": "https://medellinsingles.com/new-single-girls-for-marriage-worldwide.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "This Weeks New Girls Worldwide",
+            "html": "<a href=\"/new-single-girls-for-marriage-worldwide.html\">This Weeks New Girls Worldwide &nbsp;&nbsp;<svg class=\"arrow-circle\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><!-- Circle --><circle cx=\"12\" cy=\"12\" r=\"11\" fill=\"var(--primary-color)\"></circle><!-- Arrow --><path d=\"M8 12 L16 12 L13 9 M16 12 L13 15\" fill=\"none\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a>",
+            "href": "https://medellinsingles.com/new-single-girls-for-marriage-worldwide.html"
+          }
+        ]
+      },
+      {
+        "url": "https://medellinsingles.com/search-single-foreign-women-worldwide.html",
+        "status": 502,
+        "statusText": "Bad Gateway",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Want more? Search Women Worldwide",
+            "html": "<a href=\"/search-single-foreign-women-worldwide.html\">Want more? Search Women Worldwide &nbsp;&nbsp;<svg class=\"arrow-circle\" width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\"><!-- Circle --><circle cx=\"12\" cy=\"12\" r=\"11\" fill=\"var(--primary-color)\"></circle><!-- Arrow --><path d=\"M8 12 L16 12 L13 9 M16 12 L13 15\" fill=\"none\" stroke=\"white\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path></svg></a>",
+            "href": "https://medellinsingles.com/search-single-foreign-women-worldwide.html"
+          }
+        ]
+      },
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ],
+        "description": "Ensure image alternative is not repeated as text",
+        "help": "Alternative text of images should not be repeated as text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/travel-guide-320w.webp\" alt=\"Colombia Unveiled: The Ultimate Travel Guide for Exploring the Country\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/medellin-colombia-aerial-view-320w.webp\" alt=\"Medellin Colombia | Admiring the City's Charming Appeal\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/comuna-13-320w.webp\" alt=\"Top Instagrammable Spots in Medellin\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/is_colombia_safe_for_solo_female_travellers-320w.webp\" alt=\"Is Colombia Safe for Solo Female Travellers\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/is-medellin-colombia-safe-320w.webp\" alt=\"Is Medellin Colombia Safe? Here Are the Facts\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/best-hotels-in-medellin-320w.webp\" alt=\"The Best Hotels in Medellin 2023\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "navigation",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<nav class=\"mt-4\">",
+                    "target": [
+                      "main > div > .mt-4"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": ".header-right-nav"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<nav class=\"header-right-nav pt-3\">",
+            "target": [
+              ".header-right-nav"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": ".header-right-nav"
+          },
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. image-redundant-alt - minor Impact\n   Description: Ensure image alternative is not repeated as text\n   Help: Alternative text of images should not be repeated as text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright\n   Affected Elements (6):\n     1. .col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/travel-guide-...\n     2. .col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/medellin-colo...\n     3. .col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/comuna-13-320...\n     4. .col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/is_colombia_s...\n     5. .col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/is-medellin-c...\n     6. .col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/best-hotels-i...\n\n\n2. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (2):\n     1. .header-right-nav\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <nav class=\"header-right-nav pt-3\">\n     2. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Colombia Unveiled: The Ultimate Travel Guide for Exploring the Country",
+    "metaDescription": "Explore the best of Colombia with our comprehensive travel guide. Find practical advice, budget tips, and local insights to make the most of your trip.",
+    "canonicalUrl": "https://medellinsingles.com/travel/",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m6\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m6\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

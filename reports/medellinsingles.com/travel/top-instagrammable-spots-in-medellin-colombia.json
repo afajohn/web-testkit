@@ -1,0 +1,605 @@
+{
+  "url": "https://medellinsingles.com/travel/top-instagrammable-spots-in-medellin-colombia.html",
+  "timestamp": "2026-01-19T09:33:50.013Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 7,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Top Instagrammable Spots in Medellin\"",
+        "value": "Top Instagrammable Spots in Medellin"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (122 chars)",
+        "value": "Fill your Instagram profile and impress your followers with stunning photos of the picturesque areas of Medellin Colombia."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/travel/top-instagrammable-spots-in-medellin-colombia.html\"",
+        "value": "https://medellinsingles.com/travel/top-instagrammable-spots-in-medellin-colombia.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 12 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Top Instagrammable Spots in Medellin"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 7,
+    "brokenCount": 7,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/@nestormorales",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Néstor Morales",
+            "html": "<a href=\"https://unsplash.com/@nestormorales\" target=\"_blank\">Néstor Morales</a>",
+            "href": "https://unsplash.com/@nestormorales"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/photos/xC1sZ_aOsZY",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Unsplash",
+            "html": "<a href=\"https://unsplash.com/photos/xC1sZ_aOsZY\" target=\"_blank\">Unsplash</a>",
+            "href": "https://unsplash.com/photos/xC1sZ_aOsZY"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/@moizk",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Moiz K. Malik",
+            "html": "<a href=\"https://unsplash.com/@moizk\" target=\"_blank\">Moiz K. Malik</a>",
+            "href": "https://unsplash.com/@moizk"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/photos/Q60VpA5sQ4A",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Unsplash",
+            "html": "<a href=\"https://unsplash.com/photos/Q60VpA5sQ4A\" target=\"_blank\">Unsplash</a>",
+            "href": "https://unsplash.com/photos/Q60VpA5sQ4A"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/@massadrenaline",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Oneil Williams",
+            "html": "<a href=\"https://unsplash.com/@massadrenaline\" target=\"_blank\">Oneil Williams</a>",
+            "href": "https://unsplash.com/@massadrenaline"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/photos/5052mLpyS4c",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Unsplash",
+            "html": "<a href=\"https://unsplash.com/photos/5052mLpyS4c\" target=\"_blank\">Unsplash</a>",
+            "href": "https://unsplash.com/photos/5052mLpyS4c"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 2,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figure:nth-child(3) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(3) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/@nestormorales\" target=\"_blank\">Néstor Morales</a>",
+            "target": [
+              "figure:nth-child(3) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(3) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figure:nth-child(3) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(3) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/photos/xC1sZ_aOsZY\" target=\"_blank\">Unsplash</a>",
+            "target": [
+              "figure:nth-child(3) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(3) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(4)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(4) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/why-date-latina-women-from-medellin.html\"><strong>Medellin Colombia</strong></a>",
+            "target": [
+              "p:nth-child(4) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(4) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p><a href=\"/blog/date-ideas-colombian-women-love.html\"><strong>Plaza Botero</strong></a> is home to the numerous giant sculptures created by world-renowned Latin artist Fernando Botero -- most notably known for his signature style known as “Boterismo.”</p>",
+                    "target": [
+                      "p:nth-child(9)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(9) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/date-ideas-colombian-women-love.html\"><strong>Plaza Botero</strong></a>",
+            "target": [
+              "p:nth-child(9) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(9) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figure:nth-child(19) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "a[href$=\"@moizk\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/@moizk\" target=\"_blank\">Moiz K. Malik</a>",
+            "target": [
+              "a[href$=\"@moizk\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "a[href$=\"@moizk\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figure:nth-child(19) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(19) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/photos/Q60VpA5sQ4A\" target=\"_blank\">Unsplash</a>",
+            "target": [
+              "figure:nth-child(19) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(19) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>A place where you can soak up nature. These <a href=\"/blog/cultural-tour-of-medellin-colombia.html\"><strong>botanical gardens</strong></a> house over 4, 500 species of flowers scattered over its 35 acres of land area.</p>",
+                    "target": [
+                      "p:nth-child(39)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(39) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/cultural-tour-of-medellin-colombia.html\"><strong>botanical gardens</strong></a>",
+            "target": [
+              "p:nth-child(39) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(39) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figure:nth-child(44) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(44) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/@massadrenaline\" target=\"_blank\">Oneil Williams</a>",
+            "target": [
+              "figure:nth-child(44) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(44) > figcaption > span > a[target=\"_blank\"]:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figure:nth-child(44) > figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "figure:nth-child(44) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/photos/5052mLpyS4c\" target=\"_blank\">Unsplash</a>",
+            "target": [
+              "figure:nth-child(44) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "figure:nth-child(44) > figcaption > span > a[target=\"_blank\"]:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(50)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(50) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/why-date-latina-women-from-medellin.html\"><strong>Medellin Colombia</strong></a>",
+            "target": [
+              "p:nth-child(50) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(50) > a"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. link-in-text-block\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Elements to Review (10):\n     1. figure:nth-child(3) > figcaption > span > a[target=\"_blank\"]:nth-child(1)\n     2. figure:nth-child(3) > figcaption > span > a[target=\"_blank\"]:nth-child(2)\n     3. p:nth-child(4) > a\n     4. p:nth-child(9) > a\n     5. a[href$=\"@moizk\"]\n     6. figure:nth-child(19) > figcaption > span > a[target=\"_blank\"]:nth-child(2)\n     7. p:nth-child(39) > a\n     8. figure:nth-child(44) > figcaption > span > a[target=\"_blank\"]:nth-child(1)\n     9. figure:nth-child(44) > figcaption > span > a[target=\"_blank\"]:nth-child(2)\n     10. p:nth-child(50) > a\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Top Instagrammable Spots in Medellin",
+    "metaDescription": "Fill your Instagram profile and impress your followers with stunning photos of the picturesque areas of Medellin Colombia.",
+    "canonicalUrl": "https://medellinsingles.com/travel/top-instagrammable-spots-in-medellin-colombia.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m7\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

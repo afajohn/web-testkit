@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/dating/knowing-long-distance-relationship.html",
+    "timestamp": "2026-01-16 17:50:56",
+    "summary": {
+        "mobile_score": 66,
+        "desktop_score": 77
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 66,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fknowing-long-distance-relationship.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "6.5\u00a0s",
+        "tbt_lab": "300\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 77,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fknowing-long-distance-relationship.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.3\u00a0s",
+        "tbt_lab": "360\u00a0ms"
+    }
+}

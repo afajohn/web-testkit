@@ -1,0 +1,143 @@
+{
+  "url": "https://russia-ladies.com/featured-ladies/RusL-YTProfiles01.html",
+  "timestamp": "2026-01-12T08:31:34.749Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": false,
+    "brokenLinksCount": 0,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Beautiful Russian Women Seeking Marriage\"",
+        "value": "Beautiful Russian Women Seeking Marriage"
+      },
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too short (38 chars, recommended: 50-160)",
+        "value": "Single Russian Women Seeking Marriage."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://russia-ladies.com/featured-ladies/RusL-YTProfiles01.html\"",
+        "value": "https://russia-ladies.com/featured-ladies/RusL-YTProfiles01.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 4 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Beautiful Russian Women Seeking Marriage"
+      }
+    ],
+    "passedCount": 5,
+    "totalCount": 6,
+    "failedChecks": [
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too short (38 chars, recommended: 50-160)",
+        "value": "Single Russian Women Seeking Marriage."
+      }
+    ]
+  },
+  "brokenLinks": {
+    "totalChecked": 0,
+    "brokenCount": 0,
+    "brokenLinks": []
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 1,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".main-content-wrapper"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"container main-content-wrapper mb-3\">",
+            "target": [
+              ".main-content-wrapper"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".main-content-wrapper"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 1\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .main-content-wrapper\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"container main-content-wrapper mb-3\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-M2FP9JRT",
+    "hasLPTrackScript": false,
+    "message": "GTM found (GTM-M2FP9JRT). LP Track Script: Missing",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": false,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-M2FP9JRT",
+          "GTM-M2FP9JRT",
+          "GTM-M2FP9JRT"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Beautiful Russian Women Seeking Marriage",
+    "metaDescription": "Single Russian Women Seeking Marriage.",
+    "canonicalUrl": "https://russia-ladies.com/featured-ladies/RusL-YTProfiles01.html",
+    "robotsMetaTag": "index, follow"
+  }
+}

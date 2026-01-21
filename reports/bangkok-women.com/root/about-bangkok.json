@@ -1,0 +1,482 @@
+{
+  "url": "https://bangkok-women.com/about-bangkok.html",
+  "timestamp": "2026-01-20T08:31:19.765Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": false,
+    "brokenLinksCount": 1,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Want to Know More About Bangkok? Check Out This Guide\"",
+        "value": "Want to Know More About Bangkok? Check Out This Guide"
+      },
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (182 chars, recommended: 50-160)",
+        "value": "Let’s explore the capital city, Bangkok, Thailand! Known for its majestic shrines, cultural sceneries and friendly faces, the city makes it in the top list of every traveler’s goals."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://bangkok-women.com/about-bangkok.html\"",
+        "value": "https://bangkok-women.com/about-bangkok.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 12 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: About Bangkok"
+      }
+    ],
+    "passedCount": 5,
+    "totalCount": 6,
+    "failedChecks": [
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (182 chars, recommended: 50-160)",
+        "value": "Let’s explore the capital city, Bangkok, Thailand! Known for its majestic shrines, cultural sceneries and friendly faces, the city makes it in the top list of every traveler’s goals."
+      }
+    ]
+  },
+  "brokenLinks": {
+    "totalChecked": 1,
+    "brokenCount": 1,
+    "brokenLinks": [
+      {
+        "url": "https://www.linkedin.com/company/bangkok-women-official",
+        "status": 0,
+        "statusText": "Error",
+        "isBroken": true,
+        "error": "Unknown error",
+        "elements": [
+          {
+            "selector": "a.d-flex.text-decoration-none.align-items-center.shadow.p-1",
+            "linkText": "",
+            "html": "<a class=\"d-flex text-decoration-none align-items-center shadow p-1\" href=\"https://www.linkedin.com/company/bangkok-women-official\" target=\"_blank\" aria-label=\"LinkedIn\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"25\" height=\"25\" viewBox=\"0 0 72 72\" id=\"linkedin\">\n                <g id=\"providers-list\" fill=\"none\" fill-rule=\"evenodd\" stroke=\"none\" stroke-width=\"1\">\n                  <g id=\"linkedin\">\n                    <rect id=\"Rectangle-2\" width=\"72\" height=\"72\" x=\"0\" y=\"0\" fill=\"#117EB8\" rx=\"4\"></rect>\n                    <path id=\"Shape\" fill=\"#FFF\" d=\"M13.139 27.848h9.623V58.81h-9.623V27.848zm4.813-15.391c3.077 0 5.577 2.5 5.577 5.577 0 3.08-2.5 5.581-5.577 5.581a5.58 5.58 0 1 1 0-11.158zm10.846 15.39h9.23v4.231h.128c1.285-2.434 4.424-5 9.105-5 9.744 0 11.544 6.413 11.544 14.75V58.81h-9.617V43.753c0-3.59-.066-8.209-5-8.209-5.007 0-5.776 3.911-5.776 7.95V58.81h-9.615V27.848z\">\n                    </path>\n                  </g>\n                </g>\n              </svg></a>",
+            "href": "https://www.linkedin.com/company/bangkok-women-official"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 1,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": "div[aria-label=\"9 / 10\"] > .card-body.pt-3.px-2 > strong"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Visit Wat Benja, One of Bangkok’s Best.</strong>",
+            "target": [
+              "div[aria-label=\"9 / 10\"] > .card-body.pt-3.px-2 > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": "div[aria-label=\"9 / 10\"] > .card-body.pt-3.px-2 > strong"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.8pt (17px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": "div[aria-label=\"9 / 10\"] > .card-body.pt-3.px-2 > .card-text"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"card-text\">",
+            "target": [
+              "div[aria-label=\"9 / 10\"] > .card-body.pt-3.px-2 > .card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": "div[aria-label=\"9 / 10\"] > .card-body.pt-3.px-2 > .card-text"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-prev > .card-body.pt-3.px-2 > strong"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Visit Wat Prayoon, One of Bangkok’s Best.</strong>",
+            "target": [
+              ".swiper-slide-prev > .card-body.pt-3.px-2 > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-prev > .card-body.pt-3.px-2 > strong"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.8pt (17px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-prev > .card-body.pt-3.px-2 > .card-text"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"card-text\"><b>Wat Prayoon</b> - A buddhist temple built in the year 1828. The temple\n                            is complete in terms of the Buddhist format, namely: meditation halls, the Chedi, the\n                            library and the assembly area.</p>",
+            "target": [
+              ".swiper-slide-prev > .card-body.pt-3.px-2 > .card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-prev > .card-body.pt-3.px-2 > .card-text"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.8pt (17px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-prev > .card-body.pt-3.px-2 > .card-text > b"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<b>Wat Prayoon</b>",
+            "target": [
+              ".swiper-slide-prev > .card-body.pt-3.px-2 > .card-text > b"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-prev > .card-body.pt-3.px-2 > .card-text > b"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-next > .card-body.pt-3.px-2 > strong"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Visit Wat Pho, One of Bangkok’s Best.</strong>",
+            "target": [
+              ".swiper-slide-next > .card-body.pt-3.px-2 > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-next > .card-body.pt-3.px-2 > strong"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.8pt (17px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-next > .card-body.pt-3.px-2 > .card-text"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"card-text\">",
+            "target": [
+              ".swiper-slide-next > .card-body.pt-3.px-2 > .card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-next > .card-body.pt-3.px-2 > .card-text"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.8pt (17px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": ".swiper-slide-next > .card-body.pt-3.px-2 > .card-text > b"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<b>Wat Pho</b>",
+            "target": [
+              ".swiper-slide-next > .card-body.pt-3.px-2 > .card-text > b"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": ".swiper-slide-next > .card-body.pt-3.px-2 > .card-text > b"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": "div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > strong"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Visit Wat Arun, One of Bangkok’s Best.</strong>",
+            "target": [
+              "div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": "div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > strong"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.8pt (17px)",
+                  "fontWeight": "normal",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": "div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > .card-text"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"card-text\"><b>Wat Arun</b> - Also called as the “Temple of Dawn”. This temple is\n                            considered as Thailand’s landmark. Its glowing outside appearance is a product of the\n                            sovereignty in the 17th and 19th century Thailand.</p>",
+            "target": [
+              "div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > .card-text"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": "div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > .card-text"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "contrastRatio": 0,
+                  "fontSize": "12.8pt (17px)",
+                  "fontWeight": "bold",
+                  "messageKey": "bgOverlap",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's background color could not be determined because it is overlapped by another element",
+                "selector": "div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > .card-text > b"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<b>Wat Arun</b>",
+            "target": [
+              "div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > .card-text > b"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined because it is overlapped by another element",
+            "selector": "div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > .card-text > b"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 1\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. color-contrast\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Elements to Review (11):\n     1. div[aria-label=\"9 / 10\"] > .card-body.pt-3.px-2 > strong\n     2. div[aria-label=\"9 / 10\"] > .card-body.pt-3.px-2 > .card-text\n     3. .swiper-slide-prev > .card-body.pt-3.px-2 > strong\n     4. .swiper-slide-prev > .card-body.pt-3.px-2 > .card-text\n     5. .swiper-slide-prev > .card-body.pt-3.px-2 > .card-text > b\n     6. .swiper-slide-next > .card-body.pt-3.px-2 > strong\n     7. .swiper-slide-next > .card-body.pt-3.px-2 > .card-text\n     8. .swiper-slide-next > .card-body.pt-3.px-2 > .card-text > b\n     9. div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > strong\n     10. div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > .card-text\n     11. div[aria-label=\"3 / 10\"] > .card-body.pt-3.px-2 > .card-text > b\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Want to Know More About Bangkok? Check Out This Guide",
+    "metaDescription": "Let’s explore the capital city, Bangkok, Thailand! Known for its majestic shrines, cultural sceneries and friendly faces, the city makes it in the top list of every traveler’s goals.",
+    "canonicalUrl": "https://bangkok-women.com/about-bangkok.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:110:36",
+  "testFailed": true
+}

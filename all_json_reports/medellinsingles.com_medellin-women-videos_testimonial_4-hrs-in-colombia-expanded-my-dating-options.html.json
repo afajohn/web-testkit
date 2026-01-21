@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/testimonial/4-hrs-in-colombia-expanded-my-dating-options.html",
+    "timestamp": "2026-01-16 15:27:57",
+    "summary": {
+        "mobile_score": 71,
+        "desktop_score": 75
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 71,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2F4-hrs-in-colombia-expanded-my-dating-options.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "4.1\u00a0s",
+        "tbt_lab": "380\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 75,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2F4-hrs-in-colombia-expanded-my-dating-options.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.3\u00a0s",
+        "tbt_lab": "370\u00a0ms"
+    }
+}

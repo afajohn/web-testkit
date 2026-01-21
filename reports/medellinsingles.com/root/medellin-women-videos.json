@@ -1,0 +1,451 @@
+{
+  "url": "https://medellinsingles.com/medellin-women-videos/",
+  "timestamp": "2026-01-15T08:36:44.671Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 1,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Medellin Singles Tour Videos\"",
+        "value": "Medellin Singles Tour Videos"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (141 chars)",
+        "value": "Browse through our compilation of videos during our recent singles tours and understand how matchmaking services work through Medellin Women."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/medellin-women-videos/\"",
+        "value": "https://medellinsingles.com/medellin-women-videos/"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 16 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Medellin Singles Videos"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 1,
+    "brokenCount": 1,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 2,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "navigation",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<nav>",
+                    "target": [
+                      ".border-bottom > nav"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": ".header-right-nav"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<nav class=\"header-right-nav pt-3\">",
+            "target": [
+              ".header-right-nav"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": ".header-right-nav"
+          },
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                Dating Colombian women in Medellin not only serves as a way for men to explore their relationship options, but to also experience the inviting Latin culture per...\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.video-card > .vid-desc"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                Dating Colombian women in Medellin not only serves as a way for men to explore their relationship options, but to also experience the inviting Latin culture per...\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.video-card > .vid-desc"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                Foreign men dating Colombian women typically follow similar narratives on how they arrive in Medellin.\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.video-card > .vid-desc"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                Foreign men dating Colombian women typically follow similar narratives on how they arrive in Medellin.\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.video-card > .vid-desc"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                A growing number of foreigners find their way to meet Colombian women for one common reason.\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.video-card > .vid-desc"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                A growing number of foreigners find their way to meet Colombian women for one common reason.\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.video-card > .vid-desc"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                Why do so many foreign men embark on solo travel to Colombia to meet Medellin women in their search for love and marriage? What is so appealing about Latina wom...\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.video-card > .vid-desc"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                Why do so many foreign men embark on solo travel to Colombia to meet Medellin women in their search for love and marriage? What is so appealing about Latina wom...\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.video-card > .vid-desc"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                During a singles vacation, you’ll meet many friendly and fun-loving Colombian women that are happy to show you around their beautiful city and tourist destinati...\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.video-card > .vid-desc"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                During a singles vacation, you’ll meet many friendly and fun-loving Colombian women that are happy to show you around their beautiful city and tourist destinati...\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.video-card > .vid-desc"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": "pseudoContent",
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"m-0 vid-desc\">\n                Are you searching for your foreign bride? Medellin Women are giving men big reasons to embark on a romantic journey to Colombia. Women in Medellin are among the...\n                </p>",
+                    "target": [
+                      ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.video-card > .vid-desc"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's background color could not be determined due to a pseudo element",
+                "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.video-card > .vid-desc"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p class=\"m-0 vid-desc\">\n                Are you searching for your foreign bride? Medellin Women are giving men big reasons to embark on a romantic journey to Colombia. Women in Medellin are among the...\n                </p>",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.video-card > .vid-desc"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a pseudo element",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.video-card > .vid-desc"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (2):\n     1. .header-right-nav\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <nav class=\"header-right-nav pt-3\">\n     2. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. color-contrast\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Elements to Review (6):\n     1. .col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.video-card > .vid-desc\n     2. .col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.video-card > .vid-desc\n     3. .col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.video-card > .vid-desc\n     4. .col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.video-card > .vid-desc\n     5. .col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.video-card > .vid-desc\n     6. .col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.video-card > .vid-desc\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Medellin Singles Tour Videos",
+    "metaDescription": "Browse through our compilation of videos during our recent singles tours and understand how matchmaking services work through Medellin Women.",
+    "canonicalUrl": "https://medellinsingles.com/medellin-women-videos/",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

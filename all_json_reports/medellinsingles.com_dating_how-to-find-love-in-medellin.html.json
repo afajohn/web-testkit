@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/dating/how-to-find-love-in-medellin.html",
+    "timestamp": "2026-01-16 17:12:34",
+    "summary": {
+        "mobile_score": 61,
+        "desktop_score": 78
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 61,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-find-love-in-medellin.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "7.6\u00a0s",
+        "tbt_lab": "400\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 78,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-find-love-in-medellin.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.8\u00a0s",
+        "tbt_lab": "270\u00a0ms"
+    }
+}

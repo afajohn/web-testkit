@@ -1,0 +1,518 @@
+{
+  "url": "https://medellinsingles.com/dating/why-colombian-women-overlook-physical-appearance.html",
+  "timestamp": "2026-01-16T08:42:57.334Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 3,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Why Colombian Women Overlook Physical Appearance\"",
+        "value": "Why Colombian Women Overlook Physical Appearance"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (136 chars)",
+        "value": "Having good looks doesn't guarantee you a partner. Know what Colombian women find most attractive in a man besides physical appearances."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/dating/why-colombian-women-overlook-physical-appearance.html\"",
+        "value": "https://medellinsingles.com/dating/why-colombian-women-overlook-physical-appearance.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 10 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Why Colombian Women Overlook Physical Appearance"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 3,
+    "brokenCount": 3,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/@omarlopez1",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Omar Lopez",
+            "html": "<a href=\"https://unsplash.com/@omarlopez1\" target=\"_blank\">Omar Lopez</a>",
+            "href": "https://unsplash.com/@omarlopez1"
+          }
+        ]
+      },
+      {
+        "url": "https://unsplash.com/photos/bQkBWDt6M_Y",
+        "status": 401,
+        "statusText": "Unauthorized",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Unsplash",
+            "html": "<a href=\"https://unsplash.com/photos/bQkBWDt6M_Y/\" target=\"_blank\">Unsplash</a>",
+            "href": "https://unsplash.com/photos/bQkBWDt6M_Y/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "description": "Ensure that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": {
+                  "values": "p"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(2)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(4)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Being smart is probably the best trait women in Colombia love about men. For these women, the studious nerd is the new sporty jock. However, this doesn’t mean smart-smart, simply a man who can handle himself well during conversations and has a decent vocabulary.</p>",
+                    "target": [
+                      "ol > p:nth-child(6)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Being Mr. Smartypants is not a bad thing, if anything, it allows you to have a great advantage from other men if you want to impress a Colombian woman.</p>",
+                    "target": [
+                      "ol > p:nth-child(7)"
+                    ]
+                  },
+                  {
+                    "html": "<p>As everyone should know, Colombian ladies are known to be good cooks. Basically, they can cook a variety of cuisines, whether local or international. Although they are good themselves, they still want to have a partner who knows how to cook well.</p>",
+                    "target": [
+                      "ol > p:nth-child(9)"
+                    ]
+                  },
+                  {
+                    "html": "<p>The quote “a way to a man’s heart is through his stomach” does not only apply for women but also for men. If you make cooking your skill, there’s no doubt you will get the attention of the Colombian woman you like.</p>",
+                    "target": [
+                      "ol > p:nth-child(10)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(12)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Although these qualities and traits are rare to find in men nowadays, Colombian ladies are still hoping to find a partner in life who possess any of these traits.</p>",
+                    "target": [
+                      "p:nth-child(13)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(15)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Being dependent on your partner is natural, especially if you have been together for a long time. But overdoing it gives your partner the idea that you can’t live another day without your partner by your side, and that’s pretty much annoying, particularly for Colombian women.</p>",
+                    "target": [
+                      "p:nth-child(17)"
+                    ]
+                  },
+                  {
+                    "html": "<p>That is why women in Colombia prefer men who can do things on their own without having to be with each other 24/7. For these women, depending on someone all the time makes a man weak, hence makes him less attractive even though they have the most handsome faces in the universe.</p>",
+                    "target": [
+                      "p:nth-child(18)"
+                    ]
+                  },
+                  {
+                    "html": "<p>With over hundreds of extreme travel destinations in the country, particularly in Medellin, Colombia, there’s no question why Colombian women are the most adventurous and sporty amongst Latinas. These women always have a hunger for thrills and fun experiences.</p>",
+                    "target": [
+                      "p:nth-child(20)"
+                    ]
+                  },
+                  {
+                    "html": "<p>This explains why they are interested in men who love to skydive, rock and mountain climbing rather than men who play games on their computers. So even if you are the most handsome man in the crowd but you’re boring, you are still nothing.</p>",
+                    "target": [
+                      "p:nth-child(21)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "List element has direct children that are not allowed: p"
+              }
+            ],
+            "impact": "serious",
+            "html": "<ol>",
+            "target": [
+              "ol"
+            ],
+            "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: p",
+            "selector": "ol"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "span > a[target=\"_blank\"]:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/@omarlopez1\" target=\"_blank\">Omar Lopez</a>",
+            "target": [
+              "span > a[target=\"_blank\"]:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "span > a[target=\"_blank\"]:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<figcaption class=\"content-img-caption right-img-caption\">",
+                    "target": [
+                      "figcaption"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "span > a[target=\"_blank\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"https://unsplash.com/photos/bQkBWDt6M_Y/\" target=\"_blank\">Unsplash</a>",
+            "target": [
+              "span > a[target=\"_blank\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "span > a[target=\"_blank\"]:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "main > p:nth-child(7)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(7) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/types-of-men-latin-women-want-to-date.html\"><strong>physical appearance</strong></a>",
+            "target": [
+              "p:nth-child(7) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(7) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ol > p:nth-child(4)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(4) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/things-men-should-know-before-marrying-colombian-women.html\"><strong>Colombian women</strong></a>",
+            "target": [
+              "p:nth-child(4) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(4) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "main > p:nth-child(9)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(9) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/realistic-expectations-dating-colombian-women.html\"><strong>dating</strong></a>",
+            "target": [
+              "p:nth-child(9) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(9) > a"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. list - serious Impact\n   Description: Ensure that lists are structured correctly\n   Help: <ul> and <ol> must only directly contain <li>, <script> or <template> elements\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/list?application=playwright\n   Affected Elements (1):\n     1. ol\n        Fix all of the following:\n  List element has direct children that are not allowed: p\n        HTML: <ol>\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. link-in-text-block\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Elements to Review (5):\n     1. span > a[target=\"_blank\"]:nth-child(1)\n     2. span > a[target=\"_blank\"]:nth-child(2)\n     3. p:nth-child(7) > a\n     4. p:nth-child(4) > a\n     5. p:nth-child(9) > a\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Why Colombian Women Overlook Physical Appearance",
+    "metaDescription": "Having good looks doesn't guarantee you a partner. Know what Colombian women find most attractive in a man besides physical appearances.",
+    "canonicalUrl": "https://medellinsingles.com/dating/why-colombian-women-overlook-physical-appearance.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m3\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m3\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

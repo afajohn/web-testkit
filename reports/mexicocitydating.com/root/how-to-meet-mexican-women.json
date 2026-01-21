@@ -1,0 +1,1632 @@
+{
+  "url": "https://mexicocitydating.com/how-to-meet-mexican-women.html",
+  "timestamp": "2026-01-08T07:28:09.658Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 1,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"How to Meet Beautiful Mexican Women\"",
+        "value": "How to Meet Beautiful Mexican Women"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (139 chars)",
+        "value": "There are quite a few men that want to meet Mexican women and quite a lot of them do not live in Mexico. Learn how to meet women in Mexico."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://mexicocitydating.com/how-to-meet-mexican-women.html\"",
+        "value": "https://mexicocitydating.com/how-to-meet-mexican-women.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 10 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: How to Use Our Service to Meet and Date Single Latin Women"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 1,
+    "brokenCount": 1,
+    "brokenLinks": [
+      {
+        "url": "https://mexicocitydating.com/latin-singles-tour-vacations/latin-singles-tour-schedule.html",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Group Singles\n                Tour",
+            "html": "<a href=\"/latin-singles-tour-vacations/latin-singles-tour-schedule.html\" target=\"_blank\">Group Singles\n                Tour</a>",
+            "href": "https://mexicocitydating.com/latin-singles-tour-vacations/latin-singles-tour-schedule.html"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 7,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "description": "Ensure buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "button-has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have inner text that is visible to screen readers",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has no title attribute",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "implicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an implicit (wrapped) <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an explicit <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "selector": ".fc-megamenu"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">",
+            "target": [
+              ".fc-megamenu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "selector": ".fc-megamenu"
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0d6efd",
+                  "bgColor": "#f3f9f2",
+                  "contrastRatio": 4.21,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-md-4 col-sm-12 howto-active\">",
+                    "target": [
+                      ".howto-active"
+                    ]
+                  },
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1",
+                "selector": ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .captcha-info > .row > .offset-lg-3.pull-right.col-lg-9 > .row > p > a[href$=\"sign-up.html\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/sign-up.html\">Reload Captcha</a>",
+            "target": [
+              ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .captcha-info > .row > .offset-lg-3.pull-right.col-lg-9 > .row > p > a[href$=\"sign-up.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1",
+            "selector": ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .captcha-info > .row > .offset-lg-3.pull-right.col-lg-9 > .row > p > a[href$=\"sign-up.html\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0d6efd",
+                  "bgColor": "#f3f9f2",
+                  "contrastRatio": 4.21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-md-4 col-sm-12 howto-active\">",
+                    "target": [
+                      ".howto-active"
+                    ]
+                  },
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".howto-active > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/members/terms\" target=\"_blank\">terms and conditions</a>",
+            "target": [
+              ".howto-active > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".howto-active > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0d6efd",
+                  "bgColor": "#f3f9f2",
+                  "contrastRatio": 4.21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-md-4 col-sm-12 howto-active\">",
+                    "target": [
+                      ".howto-active"
+                    ]
+                  },
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".howto-active > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>",
+            "target": [
+              ".howto-active > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".howto-active > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0d6efd",
+                  "bgColor": "#f3f9f2",
+                  "contrastRatio": 4.21,
+                  "fontSize": "13.5pt (18px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-md-4 col-sm-12 howto-active\">",
+                    "target": [
+                      ".howto-active"
+                    ]
+                  },
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".howto-active > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/members/login\">Sign In Here</a>",
+            "target": [
+              ".howto-active > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".howto-active > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0d6efd",
+                  "bgColor": "#f3f9f2",
+                  "contrastRatio": 4.21,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-md-4 col-sm-12 howto-active\">",
+                    "target": [
+                      ".howto-active"
+                    ]
+                  },
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+                "selector": "p:nth-child(3) > strong > a[target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/information/how-to-correspond-with-women.html\" target=\"_blank\">Platinum\n              Membership</a>",
+            "target": [
+              "p:nth-child(3) > strong > a[target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+            "selector": "p:nth-child(3) > strong > a[target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ceb787",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.95,
+                  "fontSize": "21.1pt (28.16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<h2>Step 2</h2>",
+                    "target": [
+                      ".howto-step.col-md-4.col-sm-12:nth-child(2) > .howto-heading > h2"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.95 (foreground color: #ceb787, background color: #ffffff, font size: 21.1pt (28.16px), font weight: normal). Expected contrast ratio of 3:1",
+                "selector": ".howto-step.col-md-4.col-sm-12:nth-child(2) > .howto-heading > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Step 2</h2>",
+            "target": [
+              ".howto-step.col-md-4.col-sm-12:nth-child(2) > .howto-heading > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.95 (foreground color: #ceb787, background color: #ffffff, font size: 21.1pt (28.16px), font weight: normal). Expected contrast ratio of 3:1",
+            "selector": ".howto-step.col-md-4.col-sm-12:nth-child(2) > .howto-heading > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#909294",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".step2-text > p:nth-child(1)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>Our website is packed full of features and services to help you get to know the <a href=\"/mp/latin-women.htm\" target=\"_blank\">single women</a> you are interested in.</p>",
+            "target": [
+              ".step2-text > p:nth-child(1)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".step2-text > p:nth-child(1)"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#86b7fe",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 2.05,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 2.05 (foreground color: #86b7fe, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".step2-text > p:nth-child(1) > a[href$=\"latin-women.htm\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/mp/latin-women.htm\" target=\"_blank\">single women</a>",
+            "target": [
+              ".step2-text > p:nth-child(1) > a[href$=\"latin-women.htm\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.05 (foreground color: #86b7fe, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".step2-text > p:nth-child(1) > a[href$=\"latin-women.htm\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#909294",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".step2-text > p:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>\n          You can email women, send translated letters, and even talk with them over the\n          <a href=\"/phone_translation/\" target=\"_blank\">phone or video calls</a>.\n        </p>",
+            "target": [
+              ".step2-text > p:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".step2-text > p:nth-child(2)"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#86b7fe",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 2.05,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 2.05 (foreground color: #86b7fe, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": "a[href$=\"phone_translation/\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/phone_translation/\" target=\"_blank\">phone or video calls</a>",
+            "target": [
+              "a[href$=\"phone_translation/\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.05 (foreground color: #86b7fe, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": "a[href$=\"phone_translation/\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#909294",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".step2-text > p:nth-child(3)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>\n          We help you avoid language barriers by providing translation and optional\n          <a href=\"/gifts/\" target=\"_blank\">gift delivery services</a>.\n        </p>",
+            "target": [
+              ".step2-text > p:nth-child(3)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".step2-text > p:nth-child(3)"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#86b7fe",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 2.05,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 2.05 (foreground color: #86b7fe, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": "p:nth-child(3) > a[href$=\"gifts/\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/gifts/\" target=\"_blank\">gift delivery services</a>",
+            "target": [
+              "p:nth-child(3) > a[href$=\"gifts/\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.05 (foreground color: #86b7fe, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": "p:nth-child(3) > a[href$=\"gifts/\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ffffff",
+                  "bgColor": "#85c58e",
+                  "contrastRatio": 2.02,
+                  "fontSize": "16.8pt (22.4px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<a class=\"btn-block\" href=\"/women/update.htm\" target=\"_blank\"><i class=\"fa-brands fa-hotjar\"></i>See Newest\n            Ladies Profiles</a>",
+                    "target": [
+                      ".btn-block"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 2.02 (foreground color: #ffffff, background color: #85c58e, font size: 16.8pt (22.4px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".btn-block"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a class=\"btn-block\" href=\"/women/update.htm\" target=\"_blank\"><i class=\"fa-brands fa-hotjar\"></i>See Newest\n            Ladies Profiles</a>",
+            "target": [
+              ".btn-block"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.02 (foreground color: #ffffff, background color: #85c58e, font size: 16.8pt (22.4px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".btn-block"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#ceb787",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.95,
+                  "fontSize": "21.1pt (28.16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<h2>Step 3</h2>",
+                    "target": [
+                      ".howto-step.col-md-4.col-sm-12:nth-child(3) > .howto-heading > h2"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.95 (foreground color: #ceb787, background color: #ffffff, font size: 21.1pt (28.16px), font weight: normal). Expected contrast ratio of 3:1",
+                "selector": ".howto-step.col-md-4.col-sm-12:nth-child(3) > .howto-heading > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Step 3</h2>",
+            "target": [
+              ".howto-step.col-md-4.col-sm-12:nth-child(3) > .howto-heading > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.95 (foreground color: #ceb787, background color: #ffffff, font size: 21.1pt (28.16px), font weight: normal). Expected contrast ratio of 3:1",
+            "selector": ".howto-step.col-md-4.col-sm-12:nth-child(3) > .howto-heading > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#909294",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".step3-text > p"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<p>We offer 3 assisted options to meet the women:</p>",
+            "target": [
+              ".step3-text > p"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".step3-text > p"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#909294",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<li class=\"list-group-item\">\n              Our 7–14 day tours take place year-round in multiple Latin American destinations<br><br>\n              This is your BEST option to meet hundreds of beautiful women.\n            </li>",
+                    "target": [
+                      ".card:nth-child(2) > .list-group-flush.list-group > .list-group-item"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".card:nth-child(2) > .list-group-flush.list-group > .list-group-item"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li class=\"list-group-item\">\n              Our 7–14 day tours take place year-round in multiple Latin American destinations<br><br>\n              This is your BEST option to meet hundreds of beautiful women.\n            </li>",
+            "target": [
+              ".card:nth-child(2) > .list-group-flush.list-group > .list-group-item"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".card:nth-child(2) > .list-group-flush.list-group > .list-group-item"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#909294",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<li class=\"list-group-item\">\n              Designed for men who can’t join a group tour.<br><br>\n              Meet <strong>up to 3 women daily</strong> during a 7–14 day stay.\n            </li>",
+                    "target": [
+                      ".card:nth-child(3) > .list-group-flush.list-group > .list-group-item"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".card:nth-child(3) > .list-group-flush.list-group > .list-group-item"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li class=\"list-group-item\">\n              Designed for men who can’t join a group tour.<br><br>\n              Meet <strong>up to 3 women daily</strong> during a 7–14 day stay.\n            </li>",
+            "target": [
+              ".card:nth-child(3) > .list-group-flush.list-group > .list-group-item"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".card:nth-child(3) > .list-group-flush.list-group > .list-group-item"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#909294",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<li class=\"list-group-item\">\n              Designed for men who can’t join a group tour.<br><br>\n              Meet <strong>up to 3 women daily</strong> during a 7–14 day stay.\n            </li>",
+                    "target": [
+                      ".card:nth-child(3) > .list-group-flush.list-group > .list-group-item"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+                "selector": ".list-group-flush.list-group > .list-group-item > strong"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>up to 3 women daily</strong>",
+            "target": [
+              ".list-group-flush.list-group > .list-group-item > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+            "selector": ".list-group-flush.list-group > .list-group-item > strong"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#909294",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.12,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<li class=\"list-group-item\">\n              Private meetings with women you choose.<br><br>\n              Best for men already visiting the region or wanting just a few introductions.\n            </li>",
+                    "target": [
+                      ".card:nth-child(4) > .list-group-flush.list-group > .list-group-item"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".card:nth-child(4) > .list-group-flush.list-group > .list-group-item"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<li class=\"list-group-item\">\n              Private meetings with women you choose.<br><br>\n              Best for men already visiting the region or wanting just a few introductions.\n            </li>",
+            "target": [
+              ".card:nth-child(4) > .list-group-flush.list-group > .list-group-item"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".card:nth-child(4) > .list-group-flush.list-group > .list-group-item"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.51,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#86b7fe",
+                  "parentColor": "#909294"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>Our website is packed full of features and services to help you get to know the <a href=\"/mp/latin-women.htm\" target=\"_blank\">single women</a> you are interested in.</p>",
+                    "target": [
+                      ".step2-text > p:nth-child(1)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.51:1 with the surrounding text. (Minimum contrast is 3:1, link text: #86b7fe, surrounding text: #909294)",
+                "selector": ".step2-text > p:nth-child(1) > a[href$=\"latin-women.htm\"][target=\"_blank\"]"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p>Our website is packed full of features and services to help you get to know the <a href=\"/mp/latin-women.htm\" target=\"_blank\">single women</a> you are interested in.</p>",
+                    "target": [
+                      ".step2-text > p:nth-child(1)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+                "selector": ".step2-text > p:nth-child(1) > a[href$=\"latin-women.htm\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/mp/latin-women.htm\" target=\"_blank\">single women</a>",
+            "target": [
+              ".step2-text > p:nth-child(1) > a[href$=\"latin-women.htm\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.51:1 with the surrounding text. (Minimum contrast is 3:1, link text: #86b7fe, surrounding text: #909294)\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
+            "selector": ".step2-text > p:nth-child(1) > a[href$=\"latin-women.htm\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.51,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#86b7fe",
+                  "parentColor": "#909294"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>\n          You can email women, send translated letters, and even talk with them over the\n          <a href=\"/phone_translation/\" target=\"_blank\">phone or video calls</a>.\n        </p>",
+                    "target": [
+                      ".step2-text > p:nth-child(2)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.51:1 with the surrounding text. (Minimum contrast is 3:1, link text: #86b7fe, surrounding text: #909294)",
+                "selector": "a[href$=\"phone_translation/\"][target=\"_blank\"]"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p>\n          You can email women, send translated letters, and even talk with them over the\n          <a href=\"/phone_translation/\" target=\"_blank\">phone or video calls</a>.\n        </p>",
+                    "target": [
+                      ".step2-text > p:nth-child(2)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+                "selector": "a[href$=\"phone_translation/\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/phone_translation/\" target=\"_blank\">phone or video calls</a>",
+            "target": [
+              "a[href$=\"phone_translation/\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.51:1 with the surrounding text. (Minimum contrast is 3:1, link text: #86b7fe, surrounding text: #909294)\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
+            "selector": "a[href$=\"phone_translation/\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.51,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#86b7fe",
+                  "parentColor": "#909294"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>\n          We help you avoid language barriers by providing translation and optional\n          <a href=\"/gifts/\" target=\"_blank\">gift delivery services</a>.\n        </p>",
+                    "target": [
+                      ".step2-text > p:nth-child(3)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.51:1 with the surrounding text. (Minimum contrast is 3:1, link text: #86b7fe, surrounding text: #909294)",
+                "selector": "p:nth-child(3) > a[href$=\"gifts/\"][target=\"_blank\"]"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p>\n          We help you avoid language barriers by providing translation and optional\n          <a href=\"/gifts/\" target=\"_blank\">gift delivery services</a>.\n        </p>",
+                    "target": [
+                      ".step2-text > p:nth-child(3)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+                "selector": "p:nth-child(3) > a[href$=\"gifts/\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/gifts/\" target=\"_blank\">gift delivery services</a>",
+            "target": [
+              "p:nth-child(3) > a[href$=\"gifts/\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.51:1 with the surrounding text. (Minimum contrast is 3:1, link text: #86b7fe, surrounding text: #909294)\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
+            "selector": "p:nth-child(3) > a[href$=\"gifts/\"][target=\"_blank\"]"
+          }
+        ]
+      },
+      {
+        "id": "link-name",
+        "impact": "serious",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag244",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.2.4.4",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-6.2.1"
+        ],
+        "description": "Ensure links have discernible text",
+        "help": "Links must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element does not have text that is visible to screen readers",
+                "selector": ".go-btn"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": ".go-btn"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": ".go-btn"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute",
+                "selector": ".go-btn"
+              }
+            ],
+            "all": [],
+            "none": [
+              {
+                "id": "focusable-no-name",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element is in tab order and does not have accessible text"
+              }
+            ],
+            "impact": "serious",
+            "html": "<a href=\"#\" role=\"button\" data-bs-toggle=\"modal\" data-bs-target=\"#searchInfoModal\" class=\"go-btn\">",
+            "target": [
+              ".go-btn"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+            "selector": ".go-btn"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      },
+      {
+        "id": "select-name",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.n",
+          "TTv5",
+          "TT5.c",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.1.1"
+        ],
+        "description": "Ensure select element has an accessible name",
+        "help": "Select element must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "hidden-explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Form element has explicit <label> that is hidden"
+              }
+            ],
+            "impact": "critical",
+            "html": "<select id=\"qr_birth_day\" name=\"qr_birth_day\" class=\"form-control birth_day\"><option value=\"\">Day</option></select>",
+            "target": [
+              ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_day[name=\"qr_birth_day\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Form element has explicit <label> that is hidden",
+            "selector": ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_day[name=\"qr_birth_day\"]"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "hidden-explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Form element has explicit <label> that is hidden"
+              }
+            ],
+            "impact": "critical",
+            "html": "<select id=\"qr_birth_year\" name=\"qr_birth_year\" class=\"form-control birth_year\"><option value=\"\">Year</option></select>",
+            "target": [
+              ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_year[name=\"qr_birth_year\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Form element has explicit <label> that is hidden",
+            "selector": ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_year[name=\"qr_birth_year\"]"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "duplicate-id-aria",
+        "impact": "critical",
+        "tags": [
+          "cat.parsing",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-8.2.1"
+        ],
+        "description": "Ensure every id attribute value used in ARIA and in labels is unique",
+        "help": "IDs used in ARIA and labels must be unique",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/duplicate-id-aria?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_profile_first_name",
+                "relatedNodes": [
+                  {
+                    "html": "<input class=\"mainform form-control\" id=\"qr_profile_first_name\" name=\"qr_profile_first_name\" type=\"text\" autocomplete=\"off\" placeholder=\" Enter First Name\">",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(2) > .col-lg-9 > input[name=\"qr_profile_first_name\"][placeholder=\" Enter First Name\"][autocomplete=\"off\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_profile_first_name",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(2) > .col-lg-9 > input[name=\"qr_profile_first_name\"][placeholder=\" Enter First Name\"][autocomplete=\"off\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<input class=\"mainform form-control\" id=\"qr_profile_first_name\" name=\"qr_profile_first_name\" type=\"text\" autocomplete=\"off\" placeholder=\" Enter First Name\">",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(2) > .col-lg-9 > input[name=\"qr_profile_first_name\"][placeholder=\" Enter First Name\"][autocomplete=\"off\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_profile_first_name",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(2) > .col-lg-9 > input[name=\"qr_profile_first_name\"][placeholder=\" Enter First Name\"][autocomplete=\"off\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_profile_last_name",
+                "relatedNodes": [
+                  {
+                    "html": "<input class=\"mainform form-control\" id=\"qr_profile_last_name\" name=\"qr_profile_last_name\" type=\"text\" autocomplete=\"off\" placeholder=\" Enter Last Name\">",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(3) > .col-lg-9 > input[name=\"qr_profile_last_name\"][placeholder=\" Enter Last Name\"][autocomplete=\"off\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_profile_last_name",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(3) > .col-lg-9 > input[name=\"qr_profile_last_name\"][placeholder=\" Enter Last Name\"][autocomplete=\"off\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<input class=\"mainform form-control\" id=\"qr_profile_last_name\" name=\"qr_profile_last_name\" type=\"text\" autocomplete=\"off\" placeholder=\" Enter Last Name\">",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(3) > .col-lg-9 > input[name=\"qr_profile_last_name\"][placeholder=\" Enter Last Name\"][autocomplete=\"off\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_profile_last_name",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(3) > .col-lg-9 > input[name=\"qr_profile_last_name\"][placeholder=\" Enter Last Name\"][autocomplete=\"off\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_birth_month",
+                "relatedNodes": [
+                  {
+                    "html": "<select id=\"qr_birth_month\" name=\"qr_birth_month\" class=\"form-control birth_month\"><option value=\"\">Month</option></select>",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_month[name=\"qr_birth_month\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_birth_month",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_month[name=\"qr_birth_month\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<select id=\"qr_birth_month\" name=\"qr_birth_month\" class=\"form-control birth_month\"><option value=\"\">Month</option></select>",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_month[name=\"qr_birth_month\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_birth_month",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_month[name=\"qr_birth_month\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_birth_day",
+                "relatedNodes": [
+                  {
+                    "html": "<select id=\"qr_birth_day\" name=\"qr_birth_day\" class=\"form-control birth_day\"><option value=\"\">Day</option></select>",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_day[name=\"qr_birth_day\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_birth_day",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_day[name=\"qr_birth_day\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<select id=\"qr_birth_day\" name=\"qr_birth_day\" class=\"form-control birth_day\"><option value=\"\">Day</option></select>",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_day[name=\"qr_birth_day\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_birth_day",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_day[name=\"qr_birth_day\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_birth_year",
+                "relatedNodes": [
+                  {
+                    "html": "<select id=\"qr_birth_year\" name=\"qr_birth_year\" class=\"form-control birth_year\"><option value=\"\">Year</option></select>",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_year[name=\"qr_birth_year\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_birth_year",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_year[name=\"qr_birth_year\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<select id=\"qr_birth_year\" name=\"qr_birth_year\" class=\"form-control birth_year\"><option value=\"\">Year</option></select>",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_year[name=\"qr_birth_year\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_birth_year",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_year[name=\"qr_birth_year\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_fk_countries",
+                "relatedNodes": [
+                  {
+                    "html": "<select id=\"qr_fk_countries\" name=\"qr_fk_countries\" class=\"form-control\"><option value=\"0\">[ Select Country ]</option></select>",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(5) > .col-lg-9 > select[name=\"qr_fk_countries\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_fk_countries",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(5) > .col-lg-9 > select[name=\"qr_fk_countries\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<select id=\"qr_fk_countries\" name=\"qr_fk_countries\" class=\"form-control\"><option value=\"0\">[ Select Country ]</option></select>",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(5) > .col-lg-9 > select[name=\"qr_fk_countries\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_fk_countries",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(5) > .col-lg-9 > select[name=\"qr_fk_countries\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_profile_post_code",
+                "relatedNodes": [
+                  {
+                    "html": "<input class=\"mainform form-control\" id=\"qr_profile_post_code\" name=\"qr_profile_post_code\" type=\"text\" autocomplete=\"off\" placeholder=\" Enter Your Postal Code\">",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(6) > .col-lg-9 > input[name=\"qr_profile_post_code\"][placeholder=\" Enter Your Postal Code\"][autocomplete=\"off\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_profile_post_code",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(6) > .col-lg-9 > input[name=\"qr_profile_post_code\"][placeholder=\" Enter Your Postal Code\"][autocomplete=\"off\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<input class=\"mainform form-control\" id=\"qr_profile_post_code\" name=\"qr_profile_post_code\" type=\"text\" autocomplete=\"off\" placeholder=\" Enter Your Postal Code\">",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(6) > .col-lg-9 > input[name=\"qr_profile_post_code\"][placeholder=\" Enter Your Postal Code\"][autocomplete=\"off\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_profile_post_code",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(6) > .col-lg-9 > input[name=\"qr_profile_post_code\"][placeholder=\" Enter Your Postal Code\"][autocomplete=\"off\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_logins_email",
+                "relatedNodes": [
+                  {
+                    "html": "<input class=\"mainform form-control\" id=\"qr_logins_email\" name=\"qr_logins_email\" type=\"email\" autocomplete=\"off\" placeholder=\" Enter Your Email\">",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(7) > .col-lg-9 > input[name=\"qr_logins_email\"][type=\"email\"][placeholder=\" Enter Your Email\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_logins_email",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(7) > .col-lg-9 > input[name=\"qr_logins_email\"][type=\"email\"][placeholder=\" Enter Your Email\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<input class=\"mainform form-control\" id=\"qr_logins_email\" name=\"qr_logins_email\" type=\"email\" autocomplete=\"off\" placeholder=\" Enter Your Email\">",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(7) > .col-lg-9 > input[name=\"qr_logins_email\"][type=\"email\"][placeholder=\" Enter Your Email\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_logins_email",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(7) > .col-lg-9 > input[name=\"qr_logins_email\"][type=\"email\"][placeholder=\" Enter Your Email\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_logins_password",
+                "relatedNodes": [
+                  {
+                    "html": "<input class=\"mainform form-control\" id=\"qr_logins_password\" name=\"qr_logins_password\" type=\"password\" placeholder=\" Create Your Password\">",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(8) > .col-lg-9 > input[name=\"qr_logins_password\"][type=\"password\"][placeholder=\" Create Your Password\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_logins_password",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(8) > .col-lg-9 > input[name=\"qr_logins_password\"][type=\"password\"][placeholder=\" Create Your Password\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<input class=\"mainform form-control\" id=\"qr_logins_password\" name=\"qr_logins_password\" type=\"password\" placeholder=\" Create Your Password\">",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(8) > .col-lg-9 > input[name=\"qr_logins_password\"][type=\"password\"][placeholder=\" Create Your Password\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_logins_password",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(8) > .col-lg-9 > input[name=\"qr_logins_password\"][type=\"password\"][placeholder=\" Create Your Password\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "duplicate-id-aria",
+                "data": "qr_captcha",
+                "relatedNodes": [
+                  {
+                    "html": "<input class=\"mainform form-control\" type=\"text\" id=\"qr_captcha\" name=\"qr_captcha\" maxlength=\"30\">",
+                    "target": [
+                      ".howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group[data-required=\"true\"]:nth-child(9) > .col-lg-9 > input[name=\"qr_captcha\"][maxlength=\"30\"][type=\"text\"]"
+                    ]
+                  }
+                ],
+                "impact": "critical",
+                "message": "Document has multiple elements referenced with ARIA with the same id attribute: qr_captcha",
+                "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group[data-required=\"true\"]:nth-child(9) > .col-lg-9 > input[name=\"qr_captcha\"][maxlength=\"30\"][type=\"text\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<input class=\"mainform form-control\" type=\"text\" id=\"qr_captcha\" name=\"qr_captcha\" maxlength=\"30\">",
+            "target": [
+              "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group[data-required=\"true\"]:nth-child(9) > .col-lg-9 > input[name=\"qr_captcha\"][maxlength=\"30\"][type=\"text\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: qr_captcha",
+            "selector": "article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group[data-required=\"true\"]:nth-child(9) > .col-lg-9 > input[name=\"qr_captcha\"][maxlength=\"30\"][type=\"text\"]"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 7\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. button-name - critical Impact\n   Description: Ensure buttons have discernible text\n   Help: Buttons must have discernible text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright\n   Affected Elements (1):\n     1. .fc-megamenu\n        Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">\n\n\n2. color-contrast - serious Impact\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Help: Elements must meet minimum color contrast ratio thresholds\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright\n   Affected Elements (19):\n     1. .howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .captcha-info > .row > .offset-lg-3.pull-right.col-lg-9 > .row > p > a[href$=\"sign-up.html\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/sign-up.html\">Reload Captcha</a>\n     2. .howto-active > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/members/terms\" target=\"_blank\">terms and conditions</a>\n     3. .howto-active > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>\n     4. .howto-active > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 13.5pt (18px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/members/login\">Sign In Here</a>\n     5. p:nth-child(3) > strong > a[target=\"_blank\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 4.21 (foreground color: #0d6efd, background color: #f3f9f2, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/information/how-to-correspond-with-women.html\" target=\"_blank\">Platinum\n              Memb...\n     6. .howto-step.col-md-4.col-sm-12:nth-child(2) > .howto-heading > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.95 (foreground color: #ceb787, background color: #ffffff, font size: 21.1pt (28.16px), font weight: normal). Expected contrast ratio of 3:1\n        HTML: <h2>Step 2</h2>\n     7. .step2-text > p:nth-child(1)\n        Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <p>Our website is packed full of features and services to help you get to know the <a href=\"/mp/lati...\n     8. .step2-text > p:nth-child(1) > a[href$=\"latin-women.htm\"][target=\"_blank\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 2.05 (foreground color: #86b7fe, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/mp/latin-women.htm\" target=\"_blank\">single women</a>\n     9. .step2-text > p:nth-child(2)\n        Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <p>\n          You can email women, send translated letters, and even talk with them over the\n       ...\n     10. a[href$=\"phone_translation/\"][target=\"_blank\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 2.05 (foreground color: #86b7fe, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/phone_translation/\" target=\"_blank\">phone or video calls</a>\n     11. .step2-text > p:nth-child(3)\n        Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <p>\n          We help you avoid language barriers by providing translation and optional\n          <a...\n     12. p:nth-child(3) > a[href$=\"gifts/\"][target=\"_blank\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 2.05 (foreground color: #86b7fe, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/gifts/\" target=\"_blank\">gift delivery services</a>\n     13. .btn-block\n        Fix any of the following:\n  Element has insufficient color contrast of 2.02 (foreground color: #ffffff, background color: #85c58e, font size: 16.8pt (22.4px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a class=\"btn-block\" href=\"/women/update.htm\" target=\"_blank\"><i class=\"fa-brands fa-hotjar\"></i>See...\n     14. .howto-step.col-md-4.col-sm-12:nth-child(3) > .howto-heading > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.95 (foreground color: #ceb787, background color: #ffffff, font size: 21.1pt (28.16px), font weight: normal). Expected contrast ratio of 3:1\n        HTML: <h2>Step 3</h2>\n     15. .step3-text > p\n        Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <p>We offer 3 assisted options to meet the women:</p>\n     16. .card:nth-child(2) > .list-group-flush.list-group > .list-group-item\n        Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <li class=\"list-group-item\">\n              Our 7–14 day tours take place year-round in multiple Lati...\n     17. .card:nth-child(3) > .list-group-flush.list-group > .list-group-item\n        Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <li class=\"list-group-item\">\n              Designed for men who can’t join a group tour.<br><br>\n   ...\n     18. .list-group-flush.list-group > .list-group-item > strong\n        Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1\n        HTML: <strong>up to 3 women daily</strong>\n     19. .card:nth-child(4) > .list-group-flush.list-group > .list-group-item\n        Fix any of the following:\n  Element has insufficient color contrast of 3.12 (foreground color: #909294, background color: #ffffff, font size: 12.0pt (16px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <li class=\"list-group-item\">\n              Private meetings with women you choose.<br><br>\n         ...\n\n\n3. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n4. link-in-text-block - serious Impact\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Help: Links must be distinguishable without relying on color\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright\n   Affected Elements (3):\n     1. .step2-text > p:nth-child(1) > a[href$=\"latin-women.htm\"][target=\"_blank\"]\n        Fix any of the following:\n  The link has insufficient color contrast of 1.51:1 with the surrounding text. (Minimum contrast is 3:1, link text: #86b7fe, surrounding text: #909294)\n  The link has no styling (such as underline) to distinguish it from the surrounding text\n        HTML: <a href=\"/mp/latin-women.htm\" target=\"_blank\">single women</a>\n     2. a[href$=\"phone_translation/\"][target=\"_blank\"]\n        Fix any of the following:\n  The link has insufficient color contrast of 1.51:1 with the surrounding text. (Minimum contrast is 3:1, link text: #86b7fe, surrounding text: #909294)\n  The link has no styling (such as underline) to distinguish it from the surrounding text\n        HTML: <a href=\"/phone_translation/\" target=\"_blank\">phone or video calls</a>\n     3. p:nth-child(3) > a[href$=\"gifts/\"][target=\"_blank\"]\n        Fix any of the following:\n  The link has insufficient color contrast of 1.51:1 with the surrounding text. (Minimum contrast is 3:1, link text: #86b7fe, surrounding text: #909294)\n  The link has no styling (such as underline) to distinguish it from the surrounding text\n        HTML: <a href=\"/gifts/\" target=\"_blank\">gift delivery services</a>\n\n\n5. link-name - serious Impact\n   Description: Ensure links have discernible text\n   Help: Links must have discernible text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/link-name?application=playwright\n   Affected Elements (1):\n     1. .go-btn\n        Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n        HTML: <a href=\"#\" role=\"button\" data-bs-toggle=\"modal\" data-bs-target=\"#searchInfoModal\" class=\"go-btn\">\n\n\n6. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n\n7. select-name - critical Impact\n   Description: Ensure select element has an accessible name\n   Help: Select element must have an accessible name\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright\n   Affected Elements (2):\n     1. .howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_day[name=\"qr_birth_day\"]\n        Fix all of the following:\n  Form element has explicit <label> that is hidden\n        HTML: <select id=\"qr_birth_day\" name=\"qr_birth_day\" class=\"form-control birth_day\"><option value=\"\">Day</o...\n     2. .howto-active > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_year[name=\"qr_birth_year\"]\n        Fix all of the following:\n  Form element has explicit <label> that is hidden\n        HTML: <select id=\"qr_birth_year\" name=\"qr_birth_year\" class=\"form-control birth_year\"><option value=\"\">Yea...\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. duplicate-id-aria\n   Description: Ensure every id attribute value used in ARIA and in labels is unique\n   Elements to Review (10):\n     1. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(2) > .col-lg-9 > input[name=\"qr_profile_first_name\"][placeholder=\" Enter First Name\"][autocomplete=\"off\"]\n     2. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(3) > .col-lg-9 > input[name=\"qr_profile_last_name\"][placeholder=\" Enter Last Name\"][autocomplete=\"off\"]\n     3. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_month[name=\"qr_birth_month\"]\n     4. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_day[name=\"qr_birth_day\"]\n     5. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(4) > .col-lg-9 > div > .birth_year[name=\"qr_birth_year\"]\n     6. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(5) > .col-lg-9 > select[name=\"qr_fk_countries\"]\n     7. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(6) > .col-lg-9 > input[name=\"qr_profile_post_code\"][placeholder=\" Enter Your Postal Code\"][autocomplete=\"off\"]\n     8. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(7) > .col-lg-9 > input[name=\"qr_logins_email\"][type=\"email\"][placeholder=\" Enter Your Email\"]\n     9. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group:nth-child(8) > .col-lg-9 > input[name=\"qr_logins_password\"][type=\"password\"][placeholder=\" Create Your Password\"]\n     10. article[aria-label=\"Registration form\"] > .register-area-form > .register-form > .form-horizontal[name=\"register-form\"][method=\"POST\"] > .form-group[data-required=\"true\"]:nth-child(9) > .col-lg-9 > input[name=\"qr_captcha\"][maxlength=\"30\"][type=\"text\"]\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "message": "GTM found - Container ID: GTM-N3934XR2 (gtm.js loaded) (dataLayer exists)",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "verificationStatus": "Script tag found, gtm.js loaded, dataLayer exists, dataLayer push found",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "How to Meet Beautiful Mexican Women",
+    "metaDescription": "There are quite a few men that want to meet Mexican women and quite a lot of them do not live in Mexico. Learn how to meet women in Mexico.",
+    "canonicalUrl": "https://mexicocitydating.com/how-to-meet-mexican-women.html",
+    "robotsMetaTag": "index, follow"
+  }
+}

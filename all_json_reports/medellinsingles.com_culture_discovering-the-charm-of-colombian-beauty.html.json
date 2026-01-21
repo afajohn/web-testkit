@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/culture/discovering-the-charm-of-colombian-beauty.html",
+    "timestamp": "2026-01-15 23:44:44",
+    "summary": {
+        "mobile_score": 63,
+        "desktop_score": 83
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 63,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fculture%2Fdiscovering-the-charm-of-colombian-beauty.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "6.5\u00a0s",
+        "tbt_lab": "230\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 83,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fculture%2Fdiscovering-the-charm-of-colombian-beauty.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.6\u00a0s",
+        "tbt_lab": "200\u00a0ms"
+    }
+}

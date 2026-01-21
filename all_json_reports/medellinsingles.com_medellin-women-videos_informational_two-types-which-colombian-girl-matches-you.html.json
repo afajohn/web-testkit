@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/informational/two-types-which-colombian-girl-matches-you.html",
+    "timestamp": "2026-01-16 16:47:03",
+    "summary": {
+        "mobile_score": 68,
+        "desktop_score": 69
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 68,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Ftwo-types-which-colombian-girl-matches-you.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "4.1\u00a0s",
+        "tbt_lab": "500\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 69,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Ftwo-types-which-colombian-girl-matches-you.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.7\u00a0s",
+        "tbt_lab": "420\u00a0ms"
+    }
+}

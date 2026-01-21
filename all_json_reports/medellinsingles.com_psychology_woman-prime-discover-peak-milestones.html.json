@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/psychology/woman-prime-discover-peak-milestones.html",
+    "timestamp": "2026-01-16 18:16:02",
+    "summary": {
+        "mobile_score": 47,
+        "desktop_score": 76
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 47,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fwoman-prime-discover-peak-milestones.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "13.8\u00a0s",
+        "tbt_lab": "760\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 76,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fwoman-prime-discover-peak-milestones.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.8\u00a0s",
+        "lcp_lab": "1.9\u00a0s",
+        "tbt_lab": "170\u00a0ms"
+    }
+}

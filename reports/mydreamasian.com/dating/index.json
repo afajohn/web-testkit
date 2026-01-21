@@ -1,0 +1,581 @@
+{
+  "url": "https://mydreamasian.com/dating/index.html",
+  "timestamp": "2026-01-08T08:12:08.608Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 1,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Dating Pillar Page\"",
+        "value": "Dating Pillar Page"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (149 chars)",
+        "value": "Arm yourself with knowledge about Asian dating as you read through our blogs. These dating tips will be a great help in winning Asian women’s hearts."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://mydreamasian.com/dating/\"",
+        "value": "https://mydreamasian.com/dating/"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 15 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: All about Dating"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 1,
+    "brokenCount": 1,
+    "brokenLinks": [
+      {
+        "url": "https://mydreamasian.com/search-nikolaev-women-seeking-men",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.link-dark.m-0",
+            "linkText": "Go to Advanced Search > >",
+            "html": "<a href=\"/search-nikolaev-women-seeking-men/\" class=\"link-dark m-0\">Go to Advanced Search &gt; &gt; </a>",
+            "href": "https://mydreamasian.com/search-nikolaev-women-seeking-men/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 4,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "description": "Ensure buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "button-has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have inner text that is visible to screen readers",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has no title attribute",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "implicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an implicit (wrapped) <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an explicit <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "selector": ".fc-megamenu"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">",
+            "target": [
+              ".fc-megamenu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "selector": ".fc-megamenu"
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-contact > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Contact</h2>",
+            "target": [
+              ".footer-contact > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-contact > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>General Information</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(2) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Women, Culture &amp; History</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(3) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-policy > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Policies</h2>",
+            "target": [
+              ".footer-policy > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-policy > h2"
+          }
+        ]
+      },
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ],
+        "description": "Ensure image alternative is not repeated as text",
+        "help": "Alternative text of images should not be repeated as text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/yapper-320w.webp\" alt=\"Being a Yapper Is Not That Bad\" class=\"me-2 w-100\">",
+            "target": [
+              "img[alt=\"Being a Yapper Is Not That Bad\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "img[alt=\"Being a Yapper Is Not That Bad\"]"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/lowkey-320w.webp\" alt=\"The Wonders of a Lowkey Relationship\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/my-dream-asian-blog-img20-320w.webp\" alt=\"Why Are Filipinas Interested in Dating Foreigners?\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/avoidant-partner-320w.webp\" alt=\"Unfolding What It’s Like to be With an Avoidant Partner\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/triangle-method-320w.webp\" alt=\"Is The Triangle Method The Magical Missing Dating Piece?\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/close-up-photo-of-woman-smiling-1645820-320w.webp\" alt=\"Traits Asian Women Look for in Men\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "navigation",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<nav class=\"mt-4\">",
+                    "target": [
+                      "main > div > .mt-4"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": ".header-right-nav"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<nav class=\"header-right-nav pt-3\">",
+            "target": [
+              ".header-right-nav"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": ".header-right-nav"
+          },
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 4\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. button-name - critical Impact\n   Description: Ensure buttons have discernible text\n   Help: Buttons must have discernible text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright\n   Affected Elements (1):\n     1. .fc-megamenu\n        Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">\n\n\n2. color-contrast - serious Impact\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Help: Elements must meet minimum color contrast ratio thresholds\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright\n   Affected Elements (4):\n     1. .footer-contact > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Contact</h2>\n     2. .footer-nav-box.px-0:nth-child(2) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>General Information</h2>\n     3. .footer-nav-box.px-0:nth-child(3) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Women, Culture &amp; History</h2>\n     4. .footer-policy > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Policies</h2>\n\n\n3. image-redundant-alt - minor Impact\n   Description: Ensure image alternative is not repeated as text\n   Help: Alternative text of images should not be repeated as text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright\n   Affected Elements (6):\n     1. img[alt=\"Being a Yapper Is Not That Bad\"]\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/yapper-320w.web...\n     2. .col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/lowkey-320w.web...\n     3. .col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/my-dream-asian-...\n     4. .col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/avoidant-partne...\n     5. .col-sm-6.col-lg-4.mb-md-5:nth-child(5) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/triangle-method...\n     6. .col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/my-dream-asian/dating/close-up-photo-...\n\n\n4. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (2):\n     1. .header-right-nav\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <nav class=\"header-right-nav pt-3\">\n     2. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Dating Pillar Page",
+    "metaDescription": "Arm yourself with knowledge about Asian dating as you read through our blogs. These dating tips will be a great help in winning Asian women’s hearts.",
+    "canonicalUrl": "https://mydreamasian.com/dating/",
+    "robotsMetaTag": "index, follow"
+  }
+}

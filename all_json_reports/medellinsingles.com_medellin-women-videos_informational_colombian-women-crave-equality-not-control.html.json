@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/informational/colombian-women-crave-equality-not-control.html",
+    "timestamp": "2026-01-16 15:55:27",
+    "summary": {
+        "mobile_score": 56,
+        "desktop_score": 50
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 56,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-crave-equality-not-control.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "4.0\u00a0s",
+        "tbt_lab": "1,020\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 50,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-crave-equality-not-control.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.8\u00a0s",
+        "lcp_lab": "1.9\u00a0s",
+        "tbt_lab": "2,750\u00a0ms"
+    }
+}

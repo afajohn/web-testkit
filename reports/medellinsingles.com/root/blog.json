@@ -1,0 +1,991 @@
+{
+  "url": "https://medellinsingles.com/blog/",
+  "timestamp": "2026-01-14T15:27:19.647Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": false,
+    "brokenLinksCount": 1,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Medellin Singles Blog\"",
+        "value": "Medellin Singles Blog"
+      },
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (161 chars, recommended: 50-160)",
+        "value": "Medellin Singles highlights beautiful Latinas in Medellin and features the best services for you to find love online. Find and meet your future bride through us!"
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/blog/\"",
+        "value": "https://medellinsingles.com/blog/"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 47 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Medellin Singles Blogs"
+      }
+    ],
+    "passedCount": 5,
+    "totalCount": 6,
+    "failedChecks": [
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (161 chars, recommended: 50-160)",
+        "value": "Medellin Singles highlights beautiful Latinas in Medellin and features the best services for you to find love online. Find and meet your future bride through us!"
+      }
+    ]
+  },
+  "brokenLinks": {
+    "totalChecked": 1,
+    "brokenCount": 1,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ],
+        "description": "Ensure image alternative is not repeated as text",
+        "help": "Alternative text of images should not be repeated as text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/our-process/colombian-women-pineapple-320w.webp\" class=\"w-100\" alt=\"How to Meet Colombian Women on the Internet and in Real Life\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(1) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(1) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/travel-guide-320w.webp\" class=\"w-100\" alt=\"Colombia Unveiled: The Ultimate Travel Guide for Exploring the Country\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(2) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(2) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/success-stories/best_client_testimonial_videos-320w.webp\" class=\"w-100\" alt=\"Best Client Testimonial Videos and Success Stories\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(3) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(3) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/mediumpexels-mikhail-nilov-320w.jpg\" class=\"w-100\" alt=\"Overcoming Financial Challenges in a Relationship\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(4) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(4) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/christmas-in-medellin-320w.webp\" class=\"mb-2\" alt=\"A Guide to Seeing the Christmas Lights in Medellin with Your Lover\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/medellin_girl_earphone-320w.webp\" class=\"mb-2\" alt=\"What To Expect When Celebrating Christmas With A Medellin Girl\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/what-language-is-spoken-in-colombia-320w.webp\" class=\"mb-2\" alt=\"Medellin Travel Guide | What Language Is Spoken in Colombia?\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/national_lovers_day-320w.webp\" class=\"mb-2\" alt=\"What Food to Try in Colombia This Coming National Lover’s Day\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/traditional-clothes-of-colombia-320w.webp\" class=\"mb-2\" alt=\"How Traditional Clothes of Colombia are More Than Just Fashion Statements\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/medellin_vs_cartagena-320w.webp\" class=\"mb-2\" alt=\"Medellin vs Cartagena | the Better Choice for Dating\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/20-year-gift-anniversary-for-him-01-320w.webp\" class=\"mb-2\" alt=\"20-Year Gift Anniversary for Him: 2023’s Best Picks\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/making_a_move_on_women_hands_on_hands-01-320w.webp\" class=\"mb-2\" alt=\"Have You Met Me? A Guide To Making A Move On Women\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/colombian_woman_man_in_a_suit-01-320w.webp\" class=\"mb-2\" alt=\"Why You Should Accessorize When Dating A Colombian Woman\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/people_who_are_finding_love-01-320w.jpg\" class=\"mb-2\" alt=\"How to Attract the Interest of Colombian Women\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/women_in_medelin_colombia-01-320w.webp\" class=\"mb-2\" alt=\"A First-Timer’s Guide to Women in Medellin, Colombia\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/fun-with-older-women-01-320w.webp\" class=\"mb-2\" alt=\"The Beauty of Experience: Discovering Fun with Older Women\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/our-process/medelln-singles-dating-service-320w.webp\" class=\"mb-2\" alt=\"Our Process | Medellín Singles Dating Service\">",
+            "target": [
+              "#our-process > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#our-process > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/our-process/colombian-women-pineapple-320w.webp\" class=\"mb-2\" alt=\"How to Meet Colombian Women on the Internet and in Real Life\">",
+            "target": [
+              "#our-process > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#our-process > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/girlfriend-effect-320w.webp\" class=\"mb-2\" alt=\"Is the Girlfriend Effect Real?\">",
+            "target": [
+              "img[alt=\"Is the Girlfriend Effect Real?\"]"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "img[alt=\"Is the Girlfriend Effect Real?\"]"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/bad-mood-320w.jpg\" class=\"mb-2\" alt=\"Is Your Girlfriend in a Bad Mood and Refusing to Say Why?\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/arguments-in-relationships-320w.webp\" class=\"mb-2\" alt=\"How Arguments in Relationships Can Be Healthy\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/women_from_medellin-320w.webp\" class=\"mb-2\" alt=\"The Women from Medellin: How They Think and Love\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/mediumhumor-in-relationships-320w.jpg\" class=\"mb-2\" alt=\"The Role of Humor in Relationships\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/mediumwhen-is-a-woman-in-her-prime-320w.png\" class=\"mb-2\" alt=\"When Is a Woman in Her Prime? Google Can't Say, But She Can\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/mediumpexels-mikhail-nilov-320w.jpg\" class=\"mb-2\" alt=\"Overcoming Financial Challenges in a Relationship\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/overbearing-mother-in-law-320w.png\" class=\"mb-2\" alt=\"Forming a Relationship with Your Overbearing Mother in Law\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/ai-girlfriend-simulator-320w.webp\" class=\"mb-2\" alt=\"Can an AI Girlfriend Simulator Replace Real Women?\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/hungry-for-love-320w.jpg\" class=\"mb-2\" alt=\"Hungry for Love? Here’s How to Deal with Being Single\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/finding-your-soulmate-320w.webp\" class=\"mb-2\" alt=\"Finding Your Soulmate After Ending a Toxic Marriage\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/ending-a-situationship-320w.webp\" class=\"mb-2\" alt=\"When Ending a Situationship, Is Ghosting the Best Option?\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/success-stories/best_client_testimonial_videos-320w.webp\" class=\"mb-2\" alt=\"Best Client Testimonial Videos and Success Stories\">",
+            "target": [
+              "#success-stories > .mobile-limit-3.row > .col-12.col-lg-6 > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#success-stories > .mobile-limit-3.row > .col-12.col-lg-6 > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/travel-guide-320w.webp\" class=\"mb-2\" alt=\"Colombia Unveiled: The Ultimate Travel Guide for Exploring the Country\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/medellin-colombia-aerial-view-320w.webp\" class=\"mb-2\" alt=\"Medellin Colombia | Admiring the City's Charming Appeal\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/comuna-13-320w.webp\" class=\"mb-2\" alt=\"Top Instagrammable Spots in Medellin\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/is_colombia_safe_for_solo_female_travellers-320w.webp\" class=\"mb-2\" alt=\"Is Colombia Safe for Solo Female Travellers\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/is-medellin-colombia-safe-320w.webp\" class=\"mb-2\" alt=\"Is Medellin Colombia Safe? Here Are the Facts\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/best-hotels-in-medellin-320w.webp\" class=\"mb-2\" alt=\"The Best Hotels in Medellin 2023\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "navigation",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<nav class=\"d-none d-xl-block\">",
+                    "target": [
+                      ".d-xl-block"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": ".header-right-nav"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<nav class=\"header-right-nav pt-3\">",
+            "target": [
+              ".header-right-nav"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": ".header-right-nav"
+          },
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. image-redundant-alt - minor Impact\n   Description: Ensure image alternative is not repeated as text\n   Help: Alternative text of images should not be repeated as text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright\n   Affected Elements (37):\n     1. .border-bottom.pb-2.mb-4:nth-child(1) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/our-process/colombia...\n     2. .border-bottom.pb-2.mb-4:nth-child(2) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/travel-guide-...\n     3. .border-bottom.pb-2.mb-4:nth-child(3) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/success-stories/best...\n     4. .border-bottom.pb-2.mb-4:nth-child(4) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/mediumpexe...\n     5. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/christmas-in...\n     6. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/medellin_gir...\n     7. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/what-languag...\n     8. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/national_lov...\n     9. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/traditional-...\n     10. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/culture/medellin_vs_...\n     11. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/20-year-gift-...\n     12. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/making_a_move...\n     13. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/colombian_wom...\n     14. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/people_who_ar...\n     15. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/women_in_mede...\n     16. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/dating/fun-with-olde...\n     17. #our-process > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/our-process/medelln-...\n     18. #our-process > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/our-process/colombia...\n     19. img[alt=\"Is the Girlfriend Effect Real?\"]\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/girlfrien...\n     20. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/bad-mood-...\n     21. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/arguments...\n     22. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/women_fro...\n     23. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/mediumhum...\n     24. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/psychology/mediumwhe...\n     25. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/mediumpexe...\n     26. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/overbearin...\n     27. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/ai-girlfri...\n     28. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/hungry-for...\n     29. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/finding-yo...\n     30. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/realities/ending-a-s...\n     31. #success-stories > .mobile-limit-3.row > .col-12.col-lg-6 > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/success-stories/best...\n     32. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/travel-guide-...\n     33. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/medellin-colo...\n     34. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/comuna-13-320...\n     35. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/is_colombia_s...\n     36. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/is-medellin-c...\n     37. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/medellin-singles/travel/best-hotels-i...\n\n\n2. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (2):\n     1. .header-right-nav\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <nav class=\"header-right-nav pt-3\">\n     2. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Medellin Singles Blog",
+    "metaDescription": "Medellin Singles highlights beautiful Latinas in Medellin and features the best services for you to find love online. Find and meet your future bride through us!",
+    "canonicalUrl": "https://medellinsingles.com/blog/",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:110:36",
+  "testFailed": true
+}

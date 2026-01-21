@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/travel/medellin-dating-destinations.html",
+    "timestamp": "2026-01-16 18:34:40",
+    "summary": {
+        "mobile_score": 55,
+        "desktop_score": 74
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 55,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fmedellin-dating-destinations.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "7.4\u00a0s",
+        "tbt_lab": "370\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 74,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fmedellin-dating-destinations.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.7\u00a0s",
+        "tbt_lab": "220\u00a0ms"
+    }
+}

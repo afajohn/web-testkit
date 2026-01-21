@@ -1,0 +1,665 @@
+{
+  "url": "https://medellinsingles.com/sign-up.html",
+  "timestamp": "2026-01-14T13:22:01.350Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 1,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Medellin Singles | Register for FREE\"",
+        "value": "Medellin Singles | Register for FREE"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (144 chars)",
+        "value": "Register for FREE now and let our matchmakers do the job! Meet the hot Latin women who are seeking long term relationship and marriage with you."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/sign-up.html\"",
+        "value": "https://medellinsingles.com/sign-up.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 10 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Register"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 1,
+    "brokenCount": 1,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 6,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#0d6efd",
+                  "bgColor": "#eaeaea",
+                  "contrastRatio": 3.74,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"register-form\">",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.74 (foreground color: #0d6efd, background color: #eaeaea, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1",
+                "selector": "#qr_form2 > .captcha-info > .row > .offset-lg-3.pull-right.col-lg-9 > .row > p > a[href$=\"sign-up.html\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/sign-up.html\">Reload Captcha</a>",
+            "target": [
+              "#qr_form2 > .captcha-info > .row > .offset-lg-3.pull-right.col-lg-9 > .row > p > a[href$=\"sign-up.html\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #0d6efd, background color: #eaeaea, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1",
+            "selector": "#qr_form2 > .captcha-info > .row > .offset-lg-3.pull-right.col-lg-9 > .row > p > a[href$=\"sign-up.html\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#007bff",
+                  "bgColor": "#eaeaea",
+                  "contrastRatio": 3.3,
+                  "fontSize": "10.8pt (14.4px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"register-form\">",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.3 (foreground color: #007bff, background color: #eaeaea, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/members/terms\" target=\"_blank\">terms and conditions</a>",
+            "target": [
+              ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #007bff, background color: #eaeaea, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#007bff",
+                  "bgColor": "#eaeaea",
+                  "contrastRatio": 3.3,
+                  "fontSize": "10.8pt (14.4px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"register-form\">",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.3 (foreground color: #007bff, background color: #eaeaea, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>",
+            "target": [
+              ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #007bff, background color: #eaeaea, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#007bff",
+                  "bgColor": "#eaeaea",
+                  "contrastRatio": 3.3,
+                  "fontSize": "10.8pt (14.4px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"register-form\">",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.3 (foreground color: #007bff, background color: #eaeaea, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/members/login\">Sign In Here</a>",
+            "target": [
+              ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #007bff, background color: #eaeaea, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#007bff",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 3.97,
+                  "fontSize": "12.0pt (16px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"register-content\">",
+                    "target": [
+                      ".col-lg-6:nth-child(2) > .register-content"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 3.97 (foreground color: #007bff, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+                "selector": ".col-lg-6:nth-child(2) > .register-content > p > strong"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<strong>Why Register Instantly NOW?</strong>",
+            "target": [
+              ".col-lg-6:nth-child(2) > .register-content > p > strong"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #007bff, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1",
+            "selector": ".col-lg-6:nth-child(2) > .register-content > p > strong"
+          }
+        ]
+      },
+      {
+        "id": "heading-order",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure the order of headings is semantically correct",
+        "help": "Heading levels should only increase by one",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "heading-order",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Heading order invalid",
+                "selector": ".rgsterform > .col-lg-12.text-center > h5"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<h5>\n        It’s the first step in possibly the most rewarding romantic adventure of your lifetime!\n      </h5>",
+            "target": [
+              ".rgsterform > .col-lg-12.text-center > h5"
+            ],
+            "failureSummary": "Fix any of the following:\n  Heading order invalid",
+            "selector": ".rgsterform > .col-lg-12.text-center > h5"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.44,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#007bff",
+                  "parentColor": "#666666"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-lg-12 login-footer\">By clicking above you acknowledge that you have read and agree to our <a href=\"/members/terms\" target=\"_blank\">terms and conditions</a> and <a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>.</div>",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #007bff, surrounding text: #666666)",
+                "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-lg-12 login-footer\">By clicking above you acknowledge that you have read and agree to our <a href=\"/members/terms\" target=\"_blank\">terms and conditions</a> and <a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>.</div>",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+                "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/members/terms\" target=\"_blank\">terms and conditions</a>",
+            "target": [
+              ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #007bff, surrounding text: #666666)\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
+            "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.44,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#007bff",
+                  "parentColor": "#666666"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-lg-12 login-footer\">By clicking above you acknowledge that you have read and agree to our <a href=\"/members/terms\" target=\"_blank\">terms and conditions</a> and <a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>.</div>",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #007bff, surrounding text: #666666)",
+                "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-lg-12 login-footer\">By clicking above you acknowledge that you have read and agree to our <a href=\"/members/terms\" target=\"_blank\">terms and conditions</a> and <a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>.</div>",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+                "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>",
+            "target": [
+              ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #007bff, surrounding text: #666666)\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
+            "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.44,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#007bff",
+                  "parentColor": "#666666"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-lg-12 login-footer2\">Already A Member? <a href=\"/members/login\">Sign In Here</a>.</div>",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #007bff, surrounding text: #666666)",
+                "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<div class=\"col-lg-12 login-footer2\">Already A Member? <a href=\"/members/login\">Sign In Here</a>.</div>",
+                    "target": [
+                      ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+                "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/members/login\">Sign In Here</a>",
+            "target": [
+              ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #007bff, surrounding text: #666666)\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
+            "selector": ".col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      },
+      {
+        "id": "select-name",
+        "impact": "critical",
+        "tags": [
+          "cat.forms",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.n",
+          "TTv5",
+          "TT5.c",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.1.1"
+        ],
+        "description": "Ensure select element has an accessible name",
+        "help": "Select element must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "hidden-explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Form element has explicit <label> that is hidden"
+              }
+            ],
+            "impact": "critical",
+            "html": "<select id=\"qr_birth_day2\" name=\"qr_birth_day2\" class=\"form-control birth_day\">",
+            "target": [
+              "#qr_birth_day2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Form element has explicit <label> that is hidden",
+            "selector": "#qr_birth_day2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "hidden-explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Form element has explicit <label> that is hidden"
+              }
+            ],
+            "impact": "critical",
+            "html": "<select id=\"qr_birth_year2\" name=\"qr_birth_year2\" class=\"form-control birth_year\">",
+            "target": [
+              "#qr_birth_year2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Form element has explicit <label> that is hidden",
+            "selector": "#qr_birth_year2"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 6\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. color-contrast - serious Impact\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Help: Elements must meet minimum color contrast ratio thresholds\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright\n   Affected Elements (5):\n     1. #qr_form2 > .captcha-info > .row > .offset-lg-3.pull-right.col-lg-9 > .row > p > a[href$=\"sign-up.html\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 3.74 (foreground color: #0d6efd, background color: #eaeaea, font size: 8.3pt (11px), font weight: bold). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/sign-up.html\">Reload Captcha</a>\n     2. .col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #007bff, background color: #eaeaea, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/members/terms\" target=\"_blank\">terms and conditions</a>\n     3. .col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #007bff, background color: #eaeaea, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>\n     4. .col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]\n        Fix any of the following:\n  Element has insufficient color contrast of 3.3 (foreground color: #007bff, background color: #eaeaea, font size: 10.8pt (14.4px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a href=\"/members/login\">Sign In Here</a>\n     5. .col-lg-6:nth-child(2) > .register-content > p > strong\n        Fix any of the following:\n  Element has insufficient color contrast of 3.97 (foreground color: #007bff, background color: #ffffff, font size: 12.0pt (16px), font weight: bold). Expected contrast ratio of 4.5:1\n        HTML: <strong>Why Register Instantly NOW?</strong>\n\n\n2. heading-order - moderate Impact\n   Description: Ensure the order of headings is semantically correct\n   Help: Heading levels should only increase by one\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright\n   Affected Elements (1):\n     1. .rgsterform > .col-lg-12.text-center > h5\n        Fix any of the following:\n  Heading order invalid\n        HTML: <h5>\n        It’s the first step in possibly the most rewarding romantic adventure of your lifetime!...\n\n\n3. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n4. link-in-text-block - serious Impact\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Help: Links must be distinguishable without relying on color\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright\n   Affected Elements (3):\n     1. .col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"terms\"][target=\"_blank\"]\n        Fix any of the following:\n  The link has insufficient color contrast of 1.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #007bff, surrounding text: #666666)\n  The link has no styling (such as underline) to distinguish it from the surrounding text\n        HTML: <a href=\"/members/terms\" target=\"_blank\">terms and conditions</a>\n     2. .col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer.col-lg-12 > a[href$=\"privacy.shtml\"][target=\"_blank\"]\n        Fix any of the following:\n  The link has insufficient color contrast of 1.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #007bff, surrounding text: #666666)\n  The link has no styling (such as underline) to distinguish it from the surrounding text\n        HTML: <a href=\"/information/privacy.shtml\" target=\"_blank\">privacy policy</a>\n     3. .col-lg-6:nth-child(1) > .register-area-form > .register-form > .login-footer2.col-lg-12 > a[href$=\"login\"]\n        Fix any of the following:\n  The link has insufficient color contrast of 1.44:1 with the surrounding text. (Minimum contrast is 3:1, link text: #007bff, surrounding text: #666666)\n  The link has no styling (such as underline) to distinguish it from the surrounding text\n        HTML: <a href=\"/members/login\">Sign In Here</a>\n\n\n5. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n\n6. select-name - critical Impact\n   Description: Ensure select element has an accessible name\n   Help: Select element must have an accessible name\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright\n   Affected Elements (2):\n     1. #qr_birth_day2\n        Fix all of the following:\n  Form element has explicit <label> that is hidden\n        HTML: <select id=\"qr_birth_day2\" name=\"qr_birth_day2\" class=\"form-control birth_day\">\n     2. #qr_birth_year2\n        Fix all of the following:\n  Form element has explicit <label> that is hidden\n        HTML: <select id=\"qr_birth_year2\" name=\"qr_birth_year2\" class=\"form-control birth_year\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Medellin Singles | Register for FREE",
+    "metaDescription": "Register for FREE now and let our matchmakers do the job! Meet the hot Latin women who are seeking long term relationship and marriage with you.",
+    "canonicalUrl": "https://medellinsingles.com/sign-up.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

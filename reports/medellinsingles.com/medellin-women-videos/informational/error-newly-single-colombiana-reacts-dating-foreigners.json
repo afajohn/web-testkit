@@ -1,0 +1,9 @@
+{
+  "url": "https://medellinsingles.com/medellin-women-videos/informational/newly-single-colombiana-reacts-dating-foreigners.html",
+  "timestamp": "2026-01-15T15:01:36.537Z",
+  "error": true,
+  "errorMessage": "Failed to navigate to https://medellinsingles.com/medellin-women-videos/informational/newly-single-colombiana-reacts-dating-foreigners.html\nURL before navigation: https://medellinsingles.com/medellin-women-videos/informational/newly-single-colombiana-reacts-dating-foreigners.html\nURL after navigation: https://medellinsingles.com/medellin-women-videos/informational/newly-single-colombiana-reacts-dating-foreigners.html\nOriginal error: page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://medellinsingles.com/medellin-women-videos/informational/newly-single-colombiana-reacts-dating-foreigners.html\", waiting until \"networkidle\"\u001b[22m\n",
+  "errorStack": "page.goto: Timeout 60000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://medellinsingles.com/medellin-women-videos/informational/newly-single-colombiana-reacts-dating-foreigners.html\", waiting until \"networkidle\"\u001b[22m\n\n    at gotoAndWait (C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\utils\\page-load.ts:63:16)\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:47:24",
+  "finalUrl": "https://medellinsingles.com/medellin-women-videos/informational/newly-single-colombiana-reacts-dating-foreigners.html",
+  "testFailed": true
+}

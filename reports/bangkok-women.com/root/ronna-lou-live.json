@@ -1,0 +1,386 @@
+{
+  "url": "https://bangkok-women.com/ronna-lou-live.html",
+  "timestamp": "2026-01-20T09:03:07.181Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 0,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Ronna Lou LIVE | Asian Matchmaker\"",
+        "value": "Ronna Lou LIVE | Asian Matchmaker"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (152 chars)",
+        "value": "Meet Ronna Lou, a Asian matchmaker who talks about the opportunities to meet and date beautiful, single Filipinas who are looking for love. Sign up NOW!"
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://bangkok-women.com/ronna-lou-live.html\"",
+        "value": "https://bangkok-women.com/ronna-lou-live.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 20 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: LIVE | Asian Matchmaker"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 0,
+    "brokenCount": 0,
+    "brokenLinks": []
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 2,
+    "violations": [
+      {
+        "id": "empty-heading",
+        "impact": "minor",
+        "tags": [
+          "cat.name-role-value",
+          "best-practice"
+        ],
+        "description": "Ensure headings have discernible text",
+        "help": "Headings should not be empty",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element does not have text that is visible to screen readers",
+                "selector": "main > .bodycont:nth-child(2)"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": "main > .bodycont:nth-child(2)"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": "main > .bodycont:nth-child(2)"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element has no title attribute",
+                "selector": "main > .bodycont:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "minor",
+            "html": "<h2 class=\"bodycont text-center\"></h2>",
+            "target": [
+              "main > .bodycont:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
+            "selector": "main > .bodycont:nth-child(2)"
+          }
+        ]
+      },
+      {
+        "id": "frame-title",
+        "impact": "serious",
+        "tags": [
+          "cat.text-alternatives",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.i",
+          "TTv5",
+          "TT12.d",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-2.1.1"
+        ],
+        "description": "Ensure <iframe> and <frame> elements have an accessible name",
+        "help": "Frames must have an accessible name",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element has no title attribute",
+                "selector": "iframe[allow=\"autoplay; encrypted-media\"]"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": "iframe[allow=\"autoplay; encrypted-media\"]"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": "iframe[allow=\"autoplay; encrypted-media\"]"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "selector": "iframe[allow=\"autoplay; encrypted-media\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<iframe src=\"https://www.youtube.com/embed/QuxaVWDbWKM?rel=0&amp;autoplay=1;\" allow=\"autoplay; encrypted-media\" allowfullscreen=\"\" frameborder=\"0\"></iframe>",
+            "target": [
+              "iframe[allow=\"autoplay; encrypted-media\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "selector": "iframe[allow=\"autoplay; encrypted-media\"]"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "description": "Ensure ARIA attributes are not prohibited for an element's role",
+        "help": "Elements must only use permitted ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": {
+                  "role": null,
+                  "nodeName": "div",
+                  "messageKey": "noRoleSingular",
+                  "prohibited": [
+                    "aria-label"
+                  ]
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
+              }
+            ],
+            "impact": "serious",
+            "html": "<div class=\"html5-video-player y...\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/b95b0e7a/p...\" aria-label=\"YouTube Video Player\">",
+            "target": [
+              "iframe[allow=\"autoplay; encrypted-media\"]",
+              "#movie_player"
+            ],
+            "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute.",
+            "selector": "iframe[allow=\"autoplay; encrypted-media\"] #movie_player"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": {
+                  "role": null,
+                  "nodeName": "div",
+                  "messageKey": "noRoleSingular",
+                  "prohibited": [
+                    "aria-label"
+                  ]
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
+              }
+            ],
+            "impact": "serious",
+            "html": "<div class=\"ytp-time-contents\" aria-label=\"0 Minutes 0 Seconds of 1 Hours 6 Minutes 22 Seconds\">",
+            "target": [
+              "iframe[allow=\"autoplay; encrypted-media\"]",
+              ".ytp-time-contents"
+            ],
+            "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute.",
+            "selector": "iframe[allow=\"autoplay; encrypted-media\"] .ytp-time-contents"
+          }
+        ]
+      },
+      {
+        "id": "aria-valid-attr-value",
+        "impact": "critical",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "description": "Ensure all ARIA attributes have valid values",
+        "help": "ARIA attributes must conform to valid values",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-valid-attr-value?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [
+              {
+                "id": "aria-valid-attr-value",
+                "data": {
+                  "messageKey": "controlsWithinPopup",
+                  "needsReview": "aria-controls=\"ytp-id-17\""
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"ytp-id-17\""
+              }
+            ],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"ytp-button ytp-settings-button\" aria-expanded=\"false\" aria-haspopup=\"true\" aria-controls=\"ytp-id-17\" title=\"\" data-tooltip-title=\"Settings\" data-tooltip-target-id=\"ytp-settings-button\" aria-label=\"Settings\">",
+            "target": [
+              "iframe[allow=\"autoplay; encrypted-media\"]",
+              ".ytp-settings-button"
+            ],
+            "failureSummary": "Fix all of the following:\n  Unable to determine if aria-controls referenced ID exists on the page while using aria-haspopup: aria-controls=\"ytp-id-17\"",
+            "selector": "iframe[allow=\"autoplay; encrypted-media\"] .ytp-settings-button"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 2\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. empty-heading - minor Impact\n   Description: Ensure headings have discernible text\n   Help: Headings should not be empty\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/empty-heading?application=playwright\n   Affected Elements (1):\n     1. main > .bodycont:nth-child(2)\n        Fix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n        HTML: <h2 class=\"bodycont text-center\"></h2>\n\n\n2. frame-title - serious Impact\n   Description: Ensure <iframe> and <frame> elements have an accessible name\n   Help: Frames must have an accessible name\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/frame-title?application=playwright\n   Affected Elements (1):\n     1. iframe[allow=\"autoplay; encrypted-media\"]\n        Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <iframe src=\"https://www.youtube.com/embed/QuxaVWDbWKM?rel=0&amp;autoplay=1;\" allow=\"autoplay; encry...\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. aria-prohibited-attr\n   Description: Ensure ARIA attributes are not prohibited for an element's role\n   Elements to Review (2):\n     1. iframe[allow=\"autoplay; encrypted-media\"] #movie_player\n     2. iframe[allow=\"autoplay; encrypted-media\"] .ytp-time-contents\n\n\n2. aria-valid-attr-value\n   Description: Ensure all ARIA attributes have valid values\n   Elements to Review (1):\n     1. iframe[allow=\"autoplay; encrypted-media\"] .ytp-settings-button\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Ronna Lou LIVE | Asian Matchmaker",
+    "metaDescription": "Meet Ronna Lou, a Asian matchmaker who talks about the opportunities to meet and date beautiful, single Filipinas who are looking for love. Sign up NOW!",
+    "canonicalUrl": "https://bangkok-women.com/ronna-lou-live.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:112:41",
+  "testFailed": true
+}

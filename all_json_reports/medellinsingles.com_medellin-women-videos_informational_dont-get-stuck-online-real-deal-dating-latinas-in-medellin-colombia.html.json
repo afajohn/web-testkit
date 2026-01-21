@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/informational/dont-get-stuck-online-real-deal-dating-latinas-in-medellin-colombia.html",
+    "timestamp": "2026-01-16 16:06:50",
+    "summary": {
+        "mobile_score": 37,
+        "desktop_score": 67
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 37,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdont-get-stuck-online-real-deal-dating-latinas-in-medellin-colombia.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "6.0\u00a0s",
+        "tbt_lab": "5,280\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 67,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdont-get-stuck-online-real-deal-dating-latinas-in-medellin-colombia.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.3\u00a0s",
+        "tbt_lab": "540\u00a0ms"
+    }
+}

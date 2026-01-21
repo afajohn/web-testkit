@@ -1,0 +1,532 @@
+{
+  "url": "https://foreign-affair.net/foreign-women-videos/tours/choose-singles-vacation-foreign-affair-socials.html",
+  "timestamp": "2026-01-19T15:12:21.586Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": false,
+    "brokenLinksCount": 9,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Why Choose Singles Vacation? | Foreign Affair Socials\"",
+        "value": "Why Choose Singles Vacation? | Foreign Affair Socials"
+      },
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (213 chars, recommended: 50-160)",
+        "value": "You might find yourself hesitant in choosing to go on a romance tour as a dating option. After all, long distance relationships are difficult, but international long distance relationships are even more difficult."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://foreign-affair.net/foreign-women-videos/tours/choose-singles-vacation-foreign-affair-socials.html\"",
+        "value": "https://foreign-affair.net/foreign-women-videos/tours/choose-singles-vacation-foreign-affair-socials.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 9 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Why Choose Singles Vacation? | Foreign Affair Socials"
+      }
+    ],
+    "passedCount": 5,
+    "totalCount": 6,
+    "failedChecks": [
+      {
+        "check": "Meta Description",
+        "passed": false,
+        "message": "Meta description is too long (213 chars, recommended: 50-160)",
+        "value": "You might find yourself hesitant in choosing to go on a romance tour as a dating option. After all, long distance relationships are difficult, but international long distance relationships are even more difficult."
+      }
+    ]
+  },
+  "brokenLinks": {
+    "totalChecked": 9,
+    "brokenCount": 9,
+    "brokenLinks": [
+      {
+        "url": "https://foreign-affair.net/foreign-women-videos/tours/new-foreign-women.html",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Newest Ladies Profile",
+            "html": "<a href=\"new-foreign-women.html\">Newest Ladies Profile</a>",
+            "href": "https://foreign-affair.net/foreign-women-videos/tours/new-foreign-women.html"
+          }
+        ]
+      },
+      {
+        "url": "https://foreign-affair.net/how-to-meet-women-in-angels-of-passion.html",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "How Our Service Works?",
+            "html": "<a href=\"/how-to-meet-women-in-angels-of-passion.html\"><svg width=\"30\" height=\"30\" viewBox=\"0 0 24 24\" xmlns=\"http://www.w3.org/2000/svg\">\n          <path d=\"M4 12 L17 12 L14 9 M17 12 L14 15\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\"></path>\n        </svg> &nbsp;&nbsp;How Our Service Works?</a>",
+            "href": "https://foreign-affair.net/how-to-meet-women-in-angels-of-passion.html"
+          }
+        ]
+      },
+      {
+        "url": "https://foreign-affair.net/videos",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Tour Videos",
+            "html": "<a href=\"/videos/\">Tour Videos</a>",
+            "href": "https://foreign-affair.net/videos/"
+          }
+        ]
+      },
+      {
+        "url": "https://foreign-affair.net/videos/testimonial",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Testimonial Videos",
+            "html": "<a href=\"/videos/testimonial/\">Testimonial Videos</a>",
+            "href": "https://foreign-affair.net/videos/testimonial/"
+          }
+        ]
+      },
+      {
+        "url": "https://foreign-affair.net/videos/informational",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Informational Videos",
+            "html": "<a href=\"/videos/informational\">Informational Videos</a>",
+            "href": "https://foreign-affair.net/videos/informational"
+          }
+        ]
+      },
+      {
+        "url": "https://foreign-affair.net/live-webcast.html",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Live Webcast",
+            "html": "<a href=\"/live-webcast.html\">Live Webcast</a>",
+            "href": "https://foreign-affair.net/live-webcast.html"
+          }
+        ]
+      },
+      {
+        "url": "https://foreign-affair.net/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://foreign-affair.net/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://foreign-affair.net/foreign-women-videos/tours/Foreign-Affair.net",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "Foreign-Affair.net",
+            "html": "<a target=\"_blank\" href=\"Foreign-Affair.net\"> Foreign-Affair.net</a>",
+            "href": "https://foreign-affair.net/foreign-women-videos/tours/Foreign-Affair.net"
+          }
+        ]
+      },
+      {
+        "url": "http://bit.do/subcribe_NOW",
+        "status": 0,
+        "statusText": "Error",
+        "isBroken": true,
+        "error": "apiRequestContext.head: Timeout 10000ms exceeded.\nCall log:\n\u001b[2m  - → HEAD http://bit.do/subcribe_NOW\u001b[22m\n\u001b[2m    - user-agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36\u001b[22m\n\u001b[2m    - accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8\u001b[22m\n\u001b[2m    - accept-encoding: gzip, deflate, br\u001b[22m\n\u001b[2m    - Accept-Language: en-US,en;q=0.9\u001b[22m\n\u001b[2m    - DNT: 1\u001b[22m\n\u001b[2m    - Connection: keep-alive\u001b[22m\n\u001b[2m    - Upgrade-Insecure-Requests: 1\u001b[22m\n",
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "http://bit.do/subcribe_NOW",
+            "html": "<a target=\"_blank\" href=\"http://bit.do/subcribe_NOW\"> http://bit.do/subcribe_NOW</a>",
+            "href": "http://bit.do/subcribe_NOW"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#fbcb0b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.53,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-contact > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Contact</h2>",
+            "target": [
+              ".footer-contact > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-contact > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#fbcb0b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.53,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>General Information</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(2) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#fbcb0b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.53,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Women, Culture &amp; History</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(3) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#fbcb0b",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.53,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-policy > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Policies</h2>",
+            "target": [
+              ".footer-policy > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-policy > h2"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "aria-prohibited-attr",
+        "impact": "serious",
+        "tags": [
+          "cat.aria",
+          "wcag2a",
+          "wcag412",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "RGAAv4",
+          "RGAA-7.1.1"
+        ],
+        "description": "Ensure ARIA attributes are not prohibited for an element's role",
+        "help": "Elements must only use permitted ARIA attributes",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/aria-prohibited-attr?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "aria-prohibited-attr",
+                "data": {
+                  "role": null,
+                  "nodeName": "div",
+                  "messageKey": "noRoleSingular",
+                  "prohibited": [
+                    "aria-label"
+                  ]
+                },
+                "relatedNodes": [],
+                "impact": "serious",
+                "message": "aria-label attribute is not well supported on a div with no valid role attribute."
+              }
+            ],
+            "impact": "serious",
+            "html": "<div class=\"html5-video-player y...\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/b95b0e7a/p...\" aria-label=\"YouTube Video Player\">",
+            "target": [
+              "iframe[width=\"640\"]",
+              "#movie_player"
+            ],
+            "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute.",
+            "selector": "iframe[width=\"640\"] #movie_player"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. color-contrast - serious Impact\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Help: Elements must meet minimum color contrast ratio thresholds\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright\n   Affected Elements (4):\n     1. .footer-contact > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Contact</h2>\n     2. .footer-nav-box.px-0:nth-child(2) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>General Information</h2>\n     3. .footer-nav-box.px-0:nth-child(3) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Women, Culture &amp; History</h2>\n     4. .footer-policy > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.53 (foreground color: #fbcb0b, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Policies</h2>\n\n\n2. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. aria-prohibited-attr\n   Description: Ensure ARIA attributes are not prohibited for an element's role\n   Elements to Review (1):\n     1. iframe[width=\"640\"] #movie_player\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-5BM9G4MF",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-5BM9G4MF). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-5BM9G4MF",
+          "GTM-5BM9G4MF",
+          "GTM-5BM9G4MF"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Why Choose Singles Vacation? | Foreign Affair Socials",
+    "metaDescription": "You might find yourself hesitant in choosing to go on a romance tour as a dating option. After all, long distance relationships are difficult, but international long distance relationships are even more difficult.",
+    "canonicalUrl": "https://foreign-affair.net/foreign-women-videos/tours/choose-singles-vacation-foreign-affair-socials.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:110:36",
+  "testFailed": true
+}

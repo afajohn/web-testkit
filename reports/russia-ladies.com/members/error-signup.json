@@ -1,0 +1,9 @@
+{
+  "url": "https://russia-ladies.com/sign-up.html",
+  "timestamp": "2026-01-13T14:40:30.613Z",
+  "error": true,
+  "errorMessage": "locator.getAttribute: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('link[rel=\"canonical\"]')\u001b[22m\n",
+  "errorStack": "locator.getAttribute: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('link[rel=\"canonical\"]')\u001b[22m\n\n    at checkCanonicalURL (C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\utils\\seo-checks.ts:104:65)\n    at runSEOChecks (C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\utils\\seo-checks.ts:374:24)\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:54:68",
+  "finalUrl": "https://russia-ladies.com/members/signup/",
+  "testFailed": true
+}

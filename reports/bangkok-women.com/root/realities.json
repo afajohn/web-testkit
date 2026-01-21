@@ -1,0 +1,317 @@
+{
+  "url": "https://bangkok-women.com/realities/",
+  "timestamp": "2026-01-20T15:10:09.508Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 0,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"The Realities of Overseas Dating for American Men\"",
+        "value": "The Realities of Overseas Dating for American Men"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (148 chars)",
+        "value": "Thai culture looks like an eternal party to outsiders, but this guide takes a closer look at Bangkok’s ongoing story of strife, diversity, and hope."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://bangkok-women.com/realities/\"",
+        "value": "https://bangkok-women.com/realities/"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 16 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: All about Realities"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 0,
+    "brokenCount": 0,
+    "brokenLinks": []
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ],
+        "description": "Ensure image alternative is not repeated as text",
+        "help": "Alternative text of images should not be repeated as text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photoman-woman-bicycle-together-400w.png\" alt=\"Money or Honey : Finding Balance Between Work &amp; Relationship\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/dating-a-single-mother-400w.webp\" alt=\"Should You Consider Dating a Single Mother?\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/monogamous-relationship-400w.webp\" alt=\"Should You Stick to a Monogamous Relationship?\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/interracial-couple-problems-400w.webp\" alt=\"Can You Overcome These Interracial Couple Problems?\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photomove-to-thailand-400w.jpg\" alt=\"Should I Move to Thailand? | Here's What You Need to Know\" class=\"me-2 w-100\">",
+            "target": [
+              "a[href$=\"move-thailand.html\"] > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "a[href$=\"move-thailand.html\"] > .me-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photolong-distance-relationship-problems-400w.webp\" alt=\"Long Distance Relationship Problems and How to Overcome Them\" class=\"me-2 w-100\">",
+            "target": [
+              ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.gap-2 > .me-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.gap-2 > .me-2"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "navigation",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<nav class=\"mt-4\">",
+                    "target": [
+                      "main > div > .mt-4"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": ".header-right-nav"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<nav class=\"header-right-nav pt-3\">",
+            "target": [
+              ".header-right-nav"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": ".header-right-nav"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. image-redundant-alt - minor Impact\n   Description: Ensure image alternative is not repeated as text\n   Help: Alternative text of images should not be repeated as text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright\n   Affected Elements (6):\n     1. .col-sm-6.col-lg-4.mb-md-5:nth-child(1) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photoman...\n     2. .col-sm-6.col-lg-4.mb-md-5:nth-child(2) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/dating-a-sing...\n     3. .col-sm-6.col-lg-4.mb-md-5:nth-child(3) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/monogamous-re...\n     4. .col-sm-6.col-lg-4.mb-md-5:nth-child(4) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/interracial-c...\n     5. a[href$=\"move-thailand.html\"] > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photomov...\n     6. .col-sm-6.col-lg-4.mb-md-5:nth-child(6) > .gap-md-3.align-items-start.gap-2 > .me-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photolon...\n\n\n2. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. .header-right-nav\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <nav class=\"header-right-nav pt-3\">\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "The Realities of Overseas Dating for American Men",
+    "metaDescription": "Thai culture looks like an eternal party to outsiders, but this guide takes a closer look at Bangkok’s ongoing story of strife, diversity, and hope.",
+    "canonicalUrl": "https://bangkok-women.com/realities/",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:112:41",
+  "testFailed": true
+}

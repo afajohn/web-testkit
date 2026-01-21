@@ -1,0 +1,877 @@
+{
+  "url": "https://bangkok-women.com/blog/",
+  "timestamp": "2026-01-20T10:08:17.859Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 0,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Bangkok Women Blogs: Dating Tips and More\"",
+        "value": "Bangkok Women Blogs: Dating Tips and More"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (143 chars)",
+        "value": "Want to know more about Bangkok women? Check out our list of blogs that talk about the culture, tourism, and dating scene of  Bangkok Thailand."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://bangkok-women.com/blog/\"",
+        "value": "https://bangkok-women.com/blog/"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 45 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Bangkok Women Blogs"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 0,
+    "brokenCount": 0,
+    "brokenLinks": []
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "image-redundant-alt",
+        "impact": "minor",
+        "tags": [
+          "cat.text-alternatives",
+          "best-practice"
+        ],
+        "description": "Ensure image alternative is not repeated as text",
+        "help": "Alternative text of images should not be repeated as text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/dating-an-introvert-400w.webp\" class=\"w-100\" alt=\"Dating an Introvert: Are Women Interested or Not?\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(1) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(1) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothai-language-320w.jpg\" class=\"w-100\" alt=\"Understanding the Thai Language and How to Learn it\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(2) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(2) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photothai_woman_milk_tea-400w.webp\" class=\"w-100\" alt=\"Spending Christmas in Bangkok: What to Do and Where to Go\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(3) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(3) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photoman-woman-bicycle-together-400w.png\" class=\"w-100\" alt=\"Money or Honey : Finding Balance Between Work &amp; Relationship\">",
+            "target": [
+              ".border-bottom.pb-2.mb-4:nth-child(4) > .gap-5.justify-content-between.align-items-center > .w-100"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": ".border-bottom.pb-2.mb-4:nth-child(4) > .gap-5.justify-content-between.align-items-center > .w-100"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothai-language-320w.jpg\" class=\"mb-2\" alt=\"Understanding the Thai Language and How to Learn it\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothai-elephant-person-320w.jpg\" class=\"mb-2\" alt=\"Examining the Thai Elephant: The National Animal of Thailand\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photonightlife-in-thailand-320w.jpg\" class=\"mb-2\" alt=\"A Guide to Experience the Best Nightlife in Thailand\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photodo-they-speak-english-bangkok-downtown-320w.jpg\" class=\"mb-2\" alt=\"Do They Speak English in Thailand?\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothai-snacks-320w.jpg\" class=\"mb-2\" alt=\"Thai Snacks Every Tourist Should Try Out\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothailand-laws-bangkok-320w.jpg\" class=\"mb-2\" alt=\"Thailand Laws Every Tourist Should Know\">",
+            "target": [
+              "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/hardball-400w.webp\" class=\"mb-2\" alt=\"Throw a Hardball! Put an End to Dating Mind Games\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/dating-an-introvert-400w.webp\" class=\"mb-2\" alt=\"Dating an Introvert: Are Women Interested or Not?\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/flirting-vs-sexual-harassment-400w.webp\" class=\"mb-2\" alt=\"Flirting vs Sexual Harassment: How You Should Charm Women\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/meeting-someone-new-400w.webp\" class=\"mb-2\" alt=\"Meeting Someone New? Try These Tips for Engaging Conversations\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/blog-photoeffective-dating-400w.webp\" class=\"mb-2\" alt=\"3 Effective Dating Advice That Men Need But Often Overlook\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/shy-guy-400w.webp\" class=\"mb-2\" alt=\"Dating Tips For a Shy Guy: Turn Shyness Into Confidence\">",
+            "target": [
+              "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photohow-to-practice-self-love-400w.webp\" class=\"mb-2\" alt=\"How to Practice Self-Love for a Healthier Relationship\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photohow-to-be-mature-in-a-relationship-400w.webp\" class=\"mb-2\" alt=\"How to be Mature in a Relationship and Make Your Love Last\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photohow-to-control-anger-in-a-relationship-400w.webp\" class=\"mb-2\" alt=\"How to Control Anger in a Relationship and Resolve Conflicts\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photoemotional-intelligence-400w.jpg\" class=\"mb-2\" alt=\"Emotional Intelligence and Why It Matters in Relationships\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photowhat-do-women-want-in-a-man-400w.jpg\" class=\"mb-2\" alt=\"What Do Women Want in a Man? | 5 Essential Qualities\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/how-to-apologize-to-your-girlfriend-400w.webp\" class=\"mb-2\" alt=\"How to Apologize to Your Girlfriend after an Argument\">",
+            "target": [
+              "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photoman-woman-bicycle-together-400w.png\" class=\"mb-2\" alt=\"Money or Honey : Finding Balance Between Work &amp; Relationship\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/dating-a-single-mother-400w.webp\" class=\"mb-2\" alt=\"Should You Consider Dating a Single Mother?\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/monogamous-relationship-400w.webp\" class=\"mb-2\" alt=\"Should You Stick to a Monogamous Relationship?\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/interracial-couple-problems-400w.webp\" class=\"mb-2\" alt=\"Can You Overcome These Interracial Couple Problems?\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photomove-to-thailand-400w.jpg\" class=\"mb-2\" alt=\"Should I Move to Thailand? | Here's What You Need to Know\">",
+            "target": [
+              "a[href$=\"move-thailand.html\"] > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "a[href$=\"move-thailand.html\"] > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photolong-distance-relationship-problems-400w.webp\" class=\"mb-2\" alt=\"Long Distance Relationship Problems and How to Overcome Them\">",
+            "target": [
+              "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photothai_woman_milk_tea-400w.webp\" class=\"mb-2\" alt=\"Spending Christmas in Bangkok: What to Do and Where to Go\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photopexels-ketut-subiyanto-4353607-400w.jpg\" class=\"mb-2\" alt=\"Bangkok Restaurants Thai Women LOVE: Dating in Thailand\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photothailand_wildlife-400w.jpg\" class=\"mb-2\" alt=\"Thailand Travel | Seeing Thailand’s Beautiful Wildlife\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photobangkok_2c_thailand-01-400w.jpg\" class=\"mb-2\" alt=\"Exploring Bangkok Thailand | 6 Reasons Why You Should Visit It\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photomoving-to-thailand-400w.jpg\" class=\"mb-2\" alt=\"7 Must Know Facts BEFORE Moving to Thailand\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "duplicate-img-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "minor",
+                "message": "Element contains <img> element with alt text that duplicates existing text"
+              }
+            ],
+            "impact": "minor",
+            "html": "<img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-phototravel-hacks-400w.jpg\" class=\"mb-2\" alt=\"Essential Travel Hacks While Touring Bangkok\">",
+            "target": [
+              "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+            ],
+            "failureSummary": "Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text",
+            "selector": "#travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "navigation",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<nav class=\"d-none d-xl-block\">",
+                    "target": [
+                      ".d-xl-block"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": ".header-right-nav"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<nav class=\"header-right-nav pt-3\">",
+            "target": [
+              ".header-right-nav"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": ".header-right-nav"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. image-redundant-alt - minor Impact\n   Description: Ensure image alternative is not repeated as text\n   Help: Alternative text of images should not be repeated as text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/image-redundant-alt?application=playwright\n   Affected Elements (34):\n     1. .border-bottom.pb-2.mb-4:nth-child(1) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/dating-an-introv...\n     2. .border-bottom.pb-2.mb-4:nth-child(2) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothai-...\n     3. .border-bottom.pb-2.mb-4:nth-child(3) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photothai_w...\n     4. .border-bottom.pb-2.mb-4:nth-child(4) > .gap-5.justify-content-between.align-items-center > .w-100\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photoman...\n     5. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothai-...\n     6. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothai-...\n     7. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photonight...\n     8. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photodo-th...\n     9. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothai-...\n     10. #culture > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/culture/blog-photothail...\n     11. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/hardball-400w.we...\n     12. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/dating-an-introv...\n     13. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/flirting-vs-sexu...\n     14. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/meeting-someone-...\n     15. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/blog-photoeffect...\n     16. #dating > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/dating/shy-guy-400w.web...\n     17. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photoho...\n     18. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photoho...\n     19. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photoho...\n     20. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photoem...\n     21. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/blog-photowh...\n     22. #psychology > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/psychology/how-to-apolo...\n     23. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photoman...\n     24. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/dating-a-sing...\n     25. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/monogamous-re...\n     26. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/interracial-c...\n     27. a[href$=\"move-thailand.html\"] > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photomov...\n     28. #realities > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/realities/blog-photolon...\n     29. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(1) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photothai_w...\n     30. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(2) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photopexels...\n     31. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(3) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photothaila...\n     32. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(4) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photobangko...\n     33. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(5) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-photomoving...\n     34. #travel > .mobile-limit-3.row > .col-12.col-lg-6:nth-child(6) > .gap-4.text-dark.align-items-center > .mb-2\n        Fix all of the following:\n  Element contains <img> element with alt text that duplicates existing text\n        HTML: <img src=\"https://storage.googleapis.com/loveme-assets/gallery/bangkok-women/travel/blog-phototravel...\n\n\n2. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. .header-right-nav\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <nav class=\"header-right-nav pt-3\">\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Bangkok Women Blogs: Dating Tips and More",
+    "metaDescription": "Want to know more about Bangkok women? Check out our list of blogs that talk about the culture, tourism, and dating scene of  Bangkok Thailand.",
+    "canonicalUrl": "https://bangkok-women.com/blog/",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:112:41",
+  "testFailed": true
+}

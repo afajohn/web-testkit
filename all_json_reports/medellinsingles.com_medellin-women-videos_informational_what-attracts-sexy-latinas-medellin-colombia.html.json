@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/informational/what-attracts-sexy-latinas-medellin-colombia.html",
+    "timestamp": "2026-01-16 16:50:17",
+    "summary": {
+        "mobile_score": 50,
+        "desktop_score": 66
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 50,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhat-attracts-sexy-latinas-medellin-colombia.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "6.4\u00a0s",
+        "tbt_lab": "830\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 66,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhat-attracts-sexy-latinas-medellin-colombia.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.7\u00a0s",
+        "lcp_lab": "1.6\u00a0s",
+        "tbt_lab": "490\u00a0ms"
+    }
+}

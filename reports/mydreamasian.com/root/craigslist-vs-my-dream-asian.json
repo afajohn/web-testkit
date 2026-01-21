@@ -1,0 +1,624 @@
+{
+  "url": "https://mydreamasian.com/craigslist-vs-my-dream-asian.html",
+  "timestamp": "2026-01-09T15:48:28.657Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 1,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Craigslist versus My Dream Asian\"",
+        "value": "Craigslist versus My Dream Asian"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (135 chars)",
+        "value": "Find out why My Dream Asian is better than Craigslist. Explore the pros and cons of both services and discover what works best for you."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://mydreamasian.com/craigslist-vs-my-dream-asian.html\"",
+        "value": "https://mydreamasian.com/craigslist-vs-my-dream-asian.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 11 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: 3 Reasons Why Simps are Ruining the Image of Good Men"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 1,
+    "brokenCount": 1,
+    "brokenLinks": [
+      {
+        "url": "https://mydreamasian.com/search-nikolaev-women-seeking-men",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.link-dark.m-0",
+            "linkText": "Go to Advanced Search > >",
+            "html": "<a href=\"/search-nikolaev-women-seeking-men/\" class=\"link-dark m-0\">Go to Advanced Search &gt; &gt; </a>",
+            "href": "https://mydreamasian.com/search-nikolaev-women-seeking-men/"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 4,
+    "totalIncomplete": 0,
+    "violations": [
+      {
+        "id": "button-name",
+        "impact": "critical",
+        "tags": [
+          "cat.name-role-value",
+          "wcag2a",
+          "wcag412",
+          "section508",
+          "section508.22.a",
+          "TTv5",
+          "TT6.a",
+          "EN-301-549",
+          "EN-9.4.1.2",
+          "ACT",
+          "RGAAv4",
+          "RGAA-11.9.1"
+        ],
+        "description": "Ensure buttons have discernible text",
+        "help": "Buttons must have discernible text",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "button-has-visible-text",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have inner text that is visible to screen readers",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-label attribute does not exist or is empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "aria-labelledby",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "non-empty-title",
+                "data": {
+                  "messageKey": "noAttr"
+                },
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element has no title attribute",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "implicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an implicit (wrapped) <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "explicit-label",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element does not have an explicit <label>",
+                "selector": ".fc-megamenu"
+              },
+              {
+                "id": "presentational-role",
+                "data": null,
+                "relatedNodes": [],
+                "impact": "critical",
+                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+                "selector": ".fc-megamenu"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "critical",
+            "html": "<button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">",
+            "target": [
+              ".fc-megamenu"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
+            "selector": ".fc-megamenu"
+          }
+        ]
+      },
+      {
+        "id": "color-contrast",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2aa",
+          "wcag143",
+          "TTv5",
+          "TT13.c",
+          "EN-301-549",
+          "EN-9.1.4.3",
+          "ACT",
+          "RGAAv4",
+          "RGAA-3.2.1"
+        ],
+        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
+        "help": "Elements must meet minimum color contrast ratio thresholds",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#000000",
+                  "bgColor": "#0a5145",
+                  "contrastRatio": 2.27,
+                  "fontSize": "8.3pt (11px)",
+                  "fontWeight": "normal",
+                  "messageKey": null,
+                  "expectedContrastRatio": "4.5:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<a id=\"signup\" href=\"#\" class=\"text-decoration-none top-header-signup\" data-bs-toggle=\"modal\" data-bs-target=\".register-modal\">",
+                    "target": [
+                      "#signup"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 2.27 (foreground color: #000000, background color: #0a5145, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1",
+                "selector": "#signup"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a id=\"signup\" href=\"#\" class=\"text-decoration-none top-header-signup\" data-bs-toggle=\"modal\" data-bs-target=\".register-modal\">",
+            "target": [
+              "#signup"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 2.27 (foreground color: #000000, background color: #0a5145, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1",
+            "selector": "#signup"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-contact > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Contact</h2>",
+            "target": [
+              ".footer-contact > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-contact > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>General Information</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(2) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(2) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Women, Culture &amp; History</h2>",
+            "target": [
+              ".footer-nav-box.px-0:nth-child(3) > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-nav-box.px-0:nth-child(3) > h2"
+          },
+          {
+            "any": [
+              {
+                "id": "color-contrast",
+                "data": {
+                  "fgColor": "#e1c227",
+                  "bgColor": "#ffffff",
+                  "contrastRatio": 1.75,
+                  "fontSize": "15.0pt (20px)",
+                  "fontWeight": "bold",
+                  "messageKey": null,
+                  "expectedContrastRatio": "3:1"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<body>",
+                    "target": [
+                      "body"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+                "selector": ".footer-policy > h2"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<h2>Policies</h2>",
+            "target": [
+              ".footer-policy > h2"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1",
+            "selector": ".footer-policy > h2"
+          }
+        ]
+      },
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.36,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#000000",
+                  "parentColor": "#212529"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"references\">",
+                    "target": [
+                      ".references:nth-child(47)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.36:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #212529)",
+                "selector": ".references:nth-child(47) > a[rel=\"noopener noreferrer nofollow\"][target=\"_blank\"]"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p class=\"references\">",
+                    "target": [
+                      ".references:nth-child(47)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+                "selector": ".references:nth-child(47) > a[rel=\"noopener noreferrer nofollow\"][target=\"_blank\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.sportskeeda.com/pop-culture/men-answer-simp-streamers-online-heartbreaking-ft-pokimane-amouranth\">https://www.sportskeeda.com/pop-culture/men-answer-simp-streamers-online-heartbreaking-ft-pokimane-amouranth</a>",
+            "target": [
+              ".references:nth-child(47) > a[rel=\"noopener noreferrer nofollow\"][target=\"_blank\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.36:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #212529)\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
+            "selector": ".references:nth-child(47) > a[rel=\"noopener noreferrer nofollow\"][target=\"_blank\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.36,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#000000",
+                  "parentColor": "#212529"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p> This program is the sole property of <a href=\"/\" aria-label=\"About Angels Of Passion\">My Dream Asian</a> and may not be copied in any way or form without express permission from <a href=\"/\" aria-label=\"Angels Of Passion Contact or Info\">My Dream Asian</a>. </p>",
+                    "target": [
+                      ".shadow-bottom > p"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.36:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #212529)",
+                "selector": "a[aria-label=\"About Angels Of Passion\"]"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p> This program is the sole property of <a href=\"/\" aria-label=\"About Angels Of Passion\">My Dream Asian</a> and may not be copied in any way or form without express permission from <a href=\"/\" aria-label=\"Angels Of Passion Contact or Info\">My Dream Asian</a>. </p>",
+                    "target": [
+                      ".shadow-bottom > p"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+                "selector": "a[aria-label=\"About Angels Of Passion\"]"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/\" aria-label=\"About Angels Of Passion\">My Dream Asian</a>",
+            "target": [
+              "a[aria-label=\"About Angels Of Passion\"]"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.36:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #212529)\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
+            "selector": "a[aria-label=\"About Angels Of Passion\"]"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "fgContrast",
+                  "contrastRatio": 1.36,
+                  "requiredContrastRatio": 3,
+                  "nodeColor": "#000000",
+                  "parentColor": "#212529"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p> This program is the sole property of <a href=\"/\" aria-label=\"About Angels Of Passion\">My Dream Asian</a> and may not be copied in any way or form without express permission from <a href=\"/\" aria-label=\"Angels Of Passion Contact or Info\">My Dream Asian</a>. </p>",
+                    "target": [
+                      ".shadow-bottom > p"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has insufficient color contrast of 1.36:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #212529)",
+                "selector": "p > a[href=\"/\"]:nth-child(2)"
+              },
+              {
+                "id": "link-in-text-block-style",
+                "data": null,
+                "relatedNodes": [
+                  {
+                    "html": "<p> This program is the sole property of <a href=\"/\" aria-label=\"About Angels Of Passion\">My Dream Asian</a> and may not be copied in any way or form without express permission from <a href=\"/\" aria-label=\"Angels Of Passion Contact or Info\">My Dream Asian</a>. </p>",
+                    "target": [
+                      ".shadow-bottom > p"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "The link has no styling (such as underline) to distinguish it from the surrounding text",
+                "selector": "p > a[href=\"/\"]:nth-child(2)"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/\" aria-label=\"Angels Of Passion Contact or Info\">My Dream Asian</a>",
+            "target": [
+              "p > a[href=\"/\"]:nth-child(2)"
+            ],
+            "failureSummary": "Fix any of the following:\n  The link has insufficient color contrast of 1.36:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #212529)\n  The link has no styling (such as underline) to distinguish it from the surrounding text",
+            "selector": "p > a[href=\"/\"]:nth-child(2)"
+          }
+        ]
+      }
+    ],
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 4\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. button-name - critical Impact\n   Description: Ensure buttons have discernible text\n   Help: Buttons must have discernible text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright\n   Affected Elements (1):\n     1. .fc-megamenu\n        Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">\n\n\n2. color-contrast - serious Impact\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Help: Elements must meet minimum color contrast ratio thresholds\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright\n   Affected Elements (5):\n     1. #signup\n        Fix any of the following:\n  Element has insufficient color contrast of 2.27 (foreground color: #000000, background color: #0a5145, font size: 8.3pt (11px), font weight: normal). Expected contrast ratio of 4.5:1\n        HTML: <a id=\"signup\" href=\"#\" class=\"text-decoration-none top-header-signup\" data-bs-toggle=\"modal\" data-b...\n     2. .footer-contact > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Contact</h2>\n     3. .footer-nav-box.px-0:nth-child(2) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>General Information</h2>\n     4. .footer-nav-box.px-0:nth-child(3) > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Women, Culture &amp; History</h2>\n     5. .footer-policy > h2\n        Fix any of the following:\n  Element has insufficient color contrast of 1.75 (foreground color: #e1c227, background color: #ffffff, font size: 15.0pt (20px), font weight: bold). Expected contrast ratio of 3:1\n        HTML: <h2>Policies</h2>\n\n\n3. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n4. link-in-text-block - serious Impact\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Help: Links must be distinguishable without relying on color\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright\n   Affected Elements (3):\n     1. .references:nth-child(47) > a[rel=\"noopener noreferrer nofollow\"][target=\"_blank\"]\n        Fix any of the following:\n  The link has insufficient color contrast of 1.36:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #212529)\n  The link has no styling (such as underline) to distinguish it from the surrounding text\n        HTML: <a target=\"_blank\" rel=\"noopener noreferrer nofollow\" href=\"https://www.sportskeeda.com/pop-culture/...\n     2. a[aria-label=\"About Angels Of Passion\"]\n        Fix any of the following:\n  The link has insufficient color contrast of 1.36:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #212529)\n  The link has no styling (such as underline) to distinguish it from the surrounding text\n        HTML: <a href=\"/\" aria-label=\"About Angels Of Passion\">My Dream Asian</a>\n     3. p > a[href=\"/\"]:nth-child(2)\n        Fix any of the following:\n  The link has insufficient color contrast of 1.36:1 with the surrounding text. (Minimum contrast is 3:1, link text: #000000, surrounding text: #212529)\n  The link has no styling (such as underline) to distinguish it from the surrounding text\n        HTML: <a href=\"/\" aria-label=\"Angels Of Passion Contact or Info\">My Dream Asian</a>\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-PRVKPPP2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2",
+          "GTM-PRVKPPP2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Craigslist versus My Dream Asian",
+    "metaDescription": "Find out why My Dream Asian is better than Craigslist. Explore the pros and cons of both services and discover what works best for you.",
+    "canonicalUrl": "https://mydreamasian.com/craigslist-vs-my-dream-asian.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

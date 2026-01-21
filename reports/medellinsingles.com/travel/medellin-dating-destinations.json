@@ -1,0 +1,491 @@
+{
+  "url": "https://medellinsingles.com/travel/medellin-dating-destinations.html",
+  "timestamp": "2026-01-19T08:43:19.289Z",
+  "summary": {
+    "overallStatus": "failed",
+    "seoPassed": true,
+    "brokenLinksCount": 2,
+    "accessibilityPassed": false,
+    "gtmPassed": true
+  },
+  "seo": {
+    "results": [
+      {
+        "check": "Page Title",
+        "passed": true,
+        "message": "Page title is present: \"Top Dating Destinations in Medellin Colombian Women Love\"",
+        "value": "Top Dating Destinations in Medellin Colombian Women Love"
+      },
+      {
+        "check": "Meta Description",
+        "passed": true,
+        "message": "Meta description has appropriate length (133 chars)",
+        "value": "Medellin is renowned for its beauty. When dating Colombian women from this city, make her feel special by taking her to these places."
+      },
+      {
+        "check": "Canonical URL",
+        "passed": true,
+        "message": "Canonical URL is present: \"https://medellinsingles.com/travel/medellin-dating-destinations.html\"",
+        "value": "https://medellinsingles.com/travel/medellin-dating-destinations.html"
+      },
+      {
+        "check": "Robots Meta Tag",
+        "passed": true,
+        "message": "Robots meta tag is properly configured: \"index, follow\"",
+        "value": "index, follow"
+      },
+      {
+        "check": "Image Alt Attributes",
+        "passed": true,
+        "message": "All 10 images have alt attributes"
+      },
+      {
+        "check": "Heading Structure",
+        "passed": true,
+        "message": "Proper heading structure: 1 H1 found",
+        "value": "H1: Top Dating Destinations in Medellin Colombian Women Love"
+      }
+    ],
+    "passedCount": 6,
+    "totalCount": 6,
+    "failedChecks": []
+  },
+  "brokenLinks": {
+    "totalChecked": 2,
+    "brokenCount": 2,
+    "brokenLinks": [
+      {
+        "url": "https://medellinsingles.com/our-Process",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a.text-decoration-none.link-dark",
+            "linkText": "Our Process",
+            "html": "<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>",
+            "href": "https://medellinsingles.com/our-Process/"
+          }
+        ]
+      },
+      {
+        "url": "https://www.planetware.com/colombia/top-rated-tourist-attractions-things-to-do-in-medellin-col-1-14.htm",
+        "status": 404,
+        "statusText": "Not Found",
+        "isBroken": true,
+        "elements": [
+          {
+            "selector": "a",
+            "linkText": "go in Medellin",
+            "html": "<a href=\"https://www.planetware.com/colombia/top-rated-tourist-attractions-things-to-do-in-medellin-col-1-14.htm\" target=\"_blank\">go in Medellin</a>",
+            "href": "https://www.planetware.com/colombia/top-rated-tourist-attractions-things-to-do-in-medellin-col-1-14.htm"
+          }
+        ]
+      }
+    ]
+  },
+  "accessibility": {
+    "passed": false,
+    "totalViolations": 3,
+    "totalIncomplete": 1,
+    "violations": [
+      {
+        "id": "landmark-unique",
+        "impact": "moderate",
+        "tags": [
+          "cat.semantics",
+          "best-practice"
+        ],
+        "description": "Ensure landmarks are unique",
+        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "landmark-is-unique",
+                "data": {
+                  "role": "main",
+                  "accessibleText": null
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
+                    "target": [
+                      "#chat-widget-minimized",
+                      ".css-1yzzujv"
+                    ]
+                  }
+                ],
+                "impact": "moderate",
+                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+                "selector": "main"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<main class=\"midcontarea container mx-auto\">",
+            "target": [
+              "main"
+            ],
+            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
+            "selector": "main"
+          }
+        ]
+      },
+      {
+        "id": "list",
+        "impact": "serious",
+        "tags": [
+          "cat.structure",
+          "wcag2a",
+          "wcag131",
+          "EN-301-549",
+          "EN-9.1.3.1",
+          "RGAAv4",
+          "RGAA-9.3.1"
+        ],
+        "description": "Ensure that lists are structured correctly",
+        "help": "<ul> and <ol> must only directly contain <li>, <script> or <template> elements",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/list?application=playwright",
+        "nodes": [
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": {
+                  "values": "p"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ul:nth-child(7) > p:nth-child(2)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Even if you’re not a heavy partier, the city offers quality nightclubs so you can enjoy the Medellin Colombia nightlife scene. So many tourists visit Medellin because of this. One of the most popular spots is El Poblado, which attracts most backpacker tourists.</p>",
+                    "target": [
+                      "ul:nth-child(7) > p:nth-child(4)"
+                    ]
+                  },
+                  {
+                    "html": "<p>It doesn’t matter if you go to the city with a date or to look for the right <a href=\"/blog/bounce-back-with-latinas.html\">Colombian girl</a>; in this place, you’re sure to find the right woman among the many bars.</p>",
+                    "target": [
+                      "ul:nth-child(7) > p:nth-child(5)"
+                    ]
+                  },
+                  {
+                    "html": "<p>The city was awarded as the “Innovative City of the Year” last 2013, which it truly deserves. One of the reasons Medellin won the award is because it uses ingenious metro cable cars to reach very isolated neighborhoods.</p>",
+                    "target": [
+                      "p:nth-child(7)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ul:nth-child(7) > p:nth-child(8)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "p:nth-child(10)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Wherever you <a href=\"https://www.planetware.com/colombia/top-rated-tourist-attractions-things-to-do-in-medellin-col-1-14.htm\" target=\"_blank\">go in Medellin</a>, you’re sure to have a scenic view of the mountains and other enthralling landscapes.</p>",
+                    "target": [
+                      "ul:nth-child(7) > p:nth-child(12)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "List element has direct children that are not allowed: p"
+              }
+            ],
+            "impact": "serious",
+            "html": "<ul>",
+            "target": [
+              "main > ul:nth-child(7)"
+            ],
+            "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: p",
+            "selector": "main > ul:nth-child(7)"
+          },
+          {
+            "any": [],
+            "all": [],
+            "none": [
+              {
+                "id": "only-listitems",
+                "data": {
+                  "values": "p"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>This is an ideal place to visit for nature lovers. The city’s <em>botanical gardens</em> consist of 4,500 flowers and a thousand species of wildlife. It also has a huge collection of orchids, a butterfly garden, and a cactus garden.</p>",
+                    "target": [
+                      "ul:nth-child(10) > p:nth-child(2)"
+                    ]
+                  },
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "ul:nth-child(10) > p:nth-child(3)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Plaza Botero, named after the hometown hero Fernando Botero, houses 23 humongous sculptures that have now become the city’s most iconic symbol. More of the artist’s works are displayed in <em>Museo de Antioquia</em>, which is arguably the most photographed place in the entire country.</p>",
+                    "target": [
+                      "ul:nth-child(10) > p:nth-child(5)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Museo de Antioquia not only displays a bunch of Botero’s sculptures but it’s also a home to numerous pre-Colombian works of other famous artists (both national and international).</p>",
+                    "target": [
+                      "ul:nth-child(10) > p:nth-child(6)"
+                    ]
+                  },
+                  {
+                    "html": "<p>If you are a foodie, this is the best place to go for a date. Let your <a href=\"/blog/medellin-women-worth-your-time.html\">Colombian woman</a> be your guide to the best Colombian dishes. You can even watch how Medellin’s local favorites are cooked.</p>",
+                    "target": [
+                      "ul:nth-child(10) > p:nth-child(8)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Toucan café particularly offers street food. So if you want to try some more exotic dishes, don’t miss the kind of cuisine <em>paisas</em> take pride in.</p>",
+                    "target": [
+                      "ul:nth-child(10) > p:nth-child(9)"
+                    ]
+                  },
+                  {
+                    "html": "<p>This is a mock town on top of Cerro Nutibara, which is like a living museum. When you visit, it’s almost like you’re actually in ancient Antioquia. The village consists of a mayor's office, one-room schoolhouse, traditional town square, and a barbershop.</p>",
+                    "target": [
+                      "p:nth-child(11)"
+                    ]
+                  },
+                  {
+                    "html": "<p>But there are also a lot of handicraft and souvenir shops you can check out as well. And if you are on a date, there are also noteworthy restaurants you can  bring your date to.</p>",
+                    "target": [
+                      "ul:nth-child(10) > p:nth-child(12)"
+                    ]
+                  },
+                  {
+                    "html": "<p>You can even try the classical dishes in the village, such as a belly-busting platter of ground meat, avocados served with rice and refried beans, fried plantains, pork cracklings, and bandeja paisa.</p>",
+                    "target": [
+                      "p:nth-child(13)"
+                    ]
+                  },
+                  {
+                    "html": "<p>What’s unique about this park is visitors are encouraged to take off their shoes when wandering through the sandy pits, green gardens, and bubbling water fountains. This way, you get to experience and feel different textures.</p>",
+                    "target": [
+                      "p:nth-child(15)"
+                    ]
+                  },
+                  {
+                    "html": "<p>The purpose of this park is to reconnect with nature the way ancient humans originally did. This is the most beloved and bizarre part of the city which you and your date will surely enjoy, so take a romantic walk around this park.</p>",
+                    "target": [
+                      "p:nth-child(16)"
+                    ]
+                  },
+                  {
+                    "html": "<p>This place is an interactive science museum with 300 interactive exhibits inside the building’s four red cubes. There’s also a television studio, planetarium, and 3D auditorium. Interestingly, it also houses South America’s largest freshwater aquarium.</p>",
+                    "target": [
+                      "p:nth-child(18)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Conveniently, it’s near the shopping malls and botanical gardens. So, after you and your date are done experiencing Parque Explora, there are places nearby where you can unwind.</p>",
+                    "target": [
+                      "p:nth-child(19)"
+                    ]
+                  },
+                  {
+                    "html": "<p>This is probably the place in Medellin where most tourists stay because it has plenty of hotels, inns, and other forms of accommodation. But there are also plenty of high-end restaurants and cafės all around, so you and your date don’t have to go far for a place to unwind.</p>",
+                    "target": [
+                      "p:nth-child(21)"
+                    ]
+                  },
+                  {
+                    "html": "<p>Take note of these places when going out on a date with <a href=\"/blog/realistic-expectations-dating-colombian-women.html\"><strong>Colombian women</strong></a> in Medellin.</p>",
+                    "target": [
+                      "p:nth-child(22)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "List element has direct children that are not allowed: p"
+              }
+            ],
+            "impact": "serious",
+            "html": "<ul>",
+            "target": [
+              "ul:nth-child(10)"
+            ],
+            "failureSummary": "Fix all of the following:\n  List element has direct children that are not allowed: p",
+            "selector": "ul:nth-child(10)"
+          }
+        ]
+      },
+      {
+        "id": "region",
+        "impact": "moderate",
+        "tags": [
+          "cat.keyboard",
+          "best-practice",
+          "RGAAv4",
+          "RGAA-9.2.1"
+        ],
+        "description": "Ensure all page content is contained by landmarks",
+        "help": "All page content should be contained by landmarks",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "region",
+                "data": {
+                  "isIframe": false
+                },
+                "relatedNodes": [],
+                "impact": "moderate",
+                "message": "Some page content is not contained by landmarks",
+                "selector": ".col-11"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "moderate",
+            "html": "<div class=\"col-11 p-0\">",
+            "target": [
+              ".col-11"
+            ],
+            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
+            "selector": ".col-11"
+          }
+        ]
+      }
+    ],
+    "incomplete": [
+      {
+        "id": "link-in-text-block",
+        "impact": "serious",
+        "tags": [
+          "cat.color",
+          "wcag2a",
+          "wcag141",
+          "TTv5",
+          "TT13.a",
+          "EN-301-549",
+          "EN-9.1.4.1",
+          "RGAAv4",
+          "RGAA-10.6.1"
+        ],
+        "description": "Ensure links are distinguished from surrounding text in a way that does not rely on color",
+        "help": "Links must be distinguishable without relying on color",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/link-in-text-block?application=playwright",
+        "nodes": [
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>",
+                    "target": [
+                      "main > p:nth-child(5)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "main > p:nth-child(5) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/realistic-expectations-dating-colombian-women.html\"><strong>Colombian women</strong></a>",
+            "target": [
+              "main > p:nth-child(5) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "main > p:nth-child(5) > a"
+          },
+          {
+            "any": [
+              {
+                "id": "link-in-text-block",
+                "data": {
+                  "messageKey": "bgOverlap"
+                },
+                "relatedNodes": [
+                  {
+                    "html": "<p>Take note of these places when going out on a date with <a href=\"/blog/realistic-expectations-dating-colombian-women.html\"><strong>Colombian women</strong></a> in Medellin.</p>",
+                    "target": [
+                      "p:nth-child(22)"
+                    ]
+                  }
+                ],
+                "impact": "serious",
+                "message": "Element's contrast ratio could not be determined because of element overlap",
+                "selector": "p:nth-child(22) > a"
+              }
+            ],
+            "all": [],
+            "none": [],
+            "impact": "serious",
+            "html": "<a href=\"/blog/realistic-expectations-dating-colombian-women.html\"><strong>Colombian women</strong></a>",
+            "target": [
+              "p:nth-child(22) > a"
+            ],
+            "failureSummary": "Fix any of the following:\n  Element's contrast ratio could not be determined because of element overlap",
+            "selector": "p:nth-child(22) > a"
+          }
+        ]
+      }
+    ],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. list - serious Impact\n   Description: Ensure that lists are structured correctly\n   Help: <ul> and <ol> must only directly contain <li>, <script> or <template> elements\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/list?application=playwright\n   Affected Elements (2):\n     1. main > ul:nth-child(7)\n        Fix all of the following:\n  List element has direct children that are not allowed: p\n        HTML: <ul>\n     2. ul:nth-child(10)\n        Fix all of the following:\n  List element has direct children that are not allowed: p\n        HTML: <ul>\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. link-in-text-block\n   Description: Ensure links are distinguished from surrounding text in a way that does not rely on color\n   Elements to Review (2):\n     1. main > p:nth-child(5) > a\n     2. p:nth-child(22) > a\n\n"
+  },
+  "gtm": {
+    "hasGTM": true,
+    "containerId": "GTM-N3934XR2",
+    "hasLPTrackScript": true,
+    "message": "GTM found (GTM-N3934XR2). LP Track Script: Present",
+    "details": {
+      "scriptFound": true,
+      "gtmJsLoaded": true,
+      "dataLayerExists": true,
+      "dataLayerPushFound": true,
+      "lpTrackScriptFound": true,
+      "verificationStatus": "GTM Verified",
+      "debugInfo": {
+        "htmlContainsGoogleTagManager": true,
+        "gtmPatternsFound": [
+          "GTM-N3934XR2",
+          "GTM-N3934XR2",
+          "GTM-N3934XR2"
+        ],
+        "noscriptMatchFound": true,
+        "searchMethod": "script-src",
+        "gtmScriptsFound": 2
+      }
+    }
+  },
+  "metadata": {
+    "pageTitle": "Top Dating Destinations in Medellin Colombian Women Love",
+    "metaDescription": "Medellin is renowned for its beauty. When dating Colombian women from this city, make her feel special by taking her to these places.",
+    "canonicalUrl": "https://medellinsingles.com/travel/medellin-dating-destinations.html",
+    "robotsMetaTag": "index, follow"
+  },
+  "error": true,
+  "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:111:32",
+  "testFailed": true
+}

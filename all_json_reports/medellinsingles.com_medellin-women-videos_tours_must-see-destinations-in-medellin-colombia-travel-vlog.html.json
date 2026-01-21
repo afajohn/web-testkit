@@ -1,0 +1,28 @@
+{
+    "site": "https://medellinsingles.com/medellin-women-videos/tours/must-see-destinations-in-medellin-colombia-travel-vlog.html",
+    "timestamp": "2026-01-16 15:23:01",
+    "summary": {
+        "mobile_score": 57,
+        "desktop_score": 80
+    },
+    "mobile_details": {
+        "strategy": "mobile",
+        "overall_performance": 57,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmust-see-destinations-in-medellin-colombia-travel-vlog.html&strategy=mobile",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "2.7\u00a0s",
+        "lcp_lab": "4.1\u00a0s",
+        "tbt_lab": "870\u00a0ms"
+    },
+    "desktop_details": {
+        "strategy": "desktop",
+        "overall_performance": 80,
+        "report_link": "https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmust-see-destinations-in-medellin-colombia-travel-vlog.html&strategy=desktop",
+        "fcp_field": "N/A",
+        "inp_field": "N/A",
+        "fcp_lab": "0.8\u00a0s",
+        "lcp_lab": "1.2\u00a0s",
+        "tbt_lab": "300\u00a0ms"
+    }
+}
