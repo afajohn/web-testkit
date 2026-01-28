@@ -15,7 +15,7 @@ import {
 import { gotoAndWait } from '../utils/page-load';
 import { formatErrorWithContext, getCurrentUrl } from '../utils/error-handling';
 import { getFilePathFromUrl, writeJsonFile } from '../utils/file-utils';
-import { mergeTestResults } from '../utils/report-merger';
+import { mergeTestResults, getPhilippineTimeISOString } from '../utils/report-merger';
 
 /**
  * Multi-URL Audit Test
@@ -199,7 +199,7 @@ test.describe(`Multi-URL Audit Test (${TEST_URLS.length} URLs)`, () => {
         // Save error report
         const errorReport = {
           url: testUrl,
-          timestamp: new Date().toISOString(),
+          timestamp: getPhilippineTimeISOString(),
           error: true,
           errorMessage: error.message,
           errorStack: error.stack,

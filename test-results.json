@@ -1,8 +1,8 @@
 {
   "config": {
-    "configFile": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\playwright.config.ts",
-    "rootDir": "C:/Users/AM - Shift/Documents/web-testkit/tests",
-    "forbidOnly": false,
+    "configFile": "C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\playwright.config.ts",
+    "rootDir": "C:/Users/AM - Shift/Documents/Sir John Copy/web-testkit/tests",
+    "forbidOnly": true,
     "fullyParallel": true,
     "globalSetup": null,
     "globalTeardown": null,
@@ -33,7 +33,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/AM - Shift/Documents/web-testkit/test-results",
+        "outputDir": "C:/Users/AM - Shift/Documents/Sir John Copy/web-testkit/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -41,7 +41,7 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/AM - Shift/Documents/web-testkit/tests",
+        "testDir": "C:/Users/AM - Shift/Documents/Sir John Copy/web-testkit/tests",
         "testIgnore": [],
         "testMatch": [
           "**/*.@(spec|test).?(c|m)[jt]s?(x)"
@@ -54,81 +54,131 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 2,
+    "workers": 1,
     "webServer": null
   },
   "suites": [
     {
-      "title": "broken-links.spec.ts",
-      "file": "broken-links.spec.ts",
+      "title": "url-audit.spec.ts",
+      "file": "url-audit.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [
+      "specs": [],
+      "suites": [
         {
-          "title": "URL is not broken",
-          "ok": false,
-          "tags": [],
-          "tests": [
+          "title": "Audit Test for: https://anewbride.com/",
+          "file": "url-audit.spec.ts",
+          "line": 36,
+          "column": 6,
+          "specs": [
             {
-              "timeout": 60000,
-              "annotations": [],
-              "expectedStatus": "passed",
-              "projectId": "chromium",
-              "projectName": "chromium",
-              "results": [
+              "title": "comprehensive audit - SEO, broken links, and accessibility",
+              "ok": false,
+              "tags": [],
+              "tests": [
                 {
-                  "workerIndex": 0,
-                  "parallelIndex": 0,
-                  "status": "failed",
-                  "duration": 472,
-                  "error": {
-                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m400\u001b[39m\nReceived:   \u001b[31m400\u001b[39m",
-                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m400\u001b[39m\nReceived:   \u001b[31m400\u001b[39m\n    at C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts:77:29",
-                    "location": {
-                      "file": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts",
-                      "column": 29,
-                      "line": 77
-                    },
-                    "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(url)\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\u001b[0m"
-                  },
-                  "errors": [
+                  "timeout": 60000,
+                  "annotations": [],
+                  "expectedStatus": "passed",
+                  "projectId": "chromium",
+                  "projectName": "chromium",
+                  "results": [
                     {
-                      "location": {
-                        "file": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts",
-                        "column": 29,
-                        "line": 77
+                      "workerIndex": 0,
+                      "parallelIndex": 0,
+                      "status": "failed",
+                      "duration": 16772,
+                      "error": {
+                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
+                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\tests\\url-audit.spec.ts:160:36",
+                        "location": {
+                          "file": "C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\tests\\url-audit.spec.ts",
+                          "column": 36,
+                          "line": 160
+                        },
+                        "snippet": "\u001b[0m \u001b[90m 158 |\u001b[39m     \u001b[90m// You can adjust these assertions based on your requirements\u001b[39m\n \u001b[90m 159 |\u001b[39m     \u001b[90m// Option 1: Fail if any check fails\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m     expect(failedSEOChecks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m     expect(brokenLinksCount)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 162 |\u001b[39m     expect(accessibilityResults\u001b[33m.\u001b[39mpassed)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 163 |\u001b[39m     \u001b[0m"
                       },
-                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m400\u001b[39m\nReceived:   \u001b[31m400\u001b[39m\n\n\u001b[0m \u001b[90m 75 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(url)\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts:77:29\u001b[22m"
+                      "errors": [
+                        {
+                          "location": {
+                            "file": "C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\tests\\url-audit.spec.ts",
+                            "column": 36,
+                            "line": 160
+                          },
+                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 158 |\u001b[39m     \u001b[90m// You can adjust these assertions based on your requirements\u001b[39m\n \u001b[90m 159 |\u001b[39m     \u001b[90m// Option 1: Fail if any check fails\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 160 |\u001b[39m     expect(failedSEOChecks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 161 |\u001b[39m     expect(brokenLinksCount)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 162 |\u001b[39m     expect(accessibilityResults\u001b[33m.\u001b[39mpassed)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 163 |\u001b[39m     \u001b[0m\n\u001b[2m    at C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\tests\\url-audit.spec.ts:160:36\u001b[22m"
+                        }
+                      ],
+                      "stdout": [
+                        {
+                          "text": "  SEO checks... "
+                        },
+                        {
+                          "text": "✗ Failed (1/6)\n"
+                        },
+                        {
+                          "text": "  Checking Broken Links... "
+                        },
+                        {
+                          "text": "✗ 1 broken link(s)\n"
+                        },
+                        {
+                          "text": "  Checking Accessibility... "
+                        },
+                        {
+                          "text": "✓ Pass\n"
+                        },
+                        {
+                          "text": "  Checking GTM... "
+                        },
+                        {
+                          "text": "✓ Found (GTM-5BM9G4MF)\n"
+                        }
+                      ],
+                      "stderr": [],
+                      "retry": 0,
+                      "startTime": "2026-01-23T04:32:35.765Z",
+                      "annotations": [],
+                      "attachments": [
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\test-results\\url-audit-Audit-Test-for-h-799e3-ken-links-and-accessibility-chromium\\video-1.webm"
+                        },
+                        {
+                          "name": "video",
+                          "contentType": "video/webm",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\test-results\\url-audit-Audit-Test-for-h-799e3-ken-links-and-accessibility-chromium\\video.webm"
+                        },
+                        {
+                          "name": "error-context",
+                          "contentType": "text/markdown",
+                          "path": "C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\test-results\\url-audit-Audit-Test-for-h-799e3-ken-links-and-accessibility-chromium\\error-context.md"
+                        }
+                      ],
+                      "errorLocation": {
+                        "file": "C:\\Users\\AM - Shift\\Documents\\Sir John Copy\\web-testkit\\tests\\url-audit.spec.ts",
+                        "column": 36,
+                        "line": 160
+                      }
                     }
                   ],
-                  "stdout": [],
-                  "stderr": [],
-                  "retry": 0,
-                  "startTime": "2026-01-07T04:36:39.772Z",
-                  "annotations": [],
-                  "attachments": [],
-                  "errorLocation": {
-                    "file": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts",
-                    "column": 29,
-                    "line": 77
-                  }
+                  "status": "unexpected"
                 }
               ],
-              "status": "unexpected"
+              "id": "1dfaec8f1a7c1d32c104-86ab46b371750eee89ba",
+              "file": "url-audit.spec.ts",
+              "line": 37,
+              "column": 7
             }
-          ],
-          "id": "cdfe9f41deac1d8ba9c0-5b078d415ede736fcc1d",
-          "file": "broken-links.spec.ts",
-          "line": 72,
-          "column": 5
+          ]
         }
       ]
     }
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-07T04:36:38.745Z",
-    "duration": 1563.4619999999998,
+    "startTime": "2026-01-23T04:32:34.514Z",
+    "duration": 18281.901,
     "expected": 0,
     "skipped": 0,
     "unexpected": 1,

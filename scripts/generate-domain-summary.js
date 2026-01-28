@@ -324,7 +324,7 @@ function generateMarkdown(summary) {
       lines.push(`### ${index + 1}. ${issue.check}: ${issue.message}`);
       lines.push(`**Affected Pages (${issue.pages.length}):**`);
       lines.push('');
-      
+      let pageIndex = 0;
       issue.pages.forEach(page => {
         // Only show character count for length-related issues (too long/too short)
         const isLengthIssue = issue.message.toLowerCase().includes('too long') || 
@@ -332,14 +332,15 @@ function generateMarkdown(summary) {
         
         if (isLengthIssue && page.charCount) {
           // Use the extracted character count from the original message
-          lines.push(`- ${page.url} (${page.charCount} chars)`);
+          lines.push(`${pageIndex + 1}. ${page.url} (${page.charCount} chars)`);
         } else if (isLengthIssue && page.value) {
           // Fallback: count characters in the value if no char count was extracted
           const charCount = page.value.trim().length;
-          lines.push(`- ${page.url} (${charCount} chars)`);
+          lines.push(`${pageIndex + 1}. ${page.url} (${charCount} chars)`);
         } else {
-          lines.push(`- ${page.url}`);
+          lines.push(`${pageIndex + 1}. ${page.url}`);
         }
+        pageIndex++;
       });
       lines.push('');
     });
@@ -356,24 +357,26 @@ function generateMarkdown(summary) {
     lines.push('');
     
     summary.brokenLinks.uniqueBrokenUrls.forEach((link, index) => {
-      lines.push(`### ${index + 1}. ${link.url}`);
-      lines.push(`- **Status:** ${link.status} ${link.statusText}`);
-      if (link.error) {
-        lines.push(`- **Error:** ${link.error}`);
-      }
-      lines.push(`- **Found on ${link.foundOnPages.length} page(s):**`);
-      link.foundOnPages.forEach(page => {
-        lines.push(`  - ${page.url}`);
-        if (page.elements && page.elements.length > 0) {
-          page.elements.forEach((elem, elemIdx) => {
-            lines.push(`    - Element ${elemIdx + 1}: \`${elem.selector}\``);
-            if (elem.linkText) {
-              lines.push(`      - Link Text: "${elem.linkText}"`);
-            }
-          });
-        }
-      });
-      lines.push('');
+      // lines.push(`### ${index + 1}. ${link.url}`);
+      lines.push(`${index + 1}. ${link.url}`);
+
+      // lines.push(`- **Status:** ${link.status} ${link.statusText}`);
+      // if (link.error) {
+      //   lines.push(`- **Error:** ${link.error}`);
+      // }
+      // lines.push(`- **Found on ${link.foundOnPages.length} page(s):**`);
+      // link.foundOnPages.forEach(page => {
+      //   lines.push(`  - ${page.url}`);
+      //   if (page.elements && page.elements.length > 0) {
+      //     page.elements.forEach((elem, elemIdx) => {
+      //       lines.push(`    - Element ${elemIdx + 1}: \`${elem.selector}\``);
+      //       if (elem.linkText) {
+      //         lines.push(`      - Link Text: "${elem.linkText}"`);
+      //       }
+      //     });
+      //   }
+      // });
+      // lines.push('');
     });
     lines.push('---');
     lines.push('');
@@ -420,6 +423,8 @@ function generateMarkdown(summary) {
     
     sortedViolations.forEach((violation, index) => {
       lines.push(`### ${index + 1}. ${violation.id} (${violation.impact})`);
+      lines.push('');
+      lines.push(`**${violation.id} (${violation.impact})**`);
       lines.push('');
       lines.push(`**Description:** ${violation.description}`);
       lines.push(`**Help:** ${violation.help}`);

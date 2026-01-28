@@ -852,6 +852,21 @@ function toggleReportSection(sectionId) {
     }
 }
 
+// Toggle sub-section accordion
+function toggleSubSection(subSectionId) {
+    const content = document.getElementById(subSectionId);
+    const header = content?.previousElementSibling;
+    const icon = header?.querySelector('.sub-section-toggle-icon');
+    
+    if (content && header) {
+        content.classList.toggle('collapsed');
+        
+        if (icon) {
+            icon.textContent = content.classList.contains('collapsed') ? '▶' : '▼';
+        }
+    }
+}
+
 // Render summaries grouped by domain
 function renderSummaries() {
     const summariesList = document.getElementById('summariesList');
@@ -997,8 +1012,109 @@ function parseMarkdownToAccordions(markdown) {
     }).join('');
 }
 
-// Convert markdown to HTML (basic conversion)
+// Convert markdown to HTML with collapsible sub-sections
 function convertMarkdownToHTML(markdown) {
+    if (!markdown) return '';
+    
+    // Split into lines for processing
+    const lines = markdown.split('\n');
+    
+    // First, check if there are any H3 headings to determine if we need sub-sections
+    const hasH3Headings = lines.some(line => line.match(/^### (.+)$/));
+    
+    if (!hasH3Headings) {
+        // No H3 headings, process as regular markdown without sub-sections
+        return convertMarkdownToHTMLSimple(markdown);
+    }
+    
+    const subSections = [];
+    let currentSubSection = null;
+    let currentContent = [];
+    let introContent = [];
+    let foundFirstH3 = false;
+    
+    // Process lines to group content under H3 headings
+    lines.forEach((line) => {
+        const h3Match = line.match(/^### (.+)$/);
+        
+        if (h3Match) {
+            // If this is the first H3, save any intro content
+            if (!foundFirstH3) {
+                foundFirstH3 = true;
+                if (introContent.length > 0) {
+                    const introText = introContent.join('\n').trim();
+                    if (introText) {
+                        // Add intro content as non-collapsible content
+                        subSections.push({
+                            title: null,
+                            content: introText
+                        });
+                    }
+                }
+            }
+            
+            // Save previous sub-section if exists
+            if (currentSubSection !== null) {
+                subSections.push({
+                    title: currentSubSection,
+                    content: currentContent.join('\n').trim()
+                });
+            }
+            
+            // Start new sub-section
+            currentSubSection = h3Match[1].trim();
+            currentContent = [];
+        } else {
+            if (!foundFirstH3) {
+                // Collect intro content before first H3
+                introContent.push(line);
+            } else {
+                // Add line to current sub-section content
+                currentContent.push(line);
+            }
+        }
+    });
+    
+    // Don't forget the last sub-section
+    if (currentSubSection !== null) {
+        subSections.push({
+            title: currentSubSection,
+            content: currentContent.join('\n').trim()
+        });
+    }
+    
+    // Convert sub-sections to HTML with collapsible accordions
+    const htmlParts = [];
+    let subSectionCounter = 0;
+    
+    subSections.forEach((subSection) => {
+        const htmlContent = convertMarkdownToHTMLSimple(subSection.content);
+        
+        // If no title (intro content), render without accordion
+        if (!subSection.title) {
+            htmlParts.push(`<div class="sub-section-intro">${htmlContent}</div>`);
+        } else {
+            // Create collapsible sub-section
+            const subSectionId = `sub-section-${Date.now()}-${subSectionCounter++}`;
+            htmlParts.push(`
+                <div class="sub-section">
+                    <div class="sub-section-header" onclick="toggleSubSection('${subSectionId}')">
+                        <span>${escapeHtml(subSection.title)}</span>
+                        <span class="sub-section-toggle-icon">▼</span>
+                    </div>
+                    <div class="sub-section-content" id="${subSectionId}">
+                        <div class="sub-section-markdown-content">${htmlContent}</div>
+                    </div>
+                </div>
+            `);
+        }
+    });
+    
+    return htmlParts.join('\n');
+}
+
+// Convert markdown to HTML (simple conversion without sub-sections)
+function convertMarkdownToHTMLSimple(markdown) {
     if (!markdown) return '';
     
     // Split into lines for processing
