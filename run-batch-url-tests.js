@@ -3,193 +3,169 @@
 /**
  * Batch URL Test Runner
  *
- *
  * Runs npm run test:url for each URL in the URLS array
- *
  *
  * Usage:
  *   node run-batch-url-tests.js
- *
  *
  * Or modify the URLS array below with your URLs
  */
 
 const { spawn } = require("child_process");
 const path = require("path");
-const { spawn } = require("child_process");
-const path = require("path");
 
 // Array of URLs to test
 const URLS = [
-  "https://bangkok-women.com/travel/thailand-travel-tips-older-men.html",
-  "https://bangkok-women.com/travel/thailand-historical-sites.html",
-  "https://bangkok-women.com/travel/hotels-bangkok.html",
-  "https://bangkok-women.com/travel/what-to-wear-thailand.html",
-  "https://bangkok-women.com/travel/national-parks-thailand.html",
-  "https://bangkok-women.com/travel/thai-phrases-dating.html",
-  "https://bangkok-women.com/travel/thai-visa-guide.html",
-  "https://bangkok-women.com/travel/thai-airlines-guide.html",
-  "https://bangkok-women.com/travel/planning-trip-to-thailand.html",
-  "https://bangkok-women.com/travel/best-thailand-beaches.html",
-  "https://bangkok-women.com/travel/must-try-thai-drinks-bangkok-heat.html",
-  "https://bangkok-women.com/travel/best-places-propose-thailand.html",
-  "https://bangkok-women.com/travel/navigating-cultural-differences-dating-thai-women.html",
-  "https://bangkok-women.com/travel/Things-to-do-When-the-Sun-Goes-Down.html",
-  "https://bangkok-women.com/travel/where-stay-bangkok-best-neighborhoods-offer.html",
-  "https://bangkok-women.com/travel/long-can-us-citizen-stay-thailand.html",
-  "https://bangkok-women.com/travel/",
-  "https://bangkok-women.com/bangkok-women-videos/tours/find-a-thai-girlfriend-instantly.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/dating-thai-women-bangkok-thailand-solo-trip.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/thai-women-attend-bangkok-dating-event-for-foreign-men.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/building-modern-romance-with-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/thai-women-seek-foreign-men-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/meet-hundreds-of-bangkok-women-at-exclusive-thai-dating-club.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/exclusive-thai-dating-scene-changes-foreign-men.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/bangkok-thailand-singles-vacation-meeting-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/passport-bro-finds-soulmate-in-bangkok-thai-girls-reaction.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/i-dated-200-thai-women-in-bangkok-thailand-travel-dating.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/dating-300-thai-women-in-bangkok-wmaf-couples-interview.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/1st-time-outside-usa-finding-a-thai-girlfriend-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/dating-a-different-thai-girl-every-day-bangkok-matchmaking.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/moving-to-bangkok-for-thai-women-is-it-worth-it.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/american-men-dominate-thai-speed-dating.html",
-  "https://bangkok-women.com/bangkok-women-videos/tours/asian-women-discover-the-beauty-of-thailand.html",
-  "https://bangkok-women.com/bangkok-women-videos/",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/private-speed-dating-with-thai-women-in-bangkok-nightlife.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/building-modern-romance-with-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/thai-women-attend-bangkok-dating-event-for-foreign-men.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/thai-women-pack-dating-event-to-meet-their-husbands.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/love-with-no-boundaries-thai-women-dating.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/finding-serious-thai-girls-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/exciting-adventures-dating-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/unforgettable-moments-dating-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/thailand-solo-travel-are-bangkok-women-worth-dating.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/dating-dozens-of-thai-women-your-first-days-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/my-first-time-dating-women-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/he-found-his-thai-wife-on-his-2nd-singles-night.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/how-to-get-a-thai-girlfriend-international-dating-tips.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/kiwi-tourist-finds-thai-wife-in-his-first-time-in-thailand.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/how-to-impress-thai-girls-bangkok-solo-travel-tips.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/bangkok-girls-want-to-be-a-tradwife-thai-women-exposed.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/bangkok-is-like-miami-passport-bros-dating-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/dump-western-women-for-thai-girls-passport-bros-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/american-man-blown-away-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/overcoming-bangkok-dating-fears-how-to-find-a-thai-wife.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/can-foreigners-date-sincere-thai-girls-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/midwest-man-dominates-bangkok-dating-scene.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/men-are-flocking-to-bangkok-for-these-reaons.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/foreign-guys-ditch-the-west-to-date-asian-women-in-thailand.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/man-has-more-in-common-with-thai-women-than-americans.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/first-and-last-sincere-asian-girl-finds-love-with-foreigner.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/american-men-are-crushing-bangkoks-dating-scene.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/are-thai-women-really-attracted-to-foreigners.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/americans-overwhelmed-by-thai-girls.html",
-  "https://bangkok-women.com/bangkok-women-videos/testimonial/",
-  "https://bangkok-women.com/bangkok-women-videos/informational/why-do-independent-thai-women-attend-our-socials.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/the-beautiful-women-of-bangkok-thailand.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/the-endearing-qualities-of-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/how-do-singles-vacation-work.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/things-to-remember-when-it-comes-to-online-dating.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/stunning-thailand-brides.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/travel-guide-fun-things-to-do-in-bangkok-thailand.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/bangkok-from-land-of-smiles-to-land-of-soulmates.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/how-to-date-thai-women-in-thailand-with-less-hassle.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/what-thai-girls-want-in-marriage-interracial-marriages.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/my-solo-tour-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-women-want-foreign-men-as-life-partner.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/what-thai-women-want-for-valentines.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/breaking-your-paradigm-bangkok-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/bangkok-women-how-do-i-meet-the-right-woman.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/international-dating-are-thai-women-into-me.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/bangkok-unsafe-for-foreign-men-to-date.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/approaching-thai-women-as-an-older-man-dating-bangkok-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/places-to-go-on-a-date-dating-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/reaching-out-to-thai-women-after-the-socials-thai-dating.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/how-to-step-out-of-a-date-politely-thai-dating.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/do-thai-women-send-photos-in-letters-thai-dating.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/bangkok-tours-individual-vs-group.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-women-seek-foreign-men.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/dating-young-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/meeting-thai-women-f2f.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/bangkok-women-dating-hurdles.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/why-bangkok-women-arent-disingenuous.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/why-bangkok-women-are-worth-it.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-women-how-soon-do-couples-get-engaged.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/how-thai-dating-works.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/dating-in-thailand-date-stunning-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/contacting-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/experience-bangkok-thailand-2022-thai-travel-guide.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/challenges-dating-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-dating-the-best-qualities-dating-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/traveling-to-meet-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/are-thai-women-deceitful.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/exposing-lies-about-dating-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-women-never-resist-dating-these-men.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/are-visas-needed-for-marrying-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/how-to-talk-to-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/rapid-bangkok-dating-100-thai-women-in-8-hrs.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/keepthai-women-interested-after-marriage.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/honest-thai-women-pursue-foreigners-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/dating-the-right-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/stunning-single-thai-women-want-foreigners.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/ideal-matches-of-thai-women-dating-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/are-thai-girls-in-bangkok-professional-daters.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/do-thai-girls-have-a-problem-with-age-gap-bangkok-dating.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/dont-fall-for-the-wrong-thai-girl-bangkok-dating-advice.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-matchmaker-helps-thailand-tourists-find-love.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/i-still-live-with-mom-what-will-thai-girls-think.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/1-weakness-of-international-marriage-thailand-dating-vlog.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/do-thai-girls-fall-in-love-with-guys-on-online-dating-apps.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/will-this-obvious-romance-scam-fool-you-dating-thai-girls.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/dont-settle-for-less-than-a-thai-girlfriend.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/40s-thai-women-seek-foreign-men-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/4-exciting-gifts-thai-women-cant-turn-down.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/indecisive-foreigner-couldve-married-thai-wife-5-years-ago.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/is-24-yrs-age-gap-too-big-for-thai-girls.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/28-to-43-yr-old-thai-women-actively-seeking-love.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/should-i-marry-my-thai-girlfriend-in-bangkok-matchmaker-qa.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/too-expensive-to-meet-thai-women-speed-dating-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/age-knows-no-boundaries-in-dating-thai-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/moving-to-bangkok-for-thai-women-is-it-worth-it.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/hat-old-reality-in-dating-thai-girls-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/passport-bro-should-consider-this-in-dating-thai-girls.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-women-in-their-30s-wants-mature-foreigners.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/date-thai-girls-safely-without-any-apps.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/one-flight-away-find-your-thai-girlfriend-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/aggressive-thai-girls-compete-for-your-attention.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/dating-thai-girls-safely-at-private-bangkok-event.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/why-foreign-guys-cant-resist-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/no-faith-in-dating-apps-38yo-thai-girl-hires-matchmaker.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/why-serious-thai-girls-avoid-dating-apps.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/how-guys-end-up-dating-in-thailand.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/date-100-thai-girls-in-1-night.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/are-thai-girls-scared-to-date-you.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/dont-get-fooled-dating-thai-girls-requires-realism.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/asian-women-candid-confession-to-find-foreign-love.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/huge-risk-men-take-on-thai-dating-apps.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/single-thai-women-over-40-ready-for-love-2025-new-profiles.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-girls-delete-dating-apps-for-international-matchmaking.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-girls-first-time-dating-foreigners.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/easiest-way-to-find-honest-thai-girls.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/top-mistakes-foreign-men-make-on-thai-dates.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/every-thai-girl-wants-this-from-foreigners.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/stop-gambling-on-love-date-serious-asian-women.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/dont-unravel-before-you-travel-thai-dating-mindset.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/dating-over-50-bangkok-women-redefine-love.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/thai-dating-secrets-foreigners-must-know.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/american-men-cant-stay-single-in-bangkok.html",
-  "https://bangkok-women.com/bangkok-women-videos/informational/marriage-or-motive-thai-girls-dating-foreigners-get-real.html",
-  "https://bangkok-women.com/execu/cost.html",
-  "https://bangkok-women.com/execu/meet-our-matchmakers.html",
-  "https://bangkok-women.com/execu/professional-matchmaker-plan.html",
-  "https://bangkok-women.com/execu/the-process.html",
-  "https://bangkok-women.com/execu/why-us.html",
-  "https://bangkok-women.com/featured-ladies/BW-YT003Profiles.html",
-  "https://bangkok-women.com/featured-ladies/BW-YT126.html",
-  "https://bangkok-women.com/featured-ladies/BW-YTProfiles05.html",
-  "https://bangkok-women.com/featured-ladies/BW-YTProfiles06.html",
-  "https://bangkok-women.com/featured-ladies/BW-YTProfiles07.html",
-  "https://bangkok-women.com/women-tour/",
+  "https://davaowomen.com/about-davao-women.html",
+  "https://davaowomen.com/best-marriage-agency-and-matchmaking-services-in-davao.html",
+  "https://davaowomen.com/craigslist-women-seeking-men-vs-davao-women.html",
+  "https://davaowomen.com/date-davao-women-seeking-men.html",
+  "https://davaowomen.com/davao-brides.html",
+  "https://davaowomen.com/davao-dating-culture.html",
+  "https://davaowomen.com/davao-history-culture-traditions.html",
+  "https://davaowomen.com/davao-marriage-culture.html",
+  "https://davaowomen.com/davao-singles.html",
+  "https://davaowomen.com/davao-travel-guide.html",
+  "https://davaowomen.com/davao-women-questions-to-ask.html",
+  "https://davaowomen.com/error-404.html",
+  "https://davaowomen.com/how-to-meet-davao-women.html",
+  "https://davaowomen.com/index.html",
+  "https://davaowomen.com/long-distance-relationship-meeting-first-time-read.html",
+  "https://davaowomen.com/meet-davao-girls-dating-true-love.html",
+  "https://davaowomen.com/more-single-davao-ladies.html",
+  "https://davaowomen.com/new-davao-women.html",
+  "https://davaowomen.com/new-single-girls-for-marriage-worldwide.html",
+  "https://davaowomen.com/newest-asian-women.html",
+  "https://davaowomen.com/open-relationship-bad-idea.html",
+  "https://davaowomen.com/live-webcast.html",
+  "https://davaowomen.com/sign-up.html",
+  "https://davaowomen.com/swiping-right-love-online-dating-worth.html",
+  "https://davaowomen.com/visit-davao.html",
+  "https://davaowomen.com/why-marry-younger-davao-women.html",
+  "https://davaowomen.com/women-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/informational/4-most-effective-advice-for-men-dating-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/informational/19-y-o-filipina-never-had-a-boyfriend.html",
+  "https://davaowomen.com/davao-tour-videos/informational/20s-vs-30s-do-dating-demands-of-filipinas-change.html",
+  "https://davaowomen.com/davao-tour-videos/informational/24-yr-old-filipina-challenges-foreigners-dating-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/informational/26-yr-old-filipina-s-plea-i-really-want-marriage.html",
+  "https://davaowomen.com/davao-tour-videos/informational/30yr-old-filipina-wo-kids-wants-older-man-dating-in-cebu.html",
+  "https://davaowomen.com/davao-tour-videos/informational/100-women-youll-encounter-in-the-philippines.html",
+  "https://davaowomen.com/davao-tour-videos/informational/african-american-debunks-filipina-dating-myths.html",
+  "https://davaowomen.com/davao-tour-videos/informational/ageless-filipinas-shock-men-dating-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/informational/are-davao-filipinas-more-traditional.html",
+  "https://davaowomen.com/davao-tour-videos/informational/can-filipino-women-offer-passport-bros-anything.html",
+  "https://davaowomen.com/davao-tour-videos/informational/can-there-be-joy-in-dating-a-filipina-pinay-tell-all.html",
+  "https://davaowomen.com/davao-tour-videos/informational/christmas-gift-guide-what-do-filipinas-love.html",
+  "https://davaowomen.com/davao-tour-videos/informational/cute-pinays-await-in-the-philippines-dating-a-filipina.html",
+  "https://davaowomen.com/davao-tour-videos/informational/dating-apps-trump-matchmaking-finding-your-filipina.html",
+  "https://davaowomen.com/davao-tour-videos/informational/dating-filipinas-in-davao-real-or-fake.html",
+  "https://davaowomen.com/davao-tour-videos/informational/dating-filipinas-is-harana-still-practiced.html",
+  "https://davaowomen.com/davao-tour-videos/informational/davao-city-dating-new-stunning-filipina-profiles.html",
+  "https://davaowomen.com/davao-tour-videos/informational/davao-dating-where-filipinas-approach-you.html",
+  "https://davaowomen.com/davao-tour-videos/informational/davao-difference-are-filipinas-in-davao-more-traditional.html",
+  "https://davaowomen.com/davao-tour-videos/informational/davao-filipina-desires-beautiful-family-with-a-foreigner.html",
+  "https://davaowomen.com/davao-tour-videos/informational/davao-filipinas-date-different-pool-party-pinays-tell-all.html",
+  "https://davaowomen.com/davao-tour-videos/informational/davao-filipinas-dish-on-why-theyre-dating-foreign-guys.html",
+  "https://davaowomen.com/davao-tour-videos/informational/davao-filipinas-urge-foreigners-to-visit-paradise.html",
+  "https://davaowomen.com/davao-tour-videos/informational/do-filipinas-have-anything-to-offer-foreigners.html",
+  "https://davaowomen.com/davao-tour-videos/informational/do-filipino-women-think-socials-as-a-free-night-out.html",
+  "https://davaowomen.com/davao-tour-videos/informational/do-it-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/informational/dont-date-filipinas-if.html",
+  "https://davaowomen.com/davao-tour-videos/informational/dos-and-donts-of-dating-filipinas-in-their-own-words.html",
+  "https://davaowomen.com/davao-tour-videos/informational/droves-of-pinays-await-foreigners-in-davao-dating-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/informational/eager-filipinas-pack-private-speed-dating-social.html",
+  "https://davaowomen.com/davao-tour-videos/informational/family-first-filipinas-seek-respectful-foreigner.html",
+  "https://davaowomen.com/davao-tour-videos/informational/filipina-knockouts-first-time-dating-foreigners-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/informational/filipina-marketer-wants-to-start-family-with-foreigner.html",
+  "https://davaowomen.com/davao-tour-videos/informational/filipina-paradise-davao-women-take-foreigners-to-the-beach.html",
+  "https://davaowomen.com/davao-tour-videos/informational/filipinas-dream-of-foreign-men-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/informational/filipinas-from-davao-desire-foreign-men.html",
+  "https://davaowomen.com/davao-tour-videos/informational/filipinas-hate-these.html",
+  "https://davaowomen.com/davao-tour-videos/informational/filipinas-over-want-real-love-dating-in-davao-city.html",
+  "https://davaowomen.com/davao-tour-videos/informational/filipinas-under-25-reveal-shocking-relationship-goals.html",
+  "https://davaowomen.com/davao-tour-videos/informational/filipinas-without-kids-seek-love-dating-in-davao-city.html",
+  "https://davaowomen.com/davao-tour-videos/informational/foreigners-guide-to-dating-genuine-filipino-women-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/informational/foreigners-outnumbered-at-private-filipina-speed-dating.html",
+  "https://davaowomen.com/davao-tour-videos/informational/give-and-take-what-filipinas-dating-foreigners-can-offer.html",
+  "https://davaowomen.com/davao-tour-videos/informational/how-to-dress-in-dating-filipinas-in-davao-philippines.html",
+  "https://davaowomen.com/davao-tour-videos/informational/huge-concerns-filipinas-share-with-most-foreigners.html",
+  "https://davaowomen.com/davao-tour-videos/informational/hundreds-of-filipinas-swarm-20-foreign-guys-speed-dating.html",
+  "https://davaowomen.com/davao-tour-videos/informational/i-m-ready-32-yr-old-filipina-wants-to-start-her-family.html",
+  "https://davaowomen.com/davao-tour-videos/informational/i-m-using-a-filipina-matchmaker-to-date-foreigners.html",
+  "https://davaowomen.com/davao-tour-videos/informational/im-done-dating-unfaithful-guys-filipinas-seek-foreigners.html",
+  "https://davaowomen.com/davao-tour-videos/informational/is-it-normal-for-filipinas-to-ask-you-out.html",
+  "https://davaowomen.com/davao-tour-videos/informational/make-a-splash-in-davao-how-guys-attract-filipino-girls.html",
+  "https://davaowomen.com/davao-tour-videos/informational/making-a-good-impression-on-younger-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/informational/marriage-minded-filipina-breaks-down-davao-dating.html",
+  "https://davaowomen.com/davao-tour-videos/informational/one-flaw-zero-filipinas-tolerate-in-any-relationship.html",
+  "https://davaowomen.com/davao-tour-videos/informational/one-flight-can-change-your-life-dating-in-the-philippines.html",
+  "https://davaowomen.com/davao-tour-videos/informational/pinays-looking-for-a-better-bachelor-dating-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/informational/real-filipinas-offer-real-love-to-foreigners.html",
+  "https://davaowomen.com/davao-tour-videos/informational/she-ll-only-date-men-37-to-70-y-o.html",
+  "https://davaowomen.com/davao-tour-videos/informational/shy-24-y-o-filipina-wants-older-foreigner.html",
+  "https://davaowomen.com/davao-tour-videos/informational/signs-shes-into-you-dating-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/informational/single-filipinas-for-marriage.html",
+  "https://davaowomen.com/davao-tour-videos/informational/single-filipinas-want-foreign-men.html",
+  "https://davaowomen.com/davao-tour-videos/informational/the-best-single-filipinas-look-for-foreign-men.html",
+  "https://davaowomen.com/davao-tour-videos/informational/the-ideal-man-of-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/informational/the-impact-of-serenading-filipinas-dating-culture.html",
+  "https://davaowomen.com/davao-tour-videos/informational/toxic-turn-offs-of-real-filipino-girls.html",
+  "https://davaowomen.com/davao-tour-videos/informational/traveling-to-the-philippines-in-2021.html",
+  "https://davaowomen.com/davao-tour-videos/informational/unmatched-pinays-in-the-philippines-dating-davao-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/informational/wanted-single-filipinas-look-for-foreign-husband.html",
+  "https://davaowomen.com/davao-tour-videos/informational/we-re-not-desperate-filipinas-set-the-record-straight.html",
+  "https://davaowomen.com/davao-tour-videos/informational/what-are-the-chances-of-introverts-in-dating-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/informational/what-do-you-get-out-of-dating-a-filipina.html",
+  "https://davaowomen.com/davao-tour-videos/informational/what-i-really-want-32-yr-old-filipina-tells-all.html",
+  "https://davaowomen.com/davao-tour-videos/informational/what-if-i-dont-want-children-dating-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/informational/what-makes-filipino-women-stand-out.html",
+  "https://davaowomen.com/davao-tour-videos/informational/why-are-filipinas-well-loved-by-foreigners.html",
+  "https://davaowomen.com/davao-tour-videos/informational/why-do-filipinas-love-dating-older-men.html",
+  "https://davaowomen.com/davao-tour-videos/informational/why-do-filipinas-love-to-have-many-children.html",
+  "https://davaowomen.com/davao-tour-videos/informational/why-filipina-only-wants-a-foreign-man.html",
+  "https://davaowomen.com/davao-tour-videos/informational/why-filipinas-look-for-old-foreign-men.html",
+  "https://davaowomen.com/davao-tour-videos/informational/why-i-want-an-older-guy-filipinas-hold-nothing-back.html",
+  "https://davaowomen.com/davao-tour-videos/informational/why-more-filipinas-are-breaking-with-tradition.html",
+  "https://davaowomen.com/davao-tour-videos/informational/why-should-you-meet-davao-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/informational/why-wait-half-a-decade-to-date-filipinas-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/informational/youll-never-date-like-this-outside-the-philippines.html",
+  "https://davaowomen.com/davao-tour-videos/informational/your-loyal-lover-why-filipina-foreigner-couples-work.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/are-davao-filipinas-still-traditional-foreign-men-answer.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/are-filipinas-dating-african-americans-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/beautiful-philippine-women-date-foreigners-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/city-dating-difference-foreigner-finds-filipina-love.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/dating-after-divorce-in-the-philippines.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/dating-filipinas-why-joining-dating-events-is-important.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/divorced-foreigner-date-filipinas-in-davao-philippines.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/fil-am-dream-wedding-dating-filipino-women.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/filipinas-philippines-and-how-much-they-mean-to-men.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/foreign-men-complained-about-dating-filipinas-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/foreign-men-date-100-filipinas-in-one-time-at-davao-city.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/foreign-men-want-filipinas-for-higher-fertility-rate.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/how-do-filipinas-for-marriage-meet-foreign-men.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/how-he-found-his-19-y-o-filipina-fiance-online.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/i-met-more-serious-filipinas-in-one-night-than-a-lifetime.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/meeting-potentials-to-be-my-pinay-wife-in-davao-city.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/no-regrets-my-engagement-to-a-filipina-in-davao-city.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/say-no-to-fake-photos-dating-filipinas-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/thousands-of-davao-filipinas-want-foreign-men.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/unlimited-options-why-more-foreigners-are-dating-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/testimonial/you-should-have-zero-expectations-dating-filipinas.html",
+  "https://davaowomen.com/davao-tour-videos/tours/8k-miles-for-love-filipinas-welcome-men-dating-in-davao.html",
+  "https://davaowomen.com/davao-tour-videos/tours/100-filipinas-push-you-to-the-limit-intense-davao-dating.html",
+  "https://davaowomen.com/davao-tour-videos/tours/a-room-packed-with-100-filipinas-in-davao-city-philippines.html",
+  "https://davaowomen.com/davao-tour-videos/tours/are-filipinas-settling-for-any-foreigner.html",
+  "https://davaowomen.com/davao-tour-videos/tours/date-small-town-filipinas-safely.html",
+  "https://davaowomen.com/davao-tour-videos/tours/date-the-most-traditional-women-in-the-philippines.html",
+  "https://davaowomen.com/davao-tour-videos/tours/davao-citys-hidden-dating-culture-filipino-women.html",
+  "https://davaowomen.com/davao-tour-videos/tours/davao-filipinas-are-on-an-adventure-to-paradise-island.html",
+  "https://davaowomen.com/davao-tour-videos/tours/davaos-foreigner-dominated-dating-scene.html",
+  "https://davaowomen.com/davao-tour-videos/tours/fed-up-foreigners-flee-to-private-filipina-dating-events.html",
+  "https://davaowomen.com/davao-tour-videos/tours/filipina-dating-you-ll-never-get-more-attention-in-1-night.html",
+  "https://davaowomen.com/davao-tour-videos/tours/filipina-matchmakers-cant-do-it-for-you.html",
+  "https://davaowomen.com/davao-tour-videos/tours/filipinas-are-looking-for-you.html",
+  "https://davaowomen.com/davao-tour-videos/tours/filipinas-in-davao-city-welcome-foreign-men.html",
+  "https://davaowomen.com/davao-tour-videos/tours/filipinas-in-davao-want-more-foreign-men.html",
 ];
 
 // Remove duplicates
@@ -209,10 +185,8 @@ function runTestForUrl(url, index) {
   return new Promise((resolve) => {
     const testStartTime = Date.now();
     console.log(`\n${"=".repeat(80)}`);
-    console.log(`\n${"=".repeat(80)}`);
     console.log(`[${index + 1}/${totalURLs}] Testing: ${url}`);
     console.log(`Started at: ${new Date().toLocaleString()}`);
-    console.log(`${"=".repeat(80)}\n`);
     console.log(`${"=".repeat(80)}\n`);
 
     // Run Playwright directly with CI mode to prevent HTML server from starting
@@ -226,8 +200,6 @@ function runTestForUrl(url, index) {
           URL_AUDIT_URL: url,
           // Set CI=true to disable interactive features (like serving HTML reports)
           CI: "true",
-          // Set BATCH_MODE=true to disable retries and verbose logging for faster execution
-          BATCH_MODE: "true",
           // Also set these to ensure no interactive behavior
           PLAYWRIGHT_SKIP_BROWSER_DOWNLOAD: "1",
         },
@@ -254,31 +226,12 @@ function runTestForUrl(url, index) {
       },
       5 * 60 * 1000,
     ); // 5 minute timeout
-    const timeout = setTimeout(
-      () => {
-        if (!testProcess.killed) {
-          console.log(
-            `\n⚠️  Test process timed out after 5 minutes, killing process...`,
-          );
-          testProcess.kill("SIGTERM");
-          setTimeout(() => {
-            if (!testProcess.killed) {
-              testProcess.kill("SIGKILL");
-            }
-          }, 5000);
-        }
-      },
-      5 * 60 * 1000,
-    ); // 5 minute timeout
 
-    testProcess.on("close", (code) => {
     testProcess.on("close", (code) => {
       clearTimeout(timeout); // Clear timeout since process completed
 
-
       completed++;
       const testDuration = ((Date.now() - testStartTime) / 1000).toFixed(2);
-
 
       // Run organize script after test completes (non-blocking, don't wait)
       const organizeProcess = spawn(
@@ -296,38 +249,25 @@ function runTestForUrl(url, index) {
         },
       );
 
-      const organizeProcess = spawn(
-        "node",
-        ["scripts/organize-html-report.js"],
-        {
-          env: {
-            ...process.env,
-            URL_AUDIT_URL: url,
-            TEST_URL: url,
-          },
-          shell: true,
-          cwd: __dirname,
-          stdio: "pipe", // Don't inherit to avoid blocking
-        },
-      );
-
       // Don't wait for organize script, just let it run in background
-      organizeProcess.on("close", () => {
       organizeProcess.on("close", () => {
         // Silently complete
       });
 
-
       if (code === 0) {
         successful++;
         console.log(
-          `\n✅ [${index + 1}/${totalURLs}] Successfully tested: ${url} (${testDuration}s)`,
+          `\n✅ [${
+            index + 1
+          }/${totalURLs}] Successfully tested: ${url} (${testDuration}s)`,
         );
       } else {
         failed++;
         errors.push({ url, code });
         console.log(
-          `\n❌ [${index + 1}/${totalURLs}] Failed testing: ${url} (exit code: ${code}, ${testDuration}s)`,
+          `\n❌ [${
+            index + 1
+          }/${totalURLs}] Failed testing: ${url} (exit code: ${code}, ${testDuration}s)`,
         );
       }
 
@@ -341,13 +281,9 @@ function runTestForUrl(url, index) {
     });
 
     testProcess.on("error", (error) => {
-    testProcess.on("error", (error) => {
       completed++;
       failed++;
       errors.push({ url, error: error.message });
-      console.error(
-        `\n❌ [${index + 1}/${totalURLs}] Error running test for: ${url}`,
-      );
       console.error(
         `\n❌ [${index + 1}/${totalURLs}] Error running test for: ${url}`,
       );
@@ -362,13 +298,10 @@ function runTestForUrl(url, index) {
  */
 async function runAllTests() {
   console.log(`\n${"=".repeat(80)}`);
-  console.log(`\n${"=".repeat(80)}`);
   console.log(`BATCH URL TEST RUNNER`);
-  console.log(`${"=".repeat(80)}`);
   console.log(`${"=".repeat(80)}`);
   console.log(`Total URLs to test: ${totalURLs}`);
   console.log(`Starting at: ${new Date().toLocaleString()}`);
-  console.log(`${"=".repeat(80)}\n`);
   console.log(`${"=".repeat(80)}\n`);
 
   const startTime = Date.now();
@@ -383,9 +316,7 @@ async function runAllTests() {
 
   // Print summary
   console.log(`\n${"=".repeat(80)}`);
-  console.log(`\n${"=".repeat(80)}`);
   console.log(`BATCH TEST SUMMARY`);
-  console.log(`${"=".repeat(80)}`);
   console.log(`${"=".repeat(80)}`);
   console.log(`Total URLs: ${totalURLs}`);
   console.log(`Completed: ${completed}`);
@@ -394,7 +325,6 @@ async function runAllTests() {
   console.log(`Duration: ${duration} seconds`);
   console.log(`Started: ${new Date(startTime).toLocaleString()}`);
   console.log(`Finished: ${new Date(endTime).toLocaleString()}`);
-  console.log(`${"=".repeat(80)}\n`);
   console.log(`${"=".repeat(80)}\n`);
 
   if (errors.length > 0) {
@@ -409,7 +339,6 @@ async function runAllTests() {
       }
     });
     console.log("");
-    console.log("");
   }
 
   // Exit with error code if any tests failed
@@ -417,7 +346,6 @@ async function runAllTests() {
 }
 
 // Handle script interruption
-process.on("SIGINT", () => {
 process.on("SIGINT", () => {
   console.log(`\n\n⚠️  Batch test interrupted by user`);
   console.log(`   Completed: ${completed}/${totalURLs}`);
@@ -431,14 +359,10 @@ if (uniqueURLs.length === 0) {
   console.error(
     "❌ No URLs to test. Please add URLs to the URLS array in run-batch-url-tests.js",
   );
-  console.error(
-    "❌ No URLs to test. Please add URLs to the URLS array in run-batch-url-tests.js",
-  );
   process.exit(1);
 }
 
 runAllTests().catch((error) => {
-  console.error("\n❌ Fatal error running batch tests:");
   console.error("\n❌ Fatal error running batch tests:");
   console.error(error);
   process.exit(1);

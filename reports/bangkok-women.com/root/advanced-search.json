@@ -1,12 +1,12 @@
 {
   "url": "https://bangkok-women.com/advanced-search/",
-  "timestamp": "2026-01-20T09:05:49.174Z",
+  "timestamp": "2026-01-21T11:48:48.286Z",
   "summary": {
     "overallStatus": "failed",
     "seoPassed": false,
     "brokenLinksCount": 0,
-    "accessibilityPassed": false,
-    "gtmPassed": true
+    "accessibilityPassed": true,
+    "gtmPassed": false
   },
   "seo": {
     "results": [
@@ -36,15 +36,14 @@
       },
       {
         "check": "Image Alt Attributes",
-        "passed": false,
-        "message": "12 image(s) missing alt attribute",
-        "value": "/invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg"
+        "passed": true,
+        "message": "All 0 images have alt attributes"
       },
       {
         "check": "Heading Structure",
-        "passed": true,
-        "message": "Proper heading structure: 1 H1 found",
-        "value": "H1: Advanced Search"
+        "passed": false,
+        "message": "No H1 heading found",
+        "value": "H1: "
       }
     ],
     "passedCount": 4,
@@ -57,10 +56,10 @@
         "value": "Bangkok women advanced search."
       },
       {
-        "check": "Image Alt Attributes",
+        "check": "Heading Structure",
         "passed": false,
-        "message": "12 image(s) missing alt attribute",
-        "value": "/invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg, /invar/ssi-common/advanced-search/img/hand-right.svg"
+        "message": "No H1 heading found",
+        "value": "H1: "
       }
     ]
   },
@@ -70,866 +69,100 @@
     "brokenLinks": []
   },
   "accessibility": {
-    "passed": false,
-    "totalViolations": 4,
-    "totalIncomplete": 2,
+    "passed": true,
+    "totalViolations": 2,
+    "totalIncomplete": 0,
     "violations": [
       {
-        "id": "button-name",
-        "impact": "critical",
-        "tags": [
-          "cat.name-role-value",
-          "wcag2a",
-          "wcag412",
-          "section508",
-          "section508.22.a",
-          "TTv5",
-          "TT6.a",
-          "EN-301-549",
-          "EN-9.4.1.2",
-          "ACT",
-          "RGAAv4",
-          "RGAA-11.9.1"
-        ],
-        "description": "Ensure buttons have discernible text",
-        "help": "Buttons must have discernible text",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "button-has-visible-text",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have inner text that is visible to screen readers",
-                "selector": ".d-md-flex > button:nth-child(1)"
-              },
-              {
-                "id": "aria-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-label attribute does not exist or is empty",
-                "selector": ".d-md-flex > button:nth-child(1)"
-              },
-              {
-                "id": "aria-labelledby",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                "selector": ".d-md-flex > button:nth-child(1)"
-              },
-              {
-                "id": "non-empty-title",
-                "data": {
-                  "messageKey": "noAttr"
-                },
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element has no title attribute",
-                "selector": ".d-md-flex > button:nth-child(1)"
-              },
-              {
-                "id": "implicit-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have an implicit (wrapped) <label>",
-                "selector": ".d-md-flex > button:nth-child(1)"
-              },
-              {
-                "id": "explicit-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have an explicit <label>",
-                "selector": ".d-md-flex > button:nth-child(1)"
-              },
-              {
-                "id": "presentational-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-                "selector": ".d-md-flex > button:nth-child(1)"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<button disabled=\"\"><i class=\"fa-solid fa-circle-arrow-left\"></i></button>",
-            "target": [
-              ".d-md-flex > button:nth-child(1)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "selector": ".d-md-flex > button:nth-child(1)"
-          },
-          {
-            "any": [
-              {
-                "id": "button-has-visible-text",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have inner text that is visible to screen readers",
-                "selector": ".d-md-flex > button:nth-child(3)"
-              },
-              {
-                "id": "aria-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-label attribute does not exist or is empty",
-                "selector": ".d-md-flex > button:nth-child(3)"
-              },
-              {
-                "id": "aria-labelledby",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                "selector": ".d-md-flex > button:nth-child(3)"
-              },
-              {
-                "id": "non-empty-title",
-                "data": {
-                  "messageKey": "noAttr"
-                },
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element has no title attribute",
-                "selector": ".d-md-flex > button:nth-child(3)"
-              },
-              {
-                "id": "implicit-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have an implicit (wrapped) <label>",
-                "selector": ".d-md-flex > button:nth-child(3)"
-              },
-              {
-                "id": "explicit-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have an explicit <label>",
-                "selector": ".d-md-flex > button:nth-child(3)"
-              },
-              {
-                "id": "presentational-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-                "selector": ".d-md-flex > button:nth-child(3)"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<button><i class=\"fa-solid fa-circle-arrow-right\"></i></button>",
-            "target": [
-              ".d-md-flex > button:nth-child(3)"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "selector": ".d-md-flex > button:nth-child(3)"
-          }
-        ]
-      },
-      {
-        "id": "landmark-unique",
+        "id": "landmark-one-main",
         "impact": "moderate",
         "tags": [
           "cat.semantics",
           "best-practice"
         ],
-        "description": "Ensure landmarks are unique",
-        "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
+        "description": "Ensure the document has a main landmark",
+        "help": "Document should have one main landmark",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright",
         "nodes": [
           {
-            "any": [
+            "any": [],
+            "all": [
               {
-                "id": "landmark-is-unique",
-                "data": {
-                  "role": "navigation",
-                  "accessibleText": null
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<nav class=\"pagination d-none d-md-flex justify-content-center align-items-center mx-auto\"><button disabled=\"\"><i class=\"fa-solid fa-circle-arrow-left\"></i></button><span>&nbsp;Page 1 of 78&nbsp;</span><button><i class=\"fa-solid fa-circle-arrow-right\"></i></button></nav>",
-                    "target": [
-                      ".d-md-flex"
-                    ]
-                  }
-                ],
+                "id": "page-has-main",
+                "data": null,
+                "relatedNodes": [],
                 "impact": "moderate",
-                "message": "The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
-                "selector": ".header-right-nav"
+                "message": "Document does not have a main landmark"
               }
             ],
-            "all": [],
             "none": [],
             "impact": "moderate",
-            "html": "<nav class=\"header-right-nav pt-3\">",
+            "html": "<html lang=\"en\">",
             "target": [
-              ".header-right-nav"
+              "html"
             ],
-            "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
-            "selector": ".header-right-nav"
+            "failureSummary": "Fix all of the following:\n  Document does not have a main landmark",
+            "selector": "html"
           }
         ]
       },
       {
-        "id": "region",
+        "id": "page-has-heading-one",
         "impact": "moderate",
         "tags": [
-          "cat.keyboard",
-          "best-practice",
-          "RGAAv4",
-          "RGAA-9.2.1"
+          "cat.semantics",
+          "best-practice"
         ],
-        "description": "Ensure all page content is contained by landmarks",
-        "help": "All page content should be contained by landmarks",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
+        "description": "Ensure that the page, or at least one of its frames contains a level-one heading",
+        "help": "Page should contain a level-one heading",
+        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright",
         "nodes": [
           {
-            "any": [
+            "any": [],
+            "all": [
               {
-                "id": "region",
-                "data": {
-                  "isIframe": false
-                },
+                "id": "page-has-heading-one",
+                "data": null,
                 "relatedNodes": [],
                 "impact": "moderate",
-                "message": "Some page content is not contained by landmarks",
-                "selector": ".col-11"
+                "message": "Page must have a level-one heading"
               }
             ],
-            "all": [],
             "none": [],
             "impact": "moderate",
-            "html": "<div class=\"col-11 p-0\">",
+            "html": "<html lang=\"en\">",
             "target": [
-              ".col-11"
+              "html"
             ],
-            "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
-            "selector": ".col-11"
-          }
-        ]
-      },
-      {
-        "id": "select-name",
-        "impact": "critical",
-        "tags": [
-          "cat.forms",
-          "wcag2a",
-          "wcag412",
-          "section508",
-          "section508.22.n",
-          "TTv5",
-          "TT5.c",
-          "EN-301-549",
-          "EN-9.4.1.2",
-          "ACT",
-          "RGAAv4",
-          "RGAA-11.1.1"
-        ],
-        "description": "Ensure select element has an accessible name",
-        "help": "Select element must have an accessible name",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "implicit-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have an implicit (wrapped) <label>",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-              },
-              {
-                "id": "explicit-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element does not have an explicit <label>",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-              },
-              {
-                "id": "aria-label",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-label attribute does not exist or is empty",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-              },
-              {
-                "id": "aria-labelledby",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-              },
-              {
-                "id": "non-empty-title",
-                "data": {
-                  "messageKey": "noAttr"
-                },
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element has no title attribute",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-              },
-              {
-                "id": "presentational-role",
-                "data": null,
-                "relatedNodes": [],
-                "impact": "critical",
-                "message": "Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<select class=\"form-select form-select-sm rounded-pill fc-right\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
+            "failureSummary": "Fix all of the following:\n  Page must have a level-one heading",
+            "selector": "html"
           }
         ]
       }
     ],
-    "incomplete": [
-      {
-        "id": "color-contrast",
-        "impact": "serious",
-        "tags": [
-          "cat.color",
-          "wcag2aa",
-          "wcag143",
-          "TTv5",
-          "TT13.c",
-          "EN-301-549",
-          "EN-9.1.4.3",
-          "ACT",
-          "RGAAv4",
-          "RGAA-3.2.1"
-        ],
-        "description": "Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds",
-        "help": "Elements must meet minimum color contrast ratio thresholds",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/color-contrast?application=playwright",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "contrastRatio": 0,
-                  "fontSize": "10.5pt (14px)",
-                  "fontWeight": "normal",
-                  "messageKey": "bgImage",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<select class=\"form-select form-select-sm rounded-pill fc-left\" aria-label=\"Min Age\">",
-                    "target": [
-                      ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(1) > .fc-left.form-select[aria-label=\"Min Age\"]"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a background image",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(1) > .fc-left.form-select[aria-label=\"Min Age\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<select class=\"form-select form-select-sm rounded-pill fc-left\" aria-label=\"Min Age\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(1) > .fc-left.form-select[aria-label=\"Min Age\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(1) > .fc-left.form-select[aria-label=\"Min Age\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "contrastRatio": 0,
-                  "fontSize": "10.5pt (14px)",
-                  "fontWeight": "normal",
-                  "messageKey": "bgImage",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<select class=\"form-select form-select-sm rounded-pill fc-right\" aria-label=\"Max Age\">",
-                    "target": [
-                      ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(2) > .fc-right.form-select[aria-label=\"Max Age\"]"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a background image",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(2) > .fc-right.form-select[aria-label=\"Max Age\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<select class=\"form-select form-select-sm rounded-pill fc-right\" aria-label=\"Max Age\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(2) > .fc-right.form-select[aria-label=\"Max Age\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(2) > .fc-right.form-select[aria-label=\"Max Age\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "contrastRatio": 0,
-                  "fontSize": "10.5pt (14px)",
-                  "fontWeight": "normal",
-                  "messageKey": "bgImage",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<select class=\"form-select form-select-sm rounded-pill fc-left\" aria-label=\"Min weight\">",
-                    "target": [
-                      ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(4) > .fc-left.form-select[aria-label=\"Min weight\"]"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a background image",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(4) > .fc-left.form-select[aria-label=\"Min weight\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<select class=\"form-select form-select-sm rounded-pill fc-left\" aria-label=\"Min weight\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(4) > .fc-left.form-select[aria-label=\"Min weight\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(4) > .fc-left.form-select[aria-label=\"Min weight\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "contrastRatio": 0,
-                  "fontSize": "10.5pt (14px)",
-                  "fontWeight": "normal",
-                  "messageKey": "bgImage",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<select class=\"form-select form-select-sm rounded-pill fc-right\" aria-label=\"Max weight\">",
-                    "target": [
-                      ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(5) > .fc-right.form-select[aria-label=\"Max weight\"]"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a background image",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(5) > .fc-right.form-select[aria-label=\"Max weight\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<select class=\"form-select form-select-sm rounded-pill fc-right\" aria-label=\"Max weight\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(5) > .fc-right.form-select[aria-label=\"Max weight\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(5) > .fc-right.form-select[aria-label=\"Max weight\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "contrastRatio": 0,
-                  "fontSize": "10.5pt (14px)",
-                  "fontWeight": "normal",
-                  "messageKey": "bgImage",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<select class=\"form-select form-select-sm rounded-pill fc-right\">",
-                    "target": [
-                      ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a background image",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<select class=\"form-select form-select-sm rounded-pill fc-right\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm"
-          },
-          {
-            "any": [
-              {
-                "id": "color-contrast",
-                "data": {
-                  "contrastRatio": 0,
-                  "fontSize": "15.0pt (20px)",
-                  "fontWeight": "normal",
-                  "messageKey": "bgImage",
-                  "expectedContrastRatio": "4.5:1"
-                },
-                "relatedNodes": [
-                  {
-                    "html": "<select class=\"rounded-pill fs-5 form-select\" id=\"continent\" aria-label=\"Search other foreign ladies\">",
-                    "target": [
-                      "#continent"
-                    ]
-                  }
-                ],
-                "impact": "serious",
-                "message": "Element's background color could not be determined due to a background image",
-                "selector": "#continent"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "serious",
-            "html": "<select class=\"rounded-pill fs-5 form-select\" id=\"continent\" aria-label=\"Search other foreign ladies\">",
-            "target": [
-              "#continent"
-            ],
-            "failureSummary": "Fix any of the following:\n  Element's background color could not be determined due to a background image",
-            "selector": "#continent"
-          }
-        ]
-      },
-      {
-        "id": "duplicate-id-aria",
-        "impact": "critical",
-        "tags": [
-          "cat.parsing",
-          "wcag2a",
-          "wcag412",
-          "EN-301-549",
-          "EN-9.4.1.2",
-          "RGAAv4",
-          "RGAA-8.2.1"
-        ],
-        "description": "Ensure every id attribute value used in ARIA and in labels is unique",
-        "help": "IDs used in ARIA and labels must be unique",
-        "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/duplicate-id-aria?application=playwright",
-        "nodes": [
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "keywords",
-                "relatedNodes": [
-                  {
-                    "html": "<div id=\"keywords\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\" style=\"height: 0px;\"><div class=\"accordion-body\"><p>Enter hobbies, interests, sports, job, hair color, etc.</p><input type=\"text\" name=\"kwords[]\"></div></div>",
-                    "target": [
-                      "#sidebar-search-mobile > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(1) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: keywords",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(1) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<div id=\"keywords\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\" style=\"height: 0px;\"><div class=\"accordion-body\"><p>Enter hobbies, interests, sports, job, hair color, etc.</p><input type=\"text\" name=\"kwords[]\"></div></div>",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(1) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: keywords",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(1) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "children",
-                "relatedNodes": [
-                  {
-                    "html": "<div id=\"children\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\" style=\"height: 0px;\">",
-                    "target": [
-                      "#sidebar-search-mobile > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(2) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: children",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(2) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<div id=\"children\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\" style=\"height: 0px;\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(2) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: children",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(2) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "tour_region",
-                "relatedNodes": [
-                  {
-                    "html": "<div id=\"tour_region\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-                    "target": [
-                      "#sidebar-search-mobile > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(3) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: tour_region",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(3) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<div id=\"tour_region\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(3) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: tour_region",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(3) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "religion",
-                "relatedNodes": [
-                  {
-                    "html": "<div id=\"religion\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-                    "target": [
-                      "#sidebar-search-mobile > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(4) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: religion",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(4) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<div id=\"religion\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(4) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: religion",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(4) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "zodiac",
-                "relatedNodes": [
-                  {
-                    "html": "<div id=\"zodiac\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-                    "target": [
-                      "#sidebar-search-mobile > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(5) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: zodiac",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(5) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<div id=\"zodiac\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(5) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: zodiac",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(5) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "horoscope",
-                "relatedNodes": [
-                  {
-                    "html": "<div id=\"horoscope\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-                    "target": [
-                      "#sidebar-search-mobile > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(6) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: horoscope",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(6) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<div id=\"horoscope\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(6) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: horoscope",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(6) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "english",
-                "relatedNodes": [
-                  {
-                    "html": "<div id=\"english\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-                    "target": [
-                      "#sidebar-search-mobile > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(7) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: english",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(7) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<div id=\"english\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(7) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: english",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(7) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "smoke",
-                "relatedNodes": [
-                  {
-                    "html": "<div id=\"smoke\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-                    "target": [
-                      "#sidebar-search-mobile > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(8) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: smoke",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(8) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<div id=\"smoke\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(8) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: smoke",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(8) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-          },
-          {
-            "any": [
-              {
-                "id": "duplicate-id-aria",
-                "data": "drinking",
-                "relatedNodes": [
-                  {
-                    "html": "<div id=\"drinking\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-                    "target": [
-                      "#sidebar-search-mobile > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(9) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-                    ]
-                  }
-                ],
-                "impact": "critical",
-                "message": "Document has multiple elements referenced with ARIA with the same id attribute: drinking",
-                "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(9) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-              }
-            ],
-            "all": [],
-            "none": [],
-            "impact": "critical",
-            "html": "<div id=\"drinking\" class=\"accordion-collapse collapse\" data-bs-parent=\"#accordion\" aria-expanded=\"false\">",
-            "target": [
-              ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(9) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-            ],
-            "failureSummary": "Fix any of the following:\n  Document has multiple elements referenced with ARIA with the same id attribute: drinking",
-            "selector": ".sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(9) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]"
-          }
-        ]
-      }
-    ],
-    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 4\nTotal Incomplete: 2\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. button-name - critical Impact\n   Description: Ensure buttons have discernible text\n   Help: Buttons must have discernible text\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/button-name?application=playwright\n   Affected Elements (2):\n     1. .d-md-flex > button:nth-child(1)\n        Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <button disabled=\"\"><i class=\"fa-solid fa-circle-arrow-left\"></i></button>\n     2. .d-md-flex > button:nth-child(3)\n        Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <button><i class=\"fa-solid fa-circle-arrow-right\"></i></button>\n\n\n2. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. .header-right-nav\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <nav class=\"header-right-nav pt-3\">\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n\n4. select-name - critical Impact\n   Description: Ensure select element has an accessible name\n   Help: Select element must have an accessible name\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/select-name?application=playwright\n   Affected Elements (1):\n     1. .sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm\n        Fix any of the following:\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"\n        HTML: <select class=\"form-select form-select-sm rounded-pill fc-right\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. color-contrast\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Elements to Review (6):\n     1. .sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(1) > .fc-left.form-select[aria-label=\"Min Age\"]\n     2. .sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(2) > .fc-right.form-select[aria-label=\"Max Age\"]\n     3. .sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .pb-2.col-md-6.col-lg-6:nth-child(4) > .fc-left.form-select[aria-label=\"Min weight\"]\n     4. .sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .col-md-6.col-lg-6:nth-child(5) > .fc-right.form-select[aria-label=\"Max weight\"]\n     5. .sidebar > form[enctype=\"multipart/form-data\"] > .fl_search > .quicksearch-box > .row > .p-2.col-md-12.col-lg-12 > .fc-right.form-select.form-select-sm\n     6. #continent\n\n\n2. duplicate-id-aria\n   Description: Ensure every id attribute value used in ARIA and in labels is unique\n   Elements to Review (9):\n     1. .sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(1) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]\n     2. .sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(2) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]\n     3. .sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(3) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]\n     4. .sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(4) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]\n     5. .sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(5) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]\n     6. .sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(6) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]\n     7. .sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(7) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]\n     8. .sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(8) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]\n     9. .sidebar > form[enctype=\"multipart/form-data\"] > .accordion.accordion-flush > .accordion-item.mx-2.my-3:nth-child(9) > .accordion-collapse.collapse[data-bs-parent=\"#accordion\"]\n\n"
+    "incomplete": [],
+    "formattedReport": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ✅ PASSED\nTotal Violations: 2\nTotal Incomplete: 0\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-one-main - moderate Impact\n   Description: Ensure the document has a main landmark\n   Help: Document should have one main landmark\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-one-main?application=playwright\n   Affected Elements (1):\n     1. html\n        Fix all of the following:\n  Document does not have a main landmark\n        HTML: <html lang=\"en\">\n\n\n2. page-has-heading-one - moderate Impact\n   Description: Ensure that the page, or at least one of its frames contains a level-one heading\n   Help: Page should contain a level-one heading\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/page-has-heading-one?application=playwright\n   Affected Elements (1):\n     1. html\n        Fix all of the following:\n  Page must have a level-one heading\n        HTML: <html lang=\"en\">\n\n"
   },
   "gtm": {
-    "hasGTM": true,
-    "containerId": "GTM-PRVKPPP2",
+    "hasGTM": false,
+    "containerId": null,
     "hasLPTrackScript": true,
-    "message": "GTM found (GTM-PRVKPPP2). LP Track Script: Present",
+    "message": "GTM not found. LP Track Script: Present",
     "details": {
       "scriptFound": true,
       "gtmJsLoaded": true,
       "dataLayerExists": true,
       "dataLayerPushFound": true,
       "lpTrackScriptFound": true,
-      "verificationStatus": "GTM Verified",
+      "verificationStatus": "GTM Missing",
       "debugInfo": {
         "htmlContainsGoogleTagManager": true,
         "gtmPatternsFound": [
-          "GTM-PRVKPPP2",
-          "GTM-PRVKPPP2",
-          "GTM-PRVKPPP2",
-          "gtm-form"
+          "GTM-PRVKPPP2"
         ],
-        "noscriptMatchFound": true,
-        "searchMethod": "script-src",
-        "gtmScriptsFound": 2
+        "noscriptMatchFound": false,
+        "searchMethod": "none",
+        "gtmScriptsFound": 0
       }
     }
   },
@@ -941,6 +174,8 @@
   },
   "error": true,
   "errorMessage": "\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m",
-  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:110:36",
-  "testFailed": true
+  "errorStack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m2\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\url-audit.spec.ts:275:38",
+  "testFailed": true,
+  "partialResults": true,
+  "checkErrors": {}
 }

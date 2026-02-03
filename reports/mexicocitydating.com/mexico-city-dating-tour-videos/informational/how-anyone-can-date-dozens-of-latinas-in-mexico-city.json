@@ -1,11 +1,6 @@
 {
-<<<<<<< HEAD:reports/mexicocitydating.com/mexico-city-dating-tour-videos/informational/how-anyone-can-date-dozens-of-latinas-in-mexico-city.json
   "url": "https://mexicocitydating.com/mexico-city-dating-tour-videos/informational/how-anyone-can-date-dozens-of-latinas-in-mexico-city.html",
   "timestamp": "2026-01-08T07:29:13.158Z",
-=======
-  "url": "https://mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/youll-never-meet-mexican-women-faster-cdmx-speed-dating.html",
-  "timestamp": "2026-01-08T07:30:34.628Z",
->>>>>>> c1:reports/mexicocitydating.com/mexico-city-dating-tour-videos/testimonial/youll-never-meet-mexican-women-faster-cdmx-speed-dating.json
   "summary": {
     "overallStatus": "failed",
     "seoPassed": false,
@@ -158,9 +153,7 @@
             "none": [],
             "impact": "critical",
             "html": "<button class=\"fc-megamenu\" type=\"button\" onclick=\"openNav()\">",
-            "target": [
-              ".fc-megamenu"
-            ],
+            "target": [".fc-megamenu"],
             "failureSummary": "Fix any of the following:\n  Element does not have inner text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute\n  Element does not have an implicit (wrapped) <label>\n  Element does not have an explicit <label>\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
             "selector": ".fc-megamenu"
           }
@@ -227,9 +220,7 @@
             "none": [],
             "impact": "serious",
             "html": "<iframe width=\"640\" height=\"480\" allowfullscreen=\"true\" autoplay=\"false\" disablekbcontrols=\"false\" enableiframeapi=\"false\" endtime=\"0\" ivloadpolicy=\"0\" loop=\"false\" modestbranding=\"false\" src=\"https://www.youtube-nocookie.com/embed/lse-bHZIdLs?controls=0\" start=\"0\"></iframe>",
-            "target": [
-              "iframe[width=\"640\"]"
-            ],
+            "target": ["iframe[width=\"640\"]"],
             "failureSummary": "Fix any of the following:\n  Element has no title attribute\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element's default semantics were not overridden with role=\"none\" or role=\"presentation\"",
             "selector": "iframe[width=\"640\"]"
           }
@@ -238,10 +229,7 @@
       {
         "id": "landmark-unique",
         "impact": "moderate",
-        "tags": [
-          "cat.semantics",
-          "best-practice"
-        ],
+        "tags": ["cat.semantics", "best-practice"],
         "description": "Ensure landmarks are unique",
         "help": "Landmarks should have a unique role or role/label/title (i.e. accessible name) combination",
         "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright",
@@ -257,10 +245,7 @@
                 "relatedNodes": [
                   {
                     "html": "<div dir=\"ltr\" role=\"main\" data-lc-id=\"0\" class=\"css-1yzzujv e1rkp0hl1\">",
-                    "target": [
-                      "#chat-widget-minimized",
-                      ".css-1yzzujv"
-                    ]
+                    "target": ["#chat-widget-minimized", ".css-1yzzujv"]
                   }
                 ],
                 "impact": "moderate",
@@ -272,9 +257,7 @@
             "none": [],
             "impact": "moderate",
             "html": "<main class=\"midcontarea container mx-auto\">",
-            "target": [
-              "main"
-            ],
+            "target": ["main"],
             "failureSummary": "Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable",
             "selector": "main"
           }
@@ -352,9 +335,7 @@
             ],
             "impact": "serious",
             "html": "<a href=\"#\" role=\"button\" data-bs-toggle=\"modal\" data-bs-target=\"#searchInfoModal\" class=\"go-btn\">",
-            "target": [
-              ".go-btn"
-            ],
+            "target": [".go-btn"],
             "failureSummary": "Fix all of the following:\n  Element is in tab order and does not have accessible text\n\nFix any of the following:\n  Element does not have text that is visible to screen readers\n  aria-label attribute does not exist or is empty\n  aria-labelledby attribute does not exist, references elements that do not exist or references elements that are empty\n  Element has no title attribute",
             "selector": ".go-btn"
           }
@@ -363,12 +344,7 @@
       {
         "id": "region",
         "impact": "moderate",
-        "tags": [
-          "cat.keyboard",
-          "best-practice",
-          "RGAAv4",
-          "RGAA-9.2.1"
-        ],
+        "tags": ["cat.keyboard", "best-practice", "RGAAv4", "RGAA-9.2.1"],
         "description": "Ensure all page content is contained by landmarks",
         "help": "All page content should be contained by landmarks",
         "helpUrl": "https://dequeuniversity.com/rules/axe/4.11/region?application=playwright",
@@ -390,9 +366,7 @@
             "none": [],
             "impact": "moderate",
             "html": "<div class=\"col-11 p-0\">",
-            "target": [
-              ".col-11"
-            ],
+            "target": [".col-11"],
             "failureSummary": "Fix any of the following:\n  Some page content is not contained by landmarks",
             "selector": ".col-11"
           }
@@ -426,9 +400,7 @@
                   "role": null,
                   "nodeName": "div",
                   "messageKey": "noRoleSingular",
-                  "prohibited": [
-                    "aria-label"
-                  ]
+                  "prohibited": ["aria-label"]
                 },
                 "relatedNodes": [],
                 "impact": "serious",
@@ -437,10 +409,7 @@
             ],
             "impact": "serious",
             "html": "<div class=\"html5-video-player y...\" tabindex=\"-1\" id=\"movie_player\" data-version=\"/s/player/b75a8e80/p...\" aria-label=\"YouTube Video Player\">",
-            "target": [
-              "iframe[width=\"640\"]",
-              "#movie_player"
-            ],
+            "target": ["iframe[width=\"640\"]", "#movie_player"],
             "failureSummary": "Fix all of the following:\n  aria-label attribute is not well supported on a div with no valid role attribute.",
             "selector": "iframe[width=\"640\"] #movie_player"
           }
@@ -461,11 +430,7 @@
       "verificationStatus": "Script tag found, gtm.js loaded, dataLayer exists, dataLayer push found",
       "debugInfo": {
         "htmlContainsGoogleTagManager": true,
-        "gtmPatternsFound": [
-          "GTM-N3934XR2",
-          "GTM-N3934XR2",
-          "GTM-N3934XR2"
-        ],
+        "gtmPatternsFound": ["GTM-N3934XR2", "GTM-N3934XR2", "GTM-N3934XR2"],
         "noscriptMatchFound": true,
         "searchMethod": "script-src",
         "gtmScriptsFound": 2

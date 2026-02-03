@@ -1,2756 +1,2459 @@
 # PageSpeed Insights Automation Report
 
-*Generated on: 2026-01-16 15:15:37*
+*Generated on: 2026-01-29 16:00:21*
 
-## Site: https://medellinsingles.com/medellin-women-videos/tours/dating-medellin-women-youre-signing.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/kind-men-slavic-women-like.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **68** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fdating-medellin-women-youre-signing.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fdating-medellin-women-youre-signing.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/fast-qanda-showing-latinas-true-colors.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **69** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Ffast-qanda-showing-latinas-true-colors.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Ffast-qanda-showing-latinas-true-colors.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.8 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/go-loco-dating-colombian-women-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **67** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fgo-loco-dating-colombian-women-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fgo-loco-dating-colombian-women-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/magic-of-medellin-colombian-women-catch-feelings.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **50** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmagic-of-medellin-colombian-women-catch-feelings.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmagic-of-medellin-colombian-women-catch-feelings.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.0 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/magical-night-latinas-magic-city-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmagical-night-latinas-magic-city-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmagical-night-latinas-magic-city-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/many-beautiful-medellin-latinas.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmany-beautiful-medellin-latinas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmany-beautiful-medellin-latinas.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/medellin-changed-life-dating-latinas-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **54** | **62** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmedellin-changed-life-dating-latinas-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmedellin-changed-life-dating-latinas-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.6 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/medellin-dating-hack-successfully-date-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmedellin-dating-hack-successfully-date-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmedellin-dating-hack-successfully-date-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/meeting-200-women-in-medellin-colombia-never-a-disappointment.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmeeting-200-women-in-medellin-colombia-never-a-disappointment.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmeeting-200-women-in-medellin-colombia-never-a-disappointment.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/millions-of-medellin-women-are-dating-foreigners-in-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **71** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmillions-of-medellin-women-are-dating-foreigners-in-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmillions-of-medellin-women-are-dating-foreigners-in-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.2 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/must-see-destinations-in-medellin-colombia-travel-vlog.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmust-see-destinations-in-medellin-colombia-travel-vlog.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmust-see-destinations-in-medellin-colombia-travel-vlog.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/my-medellin-dating-adventure-solo-travel-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **61** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmy-medellin-dating-adventure-solo-travel-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fmy-medellin-dating-adventure-solo-travel-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.3 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/the-right-way-to-enjoy-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fthe-right-way-to-enjoy-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fthe-right-way-to-enjoy-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/too-many-wife-material-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **51** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Ftoo-many-wife-material-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Ftoo-many-wife-material-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.4 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/whats-great-medellin-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **50** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fwhats-great-medellin-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fwhats-great-medellin-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.3 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/tours/yeah-colombia-girls-want-better-lives.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fyeah-colombia-girls-want-better-lives.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftours%2Fyeah-colombia-girls-want-better-lives.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **72** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2F&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2F&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.0 s | 1.4 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/4-hrs-in-colombia-expanded-my-dating-options.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **71** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2F4-hrs-in-colombia-expanded-my-dating-options.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2F4-hrs-in-colombia-expanded-my-dating-options.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/cant-stay-away-why-guys-love-colombian-solo-travel.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **59** | **71** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fcant-stay-away-why-guys-love-colombian-solo-travel.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fcant-stay-away-why-guys-love-colombian-solo-travel.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/disappointed-colombian-women-over-few-foreign-men.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **70** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fdisappointed-colombian-women-over-few-foreign-men.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fdisappointed-colombian-women-over-few-foreign-men.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/discovering-colombia-dating-latinas-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fdiscovering-colombia-dating-latinas-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fdiscovering-colombia-dating-latinas-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.2 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/dont-wait-face-to-face-with-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **34** | **56** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fdont-wait-face-to-face-with-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fdont-wait-face-to-face-with-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.7 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/i-met-many-gorgeous-latina-women-from-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fi-met-many-gorgeous-latina-women-from-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fi-met-many-gorgeous-latina-women-from-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/international-dating-the-best-part-of-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **52** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Finternational-dating-the-best-part-of-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Finternational-dating-the-best-part-of-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.0 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/just-go-americans-advise-men-seeking-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fjust-go-americans-advise-men-seeking-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fjust-go-americans-advise-men-seeking-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.4 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/latin-ultimate-destination-dating-100-hot-colombian.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Flatin-ultimate-destination-dating-100-hot-colombian.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Flatin-ultimate-destination-dating-100-hot-colombian.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/medellin-dating-dos-and-donts-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **55** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fmedellin-dating-dos-and-donts-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fmedellin-dating-dos-and-donts-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/met-160-colombian-women-trip-medellin-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fmet-160-colombian-women-trip-medellin-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fmet-160-colombian-women-trip-medellin-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/reality-vs-youtube-dating-colombian-girls-irl.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **62** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Freality-vs-youtube-dating-colombian-girls-irl.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Freality-vs-youtube-dating-colombian-girls-irl.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/things-i-ignored-to-date-better-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **62** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fthings-i-ignored-to-date-better-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fthings-i-ignored-to-date-better-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.4 s | 1.4 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/time-online-dating-colombian-women-work.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Ftime-online-dating-colombian-women-work.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Ftime-online-dating-colombian-women-work.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/unexpected-love-dating-colombian-women-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **72** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Funexpected-love-dating-colombian-women-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Funexpected-love-dating-colombian-women-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/what-no-man-admits-about-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **70** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fwhat-no-man-admits-about-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fwhat-no-man-admits-about-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.9 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/worth-every-mile-americans-date-feminine-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **46** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fworth-every-mile-americans-date-feminine-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fworth-every-mile-americans-date-feminine-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 2.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/youre-not-used-medellin-latina-mindset.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fyoure-not-used-medellin-latina-mindset.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2Fyoure-not-used-medellin-latina-mindset.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/testimonial/
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **72** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2F&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Ftestimonial%2F&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.5 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/24-yo-latina-homebody-wants-you-in-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **69** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F24-yo-latina-homebody-wants-you-in-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F24-yo-latina-homebody-wants-you-in-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/33-yo-colombiana-craves-calm-foreign-boyfriend.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **64** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F33-yo-colombiana-craves-calm-foreign-boyfriend.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F33-yo-colombiana-craves-calm-foreign-boyfriend.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/37-yo-colombianas-dating-deal-breakers.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **40** | **62** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F37-yo-colombianas-dating-deal-breakers.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F37-yo-colombianas-dating-deal-breakers.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.6 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/48-yo-latinas-3-dating-demands.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **64** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F48-yo-latinas-3-dating-demands.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F48-yo-latinas-3-dating-demands.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.0 s | 1.4 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/are-colombian-girls-wife-material.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fare-colombian-girls-wife-material.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fare-colombian-girls-wife-material.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/are-colombian-women-too-old-school-for-americans.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **87** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fare-colombian-women-too-old-school-for-americans.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fare-colombian-women-too-old-school-for-americans.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/are-you-what-colombian-women-want.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **67** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fare-you-what-colombian-women-want.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fare-you-what-colombian-women-want.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/best-date-spots-in-medellin-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **62** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fbest-date-spots-in-medellin-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fbest-date-spots-in-medellin-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.8 s | 1.0 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/bquilla-bound-colombian-girls-breakdown-barranquilla-dating.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fbquilla-bound-colombian-girls-breakdown-barranquilla-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fbquilla-bound-colombian-girls-breakdown-barranquilla-dating.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/can-23-yo-colombian-career-woman-balance-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **54** | **64** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcan-23-yo-colombian-career-woman-balance-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcan-23-yo-colombian-career-woman-balance-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.1 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/can-date-colombian-girls-safely.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **51** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcan-date-colombian-girls-safely.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcan-date-colombian-girls-safely.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.4 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/can-offer-wife-colombian-girls-react.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcan-offer-wife-colombian-girls-react.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcan-offer-wife-colombian-girls-react.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.4 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/can-you-trust-your-colombian-women-matchmakers.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **64** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcan-you-trust-your-colombian-women-matchmakers.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcan-you-trust-your-colombian-women-matchmakers.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.9 s | 1.4 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/choosing-date-among-50-gorgeous-latinas.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fchoosing-date-among-50-gorgeous-latinas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fchoosing-date-among-50-gorgeous-latinas.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.8 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/colombian-girls-flee-dating-apps-meet-guys-face-face.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **49** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-girls-flee-dating-apps-meet-guys-face-face.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-girls-flee-dating-apps-meet-guys-face-face.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.6 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/colombian-girls-humbled-affection-colombia-dating.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **53** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-girls-humbled-affection-colombia-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-girls-humbled-affection-colombia-dating.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.2 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/colombian-girls-tackle-latina-dating-stereotypes-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-girls-tackle-latina-dating-stereotypes-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-girls-tackle-latina-dating-stereotypes-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/colombian-nurse-seeks-love-that-lasts.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **74** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-nurse-seeks-love-that-lasts.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-nurse-seeks-love-that-lasts.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/colombian-women-40-want-everyday-medellin-latinas.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-40-want-everyday-medellin-latinas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-40-want-everyday-medellin-latinas.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.2 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/colombian-women-crave-equality-not-control.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **50** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-crave-equality-not-control.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-crave-equality-not-control.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/colombian-women-crave-for-your-attention.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **54** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-crave-for-your-attention.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-crave-for-your-attention.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/colombian-women-prefer-dating-passport-bros.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-prefer-dating-passport-bros.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-prefer-dating-passport-bros.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/colombian-women-reveal-biggest-mistakes-men-make-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **71** | **57** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-reveal-biggest-mistakes-men-make-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fcolombian-women-reveal-biggest-mistakes-men-make-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/dating-70-colombian-women-month-2021.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-70-colombian-women-month-2021.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-70-colombian-women-month-2021.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/dating-colombian-girls-without-apps-single-latinas-explain.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **74** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-colombian-girls-without-apps-single-latinas-explain.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-colombian-girls-without-apps-single-latinas-explain.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.2 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/dating-colombian-women-effortlessly.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **36** | **57** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-colombian-women-effortlessly.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-colombian-women-effortlessly.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.2 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/dating-colombian-women-must-know-deal-breakers.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **48** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-colombian-women-must-know-deal-breakers.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-colombian-women-must-know-deal-breakers.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.3 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/dating-latinas-how-colombian-women-treat-foreign-men.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **59** | **67** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-latinas-how-colombian-women-treat-foreign-men.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-latinas-how-colombian-women-treat-foreign-men.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.3 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/dating-sexy-latinas-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **84** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-sexy-latinas-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdating-sexy-latinas-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/delete-dating-apps-colombian-girls-find-safer-options.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdelete-dating-apps-colombian-girls-find-safer-options.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdelete-dating-apps-colombian-girls-find-safer-options.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 1.0 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/do-colombian-women-find-zero-good-guys-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdo-colombian-women-find-zero-good-guys-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdo-colombian-women-find-zero-good-guys-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/do-your-local-women-sound-like-her.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdo-your-local-women-sound-like-her.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdo-your-local-women-sound-like-her.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/dont-be-nervous-dating-colombian-women-confidently.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdont-be-nervous-dating-colombian-women-confidently.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdont-be-nervous-dating-colombian-women-confidently.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/dont-get-stuck-online-real-deal-dating-latinas-in-medellin-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **37** | **67** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdont-get-stuck-online-real-deal-dating-latinas-in-medellin-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdont-get-stuck-online-real-deal-dating-latinas-in-medellin-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/dont-wait-dating-in-medellin-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdont-wait-dating-in-medellin-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fdont-wait-dating-in-medellin-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/english-speaking-colombian-woman-wants-you-to-move-to-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **38** | **62** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fenglish-speaking-colombian-woman-wants-you-to-move-to-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fenglish-speaking-colombian-woman-wants-you-to-move-to-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.7 s | 1.0 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/exposed-why-colombian-women-join-foreign-dating-sites.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **69** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fexposed-why-colombian-women-join-foreign-dating-sites.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fexposed-why-colombian-women-join-foreign-dating-sites.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/foreign-dating-in-medellin-colombia-keep-your-common-sense.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **54** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fforeign-dating-in-medellin-colombia-keep-your-common-sense.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fforeign-dating-in-medellin-colombia-keep-your-common-sense.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/free-colombian-dating-sites-can-cost-you-everything.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Ffree-colombian-dating-sites-can-cost-you-everything.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Ffree-colombian-dating-sites-can-cost-you-everything.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.0 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/get-help-dating-latina-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **46** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fget-help-dating-latina-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fget-help-dating-latina-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.5 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/get-know-colombian-women-maria-part-1.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **62** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fget-know-colombian-women-maria-part-1.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fget-know-colombian-women-maria-part-1.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/hardest-dating-decision-colombia-many-latinas.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fhardest-dating-decision-colombia-many-latinas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fhardest-dating-decision-colombia-many-latinas.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.4 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/homebody-colombiana-opens-heart-to-foreign-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **69** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fhomebody-colombiana-opens-heart-to-foreign-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fhomebody-colombiana-opens-heart-to-foreign-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/how-colombian-girls-act-after-marriage.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fhow-colombian-girls-act-after-marriage.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fhow-colombian-girls-act-after-marriage.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.5 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/how-to-turn-down-300-colombian-women-gently.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fhow-to-turn-down-300-colombian-women-gently.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fhow-to-turn-down-300-colombian-women-gently.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.8 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/i-pay-a-lot-colombian-women-devoted-to-dating-foreigners.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fi-pay-a-lot-colombian-women-devoted-to-dating-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fi-pay-a-lot-colombian-women-devoted-to-dating-foreigners.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/i-want-a-family-educated-colombian-women-seek-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fi-want-a-family-educated-colombian-women-seek-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fi-want-a-family-educated-colombian-women-seek-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/i-want-something-different-colombian-girls-seek-foreigners.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fi-want-something-different-colombian-girls-seek-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fi-want-something-different-colombian-girls-seek-foreigners.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/ideal-holiday-presents-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fideal-holiday-presents-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fideal-holiday-presents-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.8 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/independent-colombian-woman-seeks-foreign-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **55** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Findependent-colombian-woman-seeks-foreign-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Findependent-colombian-woman-seeks-foreign-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/interesting-questions-to-ask-single-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **64** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Finteresting-questions-to-ask-single-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Finteresting-questions-to-ask-single-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/is-colombia-safe-dating-medellin-women-as-a-foreigner.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fis-colombia-safe-dating-medellin-women-as-a-foreigner.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fis-colombia-safe-dating-medellin-women-as-a-foreigner.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.9 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/is-dating-in-colombia-a-wreckless-choice.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **61** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fis-dating-in-colombia-a-wreckless-choice.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fis-dating-in-colombia-a-wreckless-choice.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.2 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/latina-reveals-living-usa-vs-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatina-reveals-living-usa-vs-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatina-reveals-living-usa-vs-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/latina-spews-dating-truths-foreigners-colombiana-hot-mic.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **67** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatina-spews-dating-truths-foreigners-colombiana-hot-mic.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatina-spews-dating-truths-foreigners-colombiana-hot-mic.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/latina-treats-like-king-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **45** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatina-treats-like-king-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatina-treats-like-king-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/latina-urges-foreign-men-to-date-in-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **82** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatina-urges-foreign-men-to-date-in-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatina-urges-foreign-men-to-date-in-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/latinas-are-coming-to-be-with-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **43** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatinas-are-coming-to-be-with-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatinas-are-coming-to-be-with-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.2 s | 3.0 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/latinas-over-30-shift-dating-expectations.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **62** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatinas-over-30-shift-dating-expectations.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatinas-over-30-shift-dating-expectations.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/latinas-say-yes.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **42** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatinas-say-yes.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flatinas-say-yes.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.0 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/lets-together-colombian-womens-ideal-marriage.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **59** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flets-together-colombian-womens-ideal-marriage.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flets-together-colombian-womens-ideal-marriage.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/love-flows-magic-city-medellin-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flove-flows-magic-city-medellin-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flove-flows-magic-city-medellin-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/love-yourself-before-i-love-you-colombian-girl-sounds-off.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **68** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flove-yourself-before-i-love-you-colombian-girl-sounds-off.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flove-yourself-before-i-love-you-colombian-girl-sounds-off.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/lovely-30-year-old-medellin-latinas-seek-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **56** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flovely-30-year-old-medellin-latinas-seek-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Flovely-30-year-old-medellin-latinas-seek-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.0 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/make-latinas-say-yes-to-dates-with-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **67** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fmake-latinas-say-yes-to-dates-with-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fmake-latinas-say-yes-to-dates-with-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.0 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/medellin-colombia-dating-can-you-find-matches-chatting.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **48** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fmedellin-colombia-dating-can-you-find-matches-chatting.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fmedellin-colombia-dating-can-you-find-matches-chatting.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.9 s | 2.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/medellin-latina-wants-a-man-who-loves-himself.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **59** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fmedellin-latina-wants-a-man-who-loves-himself.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fmedellin-latina-wants-a-man-who-loves-himself.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.4 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/more-medellin-women-are-eager-to-join-international-dating.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **54** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fmore-medellin-women-are-eager-to-join-international-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fmore-medellin-women-are-eager-to-join-international-dating.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/newly-single-colombiana-reacts-dating-foreigners.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **64** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fnewly-single-colombiana-reacts-dating-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fnewly-single-colombiana-reacts-dating-foreigners.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/no-option-colombian-girls-ready-marriage.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **60** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fno-option-colombian-girls-ready-marriage.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fno-option-colombian-girls-ready-marriage.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.2 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/one-night-in-medellin-100s-of-colombian-women-speed-dating.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **41** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fone-night-in-medellin-100s-of-colombian-women-speed-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fone-night-in-medellin-100s-of-colombian-women-speed-dating.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.7 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/only-if-youre-honest-colombian-latinas-dating-foreigners.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **71** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fonly-if-youre-honest-colombian-latinas-dating-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fonly-if-youre-honest-colombian-latinas-dating-foreigners.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.2 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/problem-colombian-women-dating-dilemma.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **64** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fproblem-colombian-women-dating-dilemma.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fproblem-colombian-women-dating-dilemma.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/right-passport-bros.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **51** | **64** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fright-passport-bros.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fright-passport-bros.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.2 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/sapiosexual-colombiana-on-first-time-dating-foreigners.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fsapiosexual-colombiana-on-first-time-dating-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fsapiosexual-colombiana-on-first-time-dating-foreigners.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.9 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/secure-second-dates-with-colombian-women-everytime.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **61** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fsecure-second-dates-with-colombian-women-everytime.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fsecure-second-dates-with-colombian-women-everytime.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/serving-him-is-my-love-language.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **41** | **56** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fserving-him-is-my-love-language.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fserving-him-is-my-love-language.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.7 s | 1.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/sexiest-single-women-in-medellin-colombia.html
-
-Error: Could not fetch data.
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/shes-looking-real-man.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **53** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fshes-looking-real-man.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fshes-looking-real-man.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 1.0 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/should-you-believe-it-latinas-on-barranquilla-dating-hype.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **67** | **60** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fshould-you-believe-it-latinas-on-barranquilla-dating-hype.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fshould-you-believe-it-latinas-on-barranquilla-dating-hype.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.4 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/simple-dating-standards-colombian-women-men-exceed.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fsimple-dating-standards-colombian-women-men-exceed.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fsimple-dating-standards-colombian-women-men-exceed.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.2 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/speed-dating-colombian-women-post-pandemic.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **67** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fspeed-dating-colombian-women-post-pandemic.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fspeed-dating-colombian-women-post-pandemic.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.2 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/strong-and-independent-colombian-women-heard-about-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **45** | **61** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fstrong-and-independent-colombian-women-heard-about-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fstrong-and-independent-colombian-women-heard-about-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.4 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/the-best-way-to-date-a-latina.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fthe-best-way-to-date-a-latina.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fthe-best-way-to-date-a-latina.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/this-man-is-her-weakness-colombiana-hot-mic.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **55** | **78** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fthis-man-is-her-weakness-colombiana-hot-mic.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fthis-man-is-her-weakness-colombiana-hot-mic.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.2 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/two-types-which-colombian-girl-matches-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Ftwo-types-which-colombian-girl-matches-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Ftwo-types-which-colombian-girl-matches-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/updated-dating-profiles-of-single-latinas-under-30.html
-
-Error: Could not fetch data.
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/want-pamper-medellin-latinas-long-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **50** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwant-pamper-medellin-latinas-long-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwant-pamper-medellin-latinas-long-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.2 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/way-colombian-womens-hearts-dance.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **67** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fway-colombian-womens-hearts-dance.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fway-colombian-womens-hearts-dance.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.4 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/what-attracts-sexy-latinas-medellin-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **50** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhat-attracts-sexy-latinas-medellin-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhat-attracts-sexy-latinas-medellin-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.4 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/what-pushed-afro-latina-to-date-outside-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhat-pushed-afro-latina-to-date-outside-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhat-pushed-afro-latina-to-date-outside-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.2 s | 0.9 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/where-to-take-colombian-women-on-second-dates.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **67** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhere-to-take-colombian-women-on-second-dates.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhere-to-take-colombian-women-on-second-dates.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/whos-the-better-bachelor-colombian-women-tell-all.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **70** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhos-the-better-bachelor-colombian-women-tell-all.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhos-the-better-bachelor-colombian-women-tell-all.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.8 s | 1.3 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/why-colombian-women-choose-to-date-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **67** | **54** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhy-colombian-women-choose-to-date-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhy-colombian-women-choose-to-date-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/why-colombian-women-want-foreigners.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **82** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhy-colombian-women-want-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwhy-colombian-women-want-foreigners.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.2 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/will-chivalry-work-dating-latinas-online.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **53** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwill-chivalry-work-dating-latinas-online.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwill-chivalry-work-dating-latinas-online.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.7 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/wing-women-medellin-colombian-dating.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **45** | **47** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwing-women-medellin-colombian-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fwing-women-medellin-colombian-dating.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.4 s | 2.5 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/youll-delete-your-dating-app-immediately-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **55** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fyoull-delete-your-dating-app-immediately-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fyoull-delete-your-dating-app-immediately-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.6 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/youll-get-100-colombiana-pledges-love-to-foreigner.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **59** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fyoull-get-100-colombiana-pledges-love-to-foreigner.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2Fyoull-get-100-colombiana-pledges-love-to-foreigner.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.4 s | 1.7 s |
-
-## Site: https://medellinsingles.com/medellin-women-videos/informational/
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **72** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fmedellin-women-videos%2Finformational%2F&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.4 s | 1.4 s |
-
-## Site: https://medellinsingles.com/dating/love-advice-how-to-comfort-a-heartbroken-woman.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **74** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Flove-advice-how-to-comfort-a-heartbroken-woman.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Flove-advice-how-to-comfort-a-heartbroken-woman.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.4 s |
-
-## Site: https://medellinsingles.com/dating/win-medellin-womans-heart.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **89** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwin-medellin-womans-heart.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwin-medellin-womans-heart.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.7 s | 1.5 s |
-
-## Site: https://medellinsingles.com/dating/why-experience-mature-dating-with-latinas.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **67** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-experience-mature-dating-with-latinas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-experience-mature-dating-with-latinas.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.7 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/why-date-latina-women-from-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **54** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-date-latina-women-from-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-date-latina-women-from-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.6 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/why-colombian-women-prefer-older-men.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **83** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-colombian-women-prefer-older-men.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-colombian-women-prefer-older-men.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.5 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/why-colombian-women-overlook-physical-appearance.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **71** | **86** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-colombian-women-overlook-physical-appearance.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-colombian-women-overlook-physical-appearance.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.1 s | 0.9 s |
-
-## Site: https://medellinsingles.com/dating/types-of-men-latin-women-want-to-date.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **77** | **85** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ftypes-of-men-latin-women-want-to-date.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ftypes-of-men-latin-women-want-to-date.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/things-to-avoid-when-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fthings-to-avoid-when-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fthings-to-avoid-when-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.8 s |
-
-## Site: https://medellinsingles.com/dating/realistic-expectations-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **52** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Frealistic-expectations-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Frealistic-expectations-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.5 s | 1.2 s |
-
-## Site: https://medellinsingles.com/dating/planning-your-first-date-with-a-colombian-woman.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fplanning-your-first-date-with-a-colombian-woman.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fplanning-your-first-date-with-a-colombian-woman.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/online-dating-understanding-the-ins-and-outs.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **67** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fonline-dating-understanding-the-ins-and-outs.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fonline-dating-understanding-the-ins-and-outs.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/online-dating-better-option.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **47** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fonline-dating-better-option.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fonline-dating-better-option.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/attract-the-interest-of-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **54** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fattract-the-interest-of-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fattract-the-interest-of-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.4 s |
-
-## Site: https://medellinsingles.com/dating/best-time-to-meet-women-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **71** | **73** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbest-time-to-meet-women-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbest-time-to-meet-women-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.7 s | 1.8 s |
-
-## Site: https://medellinsingles.com/dating/bounce-back-with-latinas.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **86** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbounce-back-with-latinas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbounce-back-with-latinas.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/date-ideas-colombian-women-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **89** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdate-ideas-colombian-women-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdate-ideas-colombian-women-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.6 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/dating-colombian-women-fails.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **77** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-colombian-women-fails.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-colombian-women-fails.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/dating-tips-minimize-overthinking.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **69** | **73** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-tips-minimize-overthinking.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-tips-minimize-overthinking.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.0 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/dating-tips-what-not-to-say.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **75** | **74** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-tips-what-not-to-say.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-tips-what-not-to-say.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/gringo-edge-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **67** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fgringo-edge-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fgringo-edge-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.5 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/group-dating-with-colombia-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fgroup-dating-with-colombia-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fgroup-dating-with-colombia-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 8.3 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/how-to-find-love-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **78** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-find-love-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-find-love-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.6 s | 1.8 s |
-
-## Site: https://medellinsingles.com/dating/how-to-have-the-best-dates.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **84** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-have-the-best-dates.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-have-the-best-dates.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
+| **Perf Score** | **54** | **74** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fkind-men-slavic-women-like.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fkind-men-slavic-women-like.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
 | Lab LCP | 6.1 s | 1.6 s |
 
-## Site: https://medellinsingles.com/dating/love-or-lust-dating-colombian-women.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/makes-woman-attractive-odessa-women.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **62** | **84** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Flove-or-lust-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Flove-or-lust-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.3 s | 1.6 s |
+| **Perf Score** | **63** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmakes-woman-attractive-odessa-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmakes-woman-attractive-odessa-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.1 s | 1.2 s |
 
-## Site: https://medellinsingles.com/dating/making-good-first-impressions-on-colombian-women.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/matchable-loveliest-slavic-women.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **71** | **89** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmaking-good-first-impressions-on-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmaking-good-first-impressions-on-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.9 s | 1.2 s |
+| **Perf Score** | **63** | **71** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmatchable-loveliest-slavic-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmatchable-loveliest-slavic-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.3 s | 1.7 s |
 
-## Site: https://medellinsingles.com/dating/mature-dating-guide.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/meet-ukrainian-girls-face-to-face-via-video-dating.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **73** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmature-dating-guide.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmature-dating-guide.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.7 s |
+| **Perf Score** | **50** | **75** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmeet-ukrainian-girls-face-to-face-via-video-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmeet-ukrainian-girls-face-to-face-via-video-dating.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.0 s |
 
-## Site: https://medellinsingles.com/dating/meet-women-how-to-keep-your-cool.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmeet-women-how-to-keep-your-cool.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmeet-women-how-to-keep-your-cool.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.8 s |
-
-## Site: https://medellinsingles.com/dating/things-a-colombian-woman-will-appreciate-on-valentines.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **76** | **71** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fthings-a-colombian-woman-will-appreciate-on-valentines.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fthings-a-colombian-woman-will-appreciate-on-valentines.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/most-beautiful-medellin-colombia-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **67** | **71** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmost-beautiful-medellin-colombia-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmost-beautiful-medellin-colombia-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.1 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/get-your-friends-and-family-onboard-with-your-foreign-wife.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fget-your-friends-and-family-onboard-with-your-foreign-wife.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fget-your-friends-and-family-onboard-with-your-foreign-wife.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.6 s | 1.5 s |
-
-## Site: https://medellinsingles.com/dating/dating-medellin-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **44** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-medellin-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-medellin-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.1 s | 1.2 s |
-
-## Site: https://medellinsingles.com/dating/dating-colombian-woman.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-colombian-woman.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-colombian-woman.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.8 s | 1.4 s |
-
-## Site: https://medellinsingles.com/dating/beautiful-women-in-medellin-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbeautiful-women-in-medellin-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbeautiful-women-in-medellin-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/accessorize-when-dating-a-colombian-woman.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **70** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Faccessorize-when-dating-a-colombian-woman.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Faccessorize-when-dating-a-colombian-woman.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/how-long-does-a-crush-last.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **71** | **60** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-long-does-a-crush-last.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-long-does-a-crush-last.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.7 s | 2.1 s |
-
-## Site: https://medellinsingles.com/dating/how-to-act-when-meeting-colombian-girls.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-act-when-meeting-colombian-girls.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-act-when-meeting-colombian-girls.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/how-to-prepare-your-home-for-your-colombian-bride.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **89** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-prepare-your-home-for-your-colombian-bride.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-prepare-your-home-for-your-colombian-bride.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.4 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/how-to-win-over-local-singles-of-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-win-over-local-singles-of-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-win-over-local-singles-of-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.5 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/learn-from-colombian-men.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **78** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Flearn-from-colombian-men.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Flearn-from-colombian-men.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/meet-single-medellin-women-online.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmeet-single-medellin-women-online.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmeet-single-medellin-women-online.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/meeting-a-single-woman-near-me.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmeeting-a-single-woman-near-me.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmeeting-a-single-woman-near-me.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.3 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/questions-to-ask-a-girl-over-text.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fquestions-to-ask-a-girl-over-text.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fquestions-to-ask-a-girl-over-text.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.8 s | 1.5 s |
-
-## Site: https://medellinsingles.com/dating/spanish-phrases-to-use-while-dating-women-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **70** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fspanish-phrases-to-use-while-dating-women-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fspanish-phrases-to-use-while-dating-women-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.9 s | 1.4 s |
-
-## Site: https://medellinsingles.com/dating/ways-to-attract-beautiful-colombian-woman.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **85** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fways-to-attract-beautiful-colombian-woman.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fways-to-attract-beautiful-colombian-woman.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/what-colombian-women-look-for-in-a-partner.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **85** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhat-colombian-women-look-for-in-a-partner.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhat-colombian-women-look-for-in-a-partner.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/why-foreign-ladies-are-a-better-catch.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **74** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-foreign-ladies-are-a-better-catch.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-foreign-ladies-are-a-better-catch.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/win-heart-of-medellin-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **83** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwin-heart-of-medellin-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwin-heart-of-medellin-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.8 s | 1.4 s |
-
-## Site: https://medellinsingles.com/dating/women-in-medellin-colombia-are-for-keeps.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwomen-in-medellin-colombia-are-for-keeps.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwomen-in-medellin-colombia-are-for-keeps.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.5 s | 1.2 s |
-
-## Site: https://medellinsingles.com/dating/immature-dating-habits-men-must-seriously-leave-behind.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fimmature-dating-habits-men-must-seriously-leave-behind.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fimmature-dating-habits-men-must-seriously-leave-behind.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 9.2 s | 1.9 s |
-
-## Site: https://medellinsingles.com/dating/how-to-approach-a-colombian-woman.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-approach-a-colombian-woman.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-approach-a-colombian-woman.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/why-should-a-man-always-make-the-first-move.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **64** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-should-a-man-always-make-the-first-move.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhy-should-a-man-always-make-the-first-move.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.3 s | 2.0 s |
-
-## Site: https://medellinsingles.com/dating/when-do-you-ask-someone-to-be-your-valentine.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhen-do-you-ask-someone-to-be-your-valentine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhen-do-you-ask-someone-to-be-your-valentine.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.8 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/how-to-get-to-know-colombian-ladies.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **49** | **87** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-get-to-know-colombian-ladies.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-get-to-know-colombian-ladies.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.9 s | 0.9 s |
-
-## Site: https://medellinsingles.com/dating/sartorial-rules-to-follow-when-dating-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fsartorial-rules-to-follow-when-dating-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fsartorial-rules-to-follow-when-dating-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.2 s | 1.8 s |
-
-## Site: https://medellinsingles.com/dating/meet-women-near-me.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **54** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmeet-women-near-me.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmeet-women-near-me.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.8 s | 1.5 s |
-
-## Site: https://medellinsingles.com/dating/date-ideas-valentines-day-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdate-ideas-valentines-day-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdate-ideas-valentines-day-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.2 s |
-
-## Site: https://medellinsingles.com/dating/a-guide-to-making-a-move-on-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **73** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fa-guide-to-making-a-move-on-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fa-guide-to-making-a-move-on-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.4 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/what-you-need-to-know-about-dating-medellin-cartagena-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **88** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhat-you-need-to-know-about-dating-medellin-cartagena-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fwhat-you-need-to-know-about-dating-medellin-cartagena-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/20th-anniversary-gift-ideas.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **53** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2F20th-anniversary-gift-ideas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2F20th-anniversary-gift-ideas.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.4 s |
-
-## Site: https://medellinsingles.com/dating/how-to-get-your-crush-to-like-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-get-your-crush-to-like-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-get-your-crush-to-like-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.6 s | 1.4 s |
-
-## Site: https://medellinsingles.com/dating/workouts-to-be-more-attractive-to-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **87** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fworkouts-to-be-more-attractive-to-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fworkouts-to-be-more-attractive-to-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/good-habits-of-women-good-advice-for-men.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fgood-habits-of-women-good-advice-for-men.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fgood-habits-of-women-good-advice-for-men.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/top-relationship-goals-for-couples.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **52** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ftop-relationship-goals-for-couples.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ftop-relationship-goals-for-couples.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.8 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/ways-to-make-a-woman-happy.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fways-to-make-a-woman-happy.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fways-to-make-a-woman-happy.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/signs-your-crush-doesnt-like-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **78** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fsigns-your-crush-doesnt-like-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fsigns-your-crush-doesnt-like-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/medellin-dating-meet-beautiful-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **74** | **82** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmedellin-dating-meet-beautiful-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmedellin-dating-meet-beautiful-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.9 s | 0.9 s |
-
-## Site: https://medellinsingles.com/dating/beauty-of-experience-discovering-fun-with-older-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbeauty-of-experience-discovering-fun-with-older-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbeauty-of-experience-discovering-fun-with-older-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.3 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/how-long-does-crush-last.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **87** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-long-does-crush-last.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-long-does-crush-last.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 0.9 s |
-
-## Site: https://medellinsingles.com/dating/first-date-outfits-guys-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **53** | **78** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ffirst-date-outfits-guys-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ffirst-date-outfits-guys-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.6 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/colombian-clothing-culture.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **71** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcolombian-clothing-culture.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcolombian-clothing-culture.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.2 s | 1.8 s |
-
-## Site: https://medellinsingles.com/dating/tired-of-being-single.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **82** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ftired-of-being-single.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ftired-of-being-single.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/guide-to-dating-beautiful-women-from-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **55** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fguide-to-dating-beautiful-women-from-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fguide-to-dating-beautiful-women-from-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.9 s | 1.4 s |
-
-## Site: https://medellinsingles.com/dating/quotes-about-starting-over-in-relationship.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **87** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fquotes-about-starting-over-in-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fquotes-about-starting-over-in-relationship.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.2 s | 1.2 s |
-
-## Site: https://medellinsingles.com/dating/colombian-women-most-beautiful-in-the-world.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **55** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcolombian-women-most-beautiful-in-the-world.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcolombian-women-most-beautiful-in-the-world.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/mistakes-men-make-on-first-date.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmistakes-men-make-on-first-date.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmistakes-men-make-on-first-date.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/signs-of-falling-in-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fsigns-of-falling-in-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fsigns-of-falling-in-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 8.3 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/signs-you-are-ready-for-relationship.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fsigns-you-are-ready-for-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fsigns-you-are-ready-for-relationship.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/discover-the-charm-and-beauty-of-medellin-colombia-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdiscover-the-charm-and-beauty-of-medellin-colombia-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdiscover-the-charm-and-beauty-of-medellin-colombia-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/how-to-reconnect-after-a-relationship-break.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **83** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-reconnect-after-a-relationship-break.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-reconnect-after-a-relationship-break.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.3 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/how-to-start-over-in-relationship.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **33** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-start-over-in-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fhow-to-start-over-in-relationship.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/ghosting-what-to-do.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fghosting-what-to-do.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fghosting-what-to-do.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.8 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/knowing-long-distance-relationship.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **66** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fknowing-long-distance-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fknowing-long-distance-relationship.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/emotional-intelligence-relationships.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **72** | **95** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Femotional-intelligence-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Femotional-intelligence-relationships.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 2.7 s | 0.6 s |
-
-## Site: https://medellinsingles.com/dating/find-one-show-love-broke.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **68** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ffind-one-show-love-broke.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ffind-one-show-love-broke.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.7 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/guilty-pleasure-leaves-wanting.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **84** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fguilty-pleasure-leaves-wanting.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fguilty-pleasure-leaves-wanting.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/latina-hits-different.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Flatina-hits-different.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Flatina-hits-different.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/muscular-men-attractive-women-want.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **86** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmuscular-men-attractive-women-want.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fmuscular-men-attractive-women-want.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.7 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/can-find-love-bottom-bottle.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcan-find-love-bottom-bottle.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcan-find-love-bottom-bottle.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.7 s | 1.3 s |
-
-## Site: https://medellinsingles.com/dating/can-love-woman-nothing-offer.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcan-love-woman-nothing-offer.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcan-love-woman-nothing-offer.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.5 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/normalize-dating-multiple-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **73** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fnormalize-dating-multiple-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fnormalize-dating-multiple-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.7 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/overcoming-betrayal.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **83** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fovercoming-betrayal.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fovercoming-betrayal.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.4 s | 1.2 s |
-
-## Site: https://medellinsingles.com/dating/understand-what-women-want-relationship.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **52** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Funderstand-what-women-want-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Funderstand-what-women-want-relationship.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.8 s | 1.6 s |
-
-## Site: https://medellinsingles.com/dating/using-watch-signs-relationship.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **45** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fusing-watch-signs-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fusing-watch-signs-relationship.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 3.0 s |
-
-## Site: https://medellinsingles.com/dating/worst-can-say-no-ask.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **46** | **71** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fworst-can-say-no-ask.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fworst-can-say-no-ask.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.1 s | 1.8 s |
-
-## Site: https://medellinsingles.com/dating/respond-criticism-relationships.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **78** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Frespond-criticism-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Frespond-criticism-relationships.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/rizz-pickup-lines.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Frizz-pickup-lines.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Frizz-pickup-lines.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/best-gifts-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbest-gifts-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fbest-gifts-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/celebrating-milestones-together.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **55** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcelebrating-milestones-together.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fcelebrating-milestones-together.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/dating-single-mom-date-night-ideas.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **67** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-single-mom-date-night-ideas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fdating-single-mom-date-night-ideas.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.8 s |
-
-## Site: https://medellinsingles.com/dating/talk-cant-talk-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ftalk-cant-talk-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Ftalk-cant-talk-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.2 s | 1.7 s |
-
-## Site: https://medellinsingles.com/dating/the-ultimate-guide-to-dating-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **61** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fthe-ultimate-guide-to-dating-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fdating%2Fthe-ultimate-guide-to-dating-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.2 s | 1.8 s |
-
-## Site: https://medellinsingles.com/psychology/why-medellin-women-are-beautiful.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fwhy-medellin-women-are-beautiful.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fwhy-medellin-women-are-beautiful.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 1.6 s |
-
-## Site: https://medellinsingles.com/psychology/traits-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **77** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Ftraits-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Ftraits-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.6 s | 1.2 s |
-
-## Site: https://medellinsingles.com/psychology/texts-to-get-him-chasing-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Ftexts-to-get-him-chasing-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Ftexts-to-get-him-chasing-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.6 s |
-
-## Site: https://medellinsingles.com/psychology/questions-girls-afraid-to-ask-guys.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fquestions-girls-afraid-to-ask-guys.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fquestions-girls-afraid-to-ask-guys.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/psychology/medellin-women-worth-your-time.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/men-date-ukrainian-girls-uninvited-3rd-wheel.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
 | **Perf Score** | **59** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fmedellin-women-worth-your-time.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fmedellin-women-worth-your-time.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.6 s | 1.7 s |
-
-## Site: https://medellinsingles.com/psychology/make-him-miss-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **59** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fmake-him-miss-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fmake-him-miss-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.7 s | 2.0 s |
-
-## Site: https://medellinsingles.com/psychology/having-fun-with-older-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **54** | **71** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fhaving-fun-with-older-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fhaving-fun-with-older-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.8 s |
-
-## Site: https://medellinsingles.com/psychology/beautiful-mature-women-of-colombia-want-you.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fbeautiful-mature-women-of-colombia-want-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fbeautiful-mature-women-of-colombia-want-you.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.6 s | 1.6 s |
-
-## Site: https://medellinsingles.com/psychology/colombian-women-local-single-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fcolombian-women-local-single-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fcolombian-women-local-single-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.3 s |
-
-## Site: https://medellinsingles.com/psychology/quit-playing-games-fix-start-finding-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fquit-playing-games-fix-start-finding-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fquit-playing-games-fix-start-finding-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.8 s | 1.7 s |
-
-## Site: https://medellinsingles.com/psychology/women-from-medellin-how-they-think-and-love.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **83** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fwomen-from-medellin-how-they-think-and-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fwomen-from-medellin-how-they-think-and-love.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.6 s |
-
-## Site: https://medellinsingles.com/psychology/arguments-relationships-can-healthy.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **64** | **90** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Farguments-relationships-can-healthy.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Farguments-relationships-can-healthy.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.1 s | 1.5 s |
-
-## Site: https://medellinsingles.com/psychology/girlfriend-bad-mood-refusing-say.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **79** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fgirlfriend-bad-mood-refusing-say.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fgirlfriend-bad-mood-refusing-say.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.4 s | 1.6 s |
-
-## Site: https://medellinsingles.com/psychology/girlfriend-effect-real.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **67** | **89** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fgirlfriend-effect-real.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fgirlfriend-effect-real.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.3 s | 1.5 s |
-
-## Site: https://medellinsingles.com/psychology/love-affirmations-relationship.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **86** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Flove-affirmations-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Flove-affirmations-relationship.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.6 s | 1.5 s |
-
-## Site: https://medellinsingles.com/psychology/insecurities-relationship-root-problems.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **71** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Finsecurities-relationship-root-problems.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Finsecurities-relationship-root-problems.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 17.1 s | 2.2 s |
-
-## Site: https://medellinsingles.com/psychology/playing-hard-get-work.html
-
-Error: Could not fetch data.
-
-## Site: https://medellinsingles.com/psychology/men-risk-temporary-satisfaction-affair.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **51** | **74** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fmen-risk-temporary-satisfaction-affair.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fmen-risk-temporary-satisfaction-affair.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 17.3 s | 2.2 s |
-
-## Site: https://medellinsingles.com/psychology/woman-prime-discover-peak-milestones.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **47** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fwoman-prime-discover-peak-milestones.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Fwoman-prime-discover-peak-milestones.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 13.8 s | 1.9 s |
-
-## Site: https://medellinsingles.com/psychology/role-humor-relationships.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **73** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Frole-humor-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fpsychology%2Frole-humor-relationships.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.7 s | 1.7 s |
-
-## Site: https://medellinsingles.com/realities/things-men-should-know-before-marrying-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fthings-men-should-know-before-marrying-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fthings-men-should-know-before-marrying-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.2 s | 1.2 s |
-
-## Site: https://medellinsingles.com/realities/being-single-affects-your-health.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fbeing-single-affects-your-health.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fbeing-single-affects-your-health.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.3 s | 1.7 s |
-
-## Site: https://medellinsingles.com/realities/foreign-women-dating-service.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **73** | **84** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fforeign-women-dating-service.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fforeign-women-dating-service.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.6 s |
-
-## Site: https://medellinsingles.com/realities/international-matchmaking-vs-dating-apps.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **76** | **91** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Finternational-matchmaking-vs-dating-apps.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Finternational-matchmaking-vs-dating-apps.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.1 s | 1.2 s |
-
-## Site: https://medellinsingles.com/realities/man-should-get-married.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fman-should-get-married.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fman-should-get-married.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.6 s |
-
-## Site: https://medellinsingles.com/realities/marriage-brings-happiness.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **73** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fmarriage-brings-happiness.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fmarriage-brings-happiness.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.3 s | 1.7 s |
-
-## Site: https://medellinsingles.com/realities/meet-second-wife.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fmeet-second-wife.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fmeet-second-wife.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 1.7 s |
-
-## Site: https://medellinsingles.com/realities/micro-cheating-still-cheating.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **82** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fmicro-cheating-still-cheating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fmicro-cheating-still-cheating.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.5 s |
-
-## Site: https://medellinsingles.com/realities/realities-of-overseas-dating-for-american-men.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Frealities-of-overseas-dating-for-american-men.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Frealities-of-overseas-dating-for-american-men.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.7 s |
-
-## Site: https://medellinsingles.com/realities/stagnant-relationship.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **78** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fstagnant-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fstagnant-relationship.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.8 s | 1.2 s |
-
-## Site: https://medellinsingles.com/realities/can-men-victims-violence-intimate-relationships.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fcan-men-victims-violence-intimate-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fcan-men-victims-violence-intimate-relationships.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.6 s | 1.7 s |
-
-## Site: https://medellinsingles.com/realities/cohabitation.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **59** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fcohabitation.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fcohabitation.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.2 s | 1.3 s |
-
-## Site: https://medellinsingles.com/realities/cross-cultural-differences.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **60** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fcross-cultural-differences.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fcross-cultural-differences.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/realities/dating-single-dad-doable-begin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **52** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fdating-single-dad-doable-begin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fdating-single-dad-doable-begin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 1.4 s |
-
-## Site: https://medellinsingles.com/realities/ending-situationship-ghosting-best-option.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **63** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fending-situationship-ghosting-best-option.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fending-situationship-ghosting-best-option.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.1 s | 1.3 s |
-
-## Site: https://medellinsingles.com/realities/finding-soulmate-ending-toxic-marriage.html
-
-Error: Could not fetch data.
-
-## Site: https://medellinsingles.com/realities/hungry-love-single.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **57** | **85** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fhungry-love-single.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fhungry-love-single.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.8 s | 1.6 s |
-
-## Site: https://medellinsingles.com/realities/ai-girlfriend-simulator-real-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **52** | **73** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fai-girlfriend-simulator-real-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fai-girlfriend-simulator-real-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.3 s | 1.7 s |
-
-## Site: https://medellinsingles.com/realities/forming-relationship-overbearing-mother-law.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **66** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fforming-relationship-overbearing-mother-law.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fforming-relationship-overbearing-mother-law.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 24.2 s | 2.6 s |
-
-## Site: https://medellinsingles.com/realities/overcoming-financial-challenges-relationship.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **85** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fovercoming-financial-challenges-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Frealities%2Fovercoming-financial-challenges-relationship.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.0 s |
-
-## Site: https://medellinsingles.com/success-stories/best-client-testimonial-videos-and-success-stories.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **65** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fsuccess-stories%2Fbest-client-testimonial-videos-and-success-stories.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fsuccess-stories%2Fbest-client-testimonial-videos-and-success-stories.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.7 s | 1.8 s |
-
-## Site: https://medellinsingles.com/success-stories/
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **97** | **69** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fsuccess-stories%2F&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fsuccess-stories%2F&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 0.8 s | 1.7 s |
-
-## Site: https://medellinsingles.com/travel/what-to-know-about-christmas-lights-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **53** | **54** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fwhat-to-know-about-christmas-lights-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fwhat-to-know-about-christmas-lights-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.1 s | 2.0 s |
-
-## Site: https://medellinsingles.com/travel/places-to-meet-single-girls-medellin.html
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmen-date-ukrainian-girls-uninvited-3rd-wheel.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmen-date-ukrainian-girls-uninvited-3rd-wheel.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.4 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/mistakes-foreigners-make-dating-ukrainian-girls.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
 | **Perf Score** | **59** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fplaces-to-meet-single-girls-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fplaces-to-meet-single-girls-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.3 s |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmistakes-foreigners-make-dating-ukrainian-girls.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fmistakes-foreigners-make-dating-ukrainian-girls.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.4 s | 1.5 s |
 
-## Site: https://medellinsingles.com/travel/medellin-dating-destinations.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **55** | **74** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fmedellin-dating-destinations.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fmedellin-dating-destinations.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.7 s |
-
-## Site: https://medellinsingles.com/travel/medellin-colombia-nightlife.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/odessa-women-ideal-wives.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **66** | **63** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fmedellin-colombia-nightlife.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fmedellin-colombia-nightlife.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.5 s |
+| **Perf Score** | **53** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fodessa-women-ideal-wives.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fodessa-women-ideal-wives.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.2 s | 1.6 s |
 
-## Site: https://medellinsingles.com/travel/how-to-avoid-undesirable-situations-in-colombia.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **65** | **82** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fhow-to-avoid-undesirable-situations-in-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fhow-to-avoid-undesirable-situations-in-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.5 s | 1.6 s |
-
-## Site: https://medellinsingles.com/travel/having-a-meaningful-new-year-celebration-with-a-latina.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/pop-question-marrying-ukraine-women.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **56** | **88** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fhaving-a-meaningful-new-year-celebration-with-a-latina.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fhaving-a-meaningful-new-year-celebration-with-a-latina.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.4 s | 1.5 s |
+| **Perf Score** | **59** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fpop-question-marrying-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fpop-question-marrying-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.6 s |
 
-## Site: https://medellinsingles.com/travel/going-on-a-trip-with-someone-you-just-started-dating.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **52** | **70** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fgoing-on-a-trip-with-someone-you-just-started-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fgoing-on-a-trip-with-someone-you-just-started-dating.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.6 s | 1.6 s |
-
-## Site: https://medellinsingles.com/travel/extreme-dates-with-colombian-women.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/religious-values-ukraine-women-odessa-women.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **67** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fextreme-dates-with-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fextreme-dates-with-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.2 s | 1.3 s |
+| **Perf Score** | **56** | **68** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Freligious-values-ukraine-women-odessa-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Freligious-values-ukraine-women-odessa-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.7 s |
 
-## Site: https://medellinsingles.com/travel/best-restaurants-in-medellin.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/right-approach-dating-ukrainian-girls-odessa.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **70** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fright-approach-dating-ukrainian-girls-odessa.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fright-approach-dating-ukrainian-girls-odessa.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/russian-ukrainian-learn-ukraine-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **70** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Frussian-ukrainian-learn-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Frussian-ukrainian-learn-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.0 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/safe-date-ukrainian-women-now.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **79** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsafe-date-ukrainian-women-now.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsafe-date-ukrainian-women-now.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 1.2 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/sexy-ukraine-girls-still-date-men-2021.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **77** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsexy-ukraine-girls-still-date-men-2021.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsexy-ukraine-girls-still-date-men-2021.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.6 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/should-men-ever-dm-ukraine-women-on-dating-apps.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **59** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fshould-men-ever-dm-ukraine-women-on-dating-apps.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fshould-men-ever-dm-ukraine-women-on-dating-apps.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 0.9 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/simple-romantic-dates-ukrainian-girls.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **67** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsimple-romantic-dates-ukrainian-girls.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsimple-romantic-dates-ukrainian-girls.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.4 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/single-ukrainian-women-seeking-love-beyond-borders.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **73** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsingle-ukrainian-women-seeking-love-beyond-borders.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsingle-ukrainian-women-seeking-love-beyond-borders.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/slavic-women-still-attract-foreign-men-now.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **69** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fslavic-women-still-attract-foreign-men-now.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fslavic-women-still-attract-foreign-men-now.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 14.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/solo-travel-vs-group-tours-better-ukraine-dating.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **57** | **70** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsolo-travel-vs-group-tours-better-ukraine-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fsolo-travel-vs-group-tours-better-ukraine-dating.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.4 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/the-communication-mistakes-foreign-men-make-and-why-cultural-interpreters-are-essential.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fthe-communication-mistakes-foreign-men-make-and-why-cultural-interpreters-are-essential.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fthe-communication-mistakes-foreign-men-make-and-why-cultural-interpreters-are-essential.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 0.9 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/things-remember-comes-online-dating.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fthings-remember-comes-online-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fthings-remember-comes-online-dating.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.3 s | 1.2 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/tips-achieve-ideal-marriage-odessa-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **46** | **70** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Ftips-achieve-ideal-marriage-odessa-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Ftips-achieve-ideal-marriage-odessa-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 14.5 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukraine-girls-really-want-international-dating-advice.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **56** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-girls-really-want-international-dating-advice.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-girls-really-want-international-dating-advice.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 2.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukraine-woman-s-honest-view-on-dating-foreigners.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **57** | **81** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-woman-s-honest-view-on-dating-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-woman-s-honest-view-on-dating-foreigners.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 0.9 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukraine-women-desperate-live-us.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **66** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-women-desperate-live-us.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-women-desperate-live-us.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 14.0 s | 1.8 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukraine-women-ideal-brides-odessa-dating.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **73** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-women-ideal-brides-odessa-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-women-ideal-brides-odessa-dating.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.4 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukraine-women-living-poland-2023-ukraine-dating.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
 | **Perf Score** | **57** | **77** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fbest-restaurants-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fbest-restaurants-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 1.5 s |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-women-living-poland-2023-ukraine-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-women-living-poland-2023-ukraine-dating.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.7 s |
 
-## Site: https://medellinsingles.com/travel/best-places-in-medellin-dates-with-colombian-women.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **62** | **88** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fbest-places-in-medellin-dates-with-colombian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fbest-places-in-medellin-dates-with-colombian-women.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.3 s | 1.6 s |
-
-## Site: https://medellinsingles.com/travel/best-cities-meet-colombian-girls.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukraine-women-vs-americans-pursue.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **54** | **76** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fbest-cities-meet-colombian-girls.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fbest-cities-meet-colombian-girls.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.2 s | 1.3 s |
+| **Perf Score** | **55** | **70** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-women-vs-americans-pursue.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukraine-women-vs-americans-pursue.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.3 s |
 
-## Site: https://medellinsingles.com/travel/best-hotels-in-medellin.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **61** | **48** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fbest-hotels-in-medellin.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fbest-hotels-in-medellin.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.0 s | 2.1 s |
-
-## Site: https://medellinsingles.com/travel/is-medellin-colombia-safe.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-girls-are-more-eager-to-date-foreigners-in-2024.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **66** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fis-medellin-colombia-safe.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fis-medellin-colombia-safe.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.5 s | 1.8 s |
+| **Perf Score** | **59** | **73** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-girls-are-more-eager-to-date-foreigners-in-2024.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-girls-are-more-eager-to-date-foreigners-in-2024.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.4 s | 1.3 s |
 
-## Site: https://medellinsingles.com/travel/is-colombia-safe-for-solo-female-travellers.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **80** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fis-colombia-safe-for-solo-female-travellers.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fis-colombia-safe-for-solo-female-travellers.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.6 s |
-
-## Site: https://medellinsingles.com/travel/top-instagrammable-spots-in-medellin-colombia.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-girls-are-not-what-you-think.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **61** | **72** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Ftop-instagrammable-spots-in-medellin-colombia.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Ftop-instagrammable-spots-in-medellin-colombia.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 7.4 s | 1.7 s |
+| **Perf Score** | **50** | **66** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-girls-are-not-what-you-think.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-girls-are-not-what-you-think.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.3 s | 1.4 s |
 
-## Site: https://medellinsingles.com/travel/medellin-colombia-charming-appeal.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-girls-chase-better-life-with-foreigners.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **61** | **81** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-girls-chase-better-life-with-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-girls-chase-better-life-with-foreigners.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 0.9 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-girls-demand-safeguards-to-dating-foreigners.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **66** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-girls-demand-safeguards-to-dating-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-girls-demand-safeguards-to-dating-foreigners.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.4 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-woman-reflects-on-dating-african-american.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **61** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-woman-reflects-on-dating-african-american.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-woman-reflects-on-dating-african-american.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-women-in-odessa-still-search-for-better-bachelors.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
 | **Perf Score** | **56** | **75** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fmedellin-colombia-charming-appeal.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel%2Fmedellin-colombia-charming-appeal.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.1 s | 1.7 s |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-women-in-odessa-still-search-for-better-bachelors.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-women-in-odessa-still-search-for-better-bachelors.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.5 s |
 
-## Site: https://medellinsingles.com/travel
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-women-scammers-dating-ukraine.html
 
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **37** | **59** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ftravel&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 8.3 s | 2.2 s |
+Error: Could not fetch data.
 
-## Site: https://medellinsingles.com/execu/cost.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-women-seeking-marriage.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **65** | **88** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fcost.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fcost.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.0 s | 1.5 s |
+| **Perf Score** | **52** | **73** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-women-seeking-marriage.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-women-seeking-marriage.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.0 s |
 
-## Site: https://medellinsingles.com/execu/meet-our-matchmakers.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **73** | **87** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fmeet-our-matchmakers.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fmeet-our-matchmakers.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 4.9 s | 1.6 s |
-
-## Site: https://medellinsingles.com/execu/professional-matchmaker-plan.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-women-still-dream-of-real-connections.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **82** | **87** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fprofessional-matchmaker-plan.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fprofessional-matchmaker-plan.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.5 s |
+| **Perf Score** | **51** | **80** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-women-still-dream-of-real-connections.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-women-still-dream-of-real-connections.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.6 s |
 
-## Site: https://medellinsingles.com/execu/the-process.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **79** | **81** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fthe-process.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fthe-process.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.6 s |
-
-## Site: https://medellinsingles.com/execu/why-us.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-womens-new-locations-verified.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **80** | **90** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fwhy-us.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Fexecu%2Fwhy-us.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 3.7 s | 1.2 s |
+| **Perf Score** | **56** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-womens-new-locations-verified.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-womens-new-locations-verified.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.3 s | 1.6 s |
 
-## Site: https://medellinsingles.com/featured-ladies/MS-YT042.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **92** | **91** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ffeatured-ladies%2FMS-YT042.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ffeatured-ladies%2FMS-YT042.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 2.1 s | 0.7 s |
-
-## Site: https://medellinsingles.com/featured-ladies/MS-YTProfiles01.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukrainian-womens-true-agenda-dating-foreign-men.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **65** | **83** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ffeatured-ladies%2FMS-YTProfiles01.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ffeatured-ladies%2FMS-YTProfiles01.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.2 s | 1.3 s |
+| **Perf Score** | **56** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-womens-true-agenda-dating-foreign-men.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukrainian-womens-true-agenda-dating-foreign-men.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.4 s | 1.3 s |
 
-## Site: https://medellinsingles.com/featured-ladies/MS-YTProfiles02.html
+## Site: https://odessawomen.com/odessa-women-videos/informational/ukranian-woman-exposes-lies-slavic-girls-tell-foreigners.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukranian-woman-exposes-lies-slavic-girls-tell-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fukranian-woman-exposes-lies-slavic-girls-tell-foreigners.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 13.9 s | 0.9 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/unstoppable-ukrainian-women-still-attract-passport-bros.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **39** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Funstoppable-ukrainian-women-still-attract-passport-bros.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Funstoppable-ukrainian-women-still-attract-passport-bros.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 11.9 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/what-ukrainian-girls-risk-to-date-foreigners.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **40** | **75** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwhat-ukrainian-girls-risk-to-date-foreigners.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwhat-ukrainian-girls-risk-to-date-foreigners.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.5 s | 1.6 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/where-serious-ukrainian-women-approach-you.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **32** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwhere-serious-ukrainian-women-approach-you.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwhere-serious-ukrainian-women-approach-you.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 8.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/why-men-shouldnt-date-in-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwhy-men-shouldnt-date-in-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwhy-men-shouldnt-date-in-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/why-ukrainian-women-still-pursue-foreigners-in-2023.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **59** | **72** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwhy-ukrainian-women-still-pursue-foreigners-in-2023.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwhy-ukrainian-women-still-pursue-foreigners-in-2023.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/will-ukraine-tours-return-soon-dating-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwill-ukraine-tours-return-soon-dating-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwill-ukraine-tours-return-soon-dating-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/women-odessa.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **35** | **67** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwomen-odessa.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fwomen-odessa.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.9 s | 1.4 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/informational/you-know-youre-dating-the-wrong-ukrainian-women-when.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **76** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fyou-know-youre-dating-the-wrong-ukrainian-women-when.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Finformational%2Fyou-know-youre-dating-the-wrong-ukrainian-women-when.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/american-reacts-to-dating-during-ukraine-war.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **63** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Famerican-reacts-to-dating-during-ukraine-war.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Famerican-reacts-to-dating-during-ukraine-war.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/best-city-dating-ukrainian-women-odessa-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **81** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fbest-city-dating-ukrainian-women-odessa-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fbest-city-dating-ukrainian-women-odessa-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/busy-man-went-ukraine-alone-dating-ukraine-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fbusy-man-went-ukraine-alone-dating-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fbusy-man-went-ukraine-alone-dating-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 12.4 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/dating-ukrainian-women-found-one.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fdating-ukrainian-women-found-one.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fdating-ukrainian-women-found-one.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/exhausting-reality-of-dating-ukrainian-girls.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **47** | **73** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fexhausting-reality-of-dating-ukrainian-girls.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fexhausting-reality-of-dating-ukrainian-girls.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/highly-recommended-speed-dating-ukraine-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **87** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fhighly-recommended-speed-dating-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fhighly-recommended-speed-dating-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 1.4 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/ignore-the-beauty-of-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **62** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fignore-the-beauty-of-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fignore-the-beauty-of-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/index.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **74** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Findex.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Findex.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/makes-ukraine-women-different.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **68** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fmakes-ukraine-women-different.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fmakes-ukraine-women-different.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.5 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/nothing-could-stop-us-love-during-the-ukraine-war.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **47** | **65** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fnothing-could-stop-us-love-during-the-ukraine-war.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fnothing-could-stop-us-love-during-the-ukraine-war.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/searching-love-ukraine-women-odessa-dating.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **81** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fsearching-love-ukraine-women-odessa-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fsearching-love-ukraine-women-odessa-dating.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 0.9 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/testimonial/solo-travel-odessa-ukraine-private-speed-dating.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **67** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fsolo-travel-odessa-ukraine-private-speed-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftestimonial%2Fsolo-travel-odessa-ukraine-private-speed-dating.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.4 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/4th-trip-odessa-im-dating-ukraine-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **67** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2F4th-trip-odessa-im-dating-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2F4th-trip-odessa-im-dating-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/advantages-dating-women-odessa-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **75** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fadvantages-dating-women-odessa-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fadvantages-dating-women-odessa-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.0 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/age-limit-consider-dating-ukraine-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **46** | **76** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fage-limit-consider-dating-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fage-limit-consider-dating-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 0.9 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/approaching-ukrainian-women-odessa.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **71** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fapproaching-ukrainian-women-odessa.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fapproaching-ukrainian-women-odessa.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/dating-ukrainian-women-odessa-tours.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fdating-ukrainian-women-odessa-tours.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fdating-ukrainian-women-odessa-tours.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.4 s | 1.2 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/experiencing-ukraine-dating-odessa.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **73** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fexperiencing-ukraine-dating-odessa.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fexperiencing-ukraine-dating-odessa.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/fassingle-ukrainian-women-search-kharkov-true-love.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **70** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ffassingle-ukrainian-women-search-kharkov-true-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ffassingle-ukrainian-women-search-kharkov-true-love.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/fastest-way-date-russian-women-odessa-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **67** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ffastest-way-date-russian-women-odessa-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ffastest-way-date-russian-women-odessa-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.1 s | 1.8 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/foreigners-only-inside-private-ukraine-speed-dating.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **68** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fforeigners-only-inside-private-ukraine-speed-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fforeigners-only-inside-private-ukraine-speed-dating.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.4 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/how-to-date-right-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **59** | **71** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fhow-to-date-right-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fhow-to-date-right-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/hype-vs-reality-ukraine-dating-exposed.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **72** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fhype-vs-reality-ukraine-dating-exposed.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fhype-vs-reality-ukraine-dating-exposed.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/interracial-dating-odessa-ukraine-travel-vlog.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **66** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Finterracial-dating-odessa-ukraine-travel-vlog.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Finterracial-dating-odessa-ukraine-travel-vlog.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/kind-men-ukraine-women-want.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **70** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fkind-men-ukraine-women-want.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fkind-men-ukraine-women-want.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/like-dating-older-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **49** | **65** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Flike-dating-older-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Flike-dating-older-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.6 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/matchmaking-better-meet-real-ukraine-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **76** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fmatchmaking-better-meet-real-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fmatchmaking-better-meet-real-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/nightlife-dating-agency-better-date-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **72** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fnightlife-dating-agency-better-date-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fnightlife-dating-agency-better-date-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/odessa-dating-ukraines-beautiful-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **59** | **71** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fodessa-dating-ukraines-beautiful-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fodessa-dating-ukraines-beautiful-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/odessa-ukraine-women-pursue-men.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **49** | **66** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fodessa-ukraine-women-pursue-men.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fodessa-ukraine-women-pursue-men.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/odessa-women-dream-dating-foreign-men-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **74** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fodessa-women-dream-dating-foreign-men-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fodessa-women-dream-dating-foreign-men-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 14.1 s | 1.2 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/odessa-women-engage-foreigners-ukraine-dating-event.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **59** | **69** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fodessa-women-engage-foreigners-ukraine-dating-event.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fodessa-women-engage-foreigners-ukraine-dating-event.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 3.8 s | 1.3 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/raw-interviews-men-dating-ukraine-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fraw-interviews-men-dating-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fraw-interviews-men-dating-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.2 s | 0.9 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/serious-ukraine-women-seek-men-marriage.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **69** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fserious-ukraine-women-seek-men-marriage.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fserious-ukraine-women-seek-men-marriage.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.0 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/single-ukrainian-women-search-kharkov-true-love.htmlhttps://odessawomen.com/odessa-women-videos/tours/speed-dating-300-odessa-women-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **71** | **80** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fsingle-ukrainian-women-search-kharkov-true-love.htmlhttps%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fspeed-dating-300-odessa-women-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fsingle-ukrainian-women-search-kharkov-true-love.htmlhttps%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fspeed-dating-300-odessa-women-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.9 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/theyre-all-over-you-ukraines-foreign-dating-craze.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **69** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ftheyre-all-over-you-ukraines-foreign-dating-craze.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ftheyre-all-over-you-ukraines-foreign-dating-craze.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/tips-getting-ukrainian-womens-attention.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **49** | **76** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ftips-getting-ukrainian-womens-attention.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ftips-getting-ukrainian-womens-attention.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.6 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/true-motives-women-dating-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **59** | **48** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ftrue-motives-women-dating-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Ftrue-motives-women-dating-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 2.5 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/ukraine-women-worth-dating-ukraine-dating-story.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **53** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fukraine-women-worth-dating-ukraine-dating-story.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fukraine-women-worth-dating-ukraine-dating-story.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.1 s | 2.1 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/ukrainian-women-embark-quest-true-love-odessa.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fukrainian-women-embark-quest-true-love-odessa.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fukrainian-women-embark-quest-true-love-odessa.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/ukrainian-women-notice-men.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **74** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fukrainian-women-notice-men.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fukrainian-women-notice-men.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.3 s | 1.7 s |
+
+## Site: https://odessawomen.com/odessa-women-videos/tours/ukrainian-women-outnumber-men-10-1-odessa-dating-event.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **61** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fukrainian-women-outnumber-men-10-1-odessa-dating-event.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fodessa-women-videos%2Ftours%2Fukrainian-women-outnumber-men-10-1-odessa-dating-event.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.1 s | 1.8 s |
+
+## Site: https://odessawomen.com/blog/index.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **54** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fblog%2Findex.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fblog%2Findex.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 9.0 s | 2.3 s |
+
+## Site: https://odessawomen.com/dating/2-2-2-rule-explained.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **44** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2F2-2-2-rule-explained.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2F2-2-2-rule-explained.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.3 s | 3.2 s |
+
+## Site: https://odessawomen.com/dating/7-reasons-everyday-is-valentines-day.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2F7-reasons-everyday-is-valentines-day.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2F7-reasons-everyday-is-valentines-day.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 9.2 s | 1.9 s |
+
+## Site: https://odessawomen.com/dating/7-reasons-hookup-culture-toxic-everyone.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **80** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2F7-reasons-hookup-culture-toxic-everyone.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2F7-reasons-hookup-culture-toxic-everyone.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/10-rules-for-a-happy-relationship-with-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **89** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2F10-rules-for-a-happy-relationship-with-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2F10-rules-for-a-happy-relationship-with-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.8 s | 1.3 s |
+
+## Site: https://odessawomen.com/dating/a-yapper-and-listener-is-a-balanced-match.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fa-yapper-and-listener-is-a-balanced-match.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fa-yapper-and-listener-is-a-balanced-match.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.1 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/abc-dating-ideas-date-nights.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **39** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fabc-dating-ideas-date-nights.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fabc-dating-ideas-date-nights.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.6 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/authenticity-best-rizz.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fauthenticity-best-rizz.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fauthenticity-best-rizz.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.4 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/avoid-toxic-communication.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **49** | **43** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Favoid-toxic-communication.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Favoid-toxic-communication.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.4 s | 3.3 s |
+
+## Site: https://odessawomen.com/dating/avoidable-online-messaging-mistakes.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Favoidable-online-messaging-mistakes.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Favoidable-online-messaging-mistakes.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.8 s | 1.5 s |
+
+## Site: https://odessawomen.com/dating/best-first-date-ideas.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **50** | **87** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fbest-first-date-ideas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fbest-first-date-ideas.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/bringing-up-exes-dating-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **71** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fbringing-up-exes-dating-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fbringing-up-exes-dating-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/connect-ukrainian-women-online.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **49** | **93** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fconnect-ukrainian-women-online.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fconnect-ukrainian-women-online.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/contra-dating-going-types.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **68** | **85** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fcontra-dating-going-types.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fcontra-dating-going-types.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/date-ideas-for-ukrainian-women.html
+
+Error: Could not fetch data.
+
+## Site: https://odessawomen.com/dating/date-nights-fun-video-games-couples.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdate-nights-fun-video-games-couples.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdate-nights-fun-video-games-couples.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/daters-guide-dealing-first-date-jitters.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **59** | **89** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdaters-guide-dealing-first-date-jitters.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdaters-guide-dealing-first-date-jitters.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/dating-again-after-youve-hibernated.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-again-after-youve-hibernated.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-again-after-youve-hibernated.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/dating-etiquette-wont-go-style.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-etiquette-wont-go-style.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-etiquette-wont-go-style.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/dating-plot-even-work.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **64** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-plot-even-work.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-plot-even-work.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.9 s |
+
+## Site: https://odessawomen.com/dating/dating-relationships-millennials.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
 | **Perf Score** | **66** | **92** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ffeatured-ladies%2FMS-YTProfiles02.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ffeatured-ladies%2FMS-YTProfiles02.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 5.9 s | 0.7 s |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-relationships-millennials.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-relationships-millennials.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.6 s |
 
-## Site: https://medellinsingles.com/featured-ladies/MS-YTProfiles03.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **94** | **98** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ffeatured-ladies%2FMS-YTProfiles03.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Ffeatured-ladies%2FMS-YTProfiles03.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 2.1 s | 0.7 s |
-
-## Site: https://medellinsingles.com/our-process/meet-colombian-women-online-in-real-life.html
+## Site: https://odessawomen.com/dating/dating-tips-how-to-guage-chemistry.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **62** | **78** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Four-process%2Fmeet-colombian-women-online-in-real-life.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Four-process%2Fmeet-colombian-women-online-in-real-life.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.8 s | 1.6 s |
+| **Perf Score** | **61** | **85** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-tips-how-to-guage-chemistry.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-tips-how-to-guage-chemistry.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.6 s |
 
-## Site: https://medellinsingles.com/our-process/our-process-medellin-singles-dating-service.html
-
-| Metric | Mobile | Desktop |
-| :--- | :--- | :--- |
-| **Perf Score** | **56** | **37** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Four-process%2Four-process-medellin-singles-dating-service.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Four-process%2Four-process-medellin-singles-dating-service.html&strategy=desktop) |
-| Field FCP | N/A | N/A |
-| Lab LCP | 6.9 s | 4.2 s |
-
-## Site: https://medellinsingles.com/our-process/
+## Site: https://odessawomen.com/dating/dating-tips-show-interest-through-body-language.html
 
 | Metric | Mobile | Desktop |
 | :--- | :--- | :--- |
-| **Perf Score** | **44** | **74** |
-| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Four-process%2F&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fmedellinsingles.com%2Four-process%2F&strategy=desktop) |
-| Field FCP | N/A | N/A |
+| **Perf Score** | **51** | **71** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-tips-show-interest-through-body-language.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-tips-show-interest-through-body-language.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/dating-tips-to-avoid-coming-on-too-strong.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **45** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-tips-to-avoid-coming-on-too-strong.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-tips-to-avoid-coming-on-too-strong.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/dating-ukrainian-women-in-odessa.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-ukrainian-women-in-odessa.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-ukrainian-women-in-odessa.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/dating-ukrainian-women-topics-to-avoid.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **68** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-ukrainian-women-topics-to-avoid.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-ukrainian-women-topics-to-avoid.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/dating-ukrianian-women-how-to-make-an-international-relationship-work.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-ukrianian-women-how-to-make-an-international-relationship-work.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdating-ukrianian-women-how-to-make-an-international-relationship-work.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/deciphering-candid-girlfriend.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **54** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdeciphering-candid-girlfriend.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdeciphering-candid-girlfriend.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 2.3 s |
+
+## Site: https://odessawomen.com/dating/digital-body-language-nonverbal-cues-online.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **77** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdigital-body-language-nonverbal-cues-online.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdigital-body-language-nonverbal-cues-online.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/dink-lifestyle-explained.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **76** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdink-lifestyle-explained.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdink-lifestyle-explained.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/discovering-love-first-time.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **81** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdiscovering-love-first-time.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdiscovering-love-first-time.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/dont-fall-love-someones-potential.html
+
+Error: Could not fetch data.
+
+## Site: https://odessawomen.com/dating/dont-fight-fall-catching-feelings.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-fight-fall-catching-feelings.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-fight-fall-catching-feelings.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/dont-give-up-on-love-turn-things-in-your-favor.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **75** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-give-up-on-love-turn-things-in-your-favor.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-give-up-on-love-turn-things-in-your-favor.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/dont-make-relationship-tests-measuring-stick.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **79** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-make-relationship-tests-measuring-stick.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-make-relationship-tests-measuring-stick.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/dont-settle-for-bare-minimum-romances.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-settle-for-bare-minimum-romances.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-settle-for-bare-minimum-romances.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/dont-want-teach-love-right.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **50** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-want-teach-love-right.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fdont-want-teach-love-right.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.4 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/emotional-monogamy-ins-outs.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **79** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Femotional-monogamy-ins-outs.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Femotional-monogamy-ins-outs.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.9 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/engagement-season.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fengagement-season.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fengagement-season.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/enmeshed-relationship-look-signs.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fenmeshed-relationship-look-signs.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fenmeshed-relationship-look-signs.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/explaining-love-languages.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **50** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fexplaining-love-languages.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fexplaining-love-languages.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.5 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/fixing-broken-heart-didnt-break-consequences.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ffixing-broken-heart-didnt-break-consequences.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ffixing-broken-heart-didnt-break-consequences.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/fun-and-creative-third-date-ideas.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ffun-and-creative-third-date-ideas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ffun-and-creative-third-date-ideas.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.6 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/gen-zs-nato-dating-approach.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **59** | **55** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fgen-zs-nato-dating-approach.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fgen-zs-nato-dating-approach.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.4 s | 2.3 s |
+
+## Site: https://odessawomen.com/dating/get-closer-timeless-acts-love.html
+
+Error: Could not fetch data.
+
+## Site: https://odessawomen.com/dating/hard-launch-relationship.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fhard-launch-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fhard-launch-relationship.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/heres-know-dating-friend.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fheres-know-dating-friend.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fheres-know-dating-friend.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/how-to-attract-ukrainian-women-online.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fhow-to-attract-ukrainian-women-online.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fhow-to-attract-ukrainian-women-online.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/how-to-communicate.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **50** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fhow-to-communicate.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fhow-to-communicate.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/how-to-tell-if-women-are-not-interested.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **77** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fhow-to-tell-if-women-are-not-interested.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fhow-to-tell-if-women-are-not-interested.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.1 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/impact-eldest-daughter-syndrome-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **93** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fimpact-eldest-daughter-syndrome-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fimpact-eldest-daughter-syndrome-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/importance-of-healthy-self-image-in-dating.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **50** | **89** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fimportance-of-healthy-self-image-in-dating.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fimportance-of-healthy-self-image-in-dating.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.3 s |
+
+## Site: https://odessawomen.com/dating/index.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **42** | **73** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Findex.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Findex.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.3 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/is-ai-dating-the-future.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **81** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fis-ai-dating-the-future.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fis-ai-dating-the-future.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/lessons-love-movies-shows.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flessons-love-movies-shows.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flessons-love-movies-shows.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.8 s | 1.3 s |
+
+## Site: https://odessawomen.com/dating/looks-or-personality-matters-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **85** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flooks-or-personality-matters-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flooks-or-personality-matters-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.3 s |
+
+## Site: https://odessawomen.com/dating/love-in-plain-sight-invisible-string.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **77** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flove-in-plain-sight-invisible-string.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flove-in-plain-sight-invisible-string.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.4 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/love-lessons-crazy-stupid-love.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **70** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flove-lessons-crazy-stupid-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flove-lessons-crazy-stupid-love.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/love-life-balancing-act.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flove-life-balancing-act.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flove-life-balancing-act.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.3 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/love-without-swipes-meet-people-organically.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flove-without-swipes-meet-people-organically.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Flove-without-swipes-meet-people-organically.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/managing-relationship-conflicts-with-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **49** | **79** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmanaging-relationship-conflicts-with-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmanaging-relationship-conflicts-with-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.8 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/modern-marriage.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **77** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmodern-marriage.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmodern-marriage.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.3 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/monogamy-dead-fortunately-answer-no.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **68** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmonogamy-dead-fortunately-answer-no.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmonogamy-dead-fortunately-answer-no.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/moon-phase-compatibility-test.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmoon-phase-compatibility-test.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmoon-phase-compatibility-test.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/morning-dates.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmorning-dates.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fmorning-dates.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.5 s |
+
+## Site: https://odessawomen.com/dating/new-relationship-energy-wears-off.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fnew-relationship-energy-wears-off.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fnew-relationship-energy-wears-off.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.4 s | 1.3 s |
+
+## Site: https://odessawomen.com/dating/new-relationships-emerging-heres-set-boundaries.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fnew-relationships-emerging-heres-set-boundaries.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fnew-relationships-emerging-heres-set-boundaries.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.3 s | 1.5 s |
+
+## Site: https://odessawomen.com/dating/no-yearning-love-isnt-stupid.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fno-yearning-love-isnt-stupid.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fno-yearning-love-isnt-stupid.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.8 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/old-school-love-lessons-bridgerton.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **76** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fold-school-love-lessons-bridgerton.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fold-school-love-lessons-bridgerton.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 3.8 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/outdoor-dating-ideas-with-odessa-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **70** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Foutdoor-dating-ideas-with-odessa-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Foutdoor-dating-ideas-with-odessa-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.5 s |
+
+## Site: https://odessawomen.com/dating/parallel-play-relationships-help.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fparallel-play-relationships-help.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fparallel-play-relationships-help.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.3 s |
+
+## Site: https://odessawomen.com/dating/past-loves-reality-check.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **57** | **89** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fpast-loves-reality-check.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fpast-loves-reality-check.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.2 s |
+
+## Site: https://odessawomen.com/dating/pebbling-learn-love-language-penguins.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fpebbling-learn-love-language-penguins.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fpebbling-learn-love-language-penguins.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.4 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/playing-keeps.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **85** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fplaying-keeps.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fplaying-keeps.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/playing-mind-games-heed-these-warnings.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fplaying-mind-games-heed-these-warnings.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fplaying-mind-games-heed-these-warnings.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.4 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/preparation-for-first-date.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fpreparation-for-first-date.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fpreparation-for-first-date.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.2 s | 1.4 s |
+
+## Site: https://odessawomen.com/dating/questions-to-ask-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **67** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fquestions-to-ask-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fquestions-to-ask-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.9 s |
+
+## Site: https://odessawomen.com/dating/quiet-love.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **79** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fquiet-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fquiet-love.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/ratio-helpful-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fratio-helpful-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fratio-helpful-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/rebuild-trust-relationship-steps.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frebuild-trust-relationship-steps.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frebuild-trust-relationship-steps.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/relationship-advice-on-rebound-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **76** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frelationship-advice-on-rebound-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frelationship-advice-on-rebound-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/relationship-better-friends-first.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **50** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frelationship-better-friends-first.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frelationship-better-friends-first.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.3 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/relationship-boxes-nobody-wants-this.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frelationship-boxes-nobody-wants-this.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frelationship-boxes-nobody-wants-this.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.9 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/relationship-questions-things-to-ask-to-determine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frelationship-questions-things-to-ask-to-determine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frelationship-questions-things-to-ask-to-determine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/romance-dead-gone-modern-times.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fromance-dead-gone-modern-times.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fromance-dead-gone-modern-times.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/rules-of-the-talking-stage.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frules-of-the-talking-stage.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Frules-of-the-talking-stage.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/shoot-your-shot-making-first-move.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fshoot-your-shot-making-first-move.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fshoot-your-shot-making-first-move.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.1 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/similarities-matter.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **77** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fsimilarities-matter.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fsimilarities-matter.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/singles-guide-dating-with-a-purpose.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fsingles-guide-dating-with-a-purpose.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fsingles-guide-dating-with-a-purpose.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/sober-date-idea.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fsober-date-idea.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fsober-date-idea.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/speak-new-love-languages.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fspeak-new-love-languages.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fspeak-new-love-languages.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.2 s | 1.5 s |
+
+## Site: https://odessawomen.com/dating/start-dating-intention-moves.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **94** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstart-dating-intention-moves.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstart-dating-intention-moves.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
 | Lab LCP | 6.8 s | 1.5 s |
+
+## Site: https://odessawomen.com/dating/start-paying-attention-relationship-bids.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstart-paying-attention-relationship-bids.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstart-paying-attention-relationship-bids.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/starting-relationships-with-ukraine-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **60** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstarting-relationships-with-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstarting-relationships-with-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/staying-positive-while-pursuing-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **87** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstaying-positive-while-pursuing-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstaying-positive-while-pursuing-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.5 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/stop-chasing-people.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **79** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstop-chasing-people.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fstop-chasing-people.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.3 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/sweet-things-long-distance-relationship.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **94** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fsweet-things-long-distance-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fsweet-things-long-distance-relationship.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.0 s | 1.4 s |
+
+## Site: https://odessawomen.com/dating/taking-things-slow-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ftaking-things-slow-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ftaking-things-slow-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/the-different-types-of-relationship-flags.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fthe-different-types-of-relationship-flags.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fthe-different-types-of-relationship-flags.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.5 s |
+
+## Site: https://odessawomen.com/dating/things-you-shouldnt-do-when-dating-in-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **47** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fthings-you-shouldnt-do-when-dating-in-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fthings-you-shouldnt-do-when-dating-in-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.4 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/tips-to-impress-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **43** | **80** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ftips-to-impress-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ftips-to-impress-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.9 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/tread-carefully-dangers-apocalypsing.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ftread-carefully-dangers-apocalypsing.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Ftread-carefully-dangers-apocalypsing.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/ukraine-traditional-courtship.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fukraine-traditional-courtship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fukraine-traditional-courtship.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.3 s | 1.5 s |
+
+## Site: https://odessawomen.com/dating/ukrainian-women-signs-she-wants-you-to-pursue-her.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **61** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fukrainian-women-signs-she-wants-you-to-pursue-her.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fukrainian-women-signs-she-wants-you-to-pursue-her.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.1 s | 1.3 s |
+
+## Site: https://odessawomen.com/dating/unspoken-words.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **89** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Funspoken-words.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Funspoken-words.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.5 s |
+
+## Site: https://odessawomen.com/dating/valentines-day-date-ideas.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **77** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fvalentines-day-date-ideas.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fvalentines-day-date-ideas.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/valentines-day-gifts-for-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fvalentines-day-gifts-for-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fvalentines-day-gifts-for-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.9 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/waiting-love-take-action.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **61** | **87** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwaiting-love-take-action.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwaiting-love-take-action.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/what-are-we.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **79** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwhat-are-we.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwhat-are-we.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.8 s |
+
+## Site: https://odessawomen.com/dating/what-s-your-apology-language-the-art-of-saying-sorry.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **81** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwhat-s-your-apology-language-the-art-of-saying-sorry.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwhat-s-your-apology-language-the-art-of-saying-sorry.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/what-ukrainian-women-look-for-in-a-man.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwhat-ukrainian-women-look-for-in-a-man.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwhat-ukrainian-women-look-for-in-a-man.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.3 s |
+
+## Site: https://odessawomen.com/dating/why-you-should-date-ukrainian-women-in-odessa.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwhy-you-should-date-ukrainian-women-in-odessa.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwhy-you-should-date-ukrainian-women-in-odessa.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/dating/women-chivalrous-gestures.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **85** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwomen-chivalrous-gestures.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwomen-chivalrous-gestures.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.1 s | 1.7 s |
+
+## Site: https://odessawomen.com/dating/wrong-about-being-in-love.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwrong-about-being-in-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fdating%2Fwrong-about-being-in-love.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.7 s |
+
+## Site: https://odessawomen.com/culture/approach-money-talks-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **61** | **79** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fapproach-money-talks-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fapproach-money-talks-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 1.7 s |
+
+## Site: https://odessawomen.com/culture/best-food-in-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fbest-food-in-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fbest-food-in-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.2 s | 1.5 s |
+
+## Site: https://odessawomen.com/culture/cultural-taboos-dating-ukraine-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **85** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fcultural-taboos-dating-ukraine-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fcultural-taboos-dating-ukraine-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.7 s |
+
+## Site: https://odessawomen.com/culture/food-in-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Ffood-in-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Ffood-in-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/culture/how-to-celebrate-new-years-eve-with-a-ukrainian-woman.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **78** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fhow-to-celebrate-new-years-eve-with-a-ukrainian-woman.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fhow-to-celebrate-new-years-eve-with-a-ukrainian-woman.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 3.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/culture/index.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **41** | **74** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Findex.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Findex.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.5 s | 1.7 s |
+
+## Site: https://odessawomen.com/culture/must-try-savory-dishes.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fmust-try-savory-dishes.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fmust-try-savory-dishes.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/culture/their-weird-love-for-drinking.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Ftheir-weird-love-for-drinking.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Ftheir-weird-love-for-drinking.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/culture/ukrainian-food-for-winter.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fukrainian-food-for-winter.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fukrainian-food-for-winter.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/culture/wedding-traditions-of-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fwedding-traditions-of-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fculture%2Fwedding-traditions-of-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.3 s |
+
+## Site: https://odessawomen.com/travel/index.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **43** | **63** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Findex.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Findex.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 8.8 s | 1.8 s |
+
+## Site: https://odessawomen.com/travel/international-dating-beat-jet-lag.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Finternational-dating-beat-jet-lag.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Finternational-dating-beat-jet-lag.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 3.8 s | 1.3 s |
+
+## Site: https://odessawomen.com/travel/know-before-visiting.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fknow-before-visiting.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fknow-before-visiting.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 3.8 s | 1.3 s |
+
+## Site: https://odessawomen.com/travel/most-ideal-time-visit-odessa.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fmost-ideal-time-visit-odessa.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fmost-ideal-time-visit-odessa.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 3.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/travel/odessa-romantic-spot.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **45** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fodessa-romantic-spot.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fodessa-romantic-spot.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 8.7 s | 1.7 s |
+
+## Site: https://odessawomen.com/travel/planning-first-trip-with-Ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fplanning-first-trip-with-Ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fplanning-first-trip-with-Ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.7 s | 1.3 s |
+
+## Site: https://odessawomen.com/travel/strengthen-relationship-travel-together.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **61** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fstrengthen-relationship-travel-together.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fstrengthen-relationship-travel-together.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.6 s |
+
+## Site: https://odessawomen.com/travel/the-best-odessa-tourism-has-to-offer.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fthe-best-odessa-tourism-has-to-offer.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Fthe-best-odessa-tourism-has-to-offer.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.0 s | 1.3 s |
+
+## Site: https://odessawomen.com/travel/top-travel-destinations-in-odessa-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **93** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Ftop-travel-destinations-in-odessa-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Ftop-travel-destinations-in-odessa-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.2 s | 1.3 s |
+
+## Site: https://odessawomen.com/travel/transportation-in-odessa-ukraine.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **45** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Ftransportation-in-odessa-ukraine.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ftravel%2Ftransportation-in-odessa-ukraine.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.9 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/can-go-hopeless-hopeful-romantic.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **85** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fcan-go-hopeless-hopeful-romantic.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fcan-go-hopeless-hopeful-romantic.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/chemistry-in-a-relationship.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **93** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fchemistry-in-a-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fchemistry-in-a-relationship.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.3 s | 1.5 s |
+
+## Site: https://odessawomen.com/psychology/dating-burnout-signs-remedies.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fdating-burnout-signs-remedies.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fdating-burnout-signs-remedies.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.4 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/dating-tips-why-your-polar-opposite-can-be-good.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **63** | **68** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fdating-tips-why-your-polar-opposite-can-be-good.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fdating-tips-why-your-polar-opposite-can-be-good.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 3.8 s | 1.8 s |
+
+## Site: https://odessawomen.com/psychology/dont-misuse-therapy-speak-relationship.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **56** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fdont-misuse-therapy-speak-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fdont-misuse-therapy-speak-relationship.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.1 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/emotional-crutch.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **73** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Femotional-crutch.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Femotional-crutch.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.4 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/getting-ukrainian-women-to-approach-you-first.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **93** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fgetting-ukrainian-women-to-approach-you-first.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fgetting-ukrainian-women-to-approach-you-first.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/good-true-dont-let-relationship-anxiety.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **50** | **89** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fgood-true-dont-let-relationship-anxiety.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fgood-true-dont-let-relationship-anxiety.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/grief-love-mourning-breakups.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fgrief-love-mourning-breakups.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fgrief-love-mourning-breakups.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/how-dating-ukrainian-women-changes-your-life.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **52** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fhow-dating-ukrainian-women-changes-your-life.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fhow-dating-ukrainian-women-changes-your-life.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.9 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/if-he-wanted-to-he-would.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **79** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fif-he-wanted-to-he-would.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fif-he-wanted-to-he-would.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.8 s |
+
+## Site: https://odessawomen.com/psychology/impact-eldest-daughter-syndrome-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **86** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fimpact-eldest-daughter-syndrome-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fimpact-eldest-daughter-syndrome-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.4 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/index.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **42** | **67** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Findex.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Findex.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 9.2 s | 1.8 s |
+
+## Site: https://odessawomen.com/psychology/introvert-extrovert-relationship-can-work.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **48** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fintrovert-extrovert-relationship-can-work.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fintrovert-extrovert-relationship-can-work.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/letting-go-toxic-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fletting-go-toxic-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fletting-go-toxic-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/living-together-roommate-syndrome.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fliving-together-roommate-syndrome.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fliving-together-roommate-syndrome.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/main-character-energy-better-dating-experiences.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fmain-character-energy-better-dating-experiences.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fmain-character-energy-better-dating-experiences.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/maintain-self-love-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fmaintain-self-love-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fmaintain-self-love-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.9 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/mixed-signals-examples-decode.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **96** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fmixed-signals-examples-decode.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fmixed-signals-examples-decode.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 0.9 s |
+
+## Site: https://odessawomen.com/psychology/most-common-myths-about-ukrainian-women.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **57** | **90** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fmost-common-myths-about-ukrainian-women.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fmost-common-myths-about-ukrainian-women.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/no-youre-not-hard-love.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **57** | **89** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fno-youre-not-hard-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fno-youre-not-hard-love.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.4 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/odessa-women-ideal-brides.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **49** | **84** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fodessa-women-ideal-brides.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fodessa-women-ideal-brides.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/playing-it-cool-doesnt-always-work.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **66** | **77** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fplaying-it-cool-doesnt-always-work.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fplaying-it-cool-doesnt-always-work.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/playing-it-safe.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fplaying-it-safe.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fplaying-it-safe.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.6 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/resentment-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **49** | **80** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fresentment-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fresentment-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.3 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/stop-self-conscious-relationship.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **55** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fstop-self-conscious-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fstop-self-conscious-relationship.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/successful-relationships-look-like.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **89** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fsuccessful-relationships-look-like.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fsuccessful-relationships-look-like.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/ukrainian-women-dating-standards.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **43** | **51** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fukrainian-women-dating-standards.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fukrainian-women-dating-standards.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.4 s | 2.3 s |
+
+## Site: https://odessawomen.com/psychology/ukrainian-women-exclusive-relationship-signs.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fukrainian-women-exclusive-relationship-signs.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fukrainian-women-exclusive-relationship-signs.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.5 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/ultimatums-relationships-bad-idea.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **61** | **87** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fultimatums-relationships-bad-idea.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fultimatums-relationships-bad-idea.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.4 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/understanding-ick-awkward-feeling.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Funderstanding-ick-awkward-feeling.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Funderstanding-ick-awkward-feeling.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.2 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/viral-bird-test-work.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **51** | **95** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fviral-bird-test-work.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fviral-bird-test-work.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.8 s | 0.9 s |
+
+## Site: https://odessawomen.com/psychology/viral-let-theory-love.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **64** | **80** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fviral-let-theory-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fviral-let-theory-love.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/psychology/why-ukrainian-brides-are-ideal-wives.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fwhy-ukrainian-brides-are-ideal-wives.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fwhy-ukrainian-brides-are-ideal-wives.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.1 s | 1.6 s |
+
+## Site: https://odessawomen.com/psychology/youre-losing-navigating-dying-relationship.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **53** | **87** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fyoure-losing-navigating-dying-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fpsychology%2Fyoure-losing-navigating-dying-relationship.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.4 s | 1.7 s |
+
+## Site: https://odessawomen.com/execu/cost.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **83** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fcost.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fcost.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/execu/meet-our-matchmakers.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **95** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fmeet-our-matchmakers.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fmeet-our-matchmakers.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.2 s | 1.2 s |
+
+## Site: https://odessawomen.com/execu/professional-matchmaker-plan.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **93** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fprofessional-matchmaker-plan.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fprofessional-matchmaker-plan.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.2 s |
+
+## Site: https://odessawomen.com/execu/the-process.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **65** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fthe-process.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fthe-process.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/execu/why-us.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **70** | **91** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fwhy-us.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Fexecu%2Fwhy-us.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 4.0 s | 1.6 s |
+
+## Site: https://odessawomen.com/realities/dont-let-frozen-images-ruin-relationship.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **67** | **88** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Fdont-let-frozen-images-ruin-relationship.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Fdont-let-frozen-images-ruin-relationship.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.9 s | 1.3 s |
+
+## Site: https://odessawomen.com/realities/mature-love.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **47** | **92** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Fmature-love.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Fmature-love.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 5.8 s | 1.6 s |
+
+## Site: https://odessawomen.com/realities/meet-odessa-women-through-romance-tours.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **57** | **85** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Fmeet-odessa-women-through-romance-tours.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Fmeet-odessa-women-through-romance-tours.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.8 s | 1.7 s |
+
+## Site: https://odessawomen.com/realities/we-ought-to-stop-hermeneutic-labor-in-our-relationships.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **54** | **82** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Fwe-ought-to-stop-hermeneutic-labor-in-our-relationships.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Fwe-ought-to-stop-hermeneutic-labor-in-our-relationships.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.2 s | 1.7 s |
+
+## Site: https://odessawomen.com/realities/index.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **45** | **74** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Findex.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Frealities%2Findex.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.0 s | 1.7 s |
+
+## Site: https://odessawomen.com/featured-ladies/OW-Profiles06.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **97** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-Profiles06.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-Profiles06.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 8.1 s | 0.7 s |
+
+## Site: https://odessawomen.com/featured-ladies/OW-YT061.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **96** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YT061.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YT061.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 8.2 s | 1.3 s |
+
+## Site: https://odessawomen.com/featured-ladies/OW-YTProfiles01.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **60** | **93** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles01.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles01.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.3 s | 0.7 s |
+
+## Site: https://odessawomen.com/featured-ladies/OW-YTProfiles02.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **68** | **94** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles02.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles02.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.0 s | 1.5 s |
+
+## Site: https://odessawomen.com/featured-ladies/OW-YTProfiles05.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **62** | **95** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles05.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles05.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 7.9 s | 0.7 s |
+
+## Site: https://odessawomen.com/featured-ladies/OW-YTProfiles08.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **70** | **98** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles08.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles08.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.2 s | 0.7 s |
+
+## Site: https://odessawomen.com/featured-ladies/OW-YTProfiles09-New-Ukrainian-Girls.html
+
+| Metric | Mobile | Desktop |
+| :--- | :--- | :--- |
+| **Perf Score** | **70** | **99** |
+| Report Link | [View Mobile](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles09-New-Ukrainian-Girls.html&strategy=mobile) | [View Desktop](https://pagespeed.web.dev/analysis?url=https%3A%2F%2Fodessawomen.com%2Ffeatured-ladies%2FOW-YTProfiles09-New-Ukrainian-Girls.html&strategy=desktop) |
+| Field FCP | FAST | FAST |
+| Lab LCP | 6.3 s | 0.7 s |
 
