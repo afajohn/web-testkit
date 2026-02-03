@@ -1,7 +1,7 @@
 {
   "config": {
-    "configFile": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\playwright.config.ts",
-    "rootDir": "C:/Users/PM SHIFT/Documents/czech-codes/web-testkit/tests",
+    "configFile": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\playwright.config.ts",
+    "rootDir": "C:/Users/AM - Shift/Documents/web-testkit/tests",
     "forbidOnly": false,
     "fullyParallel": true,
     "globalSetup": null,
@@ -15,10 +15,7 @@
     },
     "preserveOutput": "always",
     "reporter": [
-      [
-        "html",
-        null
-      ],
+      ["html", null],
       [
         "json",
         {
@@ -33,7 +30,7 @@
     "quiet": false,
     "projects": [
       {
-        "outputDir": "C:/Users/PM SHIFT/Documents/czech-codes/web-testkit/test-results",
+        "outputDir": "C:/Users/AM - Shift/Documents/web-testkit/test-results",
         "repeatEach": 1,
         "retries": 0,
         "metadata": {
@@ -41,11 +38,9 @@
         },
         "id": "chromium",
         "name": "chromium",
-        "testDir": "C:/Users/PM SHIFT/Documents/czech-codes/web-testkit/tests",
+        "testDir": "C:/Users/AM - Shift/Documents/web-testkit/tests",
         "testIgnore": [],
-        "testMatch": [
-          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
-        ],
+        "testMatch": ["**/*.@(spec|test).?(c|m)[jt]s?(x)"],
         "timeout": 60000
       }
     ],
@@ -54,792 +49,19 @@
     "updateSnapshots": "missing",
     "updateSourceMethod": "patch",
     "version": "1.57.0",
-    "workers": 8,
+    "workers": 2,
     "webServer": null
   },
   "suites": [
-    {
-      "title": "accessibility.spec.ts",
-      "file": "accessibility.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Accessibility Testing",
-          "file": "accessibility.spec.ts",
-          "line": 10,
-          "column": 6,
-          "specs": [
-            {
-              "title": "check homepage accessibility",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 0,
-                      "parallelIndex": 0,
-                      "status": "failed",
-                      "duration": 8960,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts:20:32",
-                        "location": {
-                          "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts",
-                          "column": 32,
-                          "line": 20
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[90m// Assert no violations (or adjust threshold based on your requirements)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     expect(scanResults\u001b[33m.\u001b[39mpassed)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m   test(\u001b[32m'check tour page accessibility'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts",
-                            "column": 32,
-                            "line": 20
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 18 |\u001b[39m\n \u001b[90m 19 |\u001b[39m     \u001b[90m// Assert no violations (or adjust threshold based on your requirements)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 20 |\u001b[39m     expect(scanResults\u001b[33m.\u001b[39mpassed)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 21 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m   test(\u001b[32m'check tour page accessibility'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts:20:32\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. color-contrast\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Elements to Review (13):\n     1. h1\n     2. .d-none.d-lg-block.pt-3:nth-child(3)\n     3. .mt-4.col-12.text-center > .pt-3.text-white\n     4. div[aria-label=\"9 / 10\"] > .card-body.text-center > h2\n     5. div[aria-label=\"9 / 10\"] > .card-body.text-center > .card-text\n     6. .swiper-slide-prev > .card-body.text-center > h2\n     7. .swiper-slide-prev > .card-body.text-center > .card-text\n     8. .swiper-slide-active > .card-body.text-center > h2\n     9. .swiper-slide-active > .card-body.text-center > .card-text\n     10. .swiper-slide-next > .card-body.text-center > h2\n     11. .swiper-slide-next > .card-body.text-center > .card-text\n     12. div[aria-label=\"3 / 10\"] > .card-body.text-center > h2\n     13. div[aria-label=\"3 / 10\"] > .card-body.text-center > .card-text\n\n\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-12T08:20:44.712Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\accessibility-Accessibilit-7e9af-heck-homepage-accessibility-chromium\\video-1.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\accessibility-Accessibilit-7e9af-heck-homepage-accessibility-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\accessibility-Accessibilit-7e9af-heck-homepage-accessibility-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts",
-                        "column": 32,
-                        "line": 20
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "ddd864604af8a6a0198f-a52e64b31139dd55021d",
-              "file": "accessibility.spec.ts",
-              "line": 11,
-              "column": 7
-            },
-            {
-              "title": "check tour page accessibility",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 1,
-                      "parallelIndex": 1,
-                      "status": "failed",
-                      "duration": 12370,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts:31:32",
-                        "location": {
-                          "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts",
-                          "column": 32,
-                          "line": 31
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 29 |\u001b[39m     console\u001b[33m.\u001b[39mlog(formatAccessibilityReport(scanResults))\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     expect(scanResults\u001b[33m.\u001b[39mpassed)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts",
-                            "column": 32,
-                            "line": 31
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32mtrue\u001b[39m\nReceived: \u001b[31mfalse\u001b[39m\n\n\u001b[0m \u001b[90m 29 |\u001b[39m     console\u001b[33m.\u001b[39mlog(formatAccessibilityReport(scanResults))\u001b[33m;\u001b[39m\n \u001b[90m 30 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 31 |\u001b[39m     expect(scanResults\u001b[33m.\u001b[39mpassed)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 32 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 33 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 34 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts:31:32\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 3\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. heading-order - moderate Impact\n   Description: Ensure the order of headings is semantically correct\n   Help: Heading levels should only increase by one\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/heading-order?application=playwright\n   Affected Elements (1):\n     1. .panel.panel-default:nth-child(2) > .panel-heading > h4\n        Fix any of the following:\n  Heading order invalid\n        HTML: <h4 class=\"panel-title\">\n        <a class=\"accordion-toggle collapsed\" data-toggle=\"collapse\" href=\"...\n\n\n2. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n3. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. color-contrast\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Elements to Review (24):\n     1. a[href$=\"#collapse1\"]\n     2. a[href$=\"#collapse2\"]\n     3. a[href$=\"#collapse3\"]\n     4. a[href$=\"#collapse4\"]\n     5. a[href$=\"#collapse5\"]\n     6. a[href$=\"#collapse6\"]\n     7. a[href$=\"#collapse7\"]\n     8. a[href$=\"#collapse8\"]\n     9. a[href$=\"#collapse9\"]\n     10. a[href$=\"#collapse10\"]\n     11. a[href$=\"#collapse11\"]\n     12. a[href$=\"#collapse12\"]\n     13. a[href$=\"#collapse13\"]\n     14. a[href$=\"#collapse14\"]\n     15. a[href$=\"#collapse15\"]\n     16. a[href$=\"#collapse16\"]\n     17. a[href$=\"#collapse17\"]\n     18. a[href$=\"#collapse18\"]\n     19. a[href$=\"#collapse19\"]\n     20. a[href$=\"#collapse20\"]\n     21. a[href$=\"#collapse21\"]\n     22. a[href$=\"#collapse22\"]\n     23. a[href$=\"#collapse23\"]\n     24. a[href$=\"#collapse24\"]\n\n\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-12T08:20:44.722Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\accessibility-Accessibilit-88404-eck-tour-page-accessibility-chromium\\video-1.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\accessibility-Accessibilit-88404-eck-tour-page-accessibility-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\accessibility-Accessibilit-88404-eck-tour-page-accessibility-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\accessibility.spec.ts",
-                        "column": 32,
-                        "line": 31
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "ddd864604af8a6a0198f-cd71a20b15b9db180c8c",
-              "file": "accessibility.spec.ts",
-              "line": 23,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
     {
       "title": "broken-links.spec.ts",
       "file": "broken-links.spec.ts",
       "column": 0,
       "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Broken Link Checking",
-          "file": "broken-links.spec.ts",
-          "line": 13,
-          "column": 6,
-          "specs": [
-            {
-              "title": "check all links on homepage",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 2,
-                      "parallelIndex": 2,
-                      "status": "failed",
-                      "duration": 27073,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts:24:32",
-                        "location": {
-                          "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts",
-                          "column": 32,
-                          "line": 24
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[90m// Assert no broken links (or adjust based on your requirements)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m     expect(brokenLinks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m   test(\u001b[32m'check links on tour page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts",
-                            "column": 32,
-                            "line": 24
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 22 |\u001b[39m\n \u001b[90m 23 |\u001b[39m     \u001b[90m// Assert no broken links (or adjust based on your requirements)\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 24 |\u001b[39m     expect(brokenLinks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 25 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 26 |\u001b[39m\n \u001b[90m 27 |\u001b[39m   test(\u001b[32m'check links on tour page'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts:24:32\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Found 80 links to check\n"
-                        },
-                        {
-                          "text": "\n⚠️  3 link(s) work but need trailing slash:\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/euro_club → https://anewbride.com/euro_club/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/gifts → https://anewbride.com/gifts/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/fiancee-visa → https://anewbride.com/fiancee-visa/\n"
-                        },
-                        {
-                          "text": "1. **https://anewbride.com/our-Process**\n  - Status: 404 Not Found\n  - Found on page (1 element(s)):\n    1. Selector: `a.text-decoration-none.link-dark`\n       - Link Text: \"Our Process\"\n       - HTML: `<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>`\n\n\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-12T08:20:44.656Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\broken-links-Broken-Link-C-99b53-check-all-links-on-homepage-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\broken-links-Broken-Link-C-99b53-check-all-links-on-homepage-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts",
-                        "column": 32,
-                        "line": 24
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "cdfe9f41deac1d8ba9c0-a11dbf11a515e54ca7cd",
-              "file": "broken-links.spec.ts",
-              "line": 14,
-              "column": 7
-            },
-            {
-              "title": "check links on tour page",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 3,
-                      "parallelIndex": 3,
-                      "status": "failed",
-                      "duration": 30059,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts:35:32",
-                        "location": {
-                          "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts",
-                          "column": 32,
-                          "line": 35
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 33 |\u001b[39m\n \u001b[90m 34 |\u001b[39m     console\u001b[33m.\u001b[39mlog(formatBrokenLinksReport(brokenLinks))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m     expect(brokenLinks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 36 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m\n \u001b[90m 38 |\u001b[39m   test(\u001b[32m'check links with custom concurrency'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts",
-                            "column": 32,
-                            "line": 35
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 33 |\u001b[39m\n \u001b[90m 34 |\u001b[39m     console\u001b[33m.\u001b[39mlog(formatBrokenLinksReport(brokenLinks))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 35 |\u001b[39m     expect(brokenLinks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 36 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 37 |\u001b[39m\n \u001b[90m 38 |\u001b[39m   test(\u001b[32m'check links with custom concurrency'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts:35:32\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Found 71 links to check\n"
-                        },
-                        {
-                          "text": "\n⚠️  3 link(s) work but need trailing slash:\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/euro_club → https://anewbride.com/euro_club/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/gifts → https://anewbride.com/gifts/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/fiancee-visa → https://anewbride.com/fiancee-visa/\n"
-                        },
-                        {
-                          "text": "1. **https://anewbride.com/our-Process**\n  - Status: 404 Not Found\n  - Found on page (1 element(s)):\n    1. Selector: `a.text-decoration-none.link-dark`\n       - Link Text: \"Our Process\"\n       - HTML: `<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>`\n\n\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-12T08:20:44.654Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\broken-links-Broken-Link-Checking-check-links-on-tour-page-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\broken-links-Broken-Link-Checking-check-links-on-tour-page-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts",
-                        "column": 32,
-                        "line": 35
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "cdfe9f41deac1d8ba9c0-fac3d1ddea46bc29f21e",
-              "file": "broken-links.spec.ts",
-              "line": 27,
-              "column": 7
-            },
-            {
-              "title": "check links with custom concurrency",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 4,
-                      "parallelIndex": 4,
-                      "status": "failed",
-                      "duration": 21545,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts:46:32",
-                        "location": {
-                          "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts",
-                          "column": 32,
-                          "line": 46
-                        },
-                        "snippet": "\u001b[0m \u001b[90m 44 |\u001b[39m\n \u001b[90m 45 |\u001b[39m     console\u001b[33m.\u001b[39mlog(formatBrokenLinksReport(brokenLinks))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(brokenLinks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m   test(\u001b[32m'extract and validate specific links'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts",
-                            "column": 32,
-                            "line": 46
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m 44 |\u001b[39m\n \u001b[90m 45 |\u001b[39m     console\u001b[33m.\u001b[39mlog(formatBrokenLinksReport(brokenLinks))\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 46 |\u001b[39m     expect(brokenLinks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                                \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 47 |\u001b[39m   })\u001b[33m;\u001b[39m\n \u001b[90m 48 |\u001b[39m\n \u001b[90m 49 |\u001b[39m   test(\u001b[32m'extract and validate specific links'\u001b[39m\u001b[33m,\u001b[39m \u001b[36masync\u001b[39m ({ page }) \u001b[33m=>\u001b[39m {\u001b[0m\n\u001b[2m    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts:46:32\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "Found 80 links to check\n"
-                        },
-                        {
-                          "text": "\n⚠️  3 link(s) work but need trailing slash:\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/euro_club → https://anewbride.com/euro_club/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/gifts → https://anewbride.com/gifts/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/fiancee-visa → https://anewbride.com/fiancee-visa/\n"
-                        },
-                        {
-                          "text": "1. **https://anewbride.com/our-Process**\n  - Status: 404 Not Found\n  - Found on page (1 element(s)):\n    1. Selector: `a.text-decoration-none.link-dark`\n       - Link Text: \"Our Process\"\n       - HTML: `<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>`\n\n\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-12T08:20:44.672Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\broken-links-Broken-Link-C-53a30-nks-with-custom-concurrency-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\broken-links-Broken-Link-C-53a30-nks-with-custom-concurrency-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\broken-links.spec.ts",
-                        "column": 32,
-                        "line": 46
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "cdfe9f41deac1d8ba9c0-30a17bf95afe74251887",
-              "file": "broken-links.spec.ts",
-              "line": 38,
-              "column": 7
-            },
-            {
-              "title": "extract and validate specific links",
-              "ok": true,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 5,
-                      "parallelIndex": 5,
-                      "status": "passed",
-                      "duration": 7326,
-                      "errors": [],
-                      "stdout": [
-                        {
-                          "text": "Found 80 links on the page\n"
-                        },
-                        {
-                          "text": "Found 2 tour-related links\n"
-                        },
-                        {
-                          "text": "✅ No broken links found!\n"
-                        }
-                      ],
-                      "stderr": [],
-                      "retry": 0,
-                      "startTime": "2026-01-12T08:20:44.661Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\broken-links-Broken-Link-C-bbb1e-and-validate-specific-links-chromium\\video.webm"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "expected"
-                }
-              ],
-              "id": "cdfe9f41deac1d8ba9c0-a81c39bd067c8e691a36",
-              "file": "broken-links.spec.ts",
-              "line": 49,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "comprehensive-audit.spec.ts",
-      "file": "comprehensive-audit.spec.ts",
-      "column": 0,
-      "line": 0,
-      "specs": [],
-      "suites": [
-        {
-          "title": "Comprehensive Site Audit",
-          "file": "comprehensive-audit.spec.ts",
-          "line": 33,
-          "column": 6,
-          "specs": [
-            {
-              "title": "full audit of homepage",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 6,
-                      "parallelIndex": 6,
-                      "status": "failed",
-                      "duration": 27801,
-                      "error": {
-                        "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m",
-                        "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\comprehensive-audit.spec.ts:99:36",
-                        "location": {
-                          "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\comprehensive-audit.spec.ts",
-                          "column": 36,
-                          "line": 99
-                        },
-                        "snippet": "\u001b[0m \u001b[90m  97 |\u001b[39m     \u001b[90m// Assertions\u001b[39m\n \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m failedSEOChecks \u001b[33m=\u001b[39m seoResults\u001b[33m.\u001b[39mfilter(r \u001b[33m=>\u001b[39m \u001b[33m!\u001b[39mr\u001b[33m.\u001b[39mpassed)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  99 |\u001b[39m     expect(failedSEOChecks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 100 |\u001b[39m     expect(brokenLinks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 101 |\u001b[39m     expect(accessibilityResults\u001b[33m.\u001b[39mpassed)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 102 |\u001b[39m     expect(gtmResult\u001b[33m.\u001b[39mhasGTM)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m"
-                      },
-                      "errors": [
-                        {
-                          "location": {
-                            "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\comprehensive-audit.spec.ts",
-                            "column": 36,
-                            "line": 99
-                          },
-                          "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\n\u001b[0m \u001b[90m  97 |\u001b[39m     \u001b[90m// Assertions\u001b[39m\n \u001b[90m  98 |\u001b[39m     \u001b[36mconst\u001b[39m failedSEOChecks \u001b[33m=\u001b[39m seoResults\u001b[33m.\u001b[39mfilter(r \u001b[33m=>\u001b[39m \u001b[33m!\u001b[39mr\u001b[33m.\u001b[39mpassed)\u001b[33m;\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m  99 |\u001b[39m     expect(failedSEOChecks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                    \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 100 |\u001b[39m     expect(brokenLinks\u001b[33m.\u001b[39mlength)\u001b[33m.\u001b[39mtoBe(\u001b[35m0\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 101 |\u001b[39m     expect(accessibilityResults\u001b[33m.\u001b[39mpassed)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m 102 |\u001b[39m     expect(gtmResult\u001b[33m.\u001b[39mhasGTM)\u001b[33m.\u001b[39mtoBe(\u001b[36mtrue\u001b[39m)\u001b[33m;\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\comprehensive-audit.spec.ts:99:36\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "\nNavigating to: https://anewbride.com/\n"
-                        },
-                        {
-                          "text": "Successfully loaded: https://anewbride.com/\n"
-                        },
-                        {
-                          "text": "Found 80 links to check\n"
-                        },
-                        {
-                          "text": "\n⚠️  3 link(s) work but need trailing slash:\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/euro_club → https://anewbride.com/euro_club/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/gifts → https://anewbride.com/gifts/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/fiancee-visa → https://anewbride.com/fiancee-visa/\n"
-                        },
-                        {
-                          "text": "\n=== SEO CHECK RESULTS ===\n"
-                        },
-                        {
-                          "text": "SEO Check Results: 5/6 passed\n\n✅ Page Title: Page title is present: \"Foreign Women Seeking to Become a New Bride to American Men\"\n   Value: Foreign Women Seeking to Become a New Bride to American Men\n\n❌ Meta Description: Meta description is too long (341 chars, recommended: 50-160)\n   Value: Thousands of beautiful, alluring women are patiently waiting here at A New Bride - a well-established marriage agency with the goal of matching foreign women to American and other foreign men. Our singles vacation, which have been on the successful field for over two decades, allow a number of men to get married with worthy foreign brides.\n\n✅ Canonical URL: Canonical URL is present: \"https://anewbride.com\"\n   Value: https://anewbride.com\n\n✅ Robots Meta Tag: Robots meta tag is properly configured: \"index, follow\"\n   Value: index, follow\n\n✅ Image Alt Attributes: All 28 images have alt attributes\n\n✅ Heading Structure: Proper heading structure: 1 H1 found\n   Value: H1: Meet Your Future Wife in A New Bride\n\n\n====================================================================================================\nSEO METADATA TABLE\n====================================================================================================\n\nMETA TAGS:\n────────────────────────────────────────────────────────────────────────────────────────────────────\n│ Tag Name                     │ Value                                              │ Status          │\n├──────────────────────────────┤────────────────────────────────────────────────────┤─────────────────┤\n│ Title                        │ Foreign Women Seeking to Become a New Bride to Ame │ ✅ Present       │\n│ Meta Description             │ Thousands of beautiful, alluring women are pati... │ ⚠️  341 chars   │\n│ Canonical URL                │ https://anewbride.com                              │ ✅ Present       │\n│ Robots Meta Tag              │ index, follow                                      │ ✅ Present       │\n────────────────────────────────────────────────────────────────────────────────────────────────────\n\nOPEN GRAPH TAGS:\n────────────────────────────────────────────────────────────────────────────────────────────────────\n│ Tag Name                     │ Value                                              │ Status          │\n├──────────────────────────────┤────────────────────────────────────────────────────┤─────────────────┤\n│ og:title                     │ Foreign Women Seeking to Become a New Bride to Ame │ ✅ Present       │\n│ og:description               │ Thousands of beautiful, alluring women are pati... │ ✅ Present       │\n│ og:image                     │ See full URL below                                 │ ✅ Present       │\n│ og:url                       │ https://anewbride.com                              │ ✅ Present       │\n────────────────────────────────────────────────────────────────────────────────────────────────────\n\nFULL URLS (for reference - complete, non-truncated):\n────────────────────────────────────────────────────────────────────────────────────────────────────\nOpen Graph Image (og:image):\n  https://i.ytimg.com/vi/pPWfhB5y3Gs/maxresdefault.jpg\n\nIMAGES (28 total):\n────────────────────────────────────────────────────────────────────────────────────────────────────\n│ #    │ Image URL (src)                                         │ Alt Text                  │ Status     │\n├──────┤─────────────────────────────────────────────────────────┤───────────────────────────┤────────────┤\n│ 1    │ See #1 below (97 chars)                                 │ logo                      │ ✅          │\n│ 2    │ See #2 below (99 chars)                                 │ watermark-logo            │ ✅          │\n│ 3    │ See #3 below (97 chars)                                 │ logo                      │ ✅          │\n│ 4    │ See #4 below (56 chars)                                 │ Captcha                   │ ✅          │\n│ 5    │ See #5 below (99 chars)                                 │ watermark-logo            │ ✅          │\n│ 6    │ See #6 below (81 chars)                                 │ (missing)                 │ ❌          │\n│ 7    │ See #7 below (99 chars)                                 │ watermark-logo            │ ✅          │\n│ 8    │ /mp/p684-1.jpg                                          │ Profile                   │ ✅          │\n│ 9    │ /mp/p690-1.jpg                                          │ Profile                   │ ✅          │\n│ 10   │ /mp/p691-1.jpg                                          │ Profile                   │ ✅          │\n│ 11   │ /mp/p680-1.jpg                                          │ Profile                   │ ✅          │\n│ 12   │ /mp/p689-1.jpg                                          │ Profile                   │ ✅          │\n│ 13   │ /mp/p682-1.jpg                                          │ Profile                   │ ✅          │\n│ 14   │ /mp/p698-1.jpg                                          │ Profile                   │ ✅          │\n│ 15   │ /mp/p687-1.jpg                                          │ Profile                   │ ✅          │\n│ 16   │ /mp/p681-1.jpg                                          │ Profile                   │ ✅          │\n│ 17   │ https://i.ytimg.com/vi/pPWfhB5y3Gs/maxresdefault.jpg    │ video intro thumbnail     │ ✅          │\n│ 18   │ https://i.ytimg.com/vi/R4Nc-_FqHak/maxresdefault.jpg    │ Featured Videos           │ ✅          │\n│ 19   │ https://i.ytimg.com/vi/wUFxma5jo3A/maxresdefault.jpg    │ Kiev Personals Testimo... │ ✅          │\n│ 20   │ https://i.ytimg.com/vi/4z56Gpm6kl4/maxresdefault.jpg    │ Kiev Personals Testimo... │ ✅          │\n│ ... │ (8 more images)                                         │                           │            │\n────────────────────────────────────────────────────────────────────────────────────────────────────\n\nFULL IMAGE URLS (complete, non-truncated - all 20 images):\n────────────────────────────────────────────────────────────────────────────────────────────────────\nImage #1: [alt: \"logo\"]\n  https://storage.googleapis.com/loveme-assets/branding/1765497870496-a-new-bride-primary-blue.webp\n\nImage #2: [alt: \"watermark-logo\"]\n  https://storage.googleapis.com/loveme-assets/branding/1765497865179-a-new-bride-secondary-blue.webp\n\nImage #3: [alt: \"logo\"]\n  https://storage.googleapis.com/loveme-assets/branding/1765497870496-a-new-bride-primary-blue.webp\n\nImage #4: [alt: \"Captcha\"]\n  /members/scripts/quick_register.php?cmd=get_captcha_code\n\nImage #5: [alt: \"watermark-logo\"]\n  https://storage.googleapis.com/loveme-assets/branding/1765497865179-a-new-bride-secondary-blue.webp\n\nImage #6: [no alt text]\n  https://storage.googleapis.com/1stlatinwomen-assets/global-images/modal-close.png\n\nImage #7: [alt: \"watermark-logo\"]\n  https://storage.googleapis.com/loveme-assets/branding/1765497865179-a-new-bride-secondary-blue.webp\n\nImage #8: [alt: \"Profile\"]\n  /mp/p684-1.jpg\n\nImage #9: [alt: \"Profile\"]\n  /mp/p690-1.jpg\n\nImage #10: [alt: \"Profile\"]\n  /mp/p691-1.jpg\n\nImage #11: [alt: \"Profile\"]\n  /mp/p680-1.jpg\n\nImage #12: [alt: \"Profile\"]\n  /mp/p689-1.jpg\n\nImage #13: [alt: \"Profile\"]\n  /mp/p682-1.jpg\n\nImage #14: [alt: \"Profile\"]\n  /mp/p698-1.jpg\n\nImage #15: [alt: \"Profile\"]\n  /mp/p687-1.jpg\n\nImage #16: [alt: \"Profile\"]\n  /mp/p681-1.jpg\n\nImage #17: [alt: \"video intro thumbnail\"]\n  https://i.ytimg.com/vi/pPWfhB5y3Gs/maxresdefault.jpg\n\nImage #18: [alt: \"Featured Videos\"]\n  https://i.ytimg.com/vi/R4Nc-_FqHak/maxresdefault.jpg\n\nImage #19: [alt: \"Kiev Personals Testimonial Videos\"]\n  https://i.ytimg.com/vi/wUFxma5jo3A/maxresdefault.jpg\n\nImage #20: [alt: \"Kiev Personals Testimonial Videos\"]\n  https://i.ytimg.com/vi/4z56Gpm6kl4/maxresdefault.jpg\n\nImage Summary:\n  • Total Images: 28\n  • With Alt Text: 27 ⚠️\n  • Without Alt Text: 1 ❌\n\n  Images Missing Alt Text (full URLs):\n    1. https://storage.googleapis.com/1stlatinwomen-assets/global-images/modal-close.png\n\n====================================================================================================\n\n"
-                        },
-                        {
-                          "text": "\n=== BROKEN LINKS CHECK ===\n"
-                        },
-                        {
-                          "text": "1. **https://anewbride.com/our-Process**\n  - Status: 404 Not Found\n  - Found on page (1 element(s)):\n    1. Selector: `a.text-decoration-none.link-dark`\n       - Link Text: \"Our Process\"\n       - HTML: `<a role=\"button\" class=\"text-decoration-none link-dark\" href=\"/our-Process/\"> Our Process </a>`\n\n\n"
-                        },
-                        {
-                          "text": "\n=== ACCESSIBILITY CHECK ===\n"
-                        },
-                        {
-                          "text": "\n=== ACCESSIBILITY AUDIT RESULTS ===\nStatus: ❌ FAILED\nTotal Violations: 2\nTotal Incomplete: 1\n\n❌ VIOLATIONS (Must Fix):\n──────────────────────────────────────────────────────────────────────\n\n1. landmark-unique - moderate Impact\n   Description: Ensure landmarks are unique\n   Help: Landmarks should have a unique role or role/label/title (i.e. accessible name) combination\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/landmark-unique?application=playwright\n   Affected Elements (1):\n     1. main\n        Fix any of the following:\n  The landmark must have a unique aria-label, aria-labelledby, or title to make landmarks distinguishable\n        HTML: <main class=\"midcontarea container mx-auto\">\n\n\n2. region - moderate Impact\n   Description: Ensure all page content is contained by landmarks\n   Help: All page content should be contained by landmarks\n   Help URL: https://dequeuniversity.com/rules/axe/4.11/region?application=playwright\n   Affected Elements (1):\n     1. .col-11\n        Fix any of the following:\n  Some page content is not contained by landmarks\n        HTML: <div class=\"col-11 p-0\">\n\n⚠️  INCOMPLETE (Needs Review):\n──────────────────────────────────────────────────────────────────────\n\n1. color-contrast\n   Description: Ensure the contrast between foreground and background colors meets WCAG 2 AA minimum contrast ratio thresholds\n   Elements to Review (13):\n     1. h1\n     2. .d-none.d-lg-block.pt-3:nth-child(3)\n     3. .mt-4.col-12.text-center > .pt-3.text-white\n     4. div[aria-label=\"9 / 10\"] > .card-body.text-center > h2\n     5. div[aria-label=\"9 / 10\"] > .card-body.text-center > .card-text\n     6. .swiper-slide-prev > .card-body.text-center > h2\n     7. .swiper-slide-prev > .card-body.text-center > .card-text\n     8. .swiper-slide-active > .card-body.text-center > h2\n     9. .swiper-slide-active > .card-body.text-center > .card-text\n     10. .swiper-slide-next > .card-body.text-center > h2\n     11. .swiper-slide-next > .card-body.text-center > .card-text\n     12. div[aria-label=\"3 / 10\"] > .card-body.text-center > h2\n     13. div[aria-label=\"3 / 10\"] > .card-body.text-center > .card-text\n\n\n"
-                        },
-                        {
-                          "text": "\n=== GTM CHECK ===\n"
-                        },
-                        {
-                          "text": "✅ GTM: GTM-5BM9G4MF\n✅ LP Track Script (/members/scripts/lp_track.min.js): Found\n\n   Verification Details:\n     - GTM Script tag: ✅\n     - GTM gtm.js loaded: ✅\n     - LP Track Script tag: ✅\n     - dataLayer exists: ✅\n"
-                        },
-                        {
-                          "text": "\n✅ JSON Report saved: C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\reports\\anewbride.com\\root\\index.json\n"
-                        },
-                        {
-                          "text": "   Overall Status: FAILED\n"
-                        },
-                        {
-                          "text": "   SEO: 5/6 passed\n"
-                        },
-                        {
-                          "text": "   Broken Links: 1 found\n"
-                        },
-                        {
-                          "text": "   Accessibility: FAILED (2 violations)\n"
-                        },
-                        {
-                          "text": "   GTM: FOUND (GTM-5BM9G4MF)\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "\n⚠️  Test failed but detailed report saved: C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\reports\\anewbride.com\\root\\index.json\n"
-                        },
-                        {
-                          "text": "\n================================================================================\nERROR OCCURRED DURING TEST\n================================================================================\nURL: https://anewbride.com/\nOperation: full audit of homepage\nError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n\nStack Trace:\nError: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBe\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m) // Object.is equality\u001b[22m\n\nExpected: \u001b[32m0\u001b[39m\nReceived: \u001b[31m1\u001b[39m\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\comprehensive-audit.spec.ts:99:36\n================================================================================\n\n"
-                        },
-                        {
-                          "text": "URL before error: https://anewbride.com/\n"
-                        },
-                        {
-                          "text": "URL after error: https://anewbride.com/\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2026-01-12T08:20:44.766Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\comprehensive-audit-Compre-72ceb-udit-full-audit-of-homepage-chromium\\video-1.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\comprehensive-audit-Compre-72ceb-udit-full-audit-of-homepage-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\comprehensive-audit-Compre-72ceb-udit-full-audit-of-homepage-chromium\\error-context.md"
-                        }
-                      ],
-                      "errorLocation": {
-                        "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\comprehensive-audit.spec.ts",
-                        "column": 36,
-                        "line": 99
-                      }
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "ac9d4d6bf271ce1160e6-21f8dba88eacd7cc13b8",
-              "file": "comprehensive-audit.spec.ts",
-              "line": 34,
-              "column": 7
-            },
-            {
-              "title": "full audit of tour page",
-              "ok": false,
-              "tags": [],
-              "tests": [
-                {
-                  "timeout": 60000,
-                  "annotations": [],
-                  "expectedStatus": "passed",
-                  "projectId": "chromium",
-                  "projectName": "chromium",
-                  "results": [
-                    {
-                      "workerIndex": 7,
-                      "parallelIndex": 7,
-                      "status": "timedOut",
-                      "duration": 60190,
-                      "error": {
-                        "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m",
-                        "stack": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
-                      },
-                      "errors": [
-                        {
-                          "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
-                        },
-                        {
-                          "location": {
-                            "file": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\utils\\seo-checks.ts",
-                            "column": 67,
-                            "line": 243
-                          },
-                          "message": "Error: locator.getAttribute: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('meta[name=\"robots\"]')\u001b[22m\n\n\n\u001b[90m   at \u001b[39m..\\utils\\seo-checks.ts:243\n\n\u001b[0m \u001b[90m 241 |\u001b[39m   requireFollow\u001b[33m:\u001b[39m boolean \u001b[33m=\u001b[39m \u001b[36mtrue\u001b[39m\n \u001b[90m 242 |\u001b[39m )\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[33mSEOCheckResult\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 243 |\u001b[39m   \u001b[36mconst\u001b[39m robotsContent \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m page\u001b[33m.\u001b[39mlocator(\u001b[32m'meta[name=\"robots\"]'\u001b[39m)\u001b[33m.\u001b[39mgetAttribute(\u001b[32m'content'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m     |\u001b[39m                                                                   \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 244 |\u001b[39m\n \u001b[90m 245 |\u001b[39m   \u001b[36mif\u001b[39m (\u001b[33m!\u001b[39mrobotsContent) {\n \u001b[90m 246 |\u001b[39m     \u001b[90m// If no robots meta tag, it defaults to index,follow (search engines can index and follow)\u001b[39m\u001b[0m\n\u001b[2m    at checkRobotsMetaTag (C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\utils\\seo-checks.ts:243:67)\u001b[22m\n\u001b[2m    at runSEOChecks (C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\utils\\seo-checks.ts:378:24)\u001b[22m\n\u001b[2m    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\comprehensive-audit.spec.ts:192:68\u001b[22m"
-                        }
-                      ],
-                      "stdout": [
-                        {
-                          "text": "\nNavigating to: https://anewbride.com/tour/things-to-consider-on-singles-tours.html\n"
-                        },
-                        {
-                          "text": "Successfully loaded: https://anewbride.com/tour/things-to-consider-on-singles-tours.html\n"
-                        },
-                        {
-                          "text": "Found 71 links to check\n"
-                        },
-                        {
-                          "text": "\n⚠️  3 link(s) work but need trailing slash:\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/euro_club → https://anewbride.com/euro_club/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/gifts → https://anewbride.com/gifts/\n"
-                        },
-                        {
-                          "text": "   https://anewbride.com/fiancee-visa → https://anewbride.com/fiancee-visa/\n"
-                        }
-                      ],
-                      "stderr": [
-                        {
-                          "text": "\n❌ Error report saved: C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\reports\\anewbride.com\\tour\\error-things-to-consider-on-singles-tours.json\n"
-                        },
-                        {
-                          "text": "\n================================================================================\nERROR OCCURRED DURING TEST\n================================================================================\nURL: https://anewbride.com/tour/things-to-consider-on-singles-tours.html\nOperation: full audit of tour page\nError: locator.getAttribute: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('meta[name=\"robots\"]')\u001b[22m\n\n\nStack Trace:\nlocator.getAttribute: Test timeout of 60000ms exceeded.\nCall log:\n\u001b[2m  - waiting for locator('meta[name=\"robots\"]')\u001b[22m\n\n    at checkRobotsMetaTag (C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\utils\\seo-checks.ts:243:67)\n    at runSEOChecks (C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\utils\\seo-checks.ts:378:24)\n    at C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\tests\\comprehensive-audit.spec.ts:192:68\n================================================================================\n\n"
-                        },
-                        {
-                          "text": "URL before error: https://anewbride.com/tour/things-to-consider-on-singles-tours.html\n"
-                        },
-                        {
-                          "text": "URL after error: https://anewbride.com/tour/things-to-consider-on-singles-tours.html\n"
-                        }
-                      ],
-                      "retry": 0,
-                      "startTime": "2026-01-12T08:20:44.777Z",
-                      "annotations": [],
-                      "attachments": [
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\comprehensive-audit-Compre-29cc1-dit-full-audit-of-tour-page-chromium\\video-1.webm"
-                        },
-                        {
-                          "name": "video",
-                          "contentType": "video/webm",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\comprehensive-audit-Compre-29cc1-dit-full-audit-of-tour-page-chromium\\video.webm"
-                        },
-                        {
-                          "name": "error-context",
-                          "contentType": "text/markdown",
-                          "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\comprehensive-audit-Compre-29cc1-dit-full-audit-of-tour-page-chromium\\error-context.md"
-                        }
-                      ]
-                    }
-                  ],
-                  "status": "unexpected"
-                }
-              ],
-              "id": "ac9d4d6bf271ce1160e6-ba0fb331e947f9b2f67d",
-              "file": "comprehensive-audit.spec.ts",
-              "line": 174,
-              "column": 7
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "title": "gtm-check.spec.ts",
-      "file": "gtm-check.spec.ts",
-      "column": 0,
-      "line": 0,
       "specs": [
         {
-          "title": "DEBUG: log GTM scripts",
-          "ok": true,
+          "title": "URL is not broken",
+          "ok": false,
           "tags": [],
           "tests": [
             {
@@ -850,35 +72,49 @@
               "projectName": "chromium",
               "results": [
                 {
-                  "workerIndex": 5,
-                  "parallelIndex": 5,
-                  "status": "passed",
-                  "duration": 10475,
-                  "errors": [],
-                  "stdout": [
+                  "workerIndex": 0,
+                  "parallelIndex": 0,
+                  "status": "failed",
+                  "duration": 472,
+                  "error": {
+                    "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m400\u001b[39m\nReceived:   \u001b[31m400\u001b[39m",
+                    "stack": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m400\u001b[39m\nReceived:   \u001b[31m400\u001b[39m\n    at C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts:77:29",
+                    "location": {
+                      "file": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts",
+                      "column": 29,
+                      "line": 77
+                    },
+                    "snippet": "\u001b[0m \u001b[90m 75 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(url)\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\u001b[0m"
+                  },
+                  "errors": [
                     {
-                      "text": "GTM scripts: [\n  \u001b[32m'https://www.googletagmanager.com/gtag/js?id=G-ZKP8XZDLYY&cx=c&gtm=4e6171'\u001b[39m,\n  \u001b[32m'https://www.googletagmanager.com/gtm.js?id=GTM-N3934XR2'\u001b[39m\n]\n"
+                      "location": {
+                        "file": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts",
+                        "column": 29,
+                        "line": 77
+                      },
+                      "message": "Error: \u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeLessThan\u001b[2m(\u001b[22m\u001b[32mexpected\u001b[39m\u001b[2m)\u001b[22m\n\nExpected: < \u001b[32m400\u001b[39m\nReceived:   \u001b[31m400\u001b[39m\n\n\u001b[0m \u001b[90m 75 |\u001b[39m   \u001b[36mconst\u001b[39m response \u001b[33m=\u001b[39m \u001b[36mawait\u001b[39m request\u001b[33m.\u001b[39m\u001b[36mget\u001b[39m(url)\u001b[33m;\u001b[39m\n \u001b[90m 76 |\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 77 |\u001b[39m   expect(response\u001b[33m.\u001b[39mstatus())\u001b[33m.\u001b[39mtoBeLessThan(\u001b[35m400\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                             \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 78 |\u001b[39m })\u001b[33m;\u001b[39m\n \u001b[90m 79 |\u001b[39m\u001b[0m\n\u001b[2m    at C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts:77:29\u001b[22m"
                     }
                   ],
+                  "stdout": [],
                   "stderr": [],
                   "retry": 0,
-                  "startTime": "2026-01-12T08:20:52.108Z",
+                  "startTime": "2026-01-07T04:36:39.772Z",
                   "annotations": [],
-                  "attachments": [
-                    {
-                      "name": "video",
-                      "contentType": "video/webm",
-                      "path": "C:\\Users\\PM SHIFT\\Documents\\czech-codes\\web-testkit\\test-results\\gtm-check-DEBUG-log-GTM-scripts-chromium\\video.webm"
-                    }
-                  ]
+                  "attachments": [],
+                  "errorLocation": {
+                    "file": "C:\\Users\\AM - Shift\\Documents\\web-testkit\\tests\\broken-links.spec.ts",
+                    "column": 29,
+                    "line": 77
+                  }
                 }
               ],
-              "status": "expected"
+              "status": "unexpected"
             }
           ],
-          "id": "615c54030289f54a5d04-4e419e882b153c6556de",
-          "file": "gtm-check.spec.ts",
-          "line": 71,
+          "id": "cdfe9f41deac1d8ba9c0-5b078d415ede736fcc1d",
+          "file": "broken-links.spec.ts",
+          "line": 72,
           "column": 5
         }
       ]
@@ -16619,9 +15855,9 @@
   ],
   "errors": [],
   "stats": {
-    "startTime": "2026-01-12T08:20:43.555Z",
-    "duration": 734732.895,
-    "expected": 158,
+    "startTime": "2026-01-07T04:36:38.745Z",
+    "duration": 1563.4619999999998,
+    "expected": 0,
     "skipped": 0,
     "unexpected": 21,
     "flaky": 0

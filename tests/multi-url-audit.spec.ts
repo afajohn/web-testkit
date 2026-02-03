@@ -7,7 +7,10 @@ import { checkGTMImplementation } from "../utils/gtm-check";
 import { gotoAndWait } from "../utils/page-load";
 import { formatErrorWithContext, getCurrentUrl } from "../utils/error-handling";
 import { getFilePathFromUrl, writeJsonFile } from "../utils/file-utils";
-import { mergeTestResults } from "../utils/report-merger";
+import {
+  mergeTestResults,
+  getPhilippineTimeISOString,
+} from "../utils/report-merger";
 
 /**
  * Multi-URL Audit Test
@@ -223,7 +226,7 @@ test.describe(`Multi-URL Audit Test (${TEST_URLS.length} URLs)`, () => {
           brokenLinks,
           accessibilityResults,
           page,
-          gtmResult
+          gtmResult,
         );
 
         // Generate filename from URL
@@ -235,25 +238,25 @@ test.describe(`Multi-URL Audit Test (${TEST_URLS.length} URLs)`, () => {
 
         console.log(`\n✅ Report saved: ${filePath}`);
         console.log(
-          `   Overall Status: ${mergedReport.summary.overallStatus.toUpperCase()}`
+          `   Overall Status: ${mergedReport.summary.overallStatus.toUpperCase()}`,
         );
         console.log(
-          `   SEO: ${mergedReport.seo.passedCount}/${mergedReport.seo.totalCount} passed`
+          `   SEO: ${mergedReport.seo.passedCount}/${mergedReport.seo.totalCount} passed`,
         );
         console.log(
-          `   Broken Links: ${mergedReport.brokenLinks.brokenCount} found`
+          `   Broken Links: ${mergedReport.brokenLinks.brokenCount} found`,
         );
         console.log(
           `   Accessibility: ${
             mergedReport.accessibility.passed ? "PASSED" : "FAILED"
-          } (${mergedReport.accessibility.totalViolations} violations)`
+          } (${mergedReport.accessibility.totalViolations} violations)`,
         );
         console.log(
           `   GTM: ${mergedReport.gtm.hasGTM ? "FOUND" : "NOT FOUND"}${
             mergedReport.gtm.containerId
               ? ` (${mergedReport.gtm.containerId})`
               : ""
-          }`
+          }`,
         );
 
         // Optionally, you can assert on the results here
@@ -264,7 +267,7 @@ test.describe(`Multi-URL Audit Test (${TEST_URLS.length} URLs)`, () => {
         const errorMessage = formatErrorWithContext(
           testUrl,
           "multi-url audit",
-          error
+          error,
         );
         console.error(`\n❌ Error auditing ${testUrl}:`);
         console.error(errorMessage);
@@ -274,7 +277,7 @@ test.describe(`Multi-URL Audit Test (${TEST_URLS.length} URLs)`, () => {
         // Save error report
         const errorReport = {
           url: testUrl,
-          timestamp: new Date().toISOString(),
+          timestamp: getPhilippineTimeISOString(),
           error: true,
           errorMessage: error.message,
           errorStack: error.stack,
@@ -283,7 +286,7 @@ test.describe(`Multi-URL Audit Test (${TEST_URLS.length} URLs)`, () => {
         const relativePath = getFilePathFromUrl(testUrl, "", "json");
         const filePath = path.join(
           REPORTS_DIR,
-          `error-${path.basename(relativePath)}`
+          `error-${path.basename(relativePath)}`,
         );
         writeJsonFile(filePath, errorReport);
 

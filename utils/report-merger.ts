@@ -8,6 +8,41 @@ import {
 } from "./accessibility";
 
 /**
+ * Get current timestamp in Philippine time (UTC+8) in ISO format
+ * @returns ISO string with Philippine timezone offset (+08:00)
+ */
+export function getPhilippineTimeISOString(): string {
+  const now = new Date();
+  
+  // Use Intl.DateTimeFormat to get date parts in Philippine timezone
+  const formatter = new Intl.DateTimeFormat('en-US', {
+    timeZone: 'Asia/Manila',
+    year: 'numeric',
+    month: '2-digit',
+    day: '2-digit',
+    hour: '2-digit',
+    minute: '2-digit',
+    second: '2-digit',
+    hour12: false,
+  });
+  
+  // Format the date parts
+  const parts = formatter.formatToParts(now);
+  const year = parts.find(p => p.type === 'year')?.value || '';
+  const month = parts.find(p => p.type === 'month')?.value || '';
+  const day = parts.find(p => p.type === 'day')?.value || '';
+  const hour = parts.find(p => p.type === 'hour')?.value || '';
+  const minute = parts.find(p => p.type === 'minute')?.value || '';
+  const second = parts.find(p => p.type === 'second')?.value || '';
+  
+  // Get milliseconds from the original date (milliseconds are timezone-independent)
+  const milliseconds = now.getMilliseconds().toString().padStart(3, '0');
+  
+  // Format as ISO string with Philippine timezone offset
+  return `${year}-${month}-${day}T${hour}:${minute}:${second}.${milliseconds}+08:00`;
+}
+
+/**
  * Merged report structure containing all test results
  */
 export interface MergedReport {
@@ -99,7 +134,7 @@ export async function mergeTestResults(
 
   const report: MergedReport = {
     url,
-    timestamp: new Date().toISOString(),
+    timestamp: getPhilippineTimeISOString(),
     summary: {
       overallStatus,
       seoPassed,
