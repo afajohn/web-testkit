@@ -46,23 +46,28 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
     const isBatchMode = process.env.CI === 'true' || process.env.BATCH_MODE === 'true';
     
     try {
-      // Skip verbose navigation logs in batch mode
-      if (!isBatchMode) {
+            if (!isBatchMode) {
         console.log(`\nNavigating to: ${TEST_URL}`);
       }
+      
+      // 1. Initial Navigation
       await gotoAndWait(page, TEST_URL);
-      currentUrl = await getCurrentUrl(page);
+
+      // 2. THE CRITICAL FIX: Wait for the URL to settle (handles redirects)
+      // This stops the "Execution context was destroyed" error
+      await page.waitForLoadState('networkidle');
+
+      // 3. Update currentUrl to where we actually landed
+      currentUrl = page.url();
+
       if (!isBatchMode) {
         console.log(`Successfully loaded: ${currentUrl}`);
       }
 
-      // Run all checks in parallel for faster execution
+      // 4. Now run checks (only AFTER page is stable)
       const apiRequest = await request.newContext();
-
       [seoResults, brokenLinks, accessibilityResults, gtmResult] = await Promise.all([
-        runSEOChecks(page, {
-          checkRobots: true, // Include robots meta tag check
-        }),
+        runSEOChecks(page, { checkRobots: true }),
         checkBrokenLinks(page, apiRequest),
         runAccessibilityCheck(page),
         checkGTMImplementation(page),

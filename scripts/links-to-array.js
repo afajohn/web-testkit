@@ -12,6 +12,7 @@
  * Or specify a different file:
  *   node scripts/links-to-array.js my-links.txt
  *   node scripts/links-to-array.js my-links.txt -v myLinksArray
+ *   npm run transform:links
  */
 
 const fs = require('fs');

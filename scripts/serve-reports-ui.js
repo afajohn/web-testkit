@@ -563,7 +563,7 @@ function createServer() {
     }
   });
 
-  server.listen(PORT, () => {
+  server.listen(PORT, '0.0.0.0', () => {
     const networkIPs = getNetworkIPs();
     console.log('\n' + '='.repeat(80));
     console.log('📊 REPORTS UI SERVER');

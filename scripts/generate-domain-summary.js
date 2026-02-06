@@ -13,6 +13,7 @@
  * 
  * Example:
  *   node scripts/generate-domain-summary.js mexicocitydating.com
+ *  npm run generate:summary
  */
 
 const fs = require('fs');

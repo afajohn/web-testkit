@@ -22,7 +22,9 @@
     "prepare:github": "node scripts/prepare-github-reports.js",
     "verify:structure": "node scripts/verify-structure.js",
     "codegen": "playwright codegen",
-    "codegen:url": "node codegen.js"
+    "codegen:url": "node codegen.js",
+    "generate:summary": "node scripts/generate-domain-summary.js", 
+    "transform:links": "node scripts/links-to-array.js scripts/my-links.txt"
   },
   "keywords": [
     "playwright",
