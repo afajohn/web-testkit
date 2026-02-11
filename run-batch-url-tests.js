@@ -8,24 +8,42 @@
  * Usage:
  *   node run-batch-url-tests.js
  * 
- * Or modify the URLS array below with your URLs
+ * Or modify the URLS array below with your URLs 
  */
 
 const { spawn } = require('child_process');
 const path = require('path');
 
 // Array of URLs to test
+
 const URLS = [
-  'https://asianlovemates.com/about-asia.html',
-  'https://asianlovemates.com/about-asian-love-mates.html',
-  'https://asianlovemates.com/asia-travel-guide.html',
-  'https://asianlovemates.com/asian-brides.html',
-  'https://asianlovemates.com/asian-love-marriage-matchmaking.html',
-  'https://asianlovemates.com/asian-love-mates-tours.html',
-  'https://asianlovemates.com/ask-asian-women.html',
-  'https://asianlovemates.com/craigslist-vs-asian-love-mates.html',
-  'https://asianlovemates.com/date-asian-women.html',
-  'https://asianlovemates.com/dating-culture-asia.html',
+  'https://barranquilladating.com/dating/long-distance-relationships-with-colombian-women.html',
+  'https://barranquilladating.com/dating/love-advice-best-ways-to-say-sorry.html',
+  'https://barranquilladating.com/dating/making-christmas-romantic-with-colombian-woman.html',
+  'https://barranquilladating.com/dating/stages-of-courtship-in-Colombia.html',
+  'https://barranquilladating.com/dating/types-of-men-colombian-women-approach.html',
+  'https://barranquilladating.com/dating/useful-tips-on-dating-a-colombian-woman.html',
+  'https://barranquilladating.com/dating/what-to-expect-when-dating-a-latina.html',
+  'https://barranquilladating.com/dating/will-colombian-women-tolerate-codependency.html',
+  'https://barranquilladating.com/psychology/how-marrying-colombian-women-affects-foreign-men.html',
+  'https://barranquilladating.com/psychology/index.html',
+  'https://barranquilladating.com/psychology/make-anxiety-vanish-with-colombian-women.html',
+  'https://barranquilladating.com/psychology/qualities-of-colombian-women-from-barranquilla.html',
+  'https://barranquilladating.com/travel/best-places-to-meet-women-in-barranquilla.html',
+  'https://barranquilladating.com/travel/exploring-barranquilla-colombia.html',
+  'https://barranquilladating.com/travel/index.html',
+  'https://barranquilladating.com/travel/memorable-moments-dating-in-barranquilla.html',
+  'https://barranquilladating.com/travel/reasons-to-visit-barranquilla-colombia.html',
+  'https://barranquilladating.com/travel/things-to-do-in-colombia-activities.html',
+  'https://barranquilladating.com/travel/travel-advice-barranquilla-carnival.html',
+  'https://barranquilladating.com/blog/index.html',
+  'https://barranquilladating.com/execu/cost.html',
+  'https://barranquilladating.com/execu/meet-our-matchmakers.html',
+  'https://barranquilladating.com/execu/professional-matchmaker-plan.html',
+  'https://barranquilladating.com/execu/the-process.html',
+  'https://barranquilladating.com/execu/why-us.html',
+  'https://barranquilladating.com/featured-ladies/barranquilla-colombian-women-dating-marriage-foreigners.html',
+  'https://barranquilladating.com/featured-ladies/dating-colombian-women-barranquilla-meet-latinas-marriage.html',
 ];
 // Remove duplicates
 const uniqueURLs = [...new Set(URLS)];
@@ -94,7 +112,7 @@ function runTestForUrl(url, index) {
         env: {
           ...process.env,
           URL_AUDIT_URL: url,
-          TEST_URL: url,
+          TEST_URL: url, 
         },
         shell: true,
         cwd: __dirname,
