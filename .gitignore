@@ -10,3 +10,11 @@
 
 # GitHub Pages reports (optional - comment out if you want to commit these)
 # /gh-pages-reports/
+
+# Playwright
+node_modules/
+reports
+test-results
+all_json_reports
+reports/bangkok-women.com/root/advanced-search.json
+reports/mexicocitydating.com/mexico-city-dating-tour-videos/informational/how-anyone-can-date-dozens-of-latinas-in-mexico-city.json
