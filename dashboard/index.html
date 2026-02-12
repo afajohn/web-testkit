@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QA COMMAND // MINT</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- TOP NAVIGATION -->
+    <div class="topbar">
+        <div class="brand">
+            <span class="pulse"></span>
+            QA :: OPERATIONS
+        </div>
+        <div class="global-stats" id="global-stats">
+            INITIALIZING SYSTEM...
+        </div>
+    </div>
+
+    <!-- MAIN LAYOUT -->
+    <div class="layout">
+        
+        <!-- LEFT: NAVIGATION SIDEBAR -->
+        <div class="sidebar">
+            <div class="sb-search">
+                <input type="text" id="domain-search" placeholder="Filter domains..." onkeyup="filterDomains()">
+            </div>
+            <div class="domain-list" id="domain-list-container">
+                <!-- Domain List Injected Here -->
+            </div>
+        </div>
+
+        <!-- RIGHT: CONTENT STAGE -->
+        <div class="stage" id="main-stage">
+            <div class="empty-state">
+                <div style="font-size: 40px; margin-bottom: 20px;">⚡</div>
+                <div>SELECT A DOMAIN TO INITIALIZE DIAGNOSTICS</div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

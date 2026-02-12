@@ -1,0 +1,24 @@
+🗺️ The Extraction Roadmap
+I have identified the files we need. We will tackle them in 4 Waves to avoid overwhelming your CPU (and your head).
+
+Wave 1: The Core Four (Accuracy Upgrades)
+These will replace our current "Skeleton" checks immediately.
+utils/seo-checks.ts (SEO Validation)
+utils/broken-links.ts (The real 404 hunter)
+utils/accessibility.ts (Axe-core configuration)
+utils/security-checks.ts (Header & Cookie logic)
+
+Wave 2: Metadata & Social (Marketing Power)
+utils/structured-data.ts (JSON-LD / Schema.org checks)
+utils/social-media.ts (OpenGraph / Twitter card validation)
+utils/seo-extended.ts (Deep SEO like canonicals/robots)
+
+Wave 3: Interactive & Forms (Functional Power)
+utils/form-validation.ts (Checks for required labels/inputs)
+utils/functional-tests.ts (CTA buttons & menu detection)
+utils/content-checks.ts (Word counts / duplicate text)
+
+Wave 4: UI & Context (Visual Precision)
+utils/visual-tests.ts (Layout shifts/overlaps)
+utils/mobile-testing.ts (Responsive viewport checks)
+utils/user-flows.ts (Complex interaction logic)

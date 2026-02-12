@@ -1,43 +1,16 @@
+# --- GENERATED DATA (To be ignored) ---
+# The live dashboard data source
+dashboard/data/aggregated.json
+
+# Raw, timestamped scan results (the history archive)
+data/
+urls/
+
+# Temporary files
+*.log
+*.tmp
+
 # Dependencies
 /node_modules/
 
-# Environment variables (security - contains sensitive data)
-.env
-.env.local
-.env.*.local
-
-# Test output files (security - contains test results, screenshots, and sensitive data)
-/playwright-report/
-/blob-report/
-/blob-reports/
-/playwright/.cache/
-/playwright/.auth/
-/reports/
-test-results/
-
-# Test configuration files (may contain sensitive URLs or credentials)
-urls.txt
-config/sensitive-data.json
-config/sensitive-data.local.json
-*.test-urls.txt
-test-urls*.txt
-
-# GitHub Pages reports (optional - comment out if you want to commit these)
-# /gh-pages-reports/
-
-# IDE and editor files
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-index-scanner/chunks/
-index-scanner/rag/__pycache__/
-index-scanner/project_index.json
-index-scanner/query_chunks.json
-.specstory/
-
-# OS files
-.DS_Store
-Thumbs.db
-
+.spectory/
