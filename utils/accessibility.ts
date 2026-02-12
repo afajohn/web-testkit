@@ -14,7 +14,9 @@ import {
   type ReportItem,
   type ReportSection,
 } from './formatting';
-import { createViolationScreenshots } from './screenshot-helpers';
+
+import { reportFailure } from './failure-reporter';
+import { FailureContext } from './failure-schema';
 
 /**
  * Helper function to convert a Locator or string selector to a string selector
@@ -101,6 +103,32 @@ export async function runAccessibilityCheck(
   
   const violations = accessibilityScanResults.violations;
   const incomplete = accessibilityScanResults.incomplete;
+
+  const failureContexts: FailureContext[] = [];
+
+  for (const violation of violations) {
+    const targetArray = violation?.nodes?.[0]?.target;
+    const exampleSelector =
+      targetArray && Array.isArray(targetArray) && targetArray.length > 0
+        ? String(targetArray[targetArray.length - 1])
+        : undefined;
+
+    const context = await reportFailure(page, {
+      id: violation.id || `a11y-${Date.now()}`,
+      category: 'a11y-dom',
+      selector: exampleSelector,
+      timing: 'initial-render',
+      description: violation.description || 'Accessibility violation',
+      expected: violation.help || 'Element should meet accessibility requirements',
+      actual: violation.nodes?.[0]?.failureSummary || 'Violation detected',
+      metadata: {
+        impact: violation.impact,
+        helpUrl: violation.helpUrl,
+      },
+    });
+
+    failureContexts.push(context);
+  }
   
   return {
     violations,
@@ -108,6 +136,7 @@ export async function runAccessibilityCheck(
     passed: violations.length === 0,
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
+    failureContexts,
   };
 }
 
@@ -120,14 +149,13 @@ export async function runAccessibilityCheck(
  * @param page - Playwright page object
  * @param options - Optional configuration
  * @param options.skipPageLoad - If true, skip waiting/scrolling (page already loaded)
- * @param options.captureScreenshot - If true, capture screenshots when violations are found (default: true)
  */
 export async function runAccessibilityCheckOnVisibleContent(
   page: Page,
-  options: { skipPageLoad?: boolean; captureScreenshot?: boolean } = {}
+  options: { skipPageLoad?: boolean } = {}
 ) {
   const startTime = Date.now();
-  const { skipPageLoad = false, captureScreenshot = true } = options;
+  const { skipPageLoad = false } = options;
 
   console.log('  ⏳ Starting accessibility check...');
 
@@ -159,18 +187,34 @@ export async function runAccessibilityCheckOnVisibleContent(
   
   const violations = accessibilityScanResults.violations;
   const incomplete = accessibilityScanResults.incomplete;
-  
-  // Capture screenshots if violations found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && violations.length > 0) {
-    console.log(`  ⏳ Capturing screenshots for ${violations.length} violation(s)...`);
-    try {
-      screenshotPaths = await createViolationScreenshots(page, violations, 'test-results');
-      console.log('  ✓ Screenshots captured');
-    } catch (error) {
-      console.warn('  ⚠️  Failed to capture accessibility violation screenshots:', error);
-    }
+
+  const failureContexts: FailureContext[] = [];
+
+  for (const violation of violations) {
+    const targetArray = violation?.nodes?.[0]?.target;
+    const exampleSelector =
+      targetArray && Array.isArray(targetArray) && targetArray.length > 0
+        ? String(targetArray[targetArray.length - 1])
+        : undefined;
+
+    const context = await reportFailure(page, {
+      id: violation.id || `a11y-${Date.now()}`,
+      category: 'a11y-dom',
+      selector: exampleSelector,
+      timing: 'initial-render',
+      description: violation.description || 'Accessibility violation',
+      expected: violation.help || 'Element should meet accessibility requirements',
+      actual: violation.nodes?.[0]?.failureSummary || 'Violation detected',
+      metadata: {
+        impact: violation.impact,
+        helpUrl: violation.helpUrl,
+      },
+    });
+
+    failureContexts.push(context);
   }
+  
+  // Screenshots disabled - no longer capturing playwright-report artifacts
   
   const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  ✓ Accessibility check complete: ${violations.length} violations, ${incomplete.length} incomplete (${totalElapsed}s total)`);
@@ -182,6 +226,7 @@ export async function runAccessibilityCheckOnVisibleContent(
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
     screenshotPaths,
+    failureContexts,
   };
 }
 
@@ -191,9 +236,8 @@ export async function runAccessibilityCheckOnVisibleContent(
 export async function runAccessibilityCheckOnElement(
   page: Page,
   selector: string | Locator,
-  options: { captureScreenshot?: boolean } = {}
+  options: {} = {}
 ) {
-  const { captureScreenshot = true } = options;
   const element = typeof selector === 'string' ? page.locator(selector).first() : selector;
   
   // Convert Locator to string selector for AxeBuilder.include()
@@ -205,16 +249,34 @@ export async function runAccessibilityCheckOnElement(
   
   const violations = accessibilityScanResults.violations;
   const incomplete = accessibilityScanResults.incomplete;
-  
-  // Capture screenshots if violations found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && violations.length > 0) {
-    try {
-      screenshotPaths = await createViolationScreenshots(page, violations, 'test-results');
-    } catch (error) {
-      console.warn('Failed to capture accessibility violation screenshots:', error);
-    }
+
+  const failureContexts: FailureContext[] = [];
+
+  for (const violation of violations) {
+    const targetArray = violation?.nodes?.[0]?.target;
+    const exampleSelector =
+      targetArray && Array.isArray(targetArray) && targetArray.length > 0
+        ? String(targetArray[targetArray.length - 1])
+        : selectorString;
+
+    const context = await reportFailure(page, {
+      id: violation.id || `a11y-element-${Date.now()}`,
+      category: 'a11y-dom',
+      selector: exampleSelector,
+      timing: 'initial-render',
+      description: violation.description || 'Accessibility violation',
+      expected: violation.help || 'Element should meet accessibility requirements',
+      actual: violation.nodes?.[0]?.failureSummary || 'Violation detected',
+      metadata: {
+        impact: violation.impact,
+        helpUrl: violation.helpUrl,
+      },
+    });
+
+    failureContexts.push(context);
   }
+  
+  // Screenshots disabled - no longer capturing playwright-report artifacts
   
   return {
     violations,
@@ -222,19 +284,13 @@ export async function runAccessibilityCheckOnElement(
     passed: violations.length === 0,
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
-    screenshotPaths,
+    failureContexts,
   };
-}
-
-/**
- * Run accessibility check on an element in hover state
- */
 export async function runAccessibilityCheckOnHover(
   page: Page,
   selector: string | Locator,
-  options: { captureScreenshot?: boolean } = {}
+  options: {} = {}
 ) {
-  const { captureScreenshot = true } = options;
   const element = typeof selector === 'string' ? page.locator(selector).first() : selector;
   
   // Hover over the element
@@ -253,16 +309,33 @@ export async function runAccessibilityCheckOnHover(
   
   const violations = accessibilityScanResults.violations;
   const incomplete = accessibilityScanResults.incomplete;
-  
-  // Capture screenshots if violations found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && violations.length > 0) {
-    try {
-      screenshotPaths = await createViolationScreenshots(page, violations, 'test-results');
-    } catch (error) {
-      console.warn('Failed to capture accessibility violation screenshots:', error);
-    }
+
+  const failureContexts: FailureContext[] = [];
+
+  for (const violation of violations) {
+    const targetArray = violation?.nodes?.[0]?.target;
+    const exampleSelector =
+      targetArray && Array.isArray(targetArray) && targetArray.length > 0
+        ? String(targetArray[targetArray.length - 1])
+        : selectorString;
+
+    const context = await reportFailure(page, {
+      id: violation.id || `a11y-hover-${Date.now()}`,
+      category: 'a11y-dom',
+      selector: exampleSelector,
+      timing: 'after-interaction',
+      description: violation.description || 'Accessibility violation (hover)',
+      expected: violation.help || 'Element should meet accessibility requirements',
+      actual: violation.nodes?.[0]?.failureSummary || 'Violation detected',
+      metadata: {
+        impact: violation.impact,
+        helpUrl: violation.helpUrl,
+      },
+    });
+    failureContexts.push(context);
   }
+  
+  // Screenshots disabled - no longer capturing playwright-report artifacts
   
   return {
     violations,
@@ -270,7 +343,7 @@ export async function runAccessibilityCheckOnHover(
     passed: violations.length === 0,
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
-    screenshotPaths,
+    failureContexts,
   };
 }
 
@@ -296,6 +369,32 @@ export async function runAccessibilityCheckOnFocus(page: Page, selector: string 
   
   const violations = accessibilityScanResults.violations;
   const incomplete = accessibilityScanResults.incomplete;
+
+  const failureContexts: FailureContext[] = [];
+
+  for (const violation of violations) {
+    const targetArray = violation?.nodes?.[0]?.target;
+    const exampleSelector =
+      targetArray && Array.isArray(targetArray) && targetArray.length > 0
+        ? String(targetArray[targetArray.length - 1])
+        : selectorString;
+
+    const context = await reportFailure(page, {
+      id: violation.id || `a11y-focus-${Date.now()}`,
+      category: 'a11y-dom',
+      selector: exampleSelector,
+      timing: 'after-interaction',
+      description: violation.description || 'Accessibility violation (focus)',
+      expected: violation.help || 'Element should meet accessibility requirements',
+      actual: violation.nodes?.[0]?.failureSummary || 'Violation detected',
+      metadata: {
+        impact: violation.impact,
+        helpUrl: violation.helpUrl,
+      },
+    });
+
+    failureContexts.push(context);
+  }
   
   return {
     violations,
@@ -303,6 +402,7 @@ export async function runAccessibilityCheckOnFocus(page: Page, selector: string 
     passed: violations.length === 0,
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
+    failureContexts,
   };
 }
 
@@ -336,6 +436,32 @@ export async function runAccessibilityCheckOnModal(
   
   const violations = accessibilityScanResults.violations;
   const incomplete = accessibilityScanResults.incomplete;
+
+  const failureContexts: FailureContext[] = [];
+
+  for (const violation of violations) {
+    const targetArray = violation?.nodes?.[0]?.target;
+    const exampleSelector =
+      targetArray && Array.isArray(targetArray) && targetArray.length > 0
+        ? String(targetArray[targetArray.length - 1])
+        : (typeof modalSelectorString === 'string' ? modalSelectorString : undefined);
+
+    const context = await reportFailure(page, {
+      id: violation.id || `a11y-modal-${Date.now()}`,
+      category: 'a11y-dom',
+      selector: exampleSelector,
+      timing: 'after-interaction',
+      description: violation.description || 'Accessibility violation (modal)',
+      expected: violation.help || 'Element should meet accessibility requirements',
+      actual: violation.nodes?.[0]?.failureSummary || 'Violation detected',
+      metadata: {
+        impact: violation.impact,
+        helpUrl: violation.helpUrl,
+      },
+    });
+
+    failureContexts.push(context);
+  }
   
   // Close the modal if close selector is provided
   if (closeSelector) {
@@ -356,6 +482,7 @@ export async function runAccessibilityCheckOnModal(
     passed: violations.length === 0,
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
+    failureContexts,
   };
 }
 
@@ -453,9 +580,6 @@ export function formatAccessibilityReport(
   });
   
   // Add screenshot note if sections exist (errors found)
-  if (sections.length > 0) {
-    report += `\n📸 Screenshots have been captured and attached to the test report.\n`;
-  }
   
   return report;
 }

@@ -16,7 +16,7 @@ import {
   type ReportItem,
   type ReportSection,
 } from './formatting';
-import { createBrokenLinkScreenshots } from './screenshot-helpers';
+
 
 /**
  * Interface for link check results with location context
@@ -167,8 +167,8 @@ export async function extractLinks(page: Page, baseUrl?: string): Promise<Array<
       const urlObj = new URL(link.url, base);
       const absoluteUrl = urlObj.href;
 
-      // Remove hash fragments and trailing slashes for consistency
-      const normalizedUrl = absoluteUrl.split('#')[0].replace(/\/$/, '');
+      // Remove hash fragments (keep trailing slash to avoid dropping valid variants)
+      const normalizedUrl = absoluteUrl.split('#')[0];
 
       // Deduplicate by URL, but preserve context from first occurrence
       if (!seen.has(normalizedUrl)) {
@@ -460,6 +460,8 @@ export async function extractVisibleLinks(page: Page, baseUrl?: string): Promise
 /**
  * Check if a single link is broken using HEAD request (faster than GET)
  * Falls back to GET if HEAD is not supported
+ * Tries both URL variants (with/without trailing slash) to avoid false positives
+ * Only marks as broken if BOTH variants fail
  */
 export async function checkLink(
   request: APIRequestContext,
@@ -467,39 +469,74 @@ export async function checkLink(
   timeout: number = 5000, // Reduced from 10s to 5s
   context?: { text?: string; selector?: string; location?: string; modalTriggerSelector?: string; modalTriggerText?: string }
 ): Promise<LinkCheckResult> {
-  try {
-    // Try HEAD request first (faster, doesn't download body)
-    let response;
+  // Helper function to check a single URL variant
+  const checkUrlVariant = async (urlToCheck: string): Promise<{ status: number; statusText: string; success: boolean; error?: string }> => {
     try {
-      response = await request.head(url, { timeout });
-    } catch (error) {
-      // If HEAD fails, try GET
-      response = await request.get(url, { timeout });
+      // Try HEAD request first (faster, doesn't download body)
+      let response;
+      let headError: any = null;
+      try {
+        response = await request.head(urlToCheck, { timeout });
+      } catch (error) {
+        headError = error;
+      }
+
+      // If HEAD succeeded but is not successful (e.g., 403/404), try GET
+      if (response) {
+        const headStatus = response.status();
+        if (headStatus >= 400) {
+          try {
+            response = await request.get(urlToCheck, { timeout });
+          } catch (error) {
+            headError = error;
+            response = undefined;
+          }
+        }
+      }
+
+      // If HEAD failed entirely, try GET once
+      if (!response) {
+        try {
+          response = await request.get(urlToCheck, { timeout });
+        } catch (error) {
+          const errorMessage = error instanceof Error ? error.message : (typeof error === 'object' && error !== null && 'message' in error ? (error as any).message : 'Unknown error');
+          const headErrorMessage = headError instanceof Error ? headError.message : (typeof headError === 'object' && headError !== null && 'message' in headError ? (headError as any).message : 'Unknown error');
+          return {
+            status: 0,
+            statusText: 'Error',
+            success: false,
+            error: errorMessage !== 'Unknown error' ? errorMessage : headErrorMessage,
+          };
+        }
+      }
+
+      const status = response.status();
+      const statusText = response.statusText();
+      const success = status < 400; // 2xx and 3xx are considered successful
+
+      return { status, statusText, success };
+    } catch (error: any) {
+      // Network errors, timeouts, etc.
+      const errorMessage = error instanceof Error ? error.message : (typeof error === 'object' && error !== null && 'message' in error ? error.message : 'Unknown error');
+      return {
+        status: 0,
+        statusText: 'Error',
+        success: false,
+        error: errorMessage,
+      };
     }
+  };
 
-    const status = response.status();
-    const statusText = response.statusText();
-    const isBroken = status >= 400;
+  // Check the original URL first
+  const originalResult = await checkUrlVariant(url);
 
+  // If original URL works, return success immediately
+  if (originalResult.success) {
     return {
       url,
-      status,
-      statusText,
-      isBroken,
-      linkText: context?.text,
-      selector: context?.selector,
-      location: context?.location,
-      modalTriggerSelector: context?.modalTriggerSelector,
-      modalTriggerText: context?.modalTriggerText,
-    };
-  } catch (error: any) {
-    // Network errors, timeouts, etc.
-    return {
-      url,
-      status: 0,
-      statusText: 'Error',
-      isBroken: true,
-      error: error?.message || 'Unknown error',
+      status: originalResult.status,
+      statusText: originalResult.statusText,
+      isBroken: false,
       linkText: context?.text,
       selector: context?.selector,
       location: context?.location,
@@ -507,6 +544,63 @@ export async function checkLink(
       modalTriggerText: context?.modalTriggerText,
     };
   }
+
+  // Original URL failed - check if it's a 404/410 (not found) that might be a trailing slash issue
+  // Only try alternate version for 404, 410, or network errors (not for other 4xx/5xx errors)
+  const shouldTryAlternate = originalResult.status === 404 || 
+                             originalResult.status === 410 || 
+                             originalResult.status === 0 ||
+                             (originalResult.status >= 400 && originalResult.status < 500);
+
+  if (shouldTryAlternate) {
+    // Parse URL to check if it has a path (not just domain root)
+    try {
+      const urlObj = new URL(url);
+      const hasPath = urlObj.pathname && urlObj.pathname !== '/' && urlObj.pathname.length > 1;
+      
+      // Only try alternate version if URL has a path component
+      if (hasPath) {
+        // Create alternate URL (add or remove trailing slash)
+        const alternateUrl = url.endsWith('/') 
+          ? url.slice(0, -1) // Remove trailing slash
+          : url + '/';        // Add trailing slash
+
+        // Check alternate URL
+        const alternateResult = await checkUrlVariant(alternateUrl);
+
+        // If alternate URL works, return success (not broken)
+        if (alternateResult.success) {
+          return {
+            url, // Return original URL in result
+            status: alternateResult.status,
+            statusText: alternateResult.statusText,
+            isBroken: false,
+            linkText: context?.text,
+            selector: context?.selector,
+            location: context?.location,
+            modalTriggerSelector: context?.modalTriggerSelector,
+            modalTriggerText: context?.modalTriggerText,
+          };
+        }
+      }
+    } catch (parseError) {
+      // URL parsing failed, skip alternate check
+    }
+  }
+
+  // Both variants failed (or alternate wasn't tried) - mark as broken
+  return {
+    url,
+    status: originalResult.status,
+    statusText: originalResult.statusText,
+    isBroken: true,
+    error: originalResult.error,
+    linkText: context?.text,
+    selector: context?.selector,
+    location: context?.location,
+    modalTriggerSelector: context?.modalTriggerSelector,
+    modalTriggerText: context?.modalTriggerText,
+  };
 }
 
 /**
@@ -525,6 +619,36 @@ export async function checkLinks(
     console.log('  ✓ No links to check');
     return results;
   }
+
+  const delay = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+
+  const checkLinkWithRetry = async (link: { url: string; text?: string; selector?: string; location?: string; modalTriggerSelector?: string; modalTriggerText?: string }) => {
+    const attempt = async () => checkLink(request, link.url, 5000, {
+      text: link.text,
+      selector: link.selector,
+      location: link.location,
+      modalTriggerSelector: link.modalTriggerSelector,
+      modalTriggerText: link.modalTriggerText,
+    });
+
+    let first = await attempt();
+    // Retry once on timeouts/network errors (status 0 or statusText "Error")
+    if (first.status === 0 || first.statusText === 'Error') {
+      console.warn(`  ⚠️ Link check timeout/error for ${link.url}, retrying once...`);
+      await delay(750);
+      const second = await attempt();
+      if (second.status === 0 || second.statusText === 'Error') {
+        return {
+          ...second,
+          isBroken: true,
+          statusText: second.statusText || 'Timeout',
+          error: second.error || first.error || 'Timeout after retry',
+        };
+      }
+      return second;
+    }
+    return first;
+  };
   
   // Process links in batches to avoid overwhelming the server
   const totalBatches = Math.ceil(totalLinks / concurrency);
@@ -540,13 +664,7 @@ export async function checkLinks(
     console.log(`  ⏳ Checking links ${batchStart}-${batchEnd} of ${totalLinks}... (${elapsed}s elapsed)`);
     
     const batchResults = await Promise.all(
-      batch.map(link => checkLink(request, link.url, 5000, {
-        text: link.text,
-        selector: link.selector,
-        location: link.location,
-        modalTriggerSelector: link.modalTriggerSelector,
-        modalTriggerText: link.modalTriggerText,
-      }))
+      batch.map(link => checkLinkWithRetry(link))
     );
     results.push(...batchResults);
     
@@ -572,12 +690,10 @@ export async function checkBrokenLinks(
   request: APIRequestContext,
   baseUrl?: string,
   concurrency: number = 10,
-  useVisibleLinks: boolean = true,
-  captureScreenshot: boolean = true
+  useVisibleLinks: boolean = true
 ): Promise<{ 
   brokenLinks: LinkCheckResult[]; 
   totalLinks: number;
-  screenshotPaths?: { fullPage: string | null; closeUps: string[] };
 }> {
   const startTime = Date.now();
   console.log('  ⏳ Starting broken links check...');
@@ -596,29 +712,7 @@ export async function checkBrokenLinks(
   // Filter to only broken links
   const brokenLinks = results.filter(result => result.isBroken);
   
-  // Capture screenshots if broken links found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && brokenLinks.length > 0) {
-    console.log(`  ⏳ Capturing screenshots for ${brokenLinks.length} broken link(s)...`);
-    try {
-      screenshotPaths = await createBrokenLinkScreenshots(
-        page,
-        brokenLinks.map(link => ({
-          selector: link.selector,
-          linkText: link.linkText,
-          url: link.url,
-          status: link.status,
-          location: link.location,
-          modalTriggerSelector: link.modalTriggerSelector,
-          modalTriggerText: link.modalTriggerText,
-        })),
-        'test-results'
-      );
-      console.log('  ✓ Screenshots captured');
-    } catch (error) {
-      console.warn('  ⚠️  Failed to capture broken link screenshots:', error);
-    }
-  }
+  // Screenshots disabled - no longer capturing playwright-report artifacts
   
   const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  ✓ Broken links check complete: ${brokenLinks.length} broken out of ${linksWithContext.length} (${totalElapsed}s total)`);
@@ -626,7 +720,6 @@ export async function checkBrokenLinks(
   return {
     brokenLinks,
     totalLinks: linksWithContext.length,
-    screenshotPaths,
   };
 }
 

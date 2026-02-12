@@ -45,7 +45,7 @@ export interface PerformanceAuditResult {
  */
 export async function runPerformanceAudit(
   page: Page,
-  outputDir: string = 'test-results',
+  outputDir: string = 'playwright-report',
   url?: string
 ): Promise<PerformanceAuditResult> {
   // Ensure output directory exists

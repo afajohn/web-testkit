@@ -14,6 +14,7 @@ const fs = require('fs');
 const path = require('path');
 const { spawn, exec } = require('child_process');
 const { getUrlBasedPath, getUniqueUrlBasedPath } = require('./utils/url-path');
+const { URL } = require('url');
 
 const args = process.argv.slice(2);
 const filePath = args.find(arg => !arg.startsWith('--'));
@@ -89,6 +90,138 @@ const results = {
   reportPaths: new Map(), // Track final HTML report directory path for each URL (after organizing)
   tempReportPaths: new Map(), // Track temp report directories (before organizing) - URL -> temp directory path
 };
+
+// Per-run isolation bases
+const runId = process.env.RUN_ID || new Date().toISOString().replace(/[:.]/g, '-');
+const KEEP_RUNS = parseInt(process.env.RUNS_KEEP_COUNT || '3', 10);
+const REPORT_BASE_DIR = process.env.REPORT_BASE_DIR || path.join('runs', runId, 'playwright-report');
+
+// Ensure base dirs exist
+fs.mkdirSync(path.join(__dirname, REPORT_BASE_DIR), { recursive: true });
+
+/**
+ * Helper function to format duration
+ */
+function formatDuration(ms) {
+  const seconds = Math.floor(ms / 1000);
+  const minutes = Math.floor(seconds / 60);
+  const hours = Math.floor(minutes / 60);
+  
+  if (hours > 0) {
+    return `${hours}h ${minutes % 60}m ${seconds % 60}s`;
+  } else if (minutes > 0) {
+    return `${minutes}m ${seconds % 60}s`;
+  } else {
+    return `${seconds}s`;
+  }
+}
+
+/**
+ * Remove directory if it exists (safely, recursive)
+ */
+function removeDirSafe(dirPath) {
+  try {
+    if (fs.existsSync(dirPath)) {
+      fs.rmSync(dirPath, { recursive: true, force: true });
+    }
+  } catch (error) {
+    console.warn(`⚠️  Could not remove directory: ${dirPath} (${error.message})`);
+  }
+}
+
+/**
+ * Prune old runs for a given domain, keeping the newest KEEP_RUNS instances.
+ * Only removes the domain subfolders inside each run's playwright-report.
+ */
+function pruneDomainRuns(domain) {
+  const runsRoot = path.join(__dirname, 'runs');
+  if (!fs.existsSync(runsRoot)) return;
+
+  const runEntries = fs.readdirSync(runsRoot, { withFileTypes: true })
+    .filter(entry => entry.isDirectory())
+    .map(entry => entry.name)
+    .filter(name => name !== runId); // skip current run
+
+  const candidates = [];
+  for (const r of runEntries) {
+    const repDir = path.join(runsRoot, r, 'playwright-report', domain);
+    if (fs.existsSync(repDir)) {
+      const statPath = repDir;
+      try {
+        const stat = fs.statSync(statPath);
+        candidates.push({ run: r, mtime: stat.mtimeMs, repDir });
+      } catch (e) {
+        // ignore bad stats
+      }
+    }
+  }
+
+  if (candidates.length <= KEEP_RUNS) return;
+
+  candidates.sort((a, b) => b.mtime - a.mtime); // newest first
+  const toDelete = candidates.slice(KEEP_RUNS);
+  toDelete.forEach(item => {
+    removeDirSafe(item.repDir);
+  });
+}
+
+/**
+ * Clean all artifacts for a given domain (playwright-report)
+ * Preserves other domains.
+ */
+function cleanDomainArtifacts(domain) {
+  const baseDirs = ['playwright-report'];
+  baseDirs.forEach(base => {
+    const actualBase = REPORT_BASE_DIR;
+    const parent = path.join(__dirname, actualBase, domain);
+    removeDirSafe(parent);
+    // also remove hashed variants domain-xxxx
+    const baseParent = path.join(__dirname, actualBase);
+    try {
+      if (fs.existsSync(baseParent)) {
+        const entries = fs.readdirSync(baseParent, { withFileTypes: true });
+        entries.forEach(entry => {
+          if (
+            entry.isDirectory() &&
+            (entry.name === domain || entry.name.startsWith(`${domain}-`))
+          ) {
+            removeDirSafe(path.join(baseParent, entry.name));
+          }
+        });
+      }
+    } catch (err) {
+      console.warn(`⚠️  Could not clean domain artifacts for ${domain} in ${actualBase}: ${err.message}`);
+    }
+  });
+}
+
+/**
+ * Clean previous artifacts for a given URL (playwright-report variants)
+ * Preserves other URLs.
+ */
+function cleanUrlArtifacts(url) {
+  // Clean playwright-report/<url-based> and any hashed variants (leaf or leaf-*)
+  const reportRel = getUrlBasedPath(url, REPORT_BASE_DIR);
+  const reportFull = path.join(__dirname, reportRel);
+  const reportParent = path.dirname(reportFull);
+  const reportLeaf = path.basename(reportFull);
+
+  try {
+    if (fs.existsSync(reportParent)) {
+      const entries = fs.readdirSync(reportParent, { withFileTypes: true });
+      entries.forEach(entry => {
+        if (
+          entry.isDirectory() &&
+          (entry.name === reportLeaf || entry.name.startsWith(`${reportLeaf}-`))
+        ) {
+          removeDirSafe(path.join(reportParent, entry.name));
+        }
+      });
+    }
+  } catch (error) {
+    console.warn(`⚠️  Could not clean report variants for ${url}: ${error.message}`);
+  }
+}
 
 /**
  * Wait for test results file to be created
@@ -171,7 +304,7 @@ function organizeReport(url) {
   return new Promise((resolve) => {
     // Get a unique report path to ensure no collisions
     // This ensures each URL gets its own unique folder even if paths are similar
-    const expectedReportPath = getUniqueUrlBasedPath(url, 'playwright-report', { checkExists: true });
+    const expectedReportPath = getUniqueUrlBasedPath(url, REPORT_BASE_DIR, { checkExists: true });
     
     const organizeProcess = spawn('node', ['scripts/organize-html-report.js'], {
       env: {
@@ -222,39 +355,29 @@ function organizeReport(url) {
  */
 function sendToN8n(url) {
   return new Promise((resolve) => {
-    const resultsDir = getUrlBasedPath(url, 'test-results');
-    const resultsFile = path.join(__dirname, resultsDir, 'test-results.json');
+    // Results are now in the central dashboard folder
+    const n8nProcess = spawn('node', ['scripts/send-to-n8n.js'], {
+      env: {
+        ...process.env,
+        TEST_URL: url,
+        URL_AUDIT_URL: url,
+      },
+      shell: true,
+      cwd: __dirname,
+    });
 
-    // Wait for results file
-    waitForResultsFile(resultsFile, 10000).then((fileExists) => {
-      if (!fileExists) {
-        console.error(`\n⚠️  Test results file not found for ${url}`);
-        resolve(1);
-        return;
-      }
+    let stdout = '';
+    let stderr = '';
 
-      const n8nProcess = spawn('node', ['scripts/send-to-n8n.js'], {
-        env: {
-          ...process.env,
-          TEST_URL: url,
-          URL_AUDIT_URL: url,
-        },
-        shell: true,
-        cwd: __dirname,
-      });
+    n8nProcess.stdout.on('data', (data) => {
+      stdout += data.toString();
+    });
 
-      let stdout = '';
-      let stderr = '';
+    n8nProcess.stderr.on('data', (data) => {
+      stderr += data.toString();
+    });
 
-      n8nProcess.stdout.on('data', (data) => {
-        stdout += data.toString();
-      });
-
-      n8nProcess.stderr.on('data', (data) => {
-        stderr += data.toString();
-      });
-
-      n8nProcess.on('close', (code) => {
+    n8nProcess.on('close', (code) => {
         resolve(code);
       });
 
@@ -271,9 +394,13 @@ function sendToN8n(url) {
  */
 function runTestForUrl(url, index, total) {
   return new Promise((resolve) => {
+    const urlStartTime = Date.now();
     console.log(`\n${'='.repeat(70)}`);
     console.log(`Testing URL ${index + 1}/${total}: ${url}`);
     console.log('='.repeat(70));
+
+    // Clean previous artifacts for this URL only (preserve other URLs)
+    cleanUrlArtifacts(url);
 
     const testProcess = spawn('npx', [
       'playwright', 
@@ -481,20 +608,8 @@ function runTestForUrl(url, index, total) {
         }
       } else {
         console.error(`   ❌ HTML report not found after waiting ${((Date.now() - startTime) / 1000).toFixed(1)}s`);
-        console.error(`   ⚠️  Attempting fallback: check if JSON report exists to generate HTML...`);
-        
-        // Fallback: Check if JSON report exists (JSON reports are always generated, even for failed tests)
-        const resultsDir = getUrlBasedPath(url, 'test-results');
-        const jsonReportPath = path.join(__dirname, resultsDir, 'test-results.json');
-        
-        if (fs.existsSync(jsonReportPath)) {
-          console.log(`   📋 JSON report found, but HTML report generation from JSON is complex`);
-          console.log(`   ⚠️  HTML report may not be available for this URL`);
-          console.log(`   ℹ️  JSON report available at: ${jsonReportPath}`);
-        } else {
-          console.error(`   ❌ JSON report also not found: ${jsonReportPath}`);
-          console.error(`   ❌ No reports available for this URL`);
-        }
+        console.error(`   ⚠️  Report may not be available for this URL`);
+        console.error(`   💡 Check the test output for any errors during execution`);
         
         if (fs.existsSync(defaultReportDir)) {
           const files = fs.readdirSync(defaultReportDir);
@@ -505,15 +620,13 @@ function runTestForUrl(url, index, total) {
         }
       }
 
-      // Send to n8n if enabled (wait for results file first)
+      // Send to n8n if enabled (results are in dashboard folder now)
       if (useN8n) {
-        const resultsDir = getUrlBasedPath(url, 'test-results');
-        const resultsFile = path.join(__dirname, resultsDir, 'test-results.json');
-        await waitForResultsFile(resultsFile, 10000);
         await sendToN8n(url);
       }
 
       // Track result
+      const urlDuration = Date.now() - urlStartTime;
       if (testExitCode === 0) {
         results.passed.push({ url, exitCode: testExitCode });
         console.log(`✅ URL ${index + 1}/${total} completed successfully`);
@@ -521,12 +634,17 @@ function runTestForUrl(url, index, total) {
         results.failed.push({ url, exitCode: testExitCode });
         console.log(`❌ URL ${index + 1}/${total} completed with errors (Exit code: ${testExitCode})`);
       }
+      console.log(`\n⏱️  URL ${index + 1}/${total} execution time: ${formatDuration(urlDuration)}`);
+      console.log(`${'-'.repeat(70)}`);
 
       resolve(testExitCode);
     });
 
     testProcess.on('error', (error) => {
+      const urlDuration = Date.now() - urlStartTime;
       console.error(`\n❌ Error running test for ${url}: ${error.message}`);
+      console.log(`⏱️  URL ${index + 1}/${total} execution time: ${formatDuration(urlDuration)}`);
+      console.log(`${'-'.repeat(70)}`);
       results.failed.push({ url, exitCode: -1, error: error.message });
       resolve(-1);
     });
@@ -717,14 +835,7 @@ async function mergeBlobReports(validUrls) {
     const blobPath = results.blobPaths.get(url);
     if (!blobPath) {
       console.warn(`⚠️  No blob report found for: ${url}`);
-      
-      // Fallback: Check if JSON report exists and log it
-      const resultsDir = getUrlBasedPath(url, 'test-results');
-      const jsonReportPath = path.join(__dirname, resultsDir, 'test-results.json');
-      if (fs.existsSync(jsonReportPath)) {
-        console.log(`   ℹ️  JSON report found at: ${jsonReportPath}`);
-        console.log(`   ℹ️  Note: HTML report cannot be generated without blob report`);
-      }
+      console.log(`   ℹ️  Skipping HTML report merge for this URL`);
       continue;
     }
 
@@ -741,13 +852,7 @@ async function mergeBlobReports(validUrls) {
       } else {
         console.warn(`⚠️  Blob file not found in: ${blobPath}`);
         console.warn(`⚠️  Available files: ${files.join(', ') || 'none'}`);
-        
-        // Fallback: Check for JSON report
-        const resultsDir = getUrlBasedPath(url, 'test-results');
-        const jsonReportPath = path.join(__dirname, resultsDir, 'test-results.json');
-        if (fs.existsSync(jsonReportPath)) {
-          console.log(`   ℹ️  JSON report found, but blob is required for HTML merge`);
-        }
+        console.log(`   ℹ️  Skipping blob merge for this URL`);
         continue;
       }
     }
@@ -968,11 +1073,7 @@ async function mergeBlobReports(validUrls) {
       console.log(`\n   ❌ Failed to merge reports for:`);
       failedUrls.forEach(url => {
         console.log(`      - ${url}`);
-        const resultsDir = getUrlBasedPath(url, 'test-results');
-        const jsonReportPath = path.join(__dirname, resultsDir, 'test-results.json');
-        if (fs.existsSync(jsonReportPath)) {
-          console.log(`        ℹ️  JSON report available: ${jsonReportPath}`);
-        }
+      console.log(`        ℹ️  Reports available in: reports/aura-dashboard/`);
       });
     }
   } else {
@@ -1001,7 +1102,7 @@ function escapeHtml(text) {
  * Generate consolidated index page for multiple URL testing
  */
 function generateConsolidatedIndex(results, validUrls) {
-  const reportDir = path.join(__dirname, 'playwright-report');
+  const reportDir = path.join(__dirname, REPORT_BASE_DIR);
   
   // Create report directory if it doesn't exist
   if (!fs.existsSync(reportDir)) {
@@ -1026,7 +1127,7 @@ function generateConsolidatedIndex(results, validUrls) {
     
     // Fallback to generated path if not in results (shouldn't happen, but safety check)
     if (!reportPath) {
-      reportPath = getUrlBasedPath(url, 'playwright-report');
+      reportPath = getUrlBasedPath(url, REPORT_BASE_DIR);
     }
     
     // Verify report exists
@@ -1309,7 +1410,11 @@ function generateConsolidatedIndex(results, validUrls) {
  * Main execution
  */
 async function main() {
+  // Record overall start time (declared outside try block for error handler access)
+  const overallStartTime = Date.now();
+  
   try {
+    
     console.log(`Starting tests for ${validUrls.length} URL(s)...`);
     if (useN8n) {
       console.log('n8n integration: ENABLED\n');
@@ -1317,7 +1422,12 @@ async function main() {
       console.log('n8n integration: DISABLED\n');
     }
 
-    // Run tests sequentially
+    // Clean per-domain once before running
+    const domains = Array.from(new Set(validUrls.map(u => new URL(u).hostname.replace(/^www\./, ''))));
+    domains.forEach(domain => cleanDomainArtifacts(domain));
+  domains.forEach(domain => pruneDomainRuns(domain));
+
+    // Run tests sequentially (per-URL clean still runs to remove hashed variants)
     for (let i = 0; i < validUrls.length; i++) {
       const url = validUrls[i];
       await runTestForUrl(url, i, validUrls.length);
@@ -1353,7 +1463,7 @@ async function main() {
 
     // Reports have been organized after all tests completed
     console.log('\n📋 HTML reports have been organized to URL-based directories');
-
+    
     // Display report locations summary
     if (results.reportPaths.size > 0) {
       console.log('\n📁 Report Locations:');
@@ -1374,13 +1484,20 @@ async function main() {
       console.log(`   Total reports organized: ${results.reportPaths.size}/${results.total}`);
     }
 
-    // Generate consolidated index page
-    generateConsolidatedIndex(results, validUrls);
+    // Display total execution time (at the very end, before report generation)
+    const overallDuration = Date.now() - overallStartTime;
+    console.log(`\n${'='.repeat(70)}`);
+    console.log(`⏱️  TOTAL EXECUTION TIME FOR ALL URLs: ${formatDuration(overallDuration)}`);
+    console.log(`${'='.repeat(70)}\n`);
+
+    // Generate aggregated report with error summary
+    const { generateAggregatedReport } = require('./scripts/generate-aggregated-report');
+    generateAggregatedReport(results, validUrls);
 
     // Start report server to view reports
     console.log('\n📊 Starting HTML report server...');
     console.log('   Reports are organized by URL in: playwright-report/');
-    console.log('   Consolidated index available at: playwright-report/index.html');
+    console.log('   Aggregated report with error summary available at: playwright-report/index.html');
     
     const serveReportsProcess = spawn('node', ['scripts/serve-reports.js'], {
       stdio: 'inherit',
@@ -1398,12 +1515,15 @@ async function main() {
     // Don't exit - let the server run
     // User can press Ctrl+C to stop the server
   } catch (error) {
+    const overallDuration = Date.now() - overallStartTime;
     console.error('\n' + '='.repeat(70));
     console.error('❌ FATAL ERROR');
     console.error('='.repeat(70));
     console.error(`Error: ${error.message}`);
     console.error(`Stack: ${error.stack}`);
     console.error('='.repeat(70));
+    console.log(`\n⏱️  EXECUTION TIME BEFORE ERROR: ${formatDuration(overallDuration)}`);
+    console.log(`${'='.repeat(70)}\n`);
     process.exit(1);
   }
 }

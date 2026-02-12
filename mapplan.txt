@@ -1,0 +1,422 @@
+Below is the **FULL MASTER MAP + LOGIC + METHODS**, including **`reportFailure()`**, exactly how it fits, and **what to implement in what order**.
+
+---
+
+# 🧭 THE FINAL MASTER ROADMAP
+
+**DOM-based QA Automation → Forensic Evidence → Actionable Dashboard**
+
+This roadmap answers **one question only**:
+
+> “What do I add to my current code, in what order, and what logic must each part contain?”
+
+---
+
+## 🧩 BIG PICTURE (READ THIS FIRST)
+
+Your system has **5 layers**:
+
+```
+[Test Logic]
+   ↓
+[Failure Capture (reportFailure)]
+   ↓
+[Failure Schema (Contract)]
+   ↓
+[Aggregation / Normalization]
+   ↓
+[Dashboard (Decision UI)]
+```
+
+You already had:
+
+* tests
+* scanners
+* aggregation
+* dashboard
+
+You were missing:
+
+* **a contract**
+* **a forensic capture layer**
+
+That’s what we’re fixing.
+
+---
+
+# PHASE 1 — MASTER MAP OF TEST TYPES (NO CODE)
+
+Before touching code, every test must belong to **ONE** bucket.
+
+### 🟣 1. DOM / A11Y COMPLIANCE
+
+**Question it answers:**
+
+> “Does the DOM violate standards at any moment?”
+
+Examples:
+
+* WCAG rules
+* missing `alt`
+* duplicate landmarks
+* unnamed buttons
+* wrong heading order
+
+🚨 These **may not be visible later**
+🚨 These **may not be interactable**
+
+That is NORMAL.
+
+---
+
+### 🔵 2. USER FLOW / FUNCTIONAL
+
+**Question it answers:**
+
+> “Can a real user complete this task?”
+
+Examples:
+
+* navigation
+* CTA buttons
+* profile browsing
+* form submission
+* click-to-call
+
+🚨 These **must be reproducible**
+🚨 If user can’t do it, test must scream
+
+---
+
+### 🟢 3. LAYOUT / RESPONSIVE / VISUAL
+
+**Question it answers:**
+
+> “Does the page behave correctly across viewports?”
+
+Examples:
+
+* CLS
+* mobile breakage
+* layout instability
+* hamburger menu failure
+
+🚨 These **may not have selectors**
+🚨 Metrics > DOM
+
+---
+
+📌 **Rule:**
+Never mix categories in one failure record.
+
+---
+
+# PHASE 2 — FAILURE CONTRACT (THE SCHEMA)
+
+This is the **brain** of the system.
+Everything must conform to this.
+
+## 📄 Failure Context Schema
+
+```ts
+export type FailureCategory =
+  | 'a11y-dom'
+  | 'user-flow'
+  | 'functional'
+  | 'layout'
+  | 'mobile'
+  | 'seo';
+
+export interface FailureContext {
+  id: string;
+  category: FailureCategory;
+
+  url: string;
+  pagePath?: string;
+
+  selector?: string;
+  target?: string;
+
+  timing: 'initial-render' | 'post-hydration' | 'after-interaction';
+  viewport: string;
+
+  description: string;
+  expected?: string;
+  actual?: string;
+
+  evidence: {
+    screenshot?: string;
+    domSnapshot?: string;
+  };
+
+  metadata?: Record<string, any>;
+}
+```
+
+📌 This is **NOT runtime logic**
+📌 This is a **contract** between tests and dashboard
+
+---
+
+# PHASE 3 — `reportFailure()` (THE WEAPON)
+
+This is where your question really lived.
+Yes, **this is core**. Yes, **it is mandatory**.
+
+## 🎯 What `reportFailure()` Does
+
+It:
+
+1. Freezes the moment
+2. Captures evidence
+3. Produces a `FailureContext`
+4. Hands it to your reporting pipeline
+
+It does **NOT**:
+
+* assert
+* retry
+* swallow errors
+* guess fixes
+
+Think: **forensic camera**
+
+---
+
+## 🗡️ `reportFailure()` – REQUIRED LOGIC
+
+```ts
+export async function reportFailure(page, partial) {
+  const viewportSize = page.viewportSize();
+  const viewport = viewportSize
+    ? `${viewportSize.width}x${viewportSize.height}`
+    : 'unknown';
+
+  const domSnapshot = await page.content();
+
+  const screenshotPath =
+    `playwright-report/failures/${Date.now()}-${partial.id}.png`;
+
+  await page.screenshot({
+    path: screenshotPath,
+    fullPage: true
+  });
+
+  return {
+    id: partial.id,
+    category: partial.category,
+    url: page.url(),
+    selector: partial.selector,
+    target: partial.target,
+    timing: partial.timing,
+    viewport,
+    description: partial.description,
+    expected: partial.expected,
+    actual: partial.actual,
+    evidence: {
+      screenshot: screenshotPath,
+      domSnapshot
+    },
+    metadata: partial.metadata ?? {}
+  };
+}
+```
+
+📌 This must be callable from **any test**
+📌 This must be **side-effect safe**
+
+---
+
+# PHASE 4 — HOW EACH TEST CATEGORY USES IT
+
+This is the **most important section**. Read twice.
+
+---
+
+## ♿ A11Y / DOM TESTS
+
+### Logic Rules
+
+* ❌ No clicks
+* ❌ No waits for visibility
+* ❌ No user assumptions
+* ✅ DOM truth only
+
+### When to call `reportFailure()`
+
+The **moment** a violation is detected.
+
+### Required fields
+
+* `category: 'a11y-dom'`
+* `timing: 'initial-render'` or `'post-hydration'`
+* `selector` (if available)
+
+### Example
+
+```ts
+await reportFailure(page, {
+  id: 'a11y-button-name',
+  category: 'a11y-dom',
+  selector: '.fc-megamenu',
+  timing: 'initial-render',
+  description: 'Button has no accessible name',
+  expected: 'Button must have visible text or aria-label',
+  actual: 'Accessible name is empty',
+  metadata: {
+    wcag: '4.1.2',
+    impact: 'serious'
+  }
+});
+```
+
+🚨 If you can’t find it later — **that is expected**
+🚨 The DOM snapshot is your source of truth
+
+---
+
+## 🖱️ USER FLOW / FUNCTIONAL TESTS
+
+### Logic Rules
+
+* ✅ User action defines failure
+* ❌ DOM existence ≠ pass
+* ❌ Scanner results ≠ user failure
+
+### Pattern (MANDATORY)
+
+```ts
+try {
+  await action();
+  await assertion();
+} catch (err) {
+  await reportFailure(...);
+  throw err;
+}
+```
+
+### Example
+
+```ts
+try {
+  await page.locator('a[href*="profile"]').click();
+} catch (err) {
+  await reportFailure(page, {
+    id: 'user-profile-browse',
+    category: 'user-flow',
+    selector: 'a[href*="profile"]',
+    timing: 'after-interaction',
+    description: 'Profile browsing failed',
+    expected: 'Profile page should open',
+    actual: err.message
+  });
+  throw err;
+}
+```
+
+🚨 These **must be reproducible**
+🚨 If not reproducible, your test logic is wrong
+
+---
+
+## 📐 LAYOUT / RESPONSIVE TESTS
+
+### Logic Rules
+
+* ❌ Do not force selectors
+* ❌ Do not hunt DOM nodes
+* ✅ Measure behavior
+
+### Example
+
+```ts
+await reportFailure(page, {
+  id: 'mobile-layout-break',
+  category: 'layout',
+  timing: 'post-hydration',
+  description: 'Mobile layout breaks at 375px',
+  expected: 'Layout remains intact',
+  actual: 'CLS exceeded threshold',
+  metadata: {
+    viewportTested: '375x667',
+    cls: 0.32
+  }
+});
+```
+
+📌 `selector: N/A` is VALID
+📌 This explains your earlier confusion
+
+---
+
+# PHASE 5 — AGGREGATION (MINIMAL CHANGE)
+
+You **do not rewrite** your aggregation.
+
+### What changes
+
+* Detect `FailureContext`
+* Stop parsing strings
+* Trust `category`, `timing`, `viewport`
+
+This removes guesswork from:
+
+* dashboards
+* summaries
+* fix recommendations
+
+---
+
+# PHASE 6 — DASHBOARD RULES (NON-NEGOTIABLE)
+
+Your dashboard must enforce:
+
+| Category  | Expect Reproducibility? |
+| --------- | ----------------------- |
+| a11y-dom  | ❌ No                    |
+| user-flow | ✅ Yes                   |
+| layout    | ❌ Sometimes             |
+
+### Each row must show
+
+* Category
+* Description
+* Selector (if any)
+* Timing
+* Viewport
+* Screenshot
+* DOM snapshot
+
+If a dev still asks:
+
+> “Where is this?”
+
+You point to the snapshot. End of drama.
+
+---
+
+# PHASE 7 — IMPLEMENTATION ORDER (FOLLOW THIS)
+
+Do **NOT** rush.
+
+1️⃣ Finalize schema
+2️⃣ Add `reportFailure()`
+3️⃣ Integrate into **A11Y tests only**
+4️⃣ Validate dashboard clarity
+5️⃣ Integrate **one user flow**
+6️⃣ Expand gradually
+
+Skipping steps = confusion redux.
+
+---
+
+# FINAL VERDICT (DRAMATIC, BUT TRUE)
+
+Yes — the **master map**, the **schema**, and **`reportFailure()`** are **all part of the same system**.
+They were never separate ideas — you just needed them **collapsed into one clear roadmap**.
+
+Now you have it.
+
+You are no longer “adding logs.”
+You are building a **QA diagnostic framework**.
+

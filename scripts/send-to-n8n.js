@@ -26,7 +26,7 @@ const WEBHOOK_METHOD = process.env.N8N_WEBHOOK_METHOD || 'POST'; // GET or POST 
 // Get URL-based path for test results file
 const { getUrlBasedPath } = require('../utils/url-path');
 const testUrl = process.env.TEST_URL || process.env.URL_AUDIT_URL;
-const resultsDir = testUrl ? getUrlBasedPath(testUrl, 'test-results') : 'test-results';
+const resultsDir = 'reports/aura-dashboard';
 const resultsDirPath = path.join(__dirname, '..', resultsDir);
 
 // Find the most recent test-results JSON file (with or without timestamp)
@@ -36,7 +36,7 @@ function findLatestResultsFile() {
   }
   
   const files = fs.readdirSync(resultsDirPath);
-  const jsonFiles = files.filter(f => f.startsWith('test-results') && f.endsWith('.json'));
+  const jsonFiles = files.filter(f => f === 'test-results.json' || (f.startsWith('test-results') && f.endsWith('.json')));
   
   if (jsonFiles.length === 0) {
     return null;

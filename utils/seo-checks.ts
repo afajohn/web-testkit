@@ -10,7 +10,7 @@ import {
   type ReportItem,
   type ReportSection,
 } from './formatting';
-import { createSEOErrorScreenshots } from './screenshot-helpers';
+
 
 /**
  * Interface for SEO check results
@@ -389,7 +389,6 @@ export async function runSEOChecks(
     requireIndex?: boolean;
     requireFollow?: boolean;
     skipPageLoad?: boolean; // Skip DOM waiting if page is already loaded
-    captureScreenshot?: boolean; // Capture screenshots for visual errors (default: true)
   } = {}
 ): Promise<SEOCheckResult[] & { screenshotPaths?: { fullPage: string | null; closeUps: string[] } }> {
   const {
@@ -405,7 +404,6 @@ export async function runSEOChecks(
     requireIndex = true,
     requireFollow = true,
     skipPageLoad = false,
-    captureScreenshot = true,
   } = options;
 
   const startTime = Date.now();
@@ -463,36 +461,14 @@ export async function runSEOChecks(
     console.log('  ✓ Open Graph tags check complete');
   }
 
-  // Capture screenshots for visual errors (images, headings)
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot) {
-    const failedVisualChecks = results.filter(r => 
-      !r.passed && (r.check === 'Image Alt Attributes' || r.check === 'Heading Structure')
-    );
-    
-    if (failedVisualChecks.length > 0) {
-      console.log(`  ⏳ Capturing screenshots for ${failedVisualChecks.length} visual error(s)...`);
-      try {
-        screenshotPaths = await createSEOErrorScreenshots(page, failedVisualChecks, 'test-results');
-        console.log('  ✓ Screenshots captured');
-      } catch (error) {
-        console.warn('  ⚠️  Failed to capture SEO error screenshots:', error);
-      }
-    }
-  }
-
-  // Add screenshotPaths to results array (TypeScript workaround)
-  const resultsWithScreenshots = results as SEOCheckResult[] & { screenshotPaths?: { fullPage: string | null; closeUps: string[] } };
-  if (screenshotPaths) {
-    resultsWithScreenshots.screenshotPaths = screenshotPaths;
-  }
+  // Screenshots disabled - no longer capturing playwright-report artifacts
 
   const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   const passedCount = results.filter(r => r.passed).length;
   const failedCount = results.filter(r => !r.passed).length;
   console.log(`  ✓ SEO checks complete: ${passedCount} passed, ${failedCount} failed (${totalElapsed}s total)`);
 
-  return resultsWithScreenshots;
+  return results as SEOCheckResult[] & { screenshotPaths?: { fullPage: string | null; closeUps: string[] } };
 }
 
 /**

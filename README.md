@@ -58,6 +58,16 @@ TEST_URL=https://anewbride.com/
 URL_AUDIT_URL=https://anewbride.com/
 ```
 
+### Sensitive Data (keep out of git)
+
+- Copy `config/sensitive-data.example.json` to `config/sensitive-data.local.json` (gitignored) and fill in non-public values (e.g., phone numbers for click-to-call and validation). Code will also read `config/sensitive-data.json` if present (also gitignored).
+- Or set env vars:
+  - `EXPECTED_PHONE_NUMBER`
+  - `PHONE_TEST_US`
+  - `PHONE_TEST_INTL`
+  - `PHONE_TEST_FLEX`
+- Do not commit real phone numbers or private URLs. The code falls back to placeholders if nothing is provided. The aggregated HTML and console matrix now show Selector + Target, so keep real targets in the gitignored config/env only.
+
 ### Quick Start
 
 Once setup is complete, you can immediately run tests:
@@ -144,6 +154,484 @@ See `scripts/README.md` for detailed documentation.
 
 **Data Structure**: See `N8N_DATA_STRUCTURE.md` for complete documentation on what data is sent to n8n and how to access it.
 
+## Test Execution Flow & Architecture
+
+This section explains the internal structure and execution flow of the test suite - how tests run, in what order, and how results are processed.
+
+### Function Code Flow (Key Calls)
+
+- Entry scripts (`run-tests.js`, `test-url.js`, `test-multiple-urls.js`) set `URL_AUDIT_URL` and start Playwright (the multi-URL script runs URLs one-by-one for safety).
+- `playwright.config.ts` loads env, sets reporters (`DeveloperTableReporter`, HTML, JSON), timeouts, and URL-based output paths (per-URL subfolders).
+- `tests/url-audit.spec.ts` current flow (sequential phases):
+  - Phase 1: SEO (`runSEOChecks`), Security (`runSecurityChecks`), Accessibility (`runAccessibilityCheck`), Broken links (`checkBrokenLinks`).
+  - Phase 2: Forms (`validateForms`), Visual/layout (`runVisualTests`), Mobile responsiveness (`testMobileResponsiveness` + reset viewport), User flows (`runUserFlowTests` with expected phone), Functional components (`runFunctionalTests`).
+- Reporters emit JSON/HTML/console output; `scripts/aggregate-errors.js` + `scripts/generate-aggregated-report.js` show Technical Specs boxes (Selector + Target URL); `test-multiple-urls.js` organizes per-URL reports sequentially.
+
+### High-Level Flow Diagram
+
+```
+┌─────────────────────────────────────────────────────────────────┐
+│                    ENTRY POINT                                   │
+│  ┌──────────────────┐  ┌──────────────────┐  ┌──────────────────┐ │
+│  │ npm test          │  │ npm run         │  │ node test-       │ │
+│  │                 │  │ test:url <URL>   │  │ multiple-urls.js │ │
+│  └────────┬─────────┘  └────────┬─────────┘  └────────┬─────────┘ │
+│           │                      │                       │           │
+└───────────┼──────────────────────┼───────────────────────┼───────────┘
+            │                      │                       │
+            └──────────────────────┴───────────────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │   Playwright Config Load    │
+                    │  (playwright.config.ts)     │
+                    │  • Loads .env variables     │
+                    │  • Sets retries: 0          │
+                    │  • Configures reporters     │
+                    │  • Sets timeouts (60s)      │
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │   Test File Execution       │
+                    │  (tests/url-audit.spec.ts)  │
+                    │  • Reads URL from env       │
+                    │  • Navigates to page        │
+                    │  • Waits for DOM ready      │
+                    └──────────────┬──────────────┘
+                                   │
+        ┌──────────────────────────┴──────────────────────────┐
+        │                                                      │
+        │         PHASE 1: PARALLEL CHECKS (10 checks)        │
+        │         All run simultaneously for speed             │
+        │                                                      │
+        └──────────────────────────┬──────────────────────────┘
+                                   │
+        ┌──────────────────────────┼──────────────────────────┐
+        │                          │                          │
+   ┌────▼────┐  ┌────▼────┐  ┌────▼────┐  ┌────▼────┐  ┌────▼────┐
+   │   [1]   │  │   [2]   │  │   [3]   │  │   [4]   │  │   [5]   │
+   │   SEO   │  │ Broken  │  │Accessi- │  │Security │  │Struct-  │
+   │ Checks  │  │  Links  │  │ bility  │  │ Checks  │  │ ured    │
+   │         │  │         │  │         │  │         │  │  Data   │
+   └─────────┘  └─────────┘  └─────────┘  └─────────┘  └─────────┘
+        │                          │                          │
+   ┌────▼────┐  ┌────▼────┐  ┌────▼────┐  ┌────▼────┐  ┌────▼────┐
+   │   [6]   │  │   [7]   │  │   [8]   │  │   [9]   │  │  [10]   │
+   │ Social  │  │Extended │  │  Form   │  │Functional│  │ Visual  │
+   │ Media   │  │   SEO   │  │Validate │  │  Tests  │  │  Tests  │
+   └─────────┘  └─────────┘  └─────────┘  └─────────┘  └─────────┘
+        │                          │                          │
+        └──────────────────────────┴──────────────────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │  Wait for all parallel      │
+                    │  checks to complete        │
+                    │  (Promise.all)             │
+                    └──────────────┬──────────────┘
+                                   │
+        ┌──────────────────────────┴──────────────────────────┐
+        │                                                      │
+        │    PHASE 2: SEQUENTIAL CHECKS (3 checks)            │
+        │    Must run in order (viewport changes, state)      │
+        │                                                      │
+        └──────────────────────────┬──────────────────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │  [11] Mobile Responsiveness │
+                    │  • Changes viewport         │
+                    │  • Tests touch targets      │
+                    │  • Checks responsive layout │
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │  Reset viewport to 1920x1080│
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │  [12] Content Quality Checks │
+                    │  • Content length            │
+                    │  • Broken images             │
+                    │  • Link density              │
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │  [13] User Flow Tests       │
+                    │  • Contact forms            │
+                    │  • Phone click-to-call       │
+                    │  • Phone number images      │
+                    │  • Profile browsing         │
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │   Results Collection        │
+                    │   • All 13 check results    │
+                    │   • Error messages          │
+                    │   • Status codes            │
+                    └──────────────┬──────────────┘
+                                   │
+        ┌──────────────────────────┴──────────────────────────┐
+        │                                                      │
+        │              REPORT GENERATION PHASE                │
+        │                                                      │
+        └──────────────────────────┬──────────────────────────┘
+                                   │
+        ┌──────────────────────────┼──────────────────────────┐
+        │                          │                          │
+   ┌────▼────┐              ┌─────▼─────┐            ┌─────▼─────┐
+   │  JSON   │              │    HTML   │            │  Console  │
+   │Reporter │              │  Reporter │            │ Reporter  │
+   │         │              │           │            │(Developer │
+   │Creates  │              │Creates    │            │  Table)   │
+   │test-    │              │playwright-│            │           │
+   │results. │              │report/    │            │Shows      │
+   │json     │              │index.html │            │Action     │
+   └────┬────┘              └─────┬─────┘            │Matrix     │
+        │                         │                  └────────────┘
+        │                         │
+        └─────────────────────────┴─────────────────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │  Error Aggregation           │
+                    │  (scripts/aggregate-errors.js)│
+                    │  • Reads JSON report data     │
+                    │  • Categorizes errors         │
+                    │  • Deduplicates similar errors│
+                    │  • Groups by URL              │
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │  HTML Report Generation      │
+                    │  (scripts/generate-          │
+                    │   aggregated-report.js)      │
+                    │  • Parses error messages     │
+                    │  • Creates Developer Matrix  │
+                    │  • Formats actionable fixes  │
+                    │  • Generates final HTML      │
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │  Report Organization         │
+                    │  (if multiple URLs)         │
+                    │  • Moves reports to URL-based│
+                    │    directories               │
+                    │  • Creates consolidated     │
+                    │    index page               │
+                    └──────────────┬──────────────┘
+                                   │
+                    ┌──────────────▼──────────────┐
+                    │      FINAL OUTPUT            │
+                    │  • HTML reports in browser  │
+                    │  • Console summary           │
+                    │  • JSON data for automation  │
+                    └─────────────────────────────┘
+```
+
+### Detailed Execution Flow
+
+#### 1. Entry Points
+
+**Single URL Test:**
+```bash
+npm run test:url https://example.com
+```
+- Sets `URL_AUDIT_URL` environment variable
+- Runs Playwright with single URL
+- Generates report in `playwright-report/`
+
+**Multiple URL Test:**
+```bash
+node test-multiple-urls.js urls.txt
+```
+- Reads URLs from file (one per line)
+- For each URL:
+  - Sets `URL_AUDIT_URL` environment variable
+  - Runs Playwright test
+  - Moves report to temp directory
+  - Creates fresh report directory
+- After all tests: organizes reports by URL structure
+
+**All Tests:**
+```bash
+npm test
+```
+- Runs all `.spec.ts` files in `tests/` directory
+- Uses default URL from `.env` or `playwright.config.ts`
+
+#### 2. Configuration Loading (`playwright.config.ts`)
+
+**What happens:**
+1. Loads `.env` file (if exists) and reads `URL_AUDIT_URL`/`TEST_URL`.
+2. Generates URL-based output directories:
+   - `playwright-report/{domain}/{path}/` - HTML reports.
+3. Configures reporters:
+   - **List Reporter** (progress)
+   - **DeveloperTableReporter** (console Action Matrix)
+   - **HTML Reporter** (interactive report)
+   - **JSON Reporter** (centralized dashboard)
+4. Sets timeouts: 60 seconds (actions/navigation).
+5. **Retries: 0** (real failures, not flaky).
+6. **Workers:** 1 on CI, 2 locally (adjust `workers` if you parallelize; current `test-multiple-urls.js` still runs sequentially).
+
+#### 3. Test Execution (`tests/url-audit.spec.ts`)
+
+**Step-by-step:**
+
+1. **Page Navigation:**
+   - Reads URL from `process.env.URL_AUDIT_URL`
+   - Calls `gotoAndWaitForDOMContentLoaded()` - waits for DOM ready
+   - Captures final URL (after redirects)
+
+2. **Phase 1: Passive Checks (runs sequentially in current flow)**
+
+   These checks run in a controlled order for stability:
+
+   - **[1] SEO Checks** (`utils/seo-checks.ts`)
+     - Page title, meta description, canonical URLs
+     - Robots tags, image alt attributes, heading structure
+   
+   - **[2] Broken Links** (`utils/broken-links.ts`)
+     - Extracts all links from page
+     - Checks each link with trailing slash fallback logic:
+       - Try original URL first
+       - If fails (404/410), try alternate (with/without `/`)
+       - Only marks broken if BOTH variants fail
+     - Parallel link checking (configurable concurrency)
+   
+   - **[3] Accessibility** (`utils/accessibility.ts`)
+     - Runs axe-core scan
+     - Detects WCAG violations
+     - Reports impact levels (critical, serious, moderate)
+   
+   - **[4] Security Checks** (`utils/security-checks.ts`)
+     - HTTPS enforcement
+     - Security headers (CSP, XSS protection)
+     - Cookie security flags
+     - Mixed content detection
+   
+   - **[5] Structured Data** (`utils/structured-data.ts`)
+     - Validates JSON-LD schemas
+     - Checks Microdata markup
+     - Verifies schema types
+   
+   - **[6] Social Media Tags** (`utils/social-media.ts`)
+     - Open Graph tags
+     - Twitter Card validation
+     - Social link validation
+   
+   - **[7] Extended SEO** (`utils/seo-extended.ts`)
+     - Sitemap validation
+     - robots.txt checks
+     - URL structure validation
+     - Language attributes
+     - Breadcrumbs
+   
+   - **[8] Form Validation** (`utils/form-validation.ts`)
+     - Email field validation
+     - Phone field validation
+     - Required field checks
+     - Form submission testing
+   
+   - **[9] Functional Tests** (`utils/functional-tests.ts`)
+     - CTA button functionality
+     - Navigation menu testing
+     - External link validation
+     - Modal functionality
+     - Video embed checks
+   
+   - **[10] Visual Tests** (`utils/visual-tests.ts`)
+     - Element visibility checks
+     - Layout structure verification
+     - Resource loading validation
+     - Layout shift measurement
+
+3. **Phase 2: Sequential Checks (3 checks run in order)**
+
+   These must run sequentially because they modify page state:
+
+   - **[11] Mobile Responsiveness** (`utils/mobile-testing.ts`)
+     - Changes viewport to mobile sizes (375x667, 768x1024, etc.)
+     - Tests touch target sizes
+     - Checks responsive layout
+     - Tests mobile navigation
+     - **After completion:** Resets viewport to 1920x1080
+   
+   - **[12] Content Quality** (`utils/content-checks.ts`)
+     - Checks content length
+     - Detects broken images
+     - Analyzes link density
+     - Runs after viewport reset
+   
+   - **[13] User Flow Tests** (`utils/user-flows.ts`)
+     - Contact form flow testing
+     - Phone click-to-call (tel: and callto: links)
+     - **Phone Number Image Detection:**
+       - Finds images in phone-related contexts
+       - Checks if image URLs are broken (404/410)
+       - If broken → marks as failed test
+       - Optionally uses OCR (tesseract.js) to extract phone numbers
+     - Profile browsing flow
+     - Registration flow
+
+4. **Results Collection:**
+   - All 13 check results are collected
+   - Errors are formatted with context
+   - Results are logged to console
+   - Assertions are evaluated (some optional, some required)
+
+#### 4. Report Generation
+
+**During Test Execution:**
+
+1. **Console Reporter (DeveloperTableReporter):**
+   - Parses error messages in real-time
+   - Categorizes errors (broken-link, accessibility, security, etc.)
+   - Formats as Developer Action Matrix
+   - Shows: Context | Element | Error | Fix suggestion
+
+2. **JSON Reporter:**
+   - Creates `test-results.json` file
+   - Contains all test results, errors, and metadata
+   - Output to dashboard folder
+
+3. **HTML Reporter:**
+   - Generates `playwright-report/index.html`
+   - Interactive test report with videos, screenshots
+   - Shows test timeline and results
+
+**After Test Execution (Post-Processing):**
+
+1. **Error Aggregation** (`scripts/aggregate-errors.js`):
+   - Reads JSON report data
+   - Extracts all errors from test results
+   - **Categorizes errors:**
+     - `broken-link` - Link returns 404/410/network error
+     - `accessibility` - WCAG violations
+     - `seo` - SEO issues (missing title, meta, etc.)
+     - `security` - Security header/HTTPS issues
+     - `form-validation` - Form field issues
+     - `functional` - Interactive element failures
+     - `mobile` - Mobile responsiveness issues
+     - `structured-data` - Schema validation failures
+     - `social-media` - Missing meta tags
+     - `seo-extended` - Advanced SEO issues
+     - `visual` - Layout/visibility issues
+     - `content` - Content quality issues
+     - `user-flow` - User journey failures
+   - **Deduplicates errors:**
+     - Normalizes error messages (removes URLs, paths, timestamps)
+     - Groups similar errors across multiple URLs
+     - Counts affected URLs
+   - Returns structured error summary
+
+2. **HTML Report Generation** (`scripts/generate-aggregated-report.js`):
+   - Reads aggregated error data
+   - **Parses error messages:**
+     - Strips ANSI color codes
+     - Extracts link text from broken link errors
+     - Extracts element selectors
+     - Extracts status codes
+   - **Creates Developer Action Matrix:**
+     - Context (where error occurred)
+     - Element (what element failed)
+     - Error (what went wrong)
+     - Fix (actionable suggestion)
+   - **Deduplicates table rows:**
+     - Uses `context|element|error` as unique key
+     - Takes maximum `affected` count
+   - Generates final HTML report with:
+     - Summary statistics
+     - Developer Action Matrix table
+     - Filterable/searchable interface
+
+3. **Report Organization** (if multiple URLs via `test-multiple-urls.js`):
+- Moves each report to a URL-based directory structure sequentially
+- Creates consolidated index page
+- Links all individual reports
+
+### Key Processing Details
+
+#### Broken Link Trailing Slash Logic
+
+The broken link checker implements intelligent URL normalization:
+
+1. **Check original URL first**
+2. **If fails (404/410/network error):**
+   - Parse URL to check if it has a path component
+   - If URL ends with `/` → try without `/`
+   - If URL doesn't end with `/` → try with `/`
+3. **If alternate works → link is NOT broken**
+4. **If both fail → link IS broken**
+
+This prevents false positives from URL normalization differences.
+
+#### Error Deduplication Strategy
+
+Errors are deduplicated using normalized error messages:
+
+1. **Normalization:**
+   - Convert to lowercase
+   - Remove URLs (replace with `[url]`)
+   - Remove file paths (replace with `[path]`)
+   - Remove timestamps
+   - Remove durations/sizes
+   - Keep link text in quotes (important for parsing)
+
+2. **Grouping:**
+   - Same normalized error = same issue
+   - Count affected URLs
+   - Track all URLs where error occurred
+
+3. **Table Deduplication:**
+   - Use `context|element|error` as unique key
+   - Take maximum `affected` count
+   - Skip errors without meaningful link text
+
+#### Retry Behavior
+
+**Retries are disabled (`retries: 0`):**
+- Broken links are real failures, not flaky tests
+- Accessibility issues are consistent
+- SEO problems don't resolve on retry
+
+This ensures accurate reporting without false retry noise.
+
+### File Structure
+
+```
+project-root/
+├── playwright.config.ts          # Main configuration
+├── tests/
+│   └── url-audit.spec.ts        # Main test file (orchestrates all checks)
+├── utils/
+│   ├── seo-checks.ts            # [1] SEO checks
+│   ├── broken-links.ts           # [2] Broken links (with trailing slash logic)
+│   ├── accessibility.ts          # [3] Accessibility
+│   ├── security-checks.ts        # [4] Security
+│   ├── structured-data.ts        # [5] Structured data
+│   ├── social-media.ts           # [6] Social media
+│   ├── seo-extended.ts           # [7] Extended SEO
+│   ├── form-validation.ts        # [8] Form validation
+│   ├── functional-tests.ts      # [9] Functional tests
+│   ├── visual-tests.ts           # [10] Visual tests
+│   ├── mobile-testing.ts         # [11] Mobile testing
+│   ├── content-checks.ts         # [12] Content checks
+│   ├── user-flows.ts             # [13] User flows (phone image detection)
+│   └── DeveloperTableReporter.ts # Console reporter
+├── scripts/
+│   ├── aggregate-errors.js      # Error aggregation & deduplication
+│   └── generate-aggregated-report.js # HTML report generation
+└── test-multiple-urls.js         # Batch URL testing script
+```
+
+### Test Checklist (from `testlist.txt`)
+
+- Critical user flows: contact form submission; phone click-to-call (use local sensitive config for number); navigation menu; profile browsing; video interactions.
+- Visual & layout: overall layout and visual checks.
+- Functional tests: CTA buttons; social media links; external links (CBS, Netflix, CNN, etc.); sidebar widgets; mobile responsiveness (hamburger/menu/layout).
+- Form validation: required fields; email format; phone format; success/error messaging.
+- Accessibility: missing alt text; heading order; contrast; form labels; interactive roles (div acting as button).
+- Snapshot vs assertion guidance: see https://playwright.dev/docs/aria-snapshots#when-to-use.
+- Reference links: https://playwright.dev/; https://cruxvis.withgoogle.com/; https://github.com/GoogleChrome/web-vitals; https://devhints.io/xpath.
+
 ## Important Concepts
 
 ### Codegen vs Running Tests
@@ -151,12 +639,12 @@ See `scripts/README.md` for detailed documentation.
 **`playwright codegen`** - This tool **generates test code** by recording your browser interactions. It does NOT:
 - Run tests
 - Save videos
-- Create test-results folder
+- Generate reports
 
 **`playwright test`** - This **runs your tests** and will:
 - Execute test files
-- Save videos to `test-results/` folder
 - Generate test reports
+- Organize output by URL
 
 ## Usage
 
@@ -198,39 +686,77 @@ npm run test:headed
 npx playwright test tests/example.spec.ts
 ```
 
-Videos will be saved in `test-results/` folder after running tests.
+Test artifacts will be saved in the report directories after running tests.
 
-## Video Configuration
+## Report Configuration
 
-Videos are configured in `playwright.config.ts`:
-- `video: 'on'` - Records video for every test
-- Videos are automatically saved to `test-results/<test-name>/video.webm`
+Reports are configured in `playwright.config.ts`:
+- HTML reports are saved to `playwright-report/{domain}/{path}/`
+- Reports are organized automatically by URL being tested
 
 ## Test Scripts
 
+### Core Test Commands
 - `npm test` - Run all tests
-- `npm run test:n8n` - Run all tests and send results to n8n
-- `npm run test:url` - Test a specific URL
-- `npm run test:url:n8n` - Test a specific URL and send results to n8n
-- `npm run test:ui` - Run tests with UI mode
+- `npm run test:url` - Test a specific URL with comprehensive audit
+- `npm run test:multiple-urls` - Test multiple URLs from a file
+- `npm run test:ui` - Run tests with UI mode (recommended for first-time users)
 - `npm run test:headed` - Run tests with visible browser
 - `npm run test:debug` - Run tests in debug mode
-- `npm run send:n8n` - Send existing test results to n8n
+- `npm run test:audits` - Run only audit/utility tests (SEO, broken links, accessibility)
+- `npm run test:all-specs` - Run all `.spec.ts` files explicitly
+
+### Codegen Commands
 - `npm run codegen` - Start codegen (basic)
 - `npm run codegen:url` - Start codegen with URL helper
+
+### n8n Integration Commands
+- `npm run test:n8n` - Run all tests and send results to n8n
+- `npm run test:url:n8n` - Test a specific URL and send results to n8n
+- `npm run send:n8n` - Send existing test results to n8n
+- `npm run test:n8n-connection` - Test n8n connection
+
+### Report Management Commands
+- `npm run serve:reports` - Serve test reports locally
+- `npm run prepare:github` - Prepare reports for GitHub
+- `npm run verify:structure` - Verify report structure
+
+### Direct Script Usage
 - `node test-multiple-urls.js <file>` - Test multiple URLs from a file
 - `node test-multiple-urls.js <file> --n8n` - Test multiple URLs and send to n8n
 
 ## Features
 
+This testing suite provides comprehensive web quality assurance capabilities including SEO validation, accessibility auditing, security checks, functional testing, and more.
+
+### Comprehensive URL Audit
+
+The `tests/url-audit.spec.ts` test runs a streamlined audit suite on any URL, including:
+
+1. **SEO Checks** - Title, meta description, canonical, robots, headings, alt
+2. **Security Checks** - HTTPS, security headers, CSP
+3. **Accessibility** - axe-core scan for WCAG issues
+4. **Broken Links** - Detects failed HREFs with selector context
+5. **Form Validation** - Required fields, email/phone formats
+6. **Visual/Layout** - Element visibility, layout structure, resource loading
+7. **Mobile Testing** - Responsive layout across viewports
+8. **User Flows** - Contact/phone/profile flows (uses expected phone from config/env)
+9. **Functional Components** - CTA buttons, nav, external links, modals, video embeds
+
+**Usage:**
+```bash
+npm run test:url https://example.com/
+```
+
 ### Broken Link Checking
 
-The project includes utilities for automated broken link detection:
+Automated broken link detection with comprehensive reporting:
 
 - **Extracts all links** from a page automatically
 - **Normalizes URLs** (converts relative to absolute)
-- **Parallel link checking** for fast execution
-- **Comprehensive reporting** of broken links
+- **Parallel link checking** for fast execution (configurable concurrency)
+- **Comprehensive reporting** with status codes and error details
+- **Progress logging** for real-time status updates
 
 **Example usage:**
 ```typescript
@@ -369,11 +895,14 @@ export default defineSeoConfig({
 
 ### Accessibility Testing
 
-Accessibility audits using axe-core:
+Accessibility audits using axe-core with interactive state testing:
 
 - **Automated accessibility scanning** with axe-core
-- **Violation detection** and reporting
-- **Integration** with Playwright test suite
+- **Violation detection** and reporting with impact levels
+- **Interactive state testing** - Hover, focus, and active states
+- **Modal/popup testing** - Accessibility checks on open modals
+- **Element-specific testing** - Test individual components
+- **WCAG compliance** validation
 
 **Example usage:**
 ```typescript
@@ -387,6 +916,22 @@ test('check accessibility', async ({ page }) => {
 });
 ```
 
+**Interactive state testing:**
+```typescript
+import { runAccessibilityCheckOnHover, runAccessibilityCheckOnModal } from '../utils/accessibility';
+
+// Test button on hover
+const hoverResults = await runAccessibilityCheckOnHover(page, 'button.submit');
+
+// Test modal accessibility
+const modalResults = await runAccessibilityCheckOnModal(
+  page,
+  'button[data-open-modal]',  // Button that opens modal
+  '.modal-content',            // Modal container
+  '.modal-close'               // Close button (optional)
+);
+```
+
 **Test files:**
 - `tests/accessibility.spec.ts` - Basic accessibility testing
 - `tests/interactive-accessibility.spec.ts` - Accessibility testing on hover, focus, and modals
@@ -394,42 +939,76 @@ test('check accessibility', async ({ page }) => {
 
 ## Utility Functions
 
-All utility functions are located in the `utils/` folder:
+All utility functions are located in the `utils/` folder. See `utils/README.md` for detailed documentation.
 
-- `utils/broken-links.ts` - Broken link checking utilities (with progress logging)
-- `utils/seo-checks.ts` - SEO validation utilities
-- `utils/accessibility.ts` - Accessibility testing utilities
-- `utils/url-path.js` - URL to file path conversion utilities (for report organization)
-- `utils/dom-helpers.ts` - DOM interaction helpers (with progress logging)
+### Core Testing Utilities
+
+- **`utils/broken-links.ts`** - Broken link checking with parallel execution and progress logging
+- **`utils/seo-checks.ts`** - Basic SEO validation (title, meta description, canonical, robots, images, headings)
+- **`utils/seo-extended.ts`** - Advanced SEO checks (sitemap, robots.txt, page speed, hreflang tags)
+- **`utils/accessibility.ts`** - Accessibility testing with axe-core (static and interactive states)
+- **`utils/page-load.ts`** - Page load utilities with configurable wait conditions
+
+### Security & Performance
+
+- **`utils/security-checks.ts`** - Security validation (HTTPS, secure headers, CSP, XSS protection)
+- **`utils/performance.ts`** - Performance metrics and Core Web Vitals
+
+### Content & Structure
+
+- **`utils/structured-data.ts`** - JSON-LD schema validation and structured data checks
+- **`utils/social-media.ts`** - Open Graph and Twitter Card tag validation
+- **`utils/content-checks.ts`** - Content quality and structure validation
+- **`utils/visual-tests.ts`** - Visual testing (element visibility, layout structure, resource loading)
+
+### Functional Testing
+
+- **`utils/functional-tests.ts`** - Functional testing (CTA buttons, navigation, external links, modals, videos)
+- **`utils/form-validation.ts`** - Form validation and accessibility checks
+- **`utils/user-flows.ts`** - User flow testing (contact forms, phone click-to-call, profile browsing, registration)
+- **`utils/mobile-testing.ts`** - Mobile responsiveness testing across multiple viewports
+
+### Helper Utilities
+
+- **`utils/dom-helpers.ts`** - DOM interaction helpers with progress logging
+- **`utils/screenshot-helpers.ts`** - Screenshot utilities
+- **`utils/error-handling.ts`** - Error handling and context formatting
+- **`utils/formatting.ts`** - Report formatting utilities
+- **`utils/url-path.js`** - URL to file path conversion (for report organization)
+- **`utils/DeveloperTableReporter.ts`** - Custom Playwright reporter for table-formatted output
 
 **Progress Logging:**
 
-The broken link and DOM helper utilities include comprehensive progress logging:
-- Real-time status updates during link extraction
+Many utilities include comprehensive progress logging:
+- Real-time status updates during operations
 - Scroll progress indicators
 - Lazy content loading detection
 - Modal interaction tracking
 - Link count summaries
+- Test execution progress
 
 ## Running Tests
 
-### Quick Test: Run All Audits on a URL
+### Quick Test: Comprehensive URL Audit
 
-Test any URL with all audit checks (SEO, broken links, accessibility) in one command:
-
-```bash
-npm test -- https://anewbride.com/tour/things-to-consider-on-singles-tours.html
-```
-
-Or use the dedicated script:
+Run a comprehensive audit on any URL with all checks (SEO, broken links, accessibility, security, structured data, social media, forms, functional tests, visual tests, mobile, content, and user flows) in one command:
 
 ```bash
 npm run test:url https://anewbride.com/tour/things-to-consider-on-singles-tours.html
 ```
 
-This runs all audit tests against the provided URL without creating a test file.
+Or use npm test with URL argument:
 
-**Note:** If you run `npm test` without a URL, it runs all test files.
+```bash
+npm test -- https://anewbride.com/tour/things-to-consider-on-singles-tours.html
+```
+
+This runs the comprehensive `url-audit.spec.ts` test against the provided URL without creating a test file. The URL can also be set via environment variables:
+- `URL_AUDIT_URL`
+- `TEST_URL`
+- `BASE_URL`
+
+**Note:** If you run `npm test` without a URL, it runs all test files in the `tests/` folder.
 
 ### Run All Tests (Recommended)
 
@@ -472,7 +1051,7 @@ npx playwright test tests/broken-links.spec.ts tests/seo-checks.spec.ts
 
 ### Multiple URL Testing
 
-Test multiple URLs sequentially with automatic report organization:
+Test multiple URLs sequentially with automatic report organization (`test-multiple-urls.js` runs one URL at a time, so seeing 1 worker is expected):
 
 **Create a URL list file:**
 ```bash

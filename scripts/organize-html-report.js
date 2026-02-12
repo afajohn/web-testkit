@@ -9,7 +9,8 @@ const fs = require('fs');
 const path = require('path');
 const { getUrlBasedPath, getUniqueUrlBasedPath } = require('../utils/url-path');
 
-const DEFAULT_REPORT_DIR = path.join(__dirname, '..', 'playwright-report');
+const REPORT_BASE_DIR = process.env.REPORT_BASE_DIR || 'playwright-report';
+const DEFAULT_REPORT_DIR = path.join(__dirname, '..', REPORT_BASE_DIR);
 const testUrl = process.env.URL_AUDIT_URL || process.env.TEST_URL;
 
 if (!testUrl) {
@@ -20,7 +21,7 @@ if (!testUrl) {
 try {
   // Get a unique report path to ensure no collisions
   // This ensures each URL gets its own unique folder even if paths are similar
-  const targetReportDir = getUniqueUrlBasedPath(testUrl, 'playwright-report', { checkExists: true });
+  const targetReportDir = getUniqueUrlBasedPath(testUrl, REPORT_BASE_DIR, { checkExists: true });
   const targetReportPath = path.join(__dirname, '..', targetReportDir);
 
   // Check if source report exists
@@ -98,30 +99,6 @@ try {
   
   // Confirm unique directory
   console.log(`   ✓ Each URL has its own unique report directory (no overwriting)`);
-
-  // Copy Lighthouse HTML reports from test-results to playwright-report
-  const testResultsDir = getUrlBasedPath(testUrl, 'test-results');
-  const testResultsPath = path.join(__dirname, '..', testResultsDir);
-  
-  if (fs.existsSync(testResultsPath)) {
-    // Find all Lighthouse HTML reports in test-results directory
-    const lighthouseReports = findLighthouseReports(testResultsPath);
-    
-    if (lighthouseReports.length > 0) {
-      console.log(`\n📊 Found ${lighthouseReports.length} Lighthouse report(s)`);
-      
-      for (const report of lighthouseReports) {
-        const reportFilename = path.basename(report);
-        const targetLighthousePath = path.join(targetReportPath, reportFilename);
-        
-        // Copy Lighthouse report to playwright-report directory
-        fs.copyFileSync(report, targetLighthousePath);
-        
-        const stats = fs.statSync(targetLighthousePath);
-        console.log(`   ✅ Copied Lighthouse report: ${reportFilename} (${(stats.size / 1024).toFixed(2)} KB)`);
-      }
-    }
-  }
 } catch (error) {
   console.error(`\n${'='.repeat(70)}`);
   console.error(`❌ ERROR ORGANIZING HTML REPORT`);

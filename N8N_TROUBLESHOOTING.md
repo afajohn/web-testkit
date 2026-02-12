@@ -90,8 +90,8 @@ npm test
 # Or test specific URL
 npm run test:url https://anewbride.com/
 
-# Verify file exists
-ls test-results.json  # or on Windows: dir test-results.json
+# Verify file exists in dashboard folder
+dir reports/aura-dashboard/test-results.json
 ```
 
 ### Tests show 0 total tests
@@ -99,7 +99,7 @@ ls test-results.json  # or on Windows: dir test-results.json
 **Cause**: The JSON structure might be different, or no tests ran
 
 **Check**:
-1. Open `test-results.json` in a text editor
+1. Open `reports/aura-dashboard/test-results.json` in a text editor
 2. Look for `"stats"` section
 3. Verify `expected`, `unexpected`, `skipped` values
 
@@ -146,11 +146,13 @@ npm run test:url:n8n -- https://anewbride.com/
 
 ## File Location Verification
 
-The script expects `test-results.json` in the project root:
+The script expects `test-results.json` in the dashboard folder:
 
 ```
 ANewBride/
-├── test-results.json  ← Should be here
+├── reports/
+│   └── aura-dashboard/
+│       └── test-results.json  ← Should be here
 ├── scripts/
 │   └── send-to-n8n.js
 └── ...
@@ -159,7 +161,7 @@ ANewBride/
 Verify file exists:
 ```bash
 # Windows PowerShell
-Test-Path test-results.json
+Test-Path reports/aura-dashboard/test-results.json
 
 # Should return: True
 ```
@@ -185,7 +187,7 @@ N8N_WEBHOOK_URL=http://localhost:5678/webhook/playwright-results npm run send:n8
 
 1. **Check n8n logs**: Look at the terminal where `n8n` is running
 2. **Check Playwright logs**: Look at test output for errors
-3. **Verify JSON file**: Open `test-results.json` and check it's valid JSON
+3. **Verify JSON file**: Open `reports/aura-dashboard/test-results.json` and check it's valid JSON
 4. **Test connection separately**: Use `npm run test:n8n-connection`
 5. **Check firewall**: Ensure port 5678 is not blocked
 

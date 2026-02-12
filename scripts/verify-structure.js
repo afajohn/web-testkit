@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * Verify that test-results and playwright-report directories follow the URL-based structure
+ * Verify that playwright-report directory follows the URL-based structure
  * Shows the current structure and confirms it matches the expected format
  * 
  * Usage:
@@ -11,7 +11,6 @@
 const fs = require('fs');
 const path = require('path');
 
-const TEST_RESULTS_DIR = path.join(__dirname, '..', 'test-results');
 const PLAYWRIGHT_REPORT_DIR = path.join(__dirname, '..', 'playwright-report');
 
 /**
@@ -169,26 +168,17 @@ function verifyStructure(dir, dirName) {
 try {
   console.log(`\n🔍 Verifying Directory Structure\n`);
   
-  const testResultsOk = verifyStructure(TEST_RESULTS_DIR, 'test-results');
   const playwrightReportOk = verifyStructure(PLAYWRIGHT_REPORT_DIR, 'playwright-report');
   
   console.log(`${'='.repeat(70)}`);
   console.log(`📋 Summary`);
   console.log(`${'='.repeat(70)}`);
-  console.log(`   test-results/: ${testResultsOk ? '✅ Exists' : '❌ Missing'}`);
   console.log(`   playwright-report/: ${playwrightReportOk ? '✅ Exists' : '❌ Missing'}`);
   
-  if (testResultsOk && playwrightReportOk) {
-    console.log(`\n✅ Both directories are organized by URL structure`);
+  if (playwrightReportOk) {
+    console.log(`\n✅ Directory is organized by URL structure`);
     console.log(`\n💡 Expected structure:`);
-    console.log(`   test-results/`);
-    console.log(`   ├── <domain>/`);
-    console.log(`   │   ├── test-results.json`);
-    console.log(`   │   └── <test-artifacts>/`);
-    console.log(`   └── <domain>/<path>/`);
-    console.log(`       ├── test-results.json`);
-    console.log(`       └── <test-artifacts>/`);
-    console.log(`\n   playwright-report/`);
+    console.log(`   playwright-report/`);
     console.log(`   ├── <domain>/`);
     console.log(`   │   ├── index.html`);
     console.log(`   │   └── data/`);

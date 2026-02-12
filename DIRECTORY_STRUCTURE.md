@@ -7,17 +7,6 @@ Your Playwright test results are automatically organized by URL structure. This 
 Your project is **already configured** to create this structure automatically:
 
 ```
-test-results/
-├── anewbride.com/
-│   ├── test-results.json
-│   └── <test-artifacts>/
-├── anewbride.com/tour/
-│   ├── test-results.json
-│   └── <test-artifacts>/
-└── example.com/
-    ├── test-results.json
-    └── <test-artifacts>/
-
 playwright-report/
 ├── anewbride.com/
 │   ├── index.html
@@ -34,23 +23,19 @@ playwright-report/
 
 ### Automatic Organization
 
-1. **Test Results** (`test-results/`):
-   - Organized automatically by Playwright config
-   - Path based on URL: `test-results/<domain>/<path>/`
-
-2. **HTML Reports** (`playwright-report/`):
-   - Playwright writes to default `playwright-report/` first
-   - `scripts/organize-html-report.js` runs automatically after tests
-   - Moves report to URL-based directory: `playwright-report/<domain>/<path>/`
+**HTML Reports** (`playwright-report/`):
+- Playwright writes to default `playwright-report/` first
+- `scripts/organize-html-report.js` runs automatically after tests
+- Moves report to URL-based directory: `playwright-report/<domain>/<path>/`
 
 ### URL Mapping Examples
 
-| URL | test-results/ | playwright-report/ |
-|-----|---------------|-------------------|
-| `https://anewbride.com/` | `anewbride.com/` | `anewbride.com/` |
-| `https://anewbride.com/tour/page.html` | `anewbride.com/tour/` | `anewbride.com/tour/` |
-| `https://www.example.com/` | `example.com/` | `example.com/` |
-| `https://example.com/about/team.html` | `example.com/about/` | `example.com/about/` |
+| URL | playwright-report/ |
+|-----|-------------------|
+| `https://anewbride.com/` | `anewbride.com/` |
+| `https://anewbride.com/tour/page.html` | `anewbride.com/tour/` |
+| `https://www.example.com/` | `example.com/` |
+| `https://example.com/about/team.html` | `example.com/about/` |
 
 ## Verification
 
@@ -82,11 +67,6 @@ npm run test:url -- https://example.com/
 
 Result:
 ```
-test-results/
-├── anewbride.com/          # From URL 1
-├── anewbride.com/tour/     # From URL 2
-└── example.com/            # From URL 3
-
 playwright-report/
 ├── anewbride.com/          # From URL 1
 ├── anewbride.com/tour/     # From URL 2

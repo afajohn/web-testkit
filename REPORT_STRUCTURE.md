@@ -1,20 +1,12 @@
 # Playwright Report Directory Structure
 
-This document explains how test results and HTML reports are organized by URL structure.
+This document explains how HTML reports are organized by URL structure.
 
 ## Overview
 
 When testing multiple URLs and websites, reports are automatically organized into a URL-based directory structure:
 
 ```
-test-results/
-├── anewbride.com/
-│   ├── test-results.json
-│   └── <test-artifacts>/
-└── anewbride.com/tour/
-    ├── test-results.json
-    └── <test-artifacts>/
-
 playwright-report/
 ├── anewbride.com/
 │   ├── index.html
@@ -26,23 +18,9 @@ playwright-report/
 
 ## How It Works
 
-### Test Results (`test-results/`)
-
-Test results are automatically organized based on the URL being tested:
-
-- **Root URLs**: `test-results/<domain>/`
-  - Example: `https://anewbride.com/` → `test-results/anewbride.com/`
-
-- **URLs with paths**: `test-results/<domain>/<path>/`
-  - Example: `https://anewbride.com/tour/page.html` → `test-results/anewbride.com/tour/`
-
-Each directory contains:
-- `test-results.json` - JSON report file
-- Test artifacts (videos, screenshots, traces) in unique subdirectories
-
 ### HTML Reports (`playwright-report/`)
 
-HTML reports follow the same URL-based structure:
+HTML reports follow a URL-based directory structure:
 
 - **Root URLs**: `playwright-report/<domain>/`
   - Example: `https://anewbride.com/` → `playwright-report/anewbride.com/`
@@ -76,13 +54,6 @@ The system uses the following rules to organize reports:
 ```
 URL: https://anewbride.com/
 
-test-results/
-└── anewbride.com/
-    ├── test-results.json
-    └── url-audit-...-chromium/
-        ├── video.webm
-        └── error-context.md
-
 playwright-report/
 └── anewbride.com/
     ├── index.html
@@ -94,13 +65,6 @@ playwright-report/
 ### Example 2: URL with Path
 ```
 URL: https://anewbride.com/tour/things-to-consider.html
-
-test-results/
-└── anewbride.com/
-    └── tour/
-        ├── test-results.json
-        └── url-audit-...-chromium/
-            └── video.webm
 
 playwright-report/
 └── anewbride.com/
@@ -117,18 +81,6 @@ URLs tested:
 - https://example.com/
 
 Result:
-
-test-results/
-├── anewbride.com/
-│   ├── test-results.json
-│   └── <artifacts>/
-└── anewbride.com/
-    └── tour/
-        ├── test-results.json
-        └── <artifacts>/
-└── example.com/
-    ├── test-results.json
-    └── <artifacts>/
 
 playwright-report/
 ├── anewbride.com/

@@ -1,0 +1,77 @@
+import { test, expect } from '@playwright/test';
+import {
+  runAccessibilityCheckOnModal,
+  formatAccessibilityReport,
+} from '../utils/accessibility';
+
+/**
+ * Example: Functionality and Accessibility Testing for Modals
+ * 
+ * This file demonstrates how to:
+ * 1. Test modal functionality (open, interact, close)
+ * 2. Test modal accessibility
+ * 
+ * Copy this file to tests/modal-functionality.spec.ts and customize the selectors
+ * for your specific modals.
+ */
+test.describe('Modal Functionality and Accessibility', () => {
+  test('test contact modal functionality and accessibility', async ({ page }) => {
+    await page.goto('https://anewbride.com/');
+    
+    // Step 1: Open the modal
+    const openButton = page.locator('button:has-text("Contact"), [data-open="contact"]');
+    await openButton.click();
+    
+    // Step 2: Wait for modal to be visible
+    const modal = page.locator('.contact-modal, [role="dialog"]');
+    await modal.waitFor({ state: 'visible' });
+    
+    // Step 3: Test modal functionality
+    // Example: Fill out form fields
+    await page.locator('input[name="name"]').fill('Test User');
+    await page.locator('input[name="email"]').fill('test@example.com');
+    
+    // Step 4: Run accessibility check on the modal
+    const scanResults = await runAccessibilityCheckOnModal(
+      page,
+      openButton,
+      modal,
+      'button:has-text("Close"), .modal-close'
+    );
+    
+    console.log(formatAccessibilityReport(scanResults));
+    expect(scanResults.passed).toBe(true);
+    
+    // Step 5: Test closing the modal
+    const closeButton = page.locator('button:has-text("Close"), .modal-close, [aria-label*="close" i]');
+    await closeButton.click();
+    await modal.waitFor({ state: 'hidden' });
+    
+    // Verify modal is closed
+    await expect(modal).not.toBeVisible();
+  });
+
+  test('test popup functionality', async ({ page }) => {
+    await page.goto('https://anewbride.com/');
+    
+    // Customize selectors for your popup
+    const popupTrigger = page.locator('[data-popup], .popup-trigger');
+    const popup = page.locator('.popup, [role="alertdialog"]');
+    
+    // Test popup opens
+    await popupTrigger.click();
+    await expect(popup).toBeVisible();
+    
+    // Test accessibility
+    const scanResults = await runAccessibilityCheckOnModal(
+      page,
+      popupTrigger,
+      popup,
+      '.popup-close'
+    );
+    
+    console.log(formatAccessibilityReport(scanResults));
+    expect(scanResults.passed).toBe(true);
+  });
+});
+

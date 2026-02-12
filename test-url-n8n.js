@@ -11,9 +11,14 @@ const { spawn } = require('child_process');
 const fs = require('fs');
 const path = require('path');
 const { getUrlBasedPath } = require('./utils/url-path');
+const { URL } = require('url');
 
 const args = process.argv.slice(2);
 let url = args[0];
+const runId = process.env.RUN_ID || new Date().toISOString().replace(/[:.]/g, '-');
+const KEEP_RUNS = parseInt(process.env.RUNS_KEEP_COUNT || '3', 10);
+const REPORT_BASE_DIR = process.env.REPORT_BASE_DIR || path.join('runs', runId, 'playwright-report');
+fs.mkdirSync(path.join(__dirname, REPORT_BASE_DIR), { recursive: true });
 
 // If no URL provided, try to use from .env file
 if (!url) {
@@ -43,9 +48,97 @@ try {
 
 console.log(`Running audit tests for: ${url}\n`);
 
-// Path to test results file based on URL
-const resultsDir = getUrlBasedPath(url, 'test-results');
-const RESULTS_FILE = path.join(__dirname, resultsDir, 'test-results.json');
+// Clean previous artifacts for this URL only (preserve other URLs)
+function removeDirSafe(dirPath) {
+  try {
+    if (fs.existsSync(dirPath)) {
+      fs.rmSync(dirPath, { recursive: true, force: true });
+    }
+  } catch (error) {
+    console.warn(`⚠️  Could not remove directory: ${dirPath} (${error.message})`);
+  }
+}
+
+// Remove older runs for this domain (keep newest KEEP_RUNS)
+function pruneDomainRuns(domain) {
+  const runsRoot = path.join(__dirname, 'runs');
+  if (!fs.existsSync(runsRoot)) return;
+  const runEntries = fs.readdirSync(runsRoot, { withFileTypes: true })
+    .filter(entry => entry.isDirectory())
+    .map(entry => entry.name)
+    .filter(name => name !== runId);
+
+  const candidates = [];
+  for (const r of runEntries) {
+    const repDir = path.join(runsRoot, r, 'playwright-report', domain);
+    if (fs.existsSync(repDir)) {
+      const statPath = repDir;
+      try {
+        const stat = fs.statSync(statPath);
+        candidates.push({ run: r, mtime: stat.mtimeMs, repDir });
+      } catch (e) {
+        // ignore
+      }
+    }
+  }
+  if (candidates.length <= KEEP_RUNS) return;
+  candidates.sort((a, b) => b.mtime - a.mtime);
+  const toDelete = candidates.slice(KEEP_RUNS);
+  toDelete.forEach(item => {
+    removeDirSafe(item.repDir);
+  });
+}
+
+function cleanUrlArtifacts(targetUrl) {
+  const domain = new URL(targetUrl).hostname.replace(/^www\./, '');
+  pruneDomainRuns(domain);
+  ['playwright-report'].forEach(base => {
+    const actualBase = REPORT_BASE_DIR;
+    const baseParent = path.join(__dirname, actualBase);
+    if (fs.existsSync(baseParent)) {
+      const entries = fs.readdirSync(baseParent, { withFileTypes: true });
+      entries.forEach(entry => {
+        if (
+          entry.isDirectory() &&
+          (entry.name === domain || entry.name.startsWith(`${domain}-`))
+        ) {
+          removeDirSafe(path.join(baseParent, entry.name));
+        }
+      });
+    }
+  });
+
+  // playwright-report
+  const reportRel = getUrlBasedPath(targetUrl, REPORT_BASE_DIR);
+  const reportFull = path.join(__dirname, reportRel);
+  removeDirSafe(reportFull);
+
+  // playwright-report (base and hashed variants)
+  const reportRel = getUrlBasedPath(targetUrl, REPORT_BASE_DIR);
+  const reportFull = path.join(__dirname, reportRel);
+  const reportParent = path.dirname(reportFull);
+  const reportLeaf = path.basename(reportFull);
+  try {
+    if (fs.existsSync(reportParent)) {
+      const entries = fs.readdirSync(reportParent, { withFileTypes: true });
+      entries.forEach(entry => {
+        if (
+          entry.isDirectory() &&
+          (entry.name === reportLeaf || entry.name.startsWith(`${reportLeaf}-`))
+        ) {
+          removeDirSafe(path.join(reportParent, entry.name));
+        }
+      });
+    }
+  } catch (error) {
+    console.warn(`⚠️  Could not clean report variants for ${targetUrl}: ${error.message}`);
+  }
+}
+
+cleanUrlArtifacts(url);
+
+// Path to test results file - centralized in reports/aura-dashboard/
+const RESULTS_FILE = path.join(__dirname, 'reports/aura-dashboard', 'test-results.json');
 
 /**
  * Wait for test results file to be created
@@ -198,6 +291,7 @@ const testProcess = spawn('npx', ['playwright', 'test', 'tests/url-audit.spec.ts
   env: {
     ...process.env,
     URL_AUDIT_URL: url,
+    REPORT_BASE_DIR,
   },
   stdio: 'inherit',
   shell: true,
@@ -260,6 +354,7 @@ testProcess.on('close', async (code) => {
       ...process.env,
       URL_AUDIT_URL: url,
       TEST_URL: url,
+      REPORT_BASE_DIR,
     },
     shell: true,
     cwd: __dirname,
