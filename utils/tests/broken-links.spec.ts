@@ -17,27 +17,13 @@ test.describe('Broken Link Checking', () => {
     
     const apiRequest = await request.newContext();
     // Uses extractVisibleLinks by default (useVisibleLinks = true)
-    const { brokenLinks, totalLinks, screenshotPaths } = await checkBrokenLinks(page, apiRequest);
+    const { brokenLinks, totalLinks } = await checkBrokenLinks(page, apiRequest);
 
     // Log the report
     console.log(formatTestHeader('Broken Links Check', DEFAULT_TEST_URL));
     console.log(formatBrokenLinksReport(brokenLinks, totalLinks, DEFAULT_TEST_URL));
 
-    // Attach broken links screenshots if available
-    if (screenshotPaths) {
-      if (screenshotPaths.fullPage) {
-        await test.info().attach('Broken Links - Overview', {
-          path: screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Broken Link #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No screenshots are generated for broken-links checks
 
     // Assert no broken links (or adjust based on your requirements)
     expect(brokenLinks.length).toBe(0);
@@ -49,26 +35,12 @@ test.describe('Broken Link Checking', () => {
     await gotoAndWaitForDOMContentLoaded(page, tourUrl);
     
     const apiRequest = await request.newContext();
-    const { brokenLinks, totalLinks, screenshotPaths } = await checkBrokenLinks(page, apiRequest);
+    const { brokenLinks, totalLinks } = await checkBrokenLinks(page, apiRequest);
 
     console.log(formatTestHeader('Broken Links Check', tourUrl));
     console.log(formatBrokenLinksReport(brokenLinks, totalLinks, DEFAULT_TEST_URL));
 
-    // Attach broken links screenshots if available
-    if (screenshotPaths) {
-      if (screenshotPaths.fullPage) {
-        await test.info().attach('Broken Links - Overview', {
-          path: screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Broken Link #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No screenshots are generated for broken-links checks
 
     expect(brokenLinks.length).toBe(0);
   });
@@ -78,26 +50,12 @@ test.describe('Broken Link Checking', () => {
     
     const apiRequest = await request.newContext();
     // Check links with higher concurrency for faster execution
-    const { brokenLinks, totalLinks, screenshotPaths } = await checkBrokenLinks(page, apiRequest, undefined, 20);
+    const { brokenLinks, totalLinks } = await checkBrokenLinks(page, apiRequest, undefined, 20);
 
     console.log(formatTestHeader('Broken Links Check', DEFAULT_TEST_URL));
     console.log(formatBrokenLinksReport(brokenLinks, totalLinks, DEFAULT_TEST_URL));
 
-    // Attach broken links screenshots if available
-    if (screenshotPaths) {
-      if (screenshotPaths.fullPage) {
-        await test.info().attach('Broken Links - Overview', {
-          path: screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Broken Link #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No screenshots are generated for broken-links checks
 
     expect(brokenLinks.length).toBe(0);
   });
@@ -110,7 +68,7 @@ test.describe('Broken Link Checking', () => {
     console.log(`Found ${links.length} visible links on the page`);
 
     // Filter for specific link patterns if needed
-    const tourLinks = links.filter(link => link.includes('/tour/'));
+    const tourLinks = links.filter(link => link.url.includes('/tour/'));
     console.log(`Found ${tourLinks.length} tour-related visible links`);
 
     // Check specific links

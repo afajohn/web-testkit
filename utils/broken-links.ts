@@ -801,10 +801,7 @@ export function formatBrokenLinksReport(
     sections,
   });
   
-  // Add screenshot note if broken links found
-  if (sections.length > 0 && sections[0].items.length > 0) {
-    report += `\n📸 Screenshots have been captured and attached to the test report.\n`;
-  }
+  // No screenshot artifacts are produced by this check
   
   return report;
 }

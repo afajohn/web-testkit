@@ -594,29 +594,7 @@ export async function checkBrokenLinks(
   // Filter to only broken links
   const brokenLinks = results.filter(result => result.isBroken);
   
-  // Capture screenshots if broken links found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && brokenLinks.length > 0) {
-    console.log(`  ⏳ Capturing screenshots for ${brokenLinks.length} broken link(s)...`);
-    try {
-      screenshotPaths = await createBrokenLinkScreenshots(
-        page,
-        brokenLinks.map(link => ({
-          selector: link.selector,
-          linkText: link.linkText,
-          url: link.url,
-          status: link.status,
-          location: link.location,
-          modalTriggerSelector: link.modalTriggerSelector,
-          modalTriggerText: link.modalTriggerText,
-        })),
-        'test-results'
-      );
-      console.log('  ✓ Screenshots captured');
-    } catch (error) {
-      console.warn('  ⚠️  Failed to capture broken link screenshots:', error);
-    }
-  }
+  // Screenshots disabled to avoid artifact generation and speed up checks
   
   const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  ✓ Broken links check complete: ${brokenLinks.length} broken out of ${linksWithContext.length} (${totalElapsed}s total)`);
@@ -624,7 +602,6 @@ export async function checkBrokenLinks(
   return {
     brokenLinks,
     totalLinks: linksWithContext.length,
-    screenshotPaths,
   };
 }
 
@@ -706,10 +683,7 @@ export function formatBrokenLinksReport(
     sections,
   });
   
-  // Add screenshot note if broken links found
-  if (sections.length > 0 && sections[0].items.length > 0) {
-    report += `\n📸 Screenshots have been captured and attached to the test report.\n`;
-  }
+  // No screenshot artifacts are produced by this check
   
   return report;
 }

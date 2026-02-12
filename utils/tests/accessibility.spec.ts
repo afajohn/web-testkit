@@ -19,21 +19,7 @@ test.describe('Accessibility Testing', () => {
     console.log(formatTestHeader('Accessibility Check', DEFAULT_TEST_URL));
     console.log(await formatAccessibilityReport(scanResults, DEFAULT_TEST_URL));
 
-    // Attach accessibility screenshots if available
-    if (scanResults.screenshotPaths) {
-      if (scanResults.screenshotPaths.fullPage) {
-        await test.info().attach('Accessibility Errors - Overview', {
-          path: scanResults.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      scanResults.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Accessibility Error #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No accessibility screenshots are generated
 
     // Assert no violations (or adjust threshold based on your requirements)
     expect(scanResults.passed).toBe(true);

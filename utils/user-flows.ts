@@ -411,12 +411,9 @@ export async function testPhoneNumberImages(
           }
 
           if (Tesseract) {
-            // Take screenshot of the image element
-            const screenshotPath = `playwright-report/phone-image-${Date.now()}-${Math.random().toString(36).substring(7)}.png`;
-            await img.screenshot({ path: screenshotPath });
-
-            // Perform OCR
-            const { data: { text } } = await Tesseract.recognize(screenshotPath, 'eng', {
+            // Capture image buffer (no file written) and perform OCR
+            const screenshotBuffer: Buffer = await img.screenshot();
+            const { data: { text } } = await Tesseract.recognize(screenshotBuffer, 'eng', {
               logger: () => {}, // Silent logger
             });
             

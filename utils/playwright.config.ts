@@ -91,8 +91,8 @@ export default defineConfig<SeoAutoFixtures>({
   forbidOnly: !!process.env.CI,
   /* Retry on CI only */
   retries: process.env.CI ? 2 : 0,
-  /* Opt out of parallel tests on CI. */
-  workers: process.env.CI ? 1 : undefined,
+  /* Run tests with a single worker to avoid multiple browser instances; use concurrency internally. */
+  workers: 1,
   /* Reporter to use. See https://playwright.dev/docs/test-reporters */
   reporter: process.env.USE_BLOB_REPORTER === 'true'
     ? [
@@ -114,11 +114,12 @@ export default defineConfig<SeoAutoFixtures>({
     /* Base URL to use in actions like `await page.goto('')`. */
     // baseURL: 'http://localhost:3000',
 
-    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
-    trace: 'on-first-retry',
+    /* Collect trace when retrying the failed test. Disabled for speed. */
+    trace: 'off',
 
-    /* Record video for each test - saved in test-results folder */
-    video: 'on',
+    /* Disable video recording and screenshots to avoid large artifacts and speed runs */
+    video: 'off',
+    screenshot: 'off',
 
     /* Action timeout - STRICTLY ENFORCED: 60 seconds */
     actionTimeout: 60000,

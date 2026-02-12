@@ -47,61 +47,17 @@ test.describe('Comprehensive Site Audit', () => {
     console.log(formatSubsectionHeader('SEO CHECK RESULTS'));
     console.log(await formatSEOCheckReport(seoResults, page));
 
-    // Attach SEO screenshots if available
-    const seoResultsWithScreenshots = seoResults as any;
-    if (seoResultsWithScreenshots.screenshotPaths) {
-      if (seoResultsWithScreenshots.screenshotPaths.fullPage) {
-        await test.info().attach('SEO Errors - Overview', {
-          path: seoResultsWithScreenshots.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      seoResultsWithScreenshots.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`SEO Error #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No SEO screenshots are generated
 
     console.log(formatSubsectionHeader('BROKEN LINKS CHECK'));
     console.log(formatBrokenLinksReport(brokenLinksResult.brokenLinks, brokenLinksResult.totalLinks, testUrl));
 
-    // Attach broken links screenshots if available
-    if (brokenLinksResult.screenshotPaths) {
-      if (brokenLinksResult.screenshotPaths.fullPage) {
-        await test.info().attach('Broken Links - Overview', {
-          path: brokenLinksResult.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      brokenLinksResult.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Broken Link #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No broken-links screenshots are generated
 
     console.log(formatSubsectionHeader('ACCESSIBILITY CHECK'));
     console.log(await formatAccessibilityReport(accessibilityResults, testUrl));
 
-    // Attach accessibility screenshots if available
-    const accessibilityResultsWithScreenshots = accessibilityResults as any;
-    if (accessibilityResultsWithScreenshots.screenshotPaths) {
-      if (accessibilityResultsWithScreenshots.screenshotPaths.fullPage) {
-        await test.info().attach('Accessibility Errors - Overview', {
-          path: accessibilityResultsWithScreenshots.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      accessibilityResultsWithScreenshots.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Accessibility Error #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No accessibility screenshots are generated
 
     // Assertions
     const failedSEOChecks = seoResults.filter(r => !r.passed);
@@ -147,61 +103,17 @@ test.describe('Comprehensive Site Audit', () => {
     console.log(formatSubsectionHeader('SEO CHECK RESULTS'));
     console.log(await formatSEOCheckReport(seoResults, page));
 
-    // Attach SEO screenshots if available
-    const seoResultsWithScreenshots = seoResults as any;
-    if (seoResultsWithScreenshots.screenshotPaths) {
-      if (seoResultsWithScreenshots.screenshotPaths.fullPage) {
-        await test.info().attach('SEO Errors - Overview', {
-          path: seoResultsWithScreenshots.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      seoResultsWithScreenshots.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`SEO Error #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No SEO screenshots are generated
 
     console.log(formatSubsectionHeader('BROKEN LINKS CHECK'));
     console.log(formatBrokenLinksReport(brokenLinksResult.brokenLinks, brokenLinksResult.totalLinks, testUrl));
 
-    // Attach broken links screenshots if available
-    if (brokenLinksResult.screenshotPaths) {
-      if (brokenLinksResult.screenshotPaths.fullPage) {
-        await test.info().attach('Broken Links - Overview', {
-          path: brokenLinksResult.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      brokenLinksResult.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Broken Link #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No broken-links screenshots are generated
 
     console.log(formatSubsectionHeader('ACCESSIBILITY CHECK'));
     console.log(await formatAccessibilityReport(accessibilityResults, testUrl));
 
-    // Attach accessibility screenshots if available
-    const accessibilityResultsWithScreenshots = accessibilityResults as any;
-    if (accessibilityResultsWithScreenshots.screenshotPaths) {
-      if (accessibilityResultsWithScreenshots.screenshotPaths.fullPage) {
-        await test.info().attach('Accessibility Errors - Overview', {
-          path: accessibilityResultsWithScreenshots.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      accessibilityResultsWithScreenshots.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Accessibility Error #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No accessibility screenshots are generated
 
     // Assertions
     const failedSEOChecks = seoResults.filter(r => !r.passed);

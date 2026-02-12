@@ -389,9 +389,9 @@ export async function runSEOChecks(
     requireIndex?: boolean;
     requireFollow?: boolean;
     skipPageLoad?: boolean; // Skip DOM waiting if page is already loaded
-    captureScreenshot?: boolean; // Capture screenshots for visual errors (default: true)
+    captureScreenshot?: boolean; // Capture screenshots for visual errors (default: false)
   } = {}
-): Promise<SEOCheckResult[] & { screenshotPaths?: { fullPage: string | null; closeUps: string[] } }> {
+): Promise<SEOCheckResult[]> {
   const {
     checkTitle = true,
     checkMetaDescription: shouldCheckMetaDescription = true,
@@ -405,7 +405,7 @@ export async function runSEOChecks(
     requireIndex = true,
     requireFollow = true,
     skipPageLoad = false,
-    captureScreenshot = true,
+    captureScreenshot = false,
   } = options;
 
   const startTime = Date.now();
@@ -463,36 +463,14 @@ export async function runSEOChecks(
     console.log('  ✓ Open Graph tags check complete');
   }
 
-  // Capture screenshots for visual errors (images, headings)
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot) {
-    const failedVisualChecks = results.filter(r => 
-      !r.passed && (r.check === 'Image Alt Attributes' || r.check === 'Heading Structure')
-    );
-    
-    if (failedVisualChecks.length > 0) {
-      console.log(`  ⏳ Capturing screenshots for ${failedVisualChecks.length} visual error(s)...`);
-      try {
-        screenshotPaths = await createSEOErrorScreenshots(page, failedVisualChecks, 'test-results');
-        console.log('  ✓ Screenshots captured');
-      } catch (error) {
-        console.warn('  ⚠️  Failed to capture SEO error screenshots:', error);
-      }
-    }
-  }
-
-  // Add screenshotPaths to results array (TypeScript workaround)
-  const resultsWithScreenshots = results as SEOCheckResult[] & { screenshotPaths?: { fullPage: string | null; closeUps: string[] } };
-  if (screenshotPaths) {
-    resultsWithScreenshots.screenshotPaths = screenshotPaths;
-  }
+  // Screenshots disabled for faster runs; return raw results only
 
   const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   const passedCount = results.filter(r => r.passed).length;
   const failedCount = results.filter(r => !r.passed).length;
   console.log(`  ✓ SEO checks complete: ${passedCount} passed, ${failedCount} failed (${totalElapsed}s total)`);
 
-  return resultsWithScreenshots;
+  return results;
 }
 
 /**
@@ -794,11 +772,7 @@ export async function formatSEOCheckReport(
     }
   }
 
-  // Add screenshot note if errors found
-  const resultsWithScreenshots = results as any;
-  if (resultsWithScreenshots.screenshotPaths && (resultsWithScreenshots.screenshotPaths.fullPage || resultsWithScreenshots.screenshotPaths.closeUps.length > 0)) {
-    report += `\n📸 Screenshots have been captured and attached to the test report.\n`;
-  }
+  // No screenshot artifacts are produced by these checks
 
   return report;
 }

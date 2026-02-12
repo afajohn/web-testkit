@@ -14,7 +14,7 @@ import {
   type ReportItem,
   type ReportSection,
 } from './formatting';
-import { createViolationScreenshots } from './screenshot-helpers';
+// Screenshots removed to speed up runs
 
 /**
  * Helper function to convert a Locator or string selector to a string selector
@@ -127,7 +127,7 @@ export async function runAccessibilityCheckOnVisibleContent(
   options: { skipPageLoad?: boolean; captureScreenshot?: boolean } = {}
 ) {
   const startTime = Date.now();
-  const { skipPageLoad = false, captureScreenshot = true } = options;
+  const { skipPageLoad = false, captureScreenshot = false } = options;
 
   console.log('  ⏳ Starting accessibility check...');
 
@@ -160,17 +160,6 @@ export async function runAccessibilityCheckOnVisibleContent(
   const violations = accessibilityScanResults.violations;
   const incomplete = accessibilityScanResults.incomplete;
   
-  // Capture screenshots if violations found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && violations.length > 0) {
-    console.log(`  ⏳ Capturing screenshots for ${violations.length} violation(s)...`);
-    try {
-      screenshotPaths = await createViolationScreenshots(page, violations, 'test-results');
-      console.log('  ✓ Screenshots captured');
-    } catch (error) {
-      console.warn('  ⚠️  Failed to capture accessibility violation screenshots:', error);
-    }
-  }
   
   const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   console.log(`  ✓ Accessibility check complete: ${violations.length} violations, ${incomplete.length} incomplete (${totalElapsed}s total)`);
@@ -181,7 +170,7 @@ export async function runAccessibilityCheckOnVisibleContent(
     passed: violations.length === 0,
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
-    screenshotPaths,
+    // screenshots disabled
   };
 }
 
@@ -193,7 +182,7 @@ export async function runAccessibilityCheckOnElement(
   selector: string | Locator,
   options: { captureScreenshot?: boolean } = {}
 ) {
-  const { captureScreenshot = true } = options;
+  const { captureScreenshot = false } = options;
   const element = typeof selector === 'string' ? page.locator(selector).first() : selector;
   
   // Convert Locator to string selector for AxeBuilder.include()
@@ -206,23 +195,12 @@ export async function runAccessibilityCheckOnElement(
   const violations = accessibilityScanResults.violations;
   const incomplete = accessibilityScanResults.incomplete;
   
-  // Capture screenshots if violations found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && violations.length > 0) {
-    try {
-      screenshotPaths = await createViolationScreenshots(page, violations, 'test-results');
-    } catch (error) {
-      console.warn('Failed to capture accessibility violation screenshots:', error);
-    }
-  }
-  
   return {
     violations,
     incomplete,
     passed: violations.length === 0,
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
-    screenshotPaths,
   };
 }
 
@@ -234,7 +212,7 @@ export async function runAccessibilityCheckOnHover(
   selector: string | Locator,
   options: { captureScreenshot?: boolean } = {}
 ) {
-  const { captureScreenshot = true } = options;
+  const { captureScreenshot = false } = options;
   const element = typeof selector === 'string' ? page.locator(selector).first() : selector;
   
   // Hover over the element
@@ -254,23 +232,12 @@ export async function runAccessibilityCheckOnHover(
   const violations = accessibilityScanResults.violations;
   const incomplete = accessibilityScanResults.incomplete;
   
-  // Capture screenshots if violations found
-  let screenshotPaths: { fullPage: string | null; closeUps: string[] } | undefined;
-  if (captureScreenshot && violations.length > 0) {
-    try {
-      screenshotPaths = await createViolationScreenshots(page, violations, 'test-results');
-    } catch (error) {
-      console.warn('Failed to capture accessibility violation screenshots:', error);
-    }
-  }
-  
   return {
     violations,
     incomplete,
     passed: violations.length === 0,
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
-    screenshotPaths,
   };
 }
 
@@ -452,10 +419,7 @@ export function formatAccessibilityReport(
     sections,
   });
   
-  // Add screenshot note if sections exist (errors found)
-  if (sections.length > 0) {
-    report += `\n📸 Screenshots have been captured and attached to the test report.\n`;
-  }
+  // No screenshot artifacts are produced by accessibility checks
   
   return report;
 }

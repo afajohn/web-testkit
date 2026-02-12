@@ -103,60 +103,17 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
     console.log(formatSubsectionHeader('SEO CHECK RESULTS'));
     console.log(await formatSEOCheckReport(seoResults, page));
 
-    // Attach SEO screenshots if available
-    const seoResultsWithScreenshots = seoResults as any;
-    if (seoResultsWithScreenshots.screenshotPaths) {
-      if (seoResultsWithScreenshots.screenshotPaths.fullPage) {
-        await test.info().attach('SEO Errors - Overview', {
-          path: seoResultsWithScreenshots.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      seoResultsWithScreenshots.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`SEO Error #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No SEO screenshots are generated
 
     console.log(formatSubsectionHeader('BROKEN LINKS CHECK'));
     console.log(formatBrokenLinksReport(brokenLinksResult.brokenLinks, brokenLinksResult.totalLinks, TEST_URL));
 
-    // Attach broken links screenshots if available
-    if (brokenLinksResult.screenshotPaths) {
-      if (brokenLinksResult.screenshotPaths.fullPage) {
-        await test.info().attach('Broken Links - Overview', {
-          path: brokenLinksResult.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      brokenLinksResult.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Broken Link #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No broken-links screenshots are generated
 
     console.log(formatSubsectionHeader('ACCESSIBILITY CHECK'));
     console.log(await formatAccessibilityReport(accessibilityResults, TEST_URL));
 
-    // Attach accessibility screenshots if available
-    if (accessibilityResults.screenshotPaths) {
-      if (accessibilityResults.screenshotPaths.fullPage) {
-        await test.info().attach('Accessibility Errors - Overview', {
-          path: accessibilityResults.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      accessibilityResults.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Accessibility Error #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No accessibility screenshots are generated
 
     // Assertions
     const failedSEOChecks = seoResults.filter(r => !r.passed);
@@ -234,28 +191,14 @@ test.describe(`Audit Test for: ${TEST_URL}`, () => {
       console.log('\nStarting broken links check...');
       const startTime = Date.now();
       const apiRequest = await request.newContext();
-      const { brokenLinks, totalLinks, screenshotPaths } = await checkBrokenLinks(page, apiRequest, undefined, 10, true); // Use visible links (default)
+      const { brokenLinks, totalLinks } = await checkBrokenLinks(page, apiRequest, undefined, 10, true); // Use visible links (default)
       const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
       console.log(`\n✓ Broken links check completed (${elapsed}s total)\n`);
 
     console.log(formatTestHeader('Broken Links Check', TEST_URL));
     console.log(formatBrokenLinksReport(brokenLinks, totalLinks, TEST_URL));
 
-    // Attach broken links screenshots if available
-    if (screenshotPaths) {
-      if (screenshotPaths.fullPage) {
-        await test.info().attach('Broken Links - Overview', {
-          path: screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`Broken Link #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No broken-links screenshots are generated
 
     expect(brokenLinks.length).toBe(0);
     } catch (error: any) {

@@ -144,14 +144,14 @@ export async function testNavigationMenu(
       continue;
     }
 
-    const href = await link.getAttribute('href').catch(() => '');
+    const href = (await link.getAttribute('href')) || '';
     if (!href || href === '#' || href.startsWith('javascript:')) {
       results.push({
         check: 'Navigation Link',
         passed: false,
         message: `Navigation link has invalid href: ${selector}`,
         element: selector,
-        url: href,
+        url: href || undefined,
       });
       continue;
     }
@@ -161,7 +161,7 @@ export async function testNavigationMenu(
       passed: true,
       message: `Navigation link is valid: ${selector}`,
       element: selector,
-      url: href,
+      url: href || undefined,
     });
   }
 
@@ -221,7 +221,7 @@ export async function testExternalLinks(
           passed: false,
           message: `External link should open in new tab (target="_blank"): ${href}`,
           element: href,
-          url: href,
+          url: href || undefined,
         });
       } else {
         // Check if rel="noopener noreferrer" is present for security
@@ -231,7 +231,7 @@ export async function testExternalLinks(
             passed: false,
             message: `External link with target="_blank" should include rel="noopener noreferrer": ${href}`,
             element: href,
-            url: href,
+            url: href || undefined,
           });
         } else {
           results.push({
@@ -239,7 +239,7 @@ export async function testExternalLinks(
             passed: true,
             message: `External link configured correctly: ${href}`,
             element: href,
-            url: href,
+            url: href || undefined,
           });
         }
       }
@@ -249,7 +249,7 @@ export async function testExternalLinks(
         passed: true,
         message: `External link found: ${href}`,
         element: href,
-        url: href,
+        url: href || undefined,
       });
     }
   }

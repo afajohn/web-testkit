@@ -390,7 +390,7 @@ export async function runSEOChecks(
     requireFollow?: boolean;
     skipPageLoad?: boolean; // Skip DOM waiting if page is already loaded
   } = {}
-): Promise<SEOCheckResult[] & { screenshotPaths?: { fullPage: string | null; closeUps: string[] } }> {
+): Promise<SEOCheckResult[]> {
   const {
     checkTitle = true,
     checkMetaDescription: shouldCheckMetaDescription = true,
@@ -461,14 +461,13 @@ export async function runSEOChecks(
     console.log('  ✓ Open Graph tags check complete');
   }
 
-  // Screenshots disabled - no longer capturing playwright-report artifacts
-
   const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
   const passedCount = results.filter(r => r.passed).length;
   const failedCount = results.filter(r => !r.passed).length;
   console.log(`  ✓ SEO checks complete: ${passedCount} passed, ${failedCount} failed (${totalElapsed}s total)`);
 
-  return results as SEOCheckResult[] & { screenshotPaths?: { fullPage: string | null; closeUps: string[] } };
+  // Return plain results; no screenshot artifacts are produced
+  return results;
 }
 
 /**
@@ -770,11 +769,7 @@ export async function formatSEOCheckReport(
     }
   }
 
-  // Add screenshot note if errors found
-  const resultsWithScreenshots = results as any;
-  if (resultsWithScreenshots.screenshotPaths && (resultsWithScreenshots.screenshotPaths.fullPage || resultsWithScreenshots.screenshotPaths.closeUps.length > 0)) {
-    report += `\n📸 Screenshots have been captured and attached to the test report.\n`;
-  }
+  // No screenshot artifacts are produced by these checks
 
   return report;
 }

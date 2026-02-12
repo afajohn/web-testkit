@@ -32,22 +32,7 @@ test.describe('SEO Checks', () => {
     // Log the report
     console.log(await formatSEOCheckReport(results, page));
 
-    // Attach SEO screenshots if available
-    const resultsWithScreenshots = results as any;
-    if (resultsWithScreenshots.screenshotPaths) {
-      if (resultsWithScreenshots.screenshotPaths.fullPage) {
-        await test.info().attach('SEO Errors - Overview', {
-          path: resultsWithScreenshots.screenshotPaths.fullPage,
-          contentType: 'image/png',
-        });
-      }
-      resultsWithScreenshots.screenshotPaths.closeUps.forEach((path: string, index: number) => {
-        test.info().attach(`SEO Error #${index + 1}`, {
-          path,
-          contentType: 'image/png',
-        });
-      });
-    }
+    // No screenshots are generated for SEO checks
 
     // Assert all checks passed
     const failedChecks = results.filter(r => !r.passed);

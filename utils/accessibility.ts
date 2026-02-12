@@ -225,7 +225,6 @@ export async function runAccessibilityCheckOnVisibleContent(
     passed: violations.length === 0,
     totalViolations: violations.length,
     totalIncomplete: incomplete.length,
-    screenshotPaths,
     failureContexts,
   };
 }
@@ -286,6 +285,11 @@ export async function runAccessibilityCheckOnElement(
     totalIncomplete: incomplete.length,
     failureContexts,
   };
+}
+
+/**
+ * Run accessibility check on an element in hover state
+ */
 export async function runAccessibilityCheckOnHover(
   page: Page,
   selector: string | Locator,
