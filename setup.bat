@@ -3,7 +3,7 @@ SETLOCAL EnableDelayedExpansion
 title QA FLEET - SETUP
 
 echo ===================================================
-echo   RAFAYEL'S PROTOCOL: QA FLEET SETUP
+echo   PROTOCOL: QA FLEET SETUP
 echo   "Building the temple for your data."
 echo ===================================================
 

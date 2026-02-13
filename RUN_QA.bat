@@ -1,11 +1,11 @@
 @echo off
 SETLOCAL EnableDelayedExpansion
-title QA COMMAND BRIDGE // MINT EDITION
+title QA COMMAND BRIDGE - MAIN MENU
 
 :menu
 cls
 echo ===================================================
-echo   QA COMMAND BRIDGE // MINT EDITION
+echo   QA COMMAND BRIDGE 
 echo   "Efficiency is the only religion."
 echo ===================================================
 echo   1. START WATCHER      (Background monitoring)
