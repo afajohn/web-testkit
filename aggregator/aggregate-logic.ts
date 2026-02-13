@@ -11,8 +11,8 @@ export async function aggregate() {
     const domains = fs.readdirSync(DATA_DIR).filter(f => fs.statSync(path.join(DATA_DIR, f)).isDirectory());
     const report: any = { lastUpdated: new Date().toISOString(), domains: [] };
 
-    for (const domain of domains) {
-        const domainPath = path.join(DATA_DIR, domain);
+    for (const domainName of domains) {
+        const domainPath = path.join(DATA_DIR, domainName);
         const files = fs.readdirSync(domainPath).filter(f => f.endsWith('.json')).sort();
         
         const urlGroups = new Map<string, string[]>();
@@ -21,31 +21,55 @@ export async function aggregate() {
                 const content = JSON.parse(fs.readFileSync(path.join(domainPath, file), 'utf-8'));
                 if (!urlGroups.has(content.url)) urlGroups.set(content.url, []);
                 urlGroups.get(content.url)!.push(file);
-            } catch (e) { /* skip corrupt */ }
+            } catch (e) {}
         });
 
+        // 1. COLLECT LATEST DATA FOR ALL PAGES
+        const latestPageResults: PageResult[] = [];
+        urlGroups.forEach((fileList) => {
+            const latestFile = fileList[fileList.length - 1];
+            const data = JSON.parse(fs.readFileSync(path.join(domainPath, latestFile), 'utf-8')) as PageResult;
+            latestPageResults.push(data);
+        });
+
+        // 2. DETECT GLOBAL ERRORS (Appear on > 50% of pages)
+        const errorFrequency = new Map<string, { count: number, error: AuditError }>();
+        latestPageResults.forEach(page => {
+            page.errors.forEach(err => {
+                const existing = errorFrequency.get(err.id) || { count: 0, error: err };
+                existing.count++;
+                errorFrequency.set(err.id, existing);
+            });
+        });
+
+        const globalErrorIds = new Set<string>();
+        const domainGlobalErrors: AuditError[] = [];
+        errorFrequency.forEach((val, id) => {
+            if (val.count > (latestPageResults.length * 0.5) && latestPageResults.length > 1) {
+                globalErrorIds.add(id);
+                domainGlobalErrors.push(val.error);
+            }
+        });
+
+        // 3. BUILD PAGE DATA (Filtering out Globals to reduce noise)
         const pages: any[] = [];
         urlGroups.forEach((fileList, url) => {
-            // --- 🧹 PURGE ---
-            if (fileList.length > KEEP_COUNT) {
-                const toDelete = fileList.slice(0, fileList.length - KEEP_COUNT);
-                toDelete.forEach(f => { try { fs.unlinkSync(path.join(domainPath, f)); } catch(e) {} });
-                fileList = fileList.slice(-KEEP_COUNT);
-            }
-
             const latestFile = fileList[fileList.length - 1];
             const prevFile = fileList.length > 1 ? fileList[fileList.length - 2] : null;
 
             const latestData = JSON.parse(fs.readFileSync(path.join(domainPath, latestFile), 'utf-8')) as PageResult;
             const prevData = prevFile ? JSON.parse(fs.readFileSync(path.join(domainPath, prevFile), 'utf-8')) as PageResult : null;
 
-            const processedErrors = latestData.errors.map(err => {
+            // Only keep non-global errors at the page level
+            const localErrors = latestData.errors.filter(e => !globalErrorIds.has(e.id));
+
+            const processedErrors = localErrors.map(err => {
                 const wasInPrev = prevData?.errors.some(pErr => pErr.id === err.id);
                 return { ...err, status: wasInPrev ? 'STILL_BROKEN' : 'NEW' };
             });
 
             const fixedErrors = prevData ? prevData.errors.filter(pErr => 
-                !latestData.errors.some(lErr => lErr.id === pErr.id)
+                !latestData.errors.some(lErr => lErr.id === pErr.id) && !globalErrorIds.has(pErr.id)
             ).map(err => ({ ...err, status: 'FIXED' })) : [];
 
             pages.push({
@@ -54,12 +78,18 @@ export async function aggregate() {
                 stableId: url.replace(/[^a-zA-Z0-9]/g, '-').replace(/-+/g, '-').replace(/^-|-$/g, ''),
                 errors: [...processedErrors, ...fixedErrors]
             });
+
+            // 🧹 PURGE OLD FILES
+            if (fileList.length > KEEP_COUNT) {
+                fileList.slice(0, fileList.length - KEEP_COUNT).forEach(f => fs.unlinkSync(path.join(domainPath, f)));
+            }
         });
 
         report.domains.push({
-            name: domain,
-            totalErrors: pages.reduce((sum, p) => sum + p.errors.filter((e:any) => e.status !== 'FIXED').length, 0),
+            name: domainName,
+            totalErrors: globalErrorIds.size + pages.reduce((sum, p) => sum + p.errors.filter((e:any) => e.status !== 'FIXED').length, 0),
             pageCount: pages.length,
+            globalErrors: domainGlobalErrors, // 🎯 ADDED TO JSON
             pages: pages
         });
     }
@@ -67,7 +97,7 @@ export async function aggregate() {
     const outDir = path.dirname(OUTPUT_FILE);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(report, null, 2));
-    console.log(`✨ Aggregated: ${new Date().toLocaleTimeString()}`);
+    console.log(`✨ Aggregated with Global Deduplication: ${new Date().toLocaleTimeString()}`);
 }
 
 export function getStorageStats() {

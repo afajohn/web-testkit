@@ -36,11 +36,26 @@ export async function checkA11y(page: Page): Promise<AuditError[]> {
             const r = el.getBoundingClientRect();
             
             // Generate a ROBUST selector for the Sniper button
+            // Inside checks/a11y.ts -> elementInfo = await page.evaluate(...)
             const getRobustSelector = (target: Element): string => {
                 if (target.id) return `#${target.id}`;
+                
                 const tag = target.tagName.toLowerCase();
-                if (target.classList.length > 0) return `${tag}.${Array.from(target.classList)[0]}`;
-                return tag;
+                const classes = Array.from(target.classList);
+                let base = tag;
+
+                if (classes.length > 0) {
+                    base += '.' + classes[0]; // Use the first class
+                }
+
+                // 🎯 THE FIX: If the selector is not unique, add the index
+                const matches = document.querySelectorAll(base);
+                if (matches.length > 1) {
+                    const index = Array.from(matches).indexOf(target) + 1;
+                    return `${base}:nth-of-type(${index})`;
+                }
+
+                return base;
             };
 
             return {

@@ -1,37 +1,51 @@
-// dashboard/app.js
+// dashboard/app.js - MINT STABLE (Unified + Deduplication + Eternal Memory)
 
 window.sniperMap = {}; 
 window.GLOBAL_DATA = null;
 window.CURRENT_DOMAIN_NAME = null; 
-
-// --- STATE MANAGEMENT ---
 const STATE_KEY = 'qa_dashboard_state';
 
+// --- 1. INITIALIZATION ---
+async function initDashboard() {
+    try {
+        const response = await fetch('data/aggregated.json?t=' + Date.now());
+        const data = await response.json();
+        window.GLOBAL_DATA = data;
+        
+        renderGlobalStats(data);
+        renderSidebar(data.domains);
+        
+        // Restore domain and state from LocalStorage on first run
+        const saved = getSavedState();
+        if (!window.CURRENT_DOMAIN_NAME && saved && saved.domain) {
+            window.CURRENT_DOMAIN_NAME = saved.domain;
+        }
+
+        if (window.CURRENT_DOMAIN_NAME) {
+            const activeDomain = data.domains.find(d => d.name === window.CURRENT_DOMAIN_NAME);
+            if (activeDomain) {
+                const sidebarEl = document.querySelector(`.domain-item[data-name="${sanitize(activeDomain.name).toLowerCase()}"]`);
+                updateMainStage(activeDomain, sidebarEl, saved);
+            }
+        }
+    } catch (e) { console.error("Sync Error:", e); }
+}
+
+// --- 2. STATE MANAGEMENT (Your Persistence Core) ---
 function saveDashboardState() {
     const stage = document.getElementById('main-stage');
-    const sidebar = document.querySelector('.domain-list');
-    
-    // 1. Capture Open Page Rows (IDs)
     const openPages = [];
-    document.querySelectorAll('.page-row.open').forEach(el => {
-        if(el.id) openPages.push(el.id);
-    });
+    document.querySelectorAll('.page-row.open').forEach(el => { if(el.id) openPages.push(el.id); });
 
-    // 2. Capture Open Categories (IDs)
     const openCats = [];
-    document.querySelectorAll('.cat-details[open]').forEach(el => {
-        if(el.id) openCats.push(el.id);
-    });
+    document.querySelectorAll('details[open]').forEach(el => { if(el.id) openCats.push(el.id); });
 
     const state = {
         domain: window.CURRENT_DOMAIN_NAME,
         stageScroll: stage ? stage.scrollTop : 0,
-        sidebarScroll: sidebar ? sidebar.scrollTop : 0,
         openPages: openPages,
-        openCats: openCats,
-        searchVal: document.getElementById('domain-search').value
+        openCats: openCats
     };
-    
     localStorage.setItem(STATE_KEY, JSON.stringify(state));
 }
 
@@ -42,242 +56,166 @@ function getSavedState() {
     } catch(e) { return null; }
 }
 
-// --- INITIALIZATION ---
-async function initDashboard() {
-    try {
-        // NOTE: In production, ensure this path is correct
-        const response = await fetch('data/aggregated.json?t=' + Date.now());
-        const data = await response.json();
-        window.GLOBAL_DATA = data;
-        
-        renderGlobalStats(data);
-        renderSidebar(data.domains);
-        
-        // --- RESTORE STATE LOGIC ---
-        const saved = getSavedState();
-        
-        // A. If we are just loading up (first run) and have a saved state
-        if (!window.CURRENT_DOMAIN_NAME && saved && saved.domain) {
-            window.CURRENT_DOMAIN_NAME = saved.domain;
-            
-            // Restore Search
-            if(saved.searchVal) {
-                document.getElementById('domain-search').value = saved.searchVal;
-                filterDomains();
-            }
-
-            // Restore Sidebar Scroll
-            const sidebar = document.querySelector('.domain-list');
-            if(sidebar) sidebar.scrollTop = saved.sidebarScroll || 0;
-        }
-
-        // B. Update the view
-        if (window.CURRENT_DOMAIN_NAME) {
-            const activeDomain = data.domains.find(d => d.name === window.CURRENT_DOMAIN_NAME);
-            if (activeDomain) {
-                const sidebarEl = document.querySelector(`.domain-item[data-name="${sanitize(activeDomain.name).toLowerCase()}"]`);
-                
-                // Pass the saved state to the renderer so it knows what to keep open
-                updateMainStage(activeDomain, sidebarEl, saved);
-            }
-        }
-        
-    } catch (e) {
-        console.error("Sync Error:", e);
-    }
-}
-
-// --- RENDERERS ---
-
+// --- 3. RENDERERS ---
 function renderGlobalStats(data) {
     const totalErrors = data.domains.reduce((s, d) => s + d.totalErrors, 0);
     const totalPages = data.domains.reduce((s, d) => s + d.pageCount, 0);
     document.getElementById('global-stats').innerHTML = `
-        <span>DOMAINS: <b>${data.domains.length}</b></span>
-        <span>PAGES: <b>${totalPages}</b></span>
+        <span>DOMAINS: <b>${data.domains.length}</b></span> | 
+        <span>PAGES: <b>${totalPages}</b></span> | 
         <span style="color:var(--danger)">ACTIVE ISSUES: <b>${totalErrors}</b></span>
-        <span style="color:var(--text-muted); margin-left:10px;">// SYNC: ${new Date().toLocaleTimeString()}</span>
     `;
 }
 
 function renderSidebar(domains) {
     const container = document.getElementById('domain-list-container');
-    // Only clear if empty to prevent jitter, but since we replace content, 
-    // we need to be careful. For this implementation, we rebuild.
     container.innerHTML = '';
-    
     domains.forEach(d => {
         const el = document.createElement('div');
-        el.className = 'domain-item';
-        if (window.CURRENT_DOMAIN_NAME === d.name) el.classList.add('active');
+        el.className = `domain-item ${window.CURRENT_DOMAIN_NAME === d.name ? 'active' : ''}`;
         el.dataset.name = sanitize(d.name).toLowerCase();
-        
-        let status = d.totalErrors > 10 ? 'risk' : (d.totalErrors > 0 ? 'warn' : 'safe');
-        
         el.innerHTML = `
             <span>${d.name}</span>
             <div style="display:flex; align-items:center; gap:10px;">
                 <span style="color:var(--text-muted); font-size:11px;">${d.totalErrors}</span>
-                <div class="status-dot ${status}"></div>
+                <div class="status-dot ${d.totalErrors > 10 ? 'risk' : 'safe'}"></div>
             </div>
         `;
         el.onclick = () => {
-            // Save state of previous domain before switching
             saveDashboardState();
             window.CURRENT_DOMAIN_NAME = d.name;
-            updateMainStage(d, el, null); // Pass null state to reset view for new domain
+            initDashboard();
         };
         container.appendChild(el);
     });
-    
-    // Re-apply filter if exists
-    filterDomains();
 }
 
-function updateMainStage(domain, clickedEl, savedState) {
-    document.querySelectorAll('.domain-item').forEach(e => e.classList.remove('active'));
-    if(clickedEl) clickedEl.classList.add('active');
-
+function updateMainStage(domain, sidebarEl, savedState) {
     const stage = document.getElementById('main-stage');
-    
-    // If we have a saved state for this domain, use it. Otherwise use current scroll.
-    const targetScroll = (savedState && savedState.domain === domain.name) 
-        ? savedState.stageScroll 
-        : (window.CURRENT_DOMAIN_NAME === domain.name ? stage.scrollTop : 0);
+    const targetScroll = (savedState && savedState.domain === domain.name) ? savedState.stageScroll : stage.scrollTop;
 
+    // Build HUD and Stage Structure
     stage.innerHTML = `
         <div class="stage-header">
             <div class="dh-title">${domain.name}</div>
-            <div class="dh-grid">
-                <div class="metric-card"><div class="mc-label">Total Pages</div><div class="mc-value">${domain.pageCount}</div></div>
-                <div class="metric-card"><div class="mc-label">Issues Found</div><div class="mc-value" style="color:var(--danger)">${domain.totalErrors}</div></div>
-            </div>
+            <div id="domain-metrics-hud" class="dh-grid"></div>
+        </div>
+        
+        <div id="global-issues-area">
+            ${domain.globalErrors && domain.globalErrors.length > 0 ? `
+                <div class="cat-block" style="border: 2px solid var(--danger); border-radius: 8px; background: rgba(255, 92, 92, 0.05); margin-bottom: 20px;">
+                    <div class="cat-title" style="padding:15px; color:var(--danger); font-size:14px; font-weight:bold;">
+                        🚨 GLOBAL COMPONENT ERRORS (Header/Footer/Shared)
+                    </div>
+                    <div style="padding:0 15px 15px 15px;">
+                        ${buildGlobalErrorRows(domain.globalErrors, sanitize(domain.name), savedState)}
+                    </div>
+                </div>
+            ` : ''}
         </div>
         <div id="page-list-area"></div>
     `;
 
+    // Update HUD Stats (Deduplicated Math)
+    let stats = { SEC: 0, SEO: 0, A11Y: 0, FUNC: 0 };
+    [...domain.globalErrors, ...domain.pages.flatMap(p => p.errors)].forEach(e => {
+        if(e.status === 'FIXED') return;
+        const c = (e.category || 'FUNC').toUpperCase();
+        if(c.includes('SEC')) stats.SEC++; else if(c.includes('SEO')) stats.SEO++; else if(c.includes('A11Y')) stats.A11Y++; else stats.FUNC++;
+    });
+
+    document.getElementById('domain-metrics-hud').innerHTML = `
+        <div class="metric-card"><div class="mc-label">Pages Scan</div><div class="mc-value">${domain.pageCount}</div></div>
+        <div class="metric-card"><div class="mc-label">Security</div><div class="mc-value" style="color:var(--danger)">${stats.SEC}</div></div>
+        <div class="metric-card"><div class="mc-label">Functional</div><div class="mc-value" style="color:var(--warning)">${stats.FUNC}</div></div>
+        <div class="metric-card"><div class="mc-label">SEO</div><div class="mc-value" style="color:var(--info)">${stats.SEO}</div></div>
+        <div class="metric-card"><div class="mc-label">A11y</div><div class="mc-value" style="color:var(--success)">${stats.A11Y}</div></div>
+    `;
+
+    // Render Page Rows
     const pageArea = document.getElementById('page-list-area');
-    
     domain.pages.forEach(page => {
         const pageId = `pg-${sanitize(page.stableId)}`;
-        const rowId = `row-${pageId}`; // Unique ID for the wrapper
         const activeErrors = page.errors.filter(e => e.status !== 'FIXED');
-        
         if (activeErrors.length === 0) return;
 
         const pageEl = document.createElement('div');
-        pageEl.className = 'page-row';
-        pageEl.id = rowId; // IMPORTANT for State Persistence
-        
-        // Check if this was open in saved state
-        if (savedState && savedState.openPages && savedState.openPages.includes(rowId)) {
-            pageEl.classList.add('open');
-        }
-
-        // Master Script Logic
-        const masterKey = `MASTER-${pageId}`;
-        window.sniperMap[masterKey] = generateMasterScript(activeErrors);
-
+        pageEl.className = `page-row ${ (savedState?.openPages?.includes('row-'+pageId)) ? 'open' : '' }`;
+        pageEl.id = `row-${pageId}`;
         pageEl.innerHTML = `
-            <div class="pr-header" onclick="toggleRow('${rowId}')">
+            <div class="pr-header" onclick="this.parentElement.classList.toggle('open'); saveDashboardState();">
                 <div style="display:flex; align-items:center; gap:15px;">
-                    <a href="${page.url}" target="_blank" class="pr-path" onclick="event.stopPropagation()">
-                        ${new URL(page.url).pathname}
-                    </a>
-                    ${window.sniperMap[masterKey] ? `<button class="snipe-all-btn" onclick="event.stopPropagation(); runSniper(this, '${masterKey}')">🎯 SNIPE ALL</button>` : ''}
+                    <a href="${page.url}" target="_blank" class="pr-path" onclick="event.stopPropagation()">📄 ${new URL(page.url).pathname}</a>
                 </div>
-                <span class="badge err">${activeErrors.length} ISSUES</span>
+                <span class="badge err">${activeErrors.length} PAGE ISSUES</span>
             </div>
-            <div class="pr-body" id="${pageId}-body">
-                ${buildNestedCategories(activeErrors, pageId, savedState)}
-            </div>
+            <div class="pr-body">${buildErrorHtml(activeErrors, pageId, savedState)}</div>
         `;
         pageArea.appendChild(pageEl);
     });
-    
-    // Restore Scroll Position
-    setTimeout(() => {
-        stage.scrollTop = targetScroll;
-    }, 0);
+
+    stage.scrollTop = targetScroll;
 }
 
-function buildNestedCategories(errors, pageId, savedState) {
+function buildGlobalErrorRows(errors, domainId, savedState) {
+    return errors.map((e, idx) => {
+        const cmdKey = `GLOBAL-${domainId}-${idx}`;
+        const visual = isVisual(e);
+        window.sniperMap[cmdKey] = visual ? generateSniperCommand(e, visual) : null;
+        return renderErrorItem(e, cmdKey, visual, 'GLOBAL');
+    }).join('');
+}
+
+function buildErrorHtml(errors, pageId, savedState) {
     const cats = { SECURITY: [], FUNCTIONAL: [], SEO: [], ACCESSIBILITY: [] };
-    errors.forEach(e => {
-        const c = (e.category || 'FUNC').toUpperCase();
-        if (c.includes('SEC')) cats.SECURITY.push(e);
-        else if (c.includes('SEO')) cats.SEO.push(e);
-        else if (c.includes('A11Y') || c.includes('ACC')) cats.ACCESSIBILITY.push(e);
-        else cats.FUNCTIONAL.push(e);
+    errors.forEach(err => {
+        const t = (err.category || 'FUNC').toUpperCase();
+        if (t.includes('SEC')) cats.SECURITY.push(err); else if (t.includes('SEO')) cats.SEO.push(err);
+        else if (t.includes('A11Y') || t.includes('ACC')) cats.ACCESSIBILITY.push(err); else cats.FUNCTIONAL.push(err);
     });
 
     return Object.entries(cats).map(([label, list]) => {
         if (list.length === 0) return '';
         const catId = `${pageId}-${label}`;
-        
-        // Check if category was open
-        const isOpen = (savedState && savedState.openCats && savedState.openCats.includes(catId)) ? 'open' : '';
-
+        const isOpen = (savedState?.openCats?.includes(catId)) ? 'open' : '';
         const rows = list.map((e, idx) => {
             const cmdKey = `${catId}-${idx}`;
             const visual = isVisual(e);
-            window.sniperMap[cmdKey] = visual ? generateSniperCommand(e) : null;
-
-            return `
-                <div class="error-item ${e.severity === 'critical' ? 'ei-critical' : 'ei-low'}">
-                    <div class="ei-content">
-                        <div class="ei-msg"><b>[${e.severity?.toUpperCase()}]</b> ${escapeHtml(e.message)}</div>
-                        <div class="fix-box" style="font-size:12px; margin-top:5px; color:var(--text-muted)">
-                            <span style="color:var(--mint-glow)">FIX:</span> ${escapeHtml(e.fix)}
-                        </div>
-                        ${e.outerHTML && e.outerHTML !== 'N/A' ? `<div class="ei-code">${escapeHtml(e.outerHTML)}</div>` : ''}
-                    </div>
-                    ${window.sniperMap[cmdKey] ? `<button class="sniper-btn" onclick="runSniper(this, '${cmdKey}')">SNIPE</button>` : ''}
-                </div>
-            `;
+            window.sniperMap[cmdKey] = visual ? generateSniperCommand(e, visual) : null;
+            return renderErrorItem(e, cmdKey, visual, e.severity);
         }).join('');
 
-        return `
-            <details class="cat-details" id="${catId}" ${isOpen}>
-                <summary class="cat-header">
-                    <span>${label}</span>
-                    <span class="badge" style="opacity:0.5">${list.length}</span>
-                </summary>
-                <div style="padding:10px 0;">${rows}</div>
-            </details>
-        `;
+        return `<details class="cat-details" id="${catId}" ${isOpen} ontoggle="saveDashboardState()"><summary class="cat-header"><span>${label}</span><span class="badge">${list.length}</span></summary><div style="padding:10px 0;">${rows}</div></details>`;
     }).join('');
 }
 
-// --- LOGIC GATES & UTILS ---
-
-function toggleRow(id) {
-    const el = document.getElementById(id);
-    if(el) el.classList.toggle('open');
+function renderErrorItem(e, cmdKey, visual, severity) {
+    const sevColor = { 'critical': '#ff4444', 'high': '#ff8800', 'medium': '#ffbb33', 'low': '#64ffda', 'GLOBAL': '#ff4444' }[severity || 'low'];
+    return `
+        <div class="error-item" style="border-left: 3px solid ${sevColor}; margin-bottom:8px; padding:12px; display:flex; gap:15px; background:rgba(255,255,255,0.01)">
+            <div style="flex:1">
+                <div class="ei-msg"><b style="color:${sevColor}">[${severity?.toUpperCase()}]</b> ${escapeHtml(e.message)}</div>
+                <div style="font-size:12px; margin-top:5px; color:var(--text-muted)"><span style="color:var(--mint-glow)">FIX:</span> ${escapeHtml(e.fix)}</div>
+                ${e.outerHTML && e.outerHTML !== 'N/A' ? `<div class="ei-code">${escapeHtml(e.outerHTML)}</div>` : ''}
+            </div>
+            ${window.sniperMap[cmdKey] ? `<button class="sniper-btn" onclick="runSniper(this, '${cmdKey}')">${visual ? 'SNIPE' : 'LOG'}</button>` : ''}
+        </div>`;
 }
 
+// --- 4. LOGIC GATES & UTILS ---
 function isVisual(e) {
-    const sel = (e.selector || '').toLowerCase();
-    const cat = (e.category || '').toUpperCase();
-    if (!sel || sel === 'n/a' || sel === 'head' || sel === 'html') return false;
-    if (cat === 'SECURITY' && !sel.includes('img') && !sel.includes('iframe') && !sel.includes('form')) return false;
+    const s = (e.selector || '').toLowerCase();
+    if (!s || s === 'n/a' || s === 'head' || s === 'html') return false;
     return true;
 }
 
-function generateSniperCommand(e) {
+function generateSniperCommand(e, visual) {
     const sel = e.selector.replace(/'/g, "\\'");
-    return `(function(){ var el=document.querySelector('${sel}'); if(el){ el.style.outline='5px solid #64ffda'; el.scrollIntoView({behavior:'smooth',block:'center'}); } else { console.log('Element not found'); } })();`;
-}
-
-function generateMasterScript(errors) {
-    const targets = errors.filter(isVisual).map(e => ({ sel: e.selector, msg: e.message }));
-    if (targets.length === 0) return null;
-    return `(function(){ console.clear(); var t=${JSON.stringify(targets)}; var found=0; t.forEach(function(x){ var el=document.querySelector(x.sel); if(el){ el.style.outline='4px solid #ff00ff'; el.style.boxShadow='0 0 15px rgba(255,0,255,0.5)'; el.title=x.msg; found++; }}); console.log('🎯 Marked '+found+' elements.'); })();`;
+    return `(function(){ var el=document.querySelector('${sel}'); if(el){ el.style.outline='5px solid #64ffda'; el.scrollIntoView({behavior:'smooth',block:'center'}); } })();`;
 }
 
 function runSniper(btn, key) {
-    const cmd = window.sniperMap[key];
-    navigator.clipboard.writeText(cmd).then(() => {
+    navigator.clipboard.writeText(window.sniperMap[key]).then(() => {
         const old = btn.innerText; btn.innerText = "COPIED";
         setTimeout(() => btn.innerText = old, 1200);
     });
@@ -285,18 +223,6 @@ function runSniper(btn, key) {
 
 function sanitize(s) { return s ? s.replace(/[^a-zA-Z0-9]/g, '') : 'id'; }
 function escapeHtml(s) { return s ? String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#039;"}[m])) : ""; }
-function filterDomains() {
-    const term = document.getElementById('domain-search').value.toLowerCase();
-    document.querySelectorAll('.domain-item').forEach(el => {
-        el.style.display = el.dataset.name.includes(term) ? 'flex' : 'none';
-    });
-}
-
-// ⚠️ EVENT LISTENERS FOR PERSISTENCE
-window.addEventListener('beforeunload', saveDashboardState);
 
 initDashboard();
-setInterval(() => {
-    saveDashboardState(); // Save state before re-rendering
-    initDashboard();
-}, 30000);
+setInterval(() => { saveDashboardState(); initDashboard(); }, 30000);
