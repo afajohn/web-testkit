@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reports Dashboard - Web TestKit</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Reports Dashboard</h1>
+            <p class="subtitle">Browse and view JSON audit reports</p>
+        </header>
+
+        <div class="stats-bar" id="statsBar">
+            <div class="stat-item">
+                <span class="stat-label">Loading...</span>
+            </div>
+        </div>
+
+        <div class="tabs">
+            <button class="tab-button active" data-tab="domains">Domains</button>
+            <button class="tab-button" data-tab="summaries">Summary Reports</button>
+        </div>
+
+        <!-- Domains Tab -->
+        <div class="tab-content active" id="domainsTab">
+            <div id="domainsList" class="domains-list">
+                <div class="loading">Loading domains...</div>
+            </div>
+        </div>
+
+        <!-- Summaries Tab -->
+        <div class="tab-content" id="summariesTab">
+            <div id="summariesList" class="summaries-list">
+                <div class="loading">Loading summary reports...</div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Report Viewer Modal -->
+    <div id="reportModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modalTitle">Report Details</h2>
+                <div class="modal-header-actions">
+                    <button class="rerun-button" id="rerunTestButton" onclick="rerunTest()" title="Re-run test for this URL">
+                        🔄 Re-run Test
+                    </button>
+                    <button class="close-button" id="closeModal">&times;</button>
+                </div>
+            </div>
+            <div class="modal-body" id="modalBody">
+                <div class="loading">Loading report...</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/app.js"></script>
+</body>
+</html>

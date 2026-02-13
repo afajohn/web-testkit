@@ -15,30 +15,41 @@ import { Page, Locator } from '@playwright/test';
  */
 export async function waitForDOMReady(page: Page, timeout: number = 60000, waitForNetworkIdle: boolean = true): Promise<void> {
   const startTime = Date.now();
+  const isBatchMode = process.env.CI === 'true' || process.env.BATCH_MODE === 'true';
   
   // Wait for domcontentloaded (required - this is the minimum)
-  console.log('  ⏳ Waiting for domcontentloaded...');
+  if (!isBatchMode) {
+    console.log('  ⏳ Waiting for domcontentloaded...');
+  }
   await page.waitForLoadState('domcontentloaded', { timeout });
-  const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.log(`  ✓ domcontentloaded reached (${elapsed}s)`);
+  if (!isBatchMode) {
+    const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+    console.log(`  ✓ domcontentloaded reached (${elapsed}s)`);
+  }
 
   // Wait for document.readyState to be 'complete' (with shorter timeout, continue if fails)
   // Some sites may never reach 'complete' state due to continuous activity
   const readyStateTimeout = Math.min(timeout, 30000);
-  console.log(`  ⏳ Waiting for readyState complete... (max ${readyStateTimeout / 1000}s)`);
+  if (!isBatchMode) {
+    console.log(`  ⏳ Waiting for readyState complete... (max ${readyStateTimeout / 1000}s)`);
+  }
   const readyStateStart = Date.now();
   try {
     await page.waitForFunction(
       () => document.readyState === 'complete',
       { timeout: readyStateTimeout }
     );
-    const readyStateElapsed = ((Date.now() - readyStateStart) / 1000).toFixed(1);
-    console.log(`  ✓ readyState complete (${readyStateElapsed}s)`);
+    if (!isBatchMode) {
+      const readyStateElapsed = ((Date.now() - readyStateStart) / 1000).toFixed(1);
+      console.log(`  ✓ readyState complete (${readyStateElapsed}s)`);
+    }
   } catch (error) {
     // If readyState never becomes 'complete', continue anyway
     // This is common on sites with continuous JavaScript execution
-    const readyStateElapsed = ((Date.now() - readyStateStart) / 1000).toFixed(1);
-    console.warn(`  ⚠️  readyState did not reach "complete" within timeout (${readyStateElapsed}s), continuing...`);
+    if (!isBatchMode) {
+      const readyStateElapsed = ((Date.now() - readyStateStart) / 1000).toFixed(1);
+      console.warn(`  ⚠️  readyState did not reach "complete" within timeout (${readyStateElapsed}s), continuing...`);
+    }
   }
 
   // Wait for networkidle state (optional, with shorter timeout, continue if fails)
@@ -48,8 +59,8 @@ export async function waitForDOMReady(page: Page, timeout: number = 60000, waitF
     console.log(`  ⏳ Waiting for networkidle... (max ${networkIdleTimeout / 1000}s)`);
     const networkIdleStart = Date.now();
     
-    // Set up progress logging for networkidle
-    const progressInterval = setInterval(() => {
+    // Set up progress logging for networkidle (only in non-batch mode)
+    const progressInterval = isBatchMode ? null : setInterval(() => {
       const elapsed = ((Date.now() - networkIdleStart) / 1000).toFixed(1);
       const remaining = ((networkIdleTimeout - (Date.now() - networkIdleStart)) / 1000).toFixed(1);
       if (parseFloat(remaining) > 0) {
@@ -59,24 +70,32 @@ export async function waitForDOMReady(page: Page, timeout: number = 60000, waitF
     
     try {
       await page.waitForLoadState('networkidle', { timeout: networkIdleTimeout });
-      clearInterval(progressInterval);
-      const networkIdleElapsed = ((Date.now() - networkIdleStart) / 1000).toFixed(1);
-      console.log(`\r  ✓ networkidle reached (${networkIdleElapsed}s)`);
+      if (progressInterval) clearInterval(progressInterval);
+      if (!isBatchMode) {
+        const networkIdleElapsed = ((Date.now() - networkIdleStart) / 1000).toFixed(1);
+        console.log(`\r  ✓ networkidle reached (${networkIdleElapsed}s)`);
+      }
     } catch (error) {
-      clearInterval(progressInterval);
+      if (progressInterval) clearInterval(progressInterval);
       // If networkidle never occurs, continue anyway
       // This is common on sites with continuous network requests
-      const networkIdleElapsed = ((Date.now() - networkIdleStart) / 1000).toFixed(1);
-      console.warn(`\r  ⚠️  networkidle not reached within timeout (${networkIdleElapsed}s), continuing...`);
+      if (!isBatchMode) {
+        const networkIdleElapsed = ((Date.now() - networkIdleStart) / 1000).toFixed(1);
+        console.warn(`\r  ⚠️  networkidle not reached within timeout (${networkIdleElapsed}s), continuing...`);
+      }
     }
   } else {
     // Skip networkidle wait entirely for faster, more reliable execution
     // This matches playwright-seo's default behavior (waitFor: 'domcontentloaded')
-    console.log('  ℹ️  Skipping networkidle wait (using domcontentloaded only for faster execution)');
+    if (!isBatchMode) {
+      console.log('  ℹ️  Skipping networkidle wait (using domcontentloaded only for faster execution)');
+    }
   }
 
   // Wait for any pending JavaScript execution
-  console.log('  ⏳ Checking JavaScript execution state...');
+  if (!isBatchMode) {
+    console.log('  ⏳ Checking JavaScript execution state...');
+  }
   await page.waitForFunction(
     () => {
       // Check if there are any pending timeouts/intervals
@@ -87,10 +106,14 @@ export async function waitForDOMReady(page: Page, timeout: number = 60000, waitF
   ).catch(() => {
     // If this check fails, continue anyway
   });
-  console.log('  ✓ JavaScript execution check complete');
+  if (!isBatchMode) {
+    console.log('  ✓ JavaScript execution check complete');
+  }
 
   // Poll until DOM is stable (no new elements added for 1 second)
-  console.log('  ⏳ Checking DOM stability...');
+  if (!isBatchMode) {
+    console.log('  ⏳ Checking DOM stability...');
+  }
   let previousElementCount = 0;
   let stableCount = 0;
   const maxStableChecks = 10; // 10 checks * 100ms = 1 second of stability
@@ -108,14 +131,16 @@ export async function waitForDOMReady(page: Page, timeout: number = 60000, waitF
       stableCount++;
       if (stableCount >= 3) {
         // DOM is stable (same count for 3 consecutive checks = 300ms)
-        const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-        console.log(`  ✓ DOM stable (${currentElementCount} elements, ${elapsed}s total)`);
+        if (!isBatchMode) {
+          const elapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+          console.log(`  ✓ DOM stable (${currentElementCount} elements, ${elapsed}s total)`);
+        }
         break;
       }
     } else {
       stableCount = 0;
       previousElementCount = currentElementCount;
-      if (i < maxStableChecks - 1) {
+      if (i < maxStableChecks - 1 && !isBatchMode) {
         process.stdout.write(`\r  ⏳ Checking DOM stability... (check ${i + 1}/${maxStableChecks}, elements: ${currentElementCount}, changed)`);
       }
     }
@@ -125,8 +150,10 @@ export async function waitForDOMReady(page: Page, timeout: number = 60000, waitF
 
   // Final wait to ensure everything is settled
   await page.waitForTimeout(200);
-  const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
-  console.log(`  ✓ DOM ready check complete (${totalElapsed}s total)`);
+  if (!isBatchMode) {
+    const totalElapsed = ((Date.now() - startTime) / 1000).toFixed(1);
+    console.log(`  ✓ DOM ready check complete (${totalElapsed}s total)`);
+  }
 }
 
 /**

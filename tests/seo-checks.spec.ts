@@ -12,10 +12,19 @@ import {
 } from '../utils/seo-checks';
 import { gotoAndWait } from '../utils/page-load';
 
+/**
+ * NOTE: This test file is SKIPPED by default. It only runs when explicitly requested
+ * via environment variable: RUN_SEO_TESTS=true
+ * 
+ * Batch URL testing uses url-audit.spec.ts instead, which includes SEO checks.
+ */
 const BASE_URL = process.env.URL_AUDIT_URL || process.env.BASE_URL || 'https://anewbride.com/';
+const shouldRunSEOTests = process.env.RUN_SEO_TESTS === 'true';
 
 test.describe('SEO Checks', () => {
   test('run comprehensive SEO checks on homepage', async ({ page }) => {
+    // Skip if not explicitly requested
+    test.skip(!shouldRunSEOTests, 'Skipped - set RUN_SEO_TESTS=true to run');
     await gotoAndWait(page, BASE_URL);
 
     const results = await runSEOChecks(page, {
@@ -37,6 +46,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check page title specifically', async ({ page }) => {
+    test.skip(!shouldRunSEOTests, 'Skipped - set RUN_SEO_TESTS=true to run');
     await gotoAndWait(page, BASE_URL);
 
     const result = await checkPageTitle(page);
@@ -46,6 +56,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check meta description length', async ({ page }) => {
+    test.skip(!shouldRunSEOTests, 'Skipped - set RUN_SEO_TESTS=true to run');
     await gotoAndWait(page, BASE_URL);
 
     const result = await checkMetaDescription(page, 50, 160);
@@ -55,6 +66,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check canonical URL', async ({ page }) => {
+    test.skip(!shouldRunSEOTests, 'Skipped - set RUN_SEO_TESTS=true to run');
     await gotoAndWait(page, BASE_URL);
 
     const result = await checkCanonicalURL(page);
@@ -64,6 +76,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check robots meta tag for index,follow', async ({ page }) => {
+    test.skip(!shouldRunSEOTests, 'Skipped - set RUN_SEO_TESTS=true to run');
     await gotoAndWait(page, BASE_URL);
 
     const result = await checkRobotsMetaTag(page, true, true); // require index and follow
@@ -76,6 +89,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check all images have alt attributes', async ({ page }) => {
+    test.skip(!shouldRunSEOTests, 'Skipped - set RUN_SEO_TESTS=true to run');
     await gotoAndWait(page, BASE_URL);
 
     const result = await checkImageAltAttributes(page);
@@ -85,6 +99,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('check heading structure', async ({ page }) => {
+    test.skip(!shouldRunSEOTests, 'Skipped - set RUN_SEO_TESTS=true to run');
     await gotoAndWait(page, BASE_URL);
 
     const result = await checkHeadingStructure(page);
@@ -94,6 +109,7 @@ test.describe('SEO Checks', () => {
   });
 
   test('run SEO checks on tour page', async ({ page }) => {
+    test.skip(!shouldRunSEOTests, 'Skipped - set RUN_SEO_TESTS=true to run');
     const tourPageUrl = process.env.TOUR_PAGE_URL || `${BASE_URL}tour/things-to-consider-on-singles-tours.html`;
     await gotoAndWait(page, tourPageUrl);
 

@@ -18,10 +18,13 @@
     "send:n8n": "node scripts/send-to-n8n.js",
     "test:n8n-connection": "node scripts/test-n8n-connection.js",
     "serve:reports": "node scripts/serve-reports.js",
+    "serve:reports-ui": "node scripts/serve-reports-ui.js",
     "prepare:github": "node scripts/prepare-github-reports.js",
     "verify:structure": "node scripts/verify-structure.js",
     "codegen": "playwright codegen",
-    "codegen:url": "node codegen.js"
+    "codegen:url": "node codegen.js",
+    "generate:summary": "node scripts/generate-domain-summary.js", 
+    "transform:links": "node scripts/links-to-array.js scripts/my-links.txt"
   },
   "keywords": [
     "playwright",
@@ -34,9 +37,13 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.57.0",
     "@axe-core/playwright": "^4.10.0",
-    "@types/node": "^25.0.3"
+    "@playwright/test": "^1.57.0",
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^25.0.3",
+    "playwright-seo": "^0.1.8"
+  },
+  "dependencies": {
+    "clipboardy": "^5.0.2"
   }
 }
-

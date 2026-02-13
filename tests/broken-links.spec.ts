@@ -8,10 +8,19 @@ import {
 } from '../utils/broken-links';
 import { gotoAndWait } from '../utils/page-load';
 
+/**
+ * NOTE: This test file is SKIPPED by default. It only runs when explicitly requested
+ * via environment variable: RUN_BROKEN_LINKS_TESTS=true
+ * 
+ * Batch URL testing uses url-audit.spec.ts instead, which includes broken links checks.
+ */
 const BASE_URL = process.env.URL_AUDIT_URL || process.env.BASE_URL || 'https://anewbride.com/';
+const shouldRunBrokenLinksTests = process.env.RUN_BROKEN_LINKS_TESTS === 'true';
 
 test.describe('Broken Link Checking', () => {
   test('check all links on homepage', async ({ page }) => {
+    // Skip if not explicitly requested
+    test.skip(!shouldRunBrokenLinksTests, 'Skipped - set RUN_BROKEN_LINKS_TESTS=true to run');
     await gotoAndWait(page, BASE_URL);
     
     const apiRequest = await request.newContext();
@@ -25,6 +34,8 @@ test.describe('Broken Link Checking', () => {
   });
 
   test('check links on tour page', async ({ page }) => {
+    // Skip if not explicitly requested
+    test.skip(!shouldRunBrokenLinksTests, 'Skipped - set RUN_BROKEN_LINKS_TESTS=true to run');
     const tourPageUrl = process.env.TOUR_PAGE_URL || `${BASE_URL}tour/things-to-consider-on-singles-tours.html`;
     await gotoAndWait(page, tourPageUrl);
     

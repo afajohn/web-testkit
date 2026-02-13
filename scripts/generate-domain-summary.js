@@ -13,6 +13,7 @@
  * 
  * Example:
  *   node scripts/generate-domain-summary.js mexicocitydating.com
+ *  npm run generate:summary
  */
 
 const fs = require('fs');
@@ -69,13 +70,17 @@ function extractIssues(report) {
     issues.hasIssues = true;
   }
 
-  // Broken links
+  // Broken links - only include links with 404 status
   if (report.brokenLinks && report.brokenLinks.brokenLinks && report.brokenLinks.brokenLinks.length > 0) {
-    issues.brokenLinks = report.brokenLinks.brokenLinks;
-    issues.hasIssues = true;
+    // Filter to only include links with 404 status
+    const broken404Links = report.brokenLinks.brokenLinks.filter(link => link.status === 404);
+    if (broken404Links.length > 0) {
+      issues.brokenLinks = broken404Links;
+      issues.hasIssues = true;
+    }
   }
 
-  // Links for review (social media links with warnings)
+  // Links for review (non-404 errors that need QA review: 400, 403, 500, network errors, etc.)
   if (report.brokenLinks && report.brokenLinks.linksForReview && report.brokenLinks.linksForReview.length > 0) {
     issues.linksForReview = report.brokenLinks.linksForReview;
     issues.hasIssues = true;
@@ -245,24 +250,102 @@ function generateMarkdown(summary) {
     return lines.join('\n');
   }
 
-  // SEO Issues
+  // SEO Issues - Grouped by issue type
   if (summary.seo.totalFailures > 0) {
     lines.push('## 🔍 SEO Issues');
     lines.push('');
     lines.push(`**Total SEO Failures:** ${summary.seo.totalFailures}`);
     lines.push('');
     
-    summary.seo.pages.forEach((page, index) => {
-      lines.push(`### ${index + 1}. ${page.url}`);
-      lines.push('');
+    // Group SEO issues by check type and message
+    const issueMap = new Map();
+    
+    summary.seo.pages.forEach(page => {
       page.failedChecks.forEach(check => {
-        lines.push(`- **${check.check}**: ${check.message || 'Failed'}`);
-        if (check.value) {
-          lines.push(`  - Value: ${check.value}`);
+        let normalizedMessage = check.message || 'Failed';
+        const checkName = check.check || '';
+        let charCount = null;
+        
+        // Simplify length-related messages by removing character count from title
+        // Match patterns like: "Meta description is too long (165 chars, recommended: 50-160)"
+        const tooLongMatch = normalizedMessage.match(/(.+?\s+is\s+too\s+long)\s*\([^)]*recommended[^)]*\)/i);
+        const tooShortMatch = normalizedMessage.match(/(.+?\s+is\s+too\s+short)\s*\([^)]*recommended[^)]*\)/i);
+        
+        // Extract character count from original message (e.g., "165 chars" or "165 characters")
+        const charCountMatch = check.message.match(/(\d+)\s*(?:chars?|characters?)/i);
+        if (charCountMatch) {
+          charCount = charCountMatch[1];
         }
+        
+        if (tooLongMatch) {
+          // Extract recommended part if present
+          const recommendedMatch = normalizedMessage.match(/recommended:\s*([^)]+)/i);
+          if (recommendedMatch) {
+            normalizedMessage = `${tooLongMatch[1]} (recommended: ${recommendedMatch[1].trim()})`;
+          } else {
+            normalizedMessage = tooLongMatch[1];
+          }
+        } else if (tooShortMatch) {
+          // Extract recommended part if present
+          const recommendedMatch = normalizedMessage.match(/recommended:\s*([^)]+)/i);
+          if (recommendedMatch) {
+            normalizedMessage = `${tooShortMatch[1]} (recommended: ${recommendedMatch[1].trim()})`;
+          } else {
+            normalizedMessage = tooShortMatch[1];
+          }
+        }
+        
+        // Create a unique key from check name and normalized message
+        const issueKey = `${checkName}|||${normalizedMessage}`;
+        
+        if (!issueMap.has(issueKey)) {
+          issueMap.set(issueKey, {
+            check: checkName,
+            message: normalizedMessage,
+            pages: [],
+          });
+        }
+        
+        issueMap.get(issueKey).pages.push({
+          url: page.url,
+          value: check.value,
+          charCount: charCount, // Store extracted character count
+          originalMessage: check.message, // Keep original for reference
+        });
+      });
+    });
+    
+    // Convert to array and sort by number of affected pages (most common first)
+    const issuesArray = Array.from(issueMap.values()).sort((a, b) => {
+      return b.pages.length - a.pages.length;
+    });
+    
+    // Generate markdown for each issue type
+    issuesArray.forEach((issue, index) => {
+      lines.push(`### ${index + 1}. ${issue.check}: ${issue.message}`);
+      lines.push(`**Affected Pages (${issue.pages.length}):**`);
+      lines.push('');
+      let pageIndex = 0;
+      issue.pages.forEach(page => {
+        // Only show character count for length-related issues (too long/too short)
+        const isLengthIssue = issue.message.toLowerCase().includes('too long') || 
+                             issue.message.toLowerCase().includes('too short');
+        
+        if (isLengthIssue && page.charCount) {
+          // Use the extracted character count from the original message
+          lines.push(`${pageIndex + 1}. ${page.url} (${page.charCount} chars)`);
+        } else if (isLengthIssue && page.value) {
+          // Fallback: count characters in the value if no char count was extracted
+          const charCount = page.value.trim().length;
+          lines.push(`${pageIndex + 1}. ${page.url} (${charCount} chars)`);
+        } else {
+          lines.push(`${pageIndex + 1}. ${page.url}`);
+        }
+        pageIndex++;
       });
       lines.push('');
     });
+    
     lines.push('---');
     lines.push('');
   }
@@ -275,24 +358,26 @@ function generateMarkdown(summary) {
     lines.push('');
     
     summary.brokenLinks.uniqueBrokenUrls.forEach((link, index) => {
-      lines.push(`### ${index + 1}. ${link.url}`);
-      lines.push(`- **Status:** ${link.status} ${link.statusText}`);
-      if (link.error) {
-        lines.push(`- **Error:** ${link.error}`);
-      }
-      lines.push(`- **Found on ${link.foundOnPages.length} page(s):**`);
-      link.foundOnPages.forEach(page => {
-        lines.push(`  - ${page.url}`);
-        if (page.elements && page.elements.length > 0) {
-          page.elements.forEach((elem, elemIdx) => {
-            lines.push(`    - Element ${elemIdx + 1}: \`${elem.selector}\``);
-            if (elem.linkText) {
-              lines.push(`      - Link Text: "${elem.linkText}"`);
-            }
-          });
-        }
-      });
-      lines.push('');
+      // lines.push(`### ${index + 1}. ${link.url}`);
+      lines.push(`${index + 1}. ${link.url}`);
+
+      // lines.push(`- **Status:** ${link.status} ${link.statusText}`);
+      // if (link.error) {
+      //   lines.push(`- **Error:** ${link.error}`);
+      // }
+      // lines.push(`- **Found on ${link.foundOnPages.length} page(s):**`);
+      // link.foundOnPages.forEach(page => {
+      //   lines.push(`  - ${page.url}`);
+      //   if (page.elements && page.elements.length > 0) {
+      //     page.elements.forEach((elem, elemIdx) => {
+      //       lines.push(`    - Element ${elemIdx + 1}: \`${elem.selector}\``);
+      //       if (elem.linkText) {
+      //         lines.push(`      - Link Text: "${elem.linkText}"`);
+      //       }
+      //     });
+      //   }
+      // });
+      // lines.push('');
     });
     lines.push('---');
     lines.push('');
@@ -304,7 +389,7 @@ function generateMarkdown(summary) {
     lines.push('');
     lines.push(`**Total Links for Review:** ${summary.linksForReview.total}`);
     lines.push('');
-    lines.push('These links may work in browsers but block automated requests (e.g., social media links).');
+    lines.push('These links are not broken (404) but returned error status codes or network errors. Please review manually to verify if they work correctly (e.g., social media links that block automated requests, server errors, etc.).');
     lines.push('');
     
     summary.linksForReview.pages.forEach((page, index) => {
@@ -339,6 +424,8 @@ function generateMarkdown(summary) {
     
     sortedViolations.forEach((violation, index) => {
       lines.push(`### ${index + 1}. ${violation.id} (${violation.impact})`);
+      lines.push('');
+      lines.push(`**${violation.id} (${violation.impact})**`);
       lines.push('');
       lines.push(`**Description:** ${violation.description}`);
       lines.push(`**Help:** ${violation.help}`);
