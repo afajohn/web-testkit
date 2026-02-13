@@ -7,31 +7,50 @@ export async function checkA11y(page: Page): Promise<AuditError[]> {
   const errors: AuditError[] = [];
 
   try {
-    // 1. Trigger Lazy Content (Reference Logic: Scroll to Bottom)
+    // 1. Reference Logic: Trigger Lazy Content by scrolling
     await page.evaluate(async () => {
       window.scrollTo(0, document.body.scrollHeight);
-      await new Promise(resolve => setTimeout(resolve, 500)); // Wait for lazy render
+      await new Promise(resolve => setTimeout(resolve, 600)); // Brief pause for lazy images/scripts
       window.scrollTo(0, 0);
     });
 
-    // 2. Configure Axe (Reference Logic: Exclude Hidden)
+    // 2. Configure Axe-Core
     const results = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa', 'wcag21a'])
+      // Exclude elements that aren't part of the user's visual journey
       .exclude('[style*="display: none"], [hidden], [aria-hidden="true"]')
       .analyze();
 
-    // 3. Process Results surgically
+    // 3. Process Violations with Precision Targeting
     for (const violation of results.violations) {
       for (const node of violation.nodes) {
-        const selector = node.target[0] as string;
+        // Axe provides an array of selectors; we join them to find the target
+        const axeSelector = Array.isArray(node.target) ? node.target.join(' ') : node.target;
         
-        // 🎯 FETCH BOUNDING BOX (Precision for Snipe Button)
-        const box = await page.evaluate((sel) => {
+        // 🎯 PRECISION EVALUATION
+        // We find the element Axe is complaining about and extract its metadata surgically
+        const elementInfo = await page.evaluate((sel) => {
             const el = document.querySelector(sel);
             if (!el) return null;
+            
             const r = el.getBoundingClientRect();
-            return { x: r.x, y: r.y, width: r.width, height: r.height };
-        }, selector);
+            
+            // Generate a ROBUST selector for the Sniper button
+            const getRobustSelector = (target: Element): string => {
+                if (target.id) return `#${target.id}`;
+                const tag = target.tagName.toLowerCase();
+                if (target.classList.length > 0) return `${tag}.${Array.from(target.classList)[0]}`;
+                return tag;
+            };
+
+            return {
+                selector: getRobustSelector(el),
+                html: el.outerHTML.substring(0, 150),
+                box: { x: r.x, y: r.y, width: r.width, height: r.height }
+            };
+        }, axeSelector);
+
+        if (!elementInfo) continue; // Skip if the element vanished (common with dynamic ads)
 
         const severityMap: Record<string, 'low' | 'medium' | 'high' | 'critical'> = {
             'minor': 'low',
@@ -45,11 +64,11 @@ export async function checkA11y(page: Page): Promise<AuditError[]> {
             category: 'A11Y',
             title: violation.id,
             message: `${violation.help}: ${node.failureSummary}`,
-            selector: selector,
-            outerHTML: node.html.substring(0, 150),
+            selector: elementInfo.selector, // 🎯 OUR ROBUST SELECTOR
+            outerHTML: elementInfo.html,
             severity: severityMap[violation.impact || 'serious'] || 'high',
-            fix: `Check guidelines at: ${violation.helpUrl}`,
-            boundingBox: box,
+            fix: `WCAG Reference: ${violation.helpUrl}`,
+            boundingBox: elementInfo.box, // 🎯 PRECISION COORDINATES
             detectedAt: Date.now()
         };
 
@@ -62,6 +81,7 @@ export async function checkA11y(page: Page): Promise<AuditError[]> {
     }
   } catch (e: any) {
     console.error("Axe Critical Failure:", e.message);
+    // Don't crash the whole batch, just report the scan failure for this page
   }
 
   return errors;

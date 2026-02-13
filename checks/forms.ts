@@ -9,33 +9,43 @@ export async function checkForms(page: Page): Promise<AuditError[]> {
     const found: any[] = [];
     
     document.querySelectorAll('form').forEach((form, i) => {
+      // 🎯 Form Selector
+      const formSelector = form.id ? `#${form.id}` : `form:nth-of-type(${i+1})`;
+
       // 1. Check for Submit Button
       const hasSubmit = form.querySelector('button[type="submit"], input[type="submit"], button:not([type])');
       if (!hasSubmit) {
         const r = form.getBoundingClientRect();
         found.push({
           url: pageUrl, category: 'FUNC', title: 'Form Missing Submit',
-          message: `Form #${i+1} has no detectable submit button. Users cannot send this data.`,
-          selector: `form:nth-of-type(${i+1})`, outerHTML: form.outerHTML.substring(0, 100),
-          severity: 'critical', fix: 'Add a <button type="submit"> to the form.',
+          message: `Form has no submit button. Users cannot complete this action.`,
+          selector: formSelector, outerHTML: form.outerHTML.substring(0, 150),
+          severity: 'critical', fix: 'Add a <button type="submit">.',
           boundingBox: { x: r.x, y: r.y, width: r.width, height: r.height }, detectedAt: Date.now()
         });
       }
 
-      // 2. Check for Unlabeled Inputs
+      // 2. Check for Unlabeled Inputs (Precision Targeting)
       form.querySelectorAll('input:not([type="hidden"]), select, textarea').forEach(input => {
-        const id = input.id;
+        const el = input as HTMLElement;
+        const id = el.id;
+        // Generate selector for the specific field
+        const inputSelector = id ? `#${id}` : `${formSelector} ${el.tagName.toLowerCase()}[name="${el.getAttribute('name') || ''}"]`;
+        
         const hasLabel = id ? !!document.querySelector(`label[for="${id}"]`) : false;
-        const hasAriaLabel = !!(input.getAttribute('aria-label') || input.getAttribute('aria-labelledby'));
-        const isWrapped = !!input.closest('label');
+        const hasAriaLabel = !!(el.getAttribute('aria-label') || el.getAttribute('aria-labelledby'));
+        const isWrapped = !!el.closest('label');
 
         if (!hasLabel && !hasAriaLabel && !isWrapped) {
-          const r = input.getBoundingClientRect();
+          const r = el.getBoundingClientRect();
+          // 🎯 FIX: Using getAttribute('placeholder') instead of el.placeholder
+          const identifier = el.getAttribute('name') || el.getAttribute('placeholder') || 'input field';
+          
           found.push({
             url: pageUrl, category: 'FUNC', title: 'Missing Input Label',
-            message: `Form input is missing an associated label or ARIA name.`,
-            selector: input.id ? `#${input.id}` : 'input', outerHTML: input.outerHTML,
-            severity: 'high', fix: 'Add a <label> with a "for" attribute matching the input ID.',
+            message: `Field "${identifier}" lacks a label.`,
+            selector: inputSelector, outerHTML: el.outerHTML.substring(0, 150),
+            severity: 'high', fix: 'Associate a <label> or add an aria-label.',
             boundingBox: { x: r.x, y: r.y, width: r.width, height: r.height }, detectedAt: Date.now()
           });
         }
