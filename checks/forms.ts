@@ -8,15 +8,6 @@ export async function checkForms(page: Page): Promise<AuditError[]> {
   const rawErrors = await page.evaluate((pageUrl) => {
     const found: any[] = [];
     
-    // 🎯 HELPER: Robust selector within form context
-    const getFormItemSelector = (form: HTMLFormElement, el: HTMLElement): string => {
-        if (el.id) return `#${el.id}`;
-        const name = el.getAttribute('name');
-        const formId = form.id ? `#${form.id}` : 'form';
-        if (name) return `${formId} [name="${name}"]`;
-        return `${formId} ${el.tagName.toLowerCase()}`;
-    };
-
     document.querySelectorAll('form').forEach((form, i) => {
       const formSelector = form.id ? `#${form.id}` : `form:nth-of-type(${i+1})`;
 
@@ -26,23 +17,25 @@ export async function checkForms(page: Page): Promise<AuditError[]> {
         const r = form.getBoundingClientRect();
         found.push({
           url: pageUrl, category: 'FUNC', title: 'Form Missing Submit',
-          message: `Form has no detectable submit button. Users are trapped.`,
-          selector: formSelector, 
-          outerHTML: form.outerHTML.substring(0, 200),
-          severity: 'critical', 
-          fix: 'Insert a <button type="submit">Submit</button> inside the form tags.',
-          boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null, 
+          message: `Form has no submit button. Users cannot complete this action.`,
+          selector: formSelector, outerHTML: form.outerHTML.substring(0, 150),
+          severity: 'critical', fix: 'Add a <button type="submit"> to the form.',
+          boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
           detectedAt: Date.now()
         });
       }
 
-      // 2. Check for Unlabeled Inputs
+      // 2. Check for Unlabeled Inputs (Precision Targeting)
       form.querySelectorAll('input:not([type="hidden"]), select, textarea').forEach(input => {
         const el = input as HTMLElement;
-        const type = (el as any).type ? (el as any).type.toLowerCase() : '';
+        const type = el.getAttribute('type')?.toLowerCase() || '';
+
+        // 🎯 MERCY RULE: Skip buttons, resets, and submits (they label themselves via value/text)
         if (['submit', 'button', 'reset', 'image'].includes(type)) return;
 
         const id = el.id;
+        const inputSelector = id ? `#${id}` : `${formSelector} ${el.tagName.toLowerCase()}[name="${el.getAttribute('name') || ''}"]`;
+        
         const hasLabel = id ? !!document.querySelector(`label[for="${id}"]`) : false;
         const hasAriaLabel = !!(el.getAttribute('aria-label') || el.getAttribute('aria-labelledby'));
         const isWrapped = !!el.closest('label');
@@ -50,16 +43,13 @@ export async function checkForms(page: Page): Promise<AuditError[]> {
         if (!hasLabel && !hasAriaLabel && !isWrapped) {
           const r = el.getBoundingClientRect();
           const identifier = el.getAttribute('name') || el.getAttribute('placeholder') || 'input field';
-          const selector = getFormItemSelector(form, el);
           
           found.push({
             url: pageUrl, category: 'FUNC', title: 'Missing Input Label',
-            message: `The "${identifier}" field has no label. Screen readers will ignore it.`,
-            selector: selector, 
-            outerHTML: el.outerHTML.substring(0, 200),
-            severity: 'high', 
-            fix: `Use <label for="${id || 'ID_HERE'}"> or add an aria-label attribute.`,
-            boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null, 
+            message: `Field "${identifier}" lacks an associated <label> or aria-label.`,
+            selector: inputSelector, outerHTML: el.outerHTML.substring(0, 150),
+            severity: 'high', fix: 'Associate a <label> with a "for" attribute matching the input ID.',
+            boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
             detectedAt: Date.now()
           });
         }

@@ -1,4 +1,4 @@
-// dashboard/app.js - MINT STABLE (Unified + Deduplication + Eternal Memory)
+// dashboard/app.js - MINT STABLE (Unified + Tactical Strike Edition)
 
 window.sniperMap = {}; 
 window.GLOBAL_DATA = null;
@@ -15,9 +15,8 @@ async function initDashboard() {
         renderGlobalStats(data);
         renderSidebar(data.domains);
         
-        // Restore domain and state from LocalStorage on first run
         const saved = getSavedState();
-        if (!window.CURRENT_DOMAIN_NAME && saved && saved.domain) {
+        if (saved && saved.domain) {
             window.CURRENT_DOMAIN_NAME = saved.domain;
         }
 
@@ -31,7 +30,7 @@ async function initDashboard() {
     } catch (e) { console.error("Sync Error:", e); }
 }
 
-// --- 2. STATE MANAGEMENT (Your Persistence Core) ---
+// --- 2. STATE MANAGEMENT ---
 function saveDashboardState() {
     const stage = document.getElementById('main-stage');
     const openPages = [];
@@ -94,7 +93,6 @@ function updateMainStage(domain, sidebarEl, savedState) {
     const stage = document.getElementById('main-stage');
     const targetScroll = (savedState && savedState.domain === domain.name) ? savedState.stageScroll : stage.scrollTop;
 
-    // Build HUD and Stage Structure
     stage.innerHTML = `
         <div class="stage-header">
             <div class="dh-title">${domain.name}</div>
@@ -116,7 +114,6 @@ function updateMainStage(domain, sidebarEl, savedState) {
         <div id="page-list-area"></div>
     `;
 
-    // Update HUD Stats (Deduplicated Math)
     let stats = { SEC: 0, SEO: 0, A11Y: 0, FUNC: 0 };
     [...domain.globalErrors, ...domain.pages.flatMap(p => p.errors)].forEach(e => {
         if(e.status === 'FIXED') return;
@@ -132,20 +129,37 @@ function updateMainStage(domain, sidebarEl, savedState) {
         <div class="metric-card"><div class="mc-label">A11y</div><div class="mc-value" style="color:var(--success)">${stats.A11Y}</div></div>
     `;
 
-    // Render Page Rows
     const pageArea = document.getElementById('page-list-area');
     domain.pages.forEach(page => {
         const pageId = `pg-${sanitize(page.stableId)}`;
         const activeErrors = page.errors.filter(e => e.status !== 'FIXED');
         if (activeErrors.length === 0) return;
 
+        // 🎯 TACTICAL SCRIPT GENERATION
+        const visualAll = activeErrors.filter(isVisual);
+        const visualA11y = activeErrors.filter(e => isVisual(e) && (e.category || '').includes('A11Y'));
+        const visualFunc = activeErrors.filter(e => isVisual(e) && (e.category || '').includes('FUNC'));
+
+        const keyAll = `MASTER-ALL-${pageId}`;
+        const keyA11y = `MASTER-A11Y-${pageId}`;
+        const keyFunc = `MASTER-FUNC-${pageId}`;
+
+        window.sniperMap[keyAll] = generateMasterScript(visualAll, "ALL ISSUES", "#ff00ff");
+        window.sniperMap[keyA11y] = generateMasterScript(visualA11y, "ACCESSIBILITY", "#64ffda");
+        window.sniperMap[keyFunc] = generateMasterScript(visualFunc, "FUNCTIONAL", "#ffd166");
+
         const pageEl = document.createElement('div');
         pageEl.className = `page-row ${ (savedState?.openPages?.includes('row-'+pageId)) ? 'open' : '' }`;
         pageEl.id = `row-${pageId}`;
         pageEl.innerHTML = `
             <div class="pr-header" onclick="this.parentElement.classList.toggle('open'); saveDashboardState();">
-                <div style="display:flex; align-items:center; gap:15px;">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap: wrap;">
                     <a href="${page.url}" target="_blank" class="pr-path" onclick="event.stopPropagation()">📄 ${new URL(page.url).pathname}</a>
+                    <div class="snipe-group" style="display:flex; gap:5px;">
+                        ${window.sniperMap[keyAll] ? `<button class="snipe-all-btn s-all" onclick="event.stopPropagation(); runSniper(this, '${keyAll}')">🎯 ALL</button>` : ''}
+                        ${window.sniperMap[keyA11y] ? `<button class="snipe-all-btn s-a11y" onclick="event.stopPropagation(); runSniper(this, '${keyA11y}')">♿ A11Y (${visualA11y.length})</button>` : ''}
+                        ${window.sniperMap[keyFunc] ? `<button class="snipe-all-btn s-func" onclick="event.stopPropagation(); runSniper(this, '${keyFunc}')">⚡ FUNC (${visualFunc.length})</button>` : ''}
+                    </div>
                 </div>
                 <span class="badge err">${activeErrors.length} PAGE ISSUES</span>
             </div>
@@ -154,7 +168,12 @@ function updateMainStage(domain, sidebarEl, savedState) {
         pageArea.appendChild(pageEl);
     });
 
-    stage.scrollTop = targetScroll;
+    // Restore scroll position after DOM has painted
+    requestAnimationFrame(() => {
+        setTimeout(() => {
+            stage.scrollTop = targetScroll;
+        }, 0);
+    });
 }
 
 function buildGlobalErrorRows(errors, domainId, savedState) {
@@ -214,8 +233,15 @@ function generateSniperCommand(e, visual) {
     return `(function(){ var el=document.querySelector('${sel}'); if(el){ el.style.outline='5px solid #64ffda'; el.scrollIntoView({behavior:'smooth',block:'center'}); } })();`;
 }
 
+function generateMasterScript(filteredErrors, label, color) {
+    if (filteredErrors.length === 0) return null;
+    const targets = filteredErrors.map(e => ({ sel: e.selector.replace(/'/g, "\\'"), msg: e.message.replace(/'/g, "") }));
+    return `(function(){ console.clear(); console.log("%c STRIKE: ${label} ", "background:${color}; color:#000; font-weight:bold;"); var t=${JSON.stringify(targets)}; t.forEach(function(x){ var el=document.querySelector(x.sel); if(el){ el.style.outline='4px solid ${color}'; el.style.boxShadow='0 0 15px ${color}'; }}); })();`;
+}
+
 function runSniper(btn, key) {
-    navigator.clipboard.writeText(window.sniperMap[key]).then(() => {
+    const cmd = window.sniperMap[key];
+    navigator.clipboard.writeText(cmd).then(() => {
         const old = btn.innerText; btn.innerText = "COPIED";
         setTimeout(() => btn.innerText = old, 1200);
     });

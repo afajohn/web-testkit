@@ -319,6 +319,26 @@ body {
     white-space: nowrap;
 }
 
+.snipe-all-btn {
+    border-radius: 4px;
+    font-size: 9px;
+    padding: 3px 8px;
+    font-weight: 800;
+    border: 1px solid transparent;
+    cursor: pointer;
+    transition: 0.2s;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.s-all { border-color: #ff00ff; color: #ff00ff; background: rgba(255, 0, 255, 0.1); }
+.s-all:hover { background: #ff00ff; color: #000; }
+
+.s-a11y { border-color: var(--success); color: var(--success); background: rgba(100, 255, 218, 0.1); }
+.s-a11y:hover { background: var(--success); color: #000; }
+
+.s-func { border-color: var(--warning); color: var(--warning); background: rgba(255, 209, 102, 0.1); }
+.s-func:hover { background: var(--warning); color: #000; }
+
 .snipe-all-btn:hover {
     background: var(--mint-glow);
     color: var(--bg-deep); /* Black text on Mint background */

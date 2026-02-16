@@ -17,22 +17,26 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
         return tag;
     };
 
-    // 1. Audit CTA Buttons
+    // 1. Audit CTA Buttons (Human Finger Logic)
     document.querySelectorAll('button, a.btn, .button, [role="button"]').forEach(btn => {
       const el = btn as HTMLElement;
       const r = el.getBoundingClientRect();
-      const area = r.width * r.height;
       const text = el.textContent?.trim() || el.getAttribute('aria-label');
       const selector = getSelector(el);
       
       if (r.width > 0 && r.height > 0) {
-        const isTooSmall = (r.width < 32 || r.height < 32) && area < 1000; 
-        if (isTooSmall) {
-              found.push({
+        // 🎯 SMART MATH: Only flag if it's genuinely hard to hit. 
+        // A wide menu link is fine even if it's only 24px tall.
+        const isTooNarrow = r.width < 44;
+        const isTooShort = r.height < 24;
+        const isTinySquare = r.width < 32 && r.height < 32;
+
+        if (isTinySquare || (isTooNarrow && isTooShort)) {
+            found.push({
                 url: pageUrl, category: 'FUNC', title: 'Tiny Click Target',
-                message: `Button "${text?.substring(0, 15)}" is too small for thumbs.`,
-                selector: selector, outerHTML: el.outerHTML.substring(0, 200),
-                severity: 'medium', fix: 'Ensure the button is at least 44px tall/wide for mobile.',
+                message: `Target "${text?.substring(0, 15)}" is too small for mobile thumbs.`,
+                selector: selector, outerHTML: el.outerHTML.substring(0, 150),
+                severity: 'medium', fix: 'Increase size or padding to at least 44x44px.',
                 boundingBox: { x: r.x, y: r.y, width: r.width, height: r.height }, detectedAt: Date.now()
             });
         }
@@ -40,30 +44,42 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
         if (!text) {
           found.push({
             url: pageUrl, category: 'FUNC', title: 'Empty Button',
-            message: 'Button has no accessible text. Users don\'t know what it does.',
-            selector: selector, outerHTML: el.outerHTML.substring(0, 200),
-            severity: 'high', fix: 'Add descriptive text inside the button or an aria-label.',
+            message: 'Button has no accessible text or label.',
+            selector: selector, outerHTML: el.outerHTML.substring(0, 150),
+            severity: 'high', fix: 'Add descriptive text or an aria-label.',
             boundingBox: { x: r.x, y: r.y, width: r.width, height: r.height }, detectedAt: Date.now()
           });
         }
       }
     });
 
-    // 2. External Link Security (Now with BoundingBox!)
+    // 2. External Link Security
     document.querySelectorAll('a[target="_blank"]').forEach(link => {
       const el = link as HTMLElement;
-      const rel = el.getAttribute('rel') || '';
-      if (!rel.includes('noopener') && !rel.includes('noreferrer')) {
-        const r = el.getBoundingClientRect();
-        found.push({
-          url: pageUrl, category: 'FUNC', title: 'Insecure Link',
-          message: `Link to "${el.getAttribute('href')?.substring(0,25)}" opens in new tab without security headers.`,
-          selector: getSelector(el), outerHTML: el.outerHTML.substring(0, 200),
-          severity: 'low', fix: 'Add rel="noopener noreferrer" to prevent security vulnerabilities.',
-          boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null, 
-          detectedAt: Date.now()
-        });
-      }
+      const href = el.getAttribute('href') || '';
+      
+      // 🎯 THE INTELLIGENT FILTER:
+      // Skip if: 1. It's a relative path (/path)
+      //         2. it's internal (contains current hostname)
+      //         3. it's an anchor (#) or javascript
+      const isExternal = href.startsWith('http') && !href.includes(window.location.hostname);
+      const isInternal = !href.startsWith('http') || href.includes(window.location.hostname);
+
+      if (isExternal) {
+        const rel = el.getAttribute('rel') || '';
+        if (!rel.includes('noopener')) {
+          const r = el.getBoundingClientRect();
+          found.push({
+            url: pageUrl, category: 'FUNC', title: 'Insecure External Link',
+            message: `External link to "${href.substring(0,30)}..." missing noopener.`,
+            selector: getSelector(el), outerHTML: el.outerHTML.substring(0, 200),
+            severity: 'low', fix: 'Add rel="noopener" for third-party security.',
+            boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
+            detectedAt: Date.now()
+          });
+        }
+      } 
+      // 🛡️ INTERNAL LINKS with target="_blank" are now IGNORED. No more noise.
     });
 
     // 3. Video Embeds
@@ -77,10 +93,10 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
       if (!el.hasAttribute('title')) {
         found.push({
           url: pageUrl, category: 'FUNC', title: 'Video Missing Title',
-          message: 'Iframe is missing a title. Screen readers cannot describe the video.',
-          selector: selector, outerHTML: el.outerHTML.substring(0, 200),
-          severity: 'medium', fix: 'Add a title="..." attribute describing the content.',
-          boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null, 
+          message: 'Video iframe is missing a title attribute.',
+          selector: selector, outerHTML: el.outerHTML.substring(0, 150),
+          severity: 'medium', fix: 'Add a title="..." attribute.',
+          boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
           detectedAt: Date.now()
         });
       }
@@ -88,10 +104,10 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
       if (src.includes('insert_video_id')) {
         found.push({
           url: pageUrl, category: 'FUNC', title: 'Broken Video Embed',
-          message: `The video source URL is a placeholder and won't play.`,
-          selector: selector, outerHTML: el.outerHTML.substring(0, 200),
-          severity: 'critical', fix: 'Update the iframe src with the actual video ID.',
-          boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null, 
+          message: `Video source is a placeholder.`,
+          selector: selector, outerHTML: el.outerHTML.substring(0, 150),
+          severity: 'critical', fix: 'Replace with a valid video ID.',
+          boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
           detectedAt: Date.now()
         });
       }

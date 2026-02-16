@@ -7,97 +7,47 @@ export async function checkA11y(page: Page): Promise<AuditError[]> {
   const errors: AuditError[] = [];
 
   try {
-    // 1. Reference Logic: Trigger Lazy Content by scrolling
+    if (page.isClosed()) return [];
+
     await page.evaluate(async () => {
       window.scrollTo(0, document.body.scrollHeight);
-      await new Promise(resolve => setTimeout(resolve, 600)); // Brief pause for lazy images/scripts
+      await new Promise(r => setTimeout(r, 400));
       window.scrollTo(0, 0);
-    });
+    }).catch(() => {});
 
-    // 2. Configure Axe-Core
     const results = await new AxeBuilder({ page })
       .withTags(['wcag2a', 'wcag2aa', 'wcag21a'])
-      // Exclude elements that aren't part of the user's visual journey
       .exclude('[style*="display: none"], [hidden], [aria-hidden="true"]')
-      .analyze();
+      .analyze()
+      .catch(() => null);
 
-    // 3. Process Violations with Precision Targeting
+    if (!results) return [];
+
     for (const violation of results.violations) {
       for (const node of violation.nodes) {
-        // Axe provides an array of selectors; we join them to find the target
         const axeSelector = Array.isArray(node.target) ? node.target.join(' ') : node.target;
         
-        // 🎯 PRECISION EVALUATION
-        // We find the element Axe is complaining about and extract its metadata surgically
-        const elementInfo = await page.evaluate((sel) => {
+        const info = await page.evaluate((sel) => {
             const el = document.querySelector(sel);
             if (!el) return null;
-            
             const r = el.getBoundingClientRect();
-            
-            // Generate a ROBUST selector for the Sniper button
-            // Inside checks/a11y.ts -> elementInfo = await page.evaluate(...)
-            const getRobustSelector = (target: Element): string => {
-                if (target.id) return `#${target.id}`;
-                
-                const tag = target.tagName.toLowerCase();
-                const classes = Array.from(target.classList);
-                let base = tag;
+            const getRobust = (e: Element) => e.id ? `#${e.id}` : (e.classList.length ? `${e.tagName.toLowerCase()}.${e.classList[0]}` : e.tagName.toLowerCase());
+            return { selector: getRobust(el), box: { x: r.x, y: r.y, width: r.width, height: r.height }, html: el.outerHTML.substring(0, 150) };
+        }, axeSelector).catch(() => null);
 
-                if (classes.length > 0) {
-                    base += '.' + classes[0]; // Use the first class
-                }
-
-                // 🎯 THE FIX: If the selector is not unique, add the index
-                const matches = document.querySelectorAll(base);
-                if (matches.length > 1) {
-                    const index = Array.from(matches).indexOf(target) + 1;
-                    return `${base}:nth-of-type(${index})`;
-                }
-
-                return base;
-            };
-
-            return {
-                selector: getRobustSelector(el),
-                html: el.outerHTML.substring(0, 150),
-                box: { x: r.x, y: r.y, width: r.width, height: r.height }
-            };
-        }, axeSelector);
-
-        if (!elementInfo) continue; // Skip if the element vanished (common with dynamic ads)
-
-        const severityMap: Record<string, 'low' | 'medium' | 'high' | 'critical'> = {
-            'minor': 'low',
-            'moderate': 'medium',
-            'serious': 'high',
-            'critical': 'critical'
-        };
+        if (!info) continue;
 
         const errBase: Partial<AuditError> = {
-            url,
-            category: 'A11Y',
-            title: violation.id,
+            url, category: 'A11Y', title: violation.id,
             message: `${violation.help}: ${node.failureSummary}`,
-            selector: elementInfo.selector, // 🎯 OUR ROBUST SELECTOR
-            outerHTML: elementInfo.html,
-            severity: severityMap[violation.impact || 'serious'] || 'high',
-            fix: `WCAG Reference: ${violation.helpUrl}`,
-            boundingBox: elementInfo.box, // 🎯 PRECISION COORDINATES
-            detectedAt: Date.now()
+            selector: info.selector, outerHTML: info.html,
+            severity: violation.impact === 'critical' ? 'critical' : 'high',
+            fix: `WCAG: ${violation.helpUrl}`,
+            boundingBox: info.box, detectedAt: Date.now()
         };
-
-        errors.push({
-          ...errBase,
-          id: generateErrorId(errBase),
-          fingerprint: generateErrorId(errBase)
-        } as AuditError);
+        errors.push({ ...errBase, id: generateErrorId(errBase), fingerprint: generateErrorId(errBase) } as AuditError);
       }
     }
-  } catch (e: any) {
-    console.error("Axe Critical Failure:", e.message);
-    // Don't crash the whole batch, just report the scan failure for this page
-  }
-
+  } catch (e: any) {}
   return errors;
 }
