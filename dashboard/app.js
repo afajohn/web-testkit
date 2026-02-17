@@ -1,11 +1,10 @@
-// dashboard/app.js - FINAL MINT EDITION (Grouped Links + Full Audit Restore)
+// dashboard/app.js - DIAGNOSTIC MODE (Finds the Crash)
 
 window.sniperMap = {}; 
 window.GLOBAL_DATA = null;
 window.CURRENT_DOMAIN_NAME = null; 
 const STATE_KEY = 'qa_dashboard_state';
 
-// --- 1. INITIALIZATION ---
 async function initDashboard() {
     try {
         const response = await fetch('data/aggregated.json?t=' + Date.now());
@@ -26,37 +25,13 @@ async function initDashboard() {
                 updateMainStage(activeDomain, saved);
             }
         }
-    } catch (e) { console.error("Sync Error:", e); }
+    } catch (e) { 
+        document.getElementById('main-stage').innerHTML = `<div style="padding:20px; color:red; font-family:monospace;">CRITICAL INIT FAILURE: ${e.message}</div>`;
+        console.error(e);
+    }
 }
 
-// --- 2. STATE & UTILS ---
-function saveDashboardState() {
-    const stage = document.getElementById('main-stage');
-    const openPages = [];
-    document.querySelectorAll('.page-row.open').forEach(el => { if(el.id) openPages.push(el.id); });
-    const openCats = [];
-    document.querySelectorAll('details[open]').forEach(el => { if(el.id) openCats.push(el.id); });
-
-    const state = {
-        domain: window.CURRENT_DOMAIN_NAME,
-        stageScroll: stage ? stage.scrollTop : 0,
-        openPages: openPages,
-        openCats: openCats
-    };
-    localStorage.setItem(STATE_KEY, JSON.stringify(state));
-}
-
-function getSavedState() {
-    try {
-        const s = localStorage.getItem(STATE_KEY);
-        return s ? JSON.parse(s) : null;
-    } catch(e) { return null; }
-}
-
-function sanitize(s) { return s ? s.replace(/[^a-zA-Z0-9-]/g, '') : 'id'; }
-function escapeHtml(s) { return s ? String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#039;"}[m])) : ""; }
-
-// --- 3. RENDERERS ---
+// --- RENDERERS ---
 
 function renderGlobalStats(data) {
     const totalErrors = data.domains.reduce((s, d) => s + (d.totalErrors || 0), 0);
@@ -96,70 +71,95 @@ function updateMainStage(domain, savedState) {
     const stage = document.getElementById('main-stage');
     const targetScroll = (savedState && savedState.domain === domain.name) ? savedState.stageScroll : stage.scrollTop;
 
-    // BUILD ALL SECTIONS IN ORDER
-    stage.innerHTML = `
-        <div class="stage-header">
-            <div class="dh-title">${domain.name}</div>
-            <div id="domain-metrics-hud" class="dh-grid"></div>
-        </div>
-        
-        <div id="unique-summary-area" style="margin-bottom:40px;"></div>
-        
-        <div id="page-audit-header" style="margin-bottom:15px; font-size:11px; color:var(--text-muted); font-weight:800; letter-spacing:1px; text-transform:uppercase; border-bottom: 1px solid var(--border); padding-bottom:10px;">
-            Individual Page Audit
-        </div>
-        <div id="page-list-area"></div>
-    `;
+    // BUILD SHELL IF MISSING
+    if (!stage.querySelector('.dh-title') || stage.querySelector('.dh-title').innerText !== domain.name) {
+        stage.innerHTML = `
+            <div class="stage-header">
+                <div class="dh-title">${domain.name}</div>
+                <div id="domain-metrics-hud" class="dh-grid"></div>
+            </div>
+            <div id="unique-summary-area" style="margin-bottom:40px;"></div>
+            <div id="page-audit-header" style="margin-bottom:15px; font-size:11px; color:var(--text-muted); font-weight:800; letter-spacing:1px; text-transform:uppercase; border-bottom: 1px solid var(--border); padding-bottom:10px;">Individual Page Audit</div>
+            <div id="page-list-area"></div>
+        `;
+    }
 
     updateHUD(domain);
     
-    // 1. Render Matrix (The Grouped View)
+    // 1. RENDER ACTION MATRIX
     const matrixArea = document.getElementById('unique-summary-area');
     if (domain.uniqueErrors && domain.uniqueErrors.length > 0) {
         matrixArea.innerHTML = `
             <details class="cat-details" style="border: 1px solid var(--accent); background: rgba(100, 255, 218, 0.05);" id="action-matrix" ${savedState?.openCats?.includes('action-matrix') ? 'open' : ''} ontoggle="saveDashboardState()">
                 <summary class="cat-header" style="padding:15px; color:var(--mint-glow); font-weight:bold;">
                     📊 UNIQUE ERROR ACTION MATRIX
-                    <span class="badge" style="background:var(--accent); color:#000;">${domain.uniqueErrors.length} UNIQUE ISSUES</span>
+                    <span class="badge matrix-count" style="background:var(--accent); color:#000;">${domain.uniqueErrors.length} UNIQUE ISSUES</span>
                 </summary>
-                <div style="padding:10px;">
+                <div id="matrix-body-content" style="padding:10px;">
                     ${buildCategorizedMatrix(domain.uniqueErrors, domain.name, savedState)}
                 </div>
             </details>
         `;
     }
 
-    // 2. Render Full Page List (Deep Dive)
+    // 2. RENDER PAGE LIST (With Tactical Buttons Restored)
     const pageArea = document.getElementById('page-list-area');
     domain.pages.forEach(page => {
-        const pageId = `pg-${sanitize(page.stableId)}`;
+        const pageId = `pg-${sanitize(page.stableId || page.url)}`;
         const rowId = `row-${pageId}`;
         const activeErrors = page.errors.filter(e => e.status !== 'FIXED');
         if (activeErrors.length === 0) return;
 
-        const keyAll = `MASTER-ALL-${pageId}`;
-        window.sniperMap[keyAll] = generateMasterScript(activeErrors.filter(isVisual), "ALL", "#ff00ff");
+        let pageEl = document.getElementById(rowId);
+        if (pageEl && pageEl.dataset.ts === page.timestamp) return;
 
-        const pageEl = document.createElement('div');
-        pageEl.className = `page-row ${ (savedState?.openPages?.includes(rowId)) ? 'open' : '' }`;
-        pageEl.id = rowId;
-        pageEl.innerHTML = `
-            <div class="pr-header" onclick="this.parentElement.classList.toggle('open'); saveDashboardState();">
-                <div style="display:flex; align-items:center; gap:15px;">
-                    <a href="${page.url}" target="_blank" class="pr-path" onclick="event.stopPropagation()">📄 ${new URL(page.url).pathname}</a>
-                    <button class="snipe-all-btn s-all" onclick="event.stopPropagation(); runSniper(this, '${keyAll}')">🎯 ALL</button>
+        // 🎯 TACTICAL BUTTON LOGIC RESTORED
+        const visualAll = activeErrors.filter(isVisual);
+        const visualA11y = activeErrors.filter(e => isVisual(e) && (e.category || '').includes('A11Y'));
+        const visualFunc = activeErrors.filter(e => isVisual(e) && (e.category || '').includes('FUNC'));
+
+        const keyAll = `MASTER-ALL-${pageId}`;
+        const keyA11y = `MASTER-A11Y-${pageId}`;
+        const keyFunc = `MASTER-FUNC-${pageId}`;
+
+        window.sniperMap[keyAll] = generateMasterScript(visualAll, "ALL ISSUES", "#ff00ff");
+        window.sniperMap[keyA11y] = generateMasterScript(visualA11y, "ACCESSIBILITY", "#64ffda");
+        window.sniperMap[keyFunc] = generateMasterScript(visualFunc, "FUNCTIONAL", "#ffd166");
+
+        const innerHtml = `
+            <div class="pr-header" onclick="toggleRow('${rowId}')">
+                <div style="display:flex; align-items:center; gap:10px; flex-wrap: wrap;">
+                    <a href="${page.url}" target="_blank" class="pr-path" onclick="event.stopPropagation()">📄 ${extractPath(page.url)}</a>
+                    
+                    <div class="snipe-group" style="display:flex; gap:5px;">
+                        ${window.sniperMap[keyAll] ? `<button class="snipe-all-btn s-all" onclick="event.stopPropagation(); runSniper(this, '${keyAll}')">🎯 ALL</button>` : ''}
+                        ${visualA11y.length > 0 ? `<button class="snipe-all-btn s-a11y" onclick="event.stopPropagation(); runSniper(this, '${keyA11y}')">♿ A11Y (${visualA11y.length})</button>` : ''}
+                        ${visualFunc.length > 0 ? `<button class="snipe-all-btn s-func" onclick="event.stopPropagation(); runSniper(this, '${keyFunc}')">⚡ FUNC (${visualFunc.length})</button>` : ''}
+                    </div>
                 </div>
                 <span class="badge err">${activeErrors.length} ISSUES</span>
             </div>
             <div class="pr-body" id="${pageId}-body">${buildErrorHtml(activeErrors, pageId, savedState)}</div>
         `;
-        pageArea.appendChild(pageEl);
+
+        if (!pageEl) {
+            pageEl = document.createElement('div');
+            pageEl.className = 'page-row';
+            pageEl.id = rowId;
+            pageArea.appendChild(pageEl);
+        }
+        const wasOpen = (savedState?.openPages?.includes(rowId));
+        pageEl.innerHTML = innerHtml;
+        pageEl.dataset.ts = page.timestamp;
+        if (wasOpen) pageEl.classList.add('open');
     });
 
-    stage.scrollTop = targetScroll;
+    if (savedState && savedState.domain === domain.name) {
+        stage.scrollTop = savedState.stageScroll;
+    }
 }
 
-// --- 4. BUILDERS ---
+// --- BUILDERS ---
 
 function buildCategorizedMatrix(uniqueErrors, domainName, savedState) {
     const cats = { SECURITY: [], FUNCTIONAL: [], SEO: [], ACCESSIBILITY: [] };
@@ -173,25 +173,29 @@ function buildCategorizedMatrix(uniqueErrors, domainName, savedState) {
         if (list.length === 0) return '';
         const catId = `matrix-${sanitize(domainName)}-${label}`;
         const isOpen = (savedState?.openCats?.includes(catId)) ? 'open' : '';
-
         const rows = list.map((e, idx) => {
             const cmdKey = `UNIQUE-${label}-${idx}`;
+            const reportKey = `REPORT-${label}-${idx}`;
             window.sniperMap[cmdKey] = isVisual(e) ? generateSniperCommand(e, true) : null;
+            window.sniperMap[reportKey] = generateGroupedTextReport(e);
             const sevColor = { 'critical': '#ff4444', 'high': '#ff8800', 'medium': '#ffbb33', 'low': '#64ffda' }[e.severity || 'low'];
 
             return `
                 <div class="error-item" style="border-left: 3px solid ${sevColor}; background:rgba(255,255,255,0.01); margin-bottom:12px; display:flex; gap:15px; padding:12px;">
-                    <div style="flex:1">
+                    <div class="ei-content" style="flex:1">
                         <div class="ei-msg"><b style="color:${sevColor}">[${e.severity?.toUpperCase()}]</b> ${escapeHtml(e.message)}</div>
                         <div class="fix-box" style="font-size:12px; margin:5px 0; color:var(--text-muted)"><span style="color:var(--mint-glow)">FIX:</span> ${escapeHtml(e.fix)}</div>
-                        
-                        <!-- 🎯 NESTED LINK GROUPS -->
-                        <div style="margin-top:10px; border-top:1px solid var(--border); padding-top:10px;">
-                            <div style="font-size:11px; color:var(--text-muted); margin-bottom:8px;">AFFECTED SECTIONS (${e.affectedUrls.length} links):</div>
-                            ${renderGroupedAffectedPages(e.affectedUrls)}
-                        </div>
+                        <details style="margin-top:10px; border-top:1px solid var(--border); padding-top:10px;">
+                            <summary style="font-size:11px; color:var(--accent); cursor:pointer;">📍 Affects ${e.affectedUrls.length} pages (Pattern View)</summary>
+                            <div style="font-size:10px; font-family:monospace; padding:10px; background:rgba(0,0,0,0.2); margin-top:5px; max-height:150px; overflow-y:auto; color:#888;">
+                                ${renderAffectedGroups(e.affectedUrls)}
+                            </div>
+                        </details>
                     </div>
-                    ${window.sniperMap[cmdKey] ? `<button class="sniper-btn" onclick="runSniper(this, '${cmdKey}')">SNIPE</button>` : ''}
+                    <div style="display:flex; flex-direction:column; gap:5px;">
+                        ${window.sniperMap[cmdKey] ? `<button class="sniper-btn" onclick="runSniper(this, '${cmdKey}')">SNIPE</button>` : ''}
+                        <button class="sniper-btn" style="border-color:var(--text-muted); color:var(--text-muted)" onclick="runSniper(this, '${reportKey}')">📋 COPY SUMMARY</button>
+                    </div>
                 </div>`;
         }).join('');
 
@@ -199,51 +203,46 @@ function buildCategorizedMatrix(uniqueErrors, domainName, savedState) {
     }).join('');
 }
 
-// 🎯 NEW: Groups URLs but keeps them as clickable links inside sub-accordions
-function renderGroupedAffectedPages(urls) {
+function renderAffectedGroups(urls) {
+    if (!urls) return '';
     const folders = {};
     const rootFiles = [];
-
     urls.sort().forEach(u => {
         try {
             const path = new URL(u).pathname;
             const parts = path.split('/').filter(p => p);
-            
             if (parts.length > 1) {
-                const folderName = `/${parts[0]}/*`;
-                if (!folders[folderName]) folders[folderName] = [];
-                folders[folderName].push(u);
-            } else {
-                rootFiles.push(u);
-            }
+                const folder = `/${parts[0]}/*`;
+                if (!folders[folder]) folders[folder] = [];
+                folders[folder].push(u);
+            } else { rootFiles.push(u); }
         } catch(e) { rootFiles.push(u); }
     });
-
     let html = '';
-
-    // Render Folders as nested accordions
     for (const [name, list] of Object.entries(folders)) {
-        html += `
-            <details style="margin-bottom:5px; background:rgba(255,255,255,0.03); border-radius:4px;">
-                <summary style="padding:5px 10px; font-size:11px; cursor:pointer; color:var(--text-main);">
-                    📂 <b>${name.toUpperCase()}</b> (${list.length} pages)
-                </summary>
-                <div style="padding:5px 15px; max-height:150px; overflow-y:auto; border-left:1px solid var(--accent);">
-                    ${list.map(url => `<div style="margin-bottom:3px; font-size:10px;">📄 <a href="${url}" target="_blank" style="color:#888; text-decoration:none;">${new URL(url).pathname}</a></div>`).join('')}
-                </div>
-            </details>
-        `;
+        html += `<details style="margin-bottom:5px; background:rgba(255,255,255,0.03); border-radius:4px;"><summary style="padding:5px 10px; font-size:11px; cursor:pointer; color:var(--text-main);">📂 <b>${name}</b> (${list.length} pages)</summary><div style="padding:5px 15px; border-left:1px solid var(--accent); margin-left:10px; max-height:150px; overflow-y:auto;">${list.map(url => `<div style="margin-bottom:3px; font-size:10px;">📄 ${extractPath(url)}</div>`).join('')}</div></details>`;
     }
-
-    // Render Root Files
     if (rootFiles.length > 0) {
-        html += `<div style="margin-top:10px; font-size:11px; color:var(--text-muted); padding-left:10px;">Common Root Pages:</div>`;
-        rootFiles.forEach(url => {
-            html += `<div style="padding:2px 15px; font-size:10px;">📄 <a href="${url}" target="_blank" style="color:#888; text-decoration:none;">${new URL(url).pathname}</a></div>`;
-        });
+        html += `<details style="margin-bottom:5px; background:rgba(255,255,255,0.03); border-radius:4px;"><summary style="padding:5px 10px; font-size:11px; cursor:pointer; color:var(--text-main);">📄 <b>Common Root Pages</b> (${rootFiles.length} pages)</summary><div style="padding:5px 15px; border-left:1px solid var(--text-muted); margin-left:10px; max-height:150px; overflow-y:auto;">${rootFiles.map(url => `<div style="margin-bottom:3px; font-size:10px;">📄 ${extractPath(url)}</div>`).join('')}</div></details>`;
     }
+    return html;
+}
 
-    return html || 'No URLs found.';
+function generateGroupedTextReport(e) {
+    const urls = e.affectedUrls || [];
+    const groups = {};
+    urls.forEach(u => {
+        try {
+            const path = new URL(u).pathname;
+            const parts = path.split('/').filter(p => p);
+            const key = parts.length > 1 ? `/${parts[0]}/*` : 'Root';
+            if (!groups[key]) groups[key] = 0;
+            groups[key]++;
+        } catch(err) { groups['Other'] = (groups['Other'] || 0) + 1; }
+    });
+    let report = `ISSUE: ${e.message}\nFIX: ${e.fix}\n\nAFFECTED SECTIONS:\n`;
+    for (const [f, count] of Object.entries(groups)) report += `- ${f} (${count} pages)\n`;
+    return report;
 }
 
 function buildErrorHtml(activeErrors, pageId, savedState) {
@@ -264,7 +263,7 @@ function buildErrorHtml(activeErrors, pageId, savedState) {
             const sevColor = { 'critical': '#ff4444', 'high': '#ff8800', 'medium': '#ffbb33', 'low': '#64ffda' }[e.severity || 'low'];
 
             return `
-                <div class="error-item" style="border-left: 3px solid ${sevColor}; margin-bottom:8px; padding:12px; display:flex; gap:15px; background:rgba(255,255,255,0.01)">
+                <div class="error-item" style="border-left: 3px solid ${sevColor}; margin-bottom:8px; padding:12px; display:flex; gap:15px; background:rgba(255,255,255,0.01); border-radius:0 4px 4px 0;">
                     <div class="ei-content" style="flex:1">
                         <div class="ei-msg"><b style="color:${sevColor}">[${e.severity?.toUpperCase()}]</b> ${escapeHtml(e.message)}</div>
                         <div class="fix-box" style="font-size:12px; margin:5px 0; color:var(--text-muted)"><span style="color:var(--mint-glow)">FIX:</span> ${escapeHtml(e.fix)}</div>
@@ -295,7 +294,39 @@ function updateHUD(domain) {
     `;
 }
 
-// --- 5. LOGIC GATES ---
+// --- UTILS ---
+function saveDashboardState() {
+    const stage = document.getElementById('main-stage');
+    const openPages = [];
+    document.querySelectorAll('.page-row.open').forEach(el => { if(el.id) openPages.push(el.id); });
+    const openCats = [];
+    document.querySelectorAll('details[open]').forEach(el => { if(el.id) openCats.push(el.id); });
+
+    const state = {
+        domain: window.CURRENT_DOMAIN_NAME,
+        stageScroll: stage ? stage.scrollTop : 0,
+        openPages: openPages,
+        openCats: openCats
+    };
+    localStorage.setItem(STATE_KEY, JSON.stringify(state));
+}
+
+function getSavedState() {
+    try {
+        const s = localStorage.getItem(STATE_KEY);
+        return s ? JSON.parse(s) : null;
+    } catch(e) { return null; }
+}
+
+function toggleRow(id) {
+    const el = document.getElementById(id);
+    if(el) { el.classList.toggle('open'); saveDashboardState(); }
+}
+
+function extractPath(url) {
+    try { return url.includes('//') ? new URL(url).pathname : url; } catch(e) { return url; }
+}
+
 function isVisual(e) {
     const s = (e.selector || '').toLowerCase();
     if (!s || s === 'n/a' || s === 'head' || s === 'html' || s === 'body') return false;
@@ -308,6 +339,12 @@ function generateSniperCommand(e, visual) {
     return `(function(){ var el=document.querySelector('${sel}'); if(el){ el.style.outline='5px solid #64ffda'; el.scrollIntoView({behavior:'smooth',block:'center'}); } })();`;
 }
 
+function generateMasterScript(filteredErrors, label, color) {
+    if (filteredErrors.length === 0) return null;
+    const targets = filteredErrors.map(e => ({ sel: e.selector.replace(/'/g, "\\'"), msg: e.message.replace(/'/g, "") }));
+    return `(function(){ console.clear(); console.log("%c STRIKE: ${label} ", "background:${color}; color:#000; font-weight:bold;"); var t=${JSON.stringify(targets)}; t.forEach(function(x){ var el=document.querySelector(x.sel); if(el){ el.style.outline='4px solid ${color}'; el.style.boxShadow='0 0 15px ${color}'; }}); })();`;
+}
+
 function runSniper(btn, key) {
     const cmd = window.sniperMap[key];
     navigator.clipboard.writeText(cmd).then(() => {
@@ -316,11 +353,8 @@ function runSniper(btn, key) {
     });
 }
 
-function generateMasterScript(filteredErrors, label, color) {
-    if (filteredErrors.length === 0) return null;
-    const targets = filteredErrors.map(e => ({ sel: e.selector.replace(/'/g, "\\'"), msg: e.message.replace(/'/g, "") }));
-    return `(function(){ console.clear(); console.log("%c STRIKE: ${label} ", "background:${color}; color:#000; font-weight:bold;"); var t=${JSON.stringify(targets)}; t.forEach(function(x){ var el=document.querySelector(x.sel); if(el){ el.style.outline='4px solid ${color}'; el.style.boxShadow='0 0 15px ${color}'; }}); })();`;
-}
+function sanitize(s) { return s ? s.replace(/[^a-zA-Z0-9-]/g, '') : 'id'; }
+function escapeHtml(s) { return s ? String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#039;"}[m])) : ""; }
 
 initDashboard();
 setInterval(() => { saveDashboardState(); initDashboard(); }, 30000);
