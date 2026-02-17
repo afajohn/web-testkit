@@ -1,12 +1,12 @@
 @echo off
-SETLOCAL EnableDelayedExpansion
-title QA COMMAND BRIDGE - MAIN MENU
+SETLOCAL
+title QA AUTOMATION SUITE
 
 :menu
 cls
 echo ===================================================
-echo   QA COMMAND BRIDGE 
-echo   "Efficiency is the only religion."
+echo   QA AUTOMATION SUITE v1.0
+echo   Automated Diagnostic Tool
 echo ===================================================
 echo   1. START WATCHER      (Background monitoring)
 echo   2. OPEN DASHBOARD     (Launch in Browser)
@@ -67,7 +67,7 @@ goto menu
 :single
 set /p target="Enter Full URL (e.g. https://example.com): "
 echo [SYSTEM] Scanning single target...
-npx ts-node runner/scan-url-core.ts %target%
+npx ts-node runner/single-run.ts %target%
 echo [SUCCESS] Scan complete.
 pause
 goto menu

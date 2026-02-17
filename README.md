@@ -1,6 +1,20 @@
-# QA Domains - Automated Website Quality Audit & Dashboard
+# QA Automation Suite
 
 A comprehensive TypeScript-based automated quality assurance system that scans websites for **SEO issues, accessibility violations, security headers, broken links, and images without alt text**. Results are aggregated into a real-time web dashboard with historical tracking.
+
+## Purpose
+To reduce manual testing time by automating standard checks (Security, Broken Links, WCAG compliance, Visual Layout).
+
+## Quick Start
+1. Run `RUN_QA.bat` to open the menu.
+2. Select **Option 3** to run a batch scan.
+3. Select **Option 2** to view the Dashboard.
+
+## Tool Maintenance
+**Developed by:** Aubry Jane Araña (Data Analyst)
+**Tech Stack:** Playwright, TypeScript, Axe-Core
+
+*For bugs or feature requests, please contact the maintainer.*
 
 ---
 

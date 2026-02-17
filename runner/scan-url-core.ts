@@ -23,13 +23,37 @@ export async function scanUrl(url: string, onStatus?: (status: string) => void):
   const context = await browser.newContext({ userAgent: USER_AGENT });
   const page = await context.newPage();
   const allErrors: AuditError[] = [];
+  
+  // 🎯 TRACKING: Save the intended URL to catch redirects
+  const originalUrl = url;
 
   try {
     if (onStatus) onStatus('Connecting');
+
+    // 🎯 LISTENER: Catch "Dead Video" signals from the network
+    page.on('requestfailed', request => {
+      if (request.url().includes('youtube.com/error_204')) {
+          const err: Partial<AuditError> = {
+              url, category: 'FUNC', title: 'Dead Video Detected',
+              message: `A YouTube video on this page returned an internal error (likely removed or private).`,
+              selector: 'iframe[src*="youtube"]', outerHTML: 'N/A', severity: 'high',
+              fix: 'Check video embeds; one or more may have been removed by the provider.',
+              boundingBox: null, detectedAt: Date.now()
+          };
+          allErrors.push({ ...err, id: generateErrorId(err), fingerprint: 'vid-err' } as AuditError);
+      }
+    });
     
+    // Increased timeout for stability & Wait for load
     const response = await page.goto(url, { waitUntil: 'domcontentloaded', timeout: 35000 });
+    
+    // 🎯 STABILITY: Give the page 1 second to settle (animations, lazy loads, redirects)
+    await page.waitForTimeout(1000);
+
     if (!response || response.status() >= 400) throw new Error(`HTTP ${response?.status()}`);
 
+    // --- EXECUTE CHECKS ---
+    
     // Core 4
     allErrors.push(...await checkSecurity(page, response));
     allErrors.push(...await checkSEO(page));
@@ -38,7 +62,7 @@ export async function scanUrl(url: string, onStatus?: (status: string) => void):
     allErrors.push(...await checkA11y(page));
 
     // Wave 2
-    if (onStatus) onStatus('Metadata/Schema');
+    if (onStatus) onStatus('Marketing/Schema');
     allErrors.push(...await checkSchema(page));
     allErrors.push(...await checkSocial(page));
 
@@ -53,6 +77,31 @@ export async function scanUrl(url: string, onStatus?: (status: string) => void):
     allErrors.push(...await checkMobile(page));
     allErrors.push(...await checkContent(page));
     allErrors.push(...await checkPerformance(page));
+
+    // 🎯 NEW: PHANTOM REDIRECT CHECK
+    // Compare where we started vs where we ended up
+    const finalUrl = page.url();
+    
+    // Normalize: remove protocol (http/s), www, and trailing slash for a fair comparison
+    const normOriginal = originalUrl.replace(/(^\w+:|^)\/\//, '').replace('www.', '').replace(/\/$/, '');
+    const normFinal = finalUrl.replace(/(^\w+:|^)\/\//, '').replace('www.', '').replace(/\/$/, '');
+
+    // Ignore if it's just an anchor link (same page)
+    if (normOriginal !== normFinal && !finalUrl.includes('#')) {
+        const err: Partial<AuditError> = {
+            url: originalUrl, 
+            category: 'SEO', 
+            title: 'Unexpected Redirect',
+            message: `Page auto-redirected to "${finalUrl}". This may confuse users and hurt SEO.`,
+            selector: 'head', 
+            outerHTML: `Target: ${originalUrl}\nResult: ${finalUrl}`, 
+            severity: 'critical', 
+            fix: 'Check for <meta refresh> tags or JavaScript window.location redirects.',
+            boundingBox: null, 
+            detectedAt: Date.now()
+        };
+        allErrors.push({ ...err, id: generateErrorId(err), fingerprint: 'phantom-redirect' } as AuditError);
+    }
 
   } catch (e: any) {
     const err: Partial<AuditError> = {
