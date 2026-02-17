@@ -1,3 +1,4 @@
+// aggregator/aggregate-logic.ts
 import * as fs from 'fs';
 import * as path from 'path';
 import { PageResult, AuditError } from '../runner/types';
