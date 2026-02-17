@@ -24,35 +24,11 @@ export async function aggregate() {
             } catch (e) {}
         });
 
-        const latestPageResults: PageResult[] = [];
-        urlGroups.forEach((fileList) => {
-            try {
-                const latestFile = fileList[fileList.length - 1];
-                const data = JSON.parse(fs.readFileSync(path.join(domainPath, latestFile), 'utf-8')) as PageResult;
-                latestPageResults.push(data);
-            } catch (e) {}
-        });
-
-        // 🎯 GLOBAL ERROR DEDUPLICATION
-        const errorFrequency = new Map<string, { count: number, error: AuditError }>();
-        latestPageResults.forEach(page => {
-            page.errors.forEach(err => {
-                const existing = errorFrequency.get(err.id) || { count: 0, error: err };
-                existing.count++;
-                errorFrequency.set(err.id, existing);
-            });
-        });
-
-        const globalErrorIds = new Set<string>();
-        const domainGlobalErrors: AuditError[] = [];
-        errorFrequency.forEach((val, id) => {
-            if (val.count > (latestPageResults.length * 0.3) && latestPageResults.length > 2) {
-                globalErrorIds.add(id);
-                domainGlobalErrors.push(val.error);
-            }
-        });
-
         const pages: any[] = [];
+        // 🎯 NEW: Map to group identical errors across DIFFERENT pages
+        // We use a key based on Category + Title + Message + Selector
+        const uniqueErrorMap = new Map<string, { err: AuditError, affectedUrls: string[] }>();
+
         urlGroups.forEach((fileList, url) => {
             try {
                 const latestFile = fileList[fileList.length - 1];
@@ -61,12 +37,20 @@ export async function aggregate() {
                 const latestData = JSON.parse(fs.readFileSync(path.join(domainPath, latestFile), 'utf-8')) as PageResult;
                 const prevData = prevFile ? JSON.parse(fs.readFileSync(path.join(domainPath, prevFile), 'utf-8')) as PageResult : null;
 
-                const processedErrors = latestData.errors
-                    .filter(e => !globalErrorIds.has(e.id)) // REMOVE GLOBALS FROM PAGE
-                    .map(err => {
-                        const wasInPrev = prevData?.errors.some(pErr => pErr.id === err.id);
-                        return { ...err, status: wasInPrev ? 'STILL_BROKEN' : 'NEW' };
-                    });
+                const processedErrors = latestData.errors.map(err => {
+                    const wasInPrev = prevData?.errors.some(pErr => pErr.id === err.id);
+                    
+                    // 🎯 Grouping Logic: Generate a key that ignores the specific URL
+                    const globalKey = `${err.category}-${err.title}-${err.message}-${err.selector}`;
+                    if (!uniqueErrorMap.has(globalKey)) {
+                        uniqueErrorMap.set(globalKey, { err, affectedUrls: [url] });
+                    } else {
+                        const entry = uniqueErrorMap.get(globalKey)!;
+                        if (!entry.affectedUrls.includes(url)) entry.affectedUrls.push(url);
+                    }
+
+                    return { ...err, status: wasInPrev ? 'STILL_BROKEN' : 'NEW' };
+                });
 
                 pages.push({
                     url: latestData.url,
@@ -83,11 +67,17 @@ export async function aggregate() {
             } catch (e) {}
         });
 
+        // Convert Map to a clean array for the dashboard
+        const uniqueErrorsSummary = Array.from(uniqueErrorMap.values()).map(item => ({
+            ...item.err,
+            affectedUrls: item.affectedUrls
+        }));
+
         report.domains.push({
             name: domainName,
-            totalErrors: globalErrorIds.size + pages.reduce((sum, p) => sum + p.errors.length, 0),
+            totalErrors: pages.reduce((sum, p) => sum + p.errors.filter((e:any) => e.status !== 'FIXED').length, 0),
             pageCount: pages.length,
-            globalErrors: domainGlobalErrors,
+            uniqueErrors: uniqueErrorsSummary, // 🎯 INJECTED INTO JSON
             pages: pages
         });
     }
@@ -95,7 +85,7 @@ export async function aggregate() {
     const outDir = path.dirname(OUTPUT_FILE);
     if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
     fs.writeFileSync(OUTPUT_FILE, JSON.stringify(report, null, 2));
-    console.log(`✅ Dashboard Sync Complete: ${new Date().toLocaleTimeString()}`);
+    console.log(`✅ Aggregated with Cross-Page Summary: ${new Date().toLocaleTimeString()}`);
 }
 
 export function getStorageStats() {
