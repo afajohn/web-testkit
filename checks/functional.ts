@@ -7,7 +7,9 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
 
   const rawErrors = await page.evaluate((pageUrl) => {
     const found: any[] = [];
+    const currentDomain = new URL(pageUrl).hostname;
 
+    // 🎯 HELPER: Robust Selector
     const getSelector = (el: HTMLElement): string => {
         if (el.id) return `#${el.id}`;
         const tag = el.tagName.toLowerCase();
@@ -25,8 +27,8 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
       const selector = getSelector(el);
       
       if (r.width > 0 && r.height > 0) {
-        // 🎯 SMART MATH: Only flag if it's genuinely hard to hit. 
-        // A wide menu link is fine even if it's only 24px tall.
+        const area = r.width * r.height;
+        // If it's too small for a human thumb, it's a UX failure.
         const isTooNarrow = r.width < 44;
         const isTooShort = r.height < 24;
         const isTinySquare = r.width < 32 && r.height < 32;
@@ -37,7 +39,8 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
                 message: `Target "${text?.substring(0, 15)}" is too small for mobile thumbs.`,
                 selector: selector, outerHTML: el.outerHTML.substring(0, 150),
                 severity: 'medium', fix: 'Increase size or padding to at least 44x44px.',
-                boundingBox: { x: r.x, y: r.y, width: r.width, height: r.height }, detectedAt: Date.now()
+                boundingBox: { x: r.x, y: r.y, width: r.width, height: r.height }, 
+                detectedAt: Date.now()
             });
         }
 
@@ -47,49 +50,121 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
             message: 'Button has no accessible text or label.',
             selector: selector, outerHTML: el.outerHTML.substring(0, 150),
             severity: 'high', fix: 'Add descriptive text or an aria-label.',
-            boundingBox: { x: r.x, y: r.y, width: r.width, height: r.height }, detectedAt: Date.now()
+            boundingBox: { x: r.x, y: r.y, width: r.width, height: r.height }, 
+            detectedAt: Date.now()
           });
         }
       }
     });
 
-    // 2. External Link Security
-    document.querySelectorAll('a[target="_blank"]').forEach(link => {
+    // 2. INTELLIGENT LINK SECURITY
+    document.querySelectorAll('a').forEach(link => {
       const el = link as HTMLElement;
       const href = el.getAttribute('href') || '';
-      
-      // 🎯 THE INTELLIGENT FILTER:
-      // Skip if: 1. It's a relative path (/path)
-      //         2. it's internal (contains current hostname)
-      //         3. it's an anchor (#) or javascript
-      const isExternal = href.startsWith('http') && !href.includes(window.location.hostname);
-      const isInternal = !href.startsWith('http') || href.includes(window.location.hostname);
+      const target = (el.getAttribute('target') || '').toLowerCase();
+      const rel = (el.getAttribute('rel') || '').toLowerCase();
+      const r = el.getBoundingClientRect();
 
-      if (isExternal) {
-        const rel = el.getAttribute('rel') || '';
-        if (!rel.includes('noopener')) {
-          const r = el.getBoundingClientRect();
-          found.push({
-            url: pageUrl, category: 'FUNC', title: 'Insecure External Link',
-            message: `External link to "${href.substring(0,30)}..." missing noopener.`,
-            selector: getSelector(el), outerHTML: el.outerHTML.substring(0, 200),
-            severity: 'low', fix: 'Add rel="noopener" for third-party security.',
-            boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
-            detectedAt: Date.now()
-          });
+      //Dead Anchor Check
+      //If theres no href, this is a placeholder that does nothing.
+      if(href === null || href === ""){
+        const err: Partial<AuditError> = {
+          url: pageUrl, category: 'FUNC', title: 'Dead Anchor Tag',
+          message: `Anchor <a> tag is missing an href attribute. It is a dead element.`,
+          selector: getSelector(el), outerHTML: el.outerHTML.substring(0, 150),
+          severity: 'medium', fix: 'Add a valud href or convert this to a <button> or <span>.',
+          boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
+          detectedAt: Date.now()
+        }
+        found.push({ ...err, id: generateErrorId(err), fingerprint: generateErrorId(err) } as AuditError);
+        return;
+      }
+
+      // Skip non-navigational links
+      if (!href || href.startsWith('javascript') || href.startsWith('#')) return;
+
+      // Check if link is external or internal
+      let isExternal = false;
+      try {
+        const linkHost = new URL(href, pageUrl).hostname;
+        isExternal = linkHost !== currentDomain;
+      } catch (e) { return; }
+
+      // Link opens a new tab
+      if (target === '_blank') {
+
+        // For External Logic
+        if (isExternal) {
+        //Both has noopener and noreferrer
+        // noreffer stops them from seeing where we are sending them, noopener stops them from being able to manipulate our page via window.opener
+          if (!rel.includes('noopener') || !rel.includes('noreferrer')) {
+            found.push({
+              url: pageUrl, category: 'SECURITY', title: 'Unsafe External Link',
+              message: `External link missing 'noopener noreferrer'.`,
+              selector: getSelector(el), outerHTML: el.outerHTML.substring(0, 150),
+              severity: 'medium', fix: 'Add rel="noopener noreferrer" for security.',
+              boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
+              detectedAt: Date.now()
+            });
+          }
+        } 
+        
+        //For Internal Logic
+        else {
+
+          //Performance: noopener makes the new tab run on separate CPU thread (faster).
+          if (!rel.includes('noopener')) {
+            found.push({
+              url: pageUrl, category: 'FUNC', title: 'Performance Risk (Internal)',
+              message: `Internal _blank link missing 'noopener'.`,
+              selector: getSelector(el), outerHTML: el.outerHTML.substring(0, 150),
+              severity: 'low', fix: 'Add rel="noopener" to improve browser performance.',
+              boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
+              detectedAt: Date.now()
+            });
+          }
+
+          //Analytics Protection: Internal links should NOT hide referrer data.
+          //If they have noreferrer, Google Analytics won't know the user came from our homepage.
+          if (rel.includes('noreferrer')){
+            found.push({
+              url: pageUrl, category: 'SEO', title: 'Analytics Blocker',
+              message: `Internal link has 'noreferrer'. This kills tracking data.`,
+              selector: getSelector(el), outerHTML: el.outerHTML.substring(0, 150),
+              severity: 'medium', fix: 'Remove "noreferrer" from internal links.',
+              boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
+              detectedAt: Date.now()
+            });
+          }
         }
       } 
-      // 🛡️ INTERNAL LINKS with target="_blank" are now IGNORED. No more noise.
+      
+      //Link opens in the same tab (standard link)
+      else {
+
+        //Even without _blank, internal link should NEVER have noreferrer.
+        //It breaks the marketing data for no reason.
+        if (!isExternal && rel.includes('noreferrer')){
+          found.push({
+             url: pageUrl, category: 'SEO', title: 'Analytics Blocker',
+             message: `Same-tab internal link has 'noreferrer'.`,
+             selector: getSelector(el), outerHTML: el.outerHTML.substring(0, 150),
+             severity: 'medium', fix: 'Remove "noreferrer" from internal links.',
+             boundingBox: r.width > 0 ? { x: r.x, y: r.y, width: r.width, height: r.height } : null,
+             detectedAt: Date.now()
+          });
+        }
+      }
     });
 
     // 3. Video Embeds
-    const videoFrames = document.querySelectorAll('iframe[src*="youtube"], iframe[src*="vimeo"]');
-    videoFrames.forEach(video => {
+    document.querySelectorAll('iframe[src*="youtube"], iframe[src*="vimeo"]').forEach(video => {
       const el = video as HTMLIFrameElement;
       const src = el.getAttribute('src') || '';
       const r = el.getBoundingClientRect();
       const selector = getSelector(el);
       
+      //Accessibility check: Screen readers need a title to explain the video.
       if (!el.hasAttribute('title')) {
         found.push({
           url: pageUrl, category: 'FUNC', title: 'Video Missing Title',
@@ -101,6 +176,7 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
         });
       }
 
+      //Placeholder check: Developers often forget to change the video ID from the example code.
       if (src.includes('insert_video_id')) {
         found.push({
           url: pageUrl, category: 'FUNC', title: 'Broken Video Embed',
@@ -116,7 +192,10 @@ export async function checkFunctional(page: Page): Promise<AuditError[]> {
     return found;
   }, url);
 
+  // Apply fingerprints and IDs
   return rawErrors.map(e => ({
-    ...e, id: generateErrorId(e), fingerprint: generateErrorId(e)
+    ...e, 
+    id: generateErrorId(e), 
+    fingerprint: generateErrorId(e)
   })) as AuditError[];
 }
