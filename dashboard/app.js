@@ -220,10 +220,10 @@ function renderAffectedGroups(urls) {
     });
     let html = '';
     for (const [name, list] of Object.entries(folders)) {
-        html += `<details style="margin-bottom:5px; background:rgba(255,255,255,0.03); border-radius:4px;"><summary style="padding:5px 10px; font-size:11px; cursor:pointer; color:var(--text-main);">📂 <b>${name}</b> (${list.length} pages)</summary><div style="padding:5px 15px; border-left:1px solid var(--accent); margin-left:10px; max-height:150px; overflow-y:auto;">${list.map(url => `<div style="margin-bottom:3px; font-size:10px;">📄 ${extractPath(url)}</div>`).join('')}</div></details>`;
+        html += `<details style="margin-bottom:5px; background:rgba(255,255,255,0.03); border-radius:4px;"><summary style="padding:5px 10px; font-size:11px; cursor:pointer; color:var(--text-main);">📂 <b>${name}</b> (${list.length} pages)</summary><div style="padding:5px 15px; border-left:1px solid var(--accent); margin-left:10px; max-height:150px; overflow-y:auto;">${list.map(url => `<div style="margin-bottom:3px; font-size:10px;">${extractPath(url)}</div>`).join('')}</div></details>`;
     }
     if (rootFiles.length > 0) {
-        html += `<details style="margin-bottom:5px; background:rgba(255,255,255,0.03); border-radius:4px;"><summary style="padding:5px 10px; font-size:11px; cursor:pointer; color:var(--text-main);">📄 <b>Common Root Pages</b> (${rootFiles.length} pages)</summary><div style="padding:5px 15px; border-left:1px solid var(--text-muted); margin-left:10px; max-height:150px; overflow-y:auto;">${rootFiles.map(url => `<div style="margin-bottom:3px; font-size:10px;">📄 ${extractPath(url)}</div>`).join('')}</div></details>`;
+        html += `<details style="margin-bottom:5px; background:rgba(255,255,255,0.03); border-radius:4px;"><summary style="padding:5px 10px; font-size:11px; cursor:pointer; color:var(--text-main);">📄 <b>Common Root Pages</b> (${rootFiles.length} pages)</summary><div style="padding:5px 15px; border-left:1px solid var(--text-muted); margin-left:10px; max-height:150px; overflow-y:auto;">${rootFiles.map(url => `<div style="margin-bottom:3px; font-size:10px;">${extractPath(url)}</div>`).join('')}</div></details>`;
     }
     return html;
 }
@@ -357,4 +357,4 @@ function sanitize(s) { return s ? s.replace(/[^a-zA-Z0-9-]/g, '') : 'id'; }
 function escapeHtml(s) { return s ? String(s).replace(/[&<>"']/g, m => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":"&#039;"}[m])) : ""; }
 
 initDashboard();
-setInterval(() => { saveDashboardState(); initDashboard(); }, 30000);
+setInterval(() => { saveDashboardState(); initDashboard(); }, 3600000);
